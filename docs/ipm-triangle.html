@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The γ(3,4) triangle — lab.infinite.pm</title>
+  <meta name="description" content="The ipm etc-LPXN triangle explained: three node kinds (event, thing, concept), four edge kinds (leads-to, part-of, expresses, near-to), and all 11 allowed edges.">
+  <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'&gt;&lt;text y='13' font-size='13'&gt;🔺&lt;/text&gt;&lt;/svg&gt;">
+  <style>
+    :root {
+      --orange:#ff8000; --green:#4d8a3a; --blue:#3a78c2;
+      --ink:#1f2328; --muted:#57606a; --line:#e3e7ee; --bg:#f7f9fc; --card:#fff;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body {
+      font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;
+      color:var(--ink); line-height:1.65; -webkit-font-smoothing:antialiased;
+      background:
+        radial-gradient(900px 420px at 50% -140px, rgba(255,128,0,0.06), transparent 60%),
+        var(--bg);
+    }
+    .wrap { max-width:860px; margin:0 auto; padding:0 1.25rem 3rem; }
+
+    .crumb { display:flex; align-items:center; gap:.5rem; padding:1.1rem 0; font-size:.9rem; }
+    .crumb a { color:var(--muted); text-decoration:none; font-weight:600; border-bottom:1px solid transparent; }
+    .crumb a:hover { color:var(--ink); border-color:var(--orange); }
+    .crumb .sep { color:#c2c8d2; }
+    .crumb .here { color:var(--ink); font-weight:700; }
+    .crumb .lab { color:var(--orange); } .crumb .inf { color:var(--green); } .crumb .pm { color:var(--blue); }
+
+    header.exp { padding:.6rem 0 .4rem; text-align:center; }
+    h1 { font-size:clamp(1.9rem,4vw,2.6rem); font-weight:800; letter-spacing:-.02em; }
+    h1 .g { color:var(--orange); }
+    .sub { color:var(--muted); font-size:1.06rem; margin:.55rem auto 0; max-width:620px; }
+    .sub b { color:var(--ink); }
+
+    figure.tri { margin:1.6rem auto; background:var(--card); border:1px solid var(--line); border-radius:16px; padding:1rem; box-shadow:0 1px 2px rgba(16,24,40,.04); max-width:600px; }
+    figure.tri img { width:100%; height:auto; display:block; }
+
+    .body { margin-top:.5rem; }
+    .body h2 { font-size:1.2rem; margin:2rem 0 .3rem; letter-spacing:-.01em; }
+    .body h2 .em { font-weight:800; }
+    .body p { color:#303640; margin:.5rem 0; }
+
+    table { width:100%; border-collapse:collapse; font-size:.92rem; margin:.7rem 0 .4rem; }
+    th,td { text-align:left; padding:.5rem .6rem; border-bottom:1px solid var(--line); vertical-align:top; }
+    thead th { color:var(--muted); font-weight:700; font-size:.74rem; text-transform:uppercase; letter-spacing:.05em; }
+    tbody tr:hover td { background:#fbfcfe; }
+    td.num { text-align:right; color:#8a93a3; font-variant-numeric:tabular-nums; width:1.5rem; }
+    .sym { font-weight:800; font-size:1.05rem; }
+    .kind { font-weight:750; }
+    .mono, td code { font-family:'SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace; font-size:.86em; }
+    .mono { white-space:nowrap; }
+
+    /* node + edge colours */
+    .e,.l { color:var(--orange); } .t,.p { color:var(--green); } .c,.x { color:#6c8ebf; } .n { color:#8a93a3; }
+
+    /* ipmt token colours — copied from the md-html converter (infinite-pm-web/docs/intro) */
+    code.language-ipmt { font-family:'SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace; font-size:.9em; white-space:nowrap; }
+    .ipm-e-title{color:#ff8000} .ipm-e-marker{color:#ff8000;font-weight:bold}
+    .ipm-t-title{color:#4d8a3a} .ipm-t-marker{color:#4d8a3a;font-weight:bold}
+    .ipm-c-title{color:#6c8ebf} .ipm-c-marker{color:#6c8ebf;font-weight:bold}
+    .ipm-L{color:#ff8000;font-weight:bold} .ipm-P{color:#4d8a3a;font-weight:bold}
+    .ipm-X{color:#6c8ebf;font-weight:bold} .ipm-N{color:#aaaaaa;font-weight:bold}
+    .ipm-arrow{color:#d4d4d4;font-weight:bold} .ipm-relation,.ipm-type-marker{color:#b08fff}
+    .ar { color:#9aa3b2; }
+    .chip { display:inline-block; min-width:1.5em; text-align:center; padding:.05rem .4rem; border-radius:6px; font-weight:800; }
+    .chip.e { background:#ffe6cc88; } .chip.t { background:#d5e8d488; } .chip.c { background:#dae8fc; }
+    .chip.l { background:#ffe6cc88; } .chip.p { background:#d5e8d488; } .chip.x { background:#dae8fc; } .chip.n { background:#eceef2; }
+
+    .note { margin:1.4rem 0; padding:.9rem 1.1rem; background:#fff; border:1px solid var(--line); border-left:4px solid #b9c0cc; border-radius:10px; font-size:.95rem; color:#303640; }
+    .note a { color:var(--blue); text-decoration:none; border-bottom:1px solid rgba(58,120,194,.35); }
+    .note a:hover { border-color:var(--blue); }
+
+    .rules { margin:.6rem 0; padding-left:0; list-style:none; }
+    .rules li { position:relative; padding:.55rem 0 .55rem 1.4rem; border-bottom:1px solid var(--line); color:#303640; font-size:.95rem; }
+    .rules li::before { content:"§"; position:absolute; left:0; top:.55rem; color:var(--orange); font-weight:800; }
+    .rules code { font-family:'SFMono-Regular',Menlo,Consolas,monospace; font-size:.86em; background:var(--bg); border:1px solid var(--line); border-radius:5px; padding:.02rem .3rem; }
+
+    .more-links { display:flex; gap:1.5rem; flex-wrap:wrap; margin-top:2rem; }
+    .more-links a { color:var(--blue); text-decoration:none; font-weight:600; display:inline-flex; align-items:center; gap:.35rem; }
+    .more-links a:hover { text-decoration:underline; }
+    footer { border-top:1px solid var(--line); margin-top:2.2rem; padding-top:1.2rem; color:var(--muted); font-size:.85rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="crumb">
+      <a href="./"><span class="lab">lab</span>.<span class="inf">infinite</span>.<span class="pm">pm</span></a>
+      <span class="sep">/</span>
+      <span class="here">γ(3,4) triangle</span>
+    </nav>
+
+    <header class="exp">
+      <h1>The <span class="g">γ(3,4)</span> triangle</h1>
+      <p class="sub">Mark Burgess's Semantic Spacetime in one picture: <b>three node kinds</b> and <b>four edge kinds</b> — enough, in our reading, to sketch any observer's view of anything in space and time.</p>
+    </header>
+
+    <figure class="tri">
+      <img src="etc-LPXN.svg" alt="The ipm etc-LPXN triangle: event (e, orange), thing (t, green) and concept (c, blue) vertices, joined by L (leads-to), P (part-of), X (expresses) and N (near-to) edges and self-loops.">
+    </figure>
+
+    <div class="body">
+      <p>
+        The three corners are <span class="kind"><span class="e">e</span></span> (<b class="e">event</b>),
+        <span class="kind"><span class="t">t</span></span> (<b class="t">thing</b>) and
+        <span class="kind"><span class="c">c</span></span> (<b class="c">concept</b>). The arrows and self-loops show
+        <em>every legal edge</em>; the dotted circles (N<sub>e</sub>, N<sub>t</sub>, N<sub>c</sub>) are
+        <b class="n">near-to</b> — undirected similarity between two nodes of the same kind.
+      </p>
+
+      <h2>The three node kinds</h2>
+      <table>
+        <thead><tr><th>Kind</th><th>Symbol</th><th>What it is</th><th>Examples</th></tr></thead>
+        <tbody>
+          <tr><td class="kind e">Event</td><td><span class="chip e">e</span></td><td>A transient happening — fast at the model's timescale</td><td>“User clicks button”, “Build runs”, “Plum murders Scarlet”</td></tr>
+          <tr><td class="kind t">Thing</td><td><span class="chip t">t</span></td><td>A persistent participant — slow at the model's timescale</td><td>“Alice”, “my laptop”, “service A container”, “knife K1”</td></tr>
+          <tr><td class="kind c">Concept</td><td><span class="chip c">c</span></td><td>A quasi-invariant pattern; a property that events or things express</td><td>“human”, “microservice”, “production”, “murder”</td></tr>
+        </tbody>
+      </table>
+
+      <h2>The four edge kinds</h2>
+      <table>
+        <thead><tr><th>Sym</th><th>Render</th><th>Name</th><th>Meaning</th><th>When to use</th></tr></thead>
+        <tbody>
+          <tr><td><span class="chip l">L</span></td><td class="l">orange</td><td class="kind l">LEADS-TO</td><td>Temporal / causal flow</td><td>One event causes or precedes another</td></tr>
+          <tr><td><span class="chip p">P</span></td><td class="p">green</td><td class="kind p">PART-OF</td><td>Containment / participation</td><td>A thing inside an event, a sub-event inside a parent event, or a sub-part inside a bigger thing</td></tr>
+          <tr><td><span class="chip x">X</span></td><td class="x">blue dashed</td><td class="kind x">EXPRESSES</td><td>Property (a single promise)</td><td>An event or thing expresses a concept as a property; a concept can express another. Not is-a</td></tr>
+          <tr><td><span class="chip n">N</span></td><td class="n">gray dotted</td><td class="kind n">NEAR-TO</td><td>Similarity / proximity (undirected)</td><td>Two same-kind nodes are alike but you don't want to merge them</td></tr>
+        </tbody>
+      </table>
+
+      <h2>All <span class="em">11</span> allowed edges</h2>
+      <p>Every legal source&nbsp;→&nbsp;target combination, matching the triangle above. The syntax column shows the most common <code>ipmt</code> form.</p>
+      <table>
+        <thead><tr><th class="num">#</th><th>Source → Target</th><th>Edge</th><th>ipmt syntax</th><th>Reads as</th></tr></thead>
+        <tbody>
+          <tr><td class="num">1</td><td><span class="e">event</span> → <span class="e">event</span></td><td><span class="chip l">L</span></td><td><code class="language-ipmt"><span class="ipm-e-title">e1</span> <span class="ipm-e-marker">::e</span> <span class="ipm-L">--&gt;</span> <span class="ipm-e-title">e2</span> <span class="ipm-e-marker">::e</span></code></td><td>e1 leads to e2</td></tr>
+          <tr><td class="num">2</td><td><span class="e">event</span> → <span class="e">event</span></td><td><span class="chip p">P</span></td><td><code class="language-ipmt"><span class="ipm-e-title">inner</span> <span class="ipm-e-marker">::e</span> <span class="ipm-P">--</span><span class="ipm-relation">::P</span><span class="ipm-P">--&gt;</span> <span class="ipm-e-title">outer</span> <span class="ipm-e-marker">::e</span></code></td><td>inner event is part of outer event</td></tr>
+          <tr><td class="num">3</td><td><span class="e">event</span> → <span class="e">event</span></td><td><span class="chip x">X</span></td><td><code class="language-ipmt"><span class="ipm-e-title">e1</span> <span class="ipm-e-marker">::e</span> <span class="ipm-X">--</span><span class="ipm-relation">::X</span><span class="ipm-X">--&gt;</span> <span class="ipm-e-title">e2</span> <span class="ipm-e-marker">::e</span></code></td><td>e1 expresses e2</td></tr>
+          <tr><td class="num">4</td><td><span class="e">event</span> — <span class="e">event</span></td><td><span class="chip n">N</span></td><td><code class="language-ipmt"><span class="ipm-e-title">e1</span> <span class="ipm-e-marker">::e</span> <span class="ipm-N">---</span> <span class="ipm-e-title">e2</span> <span class="ipm-e-marker">::e</span></code></td><td>e1 is similar to e2 (and vice versa)</td></tr>
+          <tr><td class="num">5</td><td><span class="t">thing</span> → <span class="e">event</span></td><td><span class="chip p">P</span></td><td><code class="language-ipmt"><span class="ipm-t-title">tA</span> <span class="ipm-P">--&gt;</span> <span class="ipm-e-title">e1</span> <span class="ipm-e-marker">::e</span></code></td><td>tA participates in (is part of) e1</td></tr>
+          <tr><td class="num">6</td><td><span class="t">thing</span> → <span class="t">thing</span></td><td><span class="chip p">P</span></td><td><code class="language-ipmt"><span class="ipm-t-title">subpart</span> <span class="ipm-P">--&gt;</span> <span class="ipm-t-title">whole</span></code></td><td>subpart is part of the whole (physical composition)</td></tr>
+          <tr><td class="num">7</td><td><span class="t">thing</span> — <span class="t">thing</span></td><td><span class="chip n">N</span></td><td><code class="language-ipmt"><span class="ipm-t-title">tA</span> <span class="ipm-N">---</span> <span class="ipm-t-title">tB</span></code></td><td>tA is near / similar to tB (and vice versa)</td></tr>
+          <tr><td class="num">8</td><td><span class="e">event</span> → <span class="c">concept</span></td><td><span class="chip x">X</span></td><td><code class="language-ipmt"><span class="ipm-e-title">e1</span> <span class="ipm-e-marker">::e</span> <span class="ipm-X">--&gt;</span> <span class="ipm-c-title">cX</span> <span class="ipm-c-marker">::c</span></code></td><td>e1 expresses property cX</td></tr>
+          <tr><td class="num">9</td><td><span class="t">thing</span> → <span class="c">concept</span></td><td><span class="chip x">X</span></td><td><code class="language-ipmt"><span class="ipm-t-title">tA</span> <span class="ipm-X">--&gt;</span> <span class="ipm-c-title">cX</span> <span class="ipm-c-marker">::c</span></code></td><td>tA expresses property cX</td></tr>
+          <tr><td class="num">10</td><td><span class="c">concept</span> → <span class="c">concept</span></td><td><span class="chip x">X</span></td><td><code class="language-ipmt"><span class="ipm-c-title">cX</span> <span class="ipm-c-marker">::c</span> <span class="ipm-X">--&gt;</span> <span class="ipm-c-title">cY</span> <span class="ipm-c-marker">::c</span></code></td><td>cX expresses property cY</td></tr>
+          <tr><td class="num">11</td><td><span class="c">concept</span> — <span class="c">concept</span></td><td><span class="chip n">N</span></td><td><code class="language-ipmt"><span class="ipm-c-title">cX</span> <span class="ipm-c-marker">::c</span> <span class="ipm-N">---</span> <span class="ipm-c-title">cY</span> <span class="ipm-c-marker">::c</span></code></td><td>cX is similar to cY (and vice versa)</td></tr>
+        </tbody>
+      </table>
+
+      <div class="note">
+        The edge symbols <b class="l">L</b> / <b class="p">P</b> / <b class="x">X</b> / <b class="n">N</b> are ipm's mnemonic.
+        Burgess's original <a href="https://semantic.st/">SST</a> uses <b class="l">L</b> / <b class="p">C</b> / <b class="x">E</b> / <b class="n">N</b> —
+        ipm renames <b class="p">C</b>→<b class="p">P</b> (and reverses its direction) and <b class="x">E</b>→<b class="x">X</b>.
+      </div>
+
+      <h2>Two rules baked into the table</h2>
+      <ul class="rules">
+        <li><strong>No <code>thing --&gt; thing</code> arrow except part-of.</strong> To say “Alice owns the car”, create an <b class="e">event</b> that co-locates both participants and let it <b class="x">express</b> the relation as a concept-property (<code>Ownership ::c</code>). The event is the temporal container; the concept names what the co-location means.</li>
+        <li><strong>The bare <code>--&gt;</code> arrow defaults to the relation that fits the two node kinds:</strong> <b class="l">leads-to</b> for event→event, <b class="p">part-of</b> for thing→event and thing→thing, <b class="x">expresses</b> for event→concept, thing→concept and concept→concept.</li>
+      </ul>
+
+      <div class="more-links">
+        <a href="https://infinite.pm/intro">Full walkthrough — infinite.pm/intro &rarr;</a>
+        <a href="./">&larr; back to the lab</a>
+      </div>
+    </div>
+
+    <footer>&copy; infinite.pm &middot; the γ(3,4) triangle is generated by <code>cmd/etc-triangle-gen</code>; this page reproduces the reference tables from the <a href="https://infinite.pm/intro" style="color:inherit;">intro</a>.</footer>
+  </div>
+</body>
+</html>

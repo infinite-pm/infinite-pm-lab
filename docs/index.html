@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lab.infinite.pm — experiments, POCs &amp; sandbox</title>
+  <meta name="description" content="The infinite.pm laboratory: experiments, proofs of concept and a sandbox for Infinite Process Modeling (ipm) and Semantic Spacetime γ(3,4).">
+  <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'&gt;&lt;text y='13' font-size='13'&gt;🧪&lt;/text&gt;&lt;/svg&gt;">
+  <style>
+    :root {
+      --orange: #ff8000;
+      --green:  #4d8a3a;
+      --blue:   #3a78c2;
+      --green-stroke: #82b366;
+      --blue-stroke:  #6c8ebf;
+      --ink:    #1f2328;
+      --muted:  #57606a;
+      --line:   #e3e7ee;
+      --bg:     #f7f9fc;
+      --card:   #ffffff;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1100px 480px at 50% -120px, rgba(255,128,0,0.06), transparent 60%),
+        var(--bg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 1140px; margin: 0 auto; padding: 0 1.25rem; }
+
+    /* two-column layout: brand + flask on the left, experiments on the right */
+    .main { display: grid; grid-template-columns: 1fr; gap: 2rem; }
+    @media (min-width: 900px) {
+      .main { grid-template-columns: 380px minmax(0, 1fr); gap: 3rem; align-items: start; }
+      .main .hero { position: sticky; top: 1.2rem; padding-top: .4rem; }
+      .main section.experiments { padding-top: .6rem; }
+    }
+
+    /* top bar */
+    header.top {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0.7rem 0; gap: 1rem;
+    }
+    .brand { display: flex; align-items: baseline; gap: .15rem; font-weight: 800; font-size: 1.15rem; letter-spacing: -.01em; }
+    .brand .lab { color: var(--orange); }
+    .brand .dot { color: var(--muted); font-weight: 600; }
+    .brand .inf { color: var(--green); }
+    .brand .pm { color: var(--blue); }
+    nav.top-links a {
+      color: var(--muted); text-decoration: none; font-size: .92rem; font-weight: 600;
+      margin-left: 1.1rem; border-bottom: 2px solid transparent; padding-bottom: 2px; transition: color .15s, border-color .15s;
+    }
+    nav.top-links a:hover { color: var(--ink); border-color: var(--orange); }
+
+    /* hero */
+    .hero { text-align: center; padding: 0.3rem 0 .4rem; }
+    .hero img { width: 100%; max-width: 360px; height: auto; display: block; margin: 0 auto; }
+    .hero h1 { font-size: clamp(1.8rem, 5vw, 2.1rem); font-weight: 800; letter-spacing: -.02em; margin-top: .1rem; }
+    .hero h1 .t { color: var(--green); }
+    .hero h1 .c { color: var(--blue); }
+    .hero h1 .e { color: var(--orange); }
+    .hero .tagline { color: var(--muted); font-size: 1.08rem; margin-top: .5rem; }
+    .hero .tagline b.e { color: var(--orange); } .hero .tagline b.t { color: var(--green); } .hero .tagline b.c { color: var(--blue); }
+    .hero .lead { max-width: 640px; margin: .9rem auto 0; color: var(--muted); }
+    .hero .lead a { color: var(--blue); text-decoration: none; border-bottom: 1px solid rgba(58,120,194,.35); }
+    .hero .lead a:hover { border-color: var(--blue); }
+    /* lead term emphasis — node kinds + their edge kinds in the palette; near-to is grey */
+    .hero .lead b { color: var(--ink); font-weight: 700; }
+    .hero .lead b.e { color: var(--orange); }
+    .hero .lead b.t { color: var(--green); }
+    .hero .lead b.c { color: var(--blue); }
+    .hero .lead b.n { color: #aaaaaa; }
+    /* clickable flask logo with playful per-part tooltips (a tiny treasure hunt) */
+    .hero .flask-stage { position: relative; max-width: 360px; margin: 0 auto; }
+    .hero .flask-stage img { transition: filter .15s ease; }
+    .hero .flask-stage:has(.core:hover) img { filter: drop-shadow(0 5px 14px rgba(255,128,0,.20)); }
+    .hot { position: absolute; display: block; border-radius: 10px; }
+    .hot.tube   { left: 1.8%;  top: 27%; width: 8%;    height: 47%; cursor: help; }
+    .hot.beaker { left: 82.8%; top: 43%; width: 16%;   height: 31%; cursor: help; }
+    .hot.core   { left: 25.3%; top: 20%; width: 43.9%; height: 63%; cursor: pointer; }
+    .hot::after {
+      content: attr(data-tip); position: absolute; z-index: 6;
+      background: #1f2328; color: #fff; font-size: .8rem; font-weight: 600;
+      padding: .3rem .6rem; border-radius: 8px; white-space: nowrap;
+      opacity: 0; pointer-events: none; box-shadow: 0 4px 14px rgba(16,24,40,.18);
+      transition: opacity .12s ease, transform .12s ease;
+    }
+    .hot:hover::after { opacity: 1; }
+    .hot.core::after   { left: 50%; bottom: 100%; transform: translate(-50%, -2px); }
+    .hot.core:hover::after { transform: translate(-50%, -7px); }
+    .hot.tube::after   { left: 100%; top: 50%; transform: translate(6px, -50%); }
+    .hot.tube:hover::after { transform: translate(11px, -50%); }
+    .hot.beaker::after { right: 100%; top: 50%; transform: translate(-6px, -50%); }
+    .hot.beaker:hover::after { transform: translate(-11px, -50%); }
+    .hero .more { margin-top: .85rem; font-size: .95rem; }
+    .hero .more a { color: var(--blue); text-decoration: none; font-weight: 600; border-bottom: 1px solid rgba(58,120,194,.35); }
+    .hero .more a:hover { border-color: var(--blue); }
+
+    /* experiments */
+    section.experiments { padding: 1.8rem 0 1rem; }
+    .sec-head { display: flex; align-items: center; gap: .6rem; margin-bottom: 1rem; }
+    .sec-head h2 { font-size: 1.05rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 700; }
+    .sec-head .rule { flex: 1; height: 1px; background: var(--line); }
+
+    .cards { display: grid; gap: 1rem; }
+    .card {
+      position: relative; scroll-margin-top: 1rem;
+      background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--accent, var(--orange));
+      border-radius: 12px; padding: 1.1rem 1.25rem;
+      box-shadow: 0 1px 2px rgba(16,24,40,.04);
+      transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+    }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(16,24,40,.10); }
+    /* full-card click target (sits under the # anchor) */
+    .card .cover { position: absolute; inset: 0; z-index: 1; border-radius: 12px; }
+    .card .row1 { display: flex; align-items: center; gap: .6rem; flex-wrap: wrap; }
+    .card .date {
+      font-family: 'SFMono-Regular', Menlo, Consolas, monospace; font-size: .78rem; font-weight: 600;
+      color: var(--muted); background: var(--bg); border: 1px solid var(--line); border-radius: 999px; padding: .12rem .55rem;
+    }
+    .card .slug { font-family: 'SFMono-Regular', Menlo, Consolas, monospace; font-size: .82rem; color: #8a93a3; }
+    .card h3 { position: relative; font-size: 1.22rem; font-weight: 750; margin: .55rem 0 .35rem; letter-spacing: -.01em; }
+    /* hover anchor: # appears to the left of the title, clickable above the cover */
+    .card h3 .hash {
+      position: absolute; right: 100%; margin-right: .2em; top: 0; z-index: 2;
+      color: var(--accent, var(--orange)); font-weight: 700; text-decoration: none;
+      opacity: 0; transition: opacity .12s ease;
+    }
+    .card h3:hover .hash { opacity: 1; }
+    .card h3 .hash:hover { text-decoration: underline; }
+    .card h3 .arrow { color: var(--accent, var(--orange)); transition: margin-left .15s ease; }
+    .card:hover h3 .arrow { margin-left: .25rem; }
+    .card p { color: var(--muted); font-size: .96rem; }
+    .card .tags { margin-top: .7rem; display: flex; gap: .4rem; flex-wrap: wrap; }
+    .tag {
+      font-size: .74rem; font-weight: 600; padding: .12rem .5rem; border-radius: 6px;
+      font-family: 'SFMono-Regular', Menlo, Consolas, monospace;
+    }
+    .tag.e { color: var(--orange); background: #ffe6cc66; }
+    .tag.t { color: var(--green);  background: #d5e8d466; }
+    .tag.c { color: var(--blue);   background: #dae8fc88; }
+    .tag.wip { color: var(--muted); background: var(--bg); border: 1px solid var(--line); }
+
+    /* footer */
+    footer.site { border-top: 1px solid var(--line); margin-top: 2.5rem; padding: 1.6rem 0 2.4rem; color: var(--muted); font-size: .9rem; }
+    footer.site .frow { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+    footer.site a { color: var(--muted); text-decoration: none; border-bottom: 1px solid transparent; }
+    footer.site a:hover { color: var(--ink); border-color: var(--orange); }
+    footer.site .gh { display: inline-flex; align-items: center; gap: .4rem; }
+
+    @media (max-width: 560px) {
+      nav.top-links a { margin-left: .8rem; font-size: .85rem; }
+      .brand { font-size: 1.02rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <header class="top">
+      <div class="brand"><span class="lab">lab</span><span class="dot">.</span><span class="inf">infinite</span><span class="dot">.</span><span class="pm">pm</span></div>
+      <nav class="top-links">
+        <a href="https://infinite.pm">infinite.pm</a>
+        <a href="https://github.com/infinite-pm/infinite-pm-lab">source</a>
+      </nav>
+    </header>
+
+    <div class="main">
+
+    <section class="hero">
+      <div class="flask-stage">
+        <img src="lab.svg" alt="The infinite.pm laboratory — the ipm γ(3,4) triangle of event, thing and concept vertices, flanked by lab glassware. The core flask links to an explainer.">
+        <span class="hot tube"   data-tip="🔍 find the core flask…" aria-hidden="true"></span>
+        <span class="hot beaker" data-tip="🔍 find the core flask…" aria-hidden="true"></span>
+        <a class="hot core" href="ipm-triangle.html" data-tip="👀 find what's inside →" aria-label="The γ(3,4) triangle, explained"></a>
+      </div>
+      <h1><span class="t">The</span> <span class="c">infinite.pm</span> <span class="e">lab</span></h1>
+      <p class="tagline">experiments &middot; proofs of concept &middot; sandbox</p>
+      <p class="lead">
+        A workbench for <a href="https://infinite.pm">infinite.pm</a> — playing with Mark Burgess's
+        <a href="ipm-triangle.html">Semantic Spacetime γ(3,4)</a>: three node kinds
+        (<b class="e">event</b>, <b class="t">thing</b>, <b class="c">concept</b>) and four edge kinds
+        (<b class="e">leads-to</b>, <b class="t">part-of</b>, <b class="c">expresses</b>, <b class="n">near-to</b>).
+      </p>
+    </section>
+
+    <section class="experiments">
+      <div class="sec-head">
+        <h2>Experiments</h2>
+        <span class="rule"></span>
+      </div>
+
+      <div class="cards">
+
+        <div class="card" id="sstcorpus" style="--accent: var(--blue-stroke);">
+          <a class="cover" href="260606-sstcorpus/" aria-label="Open the SSTorytime corpus experiment"></a>
+          <div class="row1">
+            <span class="date">2026-06-06</span>
+            <span class="slug">260606-sstcorpus/</span>
+          </div>
+          <h3><a class="hash" href="#sstcorpus" aria-label="Permalink to SSTorytime corpus">#</a>SSTorytime corpus <span class="arrow">&rarr;</span></h3>
+          <p>An n4l-import browser: dozens of SSTorytime <code style="font-size:.85em">.n4l</code> knowledge files imported into ipm, rendered and validated — sortable, with svg / zoom / json / ipmt artifacts per model.</p>
+          <div class="tags">
+            <span class="tag c">corpus ::c</span>
+            <span class="tag wip">sandbox</span>
+          </div>
+        </div>
+
+        <div class="card" id="zoomlayout" style="--accent: var(--orange);">
+          <a class="cover" href="260422-zoomlayout/" aria-label="Open the Zoom layout experiment"></a>
+          <div class="row1">
+            <span class="date">2026-04-22</span>
+            <span class="slug">260422-zoomlayout/</span>
+          </div>
+          <h3><a class="hash" href="#zoomlayout" aria-label="Permalink to Zoom layout">#</a>Zoom layout <span class="arrow">&rarr;</span></h3>
+          <p>Pre-computed zoom states that expand composite events in place — coarse overview down to full detail — served on an interactive canvas (<code style="font-size:.85em">zoomlayout-gen</code> &rarr; <code style="font-size:.85em">ipm-server</code>).</p>
+          <div class="tags">
+            <span class="tag e">layout ::e</span>
+            <span class="tag wip">sandbox</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    </div><!-- /.main -->
+
+    <footer class="site">
+      <div class="frow">
+        <span>&copy; infinite.pm &middot; the lab is a sandbox — things here may break, move, or vanish.</span>
+        <a class="gh" href="https://github.com/infinite-pm/infinite-pm-lab" target="_blank" rel="noopener noreferrer" title="View source on GitHub">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          GitHub
+        </a>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
