@@ -1,0 +1,1412 @@
+{
+  "version": "25.09",
+  "src": {
+    "type": "n4l",
+    "ipmt": "",
+    "positions": {
+      "nodes": null,
+      "edges": null
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "0.5-4 Hz",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 2,
+      "name": "12-35 Hz",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 3,
+      "name": "32-100 Hz",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 4,
+      "name": "4-8 Hz",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 5,
+      "name": "5-15 Hz",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 6,
+      "name": "Betz cells",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 7,
+      "name": "Complementary roles for hippocampus and anterior cingulate in composing continuous choice",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 8,
+      "name": "External granular layer. Composed of small \"pyramidal cells\" and \"inhibitory cells\". Receives input from deeper layers.",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 9,
+      "name": "External pyramidal layer. Small to medium pyramidal neurons. Send exicitory outputs to other cortical areas across the corpus callosum.",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 10,
+      "name": "Internal granular layer. The main entry point for incoming sensory signals. Direct signals from the thalamus.",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 11,
+      "name": "Internal pyramidal layer. Contains a large number of pyramidal neurons/\"Betz cells\" and motor neurons.  Responsible for sending signals out of the cerebral cortex to deeper brain regions, spinal cord.",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 12,
+      "name": "Left–right-alternating theta sweeps in entorhinal–hippocampal maps of space",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 13,
+      "name": "Multiform layer. The deepest layer. Sends massive feedback mainly to thalamus, allowing the cortex to regulate and filter sensory information.",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 14,
+      "name": "Nature",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 15,
+      "name": "Outer molecular layer. Dense mat of axons, dendrites, and \"glial cells\", containing few neuronal cell bodies. Inputs from \"brain stem\".",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 16,
+      "name": "accumulating knowledge",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 17,
+      "name": "affordances",
+      "alias": "",
+      "type": "Thing",
+      "tooltip": "conditional promises"
+    },
+    {
+      "id": 18,
+      "name": "alpha waves",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 19,
+      "name": "association and interhemipsheric signalling",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 20,
+      "name": "attractive signals engage a winner-takes-all competition",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 21,
+      "name": "autonomic nervous system",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 22,
+      "name": "axons",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 23,
+      "name": "basal ganglia",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 24,
+      "name": "below cortex, forebrain",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 25,
+      "name": "beta waves",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 26,
+      "name": "brain stem",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 27,
+      "name": "collect sensory information and integrate with neighbouring columns",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 28,
+      "name": "column",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 29,
+      "name": "columnar organization hypothesis",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 30,
+      "name": "columns",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 31,
+      "name": "concentration",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 32,
+      "name": "conduit/relay station for sensory information.",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 33,
+      "name": "cortical to cortical communication",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 34,
+      "name": "creates temporary structured episodic record",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 35,
+      "name": "delta waves",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 36,
+      "name": "dendrites",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 37,
+      "name": "early telencephalon, meaning the end of the brain",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 38,
+      "name": "encoding meaning as \"things\" is efficient conceptualisation, which is a coarse graining of spacetime pattern persistence and recurrence.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 39,
+      "name": "entorhinal cortex",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 40,
+      "name": "forebrain",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 41,
+      "name": "frontal cortex",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 42,
+      "name": "gamma waves",
+      "alias": "",
+      "type": "Thing",
+      "tooltip": "40 Hz of special interest"
+    },
+    {
+      "id": 43,
+      "name": "glial cells",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 44,
+      "name": "grid cells",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 45,
+      "name": "hindbrain",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 46,
+      "name": "hippocampus",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 47,
+      "name": "hormones",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 48,
+      "name": "https://www.biorxiv.org/content/10.1101/2025.03.17.643774v1.full",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 49,
+      "name": "human brain",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 50,
+      "name": "hypothalamus",
+      "alias": "",
+      "type": "Event",
+      "tooltip": "hypothalamus is extensively interconnected with other brain regions that collectively provide signals that motivate different types of behaviors, with varying levels of urgency. The resultant signals of need may be experienced as hunger, thirst, tiredness, cold, pain, fear, and so on; that is, basic emotions."
+    },
+    {
+      "id": 51,
+      "name": "inhibitory cells",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 52,
+      "name": "inner chamber",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 53,
+      "name": "key nexus between body and brain , vital decision making circuits",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 54,
+      "name": "layer 1",
+      "alias": "",
+      "type": "Thing",
+      "tooltip": "plays a role in intentionality?"
+    },
+    {
+      "id": 55,
+      "name": "layer 2",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 56,
+      "name": "layer 3",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 57,
+      "name": "layer 4",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 58,
+      "name": "layer 5",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 59,
+      "name": "layer 6",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 60,
+      "name": "learning and memory",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 61,
+      "name": "maps incoming sensory stimulus to a menu of actions/instincts",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 62,
+      "name": "mediates evaluatuon and selection of actions",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 63,
+      "name": "medium attention,anxiety dominant, active, external attention",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 64,
+      "name": "midbrain",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 65,
+      "name": "modular repeating columns in 6 layers",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 66,
+      "name": "monitoring signals in the bloodstream and neural signals",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 67,
+      "name": "neocortex",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 68,
+      "name": "nested circuit loops",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 69,
+      "name": "neurons that fire together wire together",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 70,
+      "name": "optic nerve",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 71,
+      "name": "outgrowth of hypothalamus",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 72,
+      "name": "parietal cortex",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 73,
+      "name": "performs significant processing/compression on input",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 74,
+      "name": "performs various kinds of neural operations, using these integrated maps of different kinds of stimuli to derive an optimal action",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 75,
+      "name": "physical structures/neural circuits",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 76,
+      "name": "place cells",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 77,
+      "name": "place cells spacetime",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 78,
+      "name": "premotor cortex",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 79,
+      "name": "primary input centre, receive inputs from other brain areas",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 80,
+      "name": "provides top down modulation and integrated activity.",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 81,
+      "name": "pyramidal",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 82,
+      "name": "pyramidal cells",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 83,
+      "name": "regulate bodily functions—blood pressure, heart rate, enzyme levels, digestion, gut peristalsis, sweating, shivering, sleep, arousal",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 84,
+      "name": "retinal ganglia",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 85,
+      "name": "return data back to thalamus",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 86,
+      "name": "signal from midbrain about reward/punishment/surprise",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 87,
+      "name": "sleep",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 88,
+      "name": "structured for causal relationships A causes B",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 89,
+      "name": "take signals from 2,3 and context and redistribute",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 90,
+      "name": "tectum",
+      "alias": "",
+      "type": "Thing",
+      "tooltip": "conditional promises"
+    },
+    {
+      "id": 91,
+      "name": "tectum, cortex, spine, other hemisphere",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 92,
+      "name": "tectum, thalamus",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 93,
+      "name": "telencephalon",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 94,
+      "name": "temporal cortex",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 95,
+      "name": "thalamus",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 96,
+      "name": "theta waves",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 97,
+      "name": "top of midbrain",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 98,
+      "name": "type 1",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 99,
+      "name": "type 2",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 100,
+      "name": "ultimately expand in mammals to become the neocortex",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 101,
+      "name": "urges to eat, drink, sleep, find shelter, avoid whatever is causing pain or fear, or respond with defensive or aggressive behaviours.",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 102,
+      "name": "very relaxed, light or passive attention",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 103,
+      "name": "what we can do with a object or service",
+      "alias": "",
+      "type": "Concept"
+    }
+  ],
+  "edges": [
+    {
+      "id": 104,
+      "source": 28,
+      "target": 67,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 105,
+      "source": 67,
+      "target": 65,
+      "dir": "DirFwd",
+      "tooltip": "has the structure of",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 106,
+      "source": 67,
+      "target": 16,
+      "dir": "DirFwd",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 107,
+      "source": 50,
+      "target": 47,
+      "dir": "DirFwd",
+      "tooltip": "influences",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 108,
+      "source": 50,
+      "target": 101,
+      "dir": "DirFwd",
+      "tooltip": "influences",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 109,
+      "source": 50,
+      "target": 100,
+      "dir": "DirFwd",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 110,
+      "source": 50,
+      "target": 53,
+      "dir": "DirFwd",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 111,
+      "source": 50,
+      "target": 40,
+      "dir": "DirFwd",
+      "tooltip": "takes place at location",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 112,
+      "source": 50,
+      "target": 66,
+      "dir": "DirFwd",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 113,
+      "source": 50,
+      "target": 83,
+      "dir": "DirFwd",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 114,
+      "source": 47,
+      "target": 21,
+      "dir": "DirFwd",
+      "tooltip": "influences",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 115,
+      "source": 95,
+      "target": 40,
+      "dir": "DirFwd",
+      "tooltip": "takes place at location",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 116,
+      "source": 95,
+      "target": 32,
+      "dir": "DirFwd",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 117,
+      "source": 95,
+      "target": 73,
+      "dir": "DirFwd",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 118,
+      "source": 75,
+      "target": 46,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 119,
+      "source": 76,
+      "target": 46,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 120,
+      "source": 46,
+      "target": 60,
+      "dir": "DirFwd",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 121,
+      "source": 46,
+      "target": 34,
+      "dir": "DirFwd",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 122,
+      "source": 46,
+      "target": 88,
+      "dir": "DirFwd",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 123,
+      "source": 90,
+      "target": 61,
+      "dir": "DirFwd",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 124,
+      "source": 90,
+      "target": 74,
+      "dir": "DirFwd",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 125,
+      "source": 90,
+      "target": 20,
+      "dir": "DirFwd",
+      "tooltip": "works by method",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 126,
+      "source": 90,
+      "target": 97,
+      "dir": "DirFwd",
+      "tooltip": "takes place at location",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 127,
+      "source": 17,
+      "target": 103,
+      "dir": "DirFwd",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 128,
+      "source": 14,
+      "target": 12,
+      "dir": "DirFwd",
+      "tooltip": "is the publisher of",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 129,
+      "source": 18,
+      "target": 5,
+      "dir": "DirFwd",
+      "tooltip": "has frequency",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 130,
+      "source": 18,
+      "target": 102,
+      "dir": "DirFwd",
+      "tooltip": "is characterized by",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 131,
+      "source": 25,
+      "target": 2,
+      "dir": "DirFwd",
+      "tooltip": "has frequency",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 132,
+      "source": 25,
+      "target": 63,
+      "dir": "DirFwd",
+      "tooltip": "is characterized by",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 133,
+      "source": 78,
+      "target": 42,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 134,
+      "source": 72,
+      "target": 42,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 135,
+      "source": 94,
+      "target": 42,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 136,
+      "source": 41,
+      "target": 42,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 137,
+      "source": 42,
+      "target": 3,
+      "dir": "DirFwd",
+      "tooltip": "has frequency",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 138,
+      "source": 42,
+      "target": 31,
+      "dir": "DirFwd",
+      "tooltip": "is characterized by",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 139,
+      "source": 35,
+      "target": 1,
+      "dir": "DirFwd",
+      "tooltip": "has frequency",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 140,
+      "source": 35,
+      "target": 87,
+      "dir": "DirFwd",
+      "tooltip": "is characterized by",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 141,
+      "source": 98,
+      "target": 96,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 142,
+      "source": 99,
+      "target": 96,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 143,
+      "source": 96,
+      "target": 4,
+      "dir": "DirFwd",
+      "tooltip": "has frequency",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 144,
+      "source": 40,
+      "target": 49,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 145,
+      "source": 64,
+      "target": 49,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 146,
+      "source": 45,
+      "target": 49,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 147,
+      "source": 84,
+      "target": 92,
+      "dir": "DirFwd",
+      "tooltip": "signals to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 148,
+      "source": 84,
+      "target": 70,
+      "dir": "DirFwd",
+      "tooltip": "takes place at location",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 149,
+      "source": 92,
+      "target": 28,
+      "dir": "DirFwd",
+      "tooltip": "sustains",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 150,
+      "source": 23,
+      "target": 24,
+      "dir": "DirFwd",
+      "tooltip": "takes place at location",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 151,
+      "source": 23,
+      "target": 68,
+      "dir": "DirFwd",
+      "tooltip": "has the structure of",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 152,
+      "source": 23,
+      "target": 62,
+      "dir": "DirFwd",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 153,
+      "source": 54,
+      "target": 15,
+      "dir": "DirFwd",
+      "tooltip": "has description",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 154,
+      "source": 54,
+      "target": 80,
+      "dir": "DirFwd",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 155,
+      "source": 54,
+      "target": 33,
+      "dir": "DirFwd",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 156,
+      "source": 55,
+      "target": 8,
+      "dir": "DirFwd",
+      "tooltip": "has description",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 157,
+      "source": 55,
+      "target": 27,
+      "dir": "DirFwd",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 158,
+      "source": 56,
+      "target": 9,
+      "dir": "DirFwd",
+      "tooltip": "has description",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 159,
+      "source": 56,
+      "target": 27,
+      "dir": "DirFwd",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 160,
+      "source": 56,
+      "target": 19,
+      "dir": "DirFwd",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 161,
+      "source": 57,
+      "target": 10,
+      "dir": "DirFwd",
+      "tooltip": "has description",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 162,
+      "source": 57,
+      "target": 79,
+      "dir": "DirFwd",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 163,
+      "source": 58,
+      "target": 91,
+      "dir": "DirFwd",
+      "tooltip": "signals to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 164,
+      "source": 58,
+      "target": 11,
+      "dir": "DirFwd",
+      "tooltip": "has description",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 165,
+      "source": 58,
+      "target": 89,
+      "dir": "DirFwd",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 166,
+      "source": 59,
+      "target": 85,
+      "dir": "DirFwd",
+      "tooltip": "signals to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 167,
+      "source": 59,
+      "target": 13,
+      "dir": "DirFwd",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 168,
+      "source": 44,
+      "target": 39,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 169,
+      "source": 71,
+      "target": 67,
+      "dir": "DirFwd",
+      "tooltip": "evolved to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 170,
+      "source": 37,
+      "target": 50,
+      "dir": "DirFwd",
+      "tooltip": "evolved to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 171,
+      "source": 37,
+      "target": 93,
+      "dir": "DirFwd",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 172,
+      "source": 100,
+      "target": 67,
+      "dir": "DirFwd",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 173,
+      "source": 86,
+      "target": 23,
+      "dir": "DirFwd",
+      "tooltip": "sustains",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 174,
+      "source": 8,
+      "target": 82,
+      "dir": "DirFwd",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 175,
+      "source": 8,
+      "target": 51,
+      "dir": "DirFwd",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 176,
+      "source": 27,
+      "target": 30,
+      "dir": "DirFwd",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 177,
+      "source": 10,
+      "target": 95,
+      "dir": "DirFwd",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 178,
+      "source": 85,
+      "target": 95,
+      "dir": "DirFwd",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 179,
+      "source": 7,
+      "target": 48,
+      "dir": "DirFwd",
+      "tooltip": "has URL",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 180,
+      "source": 12,
+      "target": 96,
+      "dir": "DirFwd",
+      "tooltip": "discusses",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 181,
+      "source": 12,
+      "target": 77,
+      "dir": "DirFwd",
+      "tooltip": "discusses",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 182,
+      "source": 12,
+      "target": 76,
+      "dir": "DirFwd",
+      "tooltip": "discusses",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 183,
+      "source": 12,
+      "target": 44,
+      "dir": "DirFwd",
+      "tooltip": "discusses",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 184,
+      "source": 15,
+      "target": 22,
+      "dir": "DirFwd",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 185,
+      "source": 15,
+      "target": 36,
+      "dir": "DirFwd",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 186,
+      "source": 15,
+      "target": 43,
+      "dir": "DirFwd",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 187,
+      "source": 15,
+      "target": 26,
+      "dir": "DirFwd",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 188,
+      "source": 11,
+      "target": 81,
+      "dir": "DirFwd",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 189,
+      "source": 11,
+      "target": 6,
+      "dir": "DirFwd",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    }
+  ]
+}

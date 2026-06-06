@@ -1,0 +1,180 @@
+{
+  "version": "25.09",
+  "src": {
+    "type": "n4l-sst-native",
+    "ipmt": "",
+    "positions": {
+      "nodes": null,
+      "edges": null
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Documentation often assumes you already know go quite well and is more interested in version changes than in a pedagogical explanation.",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 2,
+      "name": "Golang is an easy to write language without too many strict syntax issues.",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 3,
+      "name": "It's not a free format language, mainly because of placement of braces.",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 4,
+      "name": "It's opinionated without always explaining why.",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 5,
+      "name": "associative arrays",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 6,
+      "name": "basic example",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 7,
+      "name": "go",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 8,
+      "name": "go modules",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 9,
+      "name": "go packages",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 10,
+      "name": "golang",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 11,
+      "name": "gopath",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 12,
+      "name": "hello world",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 13,
+      "name": "maps",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 14,
+      "name": "package main\n\nimport (\n    \"dependency 1\"\n    \"dependency 2\"\n    \"fmt\"\n)\n\nfunc main () {  // brace must go here\n\n      fmt.Println(\"Hello world\")\n}",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "runes",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 16,
+      "name": "snide remark",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ],
+      "tooltip": "Programmers are supposed to offer their lives to learning it."
+    },
+    {
+      "id": 17,
+      "name": "unicode",
+      "alias": "",
+      "type": "Event"
+    }
+  ],
+  "edges": [
+    {
+      "id": 0,
+      "source": 13,
+      "target": 5,
+      "dir": "",
+      "tooltip": "same as",
+      "sstLinkType": "NearTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 15,
+      "target": 17,
+      "dir": "",
+      "tooltip": "implements",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 5,
+      "target": 13,
+      "dir": "",
+      "tooltip": "same as",
+      "sstLinkType": "NearTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 6,
+      "target": 12,
+      "dir": "",
+      "tooltip": "same as",
+      "sstLinkType": "NearTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 12,
+      "target": 6,
+      "dir": "",
+      "tooltip": "same as",
+      "sstLinkType": "NearTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 14,
+      "target": 12,
+      "dir": "",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    }
+  ]
+}

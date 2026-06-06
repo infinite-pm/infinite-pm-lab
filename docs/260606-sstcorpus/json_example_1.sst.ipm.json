@@ -1,0 +1,368 @@
+{
+  "version": "25.09",
+  "src": {
+    "type": "n4l-sst-native",
+    "ipmt": "",
+    "positions": {
+      "nodes": null,
+      "edges": null
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "1",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 2,
+      "name": "1.0.0",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 3,
+      "name": "10",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 4,
+      "name": "2",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 5,
+      "name": "2025-10-17T14:30:00Z",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 6,
+      "name": "Example API Response",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 7,
+      "name": "Instance of a users array {\n        \"id\": 1,\n        \"username\": \"alice\",\n        \"email\": \"alice@example.com\",\n        \"active\": true,\n        \"roles\": [\"admin\", \"user\"]\n      }",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Instance of a users array {\n        \"id\": 2,\n        \"username\": \"bob\",\n        \"email\": \"bob@example.com\",\n        \"active\": false,\n        \"roles\": [\"user\"]\n      }",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "My json object representation is an EVENT {\n   \"name\": \"Example API Response\",\n   \"version\": \"1.0.0\",\n   \"status\": \"success\",\n\n   \"data\": {\n\n      \"users\": [\n      {\n        \"id\": 1,\n        \"username\": \"alice\",\n        \"email\": \"alice@example.com\",\n        \"active\": true,\n        \"roles\": [\"admin\", \"user\"]\n      },\n      {\n        \"id\": 2,\n        \"username\": \"bob\",\n        \"email\": \"bob@example.com\",\n        \"active\": false,\n        \"roles\": [\"user\"]\n      }\n    ],\n \n   \"metadata\": {\n      \"total\": 2,\n      \"page\": 1,\n      \"limit\": 10\n    }\n  },\n\n  \"timestamp\": \"2025-10-17T14:30:00Z\"\n}",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Partial json element -- \" metadata\": {\n      \"total\": 2,\n      \"page\": 1,\n      \"limit\": 10\n    }",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Partial json element -- \"users\" : [\n      {\n        \"id\": 1,\n        \"username\": \"alice\",\n        \"email\": \"alice@example.com\",\n        \"active\": true,\n        \"roles\": [\"admin\", \"user\"]\n      },\n      {\n        \"id\": 2,\n        \"username\": \"bob\",\n        \"email\": \"bob@example.com\",\n        \"active\": false,\n        \"roles\": [\"user\"]\n      }\n    ]",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 12,
+      "name": "active",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 13,
+      "name": "admin",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 14,
+      "name": "alice",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 15,
+      "name": "alice@example.com",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 16,
+      "name": "bob",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 17,
+      "name": "bob@example.com",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 18,
+      "name": "inactive",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 19,
+      "name": "success",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 20,
+      "name": "user",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 21,
+      "name": "{ \"users\": [\n      {\n        \"id\": 1,\n        \"username\": \"alice\",\n        \"email\": \"alice@example.com\",\n        \"active\": true,\n        \"roles\": [\"admin\", \"user\"]\n      },\n      {\n        \"id\": 2,\n        \"username\": \"bob\",\n        \"email\": \"bob@example.com\",\n        \"active\": false,\n        \"roles\": [\"user\"]\n      }\n    ],\n \n   \"metadata\": {\n      \"total\": 2,\n      \"page\": 1,\n      \"limit\": 10\n    }\n  }",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": 0,
+      "source": 10,
+      "target": 4,
+      "dir": "",
+      "tooltip": "has total value",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 10,
+      "target": 1,
+      "dir": "",
+      "tooltip": "has page number",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 10,
+      "target": 3,
+      "dir": "",
+      "tooltip": "has a limit of",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 7,
+      "target": 1,
+      "dir": "",
+      "tooltip": "has id",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 7,
+      "target": 14,
+      "dir": "",
+      "tooltip": "has username",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 7,
+      "target": 15,
+      "dir": "",
+      "tooltip": "has email",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 7,
+      "target": 13,
+      "dir": "",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 7,
+      "target": 20,
+      "dir": "",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 7,
+      "target": 12,
+      "dir": "",
+      "tooltip": "has status",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 8,
+      "target": 4,
+      "dir": "",
+      "tooltip": "has id",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 8,
+      "target": 16,
+      "dir": "",
+      "tooltip": "has username",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 8,
+      "target": 17,
+      "dir": "",
+      "tooltip": "has email",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 8,
+      "target": 20,
+      "dir": "",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 8,
+      "target": 18,
+      "dir": "",
+      "tooltip": "has status",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 7,
+      "target": 11,
+      "dir": "",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 8,
+      "target": 11,
+      "dir": "",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 11,
+      "target": 21,
+      "dir": "",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 21,
+      "target": 10,
+      "dir": "",
+      "tooltip": "has metadata",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 9,
+      "target": 6,
+      "dir": "",
+      "tooltip": "has name",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 9,
+      "target": 2,
+      "dir": "",
+      "tooltip": "has version",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 9,
+      "target": 19,
+      "dir": "",
+      "tooltip": "has status",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 9,
+      "target": 5,
+      "dir": "",
+      "tooltip": "has timestamp",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 9,
+      "target": 21,
+      "dir": "",
+      "tooltip": "has data",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zoom layout — lab.infinite.pm</title>
+  <meta name="description" content="Zoom layout for ipm graphs — pre-computed zoom states that expand composite events in place, served on an interactive canvas. An experiment in the infinite.pm lab.">
+  <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'&gt;&lt;text y='13' font-size='13'&gt;🧪&lt;/text&gt;&lt;/svg&gt;">
+  <style>
+    :root {
+      --accent: #ff8000;            /* event / orange */
+      --ink: #1f2328; --muted: #57606a; --line: #e3e7ee; --bg: #f7f9fc; --card: #fff;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      color: var(--ink); line-height: 1.65; -webkit-font-smoothing: antialiased;
+      background: radial-gradient(900px 360px at 50% -120px, color-mix(in srgb, var(--accent) 12%, transparent), transparent 60%), var(--bg);
+    }
+    .wrap { max-width: 940px; margin: 0 auto; padding: 0 1.25rem 3rem; }
+    .crumb { display: flex; align-items: center; gap: .5rem; padding: 1.1rem 0; font-size: .9rem; }
+    .crumb a { color: var(--muted); text-decoration: none; font-weight: 600; border-bottom: 1px solid transparent; }
+    .crumb a:hover { color: var(--ink); border-color: var(--accent); }
+    .crumb .sep { color: #c2c8d2; }
+    .crumb .here { color: var(--ink); font-weight: 700; }
+    .crumb .lab { color: var(--accent); }
+
+    header.exp { padding: 1rem 0 .5rem; }
+    .meta { display: flex; align-items: center; gap: .6rem; flex-wrap: wrap; margin-bottom: .6rem; }
+    .badge { font-family: 'SFMono-Regular', Menlo, Consolas, monospace; font-size: .78rem; font-weight: 600;
+             color: var(--muted); background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: .12rem .55rem; }
+    .badge.wip { color: var(--accent); border-color: color-mix(in srgb, var(--accent) 35%, var(--line)); background: color-mix(in srgb, var(--accent) 8%, #fff); }
+    h1 { font-size: clamp(1.7rem, 4vw, 2.5rem); font-weight: 800; letter-spacing: -.02em; }
+    h1 .em { color: var(--accent); }
+    .sub { color: var(--muted); font-size: 1.06rem; margin-top: .5rem; max-width: 680px; }
+
+    /* zoom-state filmstrip */
+    .states { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.8rem 0 .6rem; align-items: end; }
+    .state { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: .9rem; box-shadow: 0 1px 2px rgba(16,24,40,.04); display: flex; flex-direction: column; }
+    .state .canvas { height: 300px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+    .state img { max-width: 100%; max-height: 300px; width: auto; height: auto; display: block; }
+    .state .cap { margin-top: .7rem; text-align: center; }
+    .state .cap b { display: block; font-size: .95rem; }
+    .state .cap span { color: var(--muted); font-size: .82rem; }
+    .strip-note { text-align: center; color: var(--muted); font-size: .86rem; margin: .2rem 0 0; }
+    .arrowy { display: flex; align-items: center; justify-content: center; gap: .5rem; color: var(--accent); font-weight: 700; font-size: .9rem; margin: .4rem 0 0; }
+
+    .body h2 { font-size: 1.1rem; margin: 1.8rem 0 .5rem; }
+    .body p { color: #303640; margin: .6rem 0; }
+    .body ul { margin: .5rem 0 .5rem 1.2rem; color: #303640; }
+    .body li { margin: .35rem 0; }
+    code { font-family: 'SFMono-Regular', Menlo, Consolas, monospace; font-size: .9em; background: var(--bg); border: 1px solid var(--line); border-radius: 5px; padding: .05rem .35rem; }
+    .e { color: #ff8000; } .t { color: #4d8a3a; } .c { color: #3a78c2; }
+
+    .pipe { display: flex; align-items: stretch; gap: .6rem; flex-wrap: wrap; margin: .8rem 0; }
+    .step { flex: 1 1 220px; background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 10px; padding: .8rem .95rem; }
+    .step b { font-family: 'SFMono-Regular', Menlo, Consolas, monospace; font-size: .9rem; }
+    .step p { font-size: .9rem; margin: .3rem 0 0; color: var(--muted); }
+
+    .back { margin-top: 2rem; }
+    .back a { display: inline-flex; align-items: center; gap: .4rem; color: var(--muted); text-decoration: none; font-weight: 600; }
+    .back a:hover { color: var(--accent); }
+    footer { border-top: 1px solid var(--line); margin-top: 2.4rem; padding-top: 1.2rem; color: var(--muted); font-size: .85rem; }
+
+    @media (max-width: 680px) {
+      .states { grid-template-columns: 1fr; }
+      .state .canvas, .state img { height: auto; max-height: 360px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="crumb">
+      <a href="../"><span class="lab">lab</span>.infinite.pm</a>
+      <span class="sep">/</span>
+      <span class="here">zoom-layout</span>
+    </nav>
+
+    <header class="exp">
+      <div class="meta">
+        <span class="badge">2026-04-22</span>
+        <span class="badge wip">● work in progress</span>
+        <span class="badge">260422-zoomlayout</span>
+      </div>
+      <h1><span class="em">Zoom</span> layout</h1>
+      <p class="sub">Pre-computed zoom states that expand composite <span class="e">events</span> in place — so one ipm graph stays readable from a coarse overview all the way down to full detail.</p>
+    </header>
+
+    <section class="states" aria-label="Three zoom states of the same ipm graph">
+      <figure class="state">
+        <div class="canvas"><img src="z-around.svg" alt="Collapsed 'around' zoom state: a handful of composite events."></div>
+        <figcaption class="cap"><b>around</b><span>coarse overview</span></figcaption>
+      </figure>
+      <figure class="state">
+        <div class="canvas"><img src="z-mid.svg" alt="Intermediate zoom state: one composite event expanded into its sub-events inside a container."></div>
+        <figcaption class="cap"><b>around + detail</b><span>one event expanded in place</span></figcaption>
+      </figure>
+      <figure class="state">
+        <div class="canvas"><img src="z-detail.svg" alt="Fully expanded zoom state: the whole nested event tree with things and concepts."></div>
+        <figcaption class="cap"><b>detail</b><span>fully expanded</span></figcaption>
+      </figure>
+    </section>
+    <p class="arrowy">scroll&nbsp; around &rarr; around&nbsp;+&nbsp;detail &rarr; detail &nbsp;(same <code>murder-full</code> graph)</p>
+
+    <div class="body">
+      <h2>The idea</h2>
+      <p>
+        An ipm story is nested: a coarse <span class="e">event</span> hides a whole leads-to chain of sub-events,
+        each of which hides more. Rather than redraw the graph at every step, the layout pre-computes a handful of
+        <em>zoom states</em> and grows the diagram outward — expanding a chosen composite event into a container of
+        its parts while everything around it holds its place.
+      </p>
+
+      <h2>The toolchain</h2>
+      <div class="pipe">
+        <div class="step">
+          <b>.ipmt</b>
+          <p>An ipm graph in text form — the source story.</p>
+        </div>
+        <div class="step">
+          <b>zoomlayout-gen</b>
+          <p>Compiles the graph into a <code>.zoomlayout.json</code>: a set of zoom states and node positions. Zoom inputs can be given explicitly or auto-detected from the graph.</p>
+        </div>
+        <div class="step">
+          <b>ipm-server canvas</b>
+          <p>Serves the states as pre-rendered SVG on an infinite canvas, with live node expansion via a small API.</p>
+        </div>
+      </div>
+
+      <h2>On the canvas</h2>
+      <ul>
+        <li><b>Scroll</b> to move between pre-computed states (<code>around ↔ around + detail ↔ detail</code>).</li>
+        <li><b>Click a composite event</b> to zoom into its expanded state.</li>
+        <li><b>Click an expandable node</b> (<code>+</code> badge) to pull in hidden neighbours on demand, or collapse them again.</li>
+        <li><b>Drag</b> to pan; <b>Esc</b> or the breadcrumb to step back.</li>
+      </ul>
+
+      <h2>Offline export</h2>
+      <p>
+        A whole canvas can be baked into a single self-contained <code>.zoom.html</code> — every zoom state, node
+        position and pre-rendered SVG inlined, no server required. Open it straight from disk and the
+        scroll / click / expand interactions still work fully offline. Every model in the
+        <a href="../260606-sstcorpus/" style="color:#3a78c2">SSTorytime corpus</a> links its own
+        <code>.zoom.html</code> export.
+      </p>
+
+      <p>The previews above are three of the pre-rendered states for the <code>murder-full</code> example. This is early sandbox tooling — the layout, state model, and canvas are all still moving. Expect rough edges.</p>
+    </div>
+
+    <div class="back">
+      <a href="../">&larr; back to the lab</a>
+    </div>
+
+    <footer>&copy; infinite.pm &middot; <a href="https://infinite.pm" style="color:inherit;">what is ipm?</a></footer>
+  </div>
+</body>
+</html>

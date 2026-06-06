@@ -1,0 +1,55 @@
+u1::a Amos Tversky ::?ce
+u2::a Bruce Bueno de Mesquita ::?ce
+u3::a Daniel Kahneman ::?ce
+u4::a Donella Meadows ::?ce
+u5::a Francis Fukuyama ::?ce
+u6::a James C. Scott ::?ce
+u7::a Judgment under Uncertainty ::?ce "the anchor is almost always the wrong number" ::tip
+u8::a Philip Tetlock ::?ce
+u9::a Seeing Like a State ::?ce "what the centre can measure is not what the edge actually does" ::tip
+u10::a Superforecasting ::?tec "calibration beats cleverness over long horizons" ::tip
+u11::a The Dictators Handbook ::?tec "rulers survive by keeping a small coalition paid" ::tip
+u12::a The Origins of Political Order ::?tec "impersonal institutions are hard to build and easy to lose" ::tip
+u13::a Thinking Fast and Slow ::?ce "two systems, one of them lazy, both of them you" ::tip
+u14::a Thinking in Systems ::?tec "most problems are the shape of a feedback loop" ::tip
+u15::a central planning ::?ce
+u16::a cognitive bias ::?ce
+u17::a complexity ::?ce
+u18::a decision making ::?ce
+u19::a dual-process cognition ::?ce
+u20::a feedback loops ::?ce
+u21::a heuristics ::?ce
+u22::a incentive structures ::?ce
+u23::a legibility ::?ce
+u24::a political coalitions ::?ce
+u25::a prediction ::?ce
+u26::a state formation ::?ce
+
+u10 --::X "is about topic/them"--> u18
+u10 --::X "is about topic/them"--> u25
+u10 --::X "has author"--> u8
+u10 --::X "has bibtex citation"--> u13
+u7 --::X "is about topic/them"--> u21
+u7 --::X "is about topic/them"--> u16
+u7 --::X "has author"--> u3
+u7 --::X "has author"--> u1
+u11 --::X "is about topic/them"--> u24
+u11 --::X "is about topic/them"--> u22
+u11 --::X "has author"--> u2
+u14 --::X "is about topic/them"--> u20
+u14 --::X "is about topic/them"--> u17
+u14 --::X "is about topic/them"--> u18
+u14 --::X "has author"--> u4
+u13 --::X "is about topic/them"--> u18
+u13 --::X "is about topic/them"--> u19
+u13 --::X "is about topic/them"--> u21
+u13 --::X "has author"--> u3
+u13 --::X "has bibtex citation"--> u7
+u9 --::X "is about topic/them"--> u15
+u9 --::X "is about topic/them"--> u23
+u9 --::X "is about topic/them"--> u22
+u9 --::X "has author"--> u6
+u12 --::X "is about topic/them"--> u26
+u12 --::X "is about topic/them"--> u24
+u12 --::X "has author"--> u5
+u12 --::X "has bibtex citation"--> u9

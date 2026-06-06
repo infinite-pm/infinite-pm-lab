@@ -1,0 +1,96 @@
+{
+  "version": "25.09",
+  "src": {
+    "type": "n4l",
+    "ipmt": "",
+    "positions": {
+      "nodes": null,
+      "edges": null
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Do I have the key?",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 2,
+      "name": "End",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 3,
+      "name": "Find Door",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 4,
+      "name": "Get key",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 5,
+      "name": "Open Door",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 6,
+      "name": "Start",
+      "alias": "",
+      "type": "Event"
+    }
+  ],
+  "edges": [
+    {
+      "id": 7,
+      "source": 6,
+      "target": 3,
+      "dir": "DirFwd",
+      "tooltip": "next is",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 8,
+      "source": 3,
+      "target": 1,
+      "dir": "DirFwd",
+      "tooltip": "next is",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 9,
+      "source": 5,
+      "target": 2,
+      "dir": "DirFwd",
+      "tooltip": "next is",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 10,
+      "source": 4,
+      "target": 1,
+      "dir": "DirFwd",
+      "tooltip": "next is",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 11,
+      "source": 1,
+      "target": 5,
+      "dir": "DirFwd",
+      "tooltip": "next if yes",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    }
+  ]
+}

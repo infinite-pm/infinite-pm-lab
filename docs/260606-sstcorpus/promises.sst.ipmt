@@ -1,0 +1,9 @@
+u1::a "A promise binding with both plus and minus promises is needed to promise a transfer of intent: \\[  \n   \\begin{aligned}  \n    A_i &\\promise{+b}  A_j\\\\ \n    A_j &\\promise{-b'} A_i\\\\  \n   \\end{aligned} \\] This results in a transmitted intention \\( b \\cap b' \\)" ::?etc
+u2::a "A promise is written: \\[ A_i \\promise{\\pm b}  A_j \\] i.e. An agent \\( A_i \\) makes a promise with content/body \\( b\\) to another \\( A_j\\), where \\( i,j\\) are integer labels." ::?etc
+u3::a "A scoped promise has an extra argument \\[ A_i \\scopepromise{\\pm b}{\\sigma}  A_j \\] where \\(\\sigma\\) is the set-valued scope, i.e. the set of agents that are able to observe the promise." ::?etc
+u4::a A theory of agents that declare their intentions as set-valued specification called promises. ::?etc
+u5::a Agents are autonomous: an agent can only make promises about its own behaviour. ::?etc
+u6::a An agent is written \( A_i \) ::?etc
+u7::a "Impositions are uninvited attempts to induce an agent into promising a behaviour, i.e. according to the imposed body. Like throwing someone a ball uninvited. Impositions are generally ineffective at making agents behave as desired. An imposition is written:  \\[  A_i \\imposition{\\pm b}  A_j  \\] with an arrow looking like a \"fist\"." ::?etc
+u8::a "Promise bodies have signs, e.g. \\(+b\\) or \\(-b\\). A plus sign indicates an offer, a minus sign indicates an promise to accept." ::?etc
+u9::a Several agents are written \( \lbrace A_i \rbrace  \) ::?etc

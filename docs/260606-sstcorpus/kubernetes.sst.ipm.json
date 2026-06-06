@@ -1,0 +1,2703 @@
+{
+  "version": "25.09",
+  "src": {
+    "type": "n4l-sst-native",
+    "ipmt": "",
+    "positions": {
+      "nodes": null,
+      "edges": null
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "\"client certs\" or \"service account tokens\"",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 2,
+      "name": "\"control plane\" and worker nodes",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "A \"root certificate\" should be installed on each node",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "A CRD defines a new resource version",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 5,
+      "name": "A pod",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "A user applies pod.yaml",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 7,
+      "name": "API",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 8,
+      "name": "API server",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 9,
+      "name": "API server using injected credentials",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "API server, scheduler, controller-manager, etcd",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "An approach to testing, security scanning, and deployment",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "CI",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 13,
+      "name": "CI/CD",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "CNCF",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "CRD",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 16,
+      "name": "CRD scope",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 17,
+      "name": "CRDs",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 18,
+      "name": "CSI",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 19,
+      "name": "Continuous Integration / Continuous Deployment",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Custom Resource Definition",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "EBS",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 22,
+      "name": "Google",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 23,
+      "name": "K8s",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Kubernetes",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 25,
+      "name": "Kubernetes uses a \u003e\"hub-and-spoke API pattern\". All API usage terminates at the API server.",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 26,
+      "name": "Linux control groups",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 27,
+      "name": "NFS",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 28,
+      "name": "Observing the \"actual state\" and compares to the \"desired state\". It infers the steps needed to achieve promised state.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ],
+      "tooltip": "This is a kind of abductive reasoning."
+    },
+    {
+      "id": 29,
+      "name": "One-container-per-pod",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 30,
+      "name": "PV",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 31,
+      "name": "PVC",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 32,
+      "name": "PVC to request volumes on demand",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 33,
+      "name": "Persistent Volume",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 34,
+      "name": "Persistent Volume Claim",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 35,
+      "name": "Restarting a container",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 36,
+      "name": "Storage",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 37,
+      "name": "Storage Class",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 38,
+      "name": "The API server stores the pod spec in etcd",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 39,
+      "name": "The kubelet starts containers on the node",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 40,
+      "name": "The operator observes outdated version",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 41,
+      "name": "The operator transforms the resource to new spec",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 42,
+      "name": "The scheduler binds the pod to a node",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 43,
+      "name": "The system reaches new desired state",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 44,
+      "name": "This is a kind of abductive reasoning.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 45,
+      "name": "This pattern",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 46,
+      "name": "To create a pod",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 47,
+      "name": "To do an operator-upgrade",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 48,
+      "name": "Volumes in Kubernetes can be ephemeral or persistent. Ephemeral volumes exist only during the pod’s lifetime, while persistent volumes survive pod restarts or rescheduling.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 49,
+      "name": "When you create a new CRD, the Kubernetes API Server creates a new RESTful resource path for each version you specify.",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 50,
+      "name": "a container orchestration system",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 51,
+      "name": "a control loop",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 52,
+      "name": "a controller pattern",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 53,
+      "name": "a piece of storage in the cluster",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 54,
+      "name": "a pod to mount storage",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 55,
+      "name": "a process",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 56,
+      "name": "a request for storage by a user",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 57,
+      "name": "a shared execution context",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 58,
+      "name": "a way to extend the API",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 59,
+      "name": "abductive",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 60,
+      "name": "abstraction over storage backend e.g. EBS, NFS, CSI",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 61,
+      "name": "actual state",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 62,
+      "name": "an administrator or a Storage Class",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 63,
+      "name": "an environment for running containers",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 64,
+      "name": "automated certificate provisioning",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 65,
+      "name": "automation",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 66,
+      "name": "autonomous",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 67,
+      "name": "autonomous agents making and keeping promises and demonstrates distributed cooperation without central control",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 68,
+      "name": "bare metal",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 69,
+      "name": "bearer",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 70,
+      "name": "bearer token and root certificate into pods",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 71,
+      "name": "can be injected into running pods without restarting them",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 72,
+      "name": "capacity and access modes",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 73,
+      "name": "cgroup v1",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 74,
+      "name": "cgroups for container resource isolation",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 75,
+      "name": "client certificate",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 76,
+      "name": "client certs",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 77,
+      "name": "cluster",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 78,
+      "name": "cluster scope",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 79,
+      "name": "commands like:\n  \"kubectl get pods -n kube-system\"\n  \"kubectl apply -f https://github.com/app.yml\"",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 80,
+      "name": "compares \"desired state\" and \"actual state\"",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 81,
+      "name": "complex applications and their components",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 82,
+      "name": "consumer's promise",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 83,
+      "name": "container",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 84,
+      "name": "containerd",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 85,
+      "name": "containers",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 86,
+      "name": "control",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 87,
+      "name": "control plane",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 88,
+      "name": "controller",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 89,
+      "name": "controllers",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 90,
+      "name": "cooperation",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 91,
+      "name": "debugging",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 92,
+      "name": "debugging a running pod",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 93,
+      "name": "declarative",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 94,
+      "name": "declarative automation of containerized workloads",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 95,
+      "name": "deployment",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 96,
+      "name": "desired state",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 97,
+      "name": "do not run at pod startup",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 98,
+      "name": "docker",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 99,
+      "name": "during pod startup",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 100,
+      "name": "environment",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 101,
+      "name": "ephemeral",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 102,
+      "name": "ephemeral containers",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 103,
+      "name": "etcd",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 104,
+      "name": "execution",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 105,
+      "name": "hub of the cluster API",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 106,
+      "name": "init",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 107,
+      "name": "init containers",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 108,
+      "name": "interact with Kubernetes via CLI",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 109,
+      "name": "kube-proxy",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 110,
+      "name": "kubectl",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 111,
+      "name": "kubelet",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 112,
+      "name": "kubelet TLS bootstrapping",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 113,
+      "name": "kubelet and container runtime",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 114,
+      "name": "lifecycle of individual pods",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 115,
+      "name": "logging",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 116,
+      "name": "logging, proxying, service mesh, and other supportive tasks",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 117,
+      "name": "main application container",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 118,
+      "name": "main application containers",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 119,
+      "name": "managed Kubernetes",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 120,
+      "name": "managed as a cluster resource",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 121,
+      "name": "multiple co-located containers that are tightly coupled",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 122,
+      "name": "namespaces",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 123,
+      "name": "new RESTful resource paths",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 124,
+      "name": "node",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 125,
+      "name": "nodes",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 126,
+      "name": "one or more containers",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 127,
+      "name": "operator",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 128,
+      "name": "or \"pea pod\"",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 129,
+      "name": "orchestration",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 130,
+      "name": "parameters for dynamic volume provisioning",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 131,
+      "name": "persistent",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 132,
+      "name": "persists until deleted",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 133,
+      "name": "pod",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 134,
+      "name": "pod of whales",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 135,
+      "name": "pod restart policy",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 136,
+      "name": "pod, PVC, controller",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 137,
+      "name": "pods",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 138,
+      "name": "pods to be rescheduled without data loss",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 139,
+      "name": "process",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 140,
+      "name": "promises",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 141,
+      "name": "promises that define system state",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 142,
+      "name": "proxying",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 143,
+      "name": "reconciliation",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 144,
+      "name": "resources",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 145,
+      "name": "resources allocated to processes",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 146,
+      "name": "root",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 147,
+      "name": "root certificate",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 148,
+      "name": "scheduler",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 149,
+      "name": "security",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 150,
+      "name": "self-hosted",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 151,
+      "name": "separation of concerns",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 152,
+      "name": "service",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 153,
+      "name": "service IPs to API server HTTPS endpoints",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 154,
+      "name": "service account",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 155,
+      "name": "service account tokens",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 156,
+      "name": "setup tasks like config init or dependency checks",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 157,
+      "name": "sidecar container",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 158,
+      "name": "sidecars",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 159,
+      "name": "sidecars, init containers, and debugging",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 160,
+      "name": "size and access requirements",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 161,
+      "name": "storage decoupling from the lifecycle of pods",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 162,
+      "name": "testing",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 163,
+      "name": "the main container",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 164,
+      "name": "the pod’s network and storage context",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 165,
+      "name": "the same as restarting a pod",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 166,
+      "name": "the smallest deployable computing unit in Kubernetes",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 167,
+      "name": "usage pattern",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 168,
+      "name": "v2",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ],
+      "tooltip": "this is the new generation"
+    },
+    {
+      "id": 169,
+      "name": "with \"client certificate\"",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 170,
+      "name": "worker",
+      "alias": "",
+      "type": "Thing"
+    }
+  ],
+  "edges": [
+    {
+      "id": 0,
+      "source": 24,
+      "target": 94,
+      "dir": "",
+      "tooltip": "enables",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 24,
+      "target": 67,
+      "dir": "",
+      "tooltip": "implements",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 24,
+      "target": 50,
+      "dir": "",
+      "tooltip": "represents/models",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 24,
+      "target": 24,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 23,
+      "target": 24,
+      "dir": "",
+      "tooltip": "has abbreviation",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 22,
+      "target": 24,
+      "dir": "",
+      "tooltip": "founds/founded",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 14,
+      "target": 24,
+      "dir": "",
+      "tooltip": "maintains",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 133,
+      "target": 9,
+      "dir": "",
+      "tooltip": "connects to",
+      "sstLinkType": "NearTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 133,
+      "target": 134,
+      "dir": "",
+      "tooltip": "named after",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 126,
+      "target": 133,
+      "dir": "",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 133,
+      "target": 166,
+      "dir": "",
+      "tooltip": "represents/models",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 89,
+      "target": 133,
+      "dir": "",
+      "tooltip": "manages",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 89,
+      "target": 89,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 84,
+      "target": 83,
+      "dir": "",
+      "tooltip": "manages",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 84,
+      "target": 84,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 110,
+      "target": 79,
+      "dir": "",
+      "tooltip": "runs or executes",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 110,
+      "target": 108,
+      "dir": "",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 127,
+      "target": 52,
+      "dir": "",
+      "tooltip": "implements",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 127,
+      "target": 81,
+      "dir": "",
+      "tooltip": "manages",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 88,
+      "target": 51,
+      "dir": "",
+      "tooltip": "implements",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 88,
+      "target": 143,
+      "dir": "",
+      "tooltip": "implements",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 88,
+      "target": 80,
+      "dir": "",
+      "tooltip": "has behaviour",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 17,
+      "target": 127,
+      "dir": "",
+      "tooltip": "is used by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 17,
+      "target": 17,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 125,
+      "target": 8,
+      "dir": "",
+      "tooltip": "https connection with",
+      "sstLinkType": "NearTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 125,
+      "target": 125,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 109,
+      "target": 153,
+      "dir": "",
+      "tooltip": "redirects",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 15,
+      "target": 58,
+      "dir": "",
+      "tooltip": "implements",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 15,
+      "target": 123,
+      "dir": "",
+      "tooltip": "creates",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 15,
+      "target": 127,
+      "dir": "",
+      "tooltip": "is used by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 122,
+      "target": 16,
+      "dir": "",
+      "tooltip": "is used by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 143,
+      "target": 28,
+      "dir": "",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 31,
+      "target": 161,
+      "dir": "",
+      "tooltip": "enables",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 31,
+      "target": 31,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 31,
+      "target": 138,
+      "dir": "",
+      "tooltip": "has behaviour",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 30,
+      "target": 30,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 2,
+      "target": 77,
+      "dir": "",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 124,
+      "target": 113,
+      "dir": "",
+      "tooltip": "runs or executes",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 111,
+      "target": 169,
+      "dir": "",
+      "tooltip": "authenticates",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 13,
+      "target": 12,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 13,
+      "target": 11,
+      "dir": "",
+      "tooltip": "represents/models",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 167,
+      "target": 29,
+      "dir": "",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 5,
+      "target": 55,
+      "dir": "",
+      "tooltip": "not the same as",
+      "sstLinkType": "NearTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 121,
+      "target": 5,
+      "dir": "",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 5,
+      "target": 133,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 5,
+      "target": 132,
+      "dir": "",
+      "tooltip": "has behaviour",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 45,
+      "target": 159,
+      "dir": "",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 55,
+      "target": 5,
+      "dir": "",
+      "tooltip": "not the same as",
+      "sstLinkType": "NearTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 55,
+      "target": 139,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 107,
+      "target": 99,
+      "dir": "",
+      "tooltip": "runs or executes",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 107,
+      "target": 118,
+      "dir": "",
+      "tooltip": "needs to run or execute before",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 107,
+      "target": 106,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 107,
+      "target": 156,
+      "dir": "",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 102,
+      "target": 92,
+      "dir": "",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 102,
+      "target": 71,
+      "dir": "",
+      "tooltip": "has behaviour",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 102,
+      "target": 97,
+      "dir": "",
+      "tooltip": "obeys the rule",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 157,
+      "target": 117,
+      "dir": "",
+      "tooltip": "runs alongside",
+      "sstLinkType": "NearTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 157,
+      "target": 163,
+      "dir": "",
+      "tooltip": "terminates together with",
+      "sstLinkType": "NearTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 157,
+      "target": 151,
+      "dir": "",
+      "tooltip": "enables",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 157,
+      "target": 116,
+      "dir": "",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 8,
+      "target": 125,
+      "dir": "",
+      "tooltip": "https connection with",
+      "sstLinkType": "NearTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 8,
+      "target": 105,
+      "dir": "",
+      "tooltip": "represents/models",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 154,
+      "target": 70,
+      "dir": "",
+      "tooltip": "injects",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 78,
+      "target": 16,
+      "dir": "",
+      "tooltip": "is used by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 33,
+      "target": 31,
+      "dir": "",
+      "tooltip": "binds to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 33,
+      "target": 30,
+      "dir": "",
+      "tooltip": "has abbreviation",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 33,
+      "target": 53,
+      "dir": "",
+      "tooltip": "represents/models",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 33,
+      "target": 120,
+      "dir": "",
+      "tooltip": "has behaviour",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 33,
+      "target": 72,
+      "dir": "",
+      "tooltip": "promises",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 37,
+      "target": 130,
+      "dir": "",
+      "tooltip": "determines",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 37,
+      "target": 32,
+      "dir": "",
+      "tooltip": "is used by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 37,
+      "target": 36,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 37,
+      "target": 60,
+      "dir": "",
+      "tooltip": "represents/models",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 10,
+      "target": 87,
+      "dir": "",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 52,
+      "target": 88,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 35,
+      "target": 165,
+      "dir": "",
+      "tooltip": "not the same as",
+      "sstLinkType": "NearTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 35,
+      "target": 83,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 102,
+      "target": 135,
+      "dir": "",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 117,
+      "target": 157,
+      "dir": "",
+      "tooltip": "runs alongside",
+      "sstLinkType": "NearTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 163,
+      "target": 157,
+      "dir": "",
+      "tooltip": "terminates together with",
+      "sstLinkType": "NearTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 20,
+      "target": 15,
+      "dir": "",
+      "tooltip": "has abbreviation",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 51,
+      "target": 86,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 136,
+      "target": 133,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 136,
+      "target": 31,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 136,
+      "target": 88,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 136,
+      "target": 141,
+      "dir": "",
+      "tooltip": "expresses property",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 34,
+      "target": 160,
+      "dir": "",
+      "tooltip": "determines",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 34,
+      "target": 30,
+      "dir": "",
+      "tooltip": "binds to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 34,
+      "target": 54,
+      "dir": "",
+      "tooltip": "is used by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 34,
+      "target": 31,
+      "dir": "",
+      "tooltip": "has abbreviation",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 34,
+      "target": 56,
+      "dir": "",
+      "tooltip": "represents/models",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 34,
+      "target": 82,
+      "dir": "",
+      "tooltip": "represents/models",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 169,
+      "target": 75,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 112,
+      "target": 64,
+      "dir": "",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 26,
+      "target": 145,
+      "dir": "",
+      "tooltip": "constrains",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 26,
+      "target": 73,
+      "dir": "",
+      "tooltip": "has version",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 26,
+      "target": 168,
+      "dir": "",
+      "tooltip": "has version",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 50,
+      "target": 83,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 50,
+      "target": 129,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 94,
+      "target": 93,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 94,
+      "target": 65,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 126,
+      "target": 85,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 57,
+      "target": 133,
+      "dir": "",
+      "tooltip": "runs or executes",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 57,
+      "target": 104,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 108,
+      "target": 24,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 159,
+      "target": 158,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 159,
+      "target": 106,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 159,
+      "target": 91,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 63,
+      "target": 100,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 63,
+      "target": 5,
+      "dir": "",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 165,
+      "target": 35,
+      "dir": "",
+      "tooltip": "not the same as",
+      "sstLinkType": "NearTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 165,
+      "target": 133,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 157,
+      "target": 164,
+      "dir": "",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 164,
+      "target": 133,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 116,
+      "target": 115,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 116,
+      "target": 142,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 116,
+      "target": 152,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 1,
+      "target": 8,
+      "dir": "",
+      "tooltip": "authenticates",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 1,
+      "target": 76,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 1,
+      "target": 155,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 70,
+      "target": 69,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 70,
+      "target": 146,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 153,
+      "target": 7,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 80,
+      "target": 96,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 80,
+      "target": 61,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 28,
+      "target": 61,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 28,
+      "target": 96,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 44,
+      "target": 59,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 67,
+      "target": 66,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 67,
+      "target": 90,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 141,
+      "target": 140,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 62,
+      "target": 33,
+      "dir": "",
+      "tooltip": "provisions",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 62,
+      "target": 36,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 54,
+      "target": 133,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 32,
+      "target": 31,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 60,
+      "target": 21,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 60,
+      "target": 27,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 60,
+      "target": 18,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 161,
+      "target": 137,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 114,
+      "target": 30,
+      "dir": "",
+      "tooltip": "doesn't affect",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 114,
+      "target": 137,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 2,
+      "target": 87,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 2,
+      "target": 170,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 10,
+      "target": 7,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 10,
+      "target": 148,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 10,
+      "target": 88,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 10,
+      "target": 103,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 113,
+      "target": 111,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 113,
+      "target": 83,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 3,
+      "target": 147,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 3,
+      "target": 124,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 9,
+      "target": 133,
+      "dir": "",
+      "tooltip": "connects to",
+      "sstLinkType": "NearTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 9,
+      "target": 7,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 145,
+      "target": 144,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 74,
+      "target": 24,
+      "dir": "",
+      "tooltip": "is used by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 19,
+      "target": 13,
+      "dir": "",
+      "tooltip": "has abbreviation",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 11,
+      "target": 162,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 11,
+      "target": 149,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 11,
+      "target": 95,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 46,
+      "target": 6,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 6,
+      "target": 38,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 38,
+      "target": 42,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 38,
+      "target": 103,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 42,
+      "target": 39,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 47,
+      "target": 4,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 4,
+      "target": 40,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 40,
+      "target": 41,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 41,
+      "target": 43,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 48,
+      "target": 101,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 48,
+      "target": 131,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    }
+  ]
+}

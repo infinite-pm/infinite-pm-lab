@@ -1,0 +1,23 @@
+e1::a L0 ::e
+e2::a L1 ::e
+e3::a L2 ::e
+e4::a L3 ::e
+e5::a L4 ::e
+e6::a L5 ::e
+e7::a L6 ::e
+e8::a L7 ::e
+e9::a L8 ::e
+e10::a L9 ::e
+
+e1 --::L "then followed by"--> e2
+e2 --::L "then followed by"--> e3
+e3 --::L "then followed by"--> e4
+e4 --::L "then followed by"--> e2
+e4 --::L "then followed by"--> e5
+e5 --::L "then followed by"--> e6
+e6 --::L "then followed by"--> e7
+e7 --::L "then followed by"--> e8
+e8 --::L "then followed by"--> e6
+e8 --::L "then followed by"--> e9
+e8 --::L "then followed by"--> e10
+e9 --::L "then followed by"--> e6

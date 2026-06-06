@@ -1,0 +1,280 @@
+{
+  "version": "25.09",
+  "src": {
+    "type": "n4l",
+    "ipmt": "",
+    "positions": {
+      "nodes": null,
+      "edges": null
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Internet",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 2,
+      "name": "The Industrialized",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 3,
+      "name": "The Uncharted",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 4,
+      "name": "citizenship",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 5,
+      "name": "cryptography",
+      "alias": "",
+      "type": "Event",
+      "tooltip": "de facto starting point"
+    },
+    {
+      "id": 6,
+      "name": "digital currency",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 7,
+      "name": "digital identity",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 8,
+      "name": "encryption",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 9,
+      "name": "global network",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 10,
+      "name": "individual sovereignty",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 11,
+      "name": "nation state",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 12,
+      "name": "personal security",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 13,
+      "name": "sovereign individual",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 14,
+      "name": "tax system",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 15,
+      "name": "territorial control",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 16,
+      "name": "unknown",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 17,
+      "name": "wealth presentation",
+      "alias": "",
+      "type": "Event"
+    }
+  ],
+  "edges": [
+    {
+      "id": 18,
+      "source": 5,
+      "target": 7,
+      "dir": "DirFwd",
+      "tooltip": "develops into",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 19,
+      "source": 5,
+      "target": 6,
+      "dir": "DirFwd",
+      "tooltip": "matures into",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 20,
+      "source": 16,
+      "target": 5,
+      "dir": "DirFwd",
+      "tooltip": "develops into",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 21,
+      "source": 8,
+      "target": 12,
+      "dir": "DirFwd",
+      "tooltip": "develops into",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 22,
+      "source": 4,
+      "target": 13,
+      "dir": "DirFwd",
+      "tooltip": "develops into",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 23,
+      "source": 4,
+      "target": 2,
+      "dir": "DirFwd",
+      "tooltip": "approximates to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 24,
+      "source": 1,
+      "target": 15,
+      "dir": "DirFwd",
+      "tooltip": "develops into",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 25,
+      "source": 1,
+      "target": 16,
+      "dir": "DirFwd",
+      "tooltip": "develops into",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 26,
+      "source": 1,
+      "target": 9,
+      "dir": "DirFwd",
+      "tooltip": "develops into",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 27,
+      "source": 10,
+      "target": 13,
+      "dir": "DirFwd",
+      "tooltip": "matures into",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 28,
+      "source": 10,
+      "target": 3,
+      "dir": "DirFwd",
+      "tooltip": "approximates to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 29,
+      "source": 7,
+      "target": 10,
+      "dir": "DirFwd",
+      "tooltip": "develops into",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 30,
+      "source": 17,
+      "target": 13,
+      "dir": "DirFwd",
+      "tooltip": "matures into",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 31,
+      "source": 6,
+      "target": 17,
+      "dir": "DirFwd",
+      "tooltip": "develops into",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 32,
+      "source": 12,
+      "target": 13,
+      "dir": "DirFwd",
+      "tooltip": "matures into",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 33,
+      "source": 14,
+      "target": 8,
+      "dir": "DirFwd",
+      "tooltip": "matures into",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 34,
+      "source": 9,
+      "target": 11,
+      "dir": "DirFwd",
+      "tooltip": "matures into",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 35,
+      "source": 11,
+      "target": 4,
+      "dir": "DirFwd",
+      "tooltip": "develops into",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    }
+  ]
+}

@@ -1,0 +1,4502 @@
+{
+  "version": "25.09",
+  "src": {
+    "type": "n4l",
+    "ipmt": "",
+    "positions": {
+      "nodes": null,
+      "edges": null
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Afraid of not being liked or accepted",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Because I'm scared. Really scared.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Bù bèi ài de rén kàn dǒng",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 4,
+      "name": "Bù tíng de xiàng xià zhuìluò",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 5,
+      "name": "Bù zài kěqiú bèi rén wéirào",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 6,
+      "name": "Countless disappointments, no hope",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Cóngxiǎo qìle yīdào qiáng",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 8,
+      "name": "Didn't tell anyone, ah",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Discovered you here too",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Dàgài yǒu 3000 mǐ gāo",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 11,
+      "name": "Dōngdǎo-xīwāi",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 12,
+      "name": "Escaped a thunderstorm",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Going around in circles",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Hàipà bù  bèi xǐhuān  bù bèi jiēshòu",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 15,
+      "name": "Hào jìn xīwàng",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 16,
+      "name": "I don't understand where I went wrong",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "I will be heartbroken before I wake up from the dream",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "In this colourful world",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Just don't look back",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Kěyǐ ānquán de jiàngluò",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 21,
+      "name": "Mama, I grew up",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Maybe 3,000 meters high",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Miàn duì shēngmìng měi gè gǎibiàn",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 24,
+      "name": "Mom, I grew up.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Mèng xǐng zhīqián huì xīn shāng",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 26,
+      "name": "Méi duì shéi shuō, ya",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 27,
+      "name": "Méiyǒu dōngxī kěyǐ zhuā zhù",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 28,
+      "name": "Māmā wǒ zhǎng dà le",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 29,
+      "name": "Māmā wǒ zhǎng dàle",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 30,
+      "name": "No longer afraid of broken trust",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 31,
+      "name": "No longer blaming fruitless love.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 32,
+      "name": "No longer blaming.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 33,
+      "name": "No longer filling in all the blanks.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 34,
+      "name": "No longer longing to be surrounded by people",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 35,
+      "name": "No longer needing too many smiles",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 36,
+      "name": "No longer sad about all the departures.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Non stop falling",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 38,
+      "name": "People who are not loved understand",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 39,
+      "name": "The one who can save me is you",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 40,
+      "name": "There are some things I don't know how to say, ah",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 41,
+      "name": "There is no ground at all",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 42,
+      "name": "There's nothing to grab",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 43,
+      "name": "Táoguòle léidiàn kuángfēng",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 44,
+      "name": "Vain hope falls into the black hole of the heart",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 45,
+      "name": "We are falling through the air",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 46,
+      "name": "We drift with the tide",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 47,
+      "name": "Wéiyī bù biàn shì shàn biàn",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 48,
+      "name": "Wúshù shīwàng wú kě jì wàng",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 49,
+      "name": "Wǒmen suí bō piāoliú",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 50,
+      "name": "Wǒmen zài kōngzhōng zhuìluò",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 51,
+      "name": "Xīwàng luòkōng diào jìn xīnlǐ de hēidòng",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 52,
+      "name": "Yě gēnběn méiyǒu dìmiàn",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 53,
+      "name": "Yě táo bù kāi nǐ",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 54,
+      "name": "Yīnwèi wǒ hàipà,  zhēn de hàipà",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 55,
+      "name": "Yǒuxiē huà bùzhī gāi zěnme shuō, ya",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 56,
+      "name": "Zhēnzhèng de yǒnggǎn",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 57,
+      "name": "Zhōngyú míngbái",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 58,
+      "name": "Zhǐshì bùyào huítóu kàn",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 59,
+      "name": "Zài zhè huāhuā shìjiè",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 60,
+      "name": "a wall",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 61,
+      "name": "accept",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 62,
+      "name": "air",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 63,
+      "name": "all the ..",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 64,
+      "name": "around",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 65,
+      "name": "black hole",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 66,
+      "name": "blame, accuse",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 67,
+      "name": "blanks, gaps",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 68,
+      "name": "build built",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 69,
+      "name": "built a wall since I was a kid.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 70,
+      "name": "but can't escape you",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 71,
+      "name": "by, being, to \"be\"",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 72,
+      "name": "bèi",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 73,
+      "name": "bù míngbái wǒ cuò zài nǎlǐ",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 74,
+      "name": "bù tíng",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 75,
+      "name": "bù zài hàipà fāxiàn wǒ yě zài zhè",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 76,
+      "name": "bù zài hàipà xìnrèn huài diào",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 77,
+      "name": "bù zài kěqiú wǒ de yǒngbào",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 78,
+      "name": "bù zài nánguò suǒyǒu líkāi",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 79,
+      "name": "bù zài tiánbǔ suǒyǒu kòngbái",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 80,
+      "name": "bù zài xūyào tài duō wéixiào",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 81,
+      "name": "bù zài xūyào wǒ de rènkě",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 82,
+      "name": "bù zài zhǐzé bù zài zhǐzé",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 83,
+      "name": "bù zài zhǐzé wú guǒ de ài",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 84,
+      "name": "catch, grab hold of",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 85,
+      "name": "coming down",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 86,
+      "name": "detail, take into custody",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 87,
+      "name": "discover",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 88,
+      "name": "diào",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 89,
+      "name": "diào jìn",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 90,
+      "name": "dōudou zhuǎn zhuǎn",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 91,
+      "name": "escape",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 92,
+      "name": "facing every change in life",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 93,
+      "name": "failed, in vain",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 94,
+      "name": "fall",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 95,
+      "name": "fall drop reduce",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 96,
+      "name": "fall into",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 97,
+      "name": "fill",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 98,
+      "name": "fāxiàn",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 99,
+      "name": "fāxiàn nǐ yě zài zhèlǐ",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 100,
+      "name": "heart",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 101,
+      "name": "huài",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 102,
+      "name": "hēidòng",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 103,
+      "name": "in the dark",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 104,
+      "name": "jiēshòu",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 105,
+      "name": "kàndǒng",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 106,
+      "name": "kòngbái",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 107,
+      "name": "kěqiú  渴求 desire",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 108,
+      "name": "kōngzhōng",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 109,
+      "name": "luòkōng",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 110,
+      "name": "luòxià",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 111,
+      "name": "léidiàn kuángfēng",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 112,
+      "name": "no longer afraid to discover that I'm here too.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 113,
+      "name": "no longer longing for your hugs",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 114,
+      "name": "no longer needing your approval",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 115,
+      "name": "non stop",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 116,
+      "name": "néng jiù wǒ de shì nǐ",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 117,
+      "name": "qiáng",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 118,
+      "name": "qìle",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 119,
+      "name": "ruined broken",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 120,
+      "name": "running out of hope",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 121,
+      "name": "say -- ah",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 122,
+      "name": "shuō ya - in the song",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 123,
+      "name": "shòu yā",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 124,
+      "name": "shōuyā",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 125,
+      "name": "smile",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 126,
+      "name": "suǒyǒu",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 127,
+      "name": "the only constant is change",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 128,
+      "name": "thunderstorm / thunder,lightning,great,wind",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 129,
+      "name": "tiánbǔ",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 130,
+      "name": "to be able to land safely",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 131,
+      "name": "true bravery",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 132,
+      "name": "trust",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 133,
+      "name": "tumbling unsteadily",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 134,
+      "name": "táoguò",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 135,
+      "name": "ultimately understand",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 136,
+      "name": "under pressure",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 137,
+      "name": "understand",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 138,
+      "name": "wall",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 139,
+      "name": "with a clear head/peace of mind, think",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 140,
+      "name": "wéirào",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 141,
+      "name": "wéixiào",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 142,
+      "name": "xìnrèn",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 143,
+      "name": "xīn'ānlǐdé yǐwéi",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 144,
+      "name": "xīnlǐ",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 145,
+      "name": "yīdào qiáng",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 146,
+      "name": "zhuìluò",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 147,
+      "name": "zhuā zhù",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 148,
+      "name": "zhǐzé",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 149,
+      "name": "zài hēi'àn lǐ",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 150,
+      "name": "一道墙",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 151,
+      "name": "不停",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 152,
+      "name": "不停的向下坠落",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 153,
+      "name": "不再填补 所有空白",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 154,
+      "name": "不再害怕 信任坏掉",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 155,
+      "name": "不再害怕 发现我也在这",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 156,
+      "name": "不再指责 不再指责",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 157,
+      "name": "不再指责 无果的爱",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 158,
+      "name": "不再渴求 我的拥抱",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 159,
+      "name": "不再渴求 被人围绕",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 160,
+      "name": "不再难过 所有离开",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 161,
+      "name": "不再需要 太多微笑",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 162,
+      "name": "不再需要 我的认可",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 163,
+      "name": "不明白我错在哪里",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 164,
+      "name": "不被爱的人看懂",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 165,
+      "name": "东倒西歪",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 166,
+      "name": "也根本没有地面",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 167,
+      "name": "也逃不开你",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 168,
+      "name": "从小砌了一道墙",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 169,
+      "name": "信任",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 170,
+      "name": "兜兜转转",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 171,
+      "name": "发现",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 172,
+      "name": "发现你也在这里",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 173,
+      "name": "受压",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 174,
+      "name": "只是不要 回头看",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 175,
+      "name": "可以安全的降落",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 176,
+      "name": "唯一不变是善变",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 177,
+      "name": "因为我害怕  真的害怕",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 178,
+      "name": "围绕",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 179,
+      "name": "在这花花世界",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 180,
+      "name": "在黑暗里",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 181,
+      "name": "坏",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 182,
+      "name": "坠落",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 183,
+      "name": "填补",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 184,
+      "name": "墙",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 185,
+      "name": "大概有3000米高",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 186,
+      "name": "妈妈 我长大了",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 187,
+      "name": "害怕不被喜欢  不被接受",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 188,
+      "name": "希望落空 掉进心里的黑洞",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 189,
+      "name": "微笑",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 190,
+      "name": "心安理得以为",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 191,
+      "name": "心里",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 192,
+      "name": "我们在空中坠落",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 193,
+      "name": "我们随波漂流",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 194,
+      "name": "所有",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 195,
+      "name": "抓住",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 196,
+      "name": "指责",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 197,
+      "name": "掉",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 198,
+      "name": "掉进",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 199,
+      "name": "接受",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 200,
+      "name": "收押",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 201,
+      "name": "无数失望 无可寄望",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 202,
+      "name": "有些话不知该怎么说呀",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 203,
+      "name": "梦醒之前会 心伤",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 204,
+      "name": "没对谁说呀",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 205,
+      "name": "没有东西 可以抓住",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 206,
+      "name": "看懂",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 207,
+      "name": "真正的勇敢",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 208,
+      "name": "砌了",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 209,
+      "name": "空中",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 210,
+      "name": "空白",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 211,
+      "name": "终于明白",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 212,
+      "name": "耗尽希望",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 213,
+      "name": "能救我的是你",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 214,
+      "name": "落下",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 215,
+      "name": "落空",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 216,
+      "name": "被",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 217,
+      "name": "说 呀",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 218,
+      "name": "逃过",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 219,
+      "name": "逃过了雷电狂风",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 220,
+      "name": "雷电狂风",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 221,
+      "name": "面对生命每个改变",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 222,
+      "name": "黑洞",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": 223,
+      "source": 202,
+      "target": 40,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 224,
+      "source": 204,
+      "target": 8,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 225,
+      "source": 168,
+      "target": 69,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 226,
+      "source": 185,
+      "target": 22,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 227,
+      "source": 164,
+      "target": 38,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 228,
+      "source": 219,
+      "target": 12,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 229,
+      "source": 167,
+      "target": 70,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 230,
+      "source": 180,
+      "target": 103,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 231,
+      "source": 163,
+      "target": 16,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 232,
+      "source": 190,
+      "target": 139,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 233,
+      "source": 213,
+      "target": 39,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 234,
+      "source": 170,
+      "target": 13,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 235,
+      "source": 172,
+      "target": 9,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 236,
+      "source": 192,
+      "target": 45,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 237,
+      "source": 152,
+      "target": 37,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 238,
+      "source": 166,
+      "target": 41,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 239,
+      "source": 175,
+      "target": 130,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 240,
+      "source": 212,
+      "target": 120,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 241,
+      "source": 193,
+      "target": 46,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 242,
+      "source": 179,
+      "target": 18,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 243,
+      "source": 11,
+      "target": 23,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 244,
+      "source": 11,
+      "target": 165,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 245,
+      "source": 11,
+      "target": 133,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 246,
+      "source": 165,
+      "target": 133,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 247,
+      "source": 221,
+      "target": 92,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 248,
+      "source": 207,
+      "target": 131,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 249,
+      "source": 211,
+      "target": 135,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 250,
+      "source": 176,
+      "target": 127,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 251,
+      "source": 140,
+      "target": 178,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 252,
+      "source": 140,
+      "target": 64,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 253,
+      "source": 178,
+      "target": 64,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 254,
+      "source": 141,
+      "target": 189,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 255,
+      "source": 141,
+      "target": 125,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 256,
+      "source": 189,
+      "target": 125,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 257,
+      "source": 142,
+      "target": 169,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 258,
+      "source": 142,
+      "target": 132,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 259,
+      "source": 169,
+      "target": 132,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 260,
+      "source": 101,
+      "target": 181,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 261,
+      "source": 101,
+      "target": 119,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 262,
+      "source": 181,
+      "target": 119,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 263,
+      "source": 88,
+      "target": 197,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 264,
+      "source": 88,
+      "target": 95,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 265,
+      "source": 197,
+      "target": 95,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 266,
+      "source": 144,
+      "target": 191,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 267,
+      "source": 144,
+      "target": 100,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 268,
+      "source": 191,
+      "target": 100,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 269,
+      "source": 102,
+      "target": 222,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 270,
+      "source": 102,
+      "target": 65,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 271,
+      "source": 222,
+      "target": 65,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 272,
+      "source": 109,
+      "target": 215,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 273,
+      "source": 109,
+      "target": 93,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 274,
+      "source": 215,
+      "target": 93,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 275,
+      "source": 198,
+      "target": 96,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 276,
+      "source": 173,
+      "target": 136,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 277,
+      "source": 124,
+      "target": 122,
+      "dir": "DirUndir",
+      "tooltip": "sounds like",
+      "sstLinkType": "NearTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 278,
+      "source": 124,
+      "target": 200,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 279,
+      "source": 124,
+      "target": 86,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 280,
+      "source": 200,
+      "target": 86,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 281,
+      "source": 220,
+      "target": 128,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 282,
+      "source": 134,
+      "target": 218,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 283,
+      "source": 134,
+      "target": 91,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 284,
+      "source": 218,
+      "target": 91,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 285,
+      "source": 98,
+      "target": 171,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 286,
+      "source": 98,
+      "target": 87,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 287,
+      "source": 171,
+      "target": 87,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 288,
+      "source": 118,
+      "target": 208,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 289,
+      "source": 118,
+      "target": 68,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 290,
+      "source": 208,
+      "target": 68,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 291,
+      "source": 117,
+      "target": 184,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 292,
+      "source": 117,
+      "target": 138,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 293,
+      "source": 184,
+      "target": 138,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 294,
+      "source": 150,
+      "target": 60,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 295,
+      "source": 104,
+      "target": 199,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 296,
+      "source": 104,
+      "target": 61,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 297,
+      "source": 199,
+      "target": 61,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 298,
+      "source": 126,
+      "target": 194,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 299,
+      "source": 126,
+      "target": 63,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 300,
+      "source": 194,
+      "target": 63,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 301,
+      "source": 129,
+      "target": 183,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 302,
+      "source": 129,
+      "target": 97,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 303,
+      "source": 183,
+      "target": 97,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 304,
+      "source": 106,
+      "target": 210,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 305,
+      "source": 106,
+      "target": 67,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 306,
+      "source": 210,
+      "target": 67,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 307,
+      "source": 148,
+      "target": 196,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 308,
+      "source": 148,
+      "target": 66,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 309,
+      "source": 196,
+      "target": 66,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 310,
+      "source": 105,
+      "target": 206,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 311,
+      "source": 105,
+      "target": 137,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 312,
+      "source": 206,
+      "target": 137,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 313,
+      "source": 108,
+      "target": 209,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 314,
+      "source": 108,
+      "target": 62,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 315,
+      "source": 209,
+      "target": 62,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 316,
+      "source": 151,
+      "target": 115,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 317,
+      "source": 110,
+      "target": 214,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 318,
+      "source": 110,
+      "target": 94,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 319,
+      "source": 214,
+      "target": 94,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 320,
+      "source": 195,
+      "target": 84,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 321,
+      "source": 146,
+      "target": 182,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 322,
+      "source": 146,
+      "target": 85,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 323,
+      "source": 182,
+      "target": 85,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 324,
+      "source": 72,
+      "target": 216,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 325,
+      "source": 72,
+      "target": 71,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 326,
+      "source": 216,
+      "target": 71,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 327,
+      "source": 186,
+      "target": 21,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 328,
+      "source": 186,
+      "target": 24,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 329,
+      "source": 159,
+      "target": 34,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 330,
+      "source": 161,
+      "target": 35,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 331,
+      "source": 154,
+      "target": 30,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 332,
+      "source": 188,
+      "target": 44,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 333,
+      "source": 143,
+      "target": 116,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 334,
+      "source": 143,
+      "target": 190,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 335,
+      "source": 143,
+      "target": 139,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 336,
+      "source": 158,
+      "target": 113,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 337,
+      "source": 162,
+      "target": 114,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 338,
+      "source": 155,
+      "target": 112,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 339,
+      "source": 201,
+      "target": 6,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 340,
+      "source": 205,
+      "target": 42,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 341,
+      "source": 203,
+      "target": 17,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 342,
+      "source": 174,
+      "target": 19,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 343,
+      "source": 57,
+      "target": 47,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 344,
+      "source": 57,
+      "target": 211,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 345,
+      "source": 57,
+      "target": 135,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 346,
+      "source": 153,
+      "target": 33,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 347,
+      "source": 160,
+      "target": 36,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 348,
+      "source": 156,
+      "target": 32,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 349,
+      "source": 157,
+      "target": 31,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 350,
+      "source": 89,
+      "target": 198,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 351,
+      "source": 89,
+      "target": 96,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 352,
+      "source": 217,
+      "target": 121,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 353,
+      "source": 123,
+      "target": 122,
+      "dir": "DirUndir",
+      "tooltip": "sounds like",
+      "sstLinkType": "NearTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 354,
+      "source": 123,
+      "target": 124,
+      "dir": "DirUndir",
+      "tooltip": "sounds like",
+      "sstLinkType": "NearTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 355,
+      "source": 123,
+      "target": 173,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 356,
+      "source": 123,
+      "target": 136,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 357,
+      "source": 111,
+      "target": 220,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 358,
+      "source": 111,
+      "target": 128,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 359,
+      "source": 145,
+      "target": 150,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 360,
+      "source": 145,
+      "target": 60,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 361,
+      "source": 74,
+      "target": 151,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 362,
+      "source": 74,
+      "target": 115,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 363,
+      "source": 147,
+      "target": 195,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 364,
+      "source": 147,
+      "target": 84,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 365,
+      "source": 177,
+      "target": 2,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 366,
+      "source": 187,
+      "target": 1,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 367,
+      "source": 43,
+      "target": 53,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 368,
+      "source": 43,
+      "target": 219,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 369,
+      "source": 43,
+      "target": 12,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 370,
+      "source": 149,
+      "target": 73,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 371,
+      "source": 149,
+      "target": 180,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 372,
+      "source": 149,
+      "target": 103,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 373,
+      "source": 90,
+      "target": 99,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 374,
+      "source": 90,
+      "target": 170,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 375,
+      "source": 90,
+      "target": 13,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 376,
+      "source": 15,
+      "target": 25,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 377,
+      "source": 15,
+      "target": 212,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 378,
+      "source": 15,
+      "target": 120,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 379,
+      "source": 56,
+      "target": 58,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 380,
+      "source": 56,
+      "target": 207,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 381,
+      "source": 56,
+      "target": 131,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 382,
+      "source": 28,
+      "target": 5,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 383,
+      "source": 28,
+      "target": 186,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 384,
+      "source": 5,
+      "target": 80,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 385,
+      "source": 5,
+      "target": 159,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 386,
+      "source": 5,
+      "target": 34,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 387,
+      "source": 80,
+      "target": 76,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 388,
+      "source": 80,
+      "target": 161,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 389,
+      "source": 80,
+      "target": 35,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 390,
+      "source": 76,
+      "target": 55,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 391,
+      "source": 76,
+      "target": 154,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 392,
+      "source": 76,
+      "target": 30,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 393,
+      "source": 55,
+      "target": 26,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 394,
+      "source": 55,
+      "target": 202,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 395,
+      "source": 55,
+      "target": 40,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 396,
+      "source": 26,
+      "target": 7,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 397,
+      "source": 26,
+      "target": 204,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 398,
+      "source": 26,
+      "target": 8,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 399,
+      "source": 7,
+      "target": 10,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 400,
+      "source": 7,
+      "target": 168,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 401,
+      "source": 7,
+      "target": 69,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 402,
+      "source": 10,
+      "target": 54,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 403,
+      "source": 10,
+      "target": 185,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 404,
+      "source": 10,
+      "target": 22,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 405,
+      "source": 54,
+      "target": 14,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 406,
+      "source": 54,
+      "target": 177,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 407,
+      "source": 54,
+      "target": 2,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 408,
+      "source": 14,
+      "target": 3,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 409,
+      "source": 14,
+      "target": 187,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 410,
+      "source": 14,
+      "target": 1,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 411,
+      "source": 3,
+      "target": 51,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 412,
+      "source": 3,
+      "target": 164,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 413,
+      "source": 3,
+      "target": 38,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 414,
+      "source": 51,
+      "target": 43,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 415,
+      "source": 51,
+      "target": 188,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 416,
+      "source": 51,
+      "target": 44,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 417,
+      "source": 53,
+      "target": 149,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 418,
+      "source": 53,
+      "target": 167,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 419,
+      "source": 53,
+      "target": 70,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 420,
+      "source": 73,
+      "target": 143,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 421,
+      "source": 73,
+      "target": 163,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 422,
+      "source": 73,
+      "target": 16,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 423,
+      "source": 116,
+      "target": 90,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 424,
+      "source": 116,
+      "target": 213,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 425,
+      "source": 116,
+      "target": 39,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 426,
+      "source": 99,
+      "target": 29,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 427,
+      "source": 99,
+      "target": 172,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 428,
+      "source": 99,
+      "target": 9,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 429,
+      "source": 29,
+      "target": 77,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 430,
+      "source": 29,
+      "target": 79,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 431,
+      "source": 29,
+      "target": 186,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 432,
+      "source": 29,
+      "target": 21,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 433,
+      "source": 29,
+      "target": 24,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 434,
+      "source": 77,
+      "target": 81,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 435,
+      "source": 77,
+      "target": 158,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 436,
+      "source": 77,
+      "target": 113,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 437,
+      "source": 81,
+      "target": 75,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 438,
+      "source": 81,
+      "target": 162,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 439,
+      "source": 81,
+      "target": 114,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 440,
+      "source": 75,
+      "target": 48,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 441,
+      "source": 75,
+      "target": 155,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 442,
+      "source": 75,
+      "target": 112,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 443,
+      "source": 48,
+      "target": 50,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 444,
+      "source": 48,
+      "target": 201,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 445,
+      "source": 48,
+      "target": 6,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 446,
+      "source": 50,
+      "target": 4,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 447,
+      "source": 50,
+      "target": 192,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 448,
+      "source": 50,
+      "target": 45,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 449,
+      "source": 4,
+      "target": 27,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 450,
+      "source": 4,
+      "target": 152,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 451,
+      "source": 4,
+      "target": 37,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 452,
+      "source": 27,
+      "target": 52,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 453,
+      "source": 27,
+      "target": 205,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 454,
+      "source": 27,
+      "target": 42,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 455,
+      "source": 52,
+      "target": 20,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 456,
+      "source": 52,
+      "target": 166,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 457,
+      "source": 52,
+      "target": 41,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 458,
+      "source": 20,
+      "target": 15,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 459,
+      "source": 20,
+      "target": 175,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 460,
+      "source": 20,
+      "target": 130,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 461,
+      "source": 25,
+      "target": 49,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 462,
+      "source": 25,
+      "target": 203,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 463,
+      "source": 25,
+      "target": 17,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 464,
+      "source": 49,
+      "target": 59,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 465,
+      "source": 49,
+      "target": 193,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 466,
+      "source": 49,
+      "target": 46,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 467,
+      "source": 59,
+      "target": 11,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 468,
+      "source": 59,
+      "target": 179,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 469,
+      "source": 59,
+      "target": 18,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 470,
+      "source": 23,
+      "target": 56,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 471,
+      "source": 23,
+      "target": 221,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 472,
+      "source": 23,
+      "target": 92,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 473,
+      "source": 58,
+      "target": 57,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 474,
+      "source": 58,
+      "target": 174,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 475,
+      "source": 58,
+      "target": 19,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 476,
+      "source": 47,
+      "target": 176,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 477,
+      "source": 47,
+      "target": 127,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 478,
+      "source": 79,
+      "target": 78,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 479,
+      "source": 79,
+      "target": 153,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 480,
+      "source": 79,
+      "target": 33,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 481,
+      "source": 78,
+      "target": 82,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 482,
+      "source": 78,
+      "target": 160,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 483,
+      "source": 78,
+      "target": 36,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 484,
+      "source": 82,
+      "target": 83,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 485,
+      "source": 82,
+      "target": 156,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 486,
+      "source": 82,
+      "target": 32,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 487,
+      "source": 83,
+      "target": 157,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 488,
+      "source": 83,
+      "target": 31,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 489,
+      "source": 122,
+      "target": 217,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 490,
+      "source": 122,
+      "target": 121,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    }
+  ]
+}

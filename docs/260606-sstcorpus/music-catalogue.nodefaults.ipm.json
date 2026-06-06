@@ -1,0 +1,1258 @@
+{
+  "version": "25.09",
+  "src": {
+    "type": "n4l",
+    "ipmt": "",
+    "positions": {
+      "nodes": null,
+      "edges": null
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "\"BTHV-3-1\", \"1. Allegro con brio (live)\"",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "\"BTHV-3-1\", \"2. Marcia funbre. Adagio Assai (live)\"",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "\"BTHV-3-1\", \"3. Scherzo. Allegro vivace. (live)\"",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "\"BTHV-3-1\", \"4. Finale. Allegro molto (live)\"",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "\"Pittsburgh Symphony Orchestra\"",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 6,
+      "name": "\"RUSH-5\", 1. A Farewell To Kings",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "\"RUSH-5\", 2. Xanadu",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "\"RUSH-5\", 3. Closer To The Heart",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "\"RUSH-5\", 4. Cinderella Man",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "\"RUSH-5\", 5. Madrigal",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "\"RUSH-5\", 6. Cygnus X-1",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "10:22",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "11.50",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "11:07",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "15:11",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "16:15",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "192kHz / 24-bit",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "1977",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "2016",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "2018",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "2:36",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "2:55",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 23,
+      "name": "44kHz / 16-bit",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "4:22",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 25,
+      "name": "5:53",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 26,
+      "name": "A Farewell To Kings",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 27,
+      "name": "Adagio",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Adagio Assai",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Alex Lifeson",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Allegro",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Allegro molto",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Allegro vivace",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 33,
+      "name": "BTHV-3-1",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 34,
+      "name": "BTHV-3-1, \"1. Allegro con brio (live)\"",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 35,
+      "name": "BTHV-3-1, \"2. Marcia funbre. Adagio Assai (live)\"",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 36,
+      "name": "BTHV-3-1, \"3. Scherzo. Allegro vivace. (live)\"",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 37,
+      "name": "BTHV-3-1, \"4. Finale. Allegro molto (live)\"",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 38,
+      "name": "Beethoven, Symphony No. 3, Opus 55, \"Eroica\"",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 39,
+      "name": "CBES-1",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 40,
+      "name": "CBES-1, First Movement",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 41,
+      "name": "CBES-1, Part 1",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 42,
+      "name": "CBES-1, Part 2",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 43,
+      "name": "CBES-1, Second Movement",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 44,
+      "name": "CBES-1, Third Movement",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 45,
+      "name": "Celebrated Composer",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 46,
+      "name": "Celebrated Composer, The Early Symphonies",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 47,
+      "name": "Compact Disc",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 48,
+      "name": "Crazy Classics",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 49,
+      "name": "FLAC",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 50,
+      "name": "Geddy Lee",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 51,
+      "name": "Ludwig van Beethoven",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 52,
+      "name": "Manfred Honeck",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 53,
+      "name": "Mercury",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 54,
+      "name": "Music by \"Alex Lifeson\", \"Geddy Lee\", lyrics by \"Neil Peart\"",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 55,
+      "name": "Neil Peart",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 56,
+      "name": "Orchestra",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 57,
+      "name": "Pittsburgh Symphony Orchestra",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 58,
+      "name": "Pointy Penguin",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 59,
+      "name": "RUSH-5",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 60,
+      "name": "Reference Recordings",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 61,
+      "name": "Rush",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 62,
+      "name": "Scherzo",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 63,
+      "name": "Vinyl",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 64,
+      "name": "symphony 1",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 65,
+      "name": "symphony 2",
+      "alias": "",
+      "type": "Event"
+    }
+  ],
+  "edges": [
+    {
+      "id": 66,
+      "source": 56,
+      "target": 46,
+      "dir": "DirFwd",
+      "tooltip": "gave performance of",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 67,
+      "source": 61,
+      "target": 26,
+      "dir": "DirFwd",
+      "tooltip": "gave performance of",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 68,
+      "source": 53,
+      "target": 26,
+      "dir": "DirFwd",
+      "tooltip": "is the publisher of",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 69,
+      "source": 45,
+      "target": 46,
+      "dir": "DirFwd",
+      "tooltip": "composer of",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 70,
+      "source": 48,
+      "target": 46,
+      "dir": "DirFwd",
+      "tooltip": "is the publisher of",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 71,
+      "source": 40,
+      "target": 64,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 72,
+      "source": 43,
+      "target": 64,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 73,
+      "source": 44,
+      "target": 64,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 74,
+      "source": 41,
+      "target": 65,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 75,
+      "source": 42,
+      "target": 65,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 76,
+      "source": 58,
+      "target": 46,
+      "dir": "DirFwd",
+      "tooltip": "conductor of",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 77,
+      "source": 60,
+      "target": 38,
+      "dir": "DirFwd",
+      "tooltip": "is the publisher of",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 78,
+      "source": 52,
+      "target": 38,
+      "dir": "DirFwd",
+      "tooltip": "conductor of",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 79,
+      "source": 40,
+      "target": 43,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 80,
+      "source": 40,
+      "target": 30,
+      "dir": "DirFwd",
+      "tooltip": "has tempo",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 81,
+      "source": 43,
+      "target": 44,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 82,
+      "source": 43,
+      "target": 62,
+      "dir": "DirFwd",
+      "tooltip": "has tempo",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 83,
+      "source": 44,
+      "target": 27,
+      "dir": "DirFwd",
+      "tooltip": "has tempo",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 84,
+      "source": 41,
+      "target": 42,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 85,
+      "source": 51,
+      "target": 38,
+      "dir": "DirFwd",
+      "tooltip": "composer of",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 86,
+      "source": 5,
+      "target": 57,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 87,
+      "source": 5,
+      "target": 38,
+      "dir": "DirFwd",
+      "tooltip": "gave performance of",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 88,
+      "source": 7,
+      "target": 59,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 89,
+      "source": 7,
+      "target": 14,
+      "dir": "DirFwd",
+      "tooltip": "has time duration",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 90,
+      "source": 10,
+      "target": 59,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 91,
+      "source": 10,
+      "target": 21,
+      "dir": "DirFwd",
+      "tooltip": "has time duration",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 92,
+      "source": 64,
+      "target": 46,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 93,
+      "source": 65,
+      "target": 46,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 94,
+      "source": 46,
+      "target": 39,
+      "dir": "DirFwd",
+      "tooltip": "has abbreviation",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 95,
+      "source": 46,
+      "target": 47,
+      "dir": "DirFwd",
+      "tooltip": "release format",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 96,
+      "source": 46,
+      "target": 23,
+      "dir": "DirFwd",
+      "tooltip": "has sampling rate",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 97,
+      "source": 46,
+      "target": 19,
+      "dir": "DirFwd",
+      "tooltip": "recording date",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 98,
+      "source": 1,
+      "target": 38,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 99,
+      "source": 2,
+      "target": 38,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 100,
+      "source": 3,
+      "target": 38,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 101,
+      "source": 4,
+      "target": 38,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 102,
+      "source": 38,
+      "target": 33,
+      "dir": "DirFwd",
+      "tooltip": "has abbreviation",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 103,
+      "source": 38,
+      "target": 49,
+      "dir": "DirFwd",
+      "tooltip": "release format",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 104,
+      "source": 38,
+      "target": 17,
+      "dir": "DirFwd",
+      "tooltip": "has sampling rate",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 105,
+      "source": 38,
+      "target": 20,
+      "dir": "DirFwd",
+      "tooltip": "recording date",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 106,
+      "source": 1,
+      "target": 33,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 107,
+      "source": 1,
+      "target": 30,
+      "dir": "DirFwd",
+      "tooltip": "has tempo",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 108,
+      "source": 1,
+      "target": 16,
+      "dir": "DirFwd",
+      "tooltip": "has time duration",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 109,
+      "source": 2,
+      "target": 33,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 110,
+      "source": 2,
+      "target": 28,
+      "dir": "DirFwd",
+      "tooltip": "has tempo",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 111,
+      "source": 2,
+      "target": 15,
+      "dir": "DirFwd",
+      "tooltip": "has time duration",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 112,
+      "source": 3,
+      "target": 33,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 113,
+      "source": 3,
+      "target": 32,
+      "dir": "DirFwd",
+      "tooltip": "has tempo",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 114,
+      "source": 3,
+      "target": 16,
+      "dir": "DirFwd",
+      "tooltip": "has time duration",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 115,
+      "source": 4,
+      "target": 33,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 116,
+      "source": 4,
+      "target": 31,
+      "dir": "DirFwd",
+      "tooltip": "has tempo",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 117,
+      "source": 4,
+      "target": 13,
+      "dir": "DirFwd",
+      "tooltip": "has time duration",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 118,
+      "source": 6,
+      "target": 26,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 119,
+      "source": 7,
+      "target": 26,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 120,
+      "source": 8,
+      "target": 26,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 121,
+      "source": 9,
+      "target": 26,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 122,
+      "source": 10,
+      "target": 26,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 123,
+      "source": 11,
+      "target": 26,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 124,
+      "source": 26,
+      "target": 59,
+      "dir": "DirFwd",
+      "tooltip": "has abbreviation",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 125,
+      "source": 26,
+      "target": 63,
+      "dir": "DirFwd",
+      "tooltip": "release format",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 126,
+      "source": 26,
+      "target": 23,
+      "dir": "DirFwd",
+      "tooltip": "has sampling rate",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 127,
+      "source": 26,
+      "target": 18,
+      "dir": "DirFwd",
+      "tooltip": "recording date",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 128,
+      "source": 54,
+      "target": 29,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 129,
+      "source": 54,
+      "target": 50,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 130,
+      "source": 54,
+      "target": 55,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 131,
+      "source": 54,
+      "target": 26,
+      "dir": "DirFwd",
+      "tooltip": "composer of",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 132,
+      "source": 6,
+      "target": 59,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 133,
+      "source": 6,
+      "target": 25,
+      "dir": "DirFwd",
+      "tooltip": "has time duration",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 134,
+      "source": 8,
+      "target": 59,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 135,
+      "source": 8,
+      "target": 22,
+      "dir": "DirFwd",
+      "tooltip": "has time duration",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 136,
+      "source": 9,
+      "target": 59,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 137,
+      "source": 9,
+      "target": 24,
+      "dir": "DirFwd",
+      "tooltip": "has time duration",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 138,
+      "source": 11,
+      "target": 59,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 139,
+      "source": 11,
+      "target": 12,
+      "dir": "DirFwd",
+      "tooltip": "has time duration",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 140,
+      "source": 34,
+      "target": 35,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 141,
+      "source": 35,
+      "target": 36,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 142,
+      "source": 36,
+      "target": 37,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+c1::a Amos Tversky ::c
+c2::a Bruce Bueno de Mesquita ::c
+c3::a Daniel Kahneman ::c
+c4::a Donella Meadows ::c
+c5::a Francis Fukuyama ::c
+c6::a James C. Scott ::c
+c7::a Judgment under Uncertainty ::c "the anchor is almost always the wrong number" ::tip
+c8::a Philip Tetlock ::c
+c9::a Seeing Like a State ::c "what the centre can measure is not what the edge actually does" ::tip
+t10::a Superforecasting ::t "calibration beats cleverness over long horizons" ::tip
+t11::a The Dictators Handbook ::t "rulers survive by keeping a small coalition paid" ::tip
+t12::a The Origins of Political Order ::t "impersonal institutions are hard to build and easy to lose" ::tip
+c13::a Thinking Fast and Slow ::c "two systems, one of them lazy, both of them you" ::tip
+t14::a Thinking in Systems ::t "most problems are the shape of a feedback loop" ::tip
+c15::a central planning ::c
+c16::a cognitive bias ::c
+c17::a complexity ::c
+c18::a decision making ::c
+c19::a dual-process cognition ::c
+c20::a feedback loops ::c
+c21::a heuristics ::c
+c22::a incentive structures ::c
+c23::a legibility ::c
+c24::a political coalitions ::c
+c25::a prediction ::c
+c26::a state formation ::c
+
+t10 --::X "is about topic/them"--> c18
+t10 --::X "is about topic/them"--> c25
+t10 --::X "has author"--> c8
+t10 --::X "has bibtex citation"--> c13
+c7 --::X "is about topic/them"--> c21
+c7 --::X "is about topic/them"--> c16
+c7 --::X "has author"--> c3
+c7 --::X "has author"--> c1
+t11 --::X "is about topic/them"--> c24
+t11 --::X "is about topic/them"--> c22
+t11 --::X "has author"--> c2
+t14 --::X "is about topic/them"--> c20
+t14 --::X "is about topic/them"--> c17
+t14 --::X "is about topic/them"--> c18
+t14 --::X "has author"--> c4
+c13 --::X "is about topic/them"--> c18
+c13 --::X "is about topic/them"--> c19
+c13 --::X "is about topic/them"--> c21
+c13 --::X "has author"--> c3
+c13 --::X "has bibtex citation"--> c7
+c9 --::X "is about topic/them"--> c15
+c9 --::X "is about topic/them"--> c23
+c9 --::X "is about topic/them"--> c22
+c9 --::X "has author"--> c6
+t12 --::X "is about topic/them"--> c26
+t12 --::X "is about topic/them"--> c24
+t12 --::X "has author"--> c5
+t12 --::X "has bibtex citation"--> c9

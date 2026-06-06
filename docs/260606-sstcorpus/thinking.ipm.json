@@ -1,0 +1,113 @@
+{
+  "version": "25.09",
+  "src": {
+    "type": "n4l",
+    "ipmt": "",
+    "positions": {
+      "nodes": null,
+      "edges": null
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Events in a process are like places we visit",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 2,
+      "name": "How do we join the dots?",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 3,
+      "name": "Is tech an accelerator or an obstacle to learning?",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 4,
+      "name": "Map it out!",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 5,
+      "name": "Play is associated with planning and thinking",
+      "alias": "",
+      "type": "Event",
+      "tooltip": "Play with your food, Wednesday!"
+    },
+    {
+      "id": 6,
+      "name": "Stick it in a Database",
+      "alias": "",
+      "type": "Event",
+      "tooltip": "Databases don't reflect that structure usually"
+    },
+    {
+      "id": 7,
+      "name": "Thinking is a spacetime process, a map of events",
+      "alias": "",
+      "type": "Event"
+    }
+  ],
+  "edges": [
+    {
+      "id": 8,
+      "source": 7,
+      "target": 1,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 9,
+      "source": 1,
+      "target": 6,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 10,
+      "source": 6,
+      "target": 5,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 11,
+      "source": 6,
+      "target": 3,
+      "dir": "DirFwd",
+      "tooltip": "pending question",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 12,
+      "source": 6,
+      "target": 2,
+      "dir": "DirFwd",
+      "tooltip": "pending question",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 13,
+      "source": 5,
+      "target": 4,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    }
+  ]
+}

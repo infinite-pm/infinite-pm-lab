@@ -1,0 +1,26 @@
+e1::a a doorway ::e
+e2::a a little prince ::e
+e3::a a magic carpet ::e
+e4::a a princess ::e
+e5::a a secret room ::e
+e6::a a time ::e "it could be any time of day" ::tip
+e7::a a toad ::e
+u8::a https://chitek-i.org ::?ce
+u9::a https://m.media-amazon.com/images/I/81yLt8OG7zL.jpg ::?ce
+e10::a mischief! ::e
+e11::a once upon ::e
+e12::a there lay ::e
+e13::a there was ::e
+
+e10 --::L "thereafter"--> e2
+e11 --::L "then followed by"--> e6
+e6 --::L "then followed by"--> e12
+e6 --::L "then followed by"--> e13
+e12 --::L "then followed by"--> e1
+e12 --::L "thereafter"--> e3
+e13 --::L "thereafter"--> e4
+e13 --::L "then followed by"--> e7
+e1 --::L "leads to"--> e5
+e4 --::L "thereafter"--> e10
+e2 --::X "has URL"--> u8
+e2 --::X "has image"--> u9

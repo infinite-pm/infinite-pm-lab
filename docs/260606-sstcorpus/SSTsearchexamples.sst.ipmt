@@ -1,0 +1,138 @@
+u1::a "Commands are signified with a backslash e.g. \"\\command\", but on a command line, you need to escape them with two blackslashes \\\\command." ::?etc
+u2::a Find a chapter ::?tc
+e3::a General word search ::e
+t4::a Just type:  recipe fish soup ::t
+t5::a Just type:  word1 word2 word3 \limit 25 ::t
+t6::a Just type: !a1! or |a1| ::t
+t7::a "Just type: \"ephemeral or persistent\"" ::t
+u8::a Listing an entire story/sequence ::?tc
+u9::a Lookup an arrow ::?tc
+u10::a Print original notes from a chapter ::?tc
+e11::a Search for a precise word ::e
+e12::a Search for any combination of a set of words ::e
+e13::a Search for any combination of a set of words in a chapter ::e
+e14::a "Search for any combination of a set of words in named context, any chapter" ::e
+t15::a Show reminders from reminders.n4l ::t
+t16::a "Show statistics of usage, as determined by visitation and checkbox clicks" ::t
+t17::a Show this help ::t
+u18::a Solving for paths from A to B ::?tc
+u19::a "Type commands to search, e.g. \"monitoring signal\" or brain" ::?tc
+t20::a "Use the NPtr address: (4,4138)" ::t
+u21::a \about ::?tc
+u22::a \arrow ::?tc
+t23::a \arrow 1 ::t
+t24::a \arrow 232 ::t
+t25::a \arrow succeed ::t
+u26::a \as ::?tc
+u27::a \browse ::?tc
+u28::a \chapter ::?tc
+t29::a \chapter mychapter ::t
+t30::a \chapters  \limit 50 ::t
+u31::a \contents ::?tc
+u32::a \context ::?tc
+u33::a \ctx ::?tc
+u34::a \depth ::?tc
+u35::a \distance ::?tc
+u36::a \for ::?tc
+u37::a \from ::?tc
+t38::a \from !a1! \to b6 ::t
+u39::a \help ::?tc
+u40::a \in ::?tc
+u41::a \limit ::?tc
+u42::a \notes ::?tc
+t43::a \notes \on brain ::t
+t44::a \notes mychapter ::t
+u45::a \on ::?tc
+u46::a \page ::?tc
+u47::a \path ::?tc
+t48::a \paths \from start \to target ::t
+u49::a \range ::?tc
+u50::a \remind ::?tc
+u51::a \section ::?tc
+u52::a \seq ::?tc
+u53::a \sequence ::?tc
+t54::a "\\sequence \"create a pod\"" ::t
+u55::a \stats ::?tc
+u56::a \stories ::?tc
+u57::a \story ::?tc
+t58::a \story (wuya) ::t
+t59::a \story Mary ::t
+u60::a \to ::?tc
+u61::a \toc ::?tc
+t62::a https://github.com/markburgess/SSTorytime/blob/main/docs/search_examples.md ::t
+t63::a look for notes with _sequence_ stories ::t
+t64::a "on, about, or for a subject, e.g. \\notes \\on brain" ::t
+t65::a "recipe fish soup  \\chapter \"my recipes\"" ::t
+t66::a recipe fish soup  \chapter food ::t
+t67::a "recipe fish soup  \\chapter food \\context food, recipes, dishes" ::t
+t68::a "restrict by arrow type, name, or number" ::t
+t69::a "search for paths from some starting point, e.g. \\from !start!, \\from b3" ::t
+t70::a "search for paths going to some point, e.g.  \\to b3, \\to target" ::t
+t71::a show a table of contents ::t
+t72::a show the notes as you wrote them in N4L ::t
+t73::a solve for a continguous path ::t
+t74::a specificy the maximum search results ::t
+t75::a specify a chapter to restrict the search ::t
+t76::a "specify a context to filter results,  e.g.  any \\context Monday" ::t
+t77::a specify the depth of path search ::t
+t78::a "word1 word2 word3 \\chapter \"my chapter\" yourchapter \\context \"weird words\"" ::t
+t79::a word1 word2 word3 \chapter dictionary ::t
+t80::a "word1 word2 word3 \\context \"weird words\"" ::t
+
+u45 --::X "means"--> t64
+u36 --::X "means"--> t64
+u21 --::X "means"--> t64
+u40 --::X "means"--> t64
+u42 --::X "means"--> t72
+u27 --::X "means"--> t72
+u46 --::X "means"--> t72
+u47 --::X "means"--> t73
+u53 --::X "means"--> t63
+u52 --::X "means"--> t63
+u57 --::X "means"--> t63
+u56 --::X "means"--> t63
+u37 --::X "means"--> t69
+u60 --::X "means"--> t70
+u33 --::X "means"--> t76
+u32 --::X "means"--> t76
+u26 --::X "means"--> t76
+u28 --::X "means"--> t75
+u51 --::X "means"--> t75
+u31 --::X "means"--> t71
+u61 --::X "means"--> t71
+u22 --::X "means"--> t68
+u41 --::X "means"--> t74
+u34 --::X "means"--> t77
+u49 --::X "means"--> t77
+u35 --::X "means"--> t77
+u55 --::X "means"--> t16
+u50 --::X "means"--> t15
+u39 --::X "means"--> t17
+e3 --::X "has example"--> t78
+e3 --::X "has example"--> t67
+u2 --::X "has example"--> t30
+u2 --::X "has example"--> t29
+u9 --::X "has example"--> t25
+u9 --::X "has example"--> t23
+u9 --::X "has example"--> t24
+u19 --::X "has URL"--> t62
+e11 --::L "then followed by"--> e12
+e11 --::X "has example"--> t6
+e11 --::X "has example"--> t7
+e11 --::X "has example"--> t20
+e12 --::L "then followed by"--> e13
+e12 --::X "has example"--> t5
+e12 --::X "has example"--> t4
+e13 --::L "then followed by"--> e14
+e13 --::X "has example"--> t79
+e13 --::X "has example"--> t65
+e14 --::L "then followed by"--> e3
+e14 --::X "has example"--> t80
+e14 --::X "has example"--> t66
+u10 --::X "has example"--> t44
+u10 --::X "has example"--> t43
+u8 --::X "has example"--> t58
+u8 --::X "has example"--> t59
+u8 --::X "has example"--> t54
+u18 --::X "has example"--> t48
+u18 --::X "has example"--> t38

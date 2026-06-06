@@ -1,0 +1,1138 @@
+{
+  "version": "25.09",
+  "src": {
+    "type": "n4l-sst-native",
+    "ipmt": "",
+    "positions": {
+      "nodes": null,
+      "edges": null
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "\"established facts\" tend to imply generalizations, rules and laws",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 2,
+      "name": "\"established facts\" tend to suggest explanations",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 3,
+      "name": "\"established facts\"/trusted facts imply deterministic consequences",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 4,
+      "name": "A story/stories",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "All men are mortal, Socrates is a man, therefore, Socrates is mortal.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 6,
+      "name": "Aristotle",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Artificial Intelligence",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 8,
+      "name": "Artificial Neural Networks",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 9,
+      "name": "Greece",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 10,
+      "name": "Hilbert",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 11,
+      "name": "Observation of information",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 12,
+      "name": "People associate reasoning with logic, thanks to Hilbert and other mathematicians who formalized reasoning.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Promise Theory",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 14,
+      "name": "SST",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 15,
+      "name": "Semantic Spacetime",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 16,
+      "name": "Stories are connected directed graphs",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 17,
+      "name": "The fire together/wire together principle",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 18,
+      "name": "What unknown property?",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 19,
+      "name": "a boundary condition and",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 20,
+      "name": "a graph",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "a process",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "a process for generating knowledge.",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 23,
+      "name": "a statistical or belief probabilistic answer",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 24,
+      "name": "a yes or no answer",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 25,
+      "name": "abduction",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 26,
+      "name": "all swans are white",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 27,
+      "name": "any kind of reasoning: deduction, induction, abduction",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 28,
+      "name": "any number of possible connecting paths, one to be selected",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 29,
+      "name": "arrows",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 30,
+      "name": "associations",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 31,
+      "name": "belongs to one of four meta types: leadsto, contains, expresses property, is similar or near to",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 32,
+      "name": "consequences",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 33,
+      "name": "contains",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 34,
+      "name": "contiguous paths through a sequence of events",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 35,
+      "name": "deduction",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 36,
+      "name": "deterministic",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 37,
+      "name": "established facts",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 38,
+      "name": "events",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 39,
+      "name": "explanations",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 40,
+      "name": "expresses",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 41,
+      "name": "expressing",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 42,
+      "name": "expressing SST properties",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 43,
+      "name": "first order logic of Hilbert",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 44,
+      "name": "flaw in deduction: absence of evidence is not evidence of absence",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 45,
+      "name": "generalizations",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 46,
+      "name": "graph",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 47,
+      "name": "grouping of examples into a named class",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 48,
+      "name": "induction",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 49,
+      "name": "labelled directed link with semantics",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 50,
+      "name": "laws",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 51,
+      "name": "leadsto",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 52,
+      "name": "logic",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 53,
+      "name": "near",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 54,
+      "name": "nodes",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 55,
+      "name": "one is calculating what is necessarily true from the assumed truth of the preconditions",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 56,
+      "name": "one is calculating what may be broadly true from the preconditions",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 57,
+      "name": "one is calculating what might broadly explain",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 58,
+      "name": "paths that join up into stories",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 59,
+      "name": "place and moment in a proper time sequence",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 60,
+      "name": "process",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 61,
+      "name": "properties",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 62,
+      "name": "property",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 63,
+      "name": "reasoning",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 64,
+      "name": "reasoning goes back to 350 BC Greece and Aristotle.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 65,
+      "name": "rules",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 66,
+      "name": "similar",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 67,
+      "name": "some have argued that \"Artificial Intelligence\" is incapable of abduction",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 68,
+      "name": "some have argued that abduction is the process behind \"Artificial Neural Networks\"",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 69,
+      "name": "states of the knowledge system",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 70,
+      "name": "syllogism",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 71,
+      "name": "theorems as facts / tautologies",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 72,
+      "name": "turn correlations into associations.",
+      "alias": "",
+      "type": "Event"
+    }
+  ],
+  "edges": [
+    {
+      "id": 0,
+      "source": 6,
+      "target": 70,
+      "dir": "",
+      "tooltip": "discusses",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 70,
+      "target": 70,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 70,
+      "target": 5,
+      "dir": "",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 35,
+      "target": 3,
+      "dir": "",
+      "tooltip": "proposes",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 35,
+      "target": 55,
+      "dir": "",
+      "tooltip": "proposes",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 35,
+      "target": 24,
+      "dir": "",
+      "tooltip": "proposes",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 35,
+      "target": 70,
+      "dir": "",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 35,
+      "target": 35,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 48,
+      "target": 1,
+      "dir": "",
+      "tooltip": "proposes",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 48,
+      "target": 56,
+      "dir": "",
+      "tooltip": "proposes",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 48,
+      "target": 23,
+      "dir": "",
+      "tooltip": "proposes",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 48,
+      "target": 48,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 25,
+      "target": 2,
+      "dir": "",
+      "tooltip": "proposes",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 25,
+      "target": 57,
+      "dir": "",
+      "tooltip": "proposes",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 25,
+      "target": 23,
+      "dir": "",
+      "tooltip": "proposes",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 28,
+      "target": 25,
+      "dir": "",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 25,
+      "target": 25,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 59,
+      "target": 38,
+      "dir": "",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 54,
+      "target": 38,
+      "dir": "",
+      "tooltip": "represents/models",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 54,
+      "target": 69,
+      "dir": "",
+      "tooltip": "represents/models",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 29,
+      "target": 49,
+      "dir": "",
+      "tooltip": "proposes",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 29,
+      "target": 31,
+      "dir": "",
+      "tooltip": "proposes",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 29,
+      "target": 30,
+      "dir": "",
+      "tooltip": "represents/models",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 15,
+      "target": 14,
+      "dir": "",
+      "tooltip": "has abbreviation",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 13,
+      "target": 15,
+      "dir": "",
+      "tooltip": "from which we derive",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 20,
+      "target": 46,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 20,
+      "target": 21,
+      "dir": "",
+      "tooltip": "represents/models",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 21,
+      "target": 60,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 4,
+      "target": 27,
+      "dir": "",
+      "tooltip": "represents/models",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 42,
+      "target": 41,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 42,
+      "target": 14,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 42,
+      "target": 61,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 42,
+      "target": 48,
+      "dir": "",
+      "tooltip": "represents/models",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 42,
+      "target": 47,
+      "dir": "",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 18,
+      "target": 58,
+      "dir": "",
+      "tooltip": "enables",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 11,
+      "target": 19,
+      "dir": "",
+      "tooltip": "creates",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 64,
+      "target": 63,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 64,
+      "target": 9,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 64,
+      "target": 6,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 12,
+      "target": 63,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 12,
+      "target": 52,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 12,
+      "target": 10,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 3,
+      "target": 37,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 3,
+      "target": 36,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 3,
+      "target": 32,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 44,
+      "target": 26,
+      "dir": "",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 1,
+      "target": 37,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 1,
+      "target": 45,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 1,
+      "target": 65,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 1,
+      "target": 50,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 2,
+      "target": 37,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 2,
+      "target": 39,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 68,
+      "target": 8,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 67,
+      "target": 7,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 67,
+      "target": 25,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 34,
+      "target": 38,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 34,
+      "target": 4,
+      "dir": "",
+      "tooltip": "represents/models",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 34,
+      "target": 25,
+      "dir": "",
+      "tooltip": "represents/models",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 31,
+      "target": 51,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 31,
+      "target": 33,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 31,
+      "target": 40,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 31,
+      "target": 62,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 31,
+      "target": 66,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 31,
+      "target": 53,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 43,
+      "target": 52,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 43,
+      "target": 10,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 43,
+      "target": 35,
+      "dir": "",
+      "tooltip": "represents/models",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 71,
+      "target": 43,
+      "dir": "",
+      "tooltip": "is used by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 58,
+      "target": 63,
+      "dir": "",
+      "tooltip": "enables",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 17,
+      "target": 72,
+      "dir": "",
+      "tooltip": "generates",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 19,
+      "target": 22,
+      "dir": "",
+      "tooltip": "generates",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+u1::a Adam ::?tc
+t2::a Alfie ::t
+t3::a Ali ::t
+t4::a Billie ::t
+t5::a Bjørn ::t
+u6::a Bot1 ::?tc
+u7::a Bot2 ::?tc
+u8::a Bot3 ::?tc
+u9::a Bot4 ::?tc
+t10::a Brent ::t
+t11::a Carol ::t
+t12::a Chirpy Cheep Cheep ::t
+t13::a Company of Friends ::t
+t14::a Doug ::t
+t15::a Hans ::t
+u16::a Jan ::?tc
+t17::a Jane ::t
+t18::a Jane1 ::t
+t19::a Jane2 ::t
+t20::a Joyce ::t
+t21::a Jungi ::t
+t22::a Kat ::t
+t23::a Mandy ::t
+u24::a Mark ::?tc
+t25::a Matt ::t
+u26::a Mike ::?tc
+t27::a Paul ::t
+t28::a Peter ::t
+u29::a Rob1Bot21 ::?tc
+u30::a Robo1 ::?tc
+u31::a Robo2 ::?tc
+t32::a Silvy ::t
+t33::a Tamar ::t
+t34::a Taylor Swallow ::t
+t35::a Tore ::t
+t36::a Zhao ::t
+
+u24 --::X "has friend"--> t23
+u24 --::X "has friend"--> t32
+u24 --::X "has friend"--> t10
+u24 --::X "has friend"--> t36
+u24 --::X "has friend"--> t14
+u24 --::X "has friend"--> t35
+u24 --::X "has friend"--> t20
+u24 --::X "has friend"--> u26
+u24 --::X "has friend"--> t11
+u24 --::X "has friend"--> t3
+u24 --::X "has friend"--> t25
+u24 --::X "has friend"--> t5
+u24 --::X "has friend"--> t33
+u24 --::X "has friend"--> t22
+u24 --::X "has friend"--> t15
+u26 --::X "has friend"--> u24
+u26 --::X "has friend"--> t18
+u26 --::X "has friend"--> t19
+u26 --::X "has friend"--> u16
+u26 --::X "has friend"--> t2
+u26 --::X "has friend"--> t21
+u26 --::X "has friend"--> t28
+u26 --::X "has friend"--> t27
+u16 --::X "has friend"--> u1
+u16 --::X "has friend"--> t18
+u16 --::X "has friend"--> t17
+u1 --::X "has friend"--> t13
+u1 --::X "has friend"--> t27
+u1 --::X "has friend"--> t25
+u1 --::X "has friend"--> t4
+u1 --::X "has friend"--> t12
+u1 --::X "has friend"--> t34
+u30 --::X "has an employer"--> t13
+u31 --::X "has an employer"--> t13
+u6 --::X "has an employer"--> t13
+u7 --::X "has an employer"--> t13
+u8 --::X "has an employer"--> t13
+u9 --::X "has an employer"--> t13
+u29 --::X "has an employer"--> t13

@@ -1,0 +1,33 @@
+c1::a "\\(  \\frac{\\partial y}{\\partial x} , \\frac{\\partial f}{\\partial x} \\)" ::c
+c2::a "\\(  \\frac{dy}{dx} , \\frac{df}{dx} \\)" ::c
+t3::a "\\( (x,y,z) \\)" ::t
+t4::a "\\( (y,x) \\)" ::t
+t5::a \( \frac{\partial}{\partial x} \) ::t
+t6::a \( \frac{d}{dx} \) ::t
+t7::a \( \int \) ::t "this is an old language S intended to imply summation" ::tip
+c8::a \( \int_0^1 x^2\;dx \) ::c
+t9::a \( \sum \) ::t
+c10::a \( \sum_{n = 1}^4 n(n+1) \) ::c
+c11::a "a partial derivative operation on the variable x, i.e. a derivative along an exclusive direction" ::c
+c12::a a summation (addition of terms) ::c
+c13::a "a total derivative operation on the variable x, i.e. the contributsion from all directions and parameters that vary along x" ::c
+c14::a "a variable, or unknown quantity to solve for" ::c
+t15::a "a,b,c" ::t
+c16::a constant fixed parameters to substitute values for ::c
+c17::a the integral sign ::c
+c18::a three dimensional Euclidean coordinate in a volume ::c
+c19::a two dimensional Euclidean coordinates in a plane ::c
+t20::a x ::t
+
+t20 --::X "typically denotes"--> c14
+t15 --::X "typically denotes"--> c16
+t4 --::X "typically denotes"--> c19
+t3 --::X "typically denotes"--> c18
+t7 --::X "denotes"--> c17
+t7 --::X "has example"--> c8
+t9 --::X "denotes"--> c12
+t9 --::X "has example"--> c10
+t6 --::X "denotes"--> c13
+t6 --::X "has example"--> c2
+t5 --::X "denotes"--> c11
+t5 --::X "has example"--> c1

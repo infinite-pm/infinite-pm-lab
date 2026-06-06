@@ -1,0 +1,433 @@
+{
+  "version": "25.09",
+  "src": {
+    "type": "n4l",
+    "ipmt": "",
+    "positions": {
+      "nodes": null,
+      "edges": null
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Data for \"Example API Response\"",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Example API Response",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Metadata for \"Example API Response\"",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "User 1",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "User 2",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "User array for \"Example API Response\"",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "active = false",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "active = true",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "email = alice@example.com",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "email = bob@example.com",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "id = 1",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "id = 2",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "limit = 10",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "page number = 1",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "role = admin",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "role = user",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "status = success",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "timestamp = \"2025-10-17T14:30:00Z\"",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "total = 2",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "username = alice",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "username = bob",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "version = 1.0.0",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": 23,
+      "source": 11,
+      "target": 4,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 24,
+      "source": 20,
+      "target": 4,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 25,
+      "source": 9,
+      "target": 4,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 26,
+      "source": 15,
+      "target": 4,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 27,
+      "source": 16,
+      "target": 4,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 28,
+      "source": 8,
+      "target": 4,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 29,
+      "source": 12,
+      "target": 5,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 30,
+      "source": 21,
+      "target": 5,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 31,
+      "source": 10,
+      "target": 5,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 32,
+      "source": 16,
+      "target": 5,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 33,
+      "source": 7,
+      "target": 5,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 34,
+      "source": 22,
+      "target": 2,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 35,
+      "source": 17,
+      "target": 2,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 36,
+      "source": 18,
+      "target": 2,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 37,
+      "source": 1,
+      "target": 2,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 38,
+      "source": 4,
+      "target": 6,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 39,
+      "source": 5,
+      "target": 6,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 40,
+      "source": 19,
+      "target": 3,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 41,
+      "source": 14,
+      "target": 3,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 42,
+      "source": 13,
+      "target": 3,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 43,
+      "source": 6,
+      "target": 1,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 44,
+      "source": 3,
+      "target": 1,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    }
+  ]
+}

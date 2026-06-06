@@ -1,0 +1,113 @@
+{
+  "version": "25.09",
+  "src": {
+    "type": "n4l",
+    "ipmt": "",
+    "positions": {
+      "nodes": null,
+      "edges": null
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "A promise binding with both plus and minus promises is needed to promise a transfer of intent: \\[  \n   \\begin{aligned}  \n    A_i \u0026\\promise{+b}  A_j\\\\ \n    A_j \u0026\\promise{-b'} A_i\\\\  \n   \\end{aligned} \\] This results in a transmitted intention \\( b \\cap b' \\)",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "A promise is written: \\[ A_i \\promise{\\pm b}  A_j \\] i.e. An agent \\( A_i \\) makes a promise with content/body \\( b\\) to another \\( A_j\\), where \\( i,j\\) are integer labels.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "A scoped promise has an extra argument \\[ A_i \\scopepromise{\\pm b}{\\sigma}  A_j \\] where \\(\\sigma\\) is the set-valued scope, i.e. the set of agents that are able to observe the promise.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "A theory of agents that declare their intentions as set-valued specification called promises.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Agents are autonomous: an agent can only make promises about its own behaviour.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "An agent is written \\( A_i \\)",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Impositions are uninvited attempts to induce an agent into promising a behaviour, i.e. according to the imposed body. Like throwing someone a ball uninvited. Impositions are generally ineffective at making agents behave as desired. An imposition is written:  \\[  A_i \\imposition{\\pm b}  A_j  \\] with an arrow looking like a \"fist\".",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Promise bodies have signs, e.g. \\(+b\\) or \\(-b\\). A plus sign indicates an offer, a minus sign indicates an promise to accept.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Several agents are written \\( \\lbrace A_i \\rbrace  \\)",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    }
+  ],
+  "edges": null
+}

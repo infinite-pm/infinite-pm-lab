@@ -1,0 +1,876 @@
+{
+  "version": "25.09",
+  "src": {
+    "type": "n4l",
+    "ipmt": "",
+    "positions": {
+      "nodes": null,
+      "edges": null
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Dāng húli kàndào wūyā yŏu fănyìng shí, jiù  jìxù zànměi wūyā, 《Jìrán nín yŏu zhème piàoliang de yŭmáo, \n  当  狐狸   看到   乌鸦  有   反应    时，   就   继续  赞美   乌鸦， 《既然   您   有  这么   漂亮      的  羽毛，",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 2,
+      "name": "He stopped and started to think, 《That crow has a piece of delicious meat. I wonder if there is a way I can get it.》",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Húli chán de zhí liú kŏushuĭ. \n 狐狸  馋   得  直  流   口水。",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 4,
+      "name": "Húli diāo qĭ ròu, yìliūyān păodiàole.\n 狐狸  叼  起  肉，  一溜烟    跑掉了。",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 5,
+      "name": "Húli kāishĭ zuómo zhe rúhé názŏu wūyā de ròu.\n 狐狸   开始   琢磨   着 如何   拿走  乌鸦  的  肉。",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 6,
+      "name": "Húli péizhe xiàoliăn shuō: 《Qīn’ài de wūyā, nín de háizi hăo ma?》 Wūyā kànle húli yì yăn, háishì méiyŏu huídá. \n  狐狸   赔着    笑脸    说：  《 亲爱   的 乌鸦， 您  的  孩子  好  吗？》 乌鸦   看了   狐狸 一 眼，  还是    没有   回答。",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 7,
+      "name": "Húli tíng xià lái xiăng, 《nà zhī wūyā yŏu yí kuài měiwèi de ròu, wŏ yào xiăng gè bànfă dédào tā.》   \n 狐狸  停   下  来    想，  《那 只  乌鸦   有  一 块    美味   的 肉，我   要    想    个  办法   得到  它。》",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 8,
+      "name": "Húli yòu yáoyáo wěiba shuō:\n  狐狸  又  摇摇   尾巴   说:",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 9,
+      "name": "Húli zài shùlín lĭ zhăo chī de.  Tā lái dào yì kē dà shù xià, \n狐狸   在   树林   里  找   吃  的。  他  来  到  一 棵 大  树  下,",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 10,
+      "name": "I am sure you have the most melodious voice of all birds.》",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "The Crow and the Fox",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "The crow became proud of itself and began to sing when it heard the fox talk about its wonderful voice. 《Wow…》 Just when the crow opened its mouth to sing, the meat fell to the ground.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "The crow shrugged and smiled.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "The crow shrugged at the praising words and looked at the fox.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "The crow was tricked by the fox and helplessly stared at the fox as it disappeared.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "The fox picked up the meat and ran away.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "The fox rolled his eyes and said: 《Hi, my dear crow, how are you?》 The crow did not answer the fox.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "The fox shook his tail and said:",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "The fox smiled obsequiously and said again, 《My dear crow, how are your children?》 The crow glanced at the fox and still did not answer him.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "The fox was in the woods looking for food. He came to a tree,",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "The fox was so greedy that his mouth was watering.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "The fox was thinking of a way to take the meat away from the crow.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Tā yănzhū yí zhuàn, duì wūyā shuō: 《Hēi, wŏ qīn’ài de wūyā, nín hăo ma?》 Wūyā méiyŏu huídá.\n 他  眼珠   一   转，  对  乌鸦  说：  《 嗨，  我 亲爱   的  乌鸦， 您  好  吗？》 乌鸦   没有   回答。",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 24,
+      "name": "Tīngdào húli de zànměi, wūyā sŏngle sŏng jiān, kànzhe húli.\n  听到   狐狸  的  赞美，  乌鸦   耸了   耸    肩，  看着   狐狸。",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 25,
+      "name": "When the crow showed the response, the fox continued to praise the crow. 《Since you have such great feathers, ",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Wūyā Hé Húli",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 27,
+      "name": "Wūyā bèi húli piànle, zhĭnéng wúnài de dīngzhe húli xiāoshī de fāngxiàng.\n 乌鸦  被  狐狸   骗了，    只能   无奈  地   盯着    狐狸   消失   的   方向。",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 28,
+      "name": "Wūyā sŏngsŏng jiān, wēixiàozhe.\n  乌鸦   耸耸     肩，    微笑着。",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 29,
+      "name": "Wūyā tīngle húli de huà, fēicháng déyì, jiù chàngle qĭlái. 《Wā…》 Tā gāng yì kāi kŏu, ròu jiù diàole xiàlái.\n乌鸦   听了   狐狸 的  话，   非常    得意，  就   唱了    起来。 《哇……》她   刚  一  开  口，  肉  就   掉了   下来。",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 30,
+      "name": "adv. amazedly",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 31,
+      "name": "adv. earnestly",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 32,
+      "name": "adv. embarrassedly",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 33,
+      "name": "adv. kindly",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 34,
+      "name": "chījīng",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 35,
+      "name": "kànjiàn wūyā zhèng zhàn zài shùzhī shang, zuĭlĭ diāo zhe yí piàn ròu.\n   看见   乌鸦   正    站   在   树枝   上，   嘴里   叼   着  一  片   肉。",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 36,
+      "name": "nánwéiqíng",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 37,
+      "name": "nă zhĭ niăo yŏu nín zhème wūhēi fāliàng de yŭmáo. Nín zhēn shì měi jí le.》\n 哪  只   鸟   有  您  这么   乌黑    发亮   的 羽毛。  您    真   是  美  极 了。》",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 38,
+      "name": "qīnqiè",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 39,
+      "name": "rènzhēn",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 40,
+      "name": "saw a crow sitting on a branch with a piece of meat in its mouth.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 41,
+      "name": "such a bird with nice shiny black feathers. You are so pretty.》",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 42,
+      "name": "wŏ kěndìng nín de shēngyīn shì suóyŏu niăo zhōng zuì dòngtīng de.》 \n我   肯定    您  的   声音    是   所有   鸟    中    最   动听     的.》",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 43,
+      "name": "《Hey, crow, you have such nice feathers. I’ve never seen ",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 44,
+      "name": "《Nín néng yòng nín měimiào de shēngyīn chàng jĭ jù ma?》  Húli  yòng qĭqiú de yŭqì shuōdào.\n《您   能    用  您    美妙   的   声音     唱    几 句 吗？》  狐狸   用   乞求  的  语气    说道。",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 45,
+      "name": "《Qīn’ài de wūyā,  nín de yŭmáo zhēn piàoliang, wŏ cónglái méi jiànguò\n 《 亲爱   的  乌鸦，    您  的   羽毛   真     漂亮，     我   从来   没     见过",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 46,
+      "name": "《Would you please sing a song with your wonderful voice?》 The fox begged the crow.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 47,
+      "name": "乌鸦和狐狸",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 48,
+      "name": "亲切",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 49,
+      "name": "吃惊",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 50,
+      "name": "认真",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 51,
+      "name": "难为情",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": 52,
+      "source": 47,
+      "target": 11,
+      "dir": "DirFwd",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 53,
+      "source": 34,
+      "target": 49,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 54,
+      "source": 34,
+      "target": 30,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 55,
+      "source": 39,
+      "target": 50,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 56,
+      "source": 39,
+      "target": 31,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 57,
+      "source": 36,
+      "target": 51,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 58,
+      "source": 36,
+      "target": 32,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 59,
+      "source": 38,
+      "target": 48,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 60,
+      "source": 38,
+      "target": 33,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 61,
+      "source": 26,
+      "target": 9,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 62,
+      "source": 26,
+      "target": 47,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 63,
+      "source": 26,
+      "target": 11,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 64,
+      "source": 3,
+      "target": 7,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 65,
+      "source": 3,
+      "target": 21,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 66,
+      "source": 5,
+      "target": 23,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 67,
+      "source": 5,
+      "target": 22,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 68,
+      "source": 8,
+      "target": 45,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 69,
+      "source": 8,
+      "target": 18,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 70,
+      "source": 28,
+      "target": 44,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 71,
+      "source": 28,
+      "target": 13,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 72,
+      "source": 4,
+      "target": 27,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 73,
+      "source": 4,
+      "target": 16,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 74,
+      "source": 9,
+      "target": 35,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 75,
+      "source": 9,
+      "target": 20,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 76,
+      "source": 35,
+      "target": 3,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 77,
+      "source": 35,
+      "target": 40,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 78,
+      "source": 7,
+      "target": 5,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 79,
+      "source": 7,
+      "target": 2,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 80,
+      "source": 23,
+      "target": 6,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 81,
+      "source": 23,
+      "target": 17,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 82,
+      "source": 6,
+      "target": 8,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 83,
+      "source": 6,
+      "target": 19,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 84,
+      "source": 45,
+      "target": 37,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 85,
+      "source": 45,
+      "target": 43,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 86,
+      "source": 37,
+      "target": 24,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 87,
+      "source": 37,
+      "target": 41,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 88,
+      "source": 24,
+      "target": 1,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 89,
+      "source": 24,
+      "target": 14,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 90,
+      "source": 1,
+      "target": 42,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 91,
+      "source": 1,
+      "target": 25,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 92,
+      "source": 42,
+      "target": 28,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 93,
+      "source": 42,
+      "target": 10,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 94,
+      "source": 44,
+      "target": 29,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 95,
+      "source": 44,
+      "target": 46,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 96,
+      "source": 29,
+      "target": 4,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 97,
+      "source": 29,
+      "target": 12,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 98,
+      "source": 27,
+      "target": 15,
+      "dir": "DirFwd",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    }
+  ]
+}

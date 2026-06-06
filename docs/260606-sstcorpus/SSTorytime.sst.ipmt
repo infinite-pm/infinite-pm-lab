@@ -1,0 +1,262 @@
+t1::a "$ sudo su -\n$ su - postgres\n$ psql\n# CREATE user sstoryline password 'sst_1234' superuser;\n# CREATE DATABASE sstoryline;\n# CREATE DATABASE newdb;\n# GRANT ALL PRIVILEGES ON DATABASE sstoryline TO sstoryline;\n# GRANT ALL PRIVILEGES ON DATABASE newdb TO sstoryline;\n# CREATE EXTENSION UNACCENT;" ::t
+u2::a "%\"Longer phrases\" used a limited number of times are common concepts" ::?tc "%\"Longer phrases\" are easier to write than short precise phrases, so people need help to break them down and summarize their intent" ::tip
+u3::a "%\"Short phrases\" used once are usually unique names i.e. a %\"proper name\"" ::?etc
+t4::a "%\"n-grams\"" ::t
+t5::a %factoids and partial %knowledge ::t
+e6::a "A graph is basically a structure with an index at every node. There are two modes of use: random access lookup for starting a search--which SQL is already good at, and exploring, path tracing, following leads from that starting point like hypertext." ::e
+u7::a A recursive search in SQL ::?tc
+t8::a A unique key for a type of link arrow and its properties ::t
+u9::a ArrowPtr ::?tc
+e10::a "Because database connection is slow, we do as much as possible to reduce that amount of data sent over the wire by performing all processing internally." ::e "This has the tradeoff of using a slow script language in the database kernel." ::tip
+t11::a "Comprehensive search by %\"NCCS criteria\"" ::t
+e12::a "Context has two roles in knowledge: promise theoretically it has a '+' donor role when categorizing information through notes. It also has a \"-\" acceptance or filtering role when searching. Both of these are represented by the \":: ... ::\" lines in N4L." ::e
+u13::a "CreateDBNode(ctx PoSST, n Node) Node" ::?tc
+u14::a "CreateDBNodeArrowNode(ctx PoSST, org NodePtr, dst Link, sttype int) bool" ::?tc
+t15::a "FUNCTION SumFwdPaths(start link, path text, orientation text, depth integer, maxdepth integer, exclude nodeptr[])\n DECLARE\n     fwdlinks Link[];\n     empty Link[] = ARRAY[]::Link[];\n     lnk Link;\n     fwd Link;\n     ret_paths Text;\n     appendix Text;\n     tot_path Text;\n BEGIN\n IF depth = maxdepth THEN\n   ret_paths := Format('%s\\n%s',ret_paths,path);\n   RETURN ret_paths;\n END IF;\n fwdlinks := GetFwdLinks(start.Dst,exclude,sttype);\n FOREACH lnk IN ARRAY fwdlinks LOOP\n    IF NOT lnk.Dst = ANY(exclude) THEN\n       exclude = array_append(exclude,lnk.Dst);\n       IF lnk IS NULL THEN\n         ret_paths := Format('%s\\n%s',ret_paths,path);\n          RETURN ret_paths;\n      ELSE\n          tot_path := Format('%s;%s',path,lnk::Text);\n          appendix := SumFwdPaths(lnk,tot_path,sttype,depth+1,maxdepth,exclude);\n          IF appendix IS NOT NULL THEN\n             ret_paths := Format('%s\\n%s',ret_paths,appendix);\n          ELSE\n            ret_paths := Format('%s\\n%s',ret_paths,tot_path);\n         END IF;\n      END IF;   \nEND IF;\nEND LOOP;\nRETURN ret_paths;\nEND;" ::t
+t16::a Fact based cramming ::t
+t17::a Forensic fact assimilation and reasoning. ::t
+u18::a "GetDBArrowByName(ctx PoSST,name string) ArrowPtr" ::?tc
+u19::a "GetDBArrowByPtr(ctx PoSST,arrowptr ArrowPtr) ArrowDirectory" ::?tc
+u20::a "GetDBArrowBySTType(ctx PoSST,sttype int) []ArrowDirectory" ::?tc
+u21::a "GetDBArrowsMatchingArrowName(ctx PoSST,s string) []ArrowPtr" ::?tc
+u22::a "GetDBArrowsWithArrowName(ctx PoSST,s string) (ArrowPtr,int)" ::?tc
+u23::a "GetDBChaptersMatchingName(ctx PoSST,src string) []string" ::?tc
+u24::a "GetDBContextByName(ctx PoSST,src string) (string,ContextPtr)" ::?tc
+u25::a "GetDBContextByPtr(ctx PoSST,ptr ContextPtr) (string,ContextPtr)" ::?tc
+u26::a "GetDBNodePtrMatchingNCCS(ctx PoSST,nm,chap string,cn []string,arrow []ArrowPtr,seq bool,limit int) []NodePtr" ::?tc
+u27::a "GetDBNodePtrMatchingName(ctx PoSST,name,chap string) []NodePtr" ::?tc
+u28::a "GetDBPageMap(ctx PoSST,chap string,cn []string,page int) []PageMap" ::?tc
+u29::a "GetDBSingletonBySTType(ctx PoSST,sttypes []int,chap string,cn []string) ([]NodePtr,[]NodePtr)" ::?tc
+u30::a "GetEntireNCSuperConePathsAsLinks(ctx PoSST,orientation string,start []NodePtr,depth int,chapter string,context []string,limit int) ([][]Link,int)" ::?tc
+u31::a "GetFwdConeAsNodes(ctx PoSST, start NodePtr, sttype,depth int,limit int) []NodePtr" ::?tc
+u32::a "GetFwdPathsAsLinks(ctx PoSST, start NodePtr, sttype,depth int, maxlimit int) ([][]Link,int)" ::?tc
+u33::a GetSTtypesFromArrows(arrows []ArrowPtr) []int ::?tc
+e34::a "Graphs are for following paths with different meanings - or \"semantics\"." ::e
+t35::a HOW-TO sequences and recipes ::t
+u36::a "IdempDBAddLink(ctx PoSST,from Node,link Link,to Node)" ::?tc
+u37::a "IdempDBAddNode(ctx PoSST,n Node) Node" ::?tc
+t38::a Incident reporting with causal commentary ::t
+u39::a "Knowledge scanned from text is most likely to be in the form of paragraphs and sentences. It needs to be broken down into its constituent parts, like a DNA analysis, to understand its relationship to other notes." ::?etc
+t40::a Language learning ::t
+u41::a Link ::?tc
+e42::a "Loading data into a database, with validation, is slow. Retrieving is much faster." ::e
+u43::a Making %notes ::?tc "Notes are more concise than documents, prose, or spoken language. · Notes are condensed intent without flowery elaboration. · AI and LLMs produce fluid %prose language, which is not in note form." ::tip
+e44::a "Most graph databases don't give any guidance in modelling or searching. They are based on SQL random access search, but this is not how we need to use graphs." ::e
+u45::a NCCS criteria ::?tc
+u46::a Node ::?tc
+t47::a "Node, Chapter, Context, Sequence: searches will select nodes that match all these criteria in one go" ::t
+u48::a NodePtr ::?tc
+t49::a PLpgSQL ::t
+u50::a PageMap ::?tc
+u51::a PoSST ::?tc
+t52::a Promise Theory ::t
+u53::a "Ranking of n-grams is based on two parts: the intentionality or amount of work needed to write them, and the frequency of use" ::?tc
+u54::a Reasoning with mathematical support ::?tc
+t55::a Risk procedure documentation ::t
+t56::a SRE problem diagnosis methods ::t
+e57::a SSTorytime ::e "made with Linux but doesn't depend on anything specific to Linux" ::tip
+e58::a "SSTorytime shows you the ambient time in a coarse grained form after every search, so that you can copy and paste this into context tags if you want to be able to use it later. If you make a search without any search terms, you will see any items that are labelled in a matching time. So, if you have specific \"to-do\"/todo / to do lists for specific times, these will pop up by themselves." ::e
+e59::a "SSTorytime takes a \"Promise Theory\" approach." ::e
+u60::a "SelectStoriesByArrow(ctx PoSST,nodeptrs []NodePtr, arrowptrs []ArrowPtr, sttypes []int, limit int) []NodePtr" ::?tc
+u61::a "SolveNodePtrs(ctx PoSST,nodenames []string,search SearchParameters,arr []ArrowPtr,limit int) []NodePtr" ::?tc
+e62::a "Sometimes you might see chapters that you didn't select showing up in searches. This is probably a result of certain words and phrases belonging to more than one chapter, and thus bridging chapters that you didn't intend. This possibility for bridging is intentional, as it allows \"lateral thinking\", which is an important source of discovery." ::e
+u63::a THEME_LIM ::?tc
+e64::a The goal is to implement useful search patterns for a graph structure in an efficient way. ::e
+e65::a The hard problem of knowledge is context. ::e
+u66::a "The most frequently used n-grams are the least meaningful, used for padding and rhythm" ::?etc
+e67::a "The overlap between \"+\" and \"-\" promises is the outcome. In order to make this effective, it requires some planning in the way we name sections. This is something that develops over time, so we have to understand that knowledge is individual, dynamic and interactive--a process, not a stale archive written once and for all." ::e
+u68::a "UploadArrowToDB(ctx PoSST,arrow ArrowPtr)" ::?tc
+u69::a "UploadInverseArrowToDB(ctx PoSST,arrow ArrowPtr)" ::?tc
+u70::a "UploadNodeToDB(ctx PoSST, org Node)" ::?tc
+u71::a "UploadPageMapEvent(ctx PoSST, line PageMap)" ::?tc
+e72::a "What role should times play? Precise times are irrelevant because they never repeat. Coarse grains of time like \"Monday morning\" do repeat and may be relevant in finding intended information. But how do we record the time? Is it the time at which information" ::e
+e73::a "When we are laying out new information, we use the context tags/tokens like a section heading. This is the \"+\" promise." ::e
+e74::a "When we are searching, we use context tags as a filter to reduce the scope of a search. This is the \"-\" promise." ::e
+e75::a "While engaged in a search process, the knowledge agent remembers the intended parts of searches as current scenario context. You will see some of this history pop up at the top of the search result to give you further hints based on past behaviour." ::e
+u76::a "You cam limit the number of entries returned using the LIMIT keyword. If you make this number large, the query will take a long time to return, especially over the web, as the marshalling cost is high." ::?etc
+u77::a "You can select colour themes in the web browser by typing \\theme and a colour style. Currently supported: light, dark, slate, spaceblue/astronomy/blue and red." ::?etc
+u78::a "You can start broad with general search terms, without specifying specific chapters. If you have a lot of data, this becomes less and less likely to succeed. As data grow, we need to narrow the search and we can't use popularity voting like PageRank to guess which are the important results." ::?etc
+u79::a "You can start narrow with a very specific term by quoting longer strings including spaces, but this assumes you know what is already there. Then you can gradually reduce the number of constraints by ADDING contexts and search terms." ::?etc
+t80::a \( x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \) ::t
+u81::a a %paragraph is defined as either a text measure separated by two newlines or if we exceed the the maximum threshold %THEME_LIM ::?etc
+t82::a "a collection of signals that identify a scenario, like a scene description language" ::t
+t83::a a constant scale approximately the size of a long paragraph set to 100 sentences ::t
+t84::a a different grammatical form of the same word of phrase ::t
+t85::a a measure of the degree to which something might be intended ::t
+t86::a a measure that distinguishes ad hoc or random change from %causal %change ::t
+t87::a a nugget of meaningful information contributing to knowledge ::t
+u88::a a text source of document ::?etc
+t89::a adding a NodeArrowNode secondary/derived structure to postgres ::t
+t90::a an ad hoc identifier without descriptive meaning ::t
+t91::a appending a node when you don't want to manage the NPtr values. ::t
+u92::a causal ::?etc
+u93::a causality ::?etc
+u94::a context ::?tc
+e95::a create the SST database ::e
+u96::a documents can be scanned to identify %context and %factoid parts ::?etc
+t97::a entry point for adding a link to a node in postgres ::t
+t98::a establishing a connection to the SST library service ::t
+t99::a establishing a node in postgres without auto %NPtr assignment ::t
+u100::a factoid ::?tc
+t101::a find nodes that are sources or sinks for a specific STType ::t
+t102::a finding a list of %NPtr matching a substring by name ::t
+t103::a finding a set of matching NPtrs satisfying the search parameters compiled by a search command ::t
+t104::a finding nodes that are sources for story sequences matching the arrow types ::t
+u105::a fragment of n words as an ordered sequence ::?tc "any sentence can be broken up into n-gram fragments, like a DNA analysis." ::tip
+e106::a go programming language ::e
+u107::a host    all             all             127.0.0.1/32            password ::?etc
+u108::a "host    all             all             ::1/128                 password\"\n\n # to finish ...\n\n\n\n\n stored procedures/functions in postgres\n\n    \"" ::?tc "uses a language that looks a lot like SQL but is markedly different - beware!" ::tip
+u109::a intent ::?tc
+t110::a intentionality ::t
+t111::a lateral thinking ::t
+u112::a local   all             all                                     peer ::?etc
+t113::a measuring intent ::t
+u114::a n-gram ::?tc
+u115::a n-grams ::?etc
+t116::a n-grams that occur less than ::t
+u117::a noise level ::?tc
+t118::a obtaining a list of arrowpointers matching the approximate name ::t
+t119::a obtaining a list of chapters matching by name ::t
+t120::a obtaining an arrowpointer and STType matching a precise name ::t
+t121::a obtaining an arrowpointer for precise arrowname - redundant ::t
+t122::a obtaining context sets that match by string name ::t
+t123::a obtaining the context set with given index pointer ::t
+t124::a obtaining the generic semantic spacetime type for a given a list of arrow pointers ::t
+t125::a obtains a page from the named chapter as a page map ::t
+t126::a obtains all possible paths from a node along STtype links ::t
+t127::a "obtains all possible paths from a starting node, with orientation \"fwd,bwd,any\" as link arrays matching the chapter and context criteria" ::t
+t128::a obtains an arrow directory entry for a given arrow pointer ::t
+t129::a obtains the arrow directory for a given STtype ::t
+t130::a obtains the orbit around a starting node as a set of nodes to given depth ::t
+e131::a open for local connections ::e
+u132::a paragraphs ::?etc
+e133::a postgres ::e
+e134::a postgres configuration ::e
+e135::a postgres_contrib package for unaccent() function ::e
+u136::a proper name ::?tc
+u137::a punctuated fragments ::?tc
+t138::a ranking the %intentionality or importance of text ::t
+t139::a "representing a graph link, with arrow and destination node and weight" ::t
+t140::a representing core aspects of a single graph node ::t
+t141::a representing the original N4L intended layout of notes ::t
+u142::a sentences ::?tc
+u143::a supports all human languages in Unicode ::?tc "languages that don't use spaces between words may have some issues" ::tip
+t144::a to-do ::t
+t145::a todo ::t
+t146::a "type Link struct {  // A link is a type of arrow, with context\n                    // and maybe with a weightfor package math\n\tArr ArrowPtr         // type of arrow, presorted\n\tWgt float32          // numerical weight of this link\n\tCtx ContextPtr       // context for this pathway\n\tDst NodePtr          // adjacent event/item/node\n}" ::t
+t147::a "type Node struct {\n\n\tL         int     // length of text string\n\tS         string  // text string itself\n\n\tSeq       bool    // true if this node begins an intended sequence, otherwise ambiguous\n\tChap      string  // section/chapter name in which this was added\n\tNPtr      NodePtr // Pointer to self index\n\n\tI [ST_TOP][]Link  // link incidence list, by STindex - these are the \"vectors\" +/-\n  \t                  // NOTE: carefully how STindex offsets represent negative SSTtypes\n}" ::t
+t148::a "type NodePtr struct {\n\n\tClass int            // Text size-class, used mainly in memory\n\tCPtr  ClassedNodePtr // index of within name class lane\n}" ::t
+t149::a "type PageMap struct {  // Thereis additional intent in the layout\n\n\tChapter string\n\tAlias   string\n\tContext ContextPtr\n\tLine    int\n\tPath    []Link\n}" ::t
+t150::a unique key referring to a node and pointing to its data ::t
+t151::a uploading a PageMap structure from memory to postgres ::t
+t152::a uploading an arrow definition from memory to postgres ::t
+t153::a uploading an existing Node in memory to postgres ::t
+t154::a uploading an inverse arrow definition ::t
+u155::a uses a language that looks a lot like SQL but is markedly different - beware! ::?tc
+u156::a variant ::?tc
+e157::a "was written, uploaded, or when something actually happened? The technology can't guess this for you, because it needs to be intentional. The ambient time isn't necessarily relevant." ::e
+u158::a work ::?tc
+
+e57 --::X "has feature"--> u143
+e133 --::L "sustains"--> e57
+t110 --::N "is a variant of"-- u109
+u158 --::X "used for"--> t113
+u63 --::X "defined as"--> t83
+u109 --::N "is a variant of"-- t110
+u109 --::X "means"--> t86
+u109 --::X "defined as"--> t85
+u156 --::X "means"--> t84
+u92 --::N "is a variant of"-- u93
+u93 --::N "is a variant of"-- u92
+u114 --::N "is a variant of"-- u115
+u114 --::X "means"--> u105
+u115 --::N "is a variant of"-- u114
+u94 --::X "means"--> t82
+u100 --::X "means"--> t87
+u100 --::X "has example"--> t5
+u142 --::P--> u132
+u137 --::P--> u142
+u142 --::X "used for"--> t5
+u51 --::X "used for"--> t98
+u46 --::X "used for"--> t140
+u46 --::X "defined as"--> t147
+u48 --::X "used for"--> t150
+u48 --::X "defined as"--> t148
+u41 --::X "used for"--> t139
+u41 --::X "defined as"--> t146
+u9 --::X "used for"--> t8
+u50 --::X "used for"--> t141
+u50 --::X "defined as"--> t149
+u45 --::X "means"--> t47
+u117 --::X "defined as"--> t116
+u136 --::X "means"--> t90
+t4 --::P--> u137
+u137 --::X "used for"--> t138
+u43 --::X "might be used for"--> t38
+u43 --::X "might be used for"--> t55
+u43 --::X "might be used for"--> t56
+u43 --::X "might be used for"--> t35
+u43 --::X "might be used for"--> t40
+u43 --::X "might be used for"--> t16
+u43 --::X "might be used for"--> t17
+u43 --::X "might be used for"--> u54
+e134 --::L "sustains"--> e133
+e106 --::L "sustains"--> e57
+u68 --::X "used for"--> t152
+u69 --::X "used for"--> t154
+u33 --::X "used for"--> t124
+e135 --::L "sustains"--> e57
+e64 --::L "then followed by"--> e10
+e42 --::L "then followed by"--> e6
+e65 --::L "then followed by"--> e59
+e59 --::L "then followed by"--> e12
+e59 --::X "refers to"--> e57
+e59 --::X "refers to"--> t52
+e73 --::L "then followed by"--> e74
+e74 --::L "then followed by"--> e67
+u132 --::P--> u88
+u54 --::X "is expressed in formula"--> t80
+e95 --::L "sustains"--> e133
+e95 --::X "has example"--> t1
+e131 --::L "sustains"--> e133
+e131 --::X "has example"--> t1
+u155 --::X "has name"--> t49
+u7 --::X "has example"--> t15
+u13 --::X "used for"--> t99
+u70 --::X "used for"--> t153
+u71 --::X "used for"--> t151
+u37 --::X "used for"--> t91
+u36 --::X "used for"--> t97
+u14 --::X "used for"--> t89
+u27 --::X "used for"--> t102
+u26 --::X "used for"--> t11
+u23 --::X "used for"--> t119
+u24 --::X "used for"--> t122
+u25 --::X "used for"--> t123
+u29 --::X "used for"--> t101
+u60 --::X "used for"--> t104
+u22 --::X "used for"--> t120
+u21 --::X "used for"--> t118
+u18 --::X "used for"--> t121
+u19 --::X "used for"--> t128
+u20 --::X "used for"--> t129
+u28 --::X "used for"--> t125
+u31 --::X "used for"--> t130
+u32 --::X "used for"--> t126
+u61 --::X "used for"--> t103
+e10 --::L "then followed by"--> e42
+e6 --::L "then followed by"--> e44
+e44 --::L "then followed by"--> e34
+e12 --::L "then followed by"--> e73
+e67 --::L "then followed by"--> e75
+e75 --::L "then followed by"--> e62
+e62 --::L "then followed by"--> e72
+e62 --::X "refers to"--> t111
+e72 --::L "then followed by"--> e157
+e157 --::L "then followed by"--> e58
+e58 --::X "refers to"--> t144
+e58 --::X "refers to"--> t145
+u53 --::X "refers to"--> t110
+u53 --::X "refers to"--> u158
+u108 --::X "has example"--> t15
+u30 --::X "used for"--> t127

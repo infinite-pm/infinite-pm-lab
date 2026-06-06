@@ -1,0 +1,328 @@
+e1::a "\"client certs\" or \"service account tokens\"" ::e
+e2::a "\"control plane\" and worker nodes" ::e
+e3::a "A \"root certificate\" should be installed on each node" ::e
+e4::a A CRD defines a new resource version ::e
+e5::a A pod ::e
+e6::a A user applies pod.yaml ::e
+c7::a API ::c
+e8::a API server ::e
+e9::a API server using injected credentials ::e
+e10::a "API server, scheduler, controller-manager, etcd" ::e
+c11::a "An approach to testing, security scanning, and deployment" ::c
+c12::a CI ::c
+c13::a CI/CD ::c
+e14::a CNCF ::e
+e15::a CRD ::e
+e16::a CRD scope ::e
+e17::a CRDs ::e
+c18::a CSI ::c
+t19::a Continuous Integration / Continuous Deployment ::t
+e20::a Custom Resource Definition ::e
+c21::a EBS ::c
+e22::a Google ::e
+e23::a K8s ::e
+e24::a Kubernetes ::e
+t25::a "Kubernetes uses a >\"hub-and-spoke API pattern\". All API usage terminates at the API server." ::t
+e26::a Linux control groups ::e
+c27::a NFS ::c
+c28::a "Observing the \"actual state\" and compares to the \"desired state\". It infers the steps needed to achieve promised state." ::c "This is a kind of abductive reasoning." ::tip
+c29::a One-container-per-pod ::c
+e30::a PV ::e
+e31::a PVC ::e
+e32::a PVC to request volumes on demand ::e
+e33::a Persistent Volume ::e
+e34::a Persistent Volume Claim ::e
+e35::a Restarting a container ::e
+c36::a Storage ::c
+e37::a Storage Class ::e
+e38::a The API server stores the pod spec in etcd ::e
+e39::a The kubelet starts containers on the node ::e
+e40::a The operator observes outdated version ::e
+e41::a The operator transforms the resource to new spec ::e
+e42::a The scheduler binds the pod to a node ::e
+e43::a The system reaches new desired state ::e
+t44::a This is a kind of abductive reasoning. ::t
+t45::a This pattern ::t
+e46::a To create a pod ::e
+e47::a To do an operator-upgrade ::e
+t48::a "Volumes in Kubernetes can be ephemeral or persistent. Ephemeral volumes exist only during the pod’s lifetime, while persistent volumes survive pod restarts or rescheduling." ::t
+t49::a "When you create a new CRD, the Kubernetes API Server creates a new RESTful resource path for each version you specify." ::t
+e50::a a container orchestration system ::e
+e51::a a control loop ::e
+e52::a a controller pattern ::e
+c53::a a piece of storage in the cluster ::c
+e54::a a pod to mount storage ::e
+e55::a a process ::e
+c56::a a request for storage by a user ::c
+e57::a a shared execution context ::e
+e58::a a way to extend the API ::e
+c59::a abductive ::c
+c60::a "abstraction over storage backend e.g. EBS, NFS, CSI" ::c
+c61::a actual state ::c
+e62::a an administrator or a Storage Class ::e
+e63::a an environment for running containers ::e
+c64::a automated certificate provisioning ::c
+c65::a automation ::c
+c66::a autonomous ::c
+e67::a autonomous agents making and keeping promises and demonstrates distributed cooperation without central control ::e
+t68::a bare metal ::t
+c69::a bearer ::c
+e70::a bearer token and root certificate into pods ::e
+c71::a can be injected into running pods without restarting them ::c
+c72::a capacity and access modes ::c
+c73::a cgroup v1 ::c
+e74::a cgroups for container resource isolation ::e
+c75::a client certificate ::c
+c76::a client certs ::c
+e77::a cluster ::e
+e78::a cluster scope ::e
+e79::a "commands like:\n  \"kubectl get pods -n kube-system\"\n  \"kubectl apply -f https://github.com/app.yml\"" ::e
+c80::a "compares \"desired state\" and \"actual state\"" ::c
+e81::a complex applications and their components ::e
+c82::a consumer's promise ::c
+e83::a container ::e
+e84::a containerd ::e
+c85::a containers ::c
+c86::a control ::c
+e87::a control plane ::e
+e88::a controller ::e
+e89::a controllers ::e
+c90::a cooperation ::c
+c91::a debugging ::c
+c92::a debugging a running pod ::c
+c93::a declarative ::c
+e94::a declarative automation of containerized workloads ::e
+c95::a deployment ::c
+c96::a desired state ::c
+c97::a do not run at pod startup ::c
+t98::a docker ::t
+e99::a during pod startup ::e
+c100::a environment ::c
+c101::a ephemeral ::c
+t102::a ephemeral containers ::t
+c103::a etcd ::c
+c104::a execution ::c
+c105::a hub of the cluster API ::c
+c106::a init ::c
+e107::a init containers ::e
+e108::a interact with Kubernetes via CLI ::e
+e109::a kube-proxy ::e
+e110::a kubectl ::e
+e111::a kubelet ::e
+t112::a kubelet TLS bootstrapping ::t
+e113::a kubelet and container runtime ::e
+e114::a lifecycle of individual pods ::e
+c115::a logging ::c
+c116::a "logging, proxying, service mesh, and other supportive tasks" ::c
+e117::a main application container ::e
+e118::a main application containers ::e
+t119::a managed Kubernetes ::t
+c120::a managed as a cluster resource ::c
+t121::a multiple co-located containers that are tightly coupled ::t
+e122::a namespaces ::e
+e123::a new RESTful resource paths ::e
+e124::a node ::e
+e125::a nodes ::e
+t126::a one or more containers ::t
+e127::a operator ::e
+t128::a "or \"pea pod\"" ::t
+c129::a orchestration ::c
+e130::a parameters for dynamic volume provisioning ::e
+c131::a persistent ::c
+c132::a persists until deleted ::c
+e133::a pod ::e
+e134::a pod of whales ::e
+t135::a pod restart policy ::t
+e136::a "pod, PVC, controller" ::e
+c137::a pods ::c
+c138::a pods to be rescheduled without data loss ::c
+c139::a process ::c
+c140::a promises ::c
+c141::a promises that define system state ::c
+c142::a proxying ::c
+e143::a reconciliation ::e
+c144::a resources ::c
+e145::a resources allocated to processes ::e
+c146::a root ::c
+c147::a root certificate ::c
+c148::a scheduler ::c
+c149::a security ::c
+t150::a self-hosted ::t
+e151::a separation of concerns ::e
+c152::a service ::c
+e153::a service IPs to API server HTTPS endpoints ::e
+e154::a service account ::e
+c155::a service account tokens ::c
+c156::a setup tasks like config init or dependency checks ::c
+e157::a sidecar container ::e
+c158::a sidecars ::c
+c159::a "sidecars, init containers, and debugging" ::c
+e160::a size and access requirements ::e
+e161::a storage decoupling from the lifecycle of pods ::e
+c162::a testing ::c
+e163::a the main container ::e
+e164::a the pod’s network and storage context ::e
+e165::a the same as restarting a pod ::e
+c166::a the smallest deployable computing unit in Kubernetes ::c
+t167::a usage pattern ::t
+c168::a v2 ::c "this is the new generation" ::tip
+e169::a "with \"client certificate\"" ::e
+c170::a worker ::c
+
+e24 --::L "enables"--> e94
+e24 --::L "implements"--> e67
+e24 --::X "represents/models"--> e50
+e23 --::X "has abbreviation"--> e24
+e22 --::L "founds/founded"--> e24
+e14 --::X "maintains"--> e24
+e133 --::N "connects to"-- e9
+e133 --::L "named after"--> e134
+t126 --::P--> e133
+e133 --::X "represents/models"--> c166
+e89 --::L "manages"--> e133
+e84 --::L "manages"--> e83
+e110 --::L "runs or executes"--> e79
+e110 --::X "used for"--> e108
+e127 --::L "implements"--> e52
+e127 --::L "manages"--> e81
+e88 --::L "implements"--> e51
+e88 --::L "implements"--> e143
+e88 --::X "has behaviour"--> c80
+e17 --::L "is used by"--> e127
+e125 --::N "https connection with"-- e8
+e109 --::L "redirects"--> e153
+e15 --::L "implements"--> e58
+e15 --::L "creates"--> e123
+e15 --::L "is used by"--> e127
+e122 --::L "is used by"--> e16
+e143 --::X "means"--> c28
+e31 --::L "enables"--> e161
+e31 --::X "has behaviour"--> c138
+e2 --::P--> e77
+e124 --::L "runs or executes"--> e113
+e111 --::L "authenticates"--> e169
+c13 --::X "refers to"--> c12
+c13 --::X "represents/models"--> c11
+t167 --::X "has example"--> c29
+e5 --::N "not the same as"-- e55
+t121 --::P--> e5
+e5 --::X "refers to"--> e133
+e5 --::X "has behaviour"--> c132
+t45 --::X "used for"--> c159
+e55 --::X "refers to"--> c139
+e107 --::L "runs or executes"--> e99
+e107 --::L "needs to run or execute before"--> e118
+e107 --::X "refers to"--> c106
+e107 --::X "used for"--> c156
+t102 --::X "used for"--> c92
+t102 --::X "has behaviour"--> c71
+t102 --::X "obeys the rule"--> c97
+e157 --::N "runs alongside"-- e117
+e157 --::N "terminates together with"-- e163
+e157 --::L "enables"--> e151
+e157 --::X "used for"--> c116
+e8 --::X "represents/models"--> c105
+e154 --::L "injects"--> e70
+e78 --::L "is used by"--> e16
+e33 --::L "binds to"--> e31
+e33 --::X "has abbreviation"--> e30
+e33 --::X "represents/models"--> c53
+e33 --::X "has behaviour"--> c120
+e33 --::X "promises"--> c72
+e37 --::L "determines"--> e130
+e37 --::L "is used by"--> e32
+e37 --::X "refers to"--> c36
+e37 --::X "represents/models"--> c60
+e10 --::P--> e87
+e52 --::X "refers to"--> e88
+e35 --::N "not the same as"-- e165
+e35 --::X "refers to"--> e83
+t102 --::P--> t135
+e20 --::X "has abbreviation"--> e15
+e51 --::X "refers to"--> c86
+e136 --::X "refers to"--> e133
+e136 --::X "refers to"--> e31
+e136 --::X "refers to"--> e88
+e136 --::X "expresses property"--> c141
+e34 --::L "determines"--> e160
+e34 --::L "binds to"--> e30
+e34 --::L "is used by"--> e54
+e34 --::X "has abbreviation"--> e31
+e34 --::X "represents/models"--> c56
+e34 --::X "represents/models"--> c82
+e169 --::X "refers to"--> c75
+t112 --::X "used for"--> c64
+e26 --::L "constrains"--> e145
+e26 --::X "has version"--> c73
+e26 --::X "has version"--> c168
+e50 --::X "refers to"--> e83
+e50 --::X "refers to"--> c129
+e94 --::X "refers to"--> c93
+e94 --::X "refers to"--> c65
+t126 --::X "refers to"--> c85
+e57 --::L "runs or executes"--> e133
+e57 --::X "refers to"--> c104
+e108 --::X "refers to"--> e24
+c159 --::X "refers to"--> c158
+c159 --::X "refers to"--> c106
+c159 --::X "refers to"--> c91
+e63 --::X "refers to"--> c100
+e63 --::X "has example"--> e5
+e165 --::X "refers to"--> e133
+e157 --::P--> e164
+e164 --::X "refers to"--> e133
+c116 --::X "refers to"--> c115
+c116 --::X "refers to"--> c142
+c116 --::X "refers to"--> c152
+e1 --::L "authenticates"--> e8
+e1 --::X "refers to"--> c76
+e1 --::X "refers to"--> c155
+e70 --::X "refers to"--> c69
+e70 --::X "refers to"--> c146
+e153 --::X "refers to"--> c7
+c80 --::X "refers to"--> c96
+c80 --::X "refers to"--> c61
+c28 --::X "refers to"--> c61
+c28 --::X "refers to"--> c96
+t44 --::X "refers to"--> c59
+e67 --::X "refers to"--> c66
+e67 --::X "refers to"--> c90
+c141 --::X "refers to"--> c140
+e62 --::L "provisions"--> e33
+e62 --::X "refers to"--> c36
+e54 --::X "refers to"--> e133
+e32 --::X "refers to"--> e31
+c60 --::X "refers to"--> c21
+c60 --::X "refers to"--> c27
+c60 --::X "refers to"--> c18
+e161 --::X "refers to"--> c137
+e114 --::L "doesn't affect"--> e30
+e114 --::X "refers to"--> c137
+e2 --::X "refers to"--> e87
+e2 --::X "refers to"--> c170
+e10 --::X "refers to"--> c7
+e10 --::X "refers to"--> c148
+e10 --::X "refers to"--> e88
+e10 --::X "refers to"--> c103
+e113 --::X "refers to"--> e111
+e113 --::X "refers to"--> e83
+e3 --::X "refers to"--> c147
+e3 --::X "refers to"--> e124
+e9 --::X "refers to"--> c7
+e145 --::X "refers to"--> c144
+e74 --::L "is used by"--> e24
+t19 --::X "has abbreviation"--> c13
+c11 --::X "refers to"--> c162
+c11 --::X "refers to"--> c149
+c11 --::X "refers to"--> c95
+e46 --::L "then followed by"--> e6
+e6 --::L "then followed by"--> e38
+e38 --::L "then followed by"--> e42
+e38 --::X "refers to"--> c103
+e42 --::L "then followed by"--> e39
+e47 --::L "then followed by"--> e4
+e4 --::L "then followed by"--> e40
+e40 --::L "then followed by"--> e41
+e41 --::L "then followed by"--> e43
+t48 --::X "refers to"--> c101
+t48 --::X "refers to"--> c131

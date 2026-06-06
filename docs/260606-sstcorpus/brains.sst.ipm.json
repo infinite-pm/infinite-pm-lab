@@ -1,0 +1,1496 @@
+{
+  "version": "25.09",
+  "src": {
+    "type": "n4l-sst-native",
+    "ipmt": "",
+    "positions": {
+      "nodes": null,
+      "edges": null
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "0.5-4 Hz",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 2,
+      "name": "12-35 Hz",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 3,
+      "name": "32-100 Hz",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 4,
+      "name": "4-8 Hz",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 5,
+      "name": "5-15 Hz",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 6,
+      "name": "Betz cells",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 7,
+      "name": "Complementary roles for hippocampus and anterior cingulate in composing continuous choice",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "External granular layer. Composed of small \"pyramidal cells\" and \"inhibitory cells\". Receives input from deeper layers.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "External pyramidal layer. Small to medium pyramidal neurons. Send exicitory outputs to other cortical areas across the corpus callosum.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 10,
+      "name": "Internal granular layer. The main entry point for incoming sensory signals. Direct signals from the thalamus.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Internal pyramidal layer. Contains a large number of pyramidal neurons/\"Betz cells\" and motor neurons.  Responsible for sending signals out of the cerebral cortex to deeper brain regions, spinal cord.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Left–right-alternating theta sweeps in entorhinal–hippocampal maps of space",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Multiform layer. The deepest layer. Sends massive feedback mainly to thalamus, allowing the cortex to regulate and filter sensory information.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 14,
+      "name": "Nature",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Outer molecular layer. Dense mat of axons, dendrites, and \"glial cells\", containing few neuronal cell bodies. Inputs from \"brain stem\".",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "accumulating knowledge",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 17,
+      "name": "affordances",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ],
+      "tooltip": "conditional promises"
+    },
+    {
+      "id": 18,
+      "name": "alpha waves",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "association and interhemipsheric signalling",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 20,
+      "name": "attractive signals engage a winner-takes-all competition",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 21,
+      "name": "autonomic nervous system",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 22,
+      "name": "axons",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 23,
+      "name": "basal ganglia",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 24,
+      "name": "below cortex, forebrain",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 25,
+      "name": "beta waves",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 26,
+      "name": "brain stem",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 27,
+      "name": "collect sensory information and integrate with neighbouring columns",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 28,
+      "name": "column",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 29,
+      "name": "columnar organization hypothesis",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 30,
+      "name": "columns",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 31,
+      "name": "concentration",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 32,
+      "name": "conduit/relay station for sensory information.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 33,
+      "name": "cortical to cortical communication",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 34,
+      "name": "creates temporary structured episodic record",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 35,
+      "name": "delta waves",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 36,
+      "name": "dendrites",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 37,
+      "name": "early telencephalon, meaning the end of the brain",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 38,
+      "name": "encoding meaning as \"things\" is efficient conceptualisation, which is a coarse graining of spacetime pattern persistence and recurrence.",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 39,
+      "name": "entorhinal cortex",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 40,
+      "name": "forebrain",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 41,
+      "name": "frontal cortex",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 42,
+      "name": "gamma waves",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ],
+      "tooltip": "40 Hz of special interest"
+    },
+    {
+      "id": 43,
+      "name": "glial cells",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 44,
+      "name": "grid cells",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 45,
+      "name": "hindbrain",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 46,
+      "name": "hippocampus",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 47,
+      "name": "hormones",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 48,
+      "name": "https://www.biorxiv.org/content/10.1101/2025.03.17.643774v1.full",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 49,
+      "name": "human brain",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 50,
+      "name": "hypothalamus",
+      "alias": "",
+      "type": "Event",
+      "tooltip": "hypothalamus is extensively interconnected with other brain regions that collectively provide signals that motivate different types of behaviors, with varying levels of urgency. The resultant signals of need may be experienced as hunger, thirst, tiredness, cold, pain, fear, and so on; that is, basic emotions."
+    },
+    {
+      "id": 51,
+      "name": "inhibitory cells",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 52,
+      "name": "inner chamber",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 53,
+      "name": "key nexus between body and brain , vital decision making circuits",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 54,
+      "name": "layer 1",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ],
+      "tooltip": "plays a role in intentionality?"
+    },
+    {
+      "id": 55,
+      "name": "layer 2",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 56,
+      "name": "layer 3",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 57,
+      "name": "layer 4",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 58,
+      "name": "layer 5",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 59,
+      "name": "layer 6",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 60,
+      "name": "learning and memory",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 61,
+      "name": "maps incoming sensory stimulus to a menu of actions/instincts",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 62,
+      "name": "mediates evaluatuon and selection of actions",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 63,
+      "name": "medium attention,anxiety dominant, active, external attention",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 64,
+      "name": "midbrain",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 65,
+      "name": "modular repeating columns in 6 layers",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 66,
+      "name": "monitoring signals in the bloodstream and neural signals",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 67,
+      "name": "neocortex",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 68,
+      "name": "nested circuit loops",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 69,
+      "name": "neurons that fire together wire together",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 70,
+      "name": "optic nerve",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 71,
+      "name": "outgrowth of hypothalamus",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 72,
+      "name": "parietal cortex",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 73,
+      "name": "performs significant processing/compression on input",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 74,
+      "name": "performs various kinds of neural operations, using these integrated maps of different kinds of stimuli to derive an optimal action",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 75,
+      "name": "physical structures/neural circuits",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 76,
+      "name": "place cells",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 77,
+      "name": "place cells spacetime",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 78,
+      "name": "premotor cortex",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 79,
+      "name": "primary input centre, receive inputs from other brain areas",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 80,
+      "name": "provides top down modulation and integrated activity.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 81,
+      "name": "pyramidal",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 82,
+      "name": "pyramidal cells",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 83,
+      "name": "regulate bodily functions—blood pressure, heart rate, enzyme levels, digestion, gut peristalsis, sweating, shivering, sleep, arousal",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 84,
+      "name": "retinal ganglia",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 85,
+      "name": "return data back to thalamus",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 86,
+      "name": "signal from midbrain about reward/punishment/surprise",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 87,
+      "name": "sleep",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 88,
+      "name": "structured for causal relationships A causes B",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 89,
+      "name": "take signals from 2,3 and context and redistribute",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 90,
+      "name": "tectum",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ],
+      "tooltip": "conditional promises"
+    },
+    {
+      "id": 91,
+      "name": "tectum, cortex, spine, other hemisphere",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 92,
+      "name": "tectum, thalamus",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 93,
+      "name": "telencephalon",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 94,
+      "name": "temporal cortex",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 95,
+      "name": "thalamus",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 96,
+      "name": "theta waves",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 97,
+      "name": "top of midbrain",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 98,
+      "name": "type 1",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 99,
+      "name": "type 2",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 100,
+      "name": "ultimately expand in mammals to become the neocortex",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 101,
+      "name": "urges to eat, drink, sleep, find shelter, avoid whatever is causing pain or fear, or respond with defensive or aggressive behaviours.",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 102,
+      "name": "very relaxed, light or passive attention",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 103,
+      "name": "what we can do with a object or service",
+      "alias": "",
+      "type": "Thing"
+    }
+  ],
+  "edges": [
+    {
+      "id": 0,
+      "source": 28,
+      "target": 67,
+      "dir": "",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 67,
+      "target": 65,
+      "dir": "",
+      "tooltip": "has the structure of",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 67,
+      "target": 16,
+      "dir": "",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 50,
+      "target": 47,
+      "dir": "",
+      "tooltip": "influences",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 50,
+      "target": 101,
+      "dir": "",
+      "tooltip": "influences",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 50,
+      "target": 100,
+      "dir": "",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 50,
+      "target": 53,
+      "dir": "",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 50,
+      "target": 40,
+      "dir": "",
+      "tooltip": "takes place at location",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 50,
+      "target": 66,
+      "dir": "",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 50,
+      "target": 83,
+      "dir": "",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 47,
+      "target": 21,
+      "dir": "",
+      "tooltip": "influences",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 95,
+      "target": 40,
+      "dir": "",
+      "tooltip": "takes place at location",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 95,
+      "target": 32,
+      "dir": "",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 95,
+      "target": 73,
+      "dir": "",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 75,
+      "target": 46,
+      "dir": "",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 76,
+      "target": 46,
+      "dir": "",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 46,
+      "target": 60,
+      "dir": "",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 46,
+      "target": 34,
+      "dir": "",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 46,
+      "target": 88,
+      "dir": "",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 90,
+      "target": 61,
+      "dir": "",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 90,
+      "target": 74,
+      "dir": "",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 90,
+      "target": 20,
+      "dir": "",
+      "tooltip": "works by method",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 90,
+      "target": 97,
+      "dir": "",
+      "tooltip": "takes place at location",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 17,
+      "target": 103,
+      "dir": "",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 14,
+      "target": 12,
+      "dir": "",
+      "tooltip": "is the publisher of",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 18,
+      "target": 5,
+      "dir": "",
+      "tooltip": "has frequency",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 18,
+      "target": 102,
+      "dir": "",
+      "tooltip": "is characterized by",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 25,
+      "target": 2,
+      "dir": "",
+      "tooltip": "has frequency",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 25,
+      "target": 63,
+      "dir": "",
+      "tooltip": "is characterized by",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 78,
+      "target": 42,
+      "dir": "",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 72,
+      "target": 42,
+      "dir": "",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 94,
+      "target": 42,
+      "dir": "",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 41,
+      "target": 42,
+      "dir": "",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 42,
+      "target": 3,
+      "dir": "",
+      "tooltip": "has frequency",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 42,
+      "target": 31,
+      "dir": "",
+      "tooltip": "is characterized by",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 35,
+      "target": 1,
+      "dir": "",
+      "tooltip": "has frequency",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 35,
+      "target": 87,
+      "dir": "",
+      "tooltip": "is characterized by",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 98,
+      "target": 96,
+      "dir": "",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 99,
+      "target": 96,
+      "dir": "",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 96,
+      "target": 4,
+      "dir": "",
+      "tooltip": "has frequency",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 40,
+      "target": 49,
+      "dir": "",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 64,
+      "target": 49,
+      "dir": "",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 45,
+      "target": 49,
+      "dir": "",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 84,
+      "target": 92,
+      "dir": "",
+      "tooltip": "signals to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 84,
+      "target": 70,
+      "dir": "",
+      "tooltip": "takes place at location",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 92,
+      "target": 28,
+      "dir": "",
+      "tooltip": "sustains",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 23,
+      "target": 24,
+      "dir": "",
+      "tooltip": "takes place at location",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 23,
+      "target": 68,
+      "dir": "",
+      "tooltip": "has the structure of",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 23,
+      "target": 62,
+      "dir": "",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 54,
+      "target": 15,
+      "dir": "",
+      "tooltip": "has description",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 54,
+      "target": 80,
+      "dir": "",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 54,
+      "target": 33,
+      "dir": "",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 55,
+      "target": 8,
+      "dir": "",
+      "tooltip": "has description",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 55,
+      "target": 27,
+      "dir": "",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 56,
+      "target": 9,
+      "dir": "",
+      "tooltip": "has description",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 56,
+      "target": 27,
+      "dir": "",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 56,
+      "target": 19,
+      "dir": "",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 57,
+      "target": 10,
+      "dir": "",
+      "tooltip": "has description",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 57,
+      "target": 79,
+      "dir": "",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 58,
+      "target": 91,
+      "dir": "",
+      "tooltip": "signals to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 58,
+      "target": 11,
+      "dir": "",
+      "tooltip": "has description",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 58,
+      "target": 89,
+      "dir": "",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 59,
+      "target": 85,
+      "dir": "",
+      "tooltip": "signals to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 59,
+      "target": 13,
+      "dir": "",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 44,
+      "target": 39,
+      "dir": "",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 71,
+      "target": 67,
+      "dir": "",
+      "tooltip": "evolved to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 37,
+      "target": 50,
+      "dir": "",
+      "tooltip": "evolved to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 37,
+      "target": 93,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 100,
+      "target": 67,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 86,
+      "target": 23,
+      "dir": "",
+      "tooltip": "sustains",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 8,
+      "target": 82,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 8,
+      "target": 51,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 27,
+      "target": 30,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 10,
+      "target": 95,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 85,
+      "target": 95,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 7,
+      "target": 48,
+      "dir": "",
+      "tooltip": "has URL",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 12,
+      "target": 96,
+      "dir": "",
+      "tooltip": "discusses",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 12,
+      "target": 77,
+      "dir": "",
+      "tooltip": "discusses",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 12,
+      "target": 76,
+      "dir": "",
+      "tooltip": "discusses",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 12,
+      "target": 44,
+      "dir": "",
+      "tooltip": "discusses",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 15,
+      "target": 22,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 15,
+      "target": 36,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 15,
+      "target": 43,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 15,
+      "target": 26,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 11,
+      "target": 81,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 11,
+      "target": 6,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    }
+  ]
+}

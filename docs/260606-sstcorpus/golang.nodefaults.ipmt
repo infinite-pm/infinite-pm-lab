@@ -1,0 +1,22 @@
+u1::a Documentation often assumes you already know go quite well and is more interested in version changes than in a pedagogical explanation. ::?tec
+u2::a Golang is an easy to write language without too many strict syntax issues. ::?tec
+u3::a "It's not a free format language, mainly because of placement of braces." ::?tec
+u4::a It's opinionated without always explaining why. ::?tec
+u5::a associative arrays ::?tec
+u6::a basic example ::?ec
+u7::a go ::?tec
+u8::a go modules ::?tec
+u9::a go packages ::?tec
+u10::a golang ::?tec
+u11::a gopath ::?tec
+u12::a hello world ::?ec
+u13::a maps ::?tec
+u14::a "package main\n\nimport (\n    \"dependency 1\"\n    \"dependency 2\"\n    \"fmt\"\n)\n\nfunc main () {  // brace must go here\n\n      fmt.Println(\"Hello world\")\n}" ::?etc
+e15::a runes ::e
+u16::a snide remark ::?tec "Programmers are supposed to offer their lives to learning it." ::tip
+e17::a unicode ::e
+
+u13 --::N "same as"-- u5
+e15 --::L "implements"--> e17
+u6 --::N "same as"-- u12
+u14 --::X "has example"--> u12

@@ -1,0 +1,32 @@
+e1::a A1 ::e
+e2::a A2 ::e
+e3::a A3 ::e
+e4::a A4 ::e
+e5::a A5 ::e
+e6::a A6 ::e
+e7::a B1 ::e
+e8::a B2 ::e
+e9::a B3 ::e
+e10::a B4 ::e
+e11::a B5 ::e
+e12::a B6 ::e
+e13::a S1 ::e
+e14::a S2 ::e
+
+e1 --::L "leads to"--> e2
+e1 --::L "leads to"--> e3
+e2 --::L "leads to"--> e5
+e3 --::L "leads to"--> e5
+e3 --::L "leads to"--> e6
+e5 --::L "leads to"--> e13
+e5 --::L "leads to"--> e14
+e6 --::L "leads to"--> e14
+e4 --::L "leads to"--> e13
+e13 --::L "leads to"--> e7
+e14 --::L "leads to"--> e8
+e14 --::L "leads to"--> e9
+e7 --::L "leads to"--> e10
+e8 --::L "leads to"--> e10
+e8 --::L "leads to"--> e11
+e9 --::L "leads to"--> e11
+e10 --::L "leads to"--> e12

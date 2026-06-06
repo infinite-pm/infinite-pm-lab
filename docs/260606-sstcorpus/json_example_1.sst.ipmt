@@ -1,0 +1,45 @@
+t1::a 1 ::t
+t2::a 1.0.0 ::t
+t3::a 10 ::t
+t4::a 2 ::t
+t5::a 2025-10-17T14:30:00Z ::t
+t6::a Example API Response ::t
+u7::a "Instance of a users array {\n        \"id\": 1,\n        \"username\": \"alice\",\n        \"email\": \"alice@example.com\",\n        \"active\": true,\n        \"roles\": [\"admin\", \"user\"]\n      }" ::?tc
+u8::a "Instance of a users array {\n        \"id\": 2,\n        \"username\": \"bob\",\n        \"email\": \"bob@example.com\",\n        \"active\": false,\n        \"roles\": [\"user\"]\n      }" ::?tc
+u9::a "My json object representation is an EVENT {\n   \"name\": \"Example API Response\",\n   \"version\": \"1.0.0\",\n   \"status\": \"success\",\n\n   \"data\": {\n\n      \"users\": [\n      {\n        \"id\": 1,\n        \"username\": \"alice\",\n        \"email\": \"alice@example.com\",\n        \"active\": true,\n        \"roles\": [\"admin\", \"user\"]\n      },\n      {\n        \"id\": 2,\n        \"username\": \"bob\",\n        \"email\": \"bob@example.com\",\n        \"active\": false,\n        \"roles\": [\"user\"]\n      }\n    ],\n \n   \"metadata\": {\n      \"total\": 2,\n      \"page\": 1,\n      \"limit\": 10\n    }\n  },\n\n  \"timestamp\": \"2025-10-17T14:30:00Z\"\n}" ::?tc
+u10::a "Partial json element -- \" metadata\": {\n      \"total\": 2,\n      \"page\": 1,\n      \"limit\": 10\n    }" ::?tc
+u11::a "Partial json element -- \"users\" : [\n      {\n        \"id\": 1,\n        \"username\": \"alice\",\n        \"email\": \"alice@example.com\",\n        \"active\": true,\n        \"roles\": [\"admin\", \"user\"]\n      },\n      {\n        \"id\": 2,\n        \"username\": \"bob\",\n        \"email\": \"bob@example.com\",\n        \"active\": false,\n        \"roles\": [\"user\"]\n      }\n    ]" ::?etc
+t12::a active ::t
+t13::a admin ::t
+t14::a alice ::t
+t15::a alice@example.com ::t
+t16::a bob ::t
+t17::a bob@example.com ::t
+t18::a inactive ::t
+t19::a success ::t
+t20::a user ::t
+u21::a "{ \"users\": [\n      {\n        \"id\": 1,\n        \"username\": \"alice\",\n        \"email\": \"alice@example.com\",\n        \"active\": true,\n        \"roles\": [\"admin\", \"user\"]\n      },\n      {\n        \"id\": 2,\n        \"username\": \"bob\",\n        \"email\": \"bob@example.com\",\n        \"active\": false,\n        \"roles\": [\"user\"]\n      }\n    ],\n \n   \"metadata\": {\n      \"total\": 2,\n      \"page\": 1,\n      \"limit\": 10\n    }\n  }" ::?tc
+
+u10 --::X "has total value"--> t4
+u10 --::X "has page number"--> t1
+u10 --::X "has a limit of"--> t3
+u7 --::X "has id"--> t1
+u7 --::X "has username"--> t14
+u7 --::X "has email"--> t15
+u7 --::X "has a role"--> t13
+u7 --::X "has a role"--> t20
+u7 --::X "has status"--> t12
+u8 --::X "has id"--> t4
+u8 --::X "has username"--> t16
+u8 --::X "has email"--> t17
+u8 --::X "has a role"--> t20
+u8 --::X "has status"--> t18
+u7 --::P--> u11
+u8 --::P--> u11
+u11 --::P--> u21
+u21 --::X "has metadata"--> u10
+u9 --::X "has name"--> t6
+u9 --::X "has version"--> t2
+u9 --::X "has status"--> t19
+u9 --::X "has timestamp"--> t5
+u9 --::X "has data"--> u21

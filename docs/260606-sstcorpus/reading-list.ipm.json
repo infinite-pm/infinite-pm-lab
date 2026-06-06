@@ -1,0 +1,430 @@
+{
+  "version": "25.09",
+  "src": {
+    "type": "n4l",
+    "ipmt": "",
+    "positions": {
+      "nodes": null,
+      "edges": null
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Amos Tversky",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 2,
+      "name": "Bruce Bueno de Mesquita",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 3,
+      "name": "Daniel Kahneman",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 4,
+      "name": "Donella Meadows",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 5,
+      "name": "Francis Fukuyama",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 6,
+      "name": "James C. Scott",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 7,
+      "name": "Judgment under Uncertainty",
+      "alias": "",
+      "type": "Concept",
+      "tooltip": "the anchor is almost always the wrong number"
+    },
+    {
+      "id": 8,
+      "name": "Philip Tetlock",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 9,
+      "name": "Seeing Like a State",
+      "alias": "",
+      "type": "Concept",
+      "tooltip": "what the centre can measure is not what the edge actually does"
+    },
+    {
+      "id": 10,
+      "name": "Superforecasting",
+      "alias": "",
+      "type": "Thing",
+      "tooltip": "calibration beats cleverness over long horizons"
+    },
+    {
+      "id": 11,
+      "name": "The Dictators Handbook",
+      "alias": "",
+      "type": "Thing",
+      "tooltip": "rulers survive by keeping a small coalition paid"
+    },
+    {
+      "id": 12,
+      "name": "The Origins of Political Order",
+      "alias": "",
+      "type": "Thing",
+      "tooltip": "impersonal institutions are hard to build and easy to lose"
+    },
+    {
+      "id": 13,
+      "name": "Thinking Fast and Slow",
+      "alias": "",
+      "type": "Concept",
+      "tooltip": "two systems, one of them lazy, both of them you"
+    },
+    {
+      "id": 14,
+      "name": "Thinking in Systems",
+      "alias": "",
+      "type": "Thing",
+      "tooltip": "most problems are the shape of a feedback loop"
+    },
+    {
+      "id": 15,
+      "name": "central planning",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 16,
+      "name": "cognitive bias",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 17,
+      "name": "complexity",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 18,
+      "name": "decision making",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 19,
+      "name": "dual-process cognition",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 20,
+      "name": "feedback loops",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 21,
+      "name": "heuristics",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 22,
+      "name": "incentive structures",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 23,
+      "name": "legibility",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 24,
+      "name": "political coalitions",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 25,
+      "name": "prediction",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 26,
+      "name": "state formation",
+      "alias": "",
+      "type": "Concept"
+    }
+  ],
+  "edges": [
+    {
+      "id": 27,
+      "source": 10,
+      "target": 18,
+      "dir": "DirFwd",
+      "tooltip": "is about topic/them",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 28,
+      "source": 10,
+      "target": 25,
+      "dir": "DirFwd",
+      "tooltip": "is about topic/them",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 29,
+      "source": 10,
+      "target": 8,
+      "dir": "DirFwd",
+      "tooltip": "has author",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 30,
+      "source": 10,
+      "target": 13,
+      "dir": "DirFwd",
+      "tooltip": "has bibtex citation",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 31,
+      "source": 7,
+      "target": 21,
+      "dir": "DirFwd",
+      "tooltip": "is about topic/them",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 32,
+      "source": 7,
+      "target": 16,
+      "dir": "DirFwd",
+      "tooltip": "is about topic/them",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 33,
+      "source": 7,
+      "target": 3,
+      "dir": "DirFwd",
+      "tooltip": "has author",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 34,
+      "source": 7,
+      "target": 1,
+      "dir": "DirFwd",
+      "tooltip": "has author",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 35,
+      "source": 11,
+      "target": 24,
+      "dir": "DirFwd",
+      "tooltip": "is about topic/them",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 36,
+      "source": 11,
+      "target": 22,
+      "dir": "DirFwd",
+      "tooltip": "is about topic/them",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 37,
+      "source": 11,
+      "target": 2,
+      "dir": "DirFwd",
+      "tooltip": "has author",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 38,
+      "source": 14,
+      "target": 20,
+      "dir": "DirFwd",
+      "tooltip": "is about topic/them",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 39,
+      "source": 14,
+      "target": 17,
+      "dir": "DirFwd",
+      "tooltip": "is about topic/them",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 40,
+      "source": 14,
+      "target": 18,
+      "dir": "DirFwd",
+      "tooltip": "is about topic/them",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 41,
+      "source": 14,
+      "target": 4,
+      "dir": "DirFwd",
+      "tooltip": "has author",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 42,
+      "source": 13,
+      "target": 18,
+      "dir": "DirFwd",
+      "tooltip": "is about topic/them",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 43,
+      "source": 13,
+      "target": 19,
+      "dir": "DirFwd",
+      "tooltip": "is about topic/them",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 44,
+      "source": 13,
+      "target": 21,
+      "dir": "DirFwd",
+      "tooltip": "is about topic/them",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 45,
+      "source": 13,
+      "target": 3,
+      "dir": "DirFwd",
+      "tooltip": "has author",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 46,
+      "source": 13,
+      "target": 7,
+      "dir": "DirFwd",
+      "tooltip": "has bibtex citation",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 47,
+      "source": 9,
+      "target": 15,
+      "dir": "DirFwd",
+      "tooltip": "is about topic/them",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 48,
+      "source": 9,
+      "target": 23,
+      "dir": "DirFwd",
+      "tooltip": "is about topic/them",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 49,
+      "source": 9,
+      "target": 22,
+      "dir": "DirFwd",
+      "tooltip": "is about topic/them",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 50,
+      "source": 9,
+      "target": 6,
+      "dir": "DirFwd",
+      "tooltip": "has author",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 51,
+      "source": 12,
+      "target": 26,
+      "dir": "DirFwd",
+      "tooltip": "is about topic/them",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 52,
+      "source": 12,
+      "target": 24,
+      "dir": "DirFwd",
+      "tooltip": "is about topic/them",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 53,
+      "source": 12,
+      "target": 5,
+      "dir": "DirFwd",
+      "tooltip": "has author",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 54,
+      "source": 12,
+      "target": 9,
+      "dir": "DirFwd",
+      "tooltip": "has bibtex citation",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    }
+  ]
+}

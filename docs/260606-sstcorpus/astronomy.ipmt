@@ -1,0 +1,35 @@
+e1::a And interesting 2 ::e "2 becomes \"too\"" ::tip
+e2::a And makes a year 4 you ::e "4 becomes simply for" ::tip
+e3::a Astronomy ::e
+e4::a Astronomy is 1derful ::e "1-derful becomes \"wonderful\"" ::tip
+c5::a Astronomy is the study of celestial bodies ::c
+e6::a By law of phy6 great ::e "phy6 becomes \"physics\"" ::tip
+e7::a Do nightly scintill8 ::e "scintill8 becomes \"scintillate\"" ::tip
+e8::a If watchful providence be9 ::e "be9 becomes \"benign\"" ::tip
+e9::a It7 when the stars so bright ::e "It7 becomes \"It's heaven\"" ::tip
+e10::a Moon ::e
+e11::a "Should not keep up her watch divine," ::e
+e12::a The Ear3volves around the Sun ::e "Ear3volves becomes \"Earth revolves\"" ::tip
+e13::a The Moon affects the sur5 heard ::e "sur5 becomes \"surf I've\"" ::tip
+e14::a We soon should come to 0 ::e "the 0 should be pronounced \"nought\" to rhyme with fraught" ::tip
+e15::a With good intentions fraught ::e
+c16::a https://en.wikipedia.org/wiki/Astronomy ::c
+c17::a https://eos.org/wp-content/uploads/2023/11/age-of-moon.jpg ::c
+
+e10 --::L "then followed by"--> e3
+e10 --::X "has image"--> c17
+e3 --::X "defined as"--> c5
+e3 --::X "has URL"--> c16
+e4 --::L "then followed by"--> e1
+e1 --::L "then followed by"--> e12
+e7 --::L "then followed by"--> e8
+e12 --::L "then followed by"--> e2
+e2 --::L "then followed by"--> e13
+e13 --::L "then followed by"--> e6
+e13 --::X "refers to"--> e10
+e6 --::L "then followed by"--> e9
+e9 --::L "then followed by"--> e7
+e8 --::L "then followed by"--> e15
+e15 --::L "then followed by"--> e11
+e11 --::L "then followed by"--> e14
+e14 --::L "then followed by"--> e10

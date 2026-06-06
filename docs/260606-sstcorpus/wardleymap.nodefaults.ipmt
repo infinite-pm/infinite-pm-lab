@@ -1,0 +1,36 @@
+e1::a Internet ::e
+e2::a The Industrialized ::e
+e3::a The Uncharted ::e
+e4::a citizenship ::e
+e5::a cryptography ::e "de facto starting point" ::tip
+e6::a digital currency ::e
+e7::a digital identity ::e
+e8::a encryption ::e
+e9::a global network ::e
+e10::a individual sovereignty ::e
+e11::a nation state ::e
+e12::a personal security ::e
+e13::a sovereign individual ::e
+e14::a tax system ::e
+e15::a territorial control ::e
+e16::a unknown ::e
+e17::a wealth presentation ::e
+
+e5 --::L "develops into"--> e7
+e5 --::L "matures into"--> e6
+e16 --::L "develops into"--> e5
+e8 --::L "develops into"--> e12
+e4 --::L "develops into"--> e13
+e4 --::L "approximates to"--> e2
+e1 --::L "develops into"--> e15
+e1 --::L "develops into"--> e16
+e1 --::L "develops into"--> e9
+e10 --::L "matures into"--> e13
+e10 --::L "approximates to"--> e3
+e7 --::L "develops into"--> e10
+e17 --::L "matures into"--> e13
+e6 --::L "develops into"--> e17
+e12 --::L "matures into"--> e13
+e14 --::L "matures into"--> e8
+e9 --::L "matures into"--> e11
+e11 --::L "develops into"--> e4

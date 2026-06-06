@@ -1,0 +1,244 @@
+u1::a ">\"n4l notes\" as a link between >logical >thinking and >brainstorming" ::?tc
+t2::a ">\"three kinds of node\" and >\"four kinds of link\"" ::t
+t3::a ">arrow \"has emergency procedure\"" ::t
+t4::a ">arrow \"rehearse daily/monthly..\"" ::t
+t5::a ">arrow \"remember to\"" ::t
+t6::a ">arrow \"requires daily/monthly..\"" ::t
+t7::a ">arrow \"then do next\"" ::t
+t8::a ">arrow \"then verify\"" ::t
+t9::a ">arrow >class >\"contains\"" ::t
+t10::a ">arrow >class >\"expresses attribute\" or >property" ::t
+t11::a ">arrow >class >\"leads to\"" ::t
+t12::a ">arrow >class >\"similar to\" or >\"near\"" ::t
+u13::a >link >arrow types used in notes ::?tc
+t14::a ">nodes that are \"material agents\"" ::t
+t15::a ">nodes that are >\"concepts\" or descriptive >\"attributes\"" ::t
+t16::a ">nodes that are >\"events\"" ::t
+u17::a >people and >things ::?tc
+t18::a ">regularised >data input about >agents, persons, etc as sensory attributes and documented events" ::t
+u19::a ">rhyme, >rhythm, and >emotion increase the likelihood of remembering knowledge because you activate more of the major agents involved in cogitation" ::?etc
+t20::a A key issue is how we use context to activate knowledge from memory ::t
+e21::a Context ::e
+u22::a Context is the description of a scene or circumstances in which facts have relevance. ::?etc
+u23::a "Context makes sense of facts, and tells us when they apply." ::?etc
+u24::a Get all causal consequences ::?etc
+u25::a Get all generalizations ::?etc
+u26::a Get all similar ::?tc
+u27::a Get all specializations ::?etc
+e28::a GetArrowByName ::e
+e29::a GetConsequences as LEADS TO ::e
+e30::a GetDBNodePtrMatchingName ::e
+e31::a GetFwdConeAsNodes or Links ::e
+e32::a GetFwdPathsAsLinks ::e
+e33::a GetGeneralizations as CONTAINED BY ::e
+e34::a GetHistory as inverse LEADS TO ::e
+e35::a GetNextSteps as LEADS TO ::e
+e36::a GetSimilar as CONTAINED BY/CONTAINS ::e
+e37::a GetSimilar as NEAR ::e
+e38::a GetSpecialCases as CONTAINS ::e
+t39::a How do we use context? ::t
+u40::a How to? ::?tc
+u41::a Look for key words in section/chapter name ::?etc
+u42::a Look for key words in strategic context tags ::?etc
+u43::a N4L ::?tc
+e44::a Path integral stories or histories ::e
+u45::a Semantic spacetime ::?etc
+u46::a Strategic context ::?tc
+e47::a The difference between these is whether the >data are first hand and >regular in >schema or attribute sets and are searchable by random access or whether they are only ad hoc explanatory >stories like metadata without all the raw examples. ::e
+u48::a There are many barriers to knowledge and reasoning ::?etc
+u49::a There are two kinds of context ::?etc
+e50::a There are two main types of data for a graph database ::e
+u51::a These notes are all about how to use N4L and knowledge graphs in general ::?tc
+u52::a What causes? ::?etc
+u53::a What determines? ::?etc
+u54::a What generates? ::?etc
+u55::a What is it about? ::?etc
+u56::a What kind of? ::?etc
+t57::a What? ::t
+u58::a Which kind is it? ::?etc
+u59::a Why does? ::?etc
+t60::a a collection of sequences of >nodes satisfying given criteria between start and end nodes ::t
+u61::a a fact is a trusted statement ::?tc "a fact may or may not have supporting evidence" ::tip
+u62::a a lot of notes are >reminders without much >context. Try to add >context that explains >when and >why you would want to being reminded of something. ::?etc
+u63::a "a material agent, person or thing" ::?etc
+u64::a "a material agent, thing or person" ::?tc
+t65::a a relationship >map of explanations between >things and >concepts with examples ::t
+t66::a a set of ad hoc observations ::t
+t67::a "a state of being, a state of not having, a colour ..." ::t
+t68::a about >complaints ::t
+t69::a about >meetings ::t
+e70::a add new notes and edit as you see ways to improve ::e "the more you work on notes, the more easily understood they will be" ::tip
+t71::a an idea or concept you think of ad hoc ::t
+u72::a an immaterial agent or concept ::?tc
+t73::a arrow definitions ::t
+u74::a "avoid using single words as notes as these may occur with different meanings elsewhere. Always qualify words with some explanation, and then you can use >\"special annotations\" like \"writing >word\" to link up to the generic word" ::?etc
+t75::a brainstorming ::t
+e76::a "colon bracketing :: ... ::" ::e "colon bracketing in arrows is not currently functional" ::tip
+u77::a context ::?tc
+u78::a contexts ::?etc
+u79::a correctness ::?etc
+u80::a evidence ::?etc
+u81::a facts ::?etc
+t82::a find hidden pathways through a system ::t
+u83::a four kinds of link ::?etc
+t84::a generalize up/CONTAINED BY then come back down/CONTAINS ::t
+e85::a "getting any notes down on the page, with approximate wordings of relationships" ::e "finding thematic backbones will give you a clue about how to make your notes tell a particular story whether linear or not" ::tip
+u86::a graph data can be used in security to map out processes and networks ::?tc
+e87::a group behaviour ::e
+u88::a "if the same words occur in several different cases, use different phrases to write about them then link both to the common phrase so that common phrase acts like an index term instead of a semantic collision" ::?tc "remember that notes are events that you are trying to describe not >\"immutable truths\"" ::tip
+u89::a "if you write in your own words, as you think it, you are more likely to recognise your thoughts later" ::?etc
+e90::a keep text in order if it belongs in order ::e
+u91::a knowledge ::?tc
+u92::a lessons ::?etc
+t93::a logical thinking ::t
+t94::a look for similar/NEAR nodes ::t
+u95::a making notes ::?etc
+u96::a mapping ::?etc
+u97::a material agent axiom ::?tc
+u98::a material agents ::?tc
+u99::a n4l notes ::?tc
+e100::a neighbour nodes by STtype ::e
+e101::a nodes related by query type ::e
+t102::a note taking ::t
+t103::a note-taking ::t
+t104::a note-taking language tool ::t
+u105::a orbits ::?tc
+t106::a overcoming the reticence or sense of difficulty ::t
+u107::a path solving ::?etc
+u108::a paths ::?tc
+t109::a "people don't remember what you say, but how you made them feel" ::t
+t110::a problem description ::t
+u111::a "quasi ontology for >\"semantic spacetime\"" ::?etc
+t112::a questions we have ::t
+u113::a reasoning ::?etc
+u114::a relationships ::?etc
+e115::a "remember that knowledge is not necessarily about facts, but about knowing something like a friend, i.e. how to react to it and what to do with it, when to avoid it etc" ::e
+u116::a reminders ::?tc
+u117::a right answers ::?etc
+t118::a scene description ::t
+u119::a sense making ::?etc
+u120::a sense-making ::?etc
+u121::a sensemaking ::?etc
+e122::a sensory experience ::e
+e123::a separate distinct issues using contexts like subsections ::e
+e124::a simple string match of proper name ::e
+t125::a something like an adjective or adverb word or phrase ::t
+e126::a strategic context ::e
+u127::a strategic labelling / tagging ::?etc
+u128::a "the >\"division by zero\" inverse issue" ::?tc "if we have an absorbing state that's N:1 it is not uniquely invertible, but can be defined by algebra" ::tip
+u129::a "the >\"inverse path tracing problem\"" ::?etc
+t130::a the collection of >nodes linked to a given node to >radius R ::t
+u131::a the most frequent >events are often the least >important ::?etc
+u132::a the most important >context is often how you were feeling ::?tc
+t133::a "there exists a class of >nodes that are >\"material nodes\" that manifest sources of >\"causal change\" and there exists a class of >\"immaterial nodes\" as >concepts that cannot exists without being bound to a material agent." ::t
+t134::a "things that manifestly exist, not just >concepts or >ideas" ::t
+u135::a three kinds of node ::?etc
+e136::a try to rewrite the approximate wordings in terms of arrows in N4L ::e
+e137::a upload the notes to the database and browse them further ::e
+e138::a use annotations to cross reference key words ::e
+e139::a use the N4L compiler to debug the notes ::e
+t140::a "what's on your minds, with >context to be meaningful again in future" ::t
+u141::a wrong answers ::?etc
+
+u120 --::N "same as"-- u119
+u120 --::N "same as"-- u121
+u121 --::N "same as"-- u119
+u105 --::X "defined as"--> t130
+u108 --::X "defined as"--> t60
+u116 --::X "has example"--> t66
+u116 --::X "has example"--> t71
+u43 --::X "has the role of"--> t104
+u43 --::X "used for"--> t103
+u43 --::X "used for"--> u1
+t103 --::N "same as"-- u95
+t93 --::P--> u113
+t75 --::P--> u113
+u91 --::X "has aspect"--> e21
+u77 --::X "generalizes"--> e126
+u77 --::X "generalizes"--> t118
+u77 --::X "generalizes"--> t110
+u77 --::X "generalizes"--> t112
+e30 --::L "leads to"--> e124
+e28 --::L "leads to"--> e101
+e32 --::L "implements"--> e44
+u40 --::X "has case"--> u51
+u40 --::X "has case"--> t39
+u119 --::N "same as"-- u120
+u119 --::N "same as"-- u121
+u99 --::X "has example"--> t69
+u99 --::X "has example"--> t68
+u99 --::X "has example"--> t140
+t2 --::P--> u45
+u98 --::X "has example"--> u17
+u95 --::N "same as"-- t103
+e122 --::L "from which we derive"--> e21
+e87 --::L "from which we derive"--> e21
+e126 --::N "same as"-- u127
+u52 --::N "same as"-- u53
+u52 --::N "same as"-- u54
+u53 --::N "same as"-- u52
+u53 --::N "same as"-- u54
+u54 --::N "same as"-- u53
+u46 --::X "has the role of"--> t57
+u17 --::X "in other words"--> t134
+u97 --::X "defined as"--> t133
+u56 --::N "same as"-- u58
+u26 --::X "implemented by"--> t84
+u26 --::X "implemented by"--> t94
+e31 --::L "leads to"--> e100
+e31 --::L "implements"--> e37
+e31 --::L "implements"--> e36
+e31 --::L "implements"--> e33
+e31 --::L "implements"--> e38
+e31 --::L "implements"--> e29
+e31 --::L "implements"--> e35
+e31 --::L "implements"--> e34
+u51 --::X "has key issue"--> t20
+e50 --::L "then followed by"--> e47
+t65 --::P--> e50
+t18 --::P--> e50
+u86 --::X "has example"--> t82
+t106 --::P--> u48
+e85 --::L "then followed by"--> e90
+e90 --::L "then followed by"--> e123
+e123 --::L "then followed by"--> e136
+e136 --::L "then followed by"--> e138
+e138 --::L "then followed by"--> e139
+e139 --::L "then followed by"--> e137
+e137 --::L "then followed by"--> e70
+e70 --::L "then followed by"--> e115
+u13 --::X "has example"--> t5
+u13 --::X "has example"--> t7
+u13 --::X "has example"--> t8
+u13 --::X "has example"--> t6
+u13 --::X "has example"--> t4
+u13 --::X "has example"--> t3
+u132 --::X "has example"--> t109
+t16 --::P--> u135
+t15 --::P--> u135
+t14 --::P--> u135
+u135 --::P--> u111
+u83 --::P--> u111
+t11 --::P--> u83
+t9 --::P--> u83
+t10 --::P--> u83
+t12 --::P--> u83
+u129 --::N "is connected to"-- u128
+u128 --::N "is connected to"-- u129
+u72 --::N "not the same as"-- u63
+u72 --::N "not the same as"-- u64
+u64 --::P--> u72
+u72 --::X "has the role of"--> t125
+u72 --::X "can express"--> u64
+u63 --::N "not the same as"-- u72
+u64 --::N "not the same as"-- u72
+u72 --::P--> u64
+u64 --::X "has example"--> t67
+u64 --::X "can express"--> u72
+u1 --::X "has aspect"--> t93
+u1 --::X "has aspect"--> t75
+u127 --::N "same as"-- e126
+e76 --::L "determines"--> e126
+e76 --::X "used for"--> t102
+e76 --::X "used for"--> t73
+u58 --::N "same as"-- u56

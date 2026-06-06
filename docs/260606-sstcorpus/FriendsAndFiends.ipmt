@@ -1,0 +1,75 @@
+c1::a Adam ::c
+c2::a Alfie ::c
+c3::a Ali ::c
+c4::a Billie ::c
+c5::a Bjørn ::c
+t6::a Bot1 ::t
+t7::a Bot2 ::t
+t8::a Bot3 ::t
+t9::a Bot4 ::t
+c10::a Brent ::c
+c11::a Carol ::c
+c12::a Chirpy Cheep Cheep ::c
+c13::a Company of Friends ::c
+c14::a Doug ::c
+c15::a Hans ::c
+c16::a Jan ::c
+c17::a Jane ::c
+c18::a Jane1 ::c
+c19::a Jane2 ::c
+c20::a Joyce ::c
+c21::a Jungi ::c
+c22::a Kat ::c
+c23::a Mandy ::c
+t24::a Mark ::t
+c25::a Matt ::c
+c26::a Mike ::c
+c27::a Paul ::c
+c28::a Peter ::c
+t29::a Rob1Bot21 ::t
+t30::a Robo1 ::t
+t31::a Robo2 ::t
+c32::a Silvy ::c
+c33::a Tamar ::c
+c34::a Taylor Swallow ::c
+c35::a Tore ::c
+c36::a Zhao ::c
+
+t24 --::X "has friend"--> c23
+t24 --::X "has friend"--> c32
+t24 --::X "has friend"--> c10
+t24 --::X "has friend"--> c36
+t24 --::X "has friend"--> c14
+t24 --::X "has friend"--> c35
+t24 --::X "has friend"--> c20
+t24 --::X "has friend"--> c26
+t24 --::X "has friend"--> c11
+t24 --::X "has friend"--> c3
+t24 --::X "has friend"--> c25
+t24 --::X "has friend"--> c5
+t24 --::X "has friend"--> c33
+t24 --::X "has friend"--> c22
+t24 --::X "has friend"--> c15
+c26 --::X "has friend"--> c18
+c26 --::X "has friend"--> c19
+c26 --::X "has friend"--> c16
+c26 --::X "has friend"--> c2
+c26 --::X "has friend"--> c21
+c26 --::X "has friend"--> c28
+c26 --::X "has friend"--> c27
+c16 --::X "has friend"--> c1
+c16 --::X "has friend"--> c18
+c16 --::X "has friend"--> c17
+c1 --::X "has friend"--> c13
+c1 --::X "has friend"--> c27
+c1 --::X "has friend"--> c25
+c1 --::X "has friend"--> c4
+c1 --::X "has friend"--> c12
+c1 --::X "has friend"--> c34
+t30 --::X "has an employer"--> c13
+t31 --::X "has an employer"--> c13
+t6 --::X "has an employer"--> c13
+t7 --::X "has an employer"--> c13
+t8 --::X "has an employer"--> c13
+t9 --::X "has an employer"--> c13
+t29 --::X "has an employer"--> c13

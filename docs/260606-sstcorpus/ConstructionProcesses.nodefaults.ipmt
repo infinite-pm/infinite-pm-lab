@@ -1,0 +1,58 @@
+u1::a 2 damaged boxes ::?te
+u2::a DeGuo ::?ce
+e3::a English Breakfast Tea ::e
+u4::a HammerOn AS ::?tec
+u5::a Knut Z ::?ce
+e6::a Maciej Z ::e
+e7::a Martin X ::e
+u8::a "Martin X met with Sonja Y, Knut Z" ::?tec
+u9::a Norway ::?ce
+e10::a "Operagata 2, Rostockagata 6" ::e
+e11::a ReBase AS ::e
+u12::a ScrewIt AS ::?tec
+u13::a Sonja Y ::?ce
+e14::a Sven F ::e
+e15::a TeaBreak Ltd ::e
+u16::a Windows GMBH ::?tec
+e17::a Wubbadubba ::e
+e18::a airfilters ::e
+u19::a all our hopes and dreams ::?tec
+e20::a apply for insulation grant ::e
+u21::a architecture ::?tec
+u22::a balanced ventilation ::?tec
+u23::a balcony ::?tec
+e24::a concrete realkalisation ::e
+u25::a dry wall ::?tec
+u26::a energy recycling ::?tec
+u27::a foundation ::?tec
+u28::a gipsplate ::?ce
+e29::a meeting 1 ::e
+e30::a metal screws ::e
+e31::a next meeting cancelled ::e
+e32::a operagata 2 ::e
+u33::a plasterboard ::?tec
+u34::a recycle 80% of waste ::?tec
+u35::a roof ::?tec
+e36::a shipment 1 ::e "2 days late" ::tip
+e37::a sorting metals ::e
+u38::a type 40 air filters ::?te
+u39::a water damage ::?ce
+
+e17 --::L "supplies"--> e18
+u33 --::N "same as"-- u25
+u33 --::X "english has norwegian"--> u28
+u4 --::X "is an organization in"--> u9
+u16 --::X "is an organization in"--> u2
+e15 --::L "supplies"--> e3
+e11 --::L "handles"--> e24
+e7 --::L "proposes"--> e20
+e29 --::L "decides"--> e31
+e14 --::L "decides"--> e30
+e14 --::L "handles"--> e37
+e6 --::L "handles"--> e10
+e36 --::L "delivered to"--> e32
+u38 --::P--> e36
+u1 --::P--> e36
+u1 --::X "has condition"--> u39
+u8 --::X "involves"--> u13
+u8 --::X "involves"--> u5

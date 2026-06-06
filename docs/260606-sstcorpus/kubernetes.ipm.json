@@ -1,0 +1,2450 @@
+{
+  "version": "25.09",
+  "src": {
+    "type": "n4l",
+    "ipmt": "",
+    "positions": {
+      "nodes": null,
+      "edges": null
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "\"client certs\" or \"service account tokens\"",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 2,
+      "name": "\"control plane\" and worker nodes",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 3,
+      "name": "A \"root certificate\" should be installed on each node",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 4,
+      "name": "A CRD defines a new resource version",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 5,
+      "name": "A pod",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 6,
+      "name": "A user applies pod.yaml",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 7,
+      "name": "API",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 8,
+      "name": "API server",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 9,
+      "name": "API server using injected credentials",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 10,
+      "name": "API server, scheduler, controller-manager, etcd",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 11,
+      "name": "An approach to testing, security scanning, and deployment",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 12,
+      "name": "CI",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 13,
+      "name": "CI/CD",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 14,
+      "name": "CNCF",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 15,
+      "name": "CRD",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 16,
+      "name": "CRD scope",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 17,
+      "name": "CRDs",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 18,
+      "name": "CSI",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 19,
+      "name": "Continuous Integration / Continuous Deployment",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 20,
+      "name": "Custom Resource Definition",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 21,
+      "name": "EBS",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 22,
+      "name": "Google",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 23,
+      "name": "K8s",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 24,
+      "name": "Kubernetes",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 25,
+      "name": "Kubernetes uses a \u003e\"hub-and-spoke API pattern\". All API usage terminates at the API server.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 26,
+      "name": "Linux control groups",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 27,
+      "name": "NFS",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 28,
+      "name": "Observing the \"actual state\" and compares to the \"desired state\". It infers the steps needed to achieve promised state.",
+      "alias": "",
+      "type": "Concept",
+      "tooltip": "This is a kind of abductive reasoning."
+    },
+    {
+      "id": 29,
+      "name": "One-container-per-pod",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 30,
+      "name": "PV",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 31,
+      "name": "PVC",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 32,
+      "name": "PVC to request volumes on demand",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 33,
+      "name": "Persistent Volume",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 34,
+      "name": "Persistent Volume Claim",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 35,
+      "name": "Restarting a container",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 36,
+      "name": "Storage",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 37,
+      "name": "Storage Class",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 38,
+      "name": "The API server stores the pod spec in etcd",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 39,
+      "name": "The kubelet starts containers on the node",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 40,
+      "name": "The operator observes outdated version",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 41,
+      "name": "The operator transforms the resource to new spec",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 42,
+      "name": "The scheduler binds the pod to a node",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 43,
+      "name": "The system reaches new desired state",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 44,
+      "name": "This is a kind of abductive reasoning.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 45,
+      "name": "This pattern",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 46,
+      "name": "To create a pod",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 47,
+      "name": "To do an operator-upgrade",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 48,
+      "name": "Volumes in Kubernetes can be ephemeral or persistent. Ephemeral volumes exist only during the pod’s lifetime, while persistent volumes survive pod restarts or rescheduling.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 49,
+      "name": "When you create a new CRD, the Kubernetes API Server creates a new RESTful resource path for each version you specify.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 50,
+      "name": "a container orchestration system",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 51,
+      "name": "a control loop",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 52,
+      "name": "a controller pattern",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 53,
+      "name": "a piece of storage in the cluster",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 54,
+      "name": "a pod to mount storage",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 55,
+      "name": "a process",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 56,
+      "name": "a request for storage by a user",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 57,
+      "name": "a shared execution context",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 58,
+      "name": "a way to extend the API",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 59,
+      "name": "abductive",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 60,
+      "name": "abstraction over storage backend e.g. EBS, NFS, CSI",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 61,
+      "name": "actual state",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 62,
+      "name": "an administrator or a Storage Class",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 63,
+      "name": "an environment for running containers",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 64,
+      "name": "automated certificate provisioning",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 65,
+      "name": "automation",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 66,
+      "name": "autonomous",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 67,
+      "name": "autonomous agents making and keeping promises and demonstrates distributed cooperation without central control",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 68,
+      "name": "bare metal",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 69,
+      "name": "bearer",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 70,
+      "name": "bearer token and root certificate into pods",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 71,
+      "name": "can be injected into running pods without restarting them",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 72,
+      "name": "capacity and access modes",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 73,
+      "name": "cgroup v1",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 74,
+      "name": "cgroups for container resource isolation",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 75,
+      "name": "client certificate",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 76,
+      "name": "client certs",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 77,
+      "name": "cluster",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 78,
+      "name": "cluster scope",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 79,
+      "name": "commands like:\n  \"kubectl get pods -n kube-system\"\n  \"kubectl apply -f https://github.com/app.yml\"",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 80,
+      "name": "compares \"desired state\" and \"actual state\"",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 81,
+      "name": "complex applications and their components",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 82,
+      "name": "consumer's promise",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 83,
+      "name": "container",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 84,
+      "name": "containerd",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 85,
+      "name": "containers",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 86,
+      "name": "control",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 87,
+      "name": "control plane",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 88,
+      "name": "controller",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 89,
+      "name": "controllers",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 90,
+      "name": "cooperation",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 91,
+      "name": "debugging",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 92,
+      "name": "debugging a running pod",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 93,
+      "name": "declarative",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 94,
+      "name": "declarative automation of containerized workloads",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 95,
+      "name": "deployment",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 96,
+      "name": "desired state",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 97,
+      "name": "do not run at pod startup",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 98,
+      "name": "docker",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 99,
+      "name": "during pod startup",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 100,
+      "name": "environment",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 101,
+      "name": "ephemeral",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 102,
+      "name": "ephemeral containers",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 103,
+      "name": "etcd",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 104,
+      "name": "execution",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 105,
+      "name": "hub of the cluster API",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 106,
+      "name": "init",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 107,
+      "name": "init containers",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 108,
+      "name": "interact with Kubernetes via CLI",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 109,
+      "name": "kube-proxy",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 110,
+      "name": "kubectl",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 111,
+      "name": "kubelet",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 112,
+      "name": "kubelet TLS bootstrapping",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 113,
+      "name": "kubelet and container runtime",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 114,
+      "name": "lifecycle of individual pods",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 115,
+      "name": "logging",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 116,
+      "name": "logging, proxying, service mesh, and other supportive tasks",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 117,
+      "name": "main application container",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 118,
+      "name": "main application containers",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 119,
+      "name": "managed Kubernetes",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 120,
+      "name": "managed as a cluster resource",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 121,
+      "name": "multiple co-located containers that are tightly coupled",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 122,
+      "name": "namespaces",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 123,
+      "name": "new RESTful resource paths",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 124,
+      "name": "node",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 125,
+      "name": "nodes",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 126,
+      "name": "one or more containers",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 127,
+      "name": "operator",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 128,
+      "name": "or \"pea pod\"",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 129,
+      "name": "orchestration",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 130,
+      "name": "parameters for dynamic volume provisioning",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 131,
+      "name": "persistent",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 132,
+      "name": "persists until deleted",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 133,
+      "name": "pod",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 134,
+      "name": "pod of whales",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 135,
+      "name": "pod restart policy",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 136,
+      "name": "pod, PVC, controller",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 137,
+      "name": "pods",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 138,
+      "name": "pods to be rescheduled without data loss",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 139,
+      "name": "process",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 140,
+      "name": "promises",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 141,
+      "name": "promises that define system state",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 142,
+      "name": "proxying",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 143,
+      "name": "reconciliation",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 144,
+      "name": "resources",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 145,
+      "name": "resources allocated to processes",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 146,
+      "name": "root",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 147,
+      "name": "root certificate",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 148,
+      "name": "scheduler",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 149,
+      "name": "security",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 150,
+      "name": "self-hosted",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 151,
+      "name": "separation of concerns",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 152,
+      "name": "service",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 153,
+      "name": "service IPs to API server HTTPS endpoints",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 154,
+      "name": "service account",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 155,
+      "name": "service account tokens",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 156,
+      "name": "setup tasks like config init or dependency checks",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 157,
+      "name": "sidecar container",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 158,
+      "name": "sidecars",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 159,
+      "name": "sidecars, init containers, and debugging",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 160,
+      "name": "size and access requirements",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 161,
+      "name": "storage decoupling from the lifecycle of pods",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 162,
+      "name": "testing",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 163,
+      "name": "the main container",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 164,
+      "name": "the pod’s network and storage context",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 165,
+      "name": "the same as restarting a pod",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 166,
+      "name": "the smallest deployable computing unit in Kubernetes",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 167,
+      "name": "usage pattern",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 168,
+      "name": "v2",
+      "alias": "",
+      "type": "Concept",
+      "tooltip": "this is the new generation"
+    },
+    {
+      "id": 169,
+      "name": "with \"client certificate\"",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 170,
+      "name": "worker",
+      "alias": "",
+      "type": "Concept"
+    }
+  ],
+  "edges": [
+    {
+      "id": 171,
+      "source": 24,
+      "target": 94,
+      "dir": "DirFwd",
+      "tooltip": "enables",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 172,
+      "source": 24,
+      "target": 67,
+      "dir": "DirFwd",
+      "tooltip": "implements",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 173,
+      "source": 24,
+      "target": 50,
+      "dir": "DirFwd",
+      "tooltip": "represents/models",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 174,
+      "source": 23,
+      "target": 24,
+      "dir": "DirFwd",
+      "tooltip": "has abbreviation",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 175,
+      "source": 22,
+      "target": 24,
+      "dir": "DirFwd",
+      "tooltip": "founds/founded",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 176,
+      "source": 14,
+      "target": 24,
+      "dir": "DirFwd",
+      "tooltip": "maintains",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 177,
+      "source": 133,
+      "target": 9,
+      "dir": "DirUndir",
+      "tooltip": "connects to",
+      "sstLinkType": "NearTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 178,
+      "source": 133,
+      "target": 134,
+      "dir": "DirFwd",
+      "tooltip": "named after",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 179,
+      "source": 126,
+      "target": 133,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 180,
+      "source": 133,
+      "target": 166,
+      "dir": "DirFwd",
+      "tooltip": "represents/models",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 181,
+      "source": 89,
+      "target": 133,
+      "dir": "DirFwd",
+      "tooltip": "manages",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 182,
+      "source": 84,
+      "target": 83,
+      "dir": "DirFwd",
+      "tooltip": "manages",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 183,
+      "source": 110,
+      "target": 79,
+      "dir": "DirFwd",
+      "tooltip": "runs or executes",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 184,
+      "source": 110,
+      "target": 108,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 185,
+      "source": 127,
+      "target": 52,
+      "dir": "DirFwd",
+      "tooltip": "implements",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 186,
+      "source": 127,
+      "target": 81,
+      "dir": "DirFwd",
+      "tooltip": "manages",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 187,
+      "source": 88,
+      "target": 51,
+      "dir": "DirFwd",
+      "tooltip": "implements",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 188,
+      "source": 88,
+      "target": 143,
+      "dir": "DirFwd",
+      "tooltip": "implements",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 189,
+      "source": 88,
+      "target": 80,
+      "dir": "DirFwd",
+      "tooltip": "has behaviour",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 190,
+      "source": 17,
+      "target": 127,
+      "dir": "DirFwd",
+      "tooltip": "is used by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 191,
+      "source": 125,
+      "target": 8,
+      "dir": "DirUndir",
+      "tooltip": "https connection with",
+      "sstLinkType": "NearTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 192,
+      "source": 109,
+      "target": 153,
+      "dir": "DirFwd",
+      "tooltip": "redirects",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 193,
+      "source": 15,
+      "target": 58,
+      "dir": "DirFwd",
+      "tooltip": "implements",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 194,
+      "source": 15,
+      "target": 123,
+      "dir": "DirFwd",
+      "tooltip": "creates",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 195,
+      "source": 15,
+      "target": 127,
+      "dir": "DirFwd",
+      "tooltip": "is used by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 196,
+      "source": 122,
+      "target": 16,
+      "dir": "DirFwd",
+      "tooltip": "is used by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 197,
+      "source": 143,
+      "target": 28,
+      "dir": "DirFwd",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 198,
+      "source": 31,
+      "target": 161,
+      "dir": "DirFwd",
+      "tooltip": "enables",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 199,
+      "source": 31,
+      "target": 138,
+      "dir": "DirFwd",
+      "tooltip": "has behaviour",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 200,
+      "source": 2,
+      "target": 77,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 201,
+      "source": 124,
+      "target": 113,
+      "dir": "DirFwd",
+      "tooltip": "runs or executes",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 202,
+      "source": 111,
+      "target": 169,
+      "dir": "DirFwd",
+      "tooltip": "authenticates",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 203,
+      "source": 13,
+      "target": 12,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 204,
+      "source": 13,
+      "target": 11,
+      "dir": "DirFwd",
+      "tooltip": "represents/models",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 205,
+      "source": 167,
+      "target": 29,
+      "dir": "DirFwd",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 206,
+      "source": 5,
+      "target": 55,
+      "dir": "DirUndir",
+      "tooltip": "not the same as",
+      "sstLinkType": "NearTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 207,
+      "source": 121,
+      "target": 5,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 208,
+      "source": 5,
+      "target": 133,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 209,
+      "source": 5,
+      "target": 132,
+      "dir": "DirFwd",
+      "tooltip": "has behaviour",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 210,
+      "source": 45,
+      "target": 159,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 211,
+      "source": 55,
+      "target": 139,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 212,
+      "source": 107,
+      "target": 99,
+      "dir": "DirFwd",
+      "tooltip": "runs or executes",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 213,
+      "source": 107,
+      "target": 118,
+      "dir": "DirFwd",
+      "tooltip": "needs to run or execute before",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 214,
+      "source": 107,
+      "target": 106,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 215,
+      "source": 107,
+      "target": 156,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 216,
+      "source": 102,
+      "target": 92,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 217,
+      "source": 102,
+      "target": 71,
+      "dir": "DirFwd",
+      "tooltip": "has behaviour",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 218,
+      "source": 102,
+      "target": 97,
+      "dir": "DirFwd",
+      "tooltip": "obeys the rule",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 219,
+      "source": 157,
+      "target": 117,
+      "dir": "DirUndir",
+      "tooltip": "runs alongside",
+      "sstLinkType": "NearTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 220,
+      "source": 157,
+      "target": 163,
+      "dir": "DirUndir",
+      "tooltip": "terminates together with",
+      "sstLinkType": "NearTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 221,
+      "source": 157,
+      "target": 151,
+      "dir": "DirFwd",
+      "tooltip": "enables",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 222,
+      "source": 157,
+      "target": 116,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 223,
+      "source": 8,
+      "target": 105,
+      "dir": "DirFwd",
+      "tooltip": "represents/models",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 224,
+      "source": 154,
+      "target": 70,
+      "dir": "DirFwd",
+      "tooltip": "injects",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 225,
+      "source": 78,
+      "target": 16,
+      "dir": "DirFwd",
+      "tooltip": "is used by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 226,
+      "source": 33,
+      "target": 31,
+      "dir": "DirFwd",
+      "tooltip": "binds to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 227,
+      "source": 33,
+      "target": 30,
+      "dir": "DirFwd",
+      "tooltip": "has abbreviation",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 228,
+      "source": 33,
+      "target": 53,
+      "dir": "DirFwd",
+      "tooltip": "represents/models",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 229,
+      "source": 33,
+      "target": 120,
+      "dir": "DirFwd",
+      "tooltip": "has behaviour",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 230,
+      "source": 33,
+      "target": 72,
+      "dir": "DirFwd",
+      "tooltip": "promises",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 231,
+      "source": 37,
+      "target": 130,
+      "dir": "DirFwd",
+      "tooltip": "determines",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 232,
+      "source": 37,
+      "target": 32,
+      "dir": "DirFwd",
+      "tooltip": "is used by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 233,
+      "source": 37,
+      "target": 36,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 234,
+      "source": 37,
+      "target": 60,
+      "dir": "DirFwd",
+      "tooltip": "represents/models",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 235,
+      "source": 10,
+      "target": 87,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 236,
+      "source": 52,
+      "target": 88,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 237,
+      "source": 35,
+      "target": 165,
+      "dir": "DirUndir",
+      "tooltip": "not the same as",
+      "sstLinkType": "NearTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 238,
+      "source": 35,
+      "target": 83,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 239,
+      "source": 102,
+      "target": 135,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 240,
+      "source": 20,
+      "target": 15,
+      "dir": "DirFwd",
+      "tooltip": "has abbreviation",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 241,
+      "source": 51,
+      "target": 86,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 242,
+      "source": 136,
+      "target": 133,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 243,
+      "source": 136,
+      "target": 31,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 244,
+      "source": 136,
+      "target": 88,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 245,
+      "source": 136,
+      "target": 141,
+      "dir": "DirFwd",
+      "tooltip": "expresses property",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 246,
+      "source": 34,
+      "target": 160,
+      "dir": "DirFwd",
+      "tooltip": "determines",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 247,
+      "source": 34,
+      "target": 30,
+      "dir": "DirFwd",
+      "tooltip": "binds to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 248,
+      "source": 34,
+      "target": 54,
+      "dir": "DirFwd",
+      "tooltip": "is used by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 249,
+      "source": 34,
+      "target": 31,
+      "dir": "DirFwd",
+      "tooltip": "has abbreviation",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 250,
+      "source": 34,
+      "target": 56,
+      "dir": "DirFwd",
+      "tooltip": "represents/models",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 251,
+      "source": 34,
+      "target": 82,
+      "dir": "DirFwd",
+      "tooltip": "represents/models",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 252,
+      "source": 169,
+      "target": 75,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 253,
+      "source": 112,
+      "target": 64,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 254,
+      "source": 26,
+      "target": 145,
+      "dir": "DirFwd",
+      "tooltip": "constrains",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 255,
+      "source": 26,
+      "target": 73,
+      "dir": "DirFwd",
+      "tooltip": "has version",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 256,
+      "source": 26,
+      "target": 168,
+      "dir": "DirFwd",
+      "tooltip": "has version",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 257,
+      "source": 50,
+      "target": 83,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 258,
+      "source": 50,
+      "target": 129,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 259,
+      "source": 94,
+      "target": 93,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 260,
+      "source": 94,
+      "target": 65,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 261,
+      "source": 126,
+      "target": 85,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 262,
+      "source": 57,
+      "target": 133,
+      "dir": "DirFwd",
+      "tooltip": "runs or executes",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 263,
+      "source": 57,
+      "target": 104,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 264,
+      "source": 108,
+      "target": 24,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 265,
+      "source": 159,
+      "target": 158,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 266,
+      "source": 159,
+      "target": 106,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 267,
+      "source": 159,
+      "target": 91,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 268,
+      "source": 63,
+      "target": 100,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 269,
+      "source": 63,
+      "target": 5,
+      "dir": "DirFwd",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 270,
+      "source": 165,
+      "target": 133,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 271,
+      "source": 157,
+      "target": 164,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 272,
+      "source": 164,
+      "target": 133,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 273,
+      "source": 116,
+      "target": 115,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 274,
+      "source": 116,
+      "target": 142,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 275,
+      "source": 116,
+      "target": 152,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 276,
+      "source": 1,
+      "target": 8,
+      "dir": "DirFwd",
+      "tooltip": "authenticates",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 277,
+      "source": 1,
+      "target": 76,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 278,
+      "source": 1,
+      "target": 155,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 279,
+      "source": 70,
+      "target": 69,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 280,
+      "source": 70,
+      "target": 146,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 281,
+      "source": 153,
+      "target": 7,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 282,
+      "source": 80,
+      "target": 96,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 283,
+      "source": 80,
+      "target": 61,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 284,
+      "source": 28,
+      "target": 61,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 285,
+      "source": 28,
+      "target": 96,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 286,
+      "source": 44,
+      "target": 59,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 287,
+      "source": 67,
+      "target": 66,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 288,
+      "source": 67,
+      "target": 90,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 289,
+      "source": 141,
+      "target": 140,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 290,
+      "source": 62,
+      "target": 33,
+      "dir": "DirFwd",
+      "tooltip": "provisions",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 291,
+      "source": 62,
+      "target": 36,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 292,
+      "source": 54,
+      "target": 133,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 293,
+      "source": 32,
+      "target": 31,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 294,
+      "source": 60,
+      "target": 21,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 295,
+      "source": 60,
+      "target": 27,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 296,
+      "source": 60,
+      "target": 18,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 297,
+      "source": 161,
+      "target": 137,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 298,
+      "source": 114,
+      "target": 30,
+      "dir": "DirFwd",
+      "tooltip": "doesn't affect",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 299,
+      "source": 114,
+      "target": 137,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 300,
+      "source": 2,
+      "target": 87,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 301,
+      "source": 2,
+      "target": 170,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 302,
+      "source": 10,
+      "target": 7,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 303,
+      "source": 10,
+      "target": 148,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 304,
+      "source": 10,
+      "target": 88,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 305,
+      "source": 10,
+      "target": 103,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 306,
+      "source": 113,
+      "target": 111,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 307,
+      "source": 113,
+      "target": 83,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 308,
+      "source": 3,
+      "target": 147,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 309,
+      "source": 3,
+      "target": 124,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 310,
+      "source": 9,
+      "target": 7,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 311,
+      "source": 145,
+      "target": 144,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 312,
+      "source": 74,
+      "target": 24,
+      "dir": "DirFwd",
+      "tooltip": "is used by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 313,
+      "source": 19,
+      "target": 13,
+      "dir": "DirFwd",
+      "tooltip": "has abbreviation",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 314,
+      "source": 11,
+      "target": 162,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 315,
+      "source": 11,
+      "target": 149,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 316,
+      "source": 11,
+      "target": 95,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 317,
+      "source": 46,
+      "target": 6,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 318,
+      "source": 6,
+      "target": 38,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 319,
+      "source": 38,
+      "target": 42,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 320,
+      "source": 38,
+      "target": 103,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 321,
+      "source": 42,
+      "target": 39,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 322,
+      "source": 47,
+      "target": 4,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 323,
+      "source": 4,
+      "target": 40,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 324,
+      "source": 40,
+      "target": 41,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 325,
+      "source": 41,
+      "target": 43,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 326,
+      "source": 48,
+      "target": 101,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 327,
+      "source": 48,
+      "target": 131,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    }
+  ]
+}

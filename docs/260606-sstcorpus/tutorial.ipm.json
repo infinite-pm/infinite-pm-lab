@@ -1,0 +1,54 @@
+{
+  "version": "25.09",
+  "src": {
+    "type": "n4l",
+    "ipmt": "",
+    "positions": {
+      "nodes": null,
+      "edges": null
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "IF YOU WRITE IN ALL CAPS, YOU WILL BE REMINDED OF THE NOTE LATER!",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 2,
+      "name": "Mostly you just write notes",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 3,
+      "name": "Other symbols can be defined with your own meanings, like \u003e\"special meanings\"",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 4,
+      "name": "The \u003editto symbol of inverted commas has a special meaning",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 5,
+      "name": "This is a simple example that illustrates the line above",
+      "alias": "",
+      "type": "Concept"
+    }
+  ],
+  "edges": [
+    {
+      "id": 6,
+      "source": 2,
+      "target": 5,
+      "dir": "DirFwd",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    }
+  ]
+}

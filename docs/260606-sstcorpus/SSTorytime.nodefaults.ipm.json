@@ -1,0 +1,2466 @@
+{
+  "version": "25.09",
+  "src": {
+    "type": "n4l",
+    "ipmt": "",
+    "positions": {
+      "nodes": null,
+      "edges": null
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "$ sudo su -\n$ su - postgres\n$ psql\n# CREATE user sstoryline password 'sst_1234' superuser;\n# CREATE DATABASE sstoryline;\n# CREATE DATABASE newdb;\n# GRANT ALL PRIVILEGES ON DATABASE sstoryline TO sstoryline;\n# GRANT ALL PRIVILEGES ON DATABASE newdb TO sstoryline;\n# CREATE EXTENSION UNACCENT;",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "%\"Longer phrases\" used a limited number of times are common concepts",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ],
+      "tooltip": "%\"Longer phrases\" are easier to write than short precise phrases, so people need help to break them down and summarize their intent"
+    },
+    {
+      "id": 3,
+      "name": "%\"Short phrases\" used once are usually unique names i.e. a %\"proper name\"",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "%\"n-grams\"",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "%factoids and partial %knowledge",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "A graph is basically a structure with an index at every node. There are two modes of use: random access lookup for starting a search--which SQL is already good at, and exploring, path tracing, following leads from that starting point like hypertext.",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 7,
+      "name": "A recursive search in SQL",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "A unique key for a type of link arrow and its properties",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "ArrowPtr",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Because database connection is slow, we do as much as possible to reduce that amount of data sent over the wire by performing all processing internally.",
+      "alias": "",
+      "type": "Event",
+      "tooltip": "This has the tradeoff of using a slow script language in the database kernel."
+    },
+    {
+      "id": 11,
+      "name": "Comprehensive search by %\"NCCS criteria\"",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Context has two roles in knowledge: promise theoretically it has a '+' donor role when categorizing information through notes. It also has a \"-\" acceptance or filtering role when searching. Both of these are represented by the \":: ... ::\" lines in N4L.",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 13,
+      "name": "CreateDBNode(ctx PoSST, n Node) Node",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "CreateDBNodeArrowNode(ctx PoSST, org NodePtr, dst Link, sttype int) bool",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "FUNCTION SumFwdPaths(start link, path text, orientation text, depth integer, maxdepth integer, exclude nodeptr[])\n DECLARE\n     fwdlinks Link[];\n     empty Link[] = ARRAY[]::Link[];\n     lnk Link;\n     fwd Link;\n     ret_paths Text;\n     appendix Text;\n     tot_path Text;\n BEGIN\n IF depth = maxdepth THEN\n   ret_paths := Format('%s\\n%s',ret_paths,path);\n   RETURN ret_paths;\n END IF;\n fwdlinks := GetFwdLinks(start.Dst,exclude,sttype);\n FOREACH lnk IN ARRAY fwdlinks LOOP\n    IF NOT lnk.Dst = ANY(exclude) THEN\n       exclude = array_append(exclude,lnk.Dst);\n       IF lnk IS NULL THEN\n         ret_paths := Format('%s\\n%s',ret_paths,path);\n          RETURN ret_paths;\n      ELSE\n          tot_path := Format('%s;%s',path,lnk::Text);\n          appendix := SumFwdPaths(lnk,tot_path,sttype,depth+1,maxdepth,exclude);\n          IF appendix IS NOT NULL THEN\n             ret_paths := Format('%s\\n%s',ret_paths,appendix);\n          ELSE\n            ret_paths := Format('%s\\n%s',ret_paths,tot_path);\n         END IF;\n      END IF;   \nEND IF;\nEND LOOP;\nRETURN ret_paths;\nEND;",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Fact based cramming",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Forensic fact assimilation and reasoning.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "GetDBArrowByName(ctx PoSST,name string) ArrowPtr",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "GetDBArrowByPtr(ctx PoSST,arrowptr ArrowPtr) ArrowDirectory",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "GetDBArrowBySTType(ctx PoSST,sttype int) []ArrowDirectory",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "GetDBArrowsMatchingArrowName(ctx PoSST,s string) []ArrowPtr",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "GetDBArrowsWithArrowName(ctx PoSST,s string) (ArrowPtr,int)",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 23,
+      "name": "GetDBChaptersMatchingName(ctx PoSST,src string) []string",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "GetDBContextByName(ctx PoSST,src string) (string,ContextPtr)",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 25,
+      "name": "GetDBContextByPtr(ctx PoSST,ptr ContextPtr) (string,ContextPtr)",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 26,
+      "name": "GetDBNodePtrMatchingNCCS(ctx PoSST,nm,chap string,cn []string,arrow []ArrowPtr,seq bool,limit int) []NodePtr",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 27,
+      "name": "GetDBNodePtrMatchingName(ctx PoSST,name,chap string) []NodePtr",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 28,
+      "name": "GetDBPageMap(ctx PoSST,chap string,cn []string,page int) []PageMap",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 29,
+      "name": "GetDBSingletonBySTType(ctx PoSST,sttypes []int,chap string,cn []string) ([]NodePtr,[]NodePtr)",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 30,
+      "name": "GetEntireNCSuperConePathsAsLinks(ctx PoSST,orientation string,start []NodePtr,depth int,chapter string,context []string,limit int) ([][]Link,int)",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 31,
+      "name": "GetFwdConeAsNodes(ctx PoSST, start NodePtr, sttype,depth int,limit int) []NodePtr",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 32,
+      "name": "GetFwdPathsAsLinks(ctx PoSST, start NodePtr, sttype,depth int, maxlimit int) ([][]Link,int)",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 33,
+      "name": "GetSTtypesFromArrows(arrows []ArrowPtr) []int",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Graphs are for following paths with different meanings - or \"semantics\".",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 35,
+      "name": "HOW-TO sequences and recipes",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 36,
+      "name": "IdempDBAddLink(ctx PoSST,from Node,link Link,to Node)",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 37,
+      "name": "IdempDBAddNode(ctx PoSST,n Node) Node",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 38,
+      "name": "Incident reporting with causal commentary",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 39,
+      "name": "Knowledge scanned from text is most likely to be in the form of paragraphs and sentences. It needs to be broken down into its constituent parts, like a DNA analysis, to understand its relationship to other notes.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 40,
+      "name": "Language learning",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Link",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 42,
+      "name": "Loading data into a database, with validation, is slow. Retrieving is much faster.",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 43,
+      "name": "Making %notes",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ],
+      "tooltip": "Notes are more concise than documents, prose, or spoken language. · Notes are condensed intent without flowery elaboration. · AI and LLMs produce fluid %prose language, which is not in note form."
+    },
+    {
+      "id": 44,
+      "name": "Most graph databases don't give any guidance in modelling or searching. They are based on SQL random access search, but this is not how we need to use graphs.",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 45,
+      "name": "NCCS criteria",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Node",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 47,
+      "name": "Node, Chapter, Context, Sequence: searches will select nodes that match all these criteria in one go",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 48,
+      "name": "NodePtr",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 49,
+      "name": "PLpgSQL",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 50,
+      "name": "PageMap",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 51,
+      "name": "PoSST",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 52,
+      "name": "Promise Theory",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 53,
+      "name": "Ranking of n-grams is based on two parts: the intentionality or amount of work needed to write them, and the frequency of use",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 54,
+      "name": "Reasoning with mathematical support",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 55,
+      "name": "Risk procedure documentation",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 56,
+      "name": "SRE problem diagnosis methods",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 57,
+      "name": "SSTorytime",
+      "alias": "",
+      "type": "Event",
+      "tooltip": "made with Linux but doesn't depend on anything specific to Linux"
+    },
+    {
+      "id": 58,
+      "name": "SSTorytime shows you the ambient time in a coarse grained form after every search, so that you can copy and paste this into context tags if you want to be able to use it later. If you make a search without any search terms, you will see any items that are labelled in a matching time. So, if you have specific \"to-do\"/todo / to do lists for specific times, these will pop up by themselves.",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 59,
+      "name": "SSTorytime takes a \"Promise Theory\" approach.",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 60,
+      "name": "SelectStoriesByArrow(ctx PoSST,nodeptrs []NodePtr, arrowptrs []ArrowPtr, sttypes []int, limit int) []NodePtr",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 61,
+      "name": "SolveNodePtrs(ctx PoSST,nodenames []string,search SearchParameters,arr []ArrowPtr,limit int) []NodePtr",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 62,
+      "name": "Sometimes you might see chapters that you didn't select showing up in searches. This is probably a result of certain words and phrases belonging to more than one chapter, and thus bridging chapters that you didn't intend. This possibility for bridging is intentional, as it allows \"lateral thinking\", which is an important source of discovery.",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 63,
+      "name": "THEME_LIM",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 64,
+      "name": "The goal is to implement useful search patterns for a graph structure in an efficient way.",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 65,
+      "name": "The hard problem of knowledge is context.",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 66,
+      "name": "The most frequently used n-grams are the least meaningful, used for padding and rhythm",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 67,
+      "name": "The overlap between \"+\" and \"-\" promises is the outcome. In order to make this effective, it requires some planning in the way we name sections. This is something that develops over time, so we have to understand that knowledge is individual, dynamic and interactive--a process, not a stale archive written once and for all.",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 68,
+      "name": "UploadArrowToDB(ctx PoSST,arrow ArrowPtr)",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 69,
+      "name": "UploadInverseArrowToDB(ctx PoSST,arrow ArrowPtr)",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 70,
+      "name": "UploadNodeToDB(ctx PoSST, org Node)",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 71,
+      "name": "UploadPageMapEvent(ctx PoSST, line PageMap)",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 72,
+      "name": "What role should times play? Precise times are irrelevant because they never repeat. Coarse grains of time like \"Monday morning\" do repeat and may be relevant in finding intended information. But how do we record the time? Is it the time at which information",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 73,
+      "name": "When we are laying out new information, we use the context tags/tokens like a section heading. This is the \"+\" promise.",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 74,
+      "name": "When we are searching, we use context tags as a filter to reduce the scope of a search. This is the \"-\" promise.",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 75,
+      "name": "While engaged in a search process, the knowledge agent remembers the intended parts of searches as current scenario context. You will see some of this history pop up at the top of the search result to give you further hints based on past behaviour.",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 76,
+      "name": "You cam limit the number of entries returned using the LIMIT keyword. If you make this number large, the query will take a long time to return, especially over the web, as the marshalling cost is high.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 77,
+      "name": "You can select colour themes in the web browser by typing \\theme and a colour style. Currently supported: light, dark, slate, spaceblue/astronomy/blue and red.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 78,
+      "name": "You can start broad with general search terms, without specifying specific chapters. If you have a lot of data, this becomes less and less likely to succeed. As data grow, we need to narrow the search and we can't use popularity voting like PageRank to guess which are the important results.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 79,
+      "name": "You can start narrow with a very specific term by quoting longer strings including spaces, but this assumes you know what is already there. Then you can gradually reduce the number of constraints by ADDING contexts and search terms.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 80,
+      "name": "\\( x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a} \\)",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 81,
+      "name": "a %paragraph is defined as either a text measure separated by two newlines or if we exceed the the maximum threshold %THEME_LIM",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 82,
+      "name": "a collection of signals that identify a scenario, like a scene description language",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 83,
+      "name": "a constant scale approximately the size of a long paragraph set to 100 sentences",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 84,
+      "name": "a different grammatical form of the same word of phrase",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 85,
+      "name": "a measure of the degree to which something might be intended",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 86,
+      "name": "a measure that distinguishes ad hoc or random change from %causal %change",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 87,
+      "name": "a nugget of meaningful information contributing to knowledge",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 88,
+      "name": "a text source of document",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 89,
+      "name": "adding a NodeArrowNode secondary/derived structure to postgres",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 90,
+      "name": "an ad hoc identifier without descriptive meaning",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 91,
+      "name": "appending a node when you don't want to manage the NPtr values.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 92,
+      "name": "causal",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 93,
+      "name": "causality",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 94,
+      "name": "context",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 95,
+      "name": "create the SST database",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 96,
+      "name": "documents can be scanned to identify %context and %factoid parts",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 97,
+      "name": "entry point for adding a link to a node in postgres",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 98,
+      "name": "establishing a connection to the SST library service",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 99,
+      "name": "establishing a node in postgres without auto %NPtr assignment",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 100,
+      "name": "factoid",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 101,
+      "name": "find nodes that are sources or sinks for a specific STType",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 102,
+      "name": "finding a list of %NPtr matching a substring by name",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 103,
+      "name": "finding a set of matching NPtrs satisfying the search parameters compiled by a search command",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 104,
+      "name": "finding nodes that are sources for story sequences matching the arrow types",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 105,
+      "name": "fragment of n words as an ordered sequence",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ],
+      "tooltip": "any sentence can be broken up into n-gram fragments, like a DNA analysis."
+    },
+    {
+      "id": 106,
+      "name": "go programming language",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 107,
+      "name": "host    all             all             127.0.0.1/32            password",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 108,
+      "name": "host    all             all             ::1/128                 password\"\n\n # to finish ...\n\n\n\n\n stored procedures/functions in postgres\n\n    \"",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ],
+      "tooltip": "uses a language that looks a lot like SQL but is markedly different - beware!"
+    },
+    {
+      "id": 109,
+      "name": "intent",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 110,
+      "name": "intentionality",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 111,
+      "name": "lateral thinking",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 112,
+      "name": "local   all             all                                     peer",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 113,
+      "name": "measuring intent",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 114,
+      "name": "n-gram",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 115,
+      "name": "n-grams",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 116,
+      "name": "n-grams that occur less than",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 117,
+      "name": "noise level",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 118,
+      "name": "obtaining a list of arrowpointers matching the approximate name",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 119,
+      "name": "obtaining a list of chapters matching by name",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 120,
+      "name": "obtaining an arrowpointer and STType matching a precise name",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 121,
+      "name": "obtaining an arrowpointer for precise arrowname - redundant",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 122,
+      "name": "obtaining context sets that match by string name",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 123,
+      "name": "obtaining the context set with given index pointer",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 124,
+      "name": "obtaining the generic semantic spacetime type for a given a list of arrow pointers",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 125,
+      "name": "obtains a page from the named chapter as a page map",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 126,
+      "name": "obtains all possible paths from a node along STtype links",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 127,
+      "name": "obtains all possible paths from a starting node, with orientation \"fwd,bwd,any\" as link arrays matching the chapter and context criteria",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 128,
+      "name": "obtains an arrow directory entry for a given arrow pointer",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 129,
+      "name": "obtains the arrow directory for a given STtype",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 130,
+      "name": "obtains the orbit around a starting node as a set of nodes to given depth",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 131,
+      "name": "open for local connections",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 132,
+      "name": "paragraphs",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 133,
+      "name": "postgres",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 134,
+      "name": "postgres configuration",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 135,
+      "name": "postgres_contrib package for unaccent() function",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 136,
+      "name": "proper name",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 137,
+      "name": "punctuated fragments",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 138,
+      "name": "ranking the %intentionality or importance of text",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 139,
+      "name": "representing a graph link, with arrow and destination node and weight",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 140,
+      "name": "representing core aspects of a single graph node",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 141,
+      "name": "representing the original N4L intended layout of notes",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 142,
+      "name": "sentences",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 143,
+      "name": "supports all human languages in Unicode",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ],
+      "tooltip": "languages that don't use spaces between words may have some issues"
+    },
+    {
+      "id": 144,
+      "name": "to-do",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 145,
+      "name": "todo",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 146,
+      "name": "type Link struct {  // A link is a type of arrow, with context\n                    // and maybe with a weightfor package math\n\tArr ArrowPtr         // type of arrow, presorted\n\tWgt float32          // numerical weight of this link\n\tCtx ContextPtr       // context for this pathway\n\tDst NodePtr          // adjacent event/item/node\n}",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 147,
+      "name": "type Node struct {\n\n\tL         int     // length of text string\n\tS         string  // text string itself\n\n\tSeq       bool    // true if this node begins an intended sequence, otherwise ambiguous\n\tChap      string  // section/chapter name in which this was added\n\tNPtr      NodePtr // Pointer to self index\n\n\tI [ST_TOP][]Link  // link incidence list, by STindex - these are the \"vectors\" +/-\n  \t                  // NOTE: carefully how STindex offsets represent negative SSTtypes\n}",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 148,
+      "name": "type NodePtr struct {\n\n\tClass int            // Text size-class, used mainly in memory\n\tCPtr  ClassedNodePtr // index of within name class lane\n}",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 149,
+      "name": "type PageMap struct {  // Thereis additional intent in the layout\n\n\tChapter string\n\tAlias   string\n\tContext ContextPtr\n\tLine    int\n\tPath    []Link\n}",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 150,
+      "name": "unique key referring to a node and pointing to its data",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 151,
+      "name": "uploading a PageMap structure from memory to postgres",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 152,
+      "name": "uploading an arrow definition from memory to postgres",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 153,
+      "name": "uploading an existing Node in memory to postgres",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 154,
+      "name": "uploading an inverse arrow definition",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 155,
+      "name": "uses a language that looks a lot like SQL but is markedly different - beware!",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 156,
+      "name": "variant",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 157,
+      "name": "was written, uploaded, or when something actually happened? The technology can't guess this for you, because it needs to be intentional. The ambient time isn't necessarily relevant.",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 158,
+      "name": "work",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": 159,
+      "source": 57,
+      "target": 143,
+      "dir": "DirFwd",
+      "tooltip": "has feature",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 160,
+      "source": 133,
+      "target": 57,
+      "dir": "DirFwd",
+      "tooltip": "sustains",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 161,
+      "source": 110,
+      "target": 109,
+      "dir": "DirUndir",
+      "tooltip": "is a variant of",
+      "sstLinkType": "NearTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 162,
+      "source": 158,
+      "target": 113,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 163,
+      "source": 63,
+      "target": 83,
+      "dir": "DirFwd",
+      "tooltip": "defined as",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 164,
+      "source": 109,
+      "target": 86,
+      "dir": "DirFwd",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 165,
+      "source": 109,
+      "target": 85,
+      "dir": "DirFwd",
+      "tooltip": "defined as",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 166,
+      "source": 156,
+      "target": 84,
+      "dir": "DirFwd",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 167,
+      "source": 92,
+      "target": 93,
+      "dir": "DirUndir",
+      "tooltip": "is a variant of",
+      "sstLinkType": "NearTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 168,
+      "source": 114,
+      "target": 115,
+      "dir": "DirUndir",
+      "tooltip": "is a variant of",
+      "sstLinkType": "NearTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 169,
+      "source": 114,
+      "target": 105,
+      "dir": "DirFwd",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 170,
+      "source": 94,
+      "target": 82,
+      "dir": "DirFwd",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 171,
+      "source": 100,
+      "target": 87,
+      "dir": "DirFwd",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 172,
+      "source": 100,
+      "target": 5,
+      "dir": "DirFwd",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 173,
+      "source": 142,
+      "target": 132,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 174,
+      "source": 137,
+      "target": 142,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 175,
+      "source": 142,
+      "target": 5,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 176,
+      "source": 51,
+      "target": 98,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 177,
+      "source": 46,
+      "target": 140,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 178,
+      "source": 46,
+      "target": 147,
+      "dir": "DirFwd",
+      "tooltip": "defined as",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 179,
+      "source": 48,
+      "target": 150,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 180,
+      "source": 48,
+      "target": 148,
+      "dir": "DirFwd",
+      "tooltip": "defined as",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 181,
+      "source": 41,
+      "target": 139,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 182,
+      "source": 41,
+      "target": 146,
+      "dir": "DirFwd",
+      "tooltip": "defined as",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 183,
+      "source": 9,
+      "target": 8,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 184,
+      "source": 50,
+      "target": 141,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 185,
+      "source": 50,
+      "target": 149,
+      "dir": "DirFwd",
+      "tooltip": "defined as",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 186,
+      "source": 45,
+      "target": 47,
+      "dir": "DirFwd",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 187,
+      "source": 117,
+      "target": 116,
+      "dir": "DirFwd",
+      "tooltip": "defined as",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 188,
+      "source": 136,
+      "target": 90,
+      "dir": "DirFwd",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 189,
+      "source": 4,
+      "target": 137,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 190,
+      "source": 137,
+      "target": 138,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 191,
+      "source": 43,
+      "target": 38,
+      "dir": "DirFwd",
+      "tooltip": "might be used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 192,
+      "source": 43,
+      "target": 55,
+      "dir": "DirFwd",
+      "tooltip": "might be used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 193,
+      "source": 43,
+      "target": 56,
+      "dir": "DirFwd",
+      "tooltip": "might be used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 194,
+      "source": 43,
+      "target": 35,
+      "dir": "DirFwd",
+      "tooltip": "might be used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 195,
+      "source": 43,
+      "target": 40,
+      "dir": "DirFwd",
+      "tooltip": "might be used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 196,
+      "source": 43,
+      "target": 16,
+      "dir": "DirFwd",
+      "tooltip": "might be used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 197,
+      "source": 43,
+      "target": 17,
+      "dir": "DirFwd",
+      "tooltip": "might be used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 198,
+      "source": 43,
+      "target": 54,
+      "dir": "DirFwd",
+      "tooltip": "might be used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 199,
+      "source": 134,
+      "target": 133,
+      "dir": "DirFwd",
+      "tooltip": "sustains",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 200,
+      "source": 106,
+      "target": 57,
+      "dir": "DirFwd",
+      "tooltip": "sustains",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 201,
+      "source": 68,
+      "target": 152,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 202,
+      "source": 69,
+      "target": 154,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 203,
+      "source": 33,
+      "target": 124,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 204,
+      "source": 135,
+      "target": 57,
+      "dir": "DirFwd",
+      "tooltip": "sustains",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 205,
+      "source": 64,
+      "target": 10,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 206,
+      "source": 42,
+      "target": 6,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 207,
+      "source": 65,
+      "target": 59,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 208,
+      "source": 59,
+      "target": 12,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 209,
+      "source": 59,
+      "target": 57,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 210,
+      "source": 59,
+      "target": 52,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 211,
+      "source": 73,
+      "target": 74,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 212,
+      "source": 74,
+      "target": 67,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 213,
+      "source": 132,
+      "target": 88,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 214,
+      "source": 54,
+      "target": 80,
+      "dir": "DirFwd",
+      "tooltip": "is expressed in formula",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 215,
+      "source": 95,
+      "target": 133,
+      "dir": "DirFwd",
+      "tooltip": "sustains",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 216,
+      "source": 95,
+      "target": 1,
+      "dir": "DirFwd",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 217,
+      "source": 131,
+      "target": 133,
+      "dir": "DirFwd",
+      "tooltip": "sustains",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 218,
+      "source": 131,
+      "target": 1,
+      "dir": "DirFwd",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 219,
+      "source": 155,
+      "target": 49,
+      "dir": "DirFwd",
+      "tooltip": "has name",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 220,
+      "source": 7,
+      "target": 15,
+      "dir": "DirFwd",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 221,
+      "source": 13,
+      "target": 99,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 222,
+      "source": 70,
+      "target": 153,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 223,
+      "source": 71,
+      "target": 151,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 224,
+      "source": 37,
+      "target": 91,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 225,
+      "source": 36,
+      "target": 97,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 226,
+      "source": 14,
+      "target": 89,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 227,
+      "source": 27,
+      "target": 102,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 228,
+      "source": 26,
+      "target": 11,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 229,
+      "source": 23,
+      "target": 119,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 230,
+      "source": 24,
+      "target": 122,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 231,
+      "source": 25,
+      "target": 123,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 232,
+      "source": 29,
+      "target": 101,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 233,
+      "source": 60,
+      "target": 104,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 234,
+      "source": 22,
+      "target": 120,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 235,
+      "source": 21,
+      "target": 118,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 236,
+      "source": 18,
+      "target": 121,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 237,
+      "source": 19,
+      "target": 128,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 238,
+      "source": 20,
+      "target": 129,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 239,
+      "source": 28,
+      "target": 125,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 240,
+      "source": 31,
+      "target": 130,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 241,
+      "source": 32,
+      "target": 126,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 242,
+      "source": 61,
+      "target": 103,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 243,
+      "source": 10,
+      "target": 42,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 244,
+      "source": 6,
+      "target": 44,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 245,
+      "source": 44,
+      "target": 34,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 246,
+      "source": 12,
+      "target": 73,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 247,
+      "source": 67,
+      "target": 75,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 248,
+      "source": 75,
+      "target": 62,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 249,
+      "source": 62,
+      "target": 72,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 250,
+      "source": 62,
+      "target": 111,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 251,
+      "source": 72,
+      "target": 157,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 252,
+      "source": 157,
+      "target": 58,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 253,
+      "source": 58,
+      "target": 144,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 254,
+      "source": 58,
+      "target": 145,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 255,
+      "source": 53,
+      "target": 110,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 256,
+      "source": 53,
+      "target": 158,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 257,
+      "source": 108,
+      "target": 15,
+      "dir": "DirFwd",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 258,
+      "source": 30,
+      "target": 127,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    }
+  ]
+}

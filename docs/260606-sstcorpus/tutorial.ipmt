@@ -1,0 +1,7 @@
+t1::a "IF YOU WRITE IN ALL CAPS, YOU WILL BE REMINDED OF THE NOTE LATER!" ::t
+t2::a Mostly you just write notes ::t
+t3::a "Other symbols can be defined with your own meanings, like >\"special meanings\"" ::t
+t4::a The >ditto symbol of inverted commas has a special meaning ::t
+c5::a This is a simple example that illustrates the line above ::c
+
+t2 --::X "has example"--> c5

@@ -1,0 +1,1148 @@
+{
+  "version": "25.09",
+  "src": {
+    "type": "n4l-sst-native",
+    "ipmt": "",
+    "positions": {
+      "nodes": null,
+      "edges": null
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Commands are signified with a backslash e.g. \"\\command\", but on a command line, you need to escape them with two blackslashes \\\\command.",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 2,
+      "name": "Find a chapter",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "General word search",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 4,
+      "name": "Just type:  recipe fish soup",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 5,
+      "name": "Just type:  word1 word2 word3 \\limit 25",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 6,
+      "name": "Just type: !a1! or |a1|",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 7,
+      "name": "Just type: \"ephemeral or persistent\"",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 8,
+      "name": "Listing an entire story/sequence",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Lookup an arrow",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Print original notes from a chapter",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Search for a precise word",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 12,
+      "name": "Search for any combination of a set of words",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 13,
+      "name": "Search for any combination of a set of words in a chapter",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 14,
+      "name": "Search for any combination of a set of words in named context, any chapter",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 15,
+      "name": "Show reminders from reminders.n4l",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 16,
+      "name": "Show statistics of usage, as determined by visitation and checkbox clicks",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 17,
+      "name": "Show this help",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 18,
+      "name": "Solving for paths from A to B",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Type commands to search, e.g. \"monitoring signal\" or brain",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Use the NPtr address: (4,4138)",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 21,
+      "name": "\\about",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "\\arrow",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 23,
+      "name": "\\arrow 1",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 24,
+      "name": "\\arrow 232",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 25,
+      "name": "\\arrow succeed",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 26,
+      "name": "\\as",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 27,
+      "name": "\\browse",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 28,
+      "name": "\\chapter",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 29,
+      "name": "\\chapter mychapter",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 30,
+      "name": "\\chapters  \\limit 50",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 31,
+      "name": "\\contents",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 32,
+      "name": "\\context",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 33,
+      "name": "\\ctx",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 34,
+      "name": "\\depth",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 35,
+      "name": "\\distance",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 36,
+      "name": "\\for",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 37,
+      "name": "\\from",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 38,
+      "name": "\\from !a1! \\to b6",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 39,
+      "name": "\\help",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 40,
+      "name": "\\in",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 41,
+      "name": "\\limit",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 42,
+      "name": "\\notes",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 43,
+      "name": "\\notes \\on brain",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 44,
+      "name": "\\notes mychapter",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 45,
+      "name": "\\on",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 46,
+      "name": "\\page",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 47,
+      "name": "\\path",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 48,
+      "name": "\\paths \\from start \\to target",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 49,
+      "name": "\\range",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 50,
+      "name": "\\remind",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 51,
+      "name": "\\section",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 52,
+      "name": "\\seq",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 53,
+      "name": "\\sequence",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 54,
+      "name": "\\sequence \"create a pod\"",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 55,
+      "name": "\\stats",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 56,
+      "name": "\\stories",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 57,
+      "name": "\\story",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 58,
+      "name": "\\story (wuya)",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 59,
+      "name": "\\story Mary",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 60,
+      "name": "\\to",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 61,
+      "name": "\\toc",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 62,
+      "name": "https://github.com/markburgess/SSTorytime/blob/main/docs/search_examples.md",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 63,
+      "name": "look for notes with _sequence_ stories",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 64,
+      "name": "on, about, or for a subject, e.g. \\notes \\on brain",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 65,
+      "name": "recipe fish soup  \\chapter \"my recipes\"",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 66,
+      "name": "recipe fish soup  \\chapter food",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 67,
+      "name": "recipe fish soup  \\chapter food \\context food, recipes, dishes",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 68,
+      "name": "restrict by arrow type, name, or number",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 69,
+      "name": "search for paths from some starting point, e.g. \\from !start!, \\from b3",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 70,
+      "name": "search for paths going to some point, e.g.  \\to b3, \\to target",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 71,
+      "name": "show a table of contents",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 72,
+      "name": "show the notes as you wrote them in N4L",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 73,
+      "name": "solve for a continguous path",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 74,
+      "name": "specificy the maximum search results",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 75,
+      "name": "specify a chapter to restrict the search",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 76,
+      "name": "specify a context to filter results,  e.g.  any \\context Monday",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 77,
+      "name": "specify the depth of path search",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 78,
+      "name": "word1 word2 word3 \\chapter \"my chapter\" yourchapter \\context \"weird words\"",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 79,
+      "name": "word1 word2 word3 \\chapter dictionary",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 80,
+      "name": "word1 word2 word3 \\context \"weird words\"",
+      "alias": "",
+      "type": "Thing"
+    }
+  ],
+  "edges": [
+    {
+      "id": 0,
+      "source": 45,
+      "target": 64,
+      "dir": "",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 36,
+      "target": 64,
+      "dir": "",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 21,
+      "target": 64,
+      "dir": "",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 40,
+      "target": 64,
+      "dir": "",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 42,
+      "target": 72,
+      "dir": "",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 27,
+      "target": 72,
+      "dir": "",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 46,
+      "target": 72,
+      "dir": "",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 47,
+      "target": 73,
+      "dir": "",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 53,
+      "target": 63,
+      "dir": "",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 52,
+      "target": 63,
+      "dir": "",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 57,
+      "target": 63,
+      "dir": "",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 56,
+      "target": 63,
+      "dir": "",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 37,
+      "target": 69,
+      "dir": "",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 60,
+      "target": 70,
+      "dir": "",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 33,
+      "target": 76,
+      "dir": "",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 32,
+      "target": 76,
+      "dir": "",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 26,
+      "target": 76,
+      "dir": "",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 28,
+      "target": 75,
+      "dir": "",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 51,
+      "target": 75,
+      "dir": "",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 31,
+      "target": 71,
+      "dir": "",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 61,
+      "target": 71,
+      "dir": "",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 22,
+      "target": 68,
+      "dir": "",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 41,
+      "target": 74,
+      "dir": "",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 34,
+      "target": 77,
+      "dir": "",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 49,
+      "target": 77,
+      "dir": "",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 35,
+      "target": 77,
+      "dir": "",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 55,
+      "target": 16,
+      "dir": "",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 50,
+      "target": 15,
+      "dir": "",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 39,
+      "target": 17,
+      "dir": "",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 3,
+      "target": 78,
+      "dir": "",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 3,
+      "target": 67,
+      "dir": "",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 2,
+      "target": 30,
+      "dir": "",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 2,
+      "target": 29,
+      "dir": "",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 9,
+      "target": 25,
+      "dir": "",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 9,
+      "target": 23,
+      "dir": "",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 9,
+      "target": 24,
+      "dir": "",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 19,
+      "target": 62,
+      "dir": "",
+      "tooltip": "has URL",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 11,
+      "target": 12,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 11,
+      "target": 6,
+      "dir": "",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 11,
+      "target": 7,
+      "dir": "",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 11,
+      "target": 20,
+      "dir": "",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 12,
+      "target": 13,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 12,
+      "target": 5,
+      "dir": "",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 12,
+      "target": 4,
+      "dir": "",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 13,
+      "target": 14,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 13,
+      "target": 79,
+      "dir": "",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 13,
+      "target": 65,
+      "dir": "",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 14,
+      "target": 3,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 14,
+      "target": 80,
+      "dir": "",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 14,
+      "target": 66,
+      "dir": "",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 10,
+      "target": 44,
+      "dir": "",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 10,
+      "target": 43,
+      "dir": "",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 8,
+      "target": 58,
+      "dir": "",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 8,
+      "target": 59,
+      "dir": "",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 8,
+      "target": 54,
+      "dir": "",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 18,
+      "target": 48,
+      "dir": "",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 18,
+      "target": 38,
+      "dir": "",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    }
+  ]
+}

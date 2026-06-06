@@ -1,0 +1,140 @@
+e1::a "\"established facts\" tend to imply generalizations, rules and laws" ::e
+e2::a "\"established facts\" tend to suggest explanations" ::e
+e3::a "\"established facts\"/trusted facts imply deterministic consequences" ::e
+u4::a A story/stories ::?ce
+u5::a "All men are mortal, Socrates is a man, therefore, Socrates is mortal." ::?ce
+u6::a Aristotle ::?ce
+u7::a Artificial Intelligence ::?ce
+u8::a Artificial Neural Networks ::?ce
+u9::a Greece ::?ce
+u10::a Hilbert ::?ce
+e11::a Observation of information ::e
+e12::a "People associate reasoning with logic, thanks to Hilbert and other mathematicians who formalized reasoning." ::e
+e13::a Promise Theory ::e
+u14::a SST ::?ce
+e15::a Semantic Spacetime ::e
+u16::a Stories are connected directed graphs ::?tec
+e17::a The fire together/wire together principle ::e
+e18::a What unknown property? ::e
+e19::a a boundary condition and ::e
+u20::a a graph ::?tec
+u21::a a process ::?ce
+e22::a a process for generating knowledge. ::e
+e23::a a statistical or belief probabilistic answer ::e
+e24::a a yes or no answer ::e
+e25::a abduction ::e
+u26::a all swans are white ::?ce
+u27::a "any kind of reasoning: deduction, induction, abduction" ::?ce
+u28::a "any number of possible connecting paths, one to be selected" ::?te
+e29::a arrows ::e
+u30::a associations ::?ce
+e31::a "belongs to one of four meta types: leadsto, contains, expresses property, is similar or near to" ::e
+u32::a consequences ::?ce
+u33::a contains ::?ce
+e34::a contiguous paths through a sequence of events ::e
+e35::a deduction ::e
+u36::a deterministic ::?ce
+u37::a established facts ::?ce
+e38::a events ::e
+u39::a explanations ::?ce
+u40::a expresses ::?ce
+u41::a expressing ::?ce
+e42::a expressing SST properties ::e
+e43::a first order logic of Hilbert ::e
+u44::a flaw in deduction: absence of evidence is not evidence of absence ::?tec
+u45::a generalizations ::?ce
+u46::a graph ::?ce
+u47::a grouping of examples into a named class ::?ce
+e48::a induction ::e
+e49::a labelled directed link with semantics ::e
+u50::a laws ::?ce
+u51::a leadsto ::?ce
+u52::a logic ::?ce
+u53::a near ::?ce
+e54::a nodes ::e
+e55::a one is calculating what is necessarily true from the assumed truth of the preconditions ::e
+e56::a one is calculating what may be broadly true from the preconditions ::e
+e57::a one is calculating what might broadly explain ::e
+e58::a paths that join up into stories ::e
+u59::a place and moment in a proper time sequence ::?te
+u60::a process ::?ce
+u61::a properties ::?ce
+u62::a property ::?ce
+e63::a reasoning ::e
+e64::a reasoning goes back to 350 BC Greece and Aristotle. ::e
+u65::a rules ::?ce
+u66::a similar ::?ce
+e67::a "some have argued that \"Artificial Intelligence\" is incapable of abduction" ::e
+u68::a "some have argued that abduction is the process behind \"Artificial Neural Networks\"" ::?tec
+u69::a states of the knowledge system ::?ce
+u70::a syllogism ::?ce
+e71::a theorems as facts / tautologies ::e
+e72::a turn correlations into associations. ::e
+
+u6 --::X "discusses"--> u70
+u70 --::X "has example"--> u5
+e35 --::L "proposes"--> e3
+e35 --::L "proposes"--> e55
+e35 --::L "proposes"--> e24
+e35 --::X "has example"--> u70
+e48 --::L "proposes"--> e1
+e48 --::L "proposes"--> e56
+e48 --::L "proposes"--> e23
+e25 --::L "proposes"--> e2
+e25 --::L "proposes"--> e57
+e25 --::L "proposes"--> e23
+u28 --::P--> e25
+u59 --::P--> e38
+e54 --::X "represents/models"--> e38
+e54 --::X "represents/models"--> u69
+e29 --::L "proposes"--> e49
+e29 --::L "proposes"--> e31
+e29 --::X "represents/models"--> u30
+e15 --::X "has abbreviation"--> u14
+e13 --::L "from which we derive"--> e15
+u20 --::X "refers to"--> u46
+u20 --::X "represents/models"--> u21
+u21 --::X "refers to"--> u60
+u4 --::X "represents/models"--> u27
+e42 --::X "refers to"--> u41
+e42 --::X "refers to"--> u14
+e42 --::X "refers to"--> u61
+e42 --::X "represents/models"--> e48
+e42 --::X "has example"--> u47
+e18 --::L "enables"--> e58
+e11 --::L "creates"--> e19
+e64 --::X "refers to"--> e63
+e64 --::X "refers to"--> u9
+e64 --::X "refers to"--> u6
+e12 --::X "refers to"--> e63
+e12 --::X "refers to"--> u52
+e12 --::X "refers to"--> u10
+e3 --::X "refers to"--> u37
+e3 --::X "refers to"--> u36
+e3 --::X "refers to"--> u32
+u44 --::X "has example"--> u26
+e1 --::X "refers to"--> u37
+e1 --::X "refers to"--> u45
+e1 --::X "refers to"--> u65
+e1 --::X "refers to"--> u50
+e2 --::X "refers to"--> u37
+e2 --::X "refers to"--> u39
+u68 --::X "refers to"--> u8
+e67 --::X "refers to"--> u7
+e67 --::X "refers to"--> e25
+e34 --::X "refers to"--> e38
+e34 --::X "represents/models"--> u4
+e34 --::X "represents/models"--> e25
+e31 --::X "refers to"--> u51
+e31 --::X "refers to"--> u33
+e31 --::X "refers to"--> u40
+e31 --::X "refers to"--> u62
+e31 --::X "refers to"--> u66
+e31 --::X "refers to"--> u53
+e43 --::X "refers to"--> u52
+e43 --::X "refers to"--> u10
+e43 --::X "represents/models"--> e35
+e71 --::L "is used by"--> e43
+e58 --::L "enables"--> e63
+e17 --::L "generates"--> e72
+e19 --::L "generates"--> e22

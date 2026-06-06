@@ -1,0 +1,75 @@
+u1::a Adam ::?ce
+u2::a Alfie ::?ce
+u3::a Ali ::?ce
+u4::a Billie ::?ce
+u5::a Bjørn ::?ce
+u6::a Bot1 ::?tec
+u7::a Bot2 ::?tec
+u8::a Bot3 ::?tec
+u9::a Bot4 ::?tec
+u10::a Brent ::?ce
+u11::a Carol ::?ce
+u12::a Chirpy Cheep Cheep ::?ce
+u13::a Company of Friends ::?ce
+u14::a Doug ::?ce
+u15::a Hans ::?ce
+u16::a Jan ::?ce
+u17::a Jane ::?ce
+u18::a Jane1 ::?ce
+u19::a Jane2 ::?ce
+u20::a Joyce ::?ce
+u21::a Jungi ::?ce
+u22::a Kat ::?ce
+u23::a Mandy ::?ce
+u24::a Mark ::?tec
+u25::a Matt ::?ce
+u26::a Mike ::?ce
+u27::a Paul ::?ce
+u28::a Peter ::?ce
+u29::a Rob1Bot21 ::?tec
+u30::a Robo1 ::?tec
+u31::a Robo2 ::?tec
+u32::a Silvy ::?ce
+u33::a Tamar ::?ce
+u34::a Taylor Swallow ::?ce
+u35::a Tore ::?ce
+u36::a Zhao ::?ce
+
+u24 --::X "has friend"--> u23
+u24 --::X "has friend"--> u32
+u24 --::X "has friend"--> u10
+u24 --::X "has friend"--> u36
+u24 --::X "has friend"--> u14
+u24 --::X "has friend"--> u35
+u24 --::X "has friend"--> u20
+u24 --::X "has friend"--> u26
+u24 --::X "has friend"--> u11
+u24 --::X "has friend"--> u3
+u24 --::X "has friend"--> u25
+u24 --::X "has friend"--> u5
+u24 --::X "has friend"--> u33
+u24 --::X "has friend"--> u22
+u24 --::X "has friend"--> u15
+u26 --::X "has friend"--> u18
+u26 --::X "has friend"--> u19
+u26 --::X "has friend"--> u16
+u26 --::X "has friend"--> u2
+u26 --::X "has friend"--> u21
+u26 --::X "has friend"--> u28
+u26 --::X "has friend"--> u27
+u16 --::X "has friend"--> u1
+u16 --::X "has friend"--> u18
+u16 --::X "has friend"--> u17
+u1 --::X "has friend"--> u13
+u1 --::X "has friend"--> u27
+u1 --::X "has friend"--> u25
+u1 --::X "has friend"--> u4
+u1 --::X "has friend"--> u12
+u1 --::X "has friend"--> u34
+u30 --::X "has an employer"--> u13
+u31 --::X "has an employer"--> u13
+u6 --::X "has an employer"--> u13
+u7 --::X "has an employer"--> u13
+u8 --::X "has an employer"--> u13
+u9 --::X "has an employer"--> u13
+u29 --::X "has an employer"--> u13

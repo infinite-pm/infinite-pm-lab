@@ -1,0 +1,190 @@
+u1::a 0.5-4 Hz ::?ce
+u2::a 12-35 Hz ::?ce
+u3::a 32-100 Hz ::?ce
+u4::a 4-8 Hz ::?ce
+u5::a 5-15 Hz ::?ce
+u6::a Betz cells ::?ce
+u7::a Complementary roles for hippocampus and anterior cingulate in composing continuous choice ::?tec
+u8::a "External granular layer. Composed of small \"pyramidal cells\" and \"inhibitory cells\". Receives input from deeper layers." ::?ce
+u9::a External pyramidal layer. Small to medium pyramidal neurons. Send exicitory outputs to other cortical areas across the corpus callosum. ::?ce
+e10::a Internal granular layer. The main entry point for incoming sensory signals. Direct signals from the thalamus. ::e
+u11::a "Internal pyramidal layer. Contains a large number of pyramidal neurons/\"Betz cells\" and motor neurons.  Responsible for sending signals out of the cerebral cortex to deeper brain regions, spinal cord." ::?ce
+e12::a Left–right-alternating theta sweeps in entorhinal–hippocampal maps of space ::e
+u13::a "Multiform layer. The deepest layer. Sends massive feedback mainly to thalamus, allowing the cortex to regulate and filter sensory information." ::?ce
+e14::a Nature ::e
+u15::a "Outer molecular layer. Dense mat of axons, dendrites, and \"glial cells\", containing few neuronal cell bodies. Inputs from \"brain stem\"." ::?ce
+u16::a accumulating knowledge ::?ce
+u17::a affordances ::?tec "conditional promises" ::tip
+u18::a alpha waves ::?tec
+u19::a association and interhemipsheric signalling ::?ce
+u20::a attractive signals engage a winner-takes-all competition ::?ce
+e21::a autonomic nervous system ::e
+u22::a axons ::?ce
+e23::a basal ganglia ::e
+u24::a "below cortex, forebrain" ::?ce
+u25::a beta waves ::?tec
+u26::a brain stem ::?ce
+u27::a collect sensory information and integrate with neighbouring columns ::?ce
+e28::a column ::e
+u29::a columnar organization hypothesis ::?tec
+u30::a columns ::?ce
+u31::a concentration ::?ce
+u32::a conduit/relay station for sensory information. ::?ce
+u33::a cortical to cortical communication ::?ce
+u34::a creates temporary structured episodic record ::?ce
+u35::a delta waves ::?tec
+u36::a dendrites ::?ce
+e37::a "early telencephalon, meaning the end of the brain" ::e
+u38::a "encoding meaning as \"things\" is efficient conceptualisation, which is a coarse graining of spacetime pattern persistence and recurrence." ::?tec
+e39::a entorhinal cortex ::e
+e40::a forebrain ::e
+u41::a frontal cortex ::?te
+u42::a gamma waves ::?te "40 Hz of special interest" ::tip
+u43::a glial cells ::?ce
+e44::a grid cells ::e
+u45::a hindbrain ::?te
+e46::a hippocampus ::e
+e47::a hormones ::e
+u48::a https://www.biorxiv.org/content/10.1101/2025.03.17.643774v1.full ::?ce
+e49::a human brain ::e
+e50::a hypothalamus ::e "hypothalamus is extensively interconnected with other brain regions that collectively provide signals that motivate different types of behaviors, with varying levels of urgency. The resultant signals of need may be experienced as hunger, thirst, tiredness, cold, pain, fear, and so on; that is, basic emotions." ::tip
+u51::a inhibitory cells ::?ce
+u52::a inner chamber ::?tec
+u53::a "key nexus between body and brain , vital decision making circuits" ::?ce
+u54::a layer 1 ::?tec "plays a role in intentionality?" ::tip
+u55::a layer 2 ::?tec
+u56::a layer 3 ::?tec
+e57::a layer 4 ::e
+e58::a layer 5 ::e
+e59::a layer 6 ::e
+u60::a learning and memory ::?ce
+u61::a maps incoming sensory stimulus to a menu of actions/instincts ::?ce
+u62::a mediates evaluatuon and selection of actions ::?ce
+u63::a "medium attention,anxiety dominant, active, external attention" ::?ce
+u64::a midbrain ::?te
+u65::a modular repeating columns in 6 layers ::?ce
+u66::a monitoring signals in the bloodstream and neural signals ::?ce
+e67::a neocortex ::e
+u68::a nested circuit loops ::?ce
+u69::a neurons that fire together wire together ::?tec
+u70::a optic nerve ::?ce
+e71::a outgrowth of hypothalamus ::e
+u72::a parietal cortex ::?te
+u73::a performs significant processing/compression on input ::?ce
+u74::a "performs various kinds of neural operations, using these integrated maps of different kinds of stimuli to derive an optimal action" ::?ce
+u75::a physical structures/neural circuits ::?te
+e76::a place cells ::e
+u77::a place cells spacetime ::?ce
+u78::a premotor cortex ::?te
+u79::a "primary input centre, receive inputs from other brain areas" ::?ce
+u80::a provides top down modulation and integrated activity. ::?ce
+u81::a pyramidal ::?ce
+u82::a pyramidal cells ::?ce
+u83::a "regulate bodily functions—blood pressure, heart rate, enzyme levels, digestion, gut peristalsis, sweating, shivering, sleep, arousal" ::?ce
+e84::a retinal ganglia ::e
+e85::a return data back to thalamus ::e
+e86::a signal from midbrain about reward/punishment/surprise ::e
+u87::a sleep ::?ce
+u88::a structured for causal relationships A causes B ::?ce
+u89::a "take signals from 2,3 and context and redistribute" ::?ce
+u90::a tectum ::?tec "conditional promises" ::tip
+e91::a "tectum, cortex, spine, other hemisphere" ::e
+e92::a "tectum, thalamus" ::e
+u93::a telencephalon ::?ce
+u94::a temporal cortex ::?te
+e95::a thalamus ::e
+e96::a theta waves ::e
+u97::a top of midbrain ::?ce
+u98::a type 1 ::?te
+u99::a type 2 ::?te
+e100::a ultimately expand in mammals to become the neocortex ::e
+e101::a "urges to eat, drink, sleep, find shelter, avoid whatever is causing pain or fear, or respond with defensive or aggressive behaviours." ::e
+u102::a "very relaxed, light or passive attention" ::?ce
+u103::a what we can do with a object or service ::?ce
+
+e28 --::P--> e67
+e67 --::X "has the structure of"--> u65
+e67 --::X "has a role"--> u16
+e50 --::L "influences"--> e47
+e50 --::L "influences"--> e101
+e50 --::L "leads to"--> e100
+e50 --::X "has a role"--> u53
+e50 --::X "takes place at location"--> e40
+e50 --::X "has a role"--> u66
+e50 --::X "has a role"--> u83
+e47 --::L "influences"--> e21
+e95 --::X "takes place at location"--> e40
+e95 --::X "has a role"--> u32
+e95 --::X "has a role"--> u73
+u75 --::P--> e46
+e76 --::P--> e46
+e46 --::X "has a role"--> u60
+e46 --::X "has a role"--> u34
+e46 --::X "has a role"--> u88
+u90 --::X "has a role"--> u61
+u90 --::X "has a role"--> u74
+u90 --::X "works by method"--> u20
+u90 --::X "takes place at location"--> u97
+u17 --::X "has a role"--> u103
+e14 --::X "is the publisher of"--> e12
+u18 --::X "has frequency"--> u5
+u18 --::X "is characterized by"--> u102
+u25 --::X "has frequency"--> u2
+u25 --::X "is characterized by"--> u63
+u78 --::P--> u42
+u72 --::P--> u42
+u94 --::P--> u42
+u41 --::P--> u42
+u42 --::X "has frequency"--> u3
+u42 --::X "is characterized by"--> u31
+u35 --::X "has frequency"--> u1
+u35 --::X "is characterized by"--> u87
+u98 --::P--> e96
+u99 --::P--> e96
+e96 --::X "has frequency"--> u4
+e40 --::P--> e49
+u64 --::P--> e49
+u45 --::P--> e49
+e84 --::L "signals to"--> e92
+e84 --::X "takes place at location"--> u70
+e92 --::L "sustains"--> e28
+e23 --::X "takes place at location"--> u24
+e23 --::X "has the structure of"--> u68
+e23 --::X "has a role"--> u62
+u54 --::X "has description"--> u15
+u54 --::X "has a role"--> u80
+u54 --::X "has a role"--> u33
+u55 --::X "has description"--> u8
+u55 --::X "has a role"--> u27
+u56 --::X "has description"--> u9
+u56 --::X "has a role"--> u27
+u56 --::X "has a role"--> u19
+e57 --::X "has description"--> e10
+e57 --::X "has a role"--> u79
+e58 --::L "signals to"--> e91
+e58 --::X "has description"--> u11
+e58 --::X "has a role"--> u89
+e59 --::L "signals to"--> e85
+e59 --::X "has a role"--> u13
+e44 --::P--> e39
+e71 --::L "evolved to"--> e67
+e37 --::L "evolved to"--> e50
+e37 --::X "involves"--> u93
+e100 --::X "involves"--> e67
+e86 --::L "sustains"--> e23
+u8 --::X "involves"--> u82
+u8 --::X "involves"--> u51
+u27 --::X "involves"--> u30
+e10 --::X "involves"--> e95
+e85 --::X "involves"--> e95
+u7 --::X "has URL"--> u48
+e12 --::X "discusses"--> e96
+e12 --::X "discusses"--> u77
+e12 --::X "discusses"--> e76
+e12 --::X "discusses"--> e44
+u15 --::X "involves"--> u22
+u15 --::X "involves"--> u36
+u15 --::X "involves"--> u43
+u15 --::X "involves"--> u26
+u11 --::X "involves"--> u81
+u11 --::X "involves"--> u6

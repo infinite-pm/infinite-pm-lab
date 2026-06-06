@@ -1,0 +1,143 @@
+t1::a "\"BTHV-3-1\", \"1. Allegro con brio (live)\"" ::t
+t2::a "\"BTHV-3-1\", \"2. Marcia funbre. Adagio Assai (live)\"" ::t
+t3::a "\"BTHV-3-1\", \"3. Scherzo. Allegro vivace. (live)\"" ::t
+t4::a "\"BTHV-3-1\", \"4. Finale. Allegro molto (live)\"" ::t
+e5::a "\"Pittsburgh Symphony Orchestra\"" ::e
+t6::a "\"RUSH-5\", 1. A Farewell To Kings" ::t
+t7::a "\"RUSH-5\", 2. Xanadu" ::t
+t8::a "\"RUSH-5\", 3. Closer To The Heart" ::t
+t9::a "\"RUSH-5\", 4. Cinderella Man" ::t
+t10::a "\"RUSH-5\", 5. Madrigal" ::t
+t11::a "\"RUSH-5\", 6. Cygnus X-1" ::t
+c12::a 10:22 ::c
+c13::a 11.50 ::c
+c14::a 11:07 ::c
+c15::a 15:11 ::c
+c16::a 16:15 ::c
+c17::a 192kHz / 24-bit ::c
+c18::a 1977 ::c
+c19::a 2016 ::c
+c20::a 2018 ::c
+c21::a 2:36 ::c
+c22::a 2:55 ::c
+c23::a 44kHz / 16-bit ::c
+c24::a 4:22 ::c
+c25::a 5:53 ::c
+e26::a A Farewell To Kings ::e
+c27::a Adagio ::c
+c28::a Adagio Assai ::c
+c29::a Alex Lifeson ::c
+c30::a Allegro ::c
+c31::a Allegro molto ::c
+c32::a Allegro vivace ::c
+c33::a BTHV-3-1 ::c
+e34::a "BTHV-3-1, \"1. Allegro con brio (live)\"" ::e
+e35::a "BTHV-3-1, \"2. Marcia funbre. Adagio Assai (live)\"" ::e
+e36::a "BTHV-3-1, \"3. Scherzo. Allegro vivace. (live)\"" ::e
+e37::a "BTHV-3-1, \"4. Finale. Allegro molto (live)\"" ::e
+e38::a "Beethoven, Symphony No. 3, Opus 55, \"Eroica\"" ::e
+c39::a CBES-1 ::c
+e40::a "CBES-1, First Movement" ::e
+e41::a "CBES-1, Part 1" ::e
+e42::a "CBES-1, Part 2" ::e
+e43::a "CBES-1, Second Movement" ::e
+e44::a "CBES-1, Third Movement" ::e
+e45::a Celebrated Composer ::e
+e46::a "Celebrated Composer, The Early Symphonies" ::e
+c47::a Compact Disc ::c
+e48::a Crazy Classics ::e
+c49::a FLAC ::c
+c50::a Geddy Lee ::c
+e51::a Ludwig van Beethoven ::e
+e52::a Manfred Honeck ::e
+e53::a Mercury ::e
+e54::a "Music by \"Alex Lifeson\", \"Geddy Lee\", lyrics by \"Neil Peart\"" ::e
+c55::a Neil Peart ::c
+e56::a Orchestra ::e
+c57::a Pittsburgh Symphony Orchestra ::c
+e58::a Pointy Penguin ::e
+c59::a RUSH-5 ::c
+e60::a Reference Recordings ::e
+e61::a Rush ::e
+c62::a Scherzo ::c
+c63::a Vinyl ::c
+e64::a symphony 1 ::e
+e65::a symphony 2 ::e
+
+e56 --::X "gave performance of"--> e46
+e61 --::X "gave performance of"--> e26
+e53 --::X "is the publisher of"--> e26
+e45 --::X "composer of"--> e46
+e48 --::X "is the publisher of"--> e46
+e40 --::P--> e64
+e43 --::P--> e64
+e44 --::P--> e64
+e41 --::P--> e65
+e42 --::P--> e65
+e58 --::X "conductor of"--> e46
+e60 --::X "is the publisher of"--> e38
+e52 --::X "conductor of"--> e38
+e40 --::L "then followed by"--> e43
+e40 --::X "has tempo"--> c30
+e43 --::L "then followed by"--> e44
+e43 --::X "has tempo"--> c62
+e44 --::X "has tempo"--> c27
+e41 --::L "then followed by"--> e42
+e51 --::X "composer of"--> e38
+e5 --::X "refers to"--> c57
+e5 --::X "gave performance of"--> e38
+t7 --::X "refers to"--> c59
+t7 --::X "has time duration"--> c14
+t10 --::X "refers to"--> c59
+t10 --::X "has time duration"--> c21
+e64 --::P--> e46
+e65 --::P--> e46
+e46 --::X "has abbreviation"--> c39
+e46 --::X "release format"--> c47
+e46 --::X "has sampling rate"--> c23
+e46 --::X "recording date"--> c19
+t1 --::P--> e38
+t2 --::P--> e38
+t3 --::P--> e38
+t4 --::P--> e38
+e38 --::X "has abbreviation"--> c33
+e38 --::X "release format"--> c49
+e38 --::X "has sampling rate"--> c17
+e38 --::X "recording date"--> c20
+t1 --::X "refers to"--> c33
+t1 --::X "has tempo"--> c30
+t1 --::X "has time duration"--> c16
+t2 --::X "refers to"--> c33
+t2 --::X "has tempo"--> c28
+t2 --::X "has time duration"--> c15
+t3 --::X "refers to"--> c33
+t3 --::X "has tempo"--> c32
+t3 --::X "has time duration"--> c16
+t4 --::X "refers to"--> c33
+t4 --::X "has tempo"--> c31
+t4 --::X "has time duration"--> c13
+t6 --::P--> e26
+t7 --::P--> e26
+t8 --::P--> e26
+t9 --::P--> e26
+t10 --::P--> e26
+t11 --::P--> e26
+e26 --::X "has abbreviation"--> c59
+e26 --::X "release format"--> c63
+e26 --::X "has sampling rate"--> c23
+e26 --::X "recording date"--> c18
+e54 --::X "refers to"--> c29
+e54 --::X "refers to"--> c50
+e54 --::X "refers to"--> c55
+e54 --::X "composer of"--> e26
+t6 --::X "refers to"--> c59
+t6 --::X "has time duration"--> c25
+t8 --::X "refers to"--> c59
+t8 --::X "has time duration"--> c22
+t9 --::X "refers to"--> c59
+t9 --::X "has time duration"--> c24
+t11 --::X "refers to"--> c59
+t11 --::X "has time duration"--> c12
+e34 --::L "then followed by"--> e35
+e35 --::L "then followed by"--> e36
+e36 --::L "then followed by"--> e37

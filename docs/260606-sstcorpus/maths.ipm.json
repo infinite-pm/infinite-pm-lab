@@ -1,0 +1,244 @@
+{
+  "version": "25.09",
+  "src": {
+    "type": "n4l",
+    "ipmt": "",
+    "positions": {
+      "nodes": null,
+      "edges": null
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "\\(  \\frac{\\partial y}{\\partial x} , \\frac{\\partial f}{\\partial x} \\)",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 2,
+      "name": "\\(  \\frac{dy}{dx} , \\frac{df}{dx} \\)",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 3,
+      "name": "\\( (x,y,z) \\)",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 4,
+      "name": "\\( (y,x) \\)",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 5,
+      "name": "\\( \\frac{\\partial}{\\partial x} \\)",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 6,
+      "name": "\\( \\frac{d}{dx} \\)",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 7,
+      "name": "\\( \\int \\)",
+      "alias": "",
+      "type": "Thing",
+      "tooltip": "this is an old language S intended to imply summation"
+    },
+    {
+      "id": 8,
+      "name": "\\( \\int_0^1 x^2\\;dx \\)",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 9,
+      "name": "\\( \\sum \\)",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 10,
+      "name": "\\( \\sum_{n = 1}^4 n(n+1) \\)",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 11,
+      "name": "a partial derivative operation on the variable x, i.e. a derivative along an exclusive direction",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 12,
+      "name": "a summation (addition of terms)",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 13,
+      "name": "a total derivative operation on the variable x, i.e. the contributsion from all directions and parameters that vary along x",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 14,
+      "name": "a variable, or unknown quantity to solve for",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 15,
+      "name": "a,b,c",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 16,
+      "name": "constant fixed parameters to substitute values for",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 17,
+      "name": "the integral sign",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 18,
+      "name": "three dimensional Euclidean coordinate in a volume",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 19,
+      "name": "two dimensional Euclidean coordinates in a plane",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 20,
+      "name": "x",
+      "alias": "",
+      "type": "Thing"
+    }
+  ],
+  "edges": [
+    {
+      "id": 21,
+      "source": 20,
+      "target": 14,
+      "dir": "DirFwd",
+      "tooltip": "typically denotes",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 22,
+      "source": 15,
+      "target": 16,
+      "dir": "DirFwd",
+      "tooltip": "typically denotes",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 23,
+      "source": 4,
+      "target": 19,
+      "dir": "DirFwd",
+      "tooltip": "typically denotes",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 24,
+      "source": 3,
+      "target": 18,
+      "dir": "DirFwd",
+      "tooltip": "typically denotes",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 25,
+      "source": 7,
+      "target": 17,
+      "dir": "DirFwd",
+      "tooltip": "denotes",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 26,
+      "source": 7,
+      "target": 8,
+      "dir": "DirFwd",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 27,
+      "source": 9,
+      "target": 12,
+      "dir": "DirFwd",
+      "tooltip": "denotes",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 28,
+      "source": 9,
+      "target": 10,
+      "dir": "DirFwd",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 29,
+      "source": 6,
+      "target": 13,
+      "dir": "DirFwd",
+      "tooltip": "denotes",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 30,
+      "source": 6,
+      "target": 2,
+      "dir": "DirFwd",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 31,
+      "source": 5,
+      "target": 11,
+      "dir": "DirFwd",
+      "tooltip": "denotes",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 32,
+      "source": 5,
+      "target": 1,
+      "dir": "DirFwd",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    }
+  ]
+}

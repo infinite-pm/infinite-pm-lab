@@ -1,0 +1,173 @@
+{
+  "version": "25.09",
+  "src": {
+    "type": "n4l-sst-native",
+    "ipmt": "",
+    "positions": {
+      "nodes": null,
+      "edges": null
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Evaluate \\( I(\\nu) = \\int_0^\\infty \\; \\nu^\\frac{1}{2}\\, e^{-\\nu}\\; d\\nu \\)",
+      "alias": "",
+      "type": "Event",
+      "tooltip": "\\(I(\\nu)\\) is not to be understood as a function of \\(\\nu\\) · The integrand is fully analytic so we are free to move the limit and differentiate under the integral sign etc."
+    },
+    {
+      "id": 2,
+      "name": "Finally, taking the limit, \\(I \\rightarrow  \\frac{\\sqrt \\pi}{2}\\)",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 3,
+      "name": "Integrating by parts: \\( \\int_0^\\infty u e^{-u^2}\\,du = -\\frac{1}{2} \\lbrack e^{-u^2}\\rbrack_0^\\infty = \\frac{1}{2} \\)",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 4,
+      "name": "Let \\( \\nu = \\lim_{a\\rightarrow 0} \\left\\lbrack \\left( \\nu^\\frac{1}{2} + \\frac{a}{2} \\right)^2 - \\frac{a^2}{4} \\right\\rbrack \\)",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 5,
+      "name": "Let \\( u = (\\nu^\\frac{1}{2} + \\frac{a}{2}), du = \\frac{1}{2}\\nu^{-\\frac{1}{2}} d\\nu \\)",
+      "alias": "",
+      "type": "Event",
+      "tooltip": "i.e. \\( (u - \\frac{a}{2})= \\nu^\\frac{1}{2},   d\\nu = 2(u - \\frac{a}{2})du \\)"
+    },
+    {
+      "id": 6,
+      "name": "Now: \\( I(u) = \\lim_{a\\rightarrow 0} - \\frac{d}{da} \\;  \\int_0^\\infty du\\; \\left(u - \\frac{a}{2}\\right) e^{- u^2+ a^2/4} \\)",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 7,
+      "name": "Then \\( I(\\nu) = \\lim_{a\\rightarrow 0} \\int_0^\\infty  \\nu^\\frac{1}{2} \\exp\\left(- \\left( \\nu^\\frac{1}{2} + \\frac{a}{2} \\right)^2 - \\frac{a^2}{4} \\right) d\\nu  \\)",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 8,
+      "name": "Thus: \\( I(u) = \\lim_{a\\rightarrow 0} -2\\frac{d}{da} \\;\\left\\lbrack (\\frac{1}{2}-\\frac{a}{2}\\cdot\\frac{1}{2}\\sqrt{\\pi}) e^{a^2/4} \\right\\rbrack    \\)",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 9,
+      "name": "We know by polar coordinates that: \\( \\int_0^\\infty \\; e^{-r^2} dr  = \\sqrt{\\pi}/2 \\)",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 10,
+      "name": "\\( I(\\nu) = \\lim_{a\\rightarrow 0} -\\frac{d}{da} \\;  \\int_0^\\infty  \\exp\\left(- \\left( \\nu^\\frac{1}{2} + \\frac{a}{2} \\right)^2 - \\frac{a^2}{4} \\right) d\\nu   \\)",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 11,
+      "name": "\\( I(u) = -2  \\lim_{a\\rightarrow 0}  \\;\\left\\lbrack \\frac{2a}{4} (\\frac{1}{2} - \\ldots) - \\frac{1}{4}\\sqrt{\\pi}   \\right\\rbrack\\;e^{a^2/4} \\)",
+      "alias": "",
+      "type": "Event"
+    }
+  ],
+  "edges": [
+    {
+      "id": 0,
+      "source": 1,
+      "target": 4,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 4,
+      "target": 7,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 5,
+      "target": 6,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 6,
+      "target": 9,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 9,
+      "target": 3,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 3,
+      "target": 8,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 7,
+      "target": 10,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 10,
+      "target": 5,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 8,
+      "target": 11,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 11,
+      "target": 2,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    }
+  ]
+}

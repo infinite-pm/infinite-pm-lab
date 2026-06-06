@@ -1,0 +1,441 @@
+{
+  "version": "25.09",
+  "src": {
+    "type": "n4l-sst-native",
+    "ipmt": "",
+    "positions": {
+      "nodes": null,
+      "edges": null
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "2 damaged boxes",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "DeGuo",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 3,
+      "name": "English Breakfast Tea",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 4,
+      "name": "HammerOn AS",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Knut Z",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 6,
+      "name": "Maciej Z",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 7,
+      "name": "Martin X",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 8,
+      "name": "Martin X met with Sonja Y, Knut Z",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Norway",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 10,
+      "name": "Operagata 2, Rostockagata 6",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 11,
+      "name": "ReBase AS",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 12,
+      "name": "ScrewIt AS",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 13,
+      "name": "Sonja Y",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 14,
+      "name": "Sven F",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 15,
+      "name": "TeaBreak Ltd",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 16,
+      "name": "Windows GMBH",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Wubbadubba",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 18,
+      "name": "airfilters",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 19,
+      "name": "all our hopes and dreams",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 20,
+      "name": "apply for insulation grant",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 21,
+      "name": "architecture",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 22,
+      "name": "balanced ventilation",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 23,
+      "name": "balcony",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 24,
+      "name": "concrete realkalisation",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 25,
+      "name": "dry wall",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 26,
+      "name": "energy recycling",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 27,
+      "name": "foundation",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 28,
+      "name": "gipsplate",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 29,
+      "name": "meeting 1",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 30,
+      "name": "metal screws",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 31,
+      "name": "next meeting cancelled",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 32,
+      "name": "operagata 2",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 33,
+      "name": "plasterboard",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 34,
+      "name": "recycle 80% of waste",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 35,
+      "name": "roof",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 36,
+      "name": "shipment 1",
+      "alias": "",
+      "type": "Event",
+      "tooltip": "2 days late"
+    },
+    {
+      "id": 37,
+      "name": "sorting metals",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 38,
+      "name": "type 40 air filters",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 39,
+      "name": "water damage",
+      "alias": "",
+      "type": "Thing"
+    }
+  ],
+  "edges": [
+    {
+      "id": 0,
+      "source": 17,
+      "target": 18,
+      "dir": "",
+      "tooltip": "supplies",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 33,
+      "target": 25,
+      "dir": "",
+      "tooltip": "same as",
+      "sstLinkType": "NearTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 33,
+      "target": 28,
+      "dir": "",
+      "tooltip": "english has norwegian",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 4,
+      "target": 9,
+      "dir": "",
+      "tooltip": "is an organization in",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 16,
+      "target": 2,
+      "dir": "",
+      "tooltip": "is an organization in",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 15,
+      "target": 3,
+      "dir": "",
+      "tooltip": "supplies",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 11,
+      "target": 24,
+      "dir": "",
+      "tooltip": "handles",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 7,
+      "target": 20,
+      "dir": "",
+      "tooltip": "proposes",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 29,
+      "target": 31,
+      "dir": "",
+      "tooltip": "decides",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 14,
+      "target": 30,
+      "dir": "",
+      "tooltip": "decides",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 14,
+      "target": 37,
+      "dir": "",
+      "tooltip": "handles",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 25,
+      "target": 33,
+      "dir": "",
+      "tooltip": "same as",
+      "sstLinkType": "NearTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 6,
+      "target": 10,
+      "dir": "",
+      "tooltip": "handles",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 36,
+      "target": 32,
+      "dir": "",
+      "tooltip": "delivered to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 38,
+      "target": 36,
+      "dir": "",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 1,
+      "target": 36,
+      "dir": "",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 1,
+      "target": 39,
+      "dir": "",
+      "tooltip": "has condition",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 8,
+      "target": 13,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 8,
+      "target": 5,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    }
+  ]
+}

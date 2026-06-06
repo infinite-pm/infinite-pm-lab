@@ -1,0 +1,89 @@
+t1::a - edit_line bundles ::t
+t2::a A promise type ::t
+c3::a "A system outcome, usually a resource configuration, but maybe a message or behaviour." ::c
+t4::a "CFEngine employs autonomous agents whose function is to keep certain \"promises\"." ::t
+t5::a CFEngine is used for automating the configuration and maintenance of computer systems. ::t
+e6::a CFEngine promise type ::e
+c7::a CFEngine promises ::c "Some might call promises \"rules\", but they are only self-imposed rules on the agents. · The agents can only promise its own intent to maintain state. If the operating sytem blocks an agent, or some other process interferes then even though it can keep its own promise to try and repair a deviant state, it can't promise that the system will end up according to specification." ::tip
+t8::a CFEngine syntax ::t
+c9::a "Declarations of \"intended outcome\" or \"desired state\"." ::c
+t10::a "For example, the files type promise centers around managing file presence, content, and attributes while vars type promises hold data." ::t
+c11::a How autonomous entities called agents can declare their intended behaviour. ::c
+t12::a Promise Theory ::t "Promise Theory has nothing a priori to do with \"promises\" in programming languages like Javascript, though programming promise functionality is compatible with the Promise Theory definition.." ::tip
+t13::a "Some might call promises \"rules\", but they are only self-imposed rules on the agents." ::t
+t14::a Suppose you have 1000 machines of different kinds ... ::t
+c15::a The desired state and/or maintainence schedule of an affected system resource / object ::c
+t16::a "There was this one time, at LinkedIn camp...." ::t
+t17::a Use basic promises rather than embedding shell commands ::t
+c18::a acl ::c
+c19::a action ::c
+e20::a classes ::e
+c21::a copy_from ::c
+c22::a databases ::c
+e23::a defaults ::e
+e24::a delete ::e
+e25::a delete_lines ::e
+c26::a desired state ::c
+e27::a edit_line bundle ::e
+e28::a editfiles classes ::e
+e29::a editfiles defaults ::e
+e30::a editfiles delete_lines ::e
+e31::a editfiles field_edits ::e
+e32::a editfiles insert_lines ::e
+e33::a editfiles meta ::e
+e34::a editfiles replace_patterns ::e
+e35::a editfiles reports ::e
+e36::a editfiles vars ::e
+e37::a field ::e
+e38::a field_edits ::e
+e39::a files ::e
+e40::a insert ::e
+e41::a insert_lines ::e
+c42::a intended outcome ::c
+e43::a meta ::e
+e44::a replace ::e
+e45::a replace_patterns ::e
+e46::a reports ::e
+c47::a rules ::c
+c48::a "the kind of promise, usually a type of system resource." ::c
+e49::a vars ::e
+
+e49 --::X "generalizes"--> e36
+e20 --::X "generalizes"--> e28
+e39 --::X "has an attribute"--> c19
+e39 --::X "has an attribute"--> e20
+e39 --::X "has an attribute"--> c18
+e39 --::X "has an attribute"--> c21
+e45 --::L "comes before"--> e35
+e43 --::X "generalizes"--> e33
+e23 --::X "generalizes"--> e29
+e24 --::X "generalizes"--> e30
+e37 --::X "generalizes"--> e31
+e40 --::X "generalizes"--> e32
+e44 --::X "generalizes"--> e34
+e46 --::X "generalizes"--> e35
+t12 --::X "is about topic/them"--> c11
+c7 --::X "defined as"--> c9
+c7 --::X "has description"--> c15
+t8 --::X "has description"--> c7
+e25 --::P--> e27
+e38 --::P--> e27
+e41 --::P--> e27
+e45 --::P--> e27
+e33 --::L "should precede/come before"--> e49
+e36 --::L "should precede/come before"--> e23
+e29 --::L "should precede/come before"--> e20
+e28 --::L "should precede/come before"--> e25
+e30 --::L "should precede/come before"--> e38
+e31 --::L "should precede/come before"--> e41
+e32 --::L "should precede/come before"--> e45
+e34 --::L "should precede/come before"--> e46
+t2 --::X "defined as"--> c48
+e6 --::X "has description"--> c3
+e6 --::X "has example"--> e49
+e6 --::X "has example"--> e20
+e6 --::X "has example"--> e39
+e6 --::X "has example"--> c22
+c9 --::X "refers to"--> c42
+c9 --::X "refers to"--> c26
+t13 --::X "refers to"--> c47

@@ -1,0 +1,2119 @@
+{
+  "version": "25.09",
+  "src": {
+    "type": "n4l",
+    "ipmt": "",
+    "positions": {
+      "nodes": null,
+      "edges": null
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "\u003e\"n4l notes\" as a link between \u003elogical \u003ethinking and \u003ebrainstorming",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 2,
+      "name": "\u003e\"three kinds of node\" and \u003e\"four kinds of link\"",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "\u003earrow \"has emergency procedure\"",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "\u003earrow \"rehearse daily/monthly..\"",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "\u003earrow \"remember to\"",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "\u003earrow \"requires daily/monthly..\"",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "\u003earrow \"then do next\"",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "\u003earrow \"then verify\"",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "\u003earrow \u003eclass \u003e\"contains\"",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "\u003earrow \u003eclass \u003e\"expresses attribute\" or \u003eproperty",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "\u003earrow \u003eclass \u003e\"leads to\"",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "\u003earrow \u003eclass \u003e\"similar to\" or \u003e\"near\"",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "\u003elink \u003earrow types used in notes",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "\u003enodes that are \"material agents\"",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "\u003enodes that are \u003e\"concepts\" or descriptive \u003e\"attributes\"",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "\u003enodes that are \u003e\"events\"",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "\u003epeople and \u003ethings",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "\u003eregularised \u003edata input about \u003eagents, persons, etc as sensory attributes and documented events",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "\u003erhyme, \u003erhythm, and \u003eemotion increase the likelihood of remembering knowledge because you activate more of the major agents involved in cogitation",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "A key issue is how we use context to activate knowledge from memory",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Context",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 22,
+      "name": "Context is the description of a scene or circumstances in which facts have relevance.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Context makes sense of facts, and tells us when they apply.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Get all causal consequences",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Get all generalizations",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Get all similar",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Get all specializations",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 28,
+      "name": "GetArrowByName",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 29,
+      "name": "GetConsequences as LEADS TO",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 30,
+      "name": "GetDBNodePtrMatchingName",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 31,
+      "name": "GetFwdConeAsNodes or Links",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 32,
+      "name": "GetFwdPathsAsLinks",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 33,
+      "name": "GetGeneralizations as CONTAINED BY",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 34,
+      "name": "GetHistory as inverse LEADS TO",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 35,
+      "name": "GetNextSteps as LEADS TO",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 36,
+      "name": "GetSimilar as CONTAINED BY/CONTAINS",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 37,
+      "name": "GetSimilar as NEAR",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 38,
+      "name": "GetSpecialCases as CONTAINS",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 39,
+      "name": "How do we use context?",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 40,
+      "name": "How to?",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Look for key words in section/chapter name",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 42,
+      "name": "Look for key words in strategic context tags",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 43,
+      "name": "N4L",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 44,
+      "name": "Path integral stories or histories",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 45,
+      "name": "Semantic spacetime",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Strategic context",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 47,
+      "name": "The difference between these is whether the \u003edata are first hand and \u003eregular in \u003eschema or attribute sets and are searchable by random access or whether they are only ad hoc explanatory \u003estories like metadata without all the raw examples.",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 48,
+      "name": "There are many barriers to knowledge and reasoning",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 49,
+      "name": "There are two kinds of context",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 50,
+      "name": "There are two main types of data for a graph database",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 51,
+      "name": "These notes are all about how to use N4L and knowledge graphs in general",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 52,
+      "name": "What causes?",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 53,
+      "name": "What determines?",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 54,
+      "name": "What generates?",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 55,
+      "name": "What is it about?",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 56,
+      "name": "What kind of?",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 57,
+      "name": "What?",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 58,
+      "name": "Which kind is it?",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 59,
+      "name": "Why does?",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 60,
+      "name": "a collection of sequences of \u003enodes satisfying given criteria between start and end nodes",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 61,
+      "name": "a fact is a trusted statement",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ],
+      "tooltip": "a fact may or may not have supporting evidence"
+    },
+    {
+      "id": 62,
+      "name": "a lot of notes are \u003ereminders without much \u003econtext. Try to add \u003econtext that explains \u003ewhen and \u003ewhy you would want to being reminded of something.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 63,
+      "name": "a material agent, person or thing",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 64,
+      "name": "a material agent, thing or person",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 65,
+      "name": "a relationship \u003emap of explanations between \u003ethings and \u003econcepts with examples",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 66,
+      "name": "a set of ad hoc observations",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 67,
+      "name": "a state of being, a state of not having, a colour ...",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 68,
+      "name": "about \u003ecomplaints",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 69,
+      "name": "about \u003emeetings",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 70,
+      "name": "add new notes and edit as you see ways to improve",
+      "alias": "",
+      "type": "Event",
+      "tooltip": "the more you work on notes, the more easily understood they will be"
+    },
+    {
+      "id": 71,
+      "name": "an idea or concept you think of ad hoc",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 72,
+      "name": "an immaterial agent or concept",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 73,
+      "name": "arrow definitions",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 74,
+      "name": "avoid using single words as notes as these may occur with different meanings elsewhere. Always qualify words with some explanation, and then you can use \u003e\"special annotations\" like \"writing \u003eword\" to link up to the generic word",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 75,
+      "name": "brainstorming",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 76,
+      "name": "colon bracketing :: ... ::",
+      "alias": "",
+      "type": "Event",
+      "tooltip": "colon bracketing in arrows is not currently functional"
+    },
+    {
+      "id": 77,
+      "name": "context",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 78,
+      "name": "contexts",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 79,
+      "name": "correctness",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 80,
+      "name": "evidence",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 81,
+      "name": "facts",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 82,
+      "name": "find hidden pathways through a system",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 83,
+      "name": "four kinds of link",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 84,
+      "name": "generalize up/CONTAINED BY then come back down/CONTAINS",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 85,
+      "name": "getting any notes down on the page, with approximate wordings of relationships",
+      "alias": "",
+      "type": "Event",
+      "tooltip": "finding thematic backbones will give you a clue about how to make your notes tell a particular story whether linear or not"
+    },
+    {
+      "id": 86,
+      "name": "graph data can be used in security to map out processes and networks",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 87,
+      "name": "group behaviour",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 88,
+      "name": "if the same words occur in several different cases, use different phrases to write about them then link both to the common phrase so that common phrase acts like an index term instead of a semantic collision",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ],
+      "tooltip": "remember that notes are events that you are trying to describe not \u003e\"immutable truths\""
+    },
+    {
+      "id": 89,
+      "name": "if you write in your own words, as you think it, you are more likely to recognise your thoughts later",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 90,
+      "name": "keep text in order if it belongs in order",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 91,
+      "name": "knowledge",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 92,
+      "name": "lessons",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 93,
+      "name": "logical thinking",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 94,
+      "name": "look for similar/NEAR nodes",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 95,
+      "name": "making notes",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 96,
+      "name": "mapping",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 97,
+      "name": "material agent axiom",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 98,
+      "name": "material agents",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 99,
+      "name": "n4l notes",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 100,
+      "name": "neighbour nodes by STtype",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 101,
+      "name": "nodes related by query type",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 102,
+      "name": "note taking",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 103,
+      "name": "note-taking",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 104,
+      "name": "note-taking language tool",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 105,
+      "name": "orbits",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 106,
+      "name": "overcoming the reticence or sense of difficulty",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 107,
+      "name": "path solving",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 108,
+      "name": "paths",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 109,
+      "name": "people don't remember what you say, but how you made them feel",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 110,
+      "name": "problem description",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 111,
+      "name": "quasi ontology for \u003e\"semantic spacetime\"",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 112,
+      "name": "questions we have",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 113,
+      "name": "reasoning",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 114,
+      "name": "relationships",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 115,
+      "name": "remember that knowledge is not necessarily about facts, but about knowing something like a friend, i.e. how to react to it and what to do with it, when to avoid it etc",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 116,
+      "name": "reminders",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 117,
+      "name": "right answers",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 118,
+      "name": "scene description",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 119,
+      "name": "sense making",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 120,
+      "name": "sense-making",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 121,
+      "name": "sensemaking",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 122,
+      "name": "sensory experience",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 123,
+      "name": "separate distinct issues using contexts like subsections",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 124,
+      "name": "simple string match of proper name",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 125,
+      "name": "something like an adjective or adverb word or phrase",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 126,
+      "name": "strategic context",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 127,
+      "name": "strategic labelling / tagging",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 128,
+      "name": "the \u003e\"division by zero\" inverse issue",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ],
+      "tooltip": "if we have an absorbing state that's N:1 it is not uniquely invertible, but can be defined by algebra"
+    },
+    {
+      "id": 129,
+      "name": "the \u003e\"inverse path tracing problem\"",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 130,
+      "name": "the collection of \u003enodes linked to a given node to \u003eradius R",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 131,
+      "name": "the most frequent \u003eevents are often the least \u003eimportant",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 132,
+      "name": "the most important \u003econtext is often how you were feeling",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 133,
+      "name": "there exists a class of \u003enodes that are \u003e\"material nodes\" that manifest sources of \u003e\"causal change\" and there exists a class of \u003e\"immaterial nodes\" as \u003econcepts that cannot exists without being bound to a material agent.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 134,
+      "name": "things that manifestly exist, not just \u003econcepts or \u003eideas",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 135,
+      "name": "three kinds of node",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event"
+      ]
+    },
+    {
+      "id": 136,
+      "name": "try to rewrite the approximate wordings in terms of arrows in N4L",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 137,
+      "name": "upload the notes to the database and browse them further",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 138,
+      "name": "use annotations to cross reference key words",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 139,
+      "name": "use the N4L compiler to debug the notes",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 140,
+      "name": "what's on your minds, with \u003econtext to be meaningful again in future",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 141,
+      "name": "wrong answers",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": 142,
+      "source": 120,
+      "target": 119,
+      "dir": "DirUndir",
+      "tooltip": "same as",
+      "sstLinkType": "NearTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 143,
+      "source": 120,
+      "target": 121,
+      "dir": "DirUndir",
+      "tooltip": "same as",
+      "sstLinkType": "NearTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 144,
+      "source": 121,
+      "target": 119,
+      "dir": "DirUndir",
+      "tooltip": "same as",
+      "sstLinkType": "NearTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 145,
+      "source": 105,
+      "target": 130,
+      "dir": "DirFwd",
+      "tooltip": "defined as",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 146,
+      "source": 108,
+      "target": 60,
+      "dir": "DirFwd",
+      "tooltip": "defined as",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 147,
+      "source": 116,
+      "target": 66,
+      "dir": "DirFwd",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 148,
+      "source": 116,
+      "target": 71,
+      "dir": "DirFwd",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 149,
+      "source": 43,
+      "target": 104,
+      "dir": "DirFwd",
+      "tooltip": "has the role of",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 150,
+      "source": 43,
+      "target": 103,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 151,
+      "source": 43,
+      "target": 1,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 152,
+      "source": 103,
+      "target": 95,
+      "dir": "DirUndir",
+      "tooltip": "same as",
+      "sstLinkType": "NearTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 153,
+      "source": 93,
+      "target": 113,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 154,
+      "source": 75,
+      "target": 113,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 155,
+      "source": 91,
+      "target": 21,
+      "dir": "DirFwd",
+      "tooltip": "has aspect",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 156,
+      "source": 77,
+      "target": 126,
+      "dir": "DirFwd",
+      "tooltip": "generalizes",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 157,
+      "source": 77,
+      "target": 118,
+      "dir": "DirFwd",
+      "tooltip": "generalizes",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 158,
+      "source": 77,
+      "target": 110,
+      "dir": "DirFwd",
+      "tooltip": "generalizes",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 159,
+      "source": 77,
+      "target": 112,
+      "dir": "DirFwd",
+      "tooltip": "generalizes",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 160,
+      "source": 30,
+      "target": 124,
+      "dir": "DirFwd",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 161,
+      "source": 28,
+      "target": 101,
+      "dir": "DirFwd",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 162,
+      "source": 32,
+      "target": 44,
+      "dir": "DirFwd",
+      "tooltip": "implements",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 163,
+      "source": 40,
+      "target": 51,
+      "dir": "DirFwd",
+      "tooltip": "has case",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 164,
+      "source": 40,
+      "target": 39,
+      "dir": "DirFwd",
+      "tooltip": "has case",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 165,
+      "source": 99,
+      "target": 69,
+      "dir": "DirFwd",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 166,
+      "source": 99,
+      "target": 68,
+      "dir": "DirFwd",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 167,
+      "source": 99,
+      "target": 140,
+      "dir": "DirFwd",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 168,
+      "source": 2,
+      "target": 45,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 169,
+      "source": 98,
+      "target": 17,
+      "dir": "DirFwd",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 170,
+      "source": 122,
+      "target": 21,
+      "dir": "DirFwd",
+      "tooltip": "from which we derive",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 171,
+      "source": 87,
+      "target": 21,
+      "dir": "DirFwd",
+      "tooltip": "from which we derive",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 172,
+      "source": 126,
+      "target": 127,
+      "dir": "DirUndir",
+      "tooltip": "same as",
+      "sstLinkType": "NearTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 173,
+      "source": 52,
+      "target": 53,
+      "dir": "DirUndir",
+      "tooltip": "same as",
+      "sstLinkType": "NearTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 174,
+      "source": 52,
+      "target": 54,
+      "dir": "DirUndir",
+      "tooltip": "same as",
+      "sstLinkType": "NearTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 175,
+      "source": 53,
+      "target": 54,
+      "dir": "DirUndir",
+      "tooltip": "same as",
+      "sstLinkType": "NearTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 176,
+      "source": 46,
+      "target": 57,
+      "dir": "DirFwd",
+      "tooltip": "has the role of",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 177,
+      "source": 17,
+      "target": 134,
+      "dir": "DirFwd",
+      "tooltip": "in other words",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 178,
+      "source": 97,
+      "target": 133,
+      "dir": "DirFwd",
+      "tooltip": "defined as",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 179,
+      "source": 56,
+      "target": 58,
+      "dir": "DirUndir",
+      "tooltip": "same as",
+      "sstLinkType": "NearTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 180,
+      "source": 26,
+      "target": 84,
+      "dir": "DirFwd",
+      "tooltip": "implemented by",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 181,
+      "source": 26,
+      "target": 94,
+      "dir": "DirFwd",
+      "tooltip": "implemented by",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 182,
+      "source": 31,
+      "target": 100,
+      "dir": "DirFwd",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 183,
+      "source": 31,
+      "target": 37,
+      "dir": "DirFwd",
+      "tooltip": "implements",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 184,
+      "source": 31,
+      "target": 36,
+      "dir": "DirFwd",
+      "tooltip": "implements",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 185,
+      "source": 31,
+      "target": 33,
+      "dir": "DirFwd",
+      "tooltip": "implements",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 186,
+      "source": 31,
+      "target": 38,
+      "dir": "DirFwd",
+      "tooltip": "implements",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 187,
+      "source": 31,
+      "target": 29,
+      "dir": "DirFwd",
+      "tooltip": "implements",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 188,
+      "source": 31,
+      "target": 35,
+      "dir": "DirFwd",
+      "tooltip": "implements",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 189,
+      "source": 31,
+      "target": 34,
+      "dir": "DirFwd",
+      "tooltip": "implements",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 190,
+      "source": 51,
+      "target": 20,
+      "dir": "DirFwd",
+      "tooltip": "has key issue",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 191,
+      "source": 50,
+      "target": 47,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 192,
+      "source": 65,
+      "target": 50,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 193,
+      "source": 18,
+      "target": 50,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 194,
+      "source": 86,
+      "target": 82,
+      "dir": "DirFwd",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 195,
+      "source": 106,
+      "target": 48,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 196,
+      "source": 85,
+      "target": 90,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 197,
+      "source": 90,
+      "target": 123,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 198,
+      "source": 123,
+      "target": 136,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 199,
+      "source": 136,
+      "target": 138,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 200,
+      "source": 138,
+      "target": 139,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 201,
+      "source": 139,
+      "target": 137,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 202,
+      "source": 137,
+      "target": 70,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 203,
+      "source": 70,
+      "target": 115,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 204,
+      "source": 13,
+      "target": 5,
+      "dir": "DirFwd",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 205,
+      "source": 13,
+      "target": 7,
+      "dir": "DirFwd",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 206,
+      "source": 13,
+      "target": 8,
+      "dir": "DirFwd",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 207,
+      "source": 13,
+      "target": 6,
+      "dir": "DirFwd",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 208,
+      "source": 13,
+      "target": 4,
+      "dir": "DirFwd",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 209,
+      "source": 13,
+      "target": 3,
+      "dir": "DirFwd",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 210,
+      "source": 132,
+      "target": 109,
+      "dir": "DirFwd",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 211,
+      "source": 16,
+      "target": 135,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 212,
+      "source": 15,
+      "target": 135,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 213,
+      "source": 14,
+      "target": 135,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 214,
+      "source": 135,
+      "target": 111,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 215,
+      "source": 83,
+      "target": 111,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 216,
+      "source": 11,
+      "target": 83,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 217,
+      "source": 9,
+      "target": 83,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 218,
+      "source": 10,
+      "target": 83,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 219,
+      "source": 12,
+      "target": 83,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 220,
+      "source": 129,
+      "target": 128,
+      "dir": "DirUndir",
+      "tooltip": "is connected to",
+      "sstLinkType": "NearTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 221,
+      "source": 72,
+      "target": 63,
+      "dir": "DirUndir",
+      "tooltip": "not the same as",
+      "sstLinkType": "NearTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 222,
+      "source": 72,
+      "target": 64,
+      "dir": "DirUndir",
+      "tooltip": "not the same as",
+      "sstLinkType": "NearTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 223,
+      "source": 72,
+      "target": 125,
+      "dir": "DirFwd",
+      "tooltip": "has the role of",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 224,
+      "source": 64,
+      "target": 67,
+      "dir": "DirFwd",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 225,
+      "source": 1,
+      "target": 93,
+      "dir": "DirFwd",
+      "tooltip": "has aspect",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 226,
+      "source": 1,
+      "target": 75,
+      "dir": "DirFwd",
+      "tooltip": "has aspect",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 227,
+      "source": 76,
+      "target": 126,
+      "dir": "DirFwd",
+      "tooltip": "determines",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 228,
+      "source": 76,
+      "target": 102,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 229,
+      "source": 76,
+      "target": 73,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "version": "25.09",
+  "src": {
+    "type": "n4l",
+    "ipmt": "",
+    "positions": {
+      "nodes": null,
+      "edges": null
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "a doorway",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 2,
+      "name": "a little prince",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 3,
+      "name": "a magic carpet",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 4,
+      "name": "a princess",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 5,
+      "name": "a secret room",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 6,
+      "name": "a time",
+      "alias": "",
+      "type": "Event",
+      "tooltip": "it could be any time of day"
+    },
+    {
+      "id": 7,
+      "name": "a toad",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 8,
+      "name": "https://chitek-i.org",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 9,
+      "name": "https://m.media-amazon.com/images/I/81yLt8OG7zL.jpg",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 10,
+      "name": "mischief!",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 11,
+      "name": "once upon",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 12,
+      "name": "there lay",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 13,
+      "name": "there was",
+      "alias": "",
+      "type": "Event"
+    }
+  ],
+  "edges": [
+    {
+      "id": 14,
+      "source": 10,
+      "target": 2,
+      "dir": "DirFwd",
+      "tooltip": "thereafter",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 15,
+      "source": 11,
+      "target": 6,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 16,
+      "source": 6,
+      "target": 12,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 17,
+      "source": 6,
+      "target": 13,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 18,
+      "source": 12,
+      "target": 1,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 19,
+      "source": 12,
+      "target": 3,
+      "dir": "DirFwd",
+      "tooltip": "thereafter",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 20,
+      "source": 13,
+      "target": 4,
+      "dir": "DirFwd",
+      "tooltip": "thereafter",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 21,
+      "source": 13,
+      "target": 7,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 22,
+      "source": 1,
+      "target": 5,
+      "dir": "DirFwd",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 23,
+      "source": 4,
+      "target": 10,
+      "dir": "DirFwd",
+      "tooltip": "thereafter",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 24,
+      "source": 2,
+      "target": 8,
+      "dir": "DirFwd",
+      "tooltip": "has URL",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 25,
+      "source": 2,
+      "target": 9,
+      "dir": "DirFwd",
+      "tooltip": "has image",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    }
+  ]
+}

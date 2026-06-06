@@ -1,0 +1,220 @@
+{
+  "version": "25.09",
+  "src": {
+    "type": "n4l",
+    "ipmt": "",
+    "positions": {
+      "nodes": null,
+      "edges": null
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Can you tell the difference between ‘K’ (",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 2,
+      "name": "For each of these two equivalence forms, Unicode defines a composing and decomposing form. The former replaces runes that can combine into a single rune with this single rune. The latter breaks runes apart into their components. This table shows the names, all starting with NF, by which the Unicode Consortium identifies these forms:\n  \tComposing \tDecomposing\nCanonical equivalence \tNFC \tNFD\nCompatibility equivalence \tNFKC \tNFKD",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 3,
+      "name": "RETURN translate($1, 'éçàêè...', 'ecaee...') ;",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 4,
+      "name": "The compatibility normal forms, NFKC and NFKD, will map many visually nearly identical forms to a single value. Note that it will not do so when two symbols look alike, but are really from two different alphabets. For example the Latin ‘o’, Greek ‘ο’, and Cyrillic ‘о’ are still different characters as defined by these forms.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 5,
+      "name": "The internet standard for comparing strings of different character sets is called \"PRECIS\" i.e. Preparation, Enforcement, and Comparison of Internationalized Strings in Application Protocols and is documented in RFC7564. There is also a Go implementation at golang.org/x/text/secure/precis.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 6,
+      "name": "The unaccent package in postgres",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 7,
+      "name": "There are often several ways to represent the same string. For example, an é [e-acute] can be represented in a string as a single rune [\"\\u00e9\"] or an ’e' followed by an acute accent [\"e\\u0301\"]. According to the Unicode standard, these two are \"canonically equivalent\" and should be treated as equal.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 8,
+      "name": "Unicode also defines a \"compatibility equivalence\" to equate characters that represent the same characters, but may have a different visual appearance. For example, the superscript digit ‘⁹’ and the regular digit ‘9’ are equivalent in this form.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 9,
+      "name": "Unicode is a \"two-byte per character\" way of encoding text for all kinds of alphabets and non-alphabetic languages.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 10,
+      "name": "Unicode is like a modern ASCII character set.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 11,
+      "name": "Using a byte-to-byte comparison to determine equality would clearly not give the right result for these two strings. Unicode defines a set of normal forms such that if two strings are canonically equivalent and are normalized to the same normal form, their byte representations are the same.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 12,
+      "name": "function",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 13,
+      "name": "golang.org/x/text/transform",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 14,
+      "name": "golang.org/x/text/unicode/norm",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 15,
+      "name": "https://tapoueh.org/blog/2017/07/playing-with-unicode/",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 16,
+      "name": "postgres-contrib",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 17,
+      "name": "removing accents from unicode in postgres database",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 18,
+      "name": "select S from Node where translate(S,'ǎáà','aaa') like '%shang%';\n\n  introduction to database issues (url) ",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 19,
+      "name": "unaccent()",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 20,
+      "name": "unicode",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 21,
+      "name": "unicode in go",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 22,
+      "name": "unicode in golang",
+      "alias": "",
+      "type": "Thing",
+      "tooltip": "https:/go.dev/blog/normalization · https:/stackoverflow.com/questions/26722450/remove-diacritics-using-go"
+    }
+  ],
+  "edges": [
+    {
+      "id": 23,
+      "source": 6,
+      "target": 16,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 24,
+      "source": 20,
+      "target": 21,
+      "dir": "DirFwd",
+      "tooltip": "has resource/reference",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 25,
+      "source": 13,
+      "target": 21,
+      "dir": "DirFwd",
+      "tooltip": "has resource/reference",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 26,
+      "source": 14,
+      "target": 21,
+      "dir": "DirFwd",
+      "tooltip": "has resource/reference",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 27,
+      "source": 12,
+      "target": 17,
+      "dir": "DirFwd",
+      "tooltip": "used for",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 28,
+      "source": 12,
+      "target": 3,
+      "dir": "DirFwd",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 29,
+      "source": 12,
+      "target": 18,
+      "dir": "DirFwd",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 30,
+      "source": 18,
+      "target": 15,
+      "dir": "DirFwd",
+      "tooltip": "has URL",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    }
+  ]
+}

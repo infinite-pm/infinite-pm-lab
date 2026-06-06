@@ -1,0 +1,943 @@
+{
+  "version": "25.09",
+  "src": {
+    "type": "n4l-sst-native",
+    "ipmt": "",
+    "positions": {
+      "nodes": null,
+      "edges": null
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "$ shell command\n$ terraform/tofu init plan \n",
+      "alias": "",
+      "type": "Event",
+      "tooltip": "run command and wait for result"
+    },
+    {
+      "id": 2,
+      "name": "$ shell command\nexport KUBECONFIGinstaller_dir/auth/kubeconfig\n",
+      "alias": "",
+      "type": "Event",
+      "tooltip": "run command"
+    },
+    {
+      "id": 3,
+      "name": "$ shell command\nfetch_worker_backends\n",
+      "alias": "",
+      "type": "Event",
+      "tooltip": "run command"
+    },
+    {
+      "id": 4,
+      "name": "$ shell command\noc get csr -o go-template'{{range .items}}{{if not .status}}{{.metadata.name}}{{",
+      "alias": "",
+      "type": "Event",
+      "tooltip": "run command and wait for result · This approves the worker nodes into the cluster"
+    },
+    {
+      "id": 5,
+      "name": "$ shell command\nopenshift-install wait-for bootstrap-complete --dirinstlller_dir \n",
+      "alias": "",
+      "type": "Event",
+      "tooltip": "run command and wait for result"
+    },
+    {
+      "id": 6,
+      "name": "$ shell command\nopenshift-install wait-for install-complete --dirinstlller_dir\n",
+      "alias": "",
+      "type": "Event",
+      "tooltip": "run command and wait for result"
+    },
+    {
+      "id": 7,
+      "name": "$ shell command\nset ignition_network_kcmdline' ignition.config.urlhttps://your-bucket-address/bootstrap.ign '\n",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "0xide",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Add the back ends to haproxy and remove the bootstrap backend and reload haproxy.",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 10,
+      "name": "Allocate a floating IP and attach it to the loadblancer instance",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 11,
+      "name": "Append kernel arguments to the grub config",
+      "alias": "",
+      "type": "Event",
+      "tooltip": "In file grub2/05_ignition.cfg"
+    },
+    {
+      "id": 12,
+      "name": "Apply (if all looks good)",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 13,
+      "name": "Boot the loadbalancer instance and mount the RHCOS image's boot partition",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 14,
+      "name": "Check the bootstrap progress. Wait for",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 15,
+      "name": "Convert it to raw format and create an image for it in your 0xide project.",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 16,
+      "name": "Create VPC firewall rules to allow traffic to tcp ports 6443, 22623, 80 and 443 within the VPC .",
+      "alias": "",
+      "type": "Event",
+      "tooltip": "Note this can be made more granular and also included in the Terraform config"
+    },
+    {
+      "id": 17,
+      "name": "Create a disk from the RHCOS image and attach the disk to the loadbalancer instance",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 18,
+      "name": "Create the DNS A-records for *.apps.clustername.base-domain, api.clustername.base-domain and api-int.clustername.base-domain pointing to the floating IP-adress of the loadbalancer instance",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 19,
+      "name": "Download the \"Red Hat Enterprise Linux CoreOS - Baremetal QEMU Image (QCOW2)\" image from RedHat.",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 20,
+      "name": "Fetch the id of your default vpc and subnet.",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 21,
+      "name": "Fill in the vpc_id, project_id and normalized_cluster_name in the \"cluster.yaml\" file, and adjust the values to your liking. The defaults should be sufficient for a POC cluster of Openshift.",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 22,
+      "name": "In the cluster.yaml file, adjust the count of bootstrap nodes ot 0 and the count of worker nodes to \u003e= 2",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 23,
+      "name": "Install Opentofu or Terraform",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 24,
+      "name": "Install awscli and configure it in order to create an s3 bucket for uploading ignition files.",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 25,
+      "name": "Install openshift-install and openshift clients",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 26,
+      "name": "Jarle's Openshift configuration",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ],
+      "tooltip": "Once there exist RHCOS images that reads the \"user_data\" provided by the 0xide metadata service (NoCloud) creating tailored images with kernel params for fetching ignition configs will not be necessary anymore. · The setup has been tested with \"Openshift enterprise 4.20\", however it should work equally well with OKD, as long as the install config is adjusted accordingly."
+    },
+    {
+      "id": 27,
+      "name": "NB: This setup is not intended for production use!",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 28,
+      "name": "OKD",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 29,
+      "name": "OKD: Community Distribution of Kubernetes that powers Red Hat's OpenShift",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 30,
+      "name": "Once there exist RHCOS images that reads the \"user_data\" provided by the 0xide metadata service (NoCloud) creating tailored images with kernel params for fetching ignition configs will not be necessary anymore.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Openshift enterprise 4.20",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 32,
+      "name": "Openshift on Oxide cloud computer",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ],
+      "tooltip": "This is some notes regarding semi automated setup of openshift 4.20 on the 0xide cloud computer. · I consider it work in progress, and the notes are intended for my own remembering."
+    },
+    {
+      "id": 33,
+      "name": "Own a DNS base domain where you can configure A-records in.",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 34,
+      "name": "Oxide",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 35,
+      "name": "Provision an Ubuntu server instance 24.04 (or similar), and install haproxy. This will be your loadbalancer",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 36,
+      "name": "RHCOS",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Red Hat Enterprise Linux CoreOS",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 38,
+      "name": "Repeat the above process to create RHCOS image for control plane nodes and worker nodes respectively, so that they boot and fetch ignition configs from the master.ign and worker.ign files in your s3 bucket. This will be the image ids you confgure for control plane and worker nodes in the \"cluster.yaml\" file later",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 39,
+      "name": "Run the installer_prep.bash script to generate manifests, ignition configs and upload them to your s3 bucket.",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 40,
+      "name": "Run tofu apply again This will remove the bootstrap node (not needed anymore) and add worker nodes.",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 41,
+      "name": "Runbook",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 42,
+      "name": "Set ACLs on bucket to public, and limit source IP access to what is expected from your 0xide silo",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 43,
+      "name": "The setup has been tested with \"Openshift enterprise 4.20\", however it should work equally well with OKD, as long as the install config is adjusted accordingly.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Unmount the RHCOS disk's boot partition, stop the loadbalancer instance and create a snapshot of the RHCOS disk, then create a dedicateed RHCOS image from that snapshot. This is the image-id you will use later to create the bootstrap node instance in \"cluster.yaml\"",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 45,
+      "name": "Wait before proceeding.",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 46,
+      "name": "When finished testing, run tofu destroy and tidy up vpc firewall rules, loadbalancer, floating ips, s3 buckets and dns records",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 47,
+      "name": "cluster.yaml",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 48,
+      "name": "https",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 49,
+      "name": "https://access.redhat.com/downloads/",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 50,
+      "name": "https://docs.oxide.computer/guides/creating-and-sharing-images",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 51,
+      "name": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.8/html/architecture/architecture-rhcos",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 52,
+      "name": "https://github.com/JarleB/oxide-openshift",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 53,
+      "name": "https://github.com/JarleB/oxide-openshift/blob/main/cluster.yaml",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 54,
+      "name": "https://oxide.computer",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 55,
+      "name": "ignition.config.urlhttps://your-bucket-address/bootstrap.ign",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 56,
+      "name": "installer",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 57,
+      "name": "instlller",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 58,
+      "name": "source the functions file, run fetch_master_backends and combine the output with the haproxy_config stub and apply the config to the loadbalancer.",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 59,
+      "name": "user_data",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 60,
+      "name": "{{range .items}}{{if not .status}}{{.metadata.name}}{{",
+      "alias": "",
+      "type": "Thing"
+    }
+  ],
+  "edges": [
+    {
+      "id": 0,
+      "source": 28,
+      "target": 29,
+      "dir": "",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 28,
+      "target": 52,
+      "dir": "",
+      "tooltip": "has URL",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 36,
+      "target": 37,
+      "dir": "",
+      "tooltip": "means",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 36,
+      "target": 51,
+      "dir": "",
+      "tooltip": "has URL",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 8,
+      "target": 34,
+      "dir": "",
+      "tooltip": "alternate spelling",
+      "sstLinkType": "NearTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 8,
+      "target": 54,
+      "dir": "",
+      "tooltip": "has URL",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 34,
+      "target": 8,
+      "dir": "",
+      "tooltip": "alternate spelling",
+      "sstLinkType": "NearTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 47,
+      "target": 53,
+      "dir": "",
+      "tooltip": "has URL",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 26,
+      "target": 27,
+      "dir": "",
+      "tooltip": "has warning",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 45,
+      "target": 22,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 3,
+      "target": 9,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 32,
+      "target": 52,
+      "dir": "",
+      "tooltip": "has URL",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 25,
+      "target": 23,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 25,
+      "target": 49,
+      "dir": "",
+      "tooltip": "has URL",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 23,
+      "target": 24,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 24,
+      "target": 42,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 42,
+      "target": 35,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 35,
+      "target": 10,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 10,
+      "target": 33,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 33,
+      "target": 18,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 19,
+      "target": 15,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 15,
+      "target": 17,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 15,
+      "target": 50,
+      "dir": "",
+      "tooltip": "has URL",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 17,
+      "target": 13,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 13,
+      "target": 11,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 11,
+      "target": 44,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 11,
+      "target": 7,
+      "dir": "",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 7,
+      "target": 55,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 7,
+      "target": 48,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 16,
+      "target": 20,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 20,
+      "target": 21,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 39,
+      "target": 1,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 1,
+      "target": 12,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 12,
+      "target": 58,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 2,
+      "target": 14,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 2,
+      "target": 56,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 14,
+      "target": 5,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 5,
+      "target": 45,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 5,
+      "target": 57,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 22,
+      "target": 40,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 40,
+      "target": 4,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 4,
+      "target": 3,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 4,
+      "target": 60,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 9,
+      "target": 6,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 6,
+      "target": 46,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 6,
+      "target": 57,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 30,
+      "target": 36,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 30,
+      "target": 59,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 43,
+      "target": 31,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 43,
+      "target": 28,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 18,
+      "target": 19,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 44,
+      "target": 38,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 44,
+      "target": 47,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 38,
+      "target": 16,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 38,
+      "target": 47,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 21,
+      "target": 39,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 21,
+      "target": 47,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 58,
+      "target": 2,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    }
+  ]
+}

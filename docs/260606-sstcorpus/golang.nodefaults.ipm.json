@@ -1,0 +1,227 @@
+{
+  "version": "25.09",
+  "src": {
+    "type": "n4l",
+    "ipmt": "",
+    "positions": {
+      "nodes": null,
+      "edges": null
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Documentation often assumes you already know go quite well and is more interested in version changes than in a pedagogical explanation.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Golang is an easy to write language without too many strict syntax issues.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "It's not a free format language, mainly because of placement of braces.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "It's opinionated without always explaining why.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "associative arrays",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "basic example",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "go",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "go modules",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "go packages",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "golang",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "gopath",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "hello world",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "maps",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "package main\n\nimport (\n    \"dependency 1\"\n    \"dependency 2\"\n    \"fmt\"\n)\n\nfunc main () {  // brace must go here\n\n      fmt.Println(\"Hello world\")\n}",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Event",
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "runes",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 16,
+      "name": "snide remark",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ],
+      "tooltip": "Programmers are supposed to offer their lives to learning it."
+    },
+    {
+      "id": 17,
+      "name": "unicode",
+      "alias": "",
+      "type": "Event"
+    }
+  ],
+  "edges": [
+    {
+      "id": 18,
+      "source": 13,
+      "target": 5,
+      "dir": "DirUndir",
+      "tooltip": "same as",
+      "sstLinkType": "NearTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 19,
+      "source": 15,
+      "target": 17,
+      "dir": "DirFwd",
+      "tooltip": "implements",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 20,
+      "source": 6,
+      "target": 12,
+      "dir": "DirUndir",
+      "tooltip": "same as",
+      "sstLinkType": "NearTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 21,
+      "source": 14,
+      "target": 12,
+      "dir": "DirFwd",
+      "tooltip": "has example",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    }
+  ]
+}

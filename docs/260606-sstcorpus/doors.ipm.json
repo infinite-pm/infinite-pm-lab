@@ -1,0 +1,246 @@
+{
+  "version": "25.09",
+  "src": {
+    "type": "n4l",
+    "ipmt": "",
+    "positions": {
+      "nodes": null,
+      "edges": null
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "bike",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 2,
+      "name": "door",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 3,
+      "name": "gate",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 4,
+      "name": "hole",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 5,
+      "name": "passage",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 6,
+      "name": "port",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 7,
+      "name": "river",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 8,
+      "name": "road",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 9,
+      "name": "start",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 10,
+      "name": "target 1",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 11,
+      "name": "target 2",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 12,
+      "name": "target 3",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 13,
+      "name": "tram",
+      "alias": "",
+      "type": "Event"
+    }
+  ],
+  "edges": [
+    {
+      "id": 14,
+      "source": 9,
+      "target": 2,
+      "dir": "DirFwd",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 15,
+      "source": 9,
+      "target": 6,
+      "dir": "DirFwd",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 16,
+      "source": 9,
+      "target": 4,
+      "dir": "DirFwd",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 17,
+      "source": 9,
+      "target": 3,
+      "dir": "DirFwd",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 18,
+      "source": 2,
+      "target": 5,
+      "dir": "DirFwd",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 19,
+      "source": 2,
+      "target": 8,
+      "dir": "DirFwd",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 20,
+      "source": 2,
+      "target": 7,
+      "dir": "DirFwd",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 21,
+      "source": 6,
+      "target": 7,
+      "dir": "DirFwd",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 22,
+      "source": 6,
+      "target": 13,
+      "dir": "DirFwd",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 23,
+      "source": 4,
+      "target": 13,
+      "dir": "DirFwd",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 24,
+      "source": 3,
+      "target": 13,
+      "dir": "DirFwd",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 25,
+      "source": 3,
+      "target": 1,
+      "dir": "DirFwd",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 26,
+      "source": 5,
+      "target": 10,
+      "dir": "DirFwd",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 27,
+      "source": 8,
+      "target": 11,
+      "dir": "DirFwd",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 28,
+      "source": 7,
+      "target": 12,
+      "dir": "DirFwd",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 29,
+      "source": 13,
+      "target": 12,
+      "dir": "DirFwd",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 30,
+      "source": 1,
+      "target": 12,
+      "dir": "DirFwd",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    }
+  ]
+}

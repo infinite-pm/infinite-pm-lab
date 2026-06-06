@@ -1,0 +1,31 @@
+t1::a Can you tell the difference between ‘K’ ( ::t
+t2::a "For each of these two equivalence forms, Unicode defines a composing and decomposing form. The former replaces runes that can combine into a single rune with this single rune. The latter breaks runes apart into their components. This table shows the names, all starting with NF, by which the Unicode Consortium identifies these forms:\n  \tComposing \tDecomposing\nCanonical equivalence \tNFC \tNFD\nCompatibility equivalence \tNFKC \tNFKD" ::t
+c3::a "RETURN translate($1, 'éçàêè...', 'ecaee...') ;" ::c
+t4::a "The compatibility normal forms, NFKC and NFKD, will map many visually nearly identical forms to a single value. Note that it will not do so when two symbols look alike, but are really from two different alphabets. For example the Latin ‘o’, Greek ‘ο’, and Cyrillic ‘о’ are still different characters as defined by these forms." ::t
+t5::a "The internet standard for comparing strings of different character sets is called \"PRECIS\" i.e. Preparation, Enforcement, and Comparison of Internationalized Strings in Application Protocols and is documented in RFC7564. There is also a Go implementation at golang.org/x/text/secure/precis." ::t
+t6::a The unaccent package in postgres ::t
+t7::a "There are often several ways to represent the same string. For example, an é [e-acute] can be represented in a string as a single rune [\"\\u00e9\"] or an ’e' followed by an acute accent [\"e\\u0301\"]. According to the Unicode standard, these two are \"canonically equivalent\" and should be treated as equal." ::t
+t8::a "Unicode also defines a \"compatibility equivalence\" to equate characters that represent the same characters, but may have a different visual appearance. For example, the superscript digit ‘⁹’ and the regular digit ‘9’ are equivalent in this form." ::t
+t9::a "Unicode is a \"two-byte per character\" way of encoding text for all kinds of alphabets and non-alphabetic languages." ::t
+t10::a Unicode is like a modern ASCII character set. ::t
+t11::a "Using a byte-to-byte comparison to determine equality would clearly not give the right result for these two strings. Unicode defines a set of normal forms such that if two strings are canonically equivalent and are normalized to the same normal form, their byte representations are the same." ::t
+t12::a function ::t
+t13::a golang.org/x/text/transform ::t
+t14::a golang.org/x/text/unicode/norm ::t
+c15::a https://tapoueh.org/blog/2017/07/playing-with-unicode/ ::c
+t16::a postgres-contrib ::t
+c17::a removing accents from unicode in postgres database ::c
+c18::a "select S from Node where translate(S,'ǎáà','aaa') like '%shang%';\n\n  introduction to database issues (url) " ::c
+t19::a unaccent() ::t
+t20::a unicode ::t
+c21::a unicode in go ::c
+t22::a unicode in golang ::t "https:/go.dev/blog/normalization · https:/stackoverflow.com/questions/26722450/remove-diacritics-using-go" ::tip
+
+t6 --::P--> t16
+t20 --::X "has resource/reference"--> c21
+t13 --::X "has resource/reference"--> c21
+t14 --::X "has resource/reference"--> c21
+t12 --::X "used for"--> c17
+t12 --::X "has example"--> c3
+t12 --::X "has example"--> c18
+c18 --::X "has URL"--> c15

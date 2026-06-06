@@ -1,0 +1,246 @@
+{
+  "version": "25.09",
+  "src": {
+    "type": "n4l-sst-native",
+    "ipmt": "",
+    "positions": {
+      "nodes": null,
+      "edges": null
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "bike",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 2,
+      "name": "door",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 3,
+      "name": "gate",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 4,
+      "name": "hole",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 5,
+      "name": "passage",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 6,
+      "name": "port",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 7,
+      "name": "river",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 8,
+      "name": "road",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 9,
+      "name": "start",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 10,
+      "name": "target 1",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 11,
+      "name": "target 2",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 12,
+      "name": "target 3",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 13,
+      "name": "tram",
+      "alias": "",
+      "type": "Event"
+    }
+  ],
+  "edges": [
+    {
+      "id": 0,
+      "source": 9,
+      "target": 2,
+      "dir": "",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 9,
+      "target": 6,
+      "dir": "",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 9,
+      "target": 4,
+      "dir": "",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 9,
+      "target": 3,
+      "dir": "",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 2,
+      "target": 5,
+      "dir": "",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 2,
+      "target": 8,
+      "dir": "",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 2,
+      "target": 7,
+      "dir": "",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 6,
+      "target": 7,
+      "dir": "",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 6,
+      "target": 13,
+      "dir": "",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 4,
+      "target": 13,
+      "dir": "",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 3,
+      "target": 13,
+      "dir": "",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 3,
+      "target": 1,
+      "dir": "",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 5,
+      "target": 10,
+      "dir": "",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 8,
+      "target": 11,
+      "dir": "",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 7,
+      "target": 12,
+      "dir": "",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 13,
+      "target": 12,
+      "dir": "",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 1,
+      "target": 12,
+      "dir": "",
+      "tooltip": "leads to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    }
+  ]
+}

@@ -1,0 +1,292 @@
+{
+  "version": "25.09",
+  "src": {
+    "type": "n4l",
+    "ipmt": "",
+    "positions": {
+      "nodes": null,
+      "edges": null
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "And interesting 2",
+      "alias": "",
+      "type": "Event",
+      "tooltip": "2 becomes \"too\""
+    },
+    {
+      "id": 2,
+      "name": "And makes a year 4 you",
+      "alias": "",
+      "type": "Event",
+      "tooltip": "4 becomes simply for"
+    },
+    {
+      "id": 3,
+      "name": "Astronomy",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 4,
+      "name": "Astronomy is 1derful",
+      "alias": "",
+      "type": "Event",
+      "tooltip": "1-derful becomes \"wonderful\""
+    },
+    {
+      "id": 5,
+      "name": "Astronomy is the study of celestial bodies",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "By law of phy6 great",
+      "alias": "",
+      "type": "Event",
+      "tooltip": "phy6 becomes \"physics\""
+    },
+    {
+      "id": 7,
+      "name": "Do nightly scintill8",
+      "alias": "",
+      "type": "Event",
+      "tooltip": "scintill8 becomes \"scintillate\""
+    },
+    {
+      "id": 8,
+      "name": "If watchful providence be9",
+      "alias": "",
+      "type": "Event",
+      "tooltip": "be9 becomes \"benign\""
+    },
+    {
+      "id": 9,
+      "name": "It7 when the stars so bright",
+      "alias": "",
+      "type": "Event",
+      "tooltip": "It7 becomes \"It's heaven\""
+    },
+    {
+      "id": 10,
+      "name": "Moon",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 11,
+      "name": "Should not keep up her watch divine,",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 12,
+      "name": "The Ear3volves around the Sun",
+      "alias": "",
+      "type": "Event",
+      "tooltip": "Ear3volves becomes \"Earth revolves\""
+    },
+    {
+      "id": 13,
+      "name": "The Moon affects the sur5 heard",
+      "alias": "",
+      "type": "Event",
+      "tooltip": "sur5 becomes \"surf I've\""
+    },
+    {
+      "id": 14,
+      "name": "We soon should come to 0",
+      "alias": "",
+      "type": "Event",
+      "tooltip": "the 0 should be pronounced \"nought\" to rhyme with fraught"
+    },
+    {
+      "id": 15,
+      "name": "With good intentions fraught",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 16,
+      "name": "https://en.wikipedia.org/wiki/Astronomy",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "https://eos.org/wp-content/uploads/2023/11/age-of-moon.jpg",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": 18,
+      "source": 10,
+      "target": 3,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 19,
+      "source": 10,
+      "target": 17,
+      "dir": "DirFwd",
+      "tooltip": "has image",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 20,
+      "source": 3,
+      "target": 5,
+      "dir": "DirFwd",
+      "tooltip": "defined as",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 21,
+      "source": 3,
+      "target": 16,
+      "dir": "DirFwd",
+      "tooltip": "has URL",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 22,
+      "source": 4,
+      "target": 1,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 23,
+      "source": 1,
+      "target": 12,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 24,
+      "source": 7,
+      "target": 8,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 25,
+      "source": 12,
+      "target": 2,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 26,
+      "source": 2,
+      "target": 13,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 27,
+      "source": 13,
+      "target": 6,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 28,
+      "source": 13,
+      "target": 10,
+      "dir": "DirFwd",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 29,
+      "source": 6,
+      "target": 9,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 30,
+      "source": 9,
+      "target": 7,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 31,
+      "source": 8,
+      "target": 15,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 32,
+      "source": 15,
+      "target": 11,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 33,
+      "source": 11,
+      "target": 14,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 34,
+      "source": 14,
+      "target": 10,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    }
+  ]
+}

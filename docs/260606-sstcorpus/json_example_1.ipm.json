@@ -1,0 +1,348 @@
+{
+  "version": "25.09",
+  "src": {
+    "type": "n4l",
+    "ipmt": "",
+    "positions": {
+      "nodes": null,
+      "edges": null
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "1",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 2,
+      "name": "1.0.0",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 3,
+      "name": "10",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 4,
+      "name": "2",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 5,
+      "name": "2025-10-17T14:30:00Z",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 6,
+      "name": "Example API Response",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 7,
+      "name": "Instance of a users array {\n        \"id\": 1,\n        \"username\": \"alice\",\n        \"email\": \"alice@example.com\",\n        \"active\": true,\n        \"roles\": [\"admin\", \"user\"]\n      }",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 8,
+      "name": "Instance of a users array {\n        \"id\": 2,\n        \"username\": \"bob\",\n        \"email\": \"bob@example.com\",\n        \"active\": false,\n        \"roles\": [\"user\"]\n      }",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 9,
+      "name": "My json object representation is an EVENT {\n   \"name\": \"Example API Response\",\n   \"version\": \"1.0.0\",\n   \"status\": \"success\",\n\n   \"data\": {\n\n      \"users\": [\n      {\n        \"id\": 1,\n        \"username\": \"alice\",\n        \"email\": \"alice@example.com\",\n        \"active\": true,\n        \"roles\": [\"admin\", \"user\"]\n      },\n      {\n        \"id\": 2,\n        \"username\": \"bob\",\n        \"email\": \"bob@example.com\",\n        \"active\": false,\n        \"roles\": [\"user\"]\n      }\n    ],\n \n   \"metadata\": {\n      \"total\": 2,\n      \"page\": 1,\n      \"limit\": 10\n    }\n  },\n\n  \"timestamp\": \"2025-10-17T14:30:00Z\"\n}",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 10,
+      "name": "Partial json element -- \" metadata\": {\n      \"total\": 2,\n      \"page\": 1,\n      \"limit\": 10\n    }",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 11,
+      "name": "Partial json element -- \"users\" : [\n      {\n        \"id\": 1,\n        \"username\": \"alice\",\n        \"email\": \"alice@example.com\",\n        \"active\": true,\n        \"roles\": [\"admin\", \"user\"]\n      },\n      {\n        \"id\": 2,\n        \"username\": \"bob\",\n        \"email\": \"bob@example.com\",\n        \"active\": false,\n        \"roles\": [\"user\"]\n      }\n    ]",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 12,
+      "name": "active",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 13,
+      "name": "admin",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 14,
+      "name": "alice",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 15,
+      "name": "alice@example.com",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 16,
+      "name": "bob",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 17,
+      "name": "bob@example.com",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 18,
+      "name": "inactive",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 19,
+      "name": "success",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 20,
+      "name": "user",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 21,
+      "name": "{ \"users\": [\n      {\n        \"id\": 1,\n        \"username\": \"alice\",\n        \"email\": \"alice@example.com\",\n        \"active\": true,\n        \"roles\": [\"admin\", \"user\"]\n      },\n      {\n        \"id\": 2,\n        \"username\": \"bob\",\n        \"email\": \"bob@example.com\",\n        \"active\": false,\n        \"roles\": [\"user\"]\n      }\n    ],\n \n   \"metadata\": {\n      \"total\": 2,\n      \"page\": 1,\n      \"limit\": 10\n    }\n  }",
+      "alias": "",
+      "type": "Event"
+    }
+  ],
+  "edges": [
+    {
+      "id": 22,
+      "source": 10,
+      "target": 4,
+      "dir": "DirFwd",
+      "tooltip": "has total value",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 23,
+      "source": 10,
+      "target": 1,
+      "dir": "DirFwd",
+      "tooltip": "has page number",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 24,
+      "source": 10,
+      "target": 3,
+      "dir": "DirFwd",
+      "tooltip": "has a limit of",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 25,
+      "source": 7,
+      "target": 1,
+      "dir": "DirFwd",
+      "tooltip": "has id",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 26,
+      "source": 7,
+      "target": 14,
+      "dir": "DirFwd",
+      "tooltip": "has username",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 27,
+      "source": 7,
+      "target": 15,
+      "dir": "DirFwd",
+      "tooltip": "has email",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 28,
+      "source": 7,
+      "target": 13,
+      "dir": "DirFwd",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 29,
+      "source": 7,
+      "target": 20,
+      "dir": "DirFwd",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 30,
+      "source": 7,
+      "target": 12,
+      "dir": "DirFwd",
+      "tooltip": "has status",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 31,
+      "source": 8,
+      "target": 4,
+      "dir": "DirFwd",
+      "tooltip": "has id",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 32,
+      "source": 8,
+      "target": 16,
+      "dir": "DirFwd",
+      "tooltip": "has username",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 33,
+      "source": 8,
+      "target": 17,
+      "dir": "DirFwd",
+      "tooltip": "has email",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 34,
+      "source": 8,
+      "target": 20,
+      "dir": "DirFwd",
+      "tooltip": "has a role",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 35,
+      "source": 8,
+      "target": 18,
+      "dir": "DirFwd",
+      "tooltip": "has status",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 36,
+      "source": 7,
+      "target": 11,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 37,
+      "source": 8,
+      "target": 11,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 38,
+      "source": 11,
+      "target": 21,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 39,
+      "source": 21,
+      "target": 10,
+      "dir": "DirFwd",
+      "tooltip": "has metadata",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 40,
+      "source": 9,
+      "target": 6,
+      "dir": "DirFwd",
+      "tooltip": "has name",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 41,
+      "source": 9,
+      "target": 2,
+      "dir": "DirFwd",
+      "tooltip": "has version",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 42,
+      "source": 9,
+      "target": 19,
+      "dir": "DirFwd",
+      "tooltip": "has status",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 43,
+      "source": 9,
+      "target": 5,
+      "dir": "DirFwd",
+      "tooltip": "has timestamp",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 44,
+      "source": 9,
+      "target": 21,
+      "dir": "DirFwd",
+      "tooltip": "has data",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+t1::a 1 ::t
+t2::a 1.0.0 ::t
+t3::a 10 ::t
+t4::a 2 ::t
+t5::a 2025-10-17T14:30:00Z ::t
+u6::a "Data for \"Example API Response\"" ::?tc
+u7::a Example API Response ::?tc
+u8::a "Metadata for \"Example API Response\"" ::?tc
+u9::a User 1 ::?tc
+u10::a User 2 ::?tc
+u11::a "User array for \"Example API Response\"" ::?etc
+t12::a active ::t
+t13::a admin ::t
+t14::a alice ::t
+t15::a alice@example.com ::t
+t16::a bob ::t
+t17::a bob@example.com ::t
+t18::a inactive ::t
+t19::a success ::t
+t20::a user ::t
+
+u9 --::X "has id"--> t1
+u9 --::X "has username"--> t14
+u9 --::X "has email"--> t15
+u9 --::X "has a role"--> t13
+u9 --::X "has a role"--> t20
+u9 --::X "has status"--> t12
+u10 --::X "has id"--> t4
+u10 --::X "has username"--> t16
+u10 --::X "has email"--> t17
+u10 --::X "has a role"--> t20
+u10 --::X "has status"--> t18
+u7 --::X "has version"--> t2
+u7 --::X "has status"--> t19
+u7 --::X "has timestamp"--> t5
+u7 --::X "has data"--> u6
+u9 --::P--> u11
+u10 --::P--> u11
+u8 --::X "has total value"--> t4
+u8 --::X "has page number"--> t1
+u8 --::X "has a limit of"--> t3
+u11 --::P--> u6
+u6 --::X "has metadata"--> u8

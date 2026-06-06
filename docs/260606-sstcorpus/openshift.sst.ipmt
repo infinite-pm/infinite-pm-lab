@@ -1,0 +1,119 @@
+e1::a "$ shell command\n$ terraform/tofu init plan \n" ::e "run command and wait for result" ::tip
+e2::a "$ shell command\nexport KUBECONFIGinstaller_dir/auth/kubeconfig\n" ::e "run command" ::tip
+e3::a "$ shell command\nfetch_worker_backends\n" ::e "run command" ::tip
+e4::a "$ shell command\noc get csr -o go-template'{{range .items}}{{if not .status}}{{.metadata.name}}{{" ::e "run command and wait for result · This approves the worker nodes into the cluster" ::tip
+e5::a "$ shell command\nopenshift-install wait-for bootstrap-complete --dirinstlller_dir \n" ::e "run command and wait for result" ::tip
+e6::a "$ shell command\nopenshift-install wait-for install-complete --dirinstlller_dir\n" ::e "run command and wait for result" ::tip
+u7::a "$ shell command\nset ignition_network_kcmdline' ignition.config.urlhttps://your-bucket-address/bootstrap.ign '\n" ::?tc
+u8::a 0xide ::?tc
+e9::a Add the back ends to haproxy and remove the bootstrap backend and reload haproxy. ::e
+e10::a Allocate a floating IP and attach it to the loadblancer instance ::e
+e11::a Append kernel arguments to the grub config ::e "In file grub2/05_ignition.cfg" ::tip
+e12::a Apply (if all looks good) ::e
+e13::a Boot the loadbalancer instance and mount the RHCOS image's boot partition ::e
+e14::a Check the bootstrap progress. Wait for ::e
+e15::a Convert it to raw format and create an image for it in your 0xide project. ::e
+e16::a "Create VPC firewall rules to allow traffic to tcp ports 6443, 22623, 80 and 443 within the VPC ." ::e "Note this can be made more granular and also included in the Terraform config" ::tip
+e17::a Create a disk from the RHCOS image and attach the disk to the loadbalancer instance ::e
+e18::a "Create the DNS A-records for *.apps.clustername.base-domain, api.clustername.base-domain and api-int.clustername.base-domain pointing to the floating IP-adress of the loadbalancer instance" ::e
+e19::a "Download the \"Red Hat Enterprise Linux CoreOS - Baremetal QEMU Image (QCOW2)\" image from RedHat." ::e
+e20::a Fetch the id of your default vpc and subnet. ::e
+e21::a "Fill in the vpc_id, project_id and normalized_cluster_name in the \"cluster.yaml\" file, and adjust the values to your liking. The defaults should be sufficient for a POC cluster of Openshift." ::e
+e22::a "In the cluster.yaml file, adjust the count of bootstrap nodes ot 0 and the count of worker nodes to >= 2" ::e
+e23::a Install Opentofu or Terraform ::e
+e24::a Install awscli and configure it in order to create an s3 bucket for uploading ignition files. ::e
+e25::a Install openshift-install and openshift clients ::e
+u26::a Jarle's Openshift configuration ::?tc "Once there exist RHCOS images that reads the \"user_data\" provided by the 0xide metadata service (NoCloud) creating tailored images with kernel params for fetching ignition configs will not be necessary anymore. · The setup has been tested with \"Openshift enterprise 4.20\", however it should work equally well with OKD, as long as the install config is adjusted accordingly." ::tip
+t27::a NB: This setup is not intended for production use! ::t
+u28::a OKD ::?tc
+t29::a OKD: Community Distribution of Kubernetes that powers Red Hat's OpenShift ::t
+u30::a "Once there exist RHCOS images that reads the \"user_data\" provided by the 0xide metadata service (NoCloud) creating tailored images with kernel params for fetching ignition configs will not be necessary anymore." ::?tc
+t31::a Openshift enterprise 4.20 ::t
+u32::a Openshift on Oxide cloud computer ::?tc "This is some notes regarding semi automated setup of openshift 4.20 on the 0xide cloud computer. · I consider it work in progress, and the notes are intended for my own remembering." ::tip
+e33::a Own a DNS base domain where you can configure A-records in. ::e
+u34::a Oxide ::?etc
+e35::a "Provision an Ubuntu server instance 24.04 (or similar), and install haproxy. This will be your loadbalancer" ::e
+u36::a RHCOS ::?tc
+t37::a Red Hat Enterprise Linux CoreOS ::t
+e38::a "Repeat the above process to create RHCOS image for control plane nodes and worker nodes respectively, so that they boot and fetch ignition configs from the master.ign and worker.ign files in your s3 bucket. This will be the image ids you confgure for control plane and worker nodes in the \"cluster.yaml\" file later" ::e
+e39::a "Run the installer_prep.bash script to generate manifests, ignition configs and upload them to your s3 bucket." ::e
+e40::a Run tofu apply again This will remove the bootstrap node (not needed anymore) and add worker nodes. ::e
+u41::a Runbook ::?etc
+e42::a "Set ACLs on bucket to public, and limit source IP access to what is expected from your 0xide silo" ::e
+u43::a "The setup has been tested with \"Openshift enterprise 4.20\", however it should work equally well with OKD, as long as the install config is adjusted accordingly." ::?tc
+e44::a "Unmount the RHCOS disk's boot partition, stop the loadbalancer instance and create a snapshot of the RHCOS disk, then create a dedicateed RHCOS image from that snapshot. This is the image-id you will use later to create the bootstrap node instance in \"cluster.yaml\"" ::e
+e45::a Wait before proceeding. ::e
+e46::a "When finished testing, run tofu destroy and tidy up vpc firewall rules, loadbalancer, floating ips, s3 buckets and dns records" ::e
+u47::a cluster.yaml ::?tc
+t48::a https ::t
+t49::a https://access.redhat.com/downloads/ ::t
+t50::a https://docs.oxide.computer/guides/creating-and-sharing-images ::t
+t51::a https://docs.redhat.com/en/documentation/openshift_container_platform/4.8/html/architecture/architecture-rhcos ::t
+t52::a https://github.com/JarleB/oxide-openshift ::t
+t53::a https://github.com/JarleB/oxide-openshift/blob/main/cluster.yaml ::t
+t54::a https://oxide.computer ::t
+t55::a ignition.config.urlhttps://your-bucket-address/bootstrap.ign ::t
+t56::a installer ::t
+t57::a instlller ::t
+e58::a "source the functions file, run fetch_master_backends and combine the output with the haproxy_config stub and apply the config to the loadbalancer." ::e
+t59::a user_data ::t
+t60::a {{range .items}}{{if not .status}}{{.metadata.name}}{{ ::t
+
+u28 --::X "means"--> t29
+u28 --::X "has URL"--> t52
+u36 --::X "means"--> t37
+u36 --::X "has URL"--> t51
+u8 --::N "alternate spelling"-- u34
+u8 --::X "has URL"--> t54
+u34 --::N "alternate spelling"-- u8
+u47 --::X "has URL"--> t53
+u26 --::X "has warning"--> t27
+e45 --::L "then followed by"--> e22
+e3 --::L "then followed by"--> e9
+u32 --::X "has URL"--> t52
+e25 --::L "then followed by"--> e23
+e25 --::X "has URL"--> t49
+e23 --::L "then followed by"--> e24
+e24 --::L "then followed by"--> e42
+e42 --::L "then followed by"--> e35
+e35 --::L "then followed by"--> e10
+e10 --::L "then followed by"--> e33
+e33 --::L "then followed by"--> e18
+e19 --::L "then followed by"--> e15
+e15 --::L "then followed by"--> e17
+e15 --::X "has URL"--> t50
+e17 --::L "then followed by"--> e13
+e13 --::L "then followed by"--> e11
+e11 --::L "then followed by"--> e44
+e11 --::X "has example"--> u7
+u7 --::X "involves"--> t55
+u7 --::X "involves"--> t48
+e16 --::L "then followed by"--> e20
+e20 --::L "then followed by"--> e21
+e39 --::L "then followed by"--> e1
+e1 --::L "then followed by"--> e12
+e12 --::L "then followed by"--> e58
+e2 --::L "then followed by"--> e14
+e2 --::X "involves"--> t56
+e14 --::L "then followed by"--> e5
+e5 --::L "then followed by"--> e45
+e5 --::X "involves"--> t57
+e22 --::L "then followed by"--> e40
+e40 --::L "then followed by"--> e4
+e4 --::L "then followed by"--> e3
+e4 --::X "involves"--> t60
+e9 --::L "then followed by"--> e6
+e6 --::L "then followed by"--> e46
+e6 --::X "involves"--> t57
+u30 --::X "refers to"--> u36
+u30 --::X "refers to"--> t59
+u43 --::X "refers to"--> t31
+u43 --::X "refers to"--> u28
+e18 --::L "then followed by"--> e19
+e44 --::L "then followed by"--> e38
+e44 --::X "refers to"--> u47
+e38 --::L "then followed by"--> e16
+e38 --::X "refers to"--> u47
+e21 --::L "then followed by"--> e39
+e21 --::X "refers to"--> u47
+e58 --::L "then followed by"--> e2

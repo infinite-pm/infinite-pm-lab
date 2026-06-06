@@ -1,0 +1,15 @@
+e1::a "-:: _sequence_ ::          // ending sequence mode" ::e
+e2::a And everywhere that Mary went ::e
+e3::a Mary had a little lamb ::e "Had means possessed not gave birth to" ::tip
+u4::a Mary's mum ::?tc
+u5::a Nursery rhyme ::?tc
+e6::a The lamb was sure to go ::e "SatNav invented later" ::tip
+e7::a Whose fleece was white as snow ::e
+
+u4 --::X "wrote"--> e3
+u5 --::X "has example"--> e3
+e3 --::L "then followed by"--> e7
+e7 --::L "then followed by"--> e2
+e2 --::L "then followed by"--> e6
+e6 --::L "then followed by"--> e1
+e1 --::L "then followed by"--> e3

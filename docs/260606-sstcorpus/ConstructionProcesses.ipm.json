@@ -1,0 +1,412 @@
+{
+  "version": "25.09",
+  "src": {
+    "type": "n4l",
+    "ipmt": "",
+    "positions": {
+      "nodes": null,
+      "edges": null
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "2 damaged boxes",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 2,
+      "name": "DeGuo",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 3,
+      "name": "English Breakfast Tea",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 4,
+      "name": "HammerOn AS",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 5,
+      "name": "Knut Z",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 6,
+      "name": "Maciej Z",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 7,
+      "name": "Martin X",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 8,
+      "name": "Martin X met with Sonja Y, Knut Z",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 9,
+      "name": "Norway",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 10,
+      "name": "Operagata 2, Rostockagata 6",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 11,
+      "name": "ReBase AS",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 12,
+      "name": "ScrewIt AS",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 13,
+      "name": "Sonja Y",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 14,
+      "name": "Sven F",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 15,
+      "name": "TeaBreak Ltd",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 16,
+      "name": "Windows GMBH",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 17,
+      "name": "Wubbadubba",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 18,
+      "name": "airfilters",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 19,
+      "name": "all our hopes and dreams",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 20,
+      "name": "apply for insulation grant",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 21,
+      "name": "architecture",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 22,
+      "name": "balanced ventilation",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 23,
+      "name": "balcony",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 24,
+      "name": "concrete realkalisation",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 25,
+      "name": "dry wall",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 26,
+      "name": "energy recycling",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 27,
+      "name": "foundation",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 28,
+      "name": "gipsplate",
+      "alias": "",
+      "type": "Concept"
+    },
+    {
+      "id": 29,
+      "name": "meeting 1",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 30,
+      "name": "metal screws",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 31,
+      "name": "next meeting cancelled",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 32,
+      "name": "operagata 2",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 33,
+      "name": "plasterboard",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 34,
+      "name": "recycle 80% of waste",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 35,
+      "name": "roof",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 36,
+      "name": "shipment 1",
+      "alias": "",
+      "type": "Event",
+      "tooltip": "2 days late"
+    },
+    {
+      "id": 37,
+      "name": "sorting metals",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 38,
+      "name": "type 40 air filters",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 39,
+      "name": "water damage",
+      "alias": "",
+      "type": "Concept"
+    }
+  ],
+  "edges": [
+    {
+      "id": 40,
+      "source": 17,
+      "target": 18,
+      "dir": "DirFwd",
+      "tooltip": "supplies",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 41,
+      "source": 33,
+      "target": 25,
+      "dir": "DirUndir",
+      "tooltip": "same as",
+      "sstLinkType": "NearTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 42,
+      "source": 33,
+      "target": 28,
+      "dir": "DirFwd",
+      "tooltip": "english has norwegian",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 43,
+      "source": 4,
+      "target": 9,
+      "dir": "DirFwd",
+      "tooltip": "is an organization in",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 44,
+      "source": 16,
+      "target": 2,
+      "dir": "DirFwd",
+      "tooltip": "is an organization in",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 45,
+      "source": 15,
+      "target": 3,
+      "dir": "DirFwd",
+      "tooltip": "supplies",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 46,
+      "source": 11,
+      "target": 24,
+      "dir": "DirFwd",
+      "tooltip": "handles",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 47,
+      "source": 7,
+      "target": 20,
+      "dir": "DirFwd",
+      "tooltip": "proposes",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 48,
+      "source": 29,
+      "target": 31,
+      "dir": "DirFwd",
+      "tooltip": "decides",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 49,
+      "source": 14,
+      "target": 30,
+      "dir": "DirFwd",
+      "tooltip": "decides",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 50,
+      "source": 14,
+      "target": 37,
+      "dir": "DirFwd",
+      "tooltip": "handles",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 51,
+      "source": 6,
+      "target": 10,
+      "dir": "DirFwd",
+      "tooltip": "handles",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 52,
+      "source": 36,
+      "target": 32,
+      "dir": "DirFwd",
+      "tooltip": "delivered to",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 53,
+      "source": 38,
+      "target": 36,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 54,
+      "source": 1,
+      "target": 36,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 55,
+      "source": 1,
+      "target": 39,
+      "dir": "DirFwd",
+      "tooltip": "has condition",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 56,
+      "source": 8,
+      "target": 13,
+      "dir": "DirFwd",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 57,
+      "source": 8,
+      "target": 5,
+      "dir": "DirFwd",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    }
+  ]
+}

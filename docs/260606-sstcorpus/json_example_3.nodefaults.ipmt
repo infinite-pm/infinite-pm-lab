@@ -1,0 +1,45 @@
+u1::a "Data for \"Example API Response\"" ::?te
+u2::a Example API Response ::?te
+u3::a "Metadata for \"Example API Response\"" ::?te
+u4::a User 1 ::?te
+u5::a User 2 ::?te
+u6::a "User array for \"Example API Response\"" ::?te
+u7::a active = false ::?te
+u8::a active = true ::?te
+u9::a email = alice@example.com ::?te
+u10::a email = bob@example.com ::?te
+u11::a id = 1 ::?te
+u12::a id = 2 ::?te
+u13::a limit = 10 ::?te
+u14::a page number = 1 ::?te
+u15::a role = admin ::?te
+u16::a role = user ::?te
+u17::a status = success ::?te
+u18::a "timestamp = \"2025-10-17T14:30:00Z\"" ::?te
+u19::a total = 2 ::?te
+u20::a username = alice ::?te
+u21::a username = bob ::?te
+u22::a version = 1.0.0 ::?te
+
+u11 --::P--> u4
+u20 --::P--> u4
+u9 --::P--> u4
+u15 --::P--> u4
+u16 --::P--> u4
+u8 --::P--> u4
+u12 --::P--> u5
+u21 --::P--> u5
+u10 --::P--> u5
+u16 --::P--> u5
+u7 --::P--> u5
+u22 --::P--> u2
+u17 --::P--> u2
+u18 --::P--> u2
+u1 --::P--> u2
+u4 --::P--> u6
+u5 --::P--> u6
+u19 --::P--> u3
+u14 --::P--> u3
+u13 --::P--> u3
+u6 --::P--> u1
+u3 --::P--> u1

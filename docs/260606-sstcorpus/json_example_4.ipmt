@@ -1,0 +1,40 @@
+c1::a 1 ::c
+c2::a 2 ::c
+c3::a 3 ::c
+e4::a User 1 ::e
+e5::a User 2 ::e
+e6::a User 3 ::e
+e7::a "User array for \"Example API Response\"" ::e
+c8::a active ::c
+c9::a admin ::c
+c10::a alice ::c
+c11::a alice@example.com ::c
+c12::a bob ::c
+c13::a bob@example.com ::c
+c14::a clarice ::c
+c15::a clarice@example.com ::c
+c16::a inactive ::c
+c17::a scared ::c
+c18::a user ::c
+c19::a victim ::c
+
+e4 --::L "then followed by"--> e5
+e4 --::X "has id"--> c1
+e4 --::X "has username"--> c10
+e4 --::X "has email"--> c11
+e4 --::X "has a role"--> c9
+e4 --::X "has a role"--> c18
+e4 --::X "has status"--> c8
+e5 --::L "then followed by"--> e6
+e5 --::X "has id"--> c2
+e5 --::X "has username"--> c12
+e5 --::X "has email"--> c13
+e5 --::X "has a role"--> c18
+e5 --::X "has status"--> c16
+e6 --::X "has id"--> c3
+e6 --::X "has username"--> c14
+e6 --::X "has email"--> c15
+e6 --::X "has a role"--> c19
+e6 --::X "has status"--> c17
+e4 --::P--> e7
+e5 --::P--> e7
