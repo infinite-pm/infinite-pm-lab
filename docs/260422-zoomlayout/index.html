@@ -62,9 +62,27 @@
     .back a:hover { color: var(--accent); }
     footer { border-top: 1px solid var(--line); margin-top: 2.4rem; padding-top: 1.2rem; color: var(--muted); font-size: .85rem; }
 
+    /* live offline-canvas selector */
+    .demos-h { font-size: 1.1rem; margin: 1.6rem 0 .7rem; }
+    .demos-h span { color: var(--muted); font-weight: 400; font-size: .9rem; }
+    .demos { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .demo {
+      display: block; text-decoration: none; color: inherit;
+      background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--accent);
+      border-radius: 12px; padding: 1rem 1.15rem; box-shadow: 0 1px 2px rgba(16,24,40,.04);
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+    .demo:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(16,24,40,.10); }
+    .demo .tag { font-family: 'SFMono-Regular', Menlo, Consolas, monospace; font-size: .76rem; font-weight: 600; color: var(--accent); }
+    .demo .t-title { display: block; font-size: 1.12rem; font-weight: 750; margin: .35rem 0 .3rem; letter-spacing: -.01em; }
+    .demo .t-title .ar { color: var(--accent); transition: margin-left .15s ease; }
+    .demo:hover .t-title .ar { margin-left: .25rem; }
+    .demo .desc { display: block; color: var(--muted); font-size: .92rem; }
+
     @media (max-width: 680px) {
       .states { grid-template-columns: 1fr; }
       .state .canvas, .state img { height: auto; max-height: 360px; }
+      .demos { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -96,11 +114,27 @@
         <figcaption class="cap"><b>around + detail</b><span>one event expanded in place</span></figcaption>
       </figure>
       <figure class="state">
-        <div class="canvas"><img src="z-detail.svg" alt="Fully expanded zoom state: the whole nested event tree with things and concepts."></div>
-        <figcaption class="cap"><b>detail</b><span>fully expanded</span></figcaption>
+        <div class="canvas"><img src="z-detail.svg" alt="Fully expanded zoom state: the nested sub-events held inside a zoomlayout container shell."></div>
+        <figcaption class="cap"><b>detail</b><span>fully expanded, in a container</span></figcaption>
       </figure>
     </section>
-    <p class="arrowy">scroll&nbsp; around &rarr; around&nbsp;+&nbsp;detail &rarr; detail &nbsp;(same <code>murder-full</code> graph)</p>
+    <p class="arrowy">scroll&nbsp; around &rarr; around&nbsp;+&nbsp;detail &rarr; detail</p>
+
+    <section aria-label="Open a live offline zoom canvas">
+      <h2 class="demos-h">Open a live canvas <span>— self-contained, runs offline from disk</span></h2>
+      <div class="demos">
+        <a class="demo" href="murder.zoom.html">
+          <span class="tag">murder mystery</span>
+          <span class="t-title">A whodunnit, zoomable <span class="ar">&rarr;</span></span>
+          <span class="desc">Professor Plum murders Miss Scarlet — open the murder to zoom into its sub-events.</span>
+        </a>
+        <a class="demo" href="tshirt.zoom.html">
+          <span class="tag">t-shirt swap</span>
+          <span class="t-title">Patrick swaps a t-shirt <span class="ar">&rarr;</span></span>
+          <span class="desc">One nested event, opened step by step — 6 zoom states.</span>
+        </a>
+      </div>
+    </section>
 
     <div class="body">
       <h2>The idea</h2>
