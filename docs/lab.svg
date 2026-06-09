@@ -78,7 +78,21 @@
     <g clip-path="url(#clipFlask)">
       <g transform="translate(401.28 238.84) scale(0.36)">
         <!-- etc-LPXN:begin (regenerate with: ipm-drawio $ go run ./cmd-dev/etc-triangle-dist; do not hand-edit) -->
-        <g id="lpxn-edges">
+        <mask id="lpxn-linegap" maskUnits="userSpaceOnUse" x="0" y="0" width="1114.00" height="1020.00">
+              <rect x="0" y="0" width="1114.00" height="1020.00" fill="#ffffff"/>
+              <rect x="421.19" y="568.93" width="117.00" height="75.98" rx="27.19" fill="#000000"/>
+              <rect x="493.50" y="694.18" width="117.00" height="75.98" rx="27.19" fill="#000000"/>
+              <rect x="565.81" y="568.93" width="117.00" height="75.98" rx="27.19" fill="#000000"/>
+              <rect x="511.05" y="99.66" width="81.90" height="75.98" rx="27.19" fill="#000000"/>
+              <rect x="493.50" y="173.14" width="117.00" height="75.98" rx="27.19" fill="#000000"/>
+              <rect x="493.50" y="246.62" width="117.00" height="75.98" rx="27.19" fill="#000000"/>
+              <rect x="518.40" y="320.10" width="67.20" height="72.64" rx="26.19" fill="#000000"/>
+              <rect x="219.88" y="819.70" width="81.90" height="75.98" rx="27.19" fill="#000000"/>
+              <rect x="233.90" y="726.31" width="117.00" height="75.98" rx="27.19" fill="#000000"/>
+              <rect x="802.22" y="819.70" width="81.90" height="75.98" rx="27.19" fill="#000000"/>
+              <rect x="753.10" y="726.31" width="117.00" height="75.98" rx="27.19" fill="#000000"/>
+            </mask>
+        <g id="lpxn-edges" mask="url(#lpxn-linegap)">
             <line x1="434.06" y1="684.28" x2="516.81" y2="540.95" stroke="#4d8a3a" stroke-width="5.00" opacity="1.00"/>
             <line x1="450.12" y1="730.50" x2="636.88" y2="730.50" stroke="#6c8ebf" stroke-width="5.00" stroke-dasharray="14 9" opacity="1.00"/>
             <line x1="578.69" y1="526.22" x2="661.44" y2="669.55" stroke="#6c8ebf" stroke-width="5.00" stroke-dasharray="14 9" opacity="1.00"/>
@@ -92,17 +106,6 @@
             <path d="M 756.30 703.47 A 59.32 59.29 120.00 1 1 695.43 779.46" fill="none" stroke="#6c8ebf" stroke-width="5.00" stroke-dasharray="14 9" opacity="1.00"/>
           </g>
         <g id="lpxn-text-bg">
-            <rect x="432.19" y="579.93" width="95.00" height="53.98" rx="16.19" fill="#edf3eb" opacity="1.00"/>
-            <rect x="504.50" y="705.18" width="95.00" height="53.98" rx="16.19" fill="#f0f4f9" opacity="1.00"/>
-            <rect x="576.81" y="579.93" width="95.00" height="53.98" rx="16.19" fill="#f0f4f9" opacity="1.00"/>
-            <rect x="522.05" y="110.66" width="59.90" height="53.98" rx="16.19" fill="#f7f7f7" opacity="1.00"/>
-            <rect x="504.50" y="184.14" width="95.00" height="53.98" rx="16.19" fill="#f0f4f9" opacity="1.00"/>
-            <rect x="504.50" y="257.62" width="95.00" height="53.98" rx="16.19" fill="#edf3eb" opacity="1.00"/>
-            <rect x="529.40" y="331.10" width="45.20" height="50.64" rx="15.19" fill="#fff2e6" opacity="1.00"/>
-            <rect x="230.88" y="830.70" width="59.90" height="53.98" rx="16.19" fill="#f7f7f7" opacity="1.00"/>
-            <rect x="244.90" y="737.31" width="95.00" height="53.98" rx="16.19" fill="#edf3eb" opacity="1.00"/>
-            <rect x="813.22" y="830.70" width="59.90" height="53.98" rx="16.19" fill="#f7f7f7" opacity="1.00"/>
-            <rect x="764.10" y="737.31" width="95.00" height="53.98" rx="16.19" fill="#f0f4f9" opacity="1.00"/>
             <rect x="519.50" y="442.82" width="65.00" height="74.36" rx="22.31" fill="#fff2e6" stroke="#ff8000" stroke-width="2.50" opacity="1.00"/>
             <rect x="374.87" y="693.32" width="65.00" height="74.36" rx="22.31" fill="#edf3eb" stroke="#4d8a3a" stroke-width="2.50" opacity="1.00"/>
             <rect x="664.13" y="693.32" width="65.00" height="74.36" rx="22.31" fill="#f0f4f9" stroke="#6c8ebf" stroke-width="2.50" opacity="1.00"/>
