@@ -5,7 +5,7 @@
   <g id="container-shells">
   </g>
   <g id="node-shadows">
-    <rect x="1450" y="1000" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="1450" y="425" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="2560" y="820" width="120" height="140" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="0" y="0" width="240" height="240" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="340" y="500" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
@@ -20,7 +20,7 @@
     <rect x="1060" y="500" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="2500" y="500" width="240" height="280" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="2560" y="1000" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="2740" y="1000" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="2740" y="500" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="1960" y="500" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="2140" y="500" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="340" y="40" width="120" height="280" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
@@ -29,9 +29,9 @@
   </g>
   <g id="edges">
     <g class="edge" data-edge-idx="0" data-edge-base="expresses" data-edge-from="10" data-edge-to="1">
-    <line x1="2556.04" y1="890.56" x2="1580.64" y2="1028.49" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 1573.96 1029.44 L 1582.24 1023.72 L 1580.64 1028.49 L 1583.50 1032.64 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="2068" y="959" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <line x1="2556.32" y1="888.44" x2="1579.90" y2="474.20" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 1573.68 471.56 L 1583.73 470.93 L 1579.90 474.20 L 1580.21 479.22 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="2067" y="681" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has page number</title>has...
     </text>
     </g>
@@ -43,9 +43,9 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="2" data-edge-base="expresses" data-edge-from="10" data-edge-to="4">
-    <line x1="2681.49" y1="893.71" x2="2735.98" y2="1029.03" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 2738.51 1035.29 L 2730.97 1028.62 L 2735.98 1029.03 L 2739.32 1025.26 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="2708" y="961" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <line x1="2680.67" y1="886.06" x2="2738.19" y2="549.60" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 2739.33 542.94 L 2742.25 552.57 L 2738.19 549.60 L 2733.37 551.06 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="2709" y="717" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has total value</title>has...
     </text>
     </g>
@@ -61,9 +61,9 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="5" data-edge-base="expresses" data-edge-from="7" data-edge-to="1">
-    <line x1="463.16" y1="266.45" x2="1441.50" y2="1023.42" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 1446.84 1027.55 L 1436.96 1025.60 L 1441.50 1023.42 L 1442.47 1018.49 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="952" y="644" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">has id</text>
+    <line x1="403.97" y1="320.45" x2="1439.32" y2="437.79" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 1446.03 438.55 L 1436.58 442.01 L 1439.32 437.79 L 1437.59 433.06 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="921" y="378" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">has id</text>
     </g>
     <g class="edge" data-edge-idx="6" data-edge-base="partof" data-edge-from="7" data-edge-to="11">
     <line x1="336.57" y1="177.94" x2="249.22" y2="125.53" stroke="#82b366" stroke-width="3" />
@@ -77,30 +77,30 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="8" data-edge-base="expresses" data-edge-from="7" data-edge-to="13">
-    <line x1="460.55" y1="99.96" x2="518.53" y2="519.35" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 519.45 526.04 L 513.76 517.74 L 518.53 519.35 L 522.68 516.51 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="489" y="309" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <line x1="460.61" y1="141.95" x2="518.37" y2="519.37" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 519.39 526.05 L 513.58 517.83 L 518.37 519.37 L 522.48 516.47 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="489" y="330" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has a role</title>has...
     </text>
     </g>
     <g class="edge" data-edge-idx="9" data-edge-base="expresses" data-edge-from="7" data-edge-to="14">
-    <line x1="462.09" y1="141.41" x2="694.39" y2="520.83" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 697.91 526.59 L 689.37 521.26 L 694.39 520.83 L 697.05 516.56 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="578" y="330" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <line x1="403.28" y1="322.29" x2="691.19" y2="523.84" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 696.72 527.71 L 686.77 526.23 L 691.19 523.84 L 691.93 518.86 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="547" y="422" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has username</title>has...
     </text>
     </g>
     <g class="edge" data-edge-idx="10" data-edge-base="expresses" data-edge-from="7" data-edge-to="15">
-    <line x1="463.07" y1="182.56" x2="871.74" y2="523.12" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 876.93 527.44 L 867.13 525.13 L 871.74 523.12 L 872.89 518.22 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="667" y="352" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <line x1="463.22" y1="223.37" x2="871.34" y2="523.63" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 876.78 527.63 L 866.86 525.92 L 871.34 523.63 L 872.20 518.67 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="667" y="373" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has email</title>has...
     </text>
     </g>
     <g class="edge" data-edge-idx="11" data-edge-base="expresses" data-edge-from="7" data-edge-to="20">
-    <line x1="463.53" y1="222.87" x2="1050.50" y2="533.97" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 1056.47 537.13 L 1046.41 536.89 L 1050.50 533.97 L 1050.62 528.94 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="756" y="377" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <line x1="463.66" y1="265.62" x2="1050.17" y2="525.64" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 1056.34 528.38 L 1046.29 528.85 L 1050.17 525.64 L 1049.94 520.62 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="756" y="395" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has a role</title>has...
     </text>
     </g>
@@ -109,16 +109,16 @@
     <path d="M 243.67 49.60 L 253.72 49.07 L 249.86 52.29 L 250.12 57.32 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="13" data-edge-base="expresses" data-edge-from="8" data-edge-to="16">
-    <line x1="643.23" y1="94.36" x2="1231.32" y2="523.66" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 1236.77 527.64 L 1226.85 525.97 L 1231.32 523.66 L 1232.15 518.70 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="937" y="308" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <line x1="601.85" y1="301.10" x2="1289.66" y2="497.05" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 1296.15 498.90 L 1286.26 500.77 L 1289.66 497.05 L 1288.73 492.11 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="945" y="399" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has username</title>has...
     </text>
     </g>
     <g class="edge" data-edge-idx="14" data-edge-base="expresses" data-edge-from="8" data-edge-to="17">
-    <line x1="643.58" y1="132.79" x2="1410.38" y2="516.19" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 1416.42 519.21 L 1406.36 519.21 L 1410.38 516.19 L 1410.38 511.16 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="1026" y="324" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <line x1="643.50" y1="93.93" x2="1410.58" y2="515.82" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 1416.50 519.07 L 1406.44 518.68 L 1410.58 515.82 L 1410.78 510.79 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="1026" y="304" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has email</title>has...
     </text>
     </g>
@@ -130,16 +130,16 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="16" data-edge-base="expresses" data-edge-from="8" data-edge-to="20">
-    <line x1="643.21" y1="210.39" x2="1051.38" y2="514.58" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 1056.79 518.61 L 1046.89 516.84 L 1051.38 514.58 L 1052.27 509.62 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="847" y="362" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <line x1="565.77" y1="301.35" x2="1109.88" y2="496.37" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 1116.23 498.65 L 1106.24 499.85 L 1109.88 496.37 L 1109.28 491.38 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="837" y="398" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has a role</title>has...
     </text>
     </g>
     <g class="edge" data-edge-idx="17" data-edge-base="expresses" data-edge-from="8" data-edge-to="4">
-    <line x1="643.75" y1="249.38" x2="2729.91" y2="1017.29" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 2736.25 1019.62 L 2726.25 1020.73 L 2729.91 1017.29 L 2729.35 1012.29 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="1686" y="633" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">has id</text>
+    <line x1="643.97" y1="248.52" x2="2729.34" y2="519.61" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 2736.03 520.48 L 2726.53 523.79 L 2729.34 519.61 L 2727.69 514.86 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="1686" y="383" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">has id</text>
     </g>
     <g class="edge" data-edge-idx="18" data-edge-base="expresses" data-edge-from="9" data-edge-to="19">
     <line x1="283.92" y1="124.78" x2="2309.46" y2="527.90" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
@@ -178,8 +178,8 @@
     </g>
   </g>
   <g id="nodes">
-    <rect x="1450" y="1000" width="120" height="60" rx="6" ry="6" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
-    <text x="1510" y="1030" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">1</text>
+    <rect x="1450" y="425" width="120" height="60" rx="6" ry="6" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="1510" y="455" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">1</text>
     <rect x="2560" y="820" width="120" height="140" rx="6" ry="6" fill="#ececec" stroke="#9e9e9e" stroke-width="2" stroke-dasharray="6 4"/>
     <text x="2620" y="806" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Partial json</text>
     <text x="2620" y="823" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">element --</text>
@@ -269,8 +269,8 @@
     <text x="2729.0" y="769.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
     <rect x="2560" y="1000" width="120" height="60" rx="6" ry="6" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
     <text x="2620" y="1030" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">10</text>
-    <rect x="2740" y="1000" width="120" height="60" rx="6" ry="6" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
-    <text x="2800" y="1030" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">2</text>
+    <rect x="2740" y="500" width="120" height="60" rx="6" ry="6" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="2800" y="530" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">2</text>
     <rect x="1960" y="500" width="120" height="60" rx="6" ry="6" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
     <text x="2020" y="520" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">2025-10-17T1</text>
     <text x="2020" y="540" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">4:30:00Z</text>

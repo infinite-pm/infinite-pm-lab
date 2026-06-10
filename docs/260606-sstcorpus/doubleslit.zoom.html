@@ -21,7 +21,7 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #fff; colo
 #main { flex: 1; overflow: hidden; position: relative; }
 
 /* Canvas */
-#canvas-wrap { width: 100%; height: 100%; overflow: hidden; position: relative; cursor: grab; touch-action: none; }
+#canvas-wrap { width: 100%; height: 100%; overflow: hidden; position: relative; cursor: grab; touch-action: none; -webkit-user-select: none; user-select: none; }
 #canvas-wrap.dragging { cursor: grabbing; }
 #svg-container { transform-origin: 0 0; position: absolute; top: 0; left: 0; }
 
@@ -64,14 +64,30 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #fff; colo
 .action-btn.rel-expresses { border-left: 3px solid #6c8ebf; }
 .action-btn.rel-nearto { border-left: 3px solid #999999; }
 
+/* Help overlay — a dismissible modal listing all gestures/shortcuts. */
+#help-overlay { position: fixed; inset: 0; z-index: 3000; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.35); }
+#help-overlay[hidden] { display: none; }
+#help-panel { width: 440px; max-width: 92vw; max-height: 86vh; overflow-y: auto; }
+.help-head { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+.help-head h3 { margin: 0; flex: 1; }
+.help-sec { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #888; margin: 14px 0 6px; }
+.help-keys { display: grid; grid-template-columns: max-content 1fr; gap: 6px 14px; align-items: baseline; }
+.help-keys dt { white-space: nowrap; }
+.help-keys dd { color: #444; font-size: 14px; line-height: 1.4; margin: 0; }
+.help-keys kbd { display: inline-block; padding: 1px 6px; font: 12px/1.6 ui-monospace, SFMono-Regular, Menlo, monospace; background: #fff; border: 1px solid #ccc; border-bottom-width: 2px; border-radius: 4px; color: #333; }
+.help-keys .chip { display: inline-block; width: 16px; height: 16px; line-height: 14px; text-align: center; border: 1px solid #999; border-radius: 4px; background: #fff; font-size: 11px; color: #333; }
+
 /* Bottom bar */
 #bottombar { display: flex; align-items: center; gap: 16px; padding: 4px 16px; background: #f5f5f5; border-top: 1px solid #ddd; font-size: 12px; color: #888; min-height: 28px; flex-shrink: 0; }
 
 /* SVG interaction styles */
 .node-group { cursor: pointer; }
 .node-group:hover rect { opacity: 0.3; }
-.click-targets { pointer-events: all; }
+.click-targets, .chip-targets { pointer-events: all; }
 .selection-highlight { pointer-events: none; }
+/* Dotted gold marker on the one side of a CONNECTED node where the selected
+   node's edge attaches (drawn by highlightConnectedNodeBorders). */
+.connected-border-highlight { pointer-events: none; filter: drop-shadow(0 0 2px #ffd700); }
 
 /* Cross-component edge stubs: full edge hidden until the edge is SELECTED (click).
    Hovering only shows a tooltip — it does not reveal the edge. A selected edge is
@@ -111,6 +127,7 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #fff; colo
     <div id="view-panel" class="panel">
       <div class="panel-row">
         <h3>View</h3>
+        <button class="icon-btn" id="help-btn" title="Shortcuts &amp; help (?)">?</button>
         <button class="icon-btn" id="toggle-inspector-btn" title="Show/hide the inspector panel (free up canvas space)">▤</button>
         <button class="icon-btn" id="copy-url-btn" title="Copy a URL that restores the current state, selection, zoom and pan">🔗</button>
         <button class="icon-btn" id="expand-all-btn" title="Navigate to the fully-expanded state">⛶</button>
@@ -129,9 +146,51 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #fff; colo
   <span id="zoom-info">zoom: 100%</span>
 </div>
 
+<div id="help-overlay" hidden>
+  <div id="help-panel" class="panel" role="dialog" aria-label="Shortcuts and help">
+    <div class="help-head">
+      <h3>Shortcuts &amp; help</h3>
+      <button class="icon-btn" id="help-close" title="Close (Esc)">✕</button>
+    </div>
+
+    <div class="help-sec">Select &amp; inspect</div>
+    <dl class="help-keys">
+      <dt><kbd>Click</kbd> node</dt><dd>highlight &amp; inspect it — click it again to clear</dd>
+      <dt><kbd>Click</kbd> edge</dt><dd>select the edge (rings both ends)</dd>
+      <dt><kbd>Click</kbd> empty</dt><dd>clear the selection</dd>
+    </dl>
+
+    <div class="help-sec">Open / collapse a node</div>
+    <dl class="help-keys">
+      <dt><span class="chip">+</span> chip</dt><dd>the corner badge — a single click opens/collapses</dd>
+      <dt><kbd>Double-click</kbd></dt><dd>same as the chip</dd>
+      <dt><kbd>Ctrl</kbd>/<kbd>⌘</kbd>+<kbd>Click</kbd></dt><dd>same — opens the whole subtree</dd>
+      <dt>… +<kbd>Alt</kbd></dt><dd>open just one level instead</dd>
+    </dl>
+    <p style="color:#888; font-size:13px; margin:6px 0 0;">A highlighted node stays highlighted after it opens; a plain click never navigates.</p>
+
+    <div class="help-sec">Move around</div>
+    <dl class="help-keys">
+      <dt><kbd>Drag</kbd></dt><dd>pan — you can start the drag anywhere, even on a node</dd>
+      <dt><kbd>Scroll</kbd></dt><dd>zoom in / out</dd>
+      <dt><kbd>Esc</kbd></dt><dd>clear the selection, then zoom out</dd>
+      <dt>Breadcrumb</dt><dd>jump back to a parent state (top bar)</dd>
+    </dl>
+
+    <div class="help-sec">Toolbar</div>
+    <dl class="help-keys">
+      <dt>?</dt><dd>this help</dd>
+      <dt>▤</dt><dd>show / hide the inspector panel</dd>
+      <dt>🔗</dt><dd>copy a link that restores this exact view</dd>
+      <dt>⛶</dt><dd>jump to the fully-expanded state</dd>
+      <dt>⬇</dt><dd>download a self-contained offline copy</dd>
+    </dl>
+  </div>
+</div>
+
 <script>
-window.__BUNDLED_MODEL = {"source":"doubleslit.ipmt","rootStateID":"s:","fullyExpandedStateID":"s:","states":[{"id":"s:","openSet":null,"expandedTCs":null,"transitions":{},"bounds":{"width":560,"height":900,"marginX":40,"marginY":40},"nodes":[{"id":"1","type":"event","label":"A1","alias":"e1","x":130,"y":120,"width":120,"height":60,"degree":3,"navTargets":{"prev":[{"id":"15","label":"S","type":"boundary"}],"next":[{"id":"2","label":"A2","type":"event"},{"id":"3","label":"A3","type":"event"}]}},{"id":"2","type":"event","label":"A2","alias":"e2","x":130,"y":220,"width":120,"height":60,"degree":2,"navTargets":{"prev":[{"id":"1","label":"A1","type":"event"}],"next":[{"id":"5","label":"A5","type":"event"}]}},{"id":"3","type":"event","label":"A3","alias":"e3","x":310,"y":220,"width":120,"height":60,"degree":3,"navTargets":{"prev":[{"id":"1","label":"A1","type":"event"}],"next":[{"id":"5","label":"A5","type":"event"},{"id":"6","label":"A6","type":"event"}]}},{"id":"4","type":"event","label":"A4","alias":"e4","x":310,"y":120,"width":120,"height":60,"degree":2,"navTargets":{"prev":[{"id":"15","label":"S","type":"boundary"}],"next":[{"id":"13","label":"S1","type":"event"}]}},{"id":"5","type":"event","label":"A5","alias":"e5","x":130,"y":320,"width":120,"height":60,"degree":4,"navTargets":{"prev":[{"id":"2","label":"A2","type":"event"},{"id":"3","label":"A3","type":"event"}],"next":[{"id":"13","label":"S1","type":"event"},{"id":"14","label":"S2","type":"event"}]}},{"id":"6","type":"event","label":"A6","alias":"e6","x":310,"y":320,"width":120,"height":60,"degree":2,"navTargets":{"prev":[{"id":"3","label":"A3","type":"event"}],"next":[{"id":"14","label":"S2","type":"event"}]}},{"id":"7","type":"event","label":"B1","alias":"e7","x":40,"y":520,"width":120,"height":60,"degree":2,"navTargets":{"prev":[{"id":"13","label":"S1","type":"event"}],"next":[{"id":"10","label":"B4","type":"event"}]}},{"id":"8","type":"event","label":"B2","alias":"e8","x":220,"y":520,"width":120,"height":60,"degree":3,"navTargets":{"prev":[{"id":"14","label":"S2","type":"event"}],"next":[{"id":"10","label":"B4","type":"event"},{"id":"11","label":"B5","type":"event"}]}},{"id":"9","type":"event","label":"B3","alias":"e9","x":400,"y":520,"width":120,"height":60,"degree":2,"navTargets":{"prev":[{"id":"14","label":"S2","type":"event"}],"next":[{"id":"11","label":"B5","type":"event"}]}},{"id":"10","type":"event","label":"B4","alias":"e10","x":130,"y":620,"width":120,"height":60,"degree":3,"navTargets":{"prev":[{"id":"7","label":"B1","type":"event"},{"id":"8","label":"B2","type":"event"}],"next":[{"id":"12","label":"B6","type":"event"}]}},{"id":"11","type":"event","label":"B5","alias":"e11","x":310,"y":620,"width":120,"height":60,"degree":3,"navTargets":{"prev":[{"id":"8","label":"B2","type":"event"},{"id":"9","label":"B3","type":"event"}],"next":[{"id":"16","label":"E","type":"boundary"}]}},{"id":"12","type":"event","label":"B6","alias":"e12","x":220,"y":720,"width":120,"height":60,"degree":2,"navTargets":{"prev":[{"id":"10","label":"B4","type":"event"}],"next":[{"id":"16","label":"E","type":"boundary"}]}},{"id":"13","type":"event","label":"S1","alias":"e13","x":130,"y":420,"width":120,"height":60,"degree":3,"navTargets":{"prev":[{"id":"4","label":"A4","type":"event"},{"id":"5","label":"A5","type":"event"}],"next":[{"id":"7","label":"B1","type":"event"}]}},{"id":"14","type":"event","label":"S2","alias":"e14","x":310,"y":420,"width":120,"height":60,"degree":4,"navTargets":{"prev":[{"id":"5","label":"A5","type":"event"},{"id":"6","label":"A6","type":"event"}],"next":[{"id":"8","label":"B2","type":"event"},{"id":"9","label":"B3","type":"event"}]}},{"id":"15","type":"boundary","label":"S","x":350,"y":40,"width":40,"height":40,"degree":2,"navTargets":{"next":[{"id":"1","label":"A1","type":"event"},{"id":"4","label":"A4","type":"event"}]}},{"id":"16","type":"boundary","label":"E","x":260,"y":820,"width":40,"height":40,"degree":2,"navTargets":{"prev":[{"id":"11","label":"B5","type":"event"},{"id":"12","label":"B6","type":"event"}]}}],"edges":[{"from":"1","to":"2","dir":"fwd","base":"leadsto","style":"leadsto","label":"leads to"},{"from":"1","to":"3","dir":"fwd","base":"leadsto","style":"leadsto","label":"leads to"},{"from":"10","to":"12","dir":"fwd","base":"leadsto","style":"leadsto","label":"leads to"},{"from":"11","to":"16","dir":"fwd","base":"leadsto","style":"leadsto"},{"from":"12","to":"16","dir":"fwd","base":"leadsto","style":"leadsto"},{"from":"13","to":"7","dir":"fwd","base":"leadsto","style":"leadsto","label":"leads to"},{"from":"14","to":"8","dir":"fwd","base":"leadsto","style":"leadsto","label":"leads to"},{"from":"14","to":"9","dir":"fwd","base":"leadsto","style":"leadsto","label":"leads to"},{"from":"15","to":"1","dir":"fwd","base":"leadsto","style":"leadsto"},{"from":"15","to":"4","dir":"fwd","base":"leadsto","style":"leadsto"},{"from":"2","to":"5","dir":"fwd","base":"leadsto","style":"leadsto","label":"leads to"},{"from":"3","to":"5","dir":"fwd","base":"leadsto","style":"leadsto","label":"leads to"},{"from":"3","to":"6","dir":"fwd","base":"leadsto","style":"leadsto","label":"leads to"},{"from":"4","to":"13","dir":"fwd","base":"leadsto","style":"leadsto","label":"leads to"},{"from":"5","to":"13","dir":"fwd","base":"leadsto","style":"leadsto","label":"leads to"},{"from":"5","to":"14","dir":"fwd","base":"leadsto","style":"leadsto","label":"leads to"},{"from":"6","to":"14","dir":"fwd","base":"leadsto","style":"leadsto","label":"leads to"},{"from":"7","to":"10","dir":"fwd","base":"leadsto","style":"leadsto","label":"leads to"},{"from":"8","to":"10","dir":"fwd","base":"leadsto","style":"leadsto","label":"leads to"},{"from":"8","to":"11","dir":"fwd","base":"leadsto","style":"leadsto","label":"leads to"},{"from":"9","to":"11","dir":"fwd","base":"leadsto","style":"leadsto","label":"leads to"}],"ancestorChain":["s:"]}]};
-window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u003e\n\u003csvg xmlns=\"http://www.w3.org/2000/svg\" width=\"560\" height=\"900\" viewBox=\"0 0 560 900\"\u003e\n  \u003cdefs\u003e\n  \u003c/defs\u003e\n  \u003cg id=\"container-shells\"\u003e\n  \u003c/g\u003e\n  \u003cg id=\"node-shadows\"\u003e\n    \u003crect x=\"130\" y=\"120\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"130\" y=\"620\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"310\" y=\"620\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"220\" y=\"720\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"130\" y=\"420\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"310\" y=\"420\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"350\" y=\"40\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"260\" y=\"820\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"130\" y=\"220\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"310\" y=\"220\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"310\" y=\"120\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"130\" y=\"320\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"310\" y=\"320\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"40\" y=\"520\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"220\" y=\"520\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"400\" y=\"520\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n  \u003c/g\u003e\n  \u003cg id=\"edges\"\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"0\" data-edge-base=\"leadsto\" data-edge-from=\"1\" data-edge-to=\"2\"\u003e\n    \u003cline x1=\"190.00\" y1=\"184.00\" x2=\"190.00\" y2=\"209.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 190.00 216.00 L 185.50 207.00 L 190.00 209.25 L 194.50 207.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"190\" y=\"196\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003eleads to\u003c/title\u003elead...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"1\" data-edge-base=\"leadsto\" data-edge-from=\"1\" data-edge-to=\"3\"\u003e\n    \u003cline x1=\"252.36\" y1=\"162.23\" x2=\"303.65\" y2=\"232.32\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 307.64 237.77 L 298.69 233.17 L 303.65 232.32 L 305.96 227.85 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"277\" y=\"197\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003eleads to\u003c/title\u003elead...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"2\" data-edge-base=\"leadsto\" data-edge-from=\"10\" data-edge-to=\"12\"\u003e\n    \u003cline x1=\"193.66\" y1=\"681.62\" x2=\"270.18\" y2=\"715.63\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 276.34 718.38 L 266.29 718.83 L 270.18 715.63 L 269.95 710.61 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"231\" y=\"698\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003eleads to\u003c/title\u003elead...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"3\" data-edge-base=\"leadsto\" data-edge-from=\"11\" data-edge-to=\"16\"\u003e\n    \u003cline x1=\"309.44\" y1=\"653.96\" x2=\"287.50\" y2=\"809.36\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 286.56 816.04 L 283.36 806.50 L 287.50 809.36 L 292.27 807.76 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"4\" data-edge-base=\"leadsto\" data-edge-from=\"12\" data-edge-to=\"16\"\u003e\n    \u003cline x1=\"279.41\" y1=\"783.96\" x2=\"275.59\" y2=\"809.37\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 274.59 816.04 L 271.48 806.48 L 275.59 809.37 L 280.38 807.81 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"5\" data-edge-base=\"leadsto\" data-edge-from=\"13\" data-edge-to=\"7\"\u003e\n    \u003cline x1=\"186.34\" y1=\"481.62\" x2=\"109.82\" y2=\"515.63\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 103.66 518.38 L 110.05 510.61 L 109.82 515.63 L 113.71 518.83 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"147\" y=\"498\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003eleads to\u003c/title\u003elead...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"6\" data-edge-base=\"leadsto\" data-edge-from=\"14\" data-edge-to=\"8\"\u003e\n    \u003cline x1=\"348.50\" y1=\"481.94\" x2=\"289.40\" y2=\"514.78\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 283.50 518.06 L 289.18 509.75 L 289.40 514.78 L 293.55 517.62 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"318\" y=\"497\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003eleads to\u003c/title\u003elead...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"7\" data-edge-base=\"leadsto\" data-edge-from=\"14\" data-edge-to=\"9\"\u003e\n    \u003cline x1=\"391.50\" y1=\"481.94\" x2=\"450.60\" y2=\"514.78\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 456.50 518.06 L 446.45 517.62 L 450.60 514.78 L 450.82 509.75 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"420\" y=\"497\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003eleads to\u003c/title\u003elead...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"8\" data-edge-base=\"leadsto\" data-edge-from=\"15\" data-edge-to=\"1\"\u003e\n    \u003cline x1=\"360.47\" y1=\"81.89\" x2=\"259.48\" y2=\"135.93\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 253.53 139.11 L 259.34 130.90 L 259.48 135.93 L 263.59 138.83 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"9\" data-edge-base=\"leadsto\" data-edge-from=\"15\" data-edge-to=\"4\"\u003e\n    \u003cline x1=\"375.41\" y1=\"83.96\" x2=\"371.59\" y2=\"109.37\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 370.59 116.04 L 367.48 106.48 L 371.59 109.37 L 376.38 107.81 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"10\" data-edge-base=\"leadsto\" data-edge-from=\"2\" data-edge-to=\"5\"\u003e\n    \u003cline x1=\"190.00\" y1=\"284.00\" x2=\"190.00\" y2=\"309.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 190.00 316.00 L 185.50 307.00 L 190.00 309.25 L 194.50 307.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"190\" y=\"296\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003eleads to\u003c/title\u003elead...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"11\" data-edge-base=\"leadsto\" data-edge-from=\"3\" data-edge-to=\"5\"\u003e\n    \u003cline x1=\"307.64\" y1=\"262.23\" x2=\"256.35\" y2=\"332.32\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 252.36 337.77 L 254.04 327.85 L 256.35 332.32 L 261.31 333.17 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"281\" y=\"297\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003eleads to\u003c/title\u003elead...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"12\" data-edge-base=\"leadsto\" data-edge-from=\"3\" data-edge-to=\"6\"\u003e\n    \u003cline x1=\"370.00\" y1=\"284.00\" x2=\"370.00\" y2=\"309.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 370.00 316.00 L 365.50 307.00 L 370.00 309.25 L 374.50 307.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"370\" y=\"296\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003eleads to\u003c/title\u003elead...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"13\" data-edge-base=\"leadsto\" data-edge-from=\"4\" data-edge-to=\"13\"\u003e\n    \u003cline x1=\"309.22\" y1=\"153.92\" x2=\"252.11\" y2=\"439.46\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 250.78 446.08 L 248.14 436.37 L 252.11 439.46 L 256.96 438.13 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"280\" y=\"296\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003eleads to\u003c/title\u003elead...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"14\" data-edge-base=\"leadsto\" data-edge-from=\"5\" data-edge-to=\"13\"\u003e\n    \u003cline x1=\"190.00\" y1=\"384.00\" x2=\"190.00\" y2=\"409.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 190.00 416.00 L 185.50 407.00 L 190.00 409.25 L 194.50 407.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"190\" y=\"396\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003eleads to\u003c/title\u003elead...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"15\" data-edge-base=\"leadsto\" data-edge-from=\"5\" data-edge-to=\"14\"\u003e\n    \u003cline x1=\"252.20\" y1=\"362.34\" x2=\"304.08\" y2=\"441.03\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 307.80 446.66 L 299.09 441.62 L 304.08 441.03 L 306.60 436.67 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"278\" y=\"401\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003eleads to\u003c/title\u003elead...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"16\" data-edge-base=\"leadsto\" data-edge-from=\"6\" data-edge-to=\"14\"\u003e\n    \u003cline x1=\"370.00\" y1=\"384.00\" x2=\"370.00\" y2=\"409.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 370.00 416.00 L 365.50 407.00 L 370.00 409.25 L 374.50 407.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"370\" y=\"396\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003eleads to\u003c/title\u003elead...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"17\" data-edge-base=\"leadsto\" data-edge-from=\"7\" data-edge-to=\"10\"\u003e\n    \u003cline x1=\"103.50\" y1=\"581.94\" x2=\"162.60\" y2=\"614.78\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 168.50 618.06 L 158.45 617.62 L 162.60 614.78 L 162.82 609.75 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"132\" y=\"597\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003eleads to\u003c/title\u003elead...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"18\" data-edge-base=\"leadsto\" data-edge-from=\"8\" data-edge-to=\"10\"\u003e\n    \u003cline x1=\"258.79\" y1=\"582.38\" x2=\"216.64\" y2=\"613.60\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 211.21 617.62 L 215.77 608.65 L 216.64 613.60 L 221.12 615.88 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"237\" y=\"597\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003eleads to\u003c/title\u003elead...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"19\" data-edge-base=\"leadsto\" data-edge-from=\"8\" data-edge-to=\"11\"\u003e\n    \u003cline x1=\"301.21\" y1=\"582.38\" x2=\"343.36\" y2=\"613.60\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 348.79 617.62 L 338.88 615.88 L 343.36 613.60 L 344.23 608.65 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"322\" y=\"597\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003eleads to\u003c/title\u003elead...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"20\" data-edge-base=\"leadsto\" data-edge-from=\"9\" data-edge-to=\"11\"\u003e\n    \u003cline x1=\"456.50\" y1=\"581.94\" x2=\"397.40\" y2=\"614.78\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 391.50 618.06 L 397.18 609.75 L 397.40 614.78 L 401.55 617.62 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"426\" y=\"597\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003eleads to\u003c/title\u003elead...\n    \u003c/text\u003e\n    \u003c/g\u003e\n  \u003c/g\u003e\n  \u003cg id=\"nodes\"\u003e\n    \u003crect x=\"130\" y=\"120\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"190\" y=\"150\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eA1\u003c/text\u003e\n    \u003crect x=\"130\" y=\"620\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"190\" y=\"650\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eB4\u003c/text\u003e\n    \u003crect x=\"310\" y=\"620\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"370\" y=\"650\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eB5\u003c/text\u003e\n    \u003crect x=\"220\" y=\"720\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"280\" y=\"750\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eB6\u003c/text\u003e\n    \u003crect x=\"130\" y=\"420\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"190\" y=\"450\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eS1\u003c/text\u003e\n    \u003crect x=\"310\" y=\"420\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"370\" y=\"450\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eS2\u003c/text\u003e\n    \u003crect x=\"350\" y=\"40\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"370\" y=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eS\u003c/text\u003e\n    \u003crect x=\"260\" y=\"820\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"280\" y=\"840\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eE\u003c/text\u003e\n    \u003crect x=\"130\" y=\"220\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"190\" y=\"250\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eA2\u003c/text\u003e\n    \u003crect x=\"310\" y=\"220\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"370\" y=\"250\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eA3\u003c/text\u003e\n    \u003crect x=\"310\" y=\"120\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"370\" y=\"150\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eA4\u003c/text\u003e\n    \u003crect x=\"130\" y=\"320\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"190\" y=\"350\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eA5\u003c/text\u003e\n    \u003crect x=\"310\" y=\"320\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"370\" y=\"350\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eA6\u003c/text\u003e\n    \u003crect x=\"40\" y=\"520\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"100\" y=\"550\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eB1\u003c/text\u003e\n    \u003crect x=\"220\" y=\"520\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"280\" y=\"550\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eB2\u003c/text\u003e\n    \u003crect x=\"400\" y=\"520\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"460\" y=\"550\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eB3\u003c/text\u003e\n  \u003c/g\u003e\n\u003c/svg\u003e\n"};
+window.__BUNDLED_MODEL = {"source":"doubleslit.ipmt","rootStateID":"s:","fullyExpandedStateID":"s:","states":[{"id":"s:","openSet":null,"expandedTCs":null,"transitions":{},"bounds":{"width":560,"height":900,"marginX":40,"marginY":40},"nodes":[{"id":"1","type":"event","label":"A1","alias":"e1","x":194,"y":120,"width":120,"height":60,"degree":3,"navTargets":{"prev":[{"id":"15","label":"S","type":"boundary"}],"next":[{"id":"2","label":"A2","type":"event"},{"id":"3","label":"A3","type":"event"}]}},{"id":"2","type":"event","label":"A2","alias":"e2","x":104,"y":220,"width":120,"height":60,"degree":2,"navTargets":{"prev":[{"id":"1","label":"A1","type":"event"}],"next":[{"id":"5","label":"A5","type":"event"}]}},{"id":"3","type":"event","label":"A3","alias":"e3","x":284,"y":220,"width":120,"height":60,"degree":3,"navTargets":{"prev":[{"id":"1","label":"A1","type":"event"}],"next":[{"id":"5","label":"A5","type":"event"},{"id":"6","label":"A6","type":"event"}]}},{"id":"4","type":"event","label":"A4","alias":"e4","x":374,"y":120,"width":120,"height":60,"degree":2,"navTargets":{"prev":[{"id":"15","label":"S","type":"boundary"}],"next":[{"id":"13","label":"S1","type":"event"}]}},{"id":"5","type":"event","label":"A5","alias":"e5","x":149,"y":320,"width":120,"height":60,"degree":4,"navTargets":{"prev":[{"id":"2","label":"A2","type":"event"},{"id":"3","label":"A3","type":"event"}],"next":[{"id":"13","label":"S1","type":"event"},{"id":"14","label":"S2","type":"event"}]}},{"id":"6","type":"event","label":"A6","alias":"e6","x":329,"y":320,"width":120,"height":60,"degree":2,"navTargets":{"prev":[{"id":"3","label":"A3","type":"event"}],"next":[{"id":"14","label":"S2","type":"event"}]}},{"id":"7","type":"event","label":"B1","alias":"e7","x":400,"y":520,"width":120,"height":60,"degree":2,"navTargets":{"prev":[{"id":"13","label":"S1","type":"event"}],"next":[{"id":"10","label":"B4","type":"event"}]}},{"id":"8","type":"event","label":"B2","alias":"e8","x":40,"y":520,"width":120,"height":60,"degree":3,"navTargets":{"prev":[{"id":"14","label":"S2","type":"event"}],"next":[{"id":"10","label":"B4","type":"event"},{"id":"11","label":"B5","type":"event"}]}},{"id":"9","type":"event","label":"B3","alias":"e9","x":220,"y":520,"width":120,"height":60,"degree":2,"navTargets":{"prev":[{"id":"14","label":"S2","type":"event"}],"next":[{"id":"11","label":"B5","type":"event"}]}},{"id":"10","type":"event","label":"B4","alias":"e10","x":265,"y":620,"width":120,"height":60,"degree":3,"navTargets":{"prev":[{"id":"7","label":"B1","type":"event"},{"id":"8","label":"B2","type":"event"}],"next":[{"id":"12","label":"B6","type":"event"}]}},{"id":"11","type":"event","label":"B5","alias":"e11","x":85,"y":620,"width":120,"height":60,"degree":3,"navTargets":{"prev":[{"id":"8","label":"B2","type":"event"},{"id":"9","label":"B3","type":"event"}],"next":[{"id":"16","label":"E","type":"boundary"}]}},{"id":"12","type":"event","label":"B6","alias":"e12","x":265,"y":720,"width":120,"height":60,"degree":2,"navTargets":{"prev":[{"id":"10","label":"B4","type":"event"}],"next":[{"id":"16","label":"E","type":"boundary"}]}},{"id":"13","type":"event","label":"S1","alias":"e13","x":340,"y":420,"width":120,"height":60,"degree":3,"navTargets":{"prev":[{"id":"4","label":"A4","type":"event"},{"id":"5","label":"A5","type":"event"}],"next":[{"id":"7","label":"B1","type":"event"}]}},{"id":"14","type":"event","label":"S2","alias":"e14","x":160,"y":420,"width":120,"height":60,"degree":4,"navTargets":{"prev":[{"id":"5","label":"A5","type":"event"},{"id":"6","label":"A6","type":"event"}],"next":[{"id":"8","label":"B2","type":"event"},{"id":"9","label":"B3","type":"event"}]}},{"id":"15","type":"boundary","label":"S","x":324,"y":40,"width":40,"height":40,"degree":2,"navTargets":{"next":[{"id":"1","label":"A1","type":"event"},{"id":"4","label":"A4","type":"event"}]}},{"id":"16","type":"boundary","label":"E","x":215,"y":820,"width":40,"height":40,"degree":2,"navTargets":{"prev":[{"id":"11","label":"B5","type":"event"},{"id":"12","label":"B6","type":"event"}]}}],"edges":[{"from":"1","to":"2","dir":"fwd","base":"leadsto","style":"leadsto","label":"leads to"},{"from":"1","to":"3","dir":"fwd","base":"leadsto","style":"leadsto","label":"leads to"},{"from":"10","to":"12","dir":"fwd","base":"leadsto","style":"leadsto","label":"leads to"},{"from":"11","to":"16","dir":"fwd","base":"leadsto","style":"leadsto"},{"from":"12","to":"16","dir":"fwd","base":"leadsto","style":"leadsto"},{"from":"13","to":"7","dir":"fwd","base":"leadsto","style":"leadsto","label":"leads to"},{"from":"14","to":"8","dir":"fwd","base":"leadsto","style":"leadsto","label":"leads to"},{"from":"14","to":"9","dir":"fwd","base":"leadsto","style":"leadsto","label":"leads to"},{"from":"15","to":"1","dir":"fwd","base":"leadsto","style":"leadsto"},{"from":"15","to":"4","dir":"fwd","base":"leadsto","style":"leadsto"},{"from":"2","to":"5","dir":"fwd","base":"leadsto","style":"leadsto","label":"leads to"},{"from":"3","to":"5","dir":"fwd","base":"leadsto","style":"leadsto","label":"leads to"},{"from":"3","to":"6","dir":"fwd","base":"leadsto","style":"leadsto","label":"leads to"},{"from":"4","to":"13","dir":"fwd","base":"leadsto","style":"leadsto","label":"leads to"},{"from":"5","to":"13","dir":"fwd","base":"leadsto","style":"leadsto","label":"leads to"},{"from":"5","to":"14","dir":"fwd","base":"leadsto","style":"leadsto","label":"leads to"},{"from":"6","to":"14","dir":"fwd","base":"leadsto","style":"leadsto","label":"leads to"},{"from":"7","to":"10","dir":"fwd","base":"leadsto","style":"leadsto","label":"leads to"},{"from":"8","to":"10","dir":"fwd","base":"leadsto","style":"leadsto","label":"leads to"},{"from":"8","to":"11","dir":"fwd","base":"leadsto","style":"leadsto","label":"leads to"},{"from":"9","to":"11","dir":"fwd","base":"leadsto","style":"leadsto","label":"leads to"}],"ancestorChain":["s:"]}]};
+window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u003e\n\u003csvg xmlns=\"http://www.w3.org/2000/svg\" width=\"560\" height=\"900\" viewBox=\"0 0 560 900\"\u003e\n  \u003cdefs\u003e\n  \u003c/defs\u003e\n  \u003cg id=\"container-shells\"\u003e\n  \u003c/g\u003e\n  \u003cg id=\"node-shadows\"\u003e\n    \u003crect x=\"194\" y=\"120\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"265\" y=\"620\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"85\" y=\"620\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"265\" y=\"720\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"340\" y=\"420\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"160\" y=\"420\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"324\" y=\"40\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"215\" y=\"820\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"104\" y=\"220\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"284\" y=\"220\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"374\" y=\"120\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"149\" y=\"320\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"329\" y=\"320\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"400\" y=\"520\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"40\" y=\"520\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"220\" y=\"520\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n  \u003c/g\u003e\n  \u003cg id=\"edges\"\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"0\" data-edge-base=\"leadsto\" data-edge-from=\"1\" data-edge-to=\"2\"\u003e\n    \u003cline x1=\"232.50\" y1=\"181.94\" x2=\"173.40\" y2=\"214.78\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 167.50 218.06 L 173.18 209.75 L 173.40 214.78 L 177.55 217.62 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"202\" y=\"197\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003eleads to\u003c/title\u003elead...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"1\" data-edge-base=\"leadsto\" data-edge-from=\"1\" data-edge-to=\"3\"\u003e\n    \u003cline x1=\"275.50\" y1=\"181.94\" x2=\"334.60\" y2=\"214.78\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 340.50 218.06 L 330.45 217.62 L 334.60 214.78 L 334.82 209.75 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"304\" y=\"197\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003eleads to\u003c/title\u003elead...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"2\" data-edge-base=\"leadsto\" data-edge-from=\"10\" data-edge-to=\"12\"\u003e\n    \u003cline x1=\"325.00\" y1=\"684.00\" x2=\"325.00\" y2=\"709.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 325.00 716.00 L 320.50 707.00 L 325.00 709.25 L 329.50 707.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"325\" y=\"696\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003eleads to\u003c/title\u003elead...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"3\" data-edge-base=\"leadsto\" data-edge-from=\"11\" data-edge-to=\"16\"\u003e\n    \u003cline x1=\"147.06\" y1=\"683.43\" x2=\"223.47\" y2=\"810.78\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 226.94 816.57 L 218.45 811.17 L 223.47 810.78 L 226.17 806.54 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"4\" data-edge-base=\"leadsto\" data-edge-from=\"12\" data-edge-to=\"16\"\u003e\n    \u003cline x1=\"321.39\" y1=\"781.72\" x2=\"250.71\" y2=\"815.38\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 244.61 818.28 L 250.80 810.35 L 250.71 815.38 L 254.67 818.47 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"5\" data-edge-base=\"leadsto\" data-edge-from=\"13\" data-edge-to=\"7\"\u003e\n    \u003cline x1=\"403.33\" y1=\"482.22\" x2=\"451.06\" y2=\"514.04\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 456.67 517.78 L 446.69 516.53 L 451.06 514.04 L 451.68 509.04 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"427\" y=\"498\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003eleads to\u003c/title\u003elead...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"6\" data-edge-base=\"leadsto\" data-edge-from=\"14\" data-edge-to=\"8\"\u003e\n    \u003cline x1=\"198.28\" y1=\"481.46\" x2=\"110.01\" y2=\"516.08\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 103.72 518.54 L 110.46 511.06 L 110.01 516.08 L 113.75 519.44 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"154\" y=\"498\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003eleads to\u003c/title\u003elead...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"7\" data-edge-base=\"leadsto\" data-edge-from=\"14\" data-edge-to=\"9\"\u003e\n    \u003cline x1=\"240.90\" y1=\"482.76\" x2=\"272.22\" y2=\"512.59\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 277.10 517.24 L 267.48 514.29 L 272.22 512.59 L 273.69 507.78 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"256\" y=\"497\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003eleads to\u003c/title\u003elead...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"8\" data-edge-base=\"leadsto\" data-edge-from=\"15\" data-edge-to=\"1\"\u003e\n    \u003cline x1=\"334.39\" y1=\"81.72\" x2=\"263.71\" y2=\"115.38\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 257.61 118.28 L 263.80 110.35 L 263.71 115.38 L 267.67 118.47 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"9\" data-edge-base=\"leadsto\" data-edge-from=\"15\" data-edge-to=\"4\"\u003e\n    \u003cline x1=\"353.61\" y1=\"81.72\" x2=\"424.29\" y2=\"115.38\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 430.39 118.28 L 420.33 118.47 L 424.29 115.38 L 424.20 110.35 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"10\" data-edge-base=\"leadsto\" data-edge-from=\"2\" data-edge-to=\"5\"\u003e\n    \u003cline x1=\"166.24\" y1=\"283.32\" x2=\"184.99\" y2=\"311.09\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 188.76 316.68 L 180.00 311.74 L 184.99 311.09 L 187.46 306.71 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"175\" y=\"297\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003eleads to\u003c/title\u003elead...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"11\" data-edge-base=\"leadsto\" data-edge-from=\"3\" data-edge-to=\"5\"\u003e\n    \u003cline x1=\"322.29\" y1=\"281.50\" x2=\"236.97\" y2=\"315.97\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 230.71 318.50 L 237.37 310.96 L 236.97 315.97 L 240.74 319.30 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"279\" y=\"298\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003eleads to\u003c/title\u003elead...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"12\" data-edge-base=\"leadsto\" data-edge-from=\"3\" data-edge-to=\"6\"\u003e\n    \u003cline x1=\"364.24\" y1=\"283.32\" x2=\"382.99\" y2=\"311.09\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 386.76 316.68 L 378.00 311.74 L 382.99 311.09 L 385.46 306.71 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"373\" y=\"297\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003eleads to\u003c/title\u003elead...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"13\" data-edge-base=\"leadsto\" data-edge-from=\"4\" data-edge-to=\"13\"\u003e\n    \u003cline x1=\"433.73\" y1=\"183.99\" x2=\"418.72\" y2=\"409.27\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 418.27 416.01 L 414.37 406.73 L 418.72 409.27 L 423.35 407.33 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"425\" y=\"296\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003eleads to\u003c/title\u003elead...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"14\" data-edge-base=\"leadsto\" data-edge-from=\"5\" data-edge-to=\"13\"\u003e\n    \u003cline x1=\"230.87\" y1=\"381.00\" x2=\"371.59\" y2=\"417.31\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 378.13 419.00 L 368.29 421.11 L 371.59 417.31 L 370.54 412.39 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"300\" y=\"398\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003eleads to\u003c/title\u003elead...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"15\" data-edge-base=\"leadsto\" data-edge-from=\"5\" data-edge-to=\"14\"\u003e\n    \u003cline x1=\"192.06\" y1=\"383.86\" x2=\"199.15\" y2=\"409.63\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 200.94 416.14 L 194.21 408.66 L 199.15 409.63 L 202.89 406.27 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"195\" y=\"396\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003eleads to\u003c/title\u003elead...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"16\" data-edge-base=\"leadsto\" data-edge-from=\"6\" data-edge-to=\"14\"\u003e\n    \u003cline x1=\"385.13\" y1=\"381.02\" x2=\"248.39\" y2=\"417.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 241.87 418.98 L 249.41 412.32 L 248.39 417.25 L 251.72 421.02 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"316\" y=\"399\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003eleads to\u003c/title\u003elead...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"17\" data-edge-base=\"leadsto\" data-edge-from=\"7\" data-edge-to=\"10\"\u003e\n    \u003cline x1=\"456.22\" y1=\"581.29\" x2=\"353.17\" y2=\"616.52\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 346.78 618.71 L 353.85 611.54 L 353.17 616.52 L 356.76 620.05 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"404\" y=\"598\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003eleads to\u003c/title\u003elead...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"18\" data-edge-base=\"leadsto\" data-edge-from=\"8\" data-edge-to=\"10\"\u003e\n    \u003cline x1=\"121.91\" y1=\"580.83\" x2=\"296.48\" y2=\"617.77\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 303.09 619.17 L 293.35 621.71 L 296.48 617.77 L 295.21 612.91 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"208\" y=\"598\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003eleads to\u003c/title\u003elead...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"19\" data-edge-base=\"leadsto\" data-edge-from=\"8\" data-edge-to=\"11\"\u003e\n    \u003cline x1=\"84.99\" y1=\"582.66\" x2=\"118.97\" y2=\"612.86\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 124.01 617.34 L 114.29 614.73 L 118.97 612.86 L 120.27 608.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"101\" y=\"597\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003eleads to\u003c/title\u003elead...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"20\" data-edge-base=\"leadsto\" data-edge-from=\"9\" data-edge-to=\"11\"\u003e\n    \u003cline x1=\"276.22\" y1=\"581.29\" x2=\"173.17\" y2=\"616.52\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 166.78 618.71 L 173.85 611.54 L 173.17 616.52 L 176.76 620.05 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"224\" y=\"598\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003eleads to\u003c/title\u003elead...\n    \u003c/text\u003e\n    \u003c/g\u003e\n  \u003c/g\u003e\n  \u003cg id=\"nodes\"\u003e\n    \u003crect x=\"194\" y=\"120\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"254\" y=\"150\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eA1\u003c/text\u003e\n    \u003crect x=\"265\" y=\"620\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"325\" y=\"650\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eB4\u003c/text\u003e\n    \u003crect x=\"85\" y=\"620\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"145\" y=\"650\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eB5\u003c/text\u003e\n    \u003crect x=\"265\" y=\"720\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"325\" y=\"750\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eB6\u003c/text\u003e\n    \u003crect x=\"340\" y=\"420\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"400\" y=\"450\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eS1\u003c/text\u003e\n    \u003crect x=\"160\" y=\"420\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"220\" y=\"450\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eS2\u003c/text\u003e\n    \u003crect x=\"324\" y=\"40\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"344\" y=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eS\u003c/text\u003e\n    \u003crect x=\"215\" y=\"820\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"235\" y=\"840\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eE\u003c/text\u003e\n    \u003crect x=\"104\" y=\"220\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"164\" y=\"250\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eA2\u003c/text\u003e\n    \u003crect x=\"284\" y=\"220\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"344\" y=\"250\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eA3\u003c/text\u003e\n    \u003crect x=\"374\" y=\"120\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"434\" y=\"150\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eA4\u003c/text\u003e\n    \u003crect x=\"149\" y=\"320\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"209\" y=\"350\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eA5\u003c/text\u003e\n    \u003crect x=\"329\" y=\"320\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"389\" y=\"350\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eA6\u003c/text\u003e\n    \u003crect x=\"400\" y=\"520\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"460\" y=\"550\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eB1\u003c/text\u003e\n    \u003crect x=\"40\" y=\"520\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"100\" y=\"550\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eB2\u003c/text\u003e\n    \u003crect x=\"220\" y=\"520\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"280\" y=\"550\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eB3\u003c/text\u003e\n  \u003c/g\u003e\n\u003c/svg\u003e\n"};
 </script>
 <script>
 // Zoomlayout Canvas — client
@@ -174,6 +233,7 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
   const inspectorContent = document.getElementById("inspector-content");
   const stateInfo = document.getElementById("state-info");
   const zoomInfo = document.getElementById("zoom-info");
+  const helpOverlay = document.getElementById("help-overlay");
 
   // --- Init ---
   // The offline single-page bundle pre-populates window.__BUNDLED_MODEL and
@@ -230,6 +290,10 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
     document.getElementById("copy-url-btn").addEventListener("click", copyViewURL);
     document.getElementById("expand-all-btn").addEventListener("click", goToFullyExpanded);
     document.getElementById("toggle-inspector-btn").addEventListener("click", toggleInspector);
+    document.getElementById("help-btn").addEventListener("click", openHelp);
+    document.getElementById("help-close").addEventListener("click", closeHelp);
+    // Click the dimmed backdrop (but not the panel) to dismiss.
+    helpOverlay.addEventListener("click", function (e) { if (e.target === helpOverlay) closeHelp(); });
 
     // Offline bundle has no server to download from — hide the icon so users
     // don't get a confusing 404 from clicking it under file://.
@@ -496,6 +560,10 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
 
     const overlayLayer = svgEl("g", { class: "click-targets" });
     svg.appendChild(overlayLayer);
+    // Corner-chip hit targets sit ABOVE the node bodies so a click on the chip
+    // navigates even though the body underneath only selects.
+    const chipLayer = svgEl("g", { class: "chip-targets" });
+    svg.appendChild(chipLayer);
 
     for (const n of st.nodes) {
       if (n.type === "boundary") continue;
@@ -514,47 +582,64 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
           "pointer-events": "stroke", cursor: "pointer",
         });
         g.appendChild(edge);
+        // Same gesture model as plain nodes: plain click selects the container;
+        // Ctrl/Cmd+click or double-click navigates (collapse / zoom-out), keeping
+        // the highlight only if the container was already selected.
         g.addEventListener("click", (function (id) {
           return function (e) {
+            if (didDrag) return; // a drag-to-pan that ended here, not a click
             e.stopPropagation();
-            const node = findNodeById(id);
-            if (!node) return;
-            selectedNodeID = id;
-            updateSelection();
-            updateInspector();
-            syncHash();
+            if (!findNodeById(id)) return;
+            if (e.ctrlKey || e.metaKey) handleNodeClick(id, { shallow: e.altKey, select: selectedNodeID === id });
+            else selectNodeOnly(id);
+          };
+        })(n.id));
+        g.addEventListener("dblclick", (function (id) {
+          return function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            if (!findNodeById(id)) return;
+            // Double-click navigates; an already-highlighted node stays
+            // highlighted after it expands (the two toggle-clicks net out, so
+            // selectedNodeID here reflects the pre-double-click selection).
+            handleNodeClick(id, { shallow: e.altKey, select: selectedNodeID === id });
           };
         })(n.id));
         overlayLayer.appendChild(g);
+        addChipTarget(chipLayer, n);
         continue;
       }
-
-      const tr = transitionForNode(n.id);
-      const cursor =
-        !tr ? "pointer" :
-        (tr.kind === "zoomOut" || tr.kind === "collapse") ? "zoom-out" :
-        "zoom-in";
 
       const g = svgEl("g", { class: "node-group", "data-node-id": n.id });
       const rect = svgEl("rect", {
         x: n.x, y: n.y, width: n.width, height: n.height,
-        fill: "transparent", stroke: "transparent", cursor: cursor,
+        // The body only selects, so it stays a plain pointer — the zoom/expand
+        // cursor lives on the corner chip (addChipTarget), the navigation target.
+        fill: "transparent", stroke: "transparent", cursor: "pointer",
       });
       g.appendChild(rect);
       g.addEventListener("click", (function (id) {
         return function (e) {
+          if (didDrag) return; // a drag-to-pan that ended here, not a click
           e.stopPropagation();
-          handleNodeClick(id, { shallow: e.altKey });
+          // Plain click highlights/selects only. Ctrl/Cmd+click navigates,
+          // keeping the highlight only if the node was already selected.
+          if (e.ctrlKey || e.metaKey) handleNodeClick(id, { shallow: e.altKey, select: selectedNodeID === id });
+          else selectNodeOnly(id);
         };
       })(n.id));
       g.addEventListener("dblclick", (function (id) {
         return function (e) {
           e.stopPropagation();
           e.preventDefault();
-          handleNodeClick(id);
+          // Double-click navigates; an already-highlighted node stays highlighted
+          // after it expands (the two toggle-clicks net out, so selectedNodeID
+          // here reflects the pre-double-click selection).
+          handleNodeClick(id, { shallow: e.altKey, select: selectedNodeID === id });
         };
       })(n.id));
       overlayLayer.appendChild(g);
+      addChipTarget(chipLayer, n);
     }
 
     wireEdgeInteraction(svg, st);
@@ -574,10 +659,53 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
     return el;
   }
 
+  // A navigable node carries a small corner badge ("chip", drawn server-side by
+  // GenerateWithHints at the node's top-right). It's the one place a PLAIN click
+  // still navigates (handleNodeClick) — and the only place that shows the zoom /
+  // expand cursor, so the node body stays a plain select target. Like the other
+  // navigation gestures, it keeps the highlight only if the node was already
+  // selected. No transition → no chip is drawn, so nothing is added.
+  function addChipTarget(layer, n) {
+    const tr = transitionForNode(n.id);
+    if (!tr) return;
+    const r = 5, inset = 2, half = 9; // badge radius/inset mirror GenerateWithHints; half = hit half-size
+    const cx = n.x + n.width - r - inset;
+    const cy = n.y + r + inset;
+    const cursor = (tr.kind === "zoomOut" || tr.kind === "collapse") ? "zoom-out" : "zoom-in";
+    const hit = svgEl("rect", {
+      x: cx - half, y: cy - half, width: half * 2, height: half * 2,
+      fill: "transparent", cursor: cursor, class: "chip-target", "data-node-id": n.id,
+    });
+    hit.addEventListener("click", (function (id) {
+      return function (e) {
+        if (didDrag) return; // a drag-to-pan that ended here, not a click
+        e.stopPropagation();
+        handleNodeClick(id, { shallow: e.altKey, select: selectedNodeID === id });
+      };
+    })(n.id));
+    layer.appendChild(hit);
+  }
+
   // --- Interaction ---
-  // Default click expands the whole subtree (zoomInAll/expandAll). Alt+click
-  // (or double-click) opens only one level — useful when the user wants to
-  // step in gradually instead of jumping to the fully-expanded state.
+  // Plain click only highlights/inspects a node — and clicking the already-
+  // selected node toggles the highlight back off. Navigation is reserved for
+  // Ctrl/Cmd+click, double-click and the corner chip.
+  function selectNodeOnly(nodeID) {
+    selectedNodeID = (selectedNodeID === nodeID) ? null : nodeID;
+    updateSelection();
+    updateInspector();
+    syncHash();
+  }
+
+  // handleNodeClick performs NAVIGATION (zoom-in / expand / zoom-out / collapse)
+  // and is reached via Ctrl/Cmd+click, double-click, or a corner-chip click. It
+  // expands the whole subtree (zoomInAll/expandAll); holding Alt as well opens
+  // only one level — for stepping in gradually instead of jumping straight to the
+  // fully-expanded state. Navigation PRESERVES the current selection: callers
+  // pass opts.select = (the node was already selected), so an already-highlighted
+  // node stays highlighted after it expands, while navigating an unselected node
+  // adds no highlight (opts.select === false). It never highlights a node the
+  // user hadn't already picked.
   function handleNodeClick(nodeID, opts) {
     opts = opts || {};
     const tr = transitionForNode(nodeID);
@@ -595,9 +723,10 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
       const srcNode = findNodeById(nodeID);
       const anchor = srcNode ? { id: nodeID, x: srcNode.x, y: srcNode.y, width: srcNode.width, height: srcNode.height } : null;
       goToStateFromNode(targetID, anchor, { preserveZoom: true });
-      // Keep the clicked node selected if it's still visible in the new state,
-      // so the inspector reflects the navigation target instead of going blank.
-      if (findNodeById(nodeID)) {
+      // Carry an already-highlighted node through the navigation (select:true)
+      // so an expanded container keeps its ring and inspector; otherwise leave
+      // it unselected (goToStateFromNode already cleared the selection).
+      if (opts.select !== false && findNodeById(nodeID)) {
         selectedNodeID = nodeID;
         updateSelection();
         updateInspector();
@@ -605,6 +734,9 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
       syncHash();
       return;
     }
+    // No transition (leaf node): a navigation-only gesture (select:false) is a
+    // no-op; a selecting caller falls back to plain selection.
+    if (opts.select === false) return;
     selectedNodeID = nodeID;
     updateSelection();
     updateInspector();
@@ -651,7 +783,7 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
   }
 
   function updateSelection() {
-    const old = svgContainer.querySelectorAll(".selection-highlight");
+    const old = svgContainer.querySelectorAll(".selection-highlight, .connected-border-highlight");
     for (let i = 0; i < old.length; i++) old[i].remove();
     const es = svgContainer.querySelectorAll("g.edge.edge-selected, g.edge.edge-connected");
     for (let i = 0; i < es.length; i++) es[i].classList.remove("edge-selected", "edge-connected");
@@ -661,10 +793,11 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
       if (node) {
         const svg = svgContainer.querySelector("svg");
         if (svg) {
+          const rr = String(selectionRingRadius(node));
           const h = svgEl("rect", {
             x: node.x - 2, y: node.y - 2,
             width: node.width + 4, height: node.height + 4,
-            rx: "8", ry: "8",
+            rx: rr, ry: rr,
             fill: "none", stroke: "#ffd700", "stroke-width": "3",
             class: "selection-highlight", "pointer-events": "none",
           });
@@ -673,6 +806,7 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
       }
       updateInspector();
       highlightConnectedEdges(selectedNodeID);
+      highlightConnectedNodeBorders(selectedNodeID);
     } else if (selectedEdgeIdx != null) {
       const eg = svgContainer.querySelector('g.edge[data-edge-idx="' + selectedEdgeIdx + '"]');
       if (eg) eg.classList.add("edge-selected");
@@ -724,11 +858,11 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
       html += '<div class="actions">';
 
       if (zoomInAllT && zoomInAllT !== currentStateID && (!tr || zoomInAllT !== tr.targetID)) {
-        html += '<button class="action-btn" onclick="window.__goToStateFromNode(\'' + escapeAttr(zoomInAllT) + '\',\'' + escapeAttr(idStr) + '\')" title="Same as clicking the node">' +
+        html += '<button class="action-btn" onclick="window.__goToStateFromNode(\'' + escapeAttr(zoomInAllT) + '\',\'' + escapeAttr(idStr) + '\')" title="Same as Ctrl+click or double-click the node">' +
                 'Zoom into subtree → ' + escapeHTML(zoomInAllT) + '</button>';
       }
       if (expandAllT && expandAllT !== currentStateID && (!tr || expandAllT !== tr.targetID)) {
-        html += '<button class="action-btn" onclick="window.__goToStateFromNode(\'' + escapeAttr(expandAllT) + '\',\'' + escapeAttr(idStr) + '\')" title="Same as clicking the node">' +
+        html += '<button class="action-btn" onclick="window.__goToStateFromNode(\'' + escapeAttr(expandAllT) + '\',\'' + escapeAttr(idStr) + '\')" title="Same as Ctrl+click or double-click the node">' +
                 'Expand subtree → ' + escapeHTML(expandAllT) + '</button>';
       }
 
@@ -739,7 +873,7 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
           expand: "Expand",
           collapse: "Collapse",
         }[tr.kind] || tr.kind;
-        const title = (tr.kind === "zoomIn" || tr.kind === "expand") ? ' title="Alt+click the node — opens one level only"' : '';
+        const title = (tr.kind === "zoomIn" || tr.kind === "expand") ? ' title="Ctrl+Alt+click or Alt+double-click the node — opens one level only"' : '';
         html += '<button class="action-btn" onclick="window.__goToStateFromNode(\'' + escapeAttr(tr.targetID) + '\',\'' + escapeAttr(idStr) + '\')"' + title + '>' +
                 label + ' → ' + escapeHTML(tr.targetID) + '</button>';
       }
@@ -804,6 +938,7 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
       // Hidden (stub) edges show NO hover tooltip — the "?" reads as "click to see
       // where this leads", and the from/to is shown in the inspector on click.
       g.addEventListener("click", function (ev) {
+        if (didDrag) return; // a drag-to-pan that ended here, not a click
         ev.stopPropagation();
         hideEdgeTooltip();
         if (selectedEdgeIdx === idx) {
@@ -867,6 +1002,7 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
     else svg.appendChild(layer);
     // One delegated handler — O(1) regardless of edge count.
     layer.addEventListener("click", function (ev) {
+      if (didDrag) return; // a drag-to-pan that ended here, not a click
       const t = ev.target.closest("[data-edge-idx]");
       if (!t) return;
       const idx = parseInt(t.getAttribute("data-edge-idx"), 10);
@@ -950,12 +1086,24 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
   function ringEndpointNode(node) {
     const svg = svgContainer.querySelector("svg");
     if (!svg) return;
+    const rr = String(selectionRingRadius(node));
     svg.appendChild(svgEl("rect", {
       x: node.x - 2, y: node.y - 2, width: node.width + 4, height: node.height + 4,
-      rx: "8", ry: "8", fill: "none", stroke: "#ffd700", "stroke-width": "3",
+      rx: rr, ry: rr, fill: "none", stroke: "#ffd700", "stroke-width": "3",
       class: "edge-endpoint-highlight", "pointer-events": "none",
     }));
   }
+
+  // The selection ring sits 2px outside a node, so its corner radius is the
+  // node's own corner radius + 2 — keeping it hugging the corners the same way on
+  // big rounded containers (rx 10) as on small nodes (rx 4) and normal ones (rx 6).
+  // Mirrors the radii ipmsvg uses (container shells rx 10; bodies rx 6, or 4 when
+  // a side is ≤ 40px).
+  function nodeCornerRadius(node) {
+    if (node.container) return 10;
+    return (node.width <= 40 || node.height <= 40) ? 4 : 6;
+  }
+  function selectionRingRadius(node) { return nodeCornerRadius(node) + 2; }
 
   // Selecting an edge rings BOTH its endpoint nodes in the same yellow (#ffd700) as
   // a node selection — so a clicked edge highlights its connected nodes too.
@@ -978,6 +1126,108 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
     }
   }
 
+  // For the selected node, dash-highlight the ONE side of each CONNECTED node that
+  // its edge lands on (top / right / bottom / left) — so you can see where every
+  // edge attaches on the far node, not just that the edge is lit. The attachment
+  // side comes from the rendered edge's port point (its endpoint nearest the far
+  // node). Far ends not visible in this state (e.g. cross-component stubs whose
+  // other end is off-canvas) are skipped.
+  function highlightConnectedNodeBorders(nodeID) {
+    const st = currentState();
+    if (!st || !st.edges) return;
+    const svg = svgContainer.querySelector("svg");
+    if (!svg) return;
+    for (let i = 0; i < st.edges.length; i++) {
+      const e = st.edges[i];
+      let farID = null;
+      if (String(e.from) === String(nodeID)) farID = e.to;
+      else if (String(e.to) === String(nodeID)) farID = e.from;
+      else continue;
+      const far = findNodeById(farID);
+      if (!far) continue; // far end not rendered in this state
+      const g = svg.querySelector('g.edge[data-edge-idx="' + i + '"]');
+      const port = g ? edgePortOnNode(g, far) : null;
+      const side = port ? nearestSide(far, port[0], port[1]) : facingSide(far, nodeID);
+      if (side) drawConnectedBorder(svg, far, side);
+    }
+  }
+
+  // The point where an edge group meets a node: of all <line> endpoints in the
+  // group, the one closest to the node centre is its port — it sits on the node
+  // border, while every other vertex heads away (toward the other end / a stub
+  // badge). Works for both normal edges and revealed cross-component stubs.
+  function edgePortOnNode(edgeG, node) {
+    const cx = node.x + node.width / 2, cy = node.y + node.height / 2;
+    let best = null, bestD = Infinity;
+    const lines = edgeG.querySelectorAll("line");
+    for (let i = 0; i < lines.length; i++) {
+      const ln = lines[i];
+      const pts = [
+        [parseFloat(ln.getAttribute("x1")), parseFloat(ln.getAttribute("y1"))],
+        [parseFloat(ln.getAttribute("x2")), parseFloat(ln.getAttribute("y2"))],
+      ];
+      for (let p = 0; p < pts.length; p++) {
+        const px = pts[p][0], py = pts[p][1];
+        if (isNaN(px) || isNaN(py)) continue;
+        const d = (px - cx) * (px - cx) + (py - cy) * (py - cy);
+        if (d < bestD) { bestD = d; best = pts[p]; }
+      }
+    }
+    return best;
+  }
+
+  // Which side of a node's rect a point sits on (smallest perpendicular gap).
+  function nearestSide(node, px, py) {
+    const dl = Math.abs(px - node.x);
+    const dr = Math.abs(px - (node.x + node.width));
+    const dt = Math.abs(py - node.y);
+    const db = Math.abs(py - (node.y + node.height));
+    const m = Math.min(dl, dr, dt, db);
+    if (m === dt) return "top";
+    if (m === db) return "bottom";
+    if (m === dl) return "left";
+    return "right";
+  }
+
+  // Fallback when no edge geometry is available: the side of `node` facing the
+  // other node (by centre-to-centre direction, dominant axis wins).
+  function facingSide(node, otherID) {
+    const other = findNodeById(otherID);
+    if (!other) return null;
+    const dx = (other.x + other.width / 2) - (node.x + node.width / 2);
+    const dy = (other.y + other.height / 2) - (node.y + node.height / 2);
+    if (Math.abs(dx) >= Math.abs(dy)) return dx >= 0 ? "right" : "left";
+    return dy >= 0 ? "bottom" : "top";
+  }
+
+  // Dotted gold segment along one side of a node — the border its connected edge
+  // lands on. Same gold as the selection ring; dotted so it reads as the incoming
+  // attachment point rather than a full selection. Both ends inset by the node's
+  // own corner radius so the dots cover the full straight part of the side without
+  // running into the rounded corners, and the dot spacing is fitted so one dot
+  // lands on each end — symmetric margins at both corners.
+  function drawConnectedBorder(svg, node, side) {
+    const x = node.x, y = node.y, w = node.width, h = node.height;
+    const horiz = (side === "top" || side === "bottom");
+    const len = horiz ? w : h;
+    const inset = Math.min(nodeCornerRadius(node), Math.max(0, (len - 8) / 2));
+    const run = len - 2 * inset;
+    // Evenly spaced round dots with one exactly on each end (period divides run).
+    const spacing = run / Math.max(1, Math.round(run / 7));
+    let x1, y1, x2, y2;
+    if (side === "top") { x1 = x + inset; y1 = y; x2 = x + w - inset; y2 = y; }
+    else if (side === "bottom") { x1 = x + inset; y1 = y + h; x2 = x + w - inset; y2 = y + h; }
+    else if (side === "left") { x1 = x; y1 = y + inset; x2 = x; y2 = y + h - inset; }
+    else { x1 = x + w; y1 = y + inset; x2 = x + w; y2 = y + h - inset; }
+    svg.appendChild(svgEl("line", {
+      x1: x1, y1: y1, x2: x2, y2: y2,
+      stroke: "#ffd700", "stroke-width": "3.5",
+      "stroke-dasharray": "0.1 " + (spacing - 0.1).toFixed(2),
+      "stroke-linecap": "round", class: "connected-border-highlight",
+      "pointer-events": "none",
+    }));
+  }
+
   // Hidden (stub) edges no longer show a hover tooltip; edgeTip stays null so the
   // defensive hideEdgeTooltip() calls in the edge click/dblclick handlers are no-ops.
   let edgeTip = null;
@@ -996,6 +1246,11 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
   }
 
   function hideEdgeTooltip() { if (edgeTip) edgeTip.style.display = "none"; }
+
+  // Help overlay (the "?" toolbar button / "?" key) — a dismissible modal of
+  // gestures & shortcuts. Closed by its ✕, the backdrop, or Escape.
+  function openHelp() { helpOverlay.hidden = false; }
+  function closeHelp() { helpOverlay.hidden = true; }
 
   // Show/hide the inspector panel — frees the canvas space it floats over.
   function toggleInspector() {
@@ -1149,22 +1404,29 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
 
   canvasWrap.addEventListener("mousedown", function (e) {
     if (e.button !== 0) return;
-    if (!e.target.closest(".node-group, .edge-hit")) {
-      isPanning = true;
-      didDrag = false;
-      panStartX = e.clientX;
-      panStartY = e.clientY;
-      panStartPanX = panX;
-      panStartPanY = panY;
-      canvasWrap.classList.add("dragging");
-    }
+    // Arm a potential pan from ANYWHERE — even on a node, edge or chip. If the
+    // pointer then moves past the drag threshold it becomes a pan and the click
+    // is suppressed (didDrag); otherwise it stays a plain click that
+    // selects/navigates. So you can start a drag-to-pan on top of a node and it
+    // still pans instead of selecting. The grab cursor only appears once it's
+    // actually a drag (set in mousemove), so a plain click doesn't flicker.
+    isPanning = true;
+    didDrag = false;
+    panStartX = e.clientX;
+    panStartY = e.clientY;
+    panStartPanX = panX;
+    panStartPanY = panY;
   });
 
   window.addEventListener("mousemove", function (e) {
     if (!isPanning) return;
     const dx = e.clientX - panStartX;
     const dy = e.clientY - panStartY;
-    if (!didDrag && (Math.abs(dx) > 4 || Math.abs(dy) > 4)) didDrag = true;
+    if (!didDrag) {
+      if (Math.abs(dx) <= 4 && Math.abs(dy) <= 4) return; // within click slop → not a drag yet
+      didDrag = true;
+      canvasWrap.classList.add("dragging");
+    }
     panX = panStartPanX + dx;
     panY = panStartPanY + dy;
     applyTransform();
@@ -1206,8 +1468,8 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
       // mousemove never fires on touch devices.
       lastMouseX = t.clientX - rect.left;
       lastMouseY = t.clientY - rect.top;
-      if (e.target.closest(".node-group")) {
-        // Tap on a node: let the synthesised click handle it.
+      if (e.target.closest(".node-group, .chip-target")) {
+        // Tap on a node or its chip: let the synthesised click handle it.
         touchMode = null;
         return;
       }
@@ -1283,7 +1545,9 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
   }
 
   document.addEventListener("keydown", function (e) {
+    if (e.key === "?") { openHelp(); return; }
     if (e.key === "Escape") {
+      if (!helpOverlay.hidden) { closeHelp(); return; } // help takes precedence
       if (selectedNodeID) {
         selectedNodeID = null;
         updateSelection();
@@ -1313,6 +1577,7 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
       return true;
     },
     clickNode: function (nodeID) { handleNodeClick(nodeID); },
+    selectNode: function (nodeID) { selectNodeOnly(nodeID); },
     listStates: function () { return Object.keys(statesByID); },
     currentTransitions: function () {
       const st = currentState();

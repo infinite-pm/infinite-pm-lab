@@ -21,7 +21,7 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #fff; colo
 #main { flex: 1; overflow: hidden; position: relative; }
 
 /* Canvas */
-#canvas-wrap { width: 100%; height: 100%; overflow: hidden; position: relative; cursor: grab; touch-action: none; }
+#canvas-wrap { width: 100%; height: 100%; overflow: hidden; position: relative; cursor: grab; touch-action: none; -webkit-user-select: none; user-select: none; }
 #canvas-wrap.dragging { cursor: grabbing; }
 #svg-container { transform-origin: 0 0; position: absolute; top: 0; left: 0; }
 
@@ -64,14 +64,30 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #fff; colo
 .action-btn.rel-expresses { border-left: 3px solid #6c8ebf; }
 .action-btn.rel-nearto { border-left: 3px solid #999999; }
 
+/* Help overlay — a dismissible modal listing all gestures/shortcuts. */
+#help-overlay { position: fixed; inset: 0; z-index: 3000; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.35); }
+#help-overlay[hidden] { display: none; }
+#help-panel { width: 440px; max-width: 92vw; max-height: 86vh; overflow-y: auto; }
+.help-head { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+.help-head h3 { margin: 0; flex: 1; }
+.help-sec { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #888; margin: 14px 0 6px; }
+.help-keys { display: grid; grid-template-columns: max-content 1fr; gap: 6px 14px; align-items: baseline; }
+.help-keys dt { white-space: nowrap; }
+.help-keys dd { color: #444; font-size: 14px; line-height: 1.4; margin: 0; }
+.help-keys kbd { display: inline-block; padding: 1px 6px; font: 12px/1.6 ui-monospace, SFMono-Regular, Menlo, monospace; background: #fff; border: 1px solid #ccc; border-bottom-width: 2px; border-radius: 4px; color: #333; }
+.help-keys .chip { display: inline-block; width: 16px; height: 16px; line-height: 14px; text-align: center; border: 1px solid #999; border-radius: 4px; background: #fff; font-size: 11px; color: #333; }
+
 /* Bottom bar */
 #bottombar { display: flex; align-items: center; gap: 16px; padding: 4px 16px; background: #f5f5f5; border-top: 1px solid #ddd; font-size: 12px; color: #888; min-height: 28px; flex-shrink: 0; }
 
 /* SVG interaction styles */
 .node-group { cursor: pointer; }
 .node-group:hover rect { opacity: 0.3; }
-.click-targets { pointer-events: all; }
+.click-targets, .chip-targets { pointer-events: all; }
 .selection-highlight { pointer-events: none; }
+/* Dotted gold marker on the one side of a CONNECTED node where the selected
+   node's edge attaches (drawn by highlightConnectedNodeBorders). */
+.connected-border-highlight { pointer-events: none; filter: drop-shadow(0 0 2px #ffd700); }
 
 /* Cross-component edge stubs: full edge hidden until the edge is SELECTED (click).
    Hovering only shows a tooltip — it does not reveal the edge. A selected edge is
@@ -111,6 +127,7 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #fff; colo
     <div id="view-panel" class="panel">
       <div class="panel-row">
         <h3>View</h3>
+        <button class="icon-btn" id="help-btn" title="Shortcuts &amp; help (?)">?</button>
         <button class="icon-btn" id="toggle-inspector-btn" title="Show/hide the inspector panel (free up canvas space)">▤</button>
         <button class="icon-btn" id="copy-url-btn" title="Copy a URL that restores the current state, selection, zoom and pan">🔗</button>
         <button class="icon-btn" id="expand-all-btn" title="Navigate to the fully-expanded state">⛶</button>
@@ -129,9 +146,51 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #fff; colo
   <span id="zoom-info">zoom: 100%</span>
 </div>
 
+<div id="help-overlay" hidden>
+  <div id="help-panel" class="panel" role="dialog" aria-label="Shortcuts and help">
+    <div class="help-head">
+      <h3>Shortcuts &amp; help</h3>
+      <button class="icon-btn" id="help-close" title="Close (Esc)">✕</button>
+    </div>
+
+    <div class="help-sec">Select &amp; inspect</div>
+    <dl class="help-keys">
+      <dt><kbd>Click</kbd> node</dt><dd>highlight &amp; inspect it — click it again to clear</dd>
+      <dt><kbd>Click</kbd> edge</dt><dd>select the edge (rings both ends)</dd>
+      <dt><kbd>Click</kbd> empty</dt><dd>clear the selection</dd>
+    </dl>
+
+    <div class="help-sec">Open / collapse a node</div>
+    <dl class="help-keys">
+      <dt><span class="chip">+</span> chip</dt><dd>the corner badge — a single click opens/collapses</dd>
+      <dt><kbd>Double-click</kbd></dt><dd>same as the chip</dd>
+      <dt><kbd>Ctrl</kbd>/<kbd>⌘</kbd>+<kbd>Click</kbd></dt><dd>same — opens the whole subtree</dd>
+      <dt>… +<kbd>Alt</kbd></dt><dd>open just one level instead</dd>
+    </dl>
+    <p style="color:#888; font-size:13px; margin:6px 0 0;">A highlighted node stays highlighted after it opens; a plain click never navigates.</p>
+
+    <div class="help-sec">Move around</div>
+    <dl class="help-keys">
+      <dt><kbd>Drag</kbd></dt><dd>pan — you can start the drag anywhere, even on a node</dd>
+      <dt><kbd>Scroll</kbd></dt><dd>zoom in / out</dd>
+      <dt><kbd>Esc</kbd></dt><dd>clear the selection, then zoom out</dd>
+      <dt>Breadcrumb</dt><dd>jump back to a parent state (top bar)</dd>
+    </dl>
+
+    <div class="help-sec">Toolbar</div>
+    <dl class="help-keys">
+      <dt>?</dt><dd>this help</dd>
+      <dt>▤</dt><dd>show / hide the inspector panel</dd>
+      <dt>🔗</dt><dd>copy a link that restores this exact view</dd>
+      <dt>⛶</dt><dd>jump to the fully-expanded state</dd>
+      <dt>⬇</dt><dd>download a self-contained offline copy</dd>
+    </dl>
+  </div>
+</div>
+
 <script>
-window.__BUNDLED_MODEL = {"source":"branches.ipmt","rootStateID":"s:","fullyExpandedStateID":"s:","states":[{"id":"s:","openSet":null,"expandedTCs":null,"transitions":{},"bounds":{"width":740,"height":780,"marginX":40,"marginY":40},"nodes":[{"id":"1","type":"event","label":"a doorway","alias":"e1","x":40,"y":420,"width":120,"height":60,"degree":2,"navTargets":{"prev":[{"id":"12","label":"there lay","type":"event"}],"next":[{"id":"5","label":"a secret room","type":"event"}]}},{"id":"2","type":"event","label":"a little prince","alias":"e2","x":310,"y":660,"width":120,"height":60,"degree":4,"navTargets":{"prev":[{"id":"10","label":"mischief!","type":"event"}],"next":[{"id":"15","label":"E","type":"boundary"}]}},{"id":"3","type":"event","label":"a magic carpet","alias":"e3","x":220,"y":420,"width":120,"height":60,"degree":2,"navTargets":{"prev":[{"id":"12","label":"there lay","type":"event"}],"next":[{"id":"15","label":"E","type":"boundary"}]}},{"id":"4","type":"event","label":"a princess","alias":"e4","x":400,"y":420,"width":120,"height":60,"degree":2,"navTargets":{"prev":[{"id":"13","label":"there was","type":"event"}],"next":[{"id":"10","label":"mischief!","type":"event"}]}},{"id":"5","type":"event","label":"a secret room","alias":"e5","x":220,"y":540,"width":120,"height":60,"degree":2,"navTargets":{"prev":[{"id":"1","label":"a doorway","type":"event"}],"next":[{"id":"15","label":"E","type":"boundary"}]}},{"id":"6","type":"event","label":"a time","alias":"e6","tooltip":"it could be any time of day","x":310,"y":220,"width":120,"height":60,"degree":3,"navTargets":{"prev":[{"id":"11","label":"once upon","type":"event"}],"next":[{"id":"12","label":"there lay","type":"event"},{"id":"13","label":"there was","type":"event"}]}},{"id":"7","type":"event","label":"a toad","alias":"e7","x":580,"y":420,"width":120,"height":60,"degree":2,"navTargets":{"prev":[{"id":"13","label":"there was","type":"event"}],"next":[{"id":"15","label":"E","type":"boundary"}]}},{"id":"8","type":"concept","label":"https://chit ek-i.org","label-original":"https://chitek-i.org","alias":"c8","x":490,"y":660,"width":120,"height":60,"degree":1,"navTargets":{}},{"id":"9","type":"concept","label":"https://m.me dia-amazon.c om/images/I/ 81yLt8OG7zL. jpg","label-original":"https://m.media-amazon.com/images/I/81yLt8OG7zL.jpg","alias":"c9","x":130,"y":640,"width":120,"height":100,"degree":1,"navTargets":{}},{"id":"10","type":"event","label":"mischief!","alias":"e10","x":400,"y":540,"width":120,"height":60,"degree":2,"navTargets":{"prev":[{"id":"4","label":"a princess","type":"event"}],"next":[{"id":"2","label":"a little prince","type":"event"}]}},{"id":"11","type":"event","label":"once upon","alias":"e11","x":310,"y":120,"width":120,"height":60,"degree":2,"navTargets":{"prev":[{"id":"14","label":"S","type":"boundary"}],"next":[{"id":"6","label":"a time","type":"event"}]}},{"id":"12","type":"event","label":"there lay","alias":"e12","x":220,"y":320,"width":120,"height":60,"degree":3,"navTargets":{"prev":[{"id":"6","label":"a time","type":"event"}],"next":[{"id":"1","label":"a doorway","type":"event"},{"id":"3","label":"a magic carpet","type":"event"}]}},{"id":"13","type":"event","label":"there was","alias":"e13","x":400,"y":320,"width":120,"height":60,"degree":3,"navTargets":{"prev":[{"id":"6","label":"a time","type":"event"}],"next":[{"id":"4","label":"a princess","type":"event"},{"id":"7","label":"a toad","type":"event"}]}},{"id":"14","type":"boundary","label":"S","x":350,"y":40,"width":40,"height":40,"degree":1,"navTargets":{"next":[{"id":"11","label":"once upon","type":"event"}]}},{"id":"15","type":"boundary","label":"E","x":620,"y":520,"width":40,"height":40,"degree":4,"navTargets":{"prev":[{"id":"2","label":"a little prince","type":"event"},{"id":"3","label":"a magic carpet","type":"event"},{"id":"5","label":"a secret room","type":"event"},{"id":"7","label":"a toad","type":"event"}]}}],"edges":[{"from":"1","to":"5","dir":"fwd","base":"leadsto","style":"leadsto","label":"leads to"},{"from":"10","to":"2","dir":"fwd","base":"leadsto","style":"leadsto","label":"thereafter"},{"from":"11","to":"6","dir":"fwd","base":"leadsto","style":"leadsto","label":"then followed by"},{"from":"12","to":"1","dir":"fwd","base":"leadsto","style":"leadsto","label":"then followed by"},{"from":"12","to":"3","dir":"fwd","base":"leadsto","style":"leadsto","label":"thereafter"},{"from":"13","to":"4","dir":"fwd","base":"leadsto","style":"leadsto","label":"thereafter"},{"from":"13","to":"7","dir":"fwd","base":"leadsto","style":"leadsto","label":"then followed by"},{"from":"14","to":"11","dir":"fwd","base":"leadsto","style":"leadsto"},{"from":"2","to":"15","dir":"fwd","base":"leadsto","style":"leadsto"},{"from":"2","to":"8","dir":"fwd","base":"expresses","style":"expresses","label":"has URL"},{"from":"2","to":"9","dir":"fwd","base":"expresses","style":"expresses","label":"has image"},{"from":"3","to":"15","dir":"fwd","base":"leadsto","style":"leadsto"},{"from":"4","to":"10","dir":"fwd","base":"leadsto","style":"leadsto","label":"thereafter"},{"from":"5","to":"15","dir":"fwd","base":"leadsto","style":"leadsto"},{"from":"6","to":"12","dir":"fwd","base":"leadsto","style":"leadsto","label":"then followed by"},{"from":"6","to":"13","dir":"fwd","base":"leadsto","style":"leadsto","label":"then followed by"},{"from":"7","to":"15","dir":"fwd","base":"leadsto","style":"leadsto"}],"ancestorChain":["s:"]}]};
-window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u003e\n\u003csvg xmlns=\"http://www.w3.org/2000/svg\" width=\"740\" height=\"780\" viewBox=\"0 0 740 780\"\u003e\n  \u003cdefs\u003e\n  \u003c/defs\u003e\n  \u003cg id=\"container-shells\"\u003e\n  \u003c/g\u003e\n  \u003cg id=\"node-shadows\"\u003e\n    \u003crect x=\"40\" y=\"420\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"400\" y=\"540\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"310\" y=\"120\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"220\" y=\"320\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"400\" y=\"320\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"350\" y=\"40\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"620\" y=\"520\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"310\" y=\"660\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"220\" y=\"420\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"400\" y=\"420\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"220\" y=\"540\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"310\" y=\"220\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"580\" y=\"420\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"490\" y=\"660\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"130\" y=\"640\" width=\"120\" height=\"100\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n  \u003c/g\u003e\n  \u003cg id=\"edges\"\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"0\" data-edge-base=\"leadsto\" data-edge-from=\"1\" data-edge-to=\"5\"\u003e\n    \u003cline x1=\"161.90\" y1=\"462.52\" x2=\"214.89\" y2=\"560.54\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 218.10 566.48 L 209.86 560.70 L 214.89 560.54 L 217.78 556.42 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"187\" y=\"511\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003eleads to\u003c/title\u003elead...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"1\" data-edge-base=\"leadsto\" data-edge-from=\"10\" data-edge-to=\"2\"\u003e\n    \u003cline x1=\"456.67\" y1=\"602.22\" x2=\"378.94\" y2=\"654.04\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 373.33 657.78 L 378.32 649.04 L 378.94 654.04 L 383.31 656.53 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"417\" y=\"628\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003ethereafter\u003c/title\u003ether...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"2\" data-edge-base=\"leadsto\" data-edge-from=\"11\" data-edge-to=\"6\"\u003e\n    \u003cline x1=\"370.00\" y1=\"184.00\" x2=\"370.00\" y2=\"209.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 370.00 216.00 L 365.50 207.00 L 370.00 209.25 L 374.50 207.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"370\" y=\"196\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003ethen followed by\u003c/title\u003ethen...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"3\" data-edge-base=\"leadsto\" data-edge-from=\"12\" data-edge-to=\"1\"\u003e\n    \u003cline x1=\"217.80\" y1=\"353.34\" x2=\"165.92\" y2=\"432.03\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 162.20 437.66 L 163.40 427.67 L 165.92 432.03 L 170.91 432.62 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"191\" y=\"392\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003ethen followed by\u003c/title\u003ethen...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"4\" data-edge-base=\"leadsto\" data-edge-from=\"12\" data-edge-to=\"3\"\u003e\n    \u003cline x1=\"280.00\" y1=\"384.00\" x2=\"280.00\" y2=\"409.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 280.00 416.00 L 275.50 407.00 L 280.00 409.25 L 284.50 407.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"280\" y=\"396\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003ethereafter\u003c/title\u003ether...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"5\" data-edge-base=\"leadsto\" data-edge-from=\"13\" data-edge-to=\"4\"\u003e\n    \u003cline x1=\"460.00\" y1=\"384.00\" x2=\"460.00\" y2=\"409.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 460.00 416.00 L 455.50 407.00 L 460.00 409.25 L 464.50 407.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"460\" y=\"396\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003ethereafter\u003c/title\u003ether...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"6\" data-edge-base=\"leadsto\" data-edge-from=\"13\" data-edge-to=\"7\"\u003e\n    \u003cline x1=\"522.06\" y1=\"353.43\" x2=\"574.47\" y2=\"440.78\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 577.94 446.57 L 569.45 441.17 L 574.47 440.78 L 577.17 436.54 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"548\" y=\"396\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003ethen followed by\u003c/title\u003ethen...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"7\" data-edge-base=\"leadsto\" data-edge-from=\"14\" data-edge-to=\"11\"\u003e\n    \u003cline x1=\"370.00\" y1=\"84.00\" x2=\"370.00\" y2=\"109.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 370.00 116.00 L 365.50 107.00 L 370.00 109.25 L 374.50 107.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"8\" data-edge-base=\"leadsto\" data-edge-from=\"2\" data-edge-to=\"15\"\u003e\n    \u003cline x1=\"433.20\" y1=\"678.60\" x2=\"635.41\" y2=\"526.46\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 640.80 522.40 L 636.32 531.41 L 635.41 526.46 L 630.91 524.22 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"9\" data-edge-base=\"expresses\" data-edge-from=\"2\" data-edge-to=\"8\"\u003e\n    \u003cline x1=\"433.96\" y1=\"698.41\" x2=\"479.37\" y2=\"691.59\" stroke=\"#6c8ebf\" stroke-width=\"3\" stroke-dasharray=\"9 6\" /\u003e\n    \u003cpath d=\"M 486.04 690.59 L 477.81 696.38 L 479.37 691.59 L 476.48 687.48 Z\" fill=\"#6c8ebf\" stroke=\"#6c8ebf\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"456\" y=\"694\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#6c8ebf\"\u003e\n      \u003ctitle\u003ehas URL\u003c/title\u003ehas...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"10\" data-edge-base=\"expresses\" data-edge-from=\"2\" data-edge-to=\"9\"\u003e\n    \u003cline x1=\"306.00\" y1=\"690.00\" x2=\"260.75\" y2=\"690.00\" stroke=\"#6c8ebf\" stroke-width=\"3\" stroke-dasharray=\"9 6\" /\u003e\n    \u003cpath d=\"M 254.00 690.00 L 263.00 685.50 L 260.75 690.00 L 263.00 694.50 Z\" fill=\"#6c8ebf\" stroke=\"#6c8ebf\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"283\" y=\"690\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#6c8ebf\"\u003e\n      \u003ctitle\u003ehas image\u003c/title\u003ehas...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"11\" data-edge-base=\"leadsto\" data-edge-from=\"3\" data-edge-to=\"15\"\u003e\n    \u003cline x1=\"343.89\" y1=\"450.94\" x2=\"617.55\" y2=\"517.46\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 624.11 519.06 L 614.30 521.30 L 617.55 517.46 L 616.43 512.56 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"12\" data-edge-base=\"leadsto\" data-edge-from=\"4\" data-edge-to=\"10\"\u003e\n    \u003cline x1=\"460.00\" y1=\"484.00\" x2=\"460.00\" y2=\"529.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 460.00 536.00 L 455.50 527.00 L 460.00 529.25 L 464.50 527.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"460\" y=\"506\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003ethereafter\u003c/title\u003ether...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"13\" data-edge-base=\"leadsto\" data-edge-from=\"5\" data-edge-to=\"15\"\u003e\n    \u003cline x1=\"343.94\" y1=\"569.33\" x2=\"625.40\" y2=\"521.79\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 632.06 520.67 L 623.93 526.60 L 625.40 521.79 L 622.43 517.73 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"14\" data-edge-base=\"leadsto\" data-edge-from=\"6\" data-edge-to=\"12\"\u003e\n    \u003cline x1=\"348.50\" y1=\"281.94\" x2=\"289.40\" y2=\"314.78\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 283.50 318.06 L 289.18 309.75 L 289.40 314.78 L 293.55 317.62 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"318\" y=\"297\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003ethen followed by\u003c/title\u003ethen...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"15\" data-edge-base=\"leadsto\" data-edge-from=\"6\" data-edge-to=\"13\"\u003e\n    \u003cline x1=\"391.50\" y1=\"281.94\" x2=\"450.60\" y2=\"314.78\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 456.50 318.06 L 446.45 317.62 L 450.60 314.78 L 450.82 309.75 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"420\" y=\"297\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003ethen followed by\u003c/title\u003ethen...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"16\" data-edge-base=\"leadsto\" data-edge-from=\"7\" data-edge-to=\"15\"\u003e\n    \u003cline x1=\"641.15\" y1=\"483.83\" x2=\"648.91\" y2=\"509.70\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 650.85 516.17 L 643.95 508.84 L 648.91 509.70 L 652.57 506.26 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n  \u003c/g\u003e\n  \u003cg id=\"nodes\"\u003e\n    \u003crect x=\"40\" y=\"420\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"100\" y=\"450\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003ea doorway\u003c/text\u003e\n    \u003crect x=\"400\" y=\"540\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"460\" y=\"570\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003emischief!\u003c/text\u003e\n    \u003crect x=\"310\" y=\"120\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"370\" y=\"150\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eonce upon\u003c/text\u003e\n    \u003crect x=\"220\" y=\"320\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"280\" y=\"350\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003ethere lay\u003c/text\u003e\n    \u003crect x=\"400\" y=\"320\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"460\" y=\"350\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003ethere was\u003c/text\u003e\n    \u003crect x=\"350\" y=\"40\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"370\" y=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eS\u003c/text\u003e\n    \u003crect x=\"620\" y=\"520\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"640\" y=\"540\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eE\u003c/text\u003e\n    \u003crect x=\"310\" y=\"660\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"370\" y=\"680\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003ea little\u003c/text\u003e\n    \u003ctext x=\"370\" y=\"700\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eprince\u003c/text\u003e\n    \u003crect x=\"220\" y=\"420\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"280\" y=\"440\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003ea magic\u003c/text\u003e\n    \u003ctext x=\"280\" y=\"460\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003ecarpet\u003c/text\u003e\n    \u003crect x=\"400\" y=\"420\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"460\" y=\"450\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003ea princess\u003c/text\u003e\n    \u003crect x=\"220\" y=\"540\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"280\" y=\"560\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003ea secret\u003c/text\u003e\n    \u003ctext x=\"280\" y=\"580\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eroom\u003c/text\u003e\n    \u003cg\u003e\n      \u003ctitle\u003eit could be any time of day\u003c/title\u003e\n    \u003crect x=\"310\" y=\"220\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"370\" y=\"250\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003ea time\u003c/text\u003e\n    \u003c/g\u003e\n    \u003crect x=\"580\" y=\"420\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"640\" y=\"450\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003ea toad\u003c/text\u003e\n    \u003crect x=\"490\" y=\"660\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#dae8fc\" stroke=\"#6c8ebf\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"550\" y=\"680\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"normal\" fill=\"#3399ff\"\u003ehttps://chit\u003c/text\u003e\n    \u003ctext x=\"550\" y=\"700\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"normal\" fill=\"#3399ff\"\u003eek-i.org\u003c/text\u003e\n    \u003crect x=\"130\" y=\"640\" width=\"120\" height=\"100\" rx=\"6\" ry=\"6\" fill=\"#dae8fc\" stroke=\"#6c8ebf\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"190\" y=\"656\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"normal\" fill=\"#3399ff\"\u003ehttps://m.me\u003c/text\u003e\n    \u003ctext x=\"190\" y=\"673\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"normal\" fill=\"#3399ff\"\u003edia-amazon.c\u003c/text\u003e\n    \u003ctext x=\"190\" y=\"690\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"normal\" fill=\"#3399ff\"\u003eom/images/I/\u003c/text\u003e\n    \u003ctext x=\"190\" y=\"707\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"normal\" fill=\"#3399ff\"\u003e81yLt8OG7zL.\u003c/text\u003e\n    \u003ctext x=\"190\" y=\"724\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"normal\" fill=\"#3399ff\"\u003ejpg\u003c/text\u003e\n  \u003c/g\u003e\n\u003c/svg\u003e\n"};
+window.__BUNDLED_MODEL = {"source":"branches.ipmt","rootStateID":"s:","fullyExpandedStateID":"s:","states":[{"id":"s:","openSet":null,"expandedTCs":null,"transitions":{},"bounds":{"width":700,"height":870,"marginX":40,"marginY":40},"nodes":[{"id":"1","type":"event","label":"a doorway","alias":"e1","x":40,"y":420,"width":120,"height":60,"degree":2,"navTargets":{"prev":[{"id":"12","label":"there lay","type":"event"}],"next":[{"id":"5","label":"a secret room","type":"event"}]}},{"id":"2","type":"event","label":"a little prince","alias":"e2","x":380,"y":690,"width":120,"height":60,"degree":4,"navTargets":{"prev":[{"id":"10","label":"mischief!","type":"event"}],"next":[{"id":"15","label":"E","type":"boundary"}]}},{"id":"3","type":"event","label":"a magic carpet","alias":"e3","x":200,"y":420,"width":120,"height":60,"degree":2,"navTargets":{"prev":[{"id":"12","label":"there lay","type":"event"}],"next":[{"id":"15","label":"E","type":"boundary"}]}},{"id":"4","type":"event","label":"a princess","alias":"e4","x":380,"y":420,"width":120,"height":60,"degree":2,"navTargets":{"prev":[{"id":"13","label":"there was","type":"event"}],"next":[{"id":"10","label":"mischief!","type":"event"}]}},{"id":"5","type":"event","label":"a secret room","alias":"e5","x":40,"y":520,"width":120,"height":60,"degree":2,"navTargets":{"prev":[{"id":"1","label":"a doorway","type":"event"}],"next":[{"id":"15","label":"E","type":"boundary"}]}},{"id":"6","type":"event","label":"a time","alias":"e6","tooltip":"it could be any time of day","x":290,"y":220,"width":120,"height":60,"degree":3,"navTargets":{"prev":[{"id":"11","label":"once upon","type":"event"}],"next":[{"id":"12","label":"there lay","type":"event"},{"id":"13","label":"there was","type":"event"}]}},{"id":"7","type":"event","label":"a toad","alias":"e7","x":540,"y":420,"width":120,"height":60,"degree":2,"navTargets":{"prev":[{"id":"13","label":"there was","type":"event"}],"next":[{"id":"15","label":"E","type":"boundary"}]}},{"id":"8","type":"concept","label":"https://chit ek-i.org","label-original":"https://chitek-i.org","alias":"c8","x":540,"y":760,"width":120,"height":60,"degree":1,"navTargets":{}},{"id":"9","type":"concept","label":"https://m.me dia-amazon.c om/images/I/ 81yLt8OG7zL. jpg","label-original":"https://m.media-amazon.com/images/I/81yLt8OG7zL.jpg","alias":"c9","x":540,"y":620,"width":120,"height":100,"degree":1,"navTargets":{}},{"id":"10","type":"event","label":"mischief!","alias":"e10","x":380,"y":520,"width":120,"height":60,"degree":2,"navTargets":{"prev":[{"id":"4","label":"a princess","type":"event"}],"next":[{"id":"2","label":"a little prince","type":"event"}]}},{"id":"11","type":"event","label":"once upon","alias":"e11","x":290,"y":120,"width":120,"height":60,"degree":2,"navTargets":{"prev":[{"id":"14","label":"S","type":"boundary"}],"next":[{"id":"6","label":"a time","type":"event"}]}},{"id":"12","type":"event","label":"there lay","alias":"e12","x":200,"y":320,"width":120,"height":60,"degree":3,"navTargets":{"prev":[{"id":"6","label":"a time","type":"event"}],"next":[{"id":"1","label":"a doorway","type":"event"},{"id":"3","label":"a magic carpet","type":"event"}]}},{"id":"13","type":"event","label":"there was","alias":"e13","x":380,"y":320,"width":120,"height":60,"degree":3,"navTargets":{"prev":[{"id":"6","label":"a time","type":"event"}],"next":[{"id":"4","label":"a princess","type":"event"},{"id":"7","label":"a toad","type":"event"}]}},{"id":"14","type":"boundary","label":"S","x":330,"y":40,"width":40,"height":40,"degree":1,"navTargets":{"next":[{"id":"11","label":"once upon","type":"event"}]}},{"id":"15","type":"boundary","label":"E","x":330,"y":790,"width":40,"height":40,"degree":4,"navTargets":{"prev":[{"id":"2","label":"a little prince","type":"event"},{"id":"3","label":"a magic carpet","type":"event"},{"id":"5","label":"a secret room","type":"event"},{"id":"7","label":"a toad","type":"event"}]}}],"edges":[{"from":"1","to":"5","dir":"fwd","base":"leadsto","style":"leadsto","label":"leads to"},{"from":"10","to":"2","dir":"fwd","base":"leadsto","style":"leadsto","label":"thereafter"},{"from":"11","to":"6","dir":"fwd","base":"leadsto","style":"leadsto","label":"then followed by"},{"from":"12","to":"1","dir":"fwd","base":"leadsto","style":"leadsto","label":"then followed by"},{"from":"12","to":"3","dir":"fwd","base":"leadsto","style":"leadsto","label":"thereafter"},{"from":"13","to":"4","dir":"fwd","base":"leadsto","style":"leadsto","label":"thereafter"},{"from":"13","to":"7","dir":"fwd","base":"leadsto","style":"leadsto","label":"then followed by"},{"from":"14","to":"11","dir":"fwd","base":"leadsto","style":"leadsto"},{"from":"2","to":"15","dir":"fwd","base":"leadsto","style":"leadsto"},{"from":"2","to":"8","dir":"fwd","base":"expresses","style":"expresses","label":"has URL"},{"from":"2","to":"9","dir":"fwd","base":"expresses","style":"expresses","label":"has image"},{"from":"3","to":"15","dir":"fwd","base":"leadsto","style":"leadsto"},{"from":"4","to":"10","dir":"fwd","base":"leadsto","style":"leadsto","label":"thereafter"},{"from":"5","to":"15","dir":"fwd","base":"leadsto","style":"leadsto"},{"from":"6","to":"12","dir":"fwd","base":"leadsto","style":"leadsto","label":"then followed by"},{"from":"6","to":"13","dir":"fwd","base":"leadsto","style":"leadsto","label":"then followed by"},{"from":"7","to":"15","dir":"fwd","base":"leadsto","style":"leadsto"}],"ancestorChain":["s:"]}]};
+window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u003e\n\u003csvg xmlns=\"http://www.w3.org/2000/svg\" width=\"700\" height=\"870\" viewBox=\"0 0 700 870\"\u003e\n  \u003cdefs\u003e\n  \u003c/defs\u003e\n  \u003cg id=\"container-shells\"\u003e\n  \u003c/g\u003e\n  \u003cg id=\"node-shadows\"\u003e\n    \u003crect x=\"40\" y=\"420\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"380\" y=\"520\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"290\" y=\"120\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"200\" y=\"320\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"380\" y=\"320\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"330\" y=\"40\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"330\" y=\"790\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"380\" y=\"690\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"200\" y=\"420\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"380\" y=\"420\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"40\" y=\"520\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"290\" y=\"220\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"540\" y=\"420\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"540\" y=\"760\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"540\" y=\"620\" width=\"120\" height=\"100\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n  \u003c/g\u003e\n  \u003cg id=\"edges\"\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"0\" data-edge-base=\"leadsto\" data-edge-from=\"1\" data-edge-to=\"5\"\u003e\n    \u003cline x1=\"100.00\" y1=\"484.00\" x2=\"100.00\" y2=\"509.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 100.00 516.00 L 95.50 507.00 L 100.00 509.25 L 104.50 507.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"100\" y=\"496\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003eleads to\u003c/title\u003elead...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"1\" data-edge-base=\"leadsto\" data-edge-from=\"10\" data-edge-to=\"2\"\u003e\n    \u003cline x1=\"439.22\" y1=\"583.92\" x2=\"420.11\" y2=\"679.46\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 418.78 686.08 L 416.14 676.37 L 420.11 679.46 L 424.96 678.13 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"429\" y=\"631\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003ethereafter\u003c/title\u003ether...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"2\" data-edge-base=\"leadsto\" data-edge-from=\"11\" data-edge-to=\"6\"\u003e\n    \u003cline x1=\"350.00\" y1=\"184.00\" x2=\"350.00\" y2=\"209.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 350.00 216.00 L 345.50 207.00 L 350.00 209.25 L 354.50 207.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"350\" y=\"196\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003ethen followed by\u003c/title\u003ethen...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"3\" data-edge-base=\"leadsto\" data-edge-from=\"12\" data-edge-to=\"1\"\u003e\n    \u003cline x1=\"238.15\" y1=\"381.08\" x2=\"110.35\" y2=\"417.09\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 103.85 418.92 L 111.29 412.14 L 110.35 417.09 L 113.73 420.81 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"174\" y=\"399\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003ethen followed by\u003c/title\u003ethen...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"4\" data-edge-base=\"leadsto\" data-edge-from=\"12\" data-edge-to=\"3\"\u003e\n    \u003cline x1=\"276.36\" y1=\"383.65\" x2=\"264.41\" y2=\"410.20\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 261.64 416.35 L 261.23 406.30 L 264.41 410.20 L 269.44 409.99 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"270\" y=\"396\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003ethereafter\u003c/title\u003ether...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"5\" data-edge-base=\"leadsto\" data-edge-from=\"13\" data-edge-to=\"4\"\u003e\n    \u003cline x1=\"423.64\" y1=\"383.65\" x2=\"435.59\" y2=\"410.20\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 438.36 416.35 L 430.56 409.99 L 435.59 410.20 L 438.77 406.30 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"429\" y=\"396\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003ethereafter\u003c/title\u003ether...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"6\" data-edge-base=\"leadsto\" data-edge-from=\"13\" data-edge-to=\"7\"\u003e\n    \u003cline x1=\"461.85\" y1=\"381.08\" x2=\"589.65\" y2=\"417.09\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 596.15 418.92 L 586.27 420.81 L 589.65 417.09 L 588.71 412.14 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"525\" y=\"399\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003ethen followed by\u003c/title\u003ethen...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"7\" data-edge-base=\"leadsto\" data-edge-from=\"14\" data-edge-to=\"11\"\u003e\n    \u003cline x1=\"350.00\" y1=\"84.00\" x2=\"350.00\" y2=\"109.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 350.00 116.00 L 345.50 107.00 L 350.00 109.25 L 354.50 107.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"8\" data-edge-base=\"leadsto\" data-edge-from=\"2\" data-edge-to=\"15\"\u003e\n    \u003cline x1=\"436.37\" y1=\"751.69\" x2=\"363.75\" y2=\"785.47\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 357.63 788.31 L 363.89 780.44 L 363.75 785.47 L 367.69 788.60 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"9\" data-edge-base=\"expresses\" data-edge-from=\"2\" data-edge-to=\"8\"\u003e\n    \u003cline x1=\"502.07\" y1=\"727.42\" x2=\"534.43\" y2=\"780.81\" stroke=\"#6c8ebf\" stroke-width=\"3\" stroke-dasharray=\"9 6\" /\u003e\n    \u003cpath d=\"M 537.93 786.58 L 529.41 781.21 L 534.43 780.81 L 537.11 776.55 Z\" fill=\"#6c8ebf\" stroke=\"#6c8ebf\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"518\" y=\"753\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#6c8ebf\"\u003e\n      \u003ctitle\u003ehas URL\u003c/title\u003ehas...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"10\" data-edge-base=\"expresses\" data-edge-from=\"2\" data-edge-to=\"9\"\u003e\n    \u003cline x1=\"504.00\" y1=\"705.00\" x2=\"529.25\" y2=\"705.00\" stroke=\"#6c8ebf\" stroke-width=\"3\" stroke-dasharray=\"9 6\" /\u003e\n    \u003cpath d=\"M 536.00 705.00 L 527.00 709.50 L 529.25 705.00 L 527.00 700.50 Z\" fill=\"#6c8ebf\" stroke=\"#6c8ebf\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"516\" y=\"705\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#6c8ebf\"\u003e\n      \u003ctitle\u003ehas image\u003c/title\u003ehas...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"11\" data-edge-base=\"leadsto\" data-edge-from=\"3\" data-edge-to=\"15\"\u003e\n    \u003cline x1=\"261.07\" y1=\"483.85\" x2=\"343.13\" y2=\"779.64\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 344.93 786.15 L 338.19 778.68 L 343.13 779.64 L 346.86 776.27 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"12\" data-edge-base=\"leadsto\" data-edge-from=\"4\" data-edge-to=\"10\"\u003e\n    \u003cline x1=\"440.00\" y1=\"484.00\" x2=\"440.00\" y2=\"509.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 440.00 516.00 L 435.50 507.00 L 440.00 509.25 L 444.50 507.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"440\" y=\"496\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003ethereafter\u003c/title\u003ether...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"13\" data-edge-base=\"leadsto\" data-edge-from=\"5\" data-edge-to=\"15\"\u003e\n    \u003cline x1=\"103.00\" y1=\"582.65\" x2=\"329.94\" y2=\"782.89\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 335.00 787.35 L 325.27 784.77 L 329.94 782.89 L 331.23 778.02 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"14\" data-edge-base=\"leadsto\" data-edge-from=\"6\" data-edge-to=\"12\"\u003e\n    \u003cline x1=\"328.50\" y1=\"281.94\" x2=\"269.40\" y2=\"314.78\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 263.50 318.06 L 269.18 309.75 L 269.40 314.78 L 273.55 317.62 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"298\" y=\"297\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003ethen followed by\u003c/title\u003ethen...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"15\" data-edge-base=\"leadsto\" data-edge-from=\"6\" data-edge-to=\"13\"\u003e\n    \u003cline x1=\"371.50\" y1=\"281.94\" x2=\"430.60\" y2=\"314.78\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 436.50 318.06 L 426.45 317.62 L 430.60 314.78 L 430.82 309.75 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"400\" y=\"297\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003ethen followed by\u003c/title\u003ethen...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"16\" data-edge-base=\"leadsto\" data-edge-from=\"7\" data-edge-to=\"15\"\u003e\n    \u003cline x1=\"597.56\" y1=\"483.17\" x2=\"368.55\" y2=\"781.47\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 364.44 786.83 L 366.35 776.95 L 368.55 781.47 L 373.49 782.43 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n  \u003c/g\u003e\n  \u003cg id=\"nodes\"\u003e\n    \u003crect x=\"40\" y=\"420\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"100\" y=\"450\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003ea doorway\u003c/text\u003e\n    \u003crect x=\"380\" y=\"520\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"440\" y=\"550\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003emischief!\u003c/text\u003e\n    \u003crect x=\"290\" y=\"120\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"350\" y=\"150\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eonce upon\u003c/text\u003e\n    \u003crect x=\"200\" y=\"320\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"260\" y=\"350\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003ethere lay\u003c/text\u003e\n    \u003crect x=\"380\" y=\"320\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"440\" y=\"350\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003ethere was\u003c/text\u003e\n    \u003crect x=\"330\" y=\"40\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"350\" y=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eS\u003c/text\u003e\n    \u003crect x=\"330\" y=\"790\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"350\" y=\"810\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eE\u003c/text\u003e\n    \u003crect x=\"380\" y=\"690\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"440\" y=\"710\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003ea little\u003c/text\u003e\n    \u003ctext x=\"440\" y=\"730\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eprince\u003c/text\u003e\n    \u003crect x=\"200\" y=\"420\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"260\" y=\"440\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003ea magic\u003c/text\u003e\n    \u003ctext x=\"260\" y=\"460\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003ecarpet\u003c/text\u003e\n    \u003crect x=\"380\" y=\"420\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"440\" y=\"450\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003ea princess\u003c/text\u003e\n    \u003crect x=\"40\" y=\"520\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"100\" y=\"540\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003ea secret\u003c/text\u003e\n    \u003ctext x=\"100\" y=\"560\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eroom\u003c/text\u003e\n    \u003cg\u003e\n      \u003ctitle\u003eit could be any time of day\u003c/title\u003e\n    \u003crect x=\"290\" y=\"220\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"350\" y=\"250\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003ea time\u003c/text\u003e\n    \u003c/g\u003e\n    \u003crect x=\"540\" y=\"420\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"600\" y=\"450\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003ea toad\u003c/text\u003e\n    \u003crect x=\"540\" y=\"760\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#dae8fc\" stroke=\"#6c8ebf\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"600\" y=\"780\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"normal\" fill=\"#3399ff\"\u003ehttps://chit\u003c/text\u003e\n    \u003ctext x=\"600\" y=\"800\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"normal\" fill=\"#3399ff\"\u003eek-i.org\u003c/text\u003e\n    \u003crect x=\"540\" y=\"620\" width=\"120\" height=\"100\" rx=\"6\" ry=\"6\" fill=\"#dae8fc\" stroke=\"#6c8ebf\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"600\" y=\"636\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"normal\" fill=\"#3399ff\"\u003ehttps://m.me\u003c/text\u003e\n    \u003ctext x=\"600\" y=\"653\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"normal\" fill=\"#3399ff\"\u003edia-amazon.c\u003c/text\u003e\n    \u003ctext x=\"600\" y=\"670\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"normal\" fill=\"#3399ff\"\u003eom/images/I/\u003c/text\u003e\n    \u003ctext x=\"600\" y=\"687\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"normal\" fill=\"#3399ff\"\u003e81yLt8OG7zL.\u003c/text\u003e\n    \u003ctext x=\"600\" y=\"704\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"normal\" fill=\"#3399ff\"\u003ejpg\u003c/text\u003e\n  \u003c/g\u003e\n\u003c/svg\u003e\n"};
 </script>
 <script>
 // Zoomlayout Canvas — client
@@ -174,6 +233,7 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
   const inspectorContent = document.getElementById("inspector-content");
   const stateInfo = document.getElementById("state-info");
   const zoomInfo = document.getElementById("zoom-info");
+  const helpOverlay = document.getElementById("help-overlay");
 
   // --- Init ---
   // The offline single-page bundle pre-populates window.__BUNDLED_MODEL and
@@ -230,6 +290,10 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
     document.getElementById("copy-url-btn").addEventListener("click", copyViewURL);
     document.getElementById("expand-all-btn").addEventListener("click", goToFullyExpanded);
     document.getElementById("toggle-inspector-btn").addEventListener("click", toggleInspector);
+    document.getElementById("help-btn").addEventListener("click", openHelp);
+    document.getElementById("help-close").addEventListener("click", closeHelp);
+    // Click the dimmed backdrop (but not the panel) to dismiss.
+    helpOverlay.addEventListener("click", function (e) { if (e.target === helpOverlay) closeHelp(); });
 
     // Offline bundle has no server to download from — hide the icon so users
     // don't get a confusing 404 from clicking it under file://.
@@ -496,6 +560,10 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
 
     const overlayLayer = svgEl("g", { class: "click-targets" });
     svg.appendChild(overlayLayer);
+    // Corner-chip hit targets sit ABOVE the node bodies so a click on the chip
+    // navigates even though the body underneath only selects.
+    const chipLayer = svgEl("g", { class: "chip-targets" });
+    svg.appendChild(chipLayer);
 
     for (const n of st.nodes) {
       if (n.type === "boundary") continue;
@@ -514,47 +582,64 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
           "pointer-events": "stroke", cursor: "pointer",
         });
         g.appendChild(edge);
+        // Same gesture model as plain nodes: plain click selects the container;
+        // Ctrl/Cmd+click or double-click navigates (collapse / zoom-out), keeping
+        // the highlight only if the container was already selected.
         g.addEventListener("click", (function (id) {
           return function (e) {
+            if (didDrag) return; // a drag-to-pan that ended here, not a click
             e.stopPropagation();
-            const node = findNodeById(id);
-            if (!node) return;
-            selectedNodeID = id;
-            updateSelection();
-            updateInspector();
-            syncHash();
+            if (!findNodeById(id)) return;
+            if (e.ctrlKey || e.metaKey) handleNodeClick(id, { shallow: e.altKey, select: selectedNodeID === id });
+            else selectNodeOnly(id);
+          };
+        })(n.id));
+        g.addEventListener("dblclick", (function (id) {
+          return function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            if (!findNodeById(id)) return;
+            // Double-click navigates; an already-highlighted node stays
+            // highlighted after it expands (the two toggle-clicks net out, so
+            // selectedNodeID here reflects the pre-double-click selection).
+            handleNodeClick(id, { shallow: e.altKey, select: selectedNodeID === id });
           };
         })(n.id));
         overlayLayer.appendChild(g);
+        addChipTarget(chipLayer, n);
         continue;
       }
-
-      const tr = transitionForNode(n.id);
-      const cursor =
-        !tr ? "pointer" :
-        (tr.kind === "zoomOut" || tr.kind === "collapse") ? "zoom-out" :
-        "zoom-in";
 
       const g = svgEl("g", { class: "node-group", "data-node-id": n.id });
       const rect = svgEl("rect", {
         x: n.x, y: n.y, width: n.width, height: n.height,
-        fill: "transparent", stroke: "transparent", cursor: cursor,
+        // The body only selects, so it stays a plain pointer — the zoom/expand
+        // cursor lives on the corner chip (addChipTarget), the navigation target.
+        fill: "transparent", stroke: "transparent", cursor: "pointer",
       });
       g.appendChild(rect);
       g.addEventListener("click", (function (id) {
         return function (e) {
+          if (didDrag) return; // a drag-to-pan that ended here, not a click
           e.stopPropagation();
-          handleNodeClick(id, { shallow: e.altKey });
+          // Plain click highlights/selects only. Ctrl/Cmd+click navigates,
+          // keeping the highlight only if the node was already selected.
+          if (e.ctrlKey || e.metaKey) handleNodeClick(id, { shallow: e.altKey, select: selectedNodeID === id });
+          else selectNodeOnly(id);
         };
       })(n.id));
       g.addEventListener("dblclick", (function (id) {
         return function (e) {
           e.stopPropagation();
           e.preventDefault();
-          handleNodeClick(id);
+          // Double-click navigates; an already-highlighted node stays highlighted
+          // after it expands (the two toggle-clicks net out, so selectedNodeID
+          // here reflects the pre-double-click selection).
+          handleNodeClick(id, { shallow: e.altKey, select: selectedNodeID === id });
         };
       })(n.id));
       overlayLayer.appendChild(g);
+      addChipTarget(chipLayer, n);
     }
 
     wireEdgeInteraction(svg, st);
@@ -574,10 +659,53 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
     return el;
   }
 
+  // A navigable node carries a small corner badge ("chip", drawn server-side by
+  // GenerateWithHints at the node's top-right). It's the one place a PLAIN click
+  // still navigates (handleNodeClick) — and the only place that shows the zoom /
+  // expand cursor, so the node body stays a plain select target. Like the other
+  // navigation gestures, it keeps the highlight only if the node was already
+  // selected. No transition → no chip is drawn, so nothing is added.
+  function addChipTarget(layer, n) {
+    const tr = transitionForNode(n.id);
+    if (!tr) return;
+    const r = 5, inset = 2, half = 9; // badge radius/inset mirror GenerateWithHints; half = hit half-size
+    const cx = n.x + n.width - r - inset;
+    const cy = n.y + r + inset;
+    const cursor = (tr.kind === "zoomOut" || tr.kind === "collapse") ? "zoom-out" : "zoom-in";
+    const hit = svgEl("rect", {
+      x: cx - half, y: cy - half, width: half * 2, height: half * 2,
+      fill: "transparent", cursor: cursor, class: "chip-target", "data-node-id": n.id,
+    });
+    hit.addEventListener("click", (function (id) {
+      return function (e) {
+        if (didDrag) return; // a drag-to-pan that ended here, not a click
+        e.stopPropagation();
+        handleNodeClick(id, { shallow: e.altKey, select: selectedNodeID === id });
+      };
+    })(n.id));
+    layer.appendChild(hit);
+  }
+
   // --- Interaction ---
-  // Default click expands the whole subtree (zoomInAll/expandAll). Alt+click
-  // (or double-click) opens only one level — useful when the user wants to
-  // step in gradually instead of jumping to the fully-expanded state.
+  // Plain click only highlights/inspects a node — and clicking the already-
+  // selected node toggles the highlight back off. Navigation is reserved for
+  // Ctrl/Cmd+click, double-click and the corner chip.
+  function selectNodeOnly(nodeID) {
+    selectedNodeID = (selectedNodeID === nodeID) ? null : nodeID;
+    updateSelection();
+    updateInspector();
+    syncHash();
+  }
+
+  // handleNodeClick performs NAVIGATION (zoom-in / expand / zoom-out / collapse)
+  // and is reached via Ctrl/Cmd+click, double-click, or a corner-chip click. It
+  // expands the whole subtree (zoomInAll/expandAll); holding Alt as well opens
+  // only one level — for stepping in gradually instead of jumping straight to the
+  // fully-expanded state. Navigation PRESERVES the current selection: callers
+  // pass opts.select = (the node was already selected), so an already-highlighted
+  // node stays highlighted after it expands, while navigating an unselected node
+  // adds no highlight (opts.select === false). It never highlights a node the
+  // user hadn't already picked.
   function handleNodeClick(nodeID, opts) {
     opts = opts || {};
     const tr = transitionForNode(nodeID);
@@ -595,9 +723,10 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
       const srcNode = findNodeById(nodeID);
       const anchor = srcNode ? { id: nodeID, x: srcNode.x, y: srcNode.y, width: srcNode.width, height: srcNode.height } : null;
       goToStateFromNode(targetID, anchor, { preserveZoom: true });
-      // Keep the clicked node selected if it's still visible in the new state,
-      // so the inspector reflects the navigation target instead of going blank.
-      if (findNodeById(nodeID)) {
+      // Carry an already-highlighted node through the navigation (select:true)
+      // so an expanded container keeps its ring and inspector; otherwise leave
+      // it unselected (goToStateFromNode already cleared the selection).
+      if (opts.select !== false && findNodeById(nodeID)) {
         selectedNodeID = nodeID;
         updateSelection();
         updateInspector();
@@ -605,6 +734,9 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
       syncHash();
       return;
     }
+    // No transition (leaf node): a navigation-only gesture (select:false) is a
+    // no-op; a selecting caller falls back to plain selection.
+    if (opts.select === false) return;
     selectedNodeID = nodeID;
     updateSelection();
     updateInspector();
@@ -651,7 +783,7 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
   }
 
   function updateSelection() {
-    const old = svgContainer.querySelectorAll(".selection-highlight");
+    const old = svgContainer.querySelectorAll(".selection-highlight, .connected-border-highlight");
     for (let i = 0; i < old.length; i++) old[i].remove();
     const es = svgContainer.querySelectorAll("g.edge.edge-selected, g.edge.edge-connected");
     for (let i = 0; i < es.length; i++) es[i].classList.remove("edge-selected", "edge-connected");
@@ -661,10 +793,11 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
       if (node) {
         const svg = svgContainer.querySelector("svg");
         if (svg) {
+          const rr = String(selectionRingRadius(node));
           const h = svgEl("rect", {
             x: node.x - 2, y: node.y - 2,
             width: node.width + 4, height: node.height + 4,
-            rx: "8", ry: "8",
+            rx: rr, ry: rr,
             fill: "none", stroke: "#ffd700", "stroke-width": "3",
             class: "selection-highlight", "pointer-events": "none",
           });
@@ -673,6 +806,7 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
       }
       updateInspector();
       highlightConnectedEdges(selectedNodeID);
+      highlightConnectedNodeBorders(selectedNodeID);
     } else if (selectedEdgeIdx != null) {
       const eg = svgContainer.querySelector('g.edge[data-edge-idx="' + selectedEdgeIdx + '"]');
       if (eg) eg.classList.add("edge-selected");
@@ -724,11 +858,11 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
       html += '<div class="actions">';
 
       if (zoomInAllT && zoomInAllT !== currentStateID && (!tr || zoomInAllT !== tr.targetID)) {
-        html += '<button class="action-btn" onclick="window.__goToStateFromNode(\'' + escapeAttr(zoomInAllT) + '\',\'' + escapeAttr(idStr) + '\')" title="Same as clicking the node">' +
+        html += '<button class="action-btn" onclick="window.__goToStateFromNode(\'' + escapeAttr(zoomInAllT) + '\',\'' + escapeAttr(idStr) + '\')" title="Same as Ctrl+click or double-click the node">' +
                 'Zoom into subtree → ' + escapeHTML(zoomInAllT) + '</button>';
       }
       if (expandAllT && expandAllT !== currentStateID && (!tr || expandAllT !== tr.targetID)) {
-        html += '<button class="action-btn" onclick="window.__goToStateFromNode(\'' + escapeAttr(expandAllT) + '\',\'' + escapeAttr(idStr) + '\')" title="Same as clicking the node">' +
+        html += '<button class="action-btn" onclick="window.__goToStateFromNode(\'' + escapeAttr(expandAllT) + '\',\'' + escapeAttr(idStr) + '\')" title="Same as Ctrl+click or double-click the node">' +
                 'Expand subtree → ' + escapeHTML(expandAllT) + '</button>';
       }
 
@@ -739,7 +873,7 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
           expand: "Expand",
           collapse: "Collapse",
         }[tr.kind] || tr.kind;
-        const title = (tr.kind === "zoomIn" || tr.kind === "expand") ? ' title="Alt+click the node — opens one level only"' : '';
+        const title = (tr.kind === "zoomIn" || tr.kind === "expand") ? ' title="Ctrl+Alt+click or Alt+double-click the node — opens one level only"' : '';
         html += '<button class="action-btn" onclick="window.__goToStateFromNode(\'' + escapeAttr(tr.targetID) + '\',\'' + escapeAttr(idStr) + '\')"' + title + '>' +
                 label + ' → ' + escapeHTML(tr.targetID) + '</button>';
       }
@@ -804,6 +938,7 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
       // Hidden (stub) edges show NO hover tooltip — the "?" reads as "click to see
       // where this leads", and the from/to is shown in the inspector on click.
       g.addEventListener("click", function (ev) {
+        if (didDrag) return; // a drag-to-pan that ended here, not a click
         ev.stopPropagation();
         hideEdgeTooltip();
         if (selectedEdgeIdx === idx) {
@@ -867,6 +1002,7 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
     else svg.appendChild(layer);
     // One delegated handler — O(1) regardless of edge count.
     layer.addEventListener("click", function (ev) {
+      if (didDrag) return; // a drag-to-pan that ended here, not a click
       const t = ev.target.closest("[data-edge-idx]");
       if (!t) return;
       const idx = parseInt(t.getAttribute("data-edge-idx"), 10);
@@ -950,12 +1086,24 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
   function ringEndpointNode(node) {
     const svg = svgContainer.querySelector("svg");
     if (!svg) return;
+    const rr = String(selectionRingRadius(node));
     svg.appendChild(svgEl("rect", {
       x: node.x - 2, y: node.y - 2, width: node.width + 4, height: node.height + 4,
-      rx: "8", ry: "8", fill: "none", stroke: "#ffd700", "stroke-width": "3",
+      rx: rr, ry: rr, fill: "none", stroke: "#ffd700", "stroke-width": "3",
       class: "edge-endpoint-highlight", "pointer-events": "none",
     }));
   }
+
+  // The selection ring sits 2px outside a node, so its corner radius is the
+  // node's own corner radius + 2 — keeping it hugging the corners the same way on
+  // big rounded containers (rx 10) as on small nodes (rx 4) and normal ones (rx 6).
+  // Mirrors the radii ipmsvg uses (container shells rx 10; bodies rx 6, or 4 when
+  // a side is ≤ 40px).
+  function nodeCornerRadius(node) {
+    if (node.container) return 10;
+    return (node.width <= 40 || node.height <= 40) ? 4 : 6;
+  }
+  function selectionRingRadius(node) { return nodeCornerRadius(node) + 2; }
 
   // Selecting an edge rings BOTH its endpoint nodes in the same yellow (#ffd700) as
   // a node selection — so a clicked edge highlights its connected nodes too.
@@ -978,6 +1126,108 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
     }
   }
 
+  // For the selected node, dash-highlight the ONE side of each CONNECTED node that
+  // its edge lands on (top / right / bottom / left) — so you can see where every
+  // edge attaches on the far node, not just that the edge is lit. The attachment
+  // side comes from the rendered edge's port point (its endpoint nearest the far
+  // node). Far ends not visible in this state (e.g. cross-component stubs whose
+  // other end is off-canvas) are skipped.
+  function highlightConnectedNodeBorders(nodeID) {
+    const st = currentState();
+    if (!st || !st.edges) return;
+    const svg = svgContainer.querySelector("svg");
+    if (!svg) return;
+    for (let i = 0; i < st.edges.length; i++) {
+      const e = st.edges[i];
+      let farID = null;
+      if (String(e.from) === String(nodeID)) farID = e.to;
+      else if (String(e.to) === String(nodeID)) farID = e.from;
+      else continue;
+      const far = findNodeById(farID);
+      if (!far) continue; // far end not rendered in this state
+      const g = svg.querySelector('g.edge[data-edge-idx="' + i + '"]');
+      const port = g ? edgePortOnNode(g, far) : null;
+      const side = port ? nearestSide(far, port[0], port[1]) : facingSide(far, nodeID);
+      if (side) drawConnectedBorder(svg, far, side);
+    }
+  }
+
+  // The point where an edge group meets a node: of all <line> endpoints in the
+  // group, the one closest to the node centre is its port — it sits on the node
+  // border, while every other vertex heads away (toward the other end / a stub
+  // badge). Works for both normal edges and revealed cross-component stubs.
+  function edgePortOnNode(edgeG, node) {
+    const cx = node.x + node.width / 2, cy = node.y + node.height / 2;
+    let best = null, bestD = Infinity;
+    const lines = edgeG.querySelectorAll("line");
+    for (let i = 0; i < lines.length; i++) {
+      const ln = lines[i];
+      const pts = [
+        [parseFloat(ln.getAttribute("x1")), parseFloat(ln.getAttribute("y1"))],
+        [parseFloat(ln.getAttribute("x2")), parseFloat(ln.getAttribute("y2"))],
+      ];
+      for (let p = 0; p < pts.length; p++) {
+        const px = pts[p][0], py = pts[p][1];
+        if (isNaN(px) || isNaN(py)) continue;
+        const d = (px - cx) * (px - cx) + (py - cy) * (py - cy);
+        if (d < bestD) { bestD = d; best = pts[p]; }
+      }
+    }
+    return best;
+  }
+
+  // Which side of a node's rect a point sits on (smallest perpendicular gap).
+  function nearestSide(node, px, py) {
+    const dl = Math.abs(px - node.x);
+    const dr = Math.abs(px - (node.x + node.width));
+    const dt = Math.abs(py - node.y);
+    const db = Math.abs(py - (node.y + node.height));
+    const m = Math.min(dl, dr, dt, db);
+    if (m === dt) return "top";
+    if (m === db) return "bottom";
+    if (m === dl) return "left";
+    return "right";
+  }
+
+  // Fallback when no edge geometry is available: the side of `node` facing the
+  // other node (by centre-to-centre direction, dominant axis wins).
+  function facingSide(node, otherID) {
+    const other = findNodeById(otherID);
+    if (!other) return null;
+    const dx = (other.x + other.width / 2) - (node.x + node.width / 2);
+    const dy = (other.y + other.height / 2) - (node.y + node.height / 2);
+    if (Math.abs(dx) >= Math.abs(dy)) return dx >= 0 ? "right" : "left";
+    return dy >= 0 ? "bottom" : "top";
+  }
+
+  // Dotted gold segment along one side of a node — the border its connected edge
+  // lands on. Same gold as the selection ring; dotted so it reads as the incoming
+  // attachment point rather than a full selection. Both ends inset by the node's
+  // own corner radius so the dots cover the full straight part of the side without
+  // running into the rounded corners, and the dot spacing is fitted so one dot
+  // lands on each end — symmetric margins at both corners.
+  function drawConnectedBorder(svg, node, side) {
+    const x = node.x, y = node.y, w = node.width, h = node.height;
+    const horiz = (side === "top" || side === "bottom");
+    const len = horiz ? w : h;
+    const inset = Math.min(nodeCornerRadius(node), Math.max(0, (len - 8) / 2));
+    const run = len - 2 * inset;
+    // Evenly spaced round dots with one exactly on each end (period divides run).
+    const spacing = run / Math.max(1, Math.round(run / 7));
+    let x1, y1, x2, y2;
+    if (side === "top") { x1 = x + inset; y1 = y; x2 = x + w - inset; y2 = y; }
+    else if (side === "bottom") { x1 = x + inset; y1 = y + h; x2 = x + w - inset; y2 = y + h; }
+    else if (side === "left") { x1 = x; y1 = y + inset; x2 = x; y2 = y + h - inset; }
+    else { x1 = x + w; y1 = y + inset; x2 = x + w; y2 = y + h - inset; }
+    svg.appendChild(svgEl("line", {
+      x1: x1, y1: y1, x2: x2, y2: y2,
+      stroke: "#ffd700", "stroke-width": "3.5",
+      "stroke-dasharray": "0.1 " + (spacing - 0.1).toFixed(2),
+      "stroke-linecap": "round", class: "connected-border-highlight",
+      "pointer-events": "none",
+    }));
+  }
+
   // Hidden (stub) edges no longer show a hover tooltip; edgeTip stays null so the
   // defensive hideEdgeTooltip() calls in the edge click/dblclick handlers are no-ops.
   let edgeTip = null;
@@ -996,6 +1246,11 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
   }
 
   function hideEdgeTooltip() { if (edgeTip) edgeTip.style.display = "none"; }
+
+  // Help overlay (the "?" toolbar button / "?" key) — a dismissible modal of
+  // gestures & shortcuts. Closed by its ✕, the backdrop, or Escape.
+  function openHelp() { helpOverlay.hidden = false; }
+  function closeHelp() { helpOverlay.hidden = true; }
 
   // Show/hide the inspector panel — frees the canvas space it floats over.
   function toggleInspector() {
@@ -1149,22 +1404,29 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
 
   canvasWrap.addEventListener("mousedown", function (e) {
     if (e.button !== 0) return;
-    if (!e.target.closest(".node-group, .edge-hit")) {
-      isPanning = true;
-      didDrag = false;
-      panStartX = e.clientX;
-      panStartY = e.clientY;
-      panStartPanX = panX;
-      panStartPanY = panY;
-      canvasWrap.classList.add("dragging");
-    }
+    // Arm a potential pan from ANYWHERE — even on a node, edge or chip. If the
+    // pointer then moves past the drag threshold it becomes a pan and the click
+    // is suppressed (didDrag); otherwise it stays a plain click that
+    // selects/navigates. So you can start a drag-to-pan on top of a node and it
+    // still pans instead of selecting. The grab cursor only appears once it's
+    // actually a drag (set in mousemove), so a plain click doesn't flicker.
+    isPanning = true;
+    didDrag = false;
+    panStartX = e.clientX;
+    panStartY = e.clientY;
+    panStartPanX = panX;
+    panStartPanY = panY;
   });
 
   window.addEventListener("mousemove", function (e) {
     if (!isPanning) return;
     const dx = e.clientX - panStartX;
     const dy = e.clientY - panStartY;
-    if (!didDrag && (Math.abs(dx) > 4 || Math.abs(dy) > 4)) didDrag = true;
+    if (!didDrag) {
+      if (Math.abs(dx) <= 4 && Math.abs(dy) <= 4) return; // within click slop → not a drag yet
+      didDrag = true;
+      canvasWrap.classList.add("dragging");
+    }
     panX = panStartPanX + dx;
     panY = panStartPanY + dy;
     applyTransform();
@@ -1206,8 +1468,8 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
       // mousemove never fires on touch devices.
       lastMouseX = t.clientX - rect.left;
       lastMouseY = t.clientY - rect.top;
-      if (e.target.closest(".node-group")) {
-        // Tap on a node: let the synthesised click handle it.
+      if (e.target.closest(".node-group, .chip-target")) {
+        // Tap on a node or its chip: let the synthesised click handle it.
         touchMode = null;
         return;
       }
@@ -1283,7 +1545,9 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
   }
 
   document.addEventListener("keydown", function (e) {
+    if (e.key === "?") { openHelp(); return; }
     if (e.key === "Escape") {
+      if (!helpOverlay.hidden) { closeHelp(); return; } // help takes precedence
       if (selectedNodeID) {
         selectedNodeID = null;
         updateSelection();
@@ -1313,6 +1577,7 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
       return true;
     },
     clickNode: function (nodeID) { handleNodeClick(nodeID); },
+    selectNode: function (nodeID) { selectNodeOnly(nodeID); },
     listStates: function () { return Object.keys(statesByID); },
     currentTransitions: function () {
       const st = currentState();

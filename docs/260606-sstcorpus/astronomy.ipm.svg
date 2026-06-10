@@ -62,23 +62,23 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="5" data-edge-base="expresses" data-edge-from="13" data-edge-to="10">
-    <line x1="262.00" y1="684.00" x2="262.00" y2="1609.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 262.00 1616.00 L 257.50 1607.00 L 262.00 1609.25 L 266.50 1607.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="262" y="1146" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <line x1="340.00" y1="654.00" x2="340.00" y2="1627.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 340.00 1634.00 L 335.50 1625.00 L 340.00 1627.25 L 344.50 1625.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="340" y="1140" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>refers to</title>refe...
     </text>
     </g>
     <g class="edge" data-edge-idx="6" data-edge-base="leadsto" data-edge-from="13" data-edge-to="6">
-    <line x1="296.85" y1="683.83" x2="283.09" y2="729.70" stroke="#ff8000" stroke-width="3" />
-    <path d="M 281.15 736.17 L 279.43 726.26 L 283.09 729.70 L 288.05 728.84 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="289" y="706" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#ff8000">
+    <line x1="280.00" y1="684.00" x2="280.00" y2="729.25" stroke="#ff8000" stroke-width="3" />
+    <path d="M 280.00 736.00 L 275.50 727.00 L 280.00 729.25 L 284.50 727.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="280" y="706" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#ff8000">
       <title>then followed by</title>then...
     </text>
     </g>
     <g class="edge" data-edge-idx="7" data-edge-base="leadsto" data-edge-from="14" data-edge-to="10">
-    <line x1="280.88" y1="1543.90" x2="295.64" y2="1609.51" stroke="#ff8000" stroke-width="3" />
-    <path d="M 297.12 1616.10 L 290.76 1608.30 L 295.64 1609.51 L 299.54 1606.33 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="287" y="1576" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#ff8000">
+    <line x1="280.00" y1="1544.00" x2="280.00" y2="1609.25" stroke="#ff8000" stroke-width="3" />
+    <path d="M 280.00 1616.00 L 275.50 1607.00 L 280.00 1609.25 L 284.50 1607.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="280" y="1576" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#ff8000">
       <title>then followed by</title>then...
     </text>
     </g>
