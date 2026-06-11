@@ -14,7 +14,7 @@
     <rect x="2980" y="240" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="1660" y="340" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="760" y="140" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="460" y="63" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="460" y="240" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="1120" y="240" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="2080" y="140" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="940" y="140" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
@@ -34,23 +34,23 @@
   </g>
   <g id="edges">
     <g class="edge" data-edge-idx="0" data-edge-base="expresses" data-edge-from="10" data-edge-to="13">
-    <line x1="343.98" y1="85.39" x2="1109.30" y2="159.96" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 1116.02 160.61 L 1106.62 164.22 L 1109.30 159.96 L 1107.50 155.26 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="726" y="122" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <line x1="343.96" y1="52.55" x2="1109.35" y2="159.51" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 1116.04 160.45 L 1106.50 163.66 L 1109.35 159.51 L 1107.75 154.74 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="726" y="105" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has bibtex citation</title>has...
     </text>
     </g>
     <g class="edge" data-edge-idx="1" data-edge-base="expresses" data-edge-from="10" data-edge-to="18">
-    <line x1="344.00" y1="81.00" x2="449.25" y2="81.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 456.00 81.00 L 447.00 85.50 L 449.25 81.00 L 447.00 76.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="396" y="81" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <polyline points="342.28,91.29 390,210 452.20,253.83" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 457.72 257.71 L 447.77 256.21 L 452.20 253.83 L 452.95 248.85 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="366" y="150" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>is about topic/them</title>is a...
     </text>
     </g>
     <g class="edge" data-edge-idx="2" data-edge-base="expresses" data-edge-from="10" data-edge-to="25">
-    <line x1="342.38" y1="92.21" x2="393.60" y2="161.36" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 397.62 166.79 L 388.65 162.23 L 393.60 161.36 L 395.88 156.88 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="367" y="126" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <line x1="342.20" y1="73.34" x2="394.08" y2="152.03" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 397.80 157.66 L 389.09 152.62 L 394.08 152.03 L 396.60 147.67 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="368" y="112" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>is about topic/them</title>is a...
     </text>
     </g>
@@ -111,9 +111,9 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="11" data-edge-base="expresses" data-edge-from="13" data-edge-to="18">
-    <line x1="1176.00" y1="139.81" x2="590.74" y2="111.52" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 584.00 111.19 L 593.20 107.13 L 590.74 111.52 L 592.77 116.12 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="883" y="125" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <line x1="1176.03" y1="200.46" x2="590.68" y2="268.75" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 583.97 269.54 L 592.39 264.02 L 590.68 268.75 L 593.43 272.96 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="883" y="234" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>is about topic/them</title>is a...
     </text>
     </g>
@@ -146,30 +146,30 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="16" data-edge-base="expresses" data-edge-from="14" data-edge-to="17">
-    <line x1="163.94" y1="64.70" x2="749.41" y2="168.13" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 756.06 169.30 L 746.42 172.17 L 749.41 168.13 L 747.98 163.31 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="456" y="116" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <line x1="163.92" y1="52.77" x2="749.45" y2="167.93" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 756.08 169.23 L 746.38 171.91 L 749.45 167.93 L 748.11 163.08 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="456" y="109" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>is about topic/them</title>is a...
     </text>
     </g>
     <g class="edge" data-edge-idx="17" data-edge-base="expresses" data-edge-from="14" data-edge-to="18">
-    <line x1="104.00" y1="99.99" x2="449.25" y2="99.03" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 456.00 99.01 L 447.01 103.54 L 449.25 99.03 L 446.99 94.54 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="276" y="99" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <line x1="163.37" y1="90.15" x2="450.93" y2="273.23" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 456.63 276.85 L 446.62 275.81 L 450.93 273.23 L 451.45 268.22 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="306" y="181" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>is about topic/them</title>is a...
     </text>
     </g>
     <g class="edge" data-edge-idx="18" data-edge-base="expresses" data-edge-from="14" data-edge-to="20">
-    <line x1="163.97" y1="76.49" x2="929.33" y2="171.67" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 936.03 172.51 L 926.54 175.86 L 929.33 171.67 L 927.65 166.93 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="546" y="123" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <line x1="163.96" y1="64.54" x2="929.35" y2="168.55" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 936.04 169.46 L 926.51 172.71 L 929.35 168.55 L 927.72 163.79 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="546" y="116" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>is about topic/them</title>is a...
     </text>
     </g>
     <g class="edge" data-edge-idx="19" data-edge-base="expresses" data-edge-from="14" data-edge-to="4">
-    <line x1="163.93" y1="88.77" x2="569.45" y2="167.94" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 576.07 169.23 L 566.38 171.93 L 569.45 167.94 L 568.10 163.09 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="366" y="127" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <line x1="163.90" y1="76.87" x2="569.51" y2="167.65" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 576.10 169.13 L 566.33 171.55 L 569.51 167.65 L 568.30 162.77 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="366" y="121" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has author</title>has...
     </text>
     </g>
@@ -274,9 +274,9 @@
     <text x="1720" y="380" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">bias</text>
     <rect x="760" y="140" width="120" height="60" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
     <text x="820" y="170" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">complexity</text>
-    <rect x="460" y="63" width="120" height="60" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="520" y="83" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">decision</text>
-    <text x="520" y="103" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">making</text>
+    <rect x="460" y="240" width="120" height="60" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+    <text x="520" y="260" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">decision</text>
+    <text x="520" y="280" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">making</text>
     <rect x="1120" y="240" width="120" height="60" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
     <text x="1180" y="260" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">dual-process</text>
     <text x="1180" y="280" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">cognition</text>

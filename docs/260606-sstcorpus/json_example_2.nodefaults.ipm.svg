@@ -32,8 +32,8 @@
   </g>
   <g id="edges">
     <g class="edge" data-edge-idx="0" data-edge-base="partof" data-edge-from="10" data-edge-to="11">
-    <line x1="459.70" y1="698.01" x2="442.80" y2="472.72" stroke="#82b366" stroke-width="3" />
-    <path d="M 442.30 465.99 L 447.46 474.63 L 442.80 472.72 L 438.48 475.30 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <polyline points="459.70,698.01 530,672 530,592 530,492 448.77,467.91" fill="none" stroke="#82b366" stroke-width="3" />
+    <path d="M 442.30 465.99 L 452.21 464.23 L 448.77 467.91 L 449.65 472.86 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="1" data-edge-base="expresses" data-edge-from="10" data-edge-to="16">
     <line x1="398.94" y1="735.86" x2="342.85" y2="939.64" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
@@ -150,8 +150,8 @@
     <text x="370" y="440" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">has id</text>
     </g>
     <g class="edge" data-edge-idx="20" data-edge-base="partof" data-edge-from="9" data-edge-to="11">
-    <line x1="460.51" y1="598.03" x2="476.63" y2="472.66" stroke="#82b366" stroke-width="3" />
-    <path d="M 477.49 465.97 L 480.81 475.47 L 476.63 472.66 L 471.88 474.32 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <polyline points="460.51,598.03 530,572 530,492 483.54,468.97" fill="none" stroke="#82b366" stroke-width="3" />
+    <path d="M 477.49 465.97 L 487.55 465.93 L 483.54 468.97 L 483.55 474.00 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="21" data-edge-base="expresses" data-edge-from="9" data-edge-to="12">
     <line x1="398.70" y1="620.22" x2="343.50" y2="460.16" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
