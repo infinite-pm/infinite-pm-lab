@@ -471,23 +471,11 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="29" data-edge-base="expresses" data-edge-from="114" data-edge-to="137">
-      <g class="edge-full" opacity="0">
-        <line x1="3803.00" y1="912.00" x2="3891.00" y2="1271.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="3847" y="1091" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <line x1="3857.59" y1="873.96" x2="3915.41" y2="1261.37" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 3916.41 1268.04 L 3910.63 1259.81 L 3915.41 1261.37 L 3919.53 1258.48 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="3886" y="1067" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>refers to</title>refe...
     </text>
-      </g>
-      <g class="edge-stub" data-stub-end="source">
-        <line x1="3857.00" y1="870.00" x2="3828.41" y2="892.24" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="3828.41" y1="892.24" x2="3803.00" y2="912.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (refers to): lifecycle of individual pods → pods</title><rect x="3796.00" y="905.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3803.00" y="912.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">4</text></g>
-      </g>
-      <g class="edge-stub" data-stub-end="target">
-        <line x1="3903.24" y1="1271.47" x2="3910.25" y2="1271.74" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="3891.00" y1="1271.00" x2="3903.24" y2="1271.47" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 3917.00 1272.00 L 3907.83 1276.15 L 3910.25 1271.74 L 3908.18 1267.16 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (refers to): lifecycle of individual pods → pods</title><rect x="3884.00" y="1264.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3891.00" y="1271.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">4</text></g>
-      </g>
     </g>
     <g class="edge" data-edge-idx="30" data-edge-base="leadsto" data-edge-from="114" data-edge-to="30">
     <line x1="3793.88" y1="902.50" x2="3276.40" y2="1316.29" stroke="#ff8000" stroke-width="3" />
@@ -561,12 +549,12 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="640.00" y1="150.00" x2="629.94" y2="170.65" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" />
         <line x1="629.94" y1="170.65" x2="621.00" y2="189.00" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>NearTo (https connection with): nodes ↔ API server</title><rect x="614.00" y="182.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#999999" stroke-width="1.5" /><text x="621.00" y="189.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#999999">5</text></g>
+        <g class="edge-badge"><title>NearTo (https connection with): nodes ↔ API server</title><rect x="614.00" y="182.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#999999" stroke-width="1.5" /><text x="621.00" y="189.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#999999">4</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="352.18" y1="299.06" x2="340.00" y2="298.00" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" />
         <line x1="363.00" y1="300.00" x2="352.18" y2="299.06" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>NearTo (https connection with): nodes ↔ API server</title><rect x="356.00" y="293.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#999999" stroke-width="1.5" /><text x="363.00" y="300.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#999999">5</text></g>
+        <g class="edge-badge"><title>NearTo (https connection with): nodes ↔ API server</title><rect x="356.00" y="293.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#999999" stroke-width="1.5" /><text x="363.00" y="300.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#999999">4</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="42" data-edge-base="partof" data-edge-from="126" data-edge-to="133">
@@ -636,12 +624,12 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="4427.00" y1="876.00" x2="4414.82" y2="883.41" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" />
         <line x1="4414.82" y1="883.41" x2="4404.00" y2="890.00" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>NearTo (connects to): pod ↔ API server using injected credentials</title><rect x="4397.00" y="883.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#999999" stroke-width="1.5" /><text x="4404.00" y="890.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#999999">6</text></g>
+        <g class="edge-badge"><title>NearTo (connects to): pod ↔ API server using injected credentials</title><rect x="4397.00" y="883.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#999999" stroke-width="1.5" /><text x="4404.00" y="890.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#999999">5</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="4295.00" y1="1490.06" x2="4277.00" y2="1489.00" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" />
         <line x1="4311.00" y1="1491.00" x2="4295.00" y2="1490.06" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>NearTo (connects to): pod ↔ API server using injected credentials</title><rect x="4304.00" y="1484.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#999999" stroke-width="1.5" /><text x="4311.00" y="1491.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#999999">6</text></g>
+        <g class="edge-badge"><title>NearTo (connects to): pod ↔ API server using injected credentials</title><rect x="4304.00" y="1484.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#999999" stroke-width="1.5" /><text x="4311.00" y="1491.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#999999">5</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="52" data-edge-base="leadsto" data-edge-from="134" data-edge-to="210">
@@ -658,13 +646,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="5627.00" y1="711.00" x2="5609.00" y2="710.47" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="5609.00" y1="710.47" x2="5593.00" y2="710.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (refers to): pod, PVC, controller → pod</title><rect x="5586.00" y="703.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="5593.00" y="710.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">7</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): pod, PVC, controller → pod</title><rect x="5586.00" y="703.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="5593.00" y="710.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">6</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="4559.18" y1="849.06" x2="4553.72" y2="848.58" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="4570.00" y1="850.00" x2="4559.18" y2="849.06" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 4547.00 848.00 L 4556.36 844.30 L 4553.72 848.58 L 4555.58 853.26 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (refers to): pod, PVC, controller → pod</title><rect x="4563.00" y="843.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="4570.00" y="850.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">7</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): pod, PVC, controller → pod</title><rect x="4563.00" y="843.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="4570.00" y="850.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">6</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="54" data-edge-base="expresses" data-edge-from="136" data-edge-to="141">
@@ -688,13 +676,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="5627.00" y1="729.00" x2="5609.00" y2="729.53" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="5609.00" y1="729.53" x2="5593.00" y2="730.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (refers to): pod, PVC, controller → PVC</title><rect x="5586.00" y="723.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="5593.00" y="730.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">8</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): pod, PVC, controller → PVC</title><rect x="5586.00" y="723.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="5593.00" y="730.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">7</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="3688.00" y1="1543.47" x2="3676.75" y2="1543.80" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="3704.00" y1="1543.00" x2="3688.00" y2="1543.47" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 3670.00 1544.00 L 3678.86 1539.24 L 3676.75 1543.80 L 3679.13 1548.23 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (refers to): pod, PVC, controller → PVC</title><rect x="3697.00" y="1536.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3704.00" y="1543.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">8</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): pod, PVC, controller → PVC</title><rect x="3697.00" y="1536.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3704.00" y="1543.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">7</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="57" data-edge-base="expresses" data-edge-from="136" data-edge-to="88">
@@ -707,13 +695,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="5747.00" y1="708.00" x2="5759.18" y2="709.06" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="5759.18" y1="709.06" x2="5770.00" y2="710.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (refers to): pod, PVC, controller → controller</title><rect x="5763.00" y="703.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="5770.00" y="710.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">9</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): pod, PVC, controller → controller</title><rect x="5763.00" y="703.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="5770.00" y="710.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">8</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="6299.00" y1="160.47" x2="6310.25" y2="160.80" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="6283.00" y1="160.00" x2="6299.00" y2="160.47" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 6317.00 161.00 L 6307.87 165.23 L 6310.25 160.80 L 6308.14 156.24 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (refers to): pod, PVC, controller → controller</title><rect x="6276.00" y="153.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="6283.00" y="160.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">9</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): pod, PVC, controller → controller</title><rect x="6276.00" y="153.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="6283.00" y="160.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">8</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="58" data-edge-base="leadsto" data-edge-from="14" data-edge-to="184">
@@ -730,13 +718,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="9977.00" y1="150.00" x2="9959.53" y2="154.24" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="9959.53" y1="154.24" x2="9944.00" y2="158.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (maintains): CNCF → Kubernetes</title><rect x="9935.00" y="149.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="9944.00" y="158.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">10</text></g>
+        <g class="edge-badge"><title>Expresses (maintains): CNCF → Kubernetes</title><rect x="9937.00" y="151.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="9944.00" y="158.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">9</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="8525.00" y1="270.94" x2="8513.74" y2="271.60" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="8541.00" y1="270.00" x2="8525.00" y2="270.94" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 8507.00 272.00 L 8515.72 266.98 L 8513.74 271.60 L 8516.25 275.96 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (maintains): CNCF → Kubernetes</title><rect x="8532.00" y="261.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="8541.00" y="270.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">10</text></g>
+        <g class="edge-badge"><title>Expresses (maintains): CNCF → Kubernetes</title><rect x="8534.00" y="263.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="8541.00" y="270.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">9</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="60" data-edge-base="expresses" data-edge-from="141" data-edge-to="140">
@@ -826,12 +814,12 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="4457.00" y1="234.00" x2="4469.18" y2="231.88" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" />
         <line x1="4469.18" y1="231.88" x2="4480.00" y2="230.00" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>NearTo (runs alongside): sidecar container ↔ main application container</title><rect x="4471.00" y="221.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#999999" stroke-width="1.5" /><text x="4480.00" y="230.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#999999">11</text></g>
+        <g class="edge-badge"><title>NearTo (runs alongside): sidecar container ↔ main application container</title><rect x="4471.00" y="221.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#999999" stroke-width="1.5" /><text x="4480.00" y="230.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#999999">10</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="11159.00" y1="144.41" x2="11177.00" y2="137.00" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" />
         <line x1="11143.00" y1="151.00" x2="11159.00" y2="144.41" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>NearTo (runs alongside): sidecar container ↔ main application container</title><rect x="11134.00" y="142.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#999999" stroke-width="1.5" /><text x="11143.00" y="151.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#999999">11</text></g>
+        <g class="edge-badge"><title>NearTo (runs alongside): sidecar container ↔ main application container</title><rect x="11134.00" y="142.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#999999" stroke-width="1.5" /><text x="11143.00" y="151.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#999999">10</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="74" data-edge-base="leadsto" data-edge-from="157" data-edge-to="151">
@@ -851,12 +839,12 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="4457.00" y1="242.00" x2="4469.18" y2="246.24" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" />
         <line x1="4469.18" y1="246.24" x2="4480.00" y2="250.00" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>NearTo (terminates together with): sidecar container ↔ the main container</title><rect x="4471.00" y="241.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#999999" stroke-width="1.5" /><text x="4480.00" y="250.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#999999">12</text></g>
+        <g class="edge-badge"><title>NearTo (terminates together with): sidecar container ↔ the main container</title><rect x="4471.00" y="241.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#999999" stroke-width="1.5" /><text x="4480.00" y="250.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#999999">11</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="11399.00" y1="153.82" x2="11417.00" y2="157.00" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" />
         <line x1="11383.00" y1="151.00" x2="11399.00" y2="153.82" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>NearTo (terminates together with): sidecar container ↔ the main container</title><rect x="11374.00" y="142.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#999999" stroke-width="1.5" /><text x="11383.00" y="151.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#999999">12</text></g>
+        <g class="edge-badge"><title>NearTo (terminates together with): sidecar container ↔ the main container</title><rect x="11374.00" y="142.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#999999" stroke-width="1.5" /><text x="11383.00" y="151.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#999999">11</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="76" data-edge-base="partof" data-edge-from="157" data-edge-to="164">
@@ -902,13 +890,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="3670.00" y1="1693.00" x2="3653.06" y2="1668.65" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="3653.06" y1="1668.65" x2="3638.00" y2="1647.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (refers to): storage decoupling from the lifecycle of pods → pods</title><rect x="3629.00" y="1638.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3638.00" y="1647.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">13</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): storage decoupling from the lifecycle of pods → pods</title><rect x="3629.00" y="1638.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3638.00" y="1647.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">12</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="3903.24" y1="1290.53" x2="3910.25" y2="1290.26" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="3891.00" y1="1291.00" x2="3903.24" y2="1290.53" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 3917.00 1290.00 L 3908.18 1294.84 L 3910.25 1290.26 L 3907.83 1285.85 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (refers to): storage decoupling from the lifecycle of pods → pods</title><rect x="3882.00" y="1282.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3891.00" y="1291.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">13</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): storage decoupling from the lifecycle of pods → pods</title><rect x="3882.00" y="1282.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3891.00" y="1291.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">12</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="83" data-edge-base="leadsto" data-edge-from="161" data-edge-to="190">
@@ -929,13 +917,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="4277.00" y1="266.00" x2="4289.18" y2="262.82" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="4289.18" y1="262.82" x2="4300.00" y2="260.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (refers to): the pod’s network and storage context → pod</title><rect x="4291.00" y="251.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="4300.00" y="260.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">14</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): the pod’s network and storage context → pod</title><rect x="4291.00" y="251.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="4300.00" y="260.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">13</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="4414.82" y1="838.47" x2="4421.68" y2="843.84" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="4404.00" y1="830.00" x2="4414.82" y2="838.47" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 4427.00 848.00 L 4417.14 846.00 L 4421.68 843.84 L 4422.69 838.91 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (refers to): the pod’s network and storage context → pod</title><rect x="4395.00" y="821.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="4404.00" y="830.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">14</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): the pod’s network and storage context → pod</title><rect x="4395.00" y="821.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="4404.00" y="830.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">13</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="86" data-edge-base="expresses" data-edge-from="165" data-edge-to="133">
@@ -948,13 +936,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="11657.00" y1="159.00" x2="11639.00" y2="159.53" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="11639.00" y1="159.53" x2="11623.00" y2="160.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (refers to): the same as restarting a pod → pod</title><rect x="11614.00" y="151.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="11623.00" y="160.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">15</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): the same as restarting a pod → pod</title><rect x="11614.00" y="151.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="11623.00" y="160.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">14</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="4559.18" y1="835.65" x2="4552.98" y2="838.88" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="4570.00" y1="830.00" x2="4559.18" y2="835.65" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 4547.00 842.00 L 4552.90 833.85 L 4552.98 838.88 L 4557.06 841.83 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (refers to): the same as restarting a pod → pod</title><rect x="4561.00" y="821.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="4570.00" y="830.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">15</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): the same as restarting a pod → pod</title><rect x="4561.00" y="821.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="4570.00" y="830.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">14</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="87" data-edge-base="leadsto" data-edge-from="165" data-edge-to="236">
@@ -1110,13 +1098,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="1180.00" y1="162.00" x2="1192.18" y2="160.94" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="1192.18" y1="160.94" x2="1203.00" y2="160.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (refers to): &#34;control plane&#34; and worker nodes → control plane</title><rect x="1194.00" y="151.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1203.00" y="160.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">16</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): &#34;control plane&#34; and worker nodes → control plane</title><rect x="1194.00" y="151.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1203.00" y="160.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">15</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="4584.29" y1="1473.53" x2="4593.03" y2="1485.54" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="4573.00" y1="1458.00" x2="4584.29" y2="1473.53" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 4597.00 1491.00 L 4588.07 1486.37 L 4593.03 1485.54 L 4595.35 1481.07 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (refers to): &#34;control plane&#34; and worker nodes → control plane</title><rect x="4564.00" y="1449.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="4573.00" y="1458.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">16</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): &#34;control plane&#34; and worker nodes → control plane</title><rect x="4564.00" y="1449.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="4573.00" y="1458.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">15</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="120" data-edge-base="expresses" data-edge-from="20" data-edge-to="15">
@@ -1129,13 +1117,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="10217.00" y1="150.00" x2="10199.00" y2="150.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="10199.00" y1="150.00" x2="10183.00" y2="150.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has abbreviation): Custom Resource Definition → CRD</title><rect x="10174.00" y="141.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="10183.00" y="150.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">17</text></g>
+        <g class="edge-badge"><title>Expresses (has abbreviation): Custom Resource Definition → CRD</title><rect x="10174.00" y="141.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="10183.00" y="150.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">16</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="7235.00" y1="146.71" x2="7223.61" y2="144.36" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="7251.00" y1="150.00" x2="7235.00" y2="146.71" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 7217.00 143.00 L 7226.72 140.41 L 7223.61 144.36 L 7224.91 149.22 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has abbreviation): Custom Resource Definition → CRD</title><rect x="7242.00" y="141.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="7251.00" y="150.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">17</text></g>
+        <g class="edge-badge"><title>Expresses (has abbreviation): Custom Resource Definition → CRD</title><rect x="7242.00" y="141.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="7251.00" y="150.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">16</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="121" data-edge-base="leadsto" data-edge-from="20" data-edge-to="192">
@@ -1227,13 +1215,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="10457.00" y1="150.00" x2="10439.00" y2="153.71" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="10439.00" y1="153.71" x2="10423.00" y2="157.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has abbreviation): K8s → Kubernetes</title><rect x="10414.00" y="148.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="10423.00" y="157.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">18</text></g>
+        <g class="edge-badge"><title>Expresses (has abbreviation): K8s → Kubernetes</title><rect x="10414.00" y="148.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="10423.00" y="157.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">17</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="8525.00" y1="290.00" x2="8513.75" y2="290.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="8541.00" y1="290.00" x2="8525.00" y2="290.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 8507.00 290.00 L 8516.00 285.50 L 8513.75 290.00 L 8516.00 294.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has abbreviation): K8s → Kubernetes</title><rect x="8532.00" y="281.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="8541.00" y="290.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">18</text></g>
+        <g class="edge-badge"><title>Expresses (has abbreviation): K8s → Kubernetes</title><rect x="8532.00" y="281.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="8541.00" y="290.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">17</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="141" data-edge-base="leadsto" data-edge-from="231" data-edge-to="136">
@@ -1258,13 +1246,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="8387.00" y1="290.00" x2="8371.12" y2="279.41" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="8371.12" y1="279.41" x2="8357.00" y2="270.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (represents/models): Kubernetes → a container orchestration system</title><rect x="8348.00" y="261.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="8357.00" y="270.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">19</text></g>
+        <g class="edge-badge"><title>Expresses (represents/models): Kubernetes → a container orchestration system</title><rect x="8348.00" y="261.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="8357.00" y="270.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">18</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="7829.18" y1="160.94" x2="7823.72" y2="161.42" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="7840.00" y1="160.00" x2="7829.18" y2="160.94" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 7817.00 162.00 L 7825.58 156.74 L 7823.72 161.42 L 7826.36 165.70 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (represents/models): Kubernetes → a container orchestration system</title><rect x="7831.00" y="151.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="7840.00" y="160.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">19</text></g>
+        <g class="edge-badge"><title>Expresses (represents/models): Kubernetes → a container orchestration system</title><rect x="7831.00" y="151.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="7840.00" y="160.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">18</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="145" data-edge-base="leadsto" data-edge-from="24" data-edge-to="67">
@@ -1366,13 +1354,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="3130.00" y1="1363.00" x2="3135.29" y2="1380.47" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="3135.29" y1="1380.47" x2="3140.00" y2="1396.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (refers to): PVC to request volumes on demand → PVC</title><rect x="3131.00" y="1387.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3140.00" y="1396.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">20</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): PVC to request volumes on demand → PVC</title><rect x="3131.00" y="1387.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3140.00" y="1396.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">19</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="3532.00" y1="1562.53" x2="3543.25" y2="1562.20" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="3516.00" y1="1563.00" x2="3532.00" y2="1562.53" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 3550.00 1562.00 L 3541.14 1566.76 L 3543.25 1562.20 L 3540.87 1557.77 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (refers to): PVC to request volumes on demand → PVC</title><rect x="3507.00" y="1554.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3516.00" y="1563.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">20</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): PVC to request volumes on demand → PVC</title><rect x="3507.00" y="1554.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3516.00" y="1563.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">19</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="160" data-edge-base="expresses" data-edge-from="33" data-edge-to="120">
@@ -1434,13 +1422,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="2680.00" y1="870.00" x2="2682.12" y2="896.47" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="2682.12" y1="896.47" x2="2684.00" y2="920.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has abbreviation): Persistent Volume Claim → PVC</title><rect x="2675.00" y="911.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2684.00" y="920.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">21</text></g>
+        <g class="edge-badge"><title>Expresses (has abbreviation): Persistent Volume Claim → PVC</title><rect x="2675.00" y="911.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2684.00" y="920.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">20</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="3532.00" y1="1543.47" x2="3543.25" y2="1543.80" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="3516.00" y1="1543.00" x2="3532.00" y2="1543.47" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 3550.00 1544.00 L 3540.87 1548.23 L 3543.25 1543.80 L 3541.14 1539.24 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has abbreviation): Persistent Volume Claim → PVC</title><rect x="3507.00" y="1534.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3516.00" y="1543.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">21</text></g>
+        <g class="edge-badge"><title>Expresses (has abbreviation): Persistent Volume Claim → PVC</title><rect x="3507.00" y="1534.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3516.00" y="1543.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">20</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="168" data-edge-base="leadsto" data-edge-from="34" data-edge-to="54">
@@ -1474,12 +1462,12 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="10817.00" y1="150.00" x2="10835.00" y2="149.47" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" />
         <line x1="10835.00" y1="149.47" x2="10851.00" y2="149.00" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>NearTo (not the same as): Restarting a container ↔ the same as restarting a pod</title><rect x="10842.00" y="140.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#999999" stroke-width="1.5" /><text x="10851.00" y="149.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#999999">22</text></g>
+        <g class="edge-badge"><title>NearTo (not the same as): Restarting a container ↔ the same as restarting a pod</title><rect x="10842.00" y="140.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#999999" stroke-width="1.5" /><text x="10851.00" y="149.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#999999">21</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="11639.00" y1="140.47" x2="11657.00" y2="141.00" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" />
         <line x1="11623.00" y1="140.00" x2="11639.00" y2="140.47" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>NearTo (not the same as): Restarting a container ↔ the same as restarting a pod</title><rect x="11614.00" y="131.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#999999" stroke-width="1.5" /><text x="11623.00" y="140.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#999999">22</text></g>
+        <g class="edge-badge"><title>NearTo (not the same as): Restarting a container ↔ the same as restarting a pod</title><rect x="11614.00" y="131.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#999999" stroke-width="1.5" /><text x="11623.00" y="140.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#999999">21</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="172" data-edge-base="leadsto" data-edge-from="35" data-edge-to="202">
@@ -1496,13 +1484,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="10697.00" y1="150.00" x2="10679.00" y2="150.53" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="10679.00" y1="150.53" x2="10663.00" y2="151.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (refers to): Restarting a container → container</title><rect x="10654.00" y="142.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="10663.00" y="151.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">23</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): Restarting a container → container</title><rect x="10654.00" y="142.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="10663.00" y="151.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">22</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="1618.00" y1="251.88" x2="1606.70" y2="253.21" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="1634.00" y1="250.00" x2="1618.00" y2="251.88" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 1600.00 254.00 L 1608.41 248.48 L 1606.70 253.21 L 1609.46 257.42 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (refers to): Restarting a container → container</title><rect x="1625.00" y="241.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1634.00" y="250.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">23</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): Restarting a container → container</title><rect x="1625.00" y="241.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1634.00" y="250.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">22</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="174" data-edge-base="leadsto" data-edge-from="37" data-edge-to="130">
@@ -1543,13 +1531,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="4497.00" y1="2071.00" x2="4494.88" y2="2042.41" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="4494.88" y1="2042.41" x2="4493.00" y2="2017.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (refers to): The API server stores the pod spec in etcd → etcd</title><rect x="4484.00" y="2008.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="4493.00" y="2017.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">24</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): The API server stores the pod spec in etcd → etcd</title><rect x="4484.00" y="2008.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="4493.00" y="2017.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">23</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="4939.00" y1="1630.53" x2="4950.25" y2="1630.20" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="4923.00" y1="1631.00" x2="4939.00" y2="1630.53" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 4957.00 1630.00 L 4948.14 1634.76 L 4950.25 1630.20 L 4947.87 1625.77 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (refers to): The API server stores the pod spec in etcd → etcd</title><rect x="4914.00" y="1622.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="4923.00" y="1631.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">24</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): The API server stores the pod spec in etcd → etcd</title><rect x="4914.00" y="1622.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="4923.00" y="1631.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">23</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="179" data-edge-base="leadsto" data-edge-from="38" data-edge-to="42">
@@ -1654,13 +1642,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="5207.00" y1="762.00" x2="5194.82" y2="760.94" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="5194.82" y1="760.94" x2="5184.00" y2="760.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (refers to): A pod → pod</title><rect x="5175.00" y="751.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="5184.00" y="760.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">25</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): A pod → pod</title><rect x="5175.00" y="751.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="5184.00" y="760.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">24</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="4559.18" y1="862.47" x2="4552.54" y2="857.85" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="4570.00" y1="870.00" x2="4559.18" y2="862.47" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 4547.00 854.00 L 4556.96 855.45 L 4552.54 857.85 L 4551.82 862.83 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (refers to): A pod → pod</title><rect x="4561.00" y="861.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="4570.00" y="870.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">25</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): A pod → pod</title><rect x="4561.00" y="861.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="4570.00" y="870.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">24</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="194" data-edge-base="leadsto" data-edge-from="5" data-edge-to="180">
@@ -1677,12 +1665,12 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="5327.00" y1="742.00" x2="5339.18" y2="746.24" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" />
         <line x1="5339.18" y1="746.24" x2="5350.00" y2="750.00" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>NearTo (not the same as): A pod ↔ a process</title><rect x="5341.00" y="741.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#999999" stroke-width="1.5" /><text x="5350.00" y="750.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#999999">26</text></g>
+        <g class="edge-badge"><title>NearTo (not the same as): A pod ↔ a process</title><rect x="5341.00" y="741.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#999999" stroke-width="1.5" /><text x="5350.00" y="750.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#999999">25</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="8878.47" y1="167.35" x2="8897.00" y2="170.00" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" />
         <line x1="8862.00" y1="165.00" x2="8878.47" y2="167.35" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>NearTo (not the same as): A pod ↔ a process</title><rect x="8853.00" y="156.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#999999" stroke-width="1.5" /><text x="8862.00" y="165.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#999999">26</text></g>
+        <g class="edge-badge"><title>NearTo (not the same as): A pod ↔ a process</title><rect x="8853.00" y="156.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#999999" stroke-width="1.5" /><text x="8862.00" y="165.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#999999">25</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="196" data-edge-base="expresses" data-edge-from="50" data-edge-to="129">
@@ -1706,13 +1694,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="7697.00" y1="150.00" x2="7679.00" y2="151.06" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="7679.00" y1="151.06" x2="7663.00" y2="152.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (refers to): a container orchestration system → container</title><rect x="7654.00" y="143.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="7663.00" y="152.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">27</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): a container orchestration system → container</title><rect x="7654.00" y="143.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="7663.00" y="152.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">26</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="1618.00" y1="266.24" x2="1606.57" y2="263.55" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="1634.00" y1="270.00" x2="1618.00" y2="266.24" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 1600.00 262.00 L 1609.79 259.68 L 1606.57 263.55 L 1607.73 268.44 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (refers to): a container orchestration system → container</title><rect x="1625.00" y="261.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1634.00" y="270.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">27</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): a container orchestration system → container</title><rect x="1625.00" y="261.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1634.00" y="270.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">26</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="199" data-edge-base="leadsto" data-edge-from="51" data-edge-to="200">
@@ -1740,13 +1728,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="7277.00" y1="390.00" x2="7261.12" y2="378.35" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="7261.12" y1="378.35" x2="7247.00" y2="368.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (refers to): a controller pattern → controller</title><rect x="7238.00" y="359.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="7247.00" y="368.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">28</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): a controller pattern → controller</title><rect x="7238.00" y="359.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="7247.00" y="368.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">27</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="6449.18" y1="180.94" x2="6443.72" y2="181.42" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="6460.00" y1="180.00" x2="6449.18" y2="180.94" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 6437.00 182.00 L 6445.58 176.74 L 6443.72 181.42 L 6446.36 185.70 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (refers to): a controller pattern → controller</title><rect x="6451.00" y="171.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="6460.00" y="180.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">28</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): a controller pattern → controller</title><rect x="6451.00" y="171.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="6460.00" y="180.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">27</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="203" data-edge-base="expresses" data-edge-from="54" data-edge-to="133">
@@ -1759,13 +1747,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="2590.00" y1="1353.00" x2="2599.53" y2="1341.88" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="2599.53" y1="1341.88" x2="2608.00" y2="1332.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (refers to): a pod to mount storage → pod</title><rect x="2599.00" y="1323.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2608.00" y="1332.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">29</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): a pod to mount storage → pod</title><rect x="2599.00" y="1323.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2608.00" y="1332.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">28</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="4414.82" y1="869.06" x2="4420.28" y2="868.58" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="4404.00" y1="870.00" x2="4414.82" y2="869.06" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 4427.00 868.00 L 4418.42 873.26 L 4420.28 868.58 L 4417.64 864.30 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (refers to): a pod to mount storage → pod</title><rect x="4395.00" y="861.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="4404.00" y="870.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">29</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): a pod to mount storage → pod</title><rect x="4395.00" y="861.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="4404.00" y="870.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">28</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="204" data-edge-base="leadsto" data-edge-from="54" data-edge-to="190">
@@ -1846,13 +1834,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="3517.00" y1="890.00" x2="3506.41" y2="910.12" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="3506.41" y1="910.12" x2="3497.00" y2="928.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (refers to): an administrator or a Storage Class → Storage</title><rect x="3488.00" y="919.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3497.00" y="928.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">30</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): an administrator or a Storage Class → Storage</title><rect x="3488.00" y="919.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3497.00" y="928.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">29</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="3107.59" y1="1069.88" x2="3100.14" y2="1084.03" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="3117.00" y1="1052.00" x2="3107.59" y2="1069.88" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 3097.00 1090.00 L 3097.21 1079.94 L 3100.14 1084.03 L 3105.17 1084.13 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (refers to): an administrator or a Storage Class → Storage</title><rect x="3108.00" y="1043.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3117.00" y="1052.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">30</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): an administrator or a Storage Class → Storage</title><rect x="3108.00" y="1043.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3117.00" y="1052.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">29</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="216" data-edge-base="expresses" data-edge-from="63" data-edge-to="100">
@@ -1876,13 +1864,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="9317.00" y1="160.00" x2="9300.06" y2="166.88" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="9300.06" y1="166.88" x2="9285.00" y2="173.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has example): an environment for running containers → A pod</title><rect x="9276.00" y="164.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="9285.00" y="173.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">31</text></g>
+        <g class="edge-badge"><title>Expresses (has example): an environment for running containers → A pod</title><rect x="9276.00" y="164.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="9285.00" y="173.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">30</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="5339.18" y1="731.88" x2="5333.65" y2="732.84" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="5350.00" y1="730.00" x2="5339.18" y2="731.88" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 5327.00 734.00 L 5335.10 728.02 L 5333.65 732.84 L 5336.64 736.89 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has example): an environment for running containers → A pod</title><rect x="5341.00" y="721.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="5350.00" y="730.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">31</text></g>
+        <g class="edge-badge"><title>Expresses (has example): an environment for running containers → A pod</title><rect x="5341.00" y="721.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="5350.00" y="730.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">30</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="219" data-edge-base="leadsto" data-edge-from="67" data-edge-to="194">
@@ -2029,13 +2017,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="4277.00" y1="1513.00" x2="4295.00" y2="1511.94" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="4295.00" y1="1511.94" x2="4311.00" y2="1511.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (refers to): API server using injected credentials → API</title><rect x="4302.00" y="1502.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="4311.00" y="1511.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">32</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): API server using injected credentials → API</title><rect x="4302.00" y="1502.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="4311.00" y="1511.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">31</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="4939.00" y1="1694.47" x2="4950.25" y2="1694.80" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="4923.00" y1="1694.00" x2="4939.00" y2="1694.47" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 4957.00 1695.00 L 4947.87 1699.23 L 4950.25 1694.80 L 4948.14 1690.24 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (refers to): API server using injected credentials → API</title><rect x="4914.00" y="1685.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="4923.00" y="1694.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">32</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): API server using injected credentials → API</title><rect x="4914.00" y="1685.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="4923.00" y="1694.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">31</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="243" data-edge-base="leadsto" data-edge-from="94" data-edge-to="194">
