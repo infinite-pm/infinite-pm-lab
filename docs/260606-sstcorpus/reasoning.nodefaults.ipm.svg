@@ -510,17 +510,17 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="56" data-edge-base="expresses" data-edge-from="42" data-edge-to="48">
-      <line class="edge-ghost" x1="1062.00" y1="310.00" x2="2239.00" y2="939.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="1186.00" y1="368.00" x2="2239.00" y2="939.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="1062.00" y1="310.00" x2="2239.00" y2="939.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="1650" y="624" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="1186.00" y1="368.00" x2="2239.00" y2="939.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="1712" y="653" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>represents/models</title>repr...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="1090.00" y1="310.00" x2="1075.18" y2="310.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="1075.18" y1="310.00" x2="1062.00" y2="310.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (represents/models): expressing SST properties → induction</title><rect x="1055.00" y="303.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1062.00" y="310.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
+        <line x1="1186.00" y1="340.00" x2="1186.00" y2="354.82" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="1186.00" y1="354.82" x2="1186.00" y2="368.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (represents/models): expressing SST properties → induction</title><rect x="1179.00" y="361.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1186.00" y="368.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="2255.00" y1="948.88" x2="2267.26" y2="956.45" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
@@ -702,23 +702,23 @@
     <path d="M 3573.00 1116.00 L 3568.50 1107.00 L 3573.00 1109.25 L 3577.50 1107.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="78" data-edge-base="expresses" data-edge-from="64" data-edge-to="6">
-      <line class="edge-ghost" x1="2553.00" y1="1058.00" x2="1520.00" y2="1056.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="2465.00" y1="980.00" x2="1520.00" y2="1056.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="2553.00" y1="1058.00" x2="1520.00" y2="1056.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="2036" y="1057" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="2465.00" y1="980.00" x2="1520.00" y2="1056.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="1992" y="1018" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>refers to</title>refe...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="2553.00" y1="1030.00" x2="2553.00" y2="1044.82" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="2553.00" y1="1044.82" x2="2553.00" y2="1058.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (refers to): reasoning goes back to 350 BC Greece and Aristotle. → Aristotle</title><rect x="2546.00" y="1051.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2553.00" y="1058.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">9</text></g>
+        <line x1="2493.00" y1="980.00" x2="2478.18" y2="980.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="2478.18" y1="980.00" x2="2465.00" y2="980.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (refers to): reasoning goes back to 350 BC Greece and Aristotle. → Aristotle</title><rect x="2458.00" y="973.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2465.00" y="980.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">8</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="1501.18" y1="1057.41" x2="1486.73" y2="1058.50" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="1520.00" y1="1056.00" x2="1501.18" y2="1057.41" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 1480.00 1059.00 L 1488.64 1053.84 L 1486.73 1058.50 L 1489.31 1062.81 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (refers to): reasoning goes back to 350 BC Greece and Aristotle. → Aristotle</title><rect x="1513.00" y="1049.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1520.00" y="1056.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">9</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): reasoning goes back to 350 BC Greece and Aristotle. → Aristotle</title><rect x="1513.00" y="1049.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1520.00" y="1056.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">8</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="79" data-edge-base="expresses" data-edge-from="64" data-edge-to="63">
@@ -750,13 +750,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="940.00" y1="1992.00" x2="946.35" y2="1971.88" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="946.35" y1="1971.88" x2="952.00" y2="1954.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (refers to): some have argued that &#34;Artificial Intelligence&#34; is incapable of abduction → abduction</title><rect x="945.00" y="1947.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="952.00" y="1954.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">8</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): some have argued that &#34;Artificial Intelligence&#34; is incapable of abduction → abduction</title><rect x="945.00" y="1947.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="952.00" y="1954.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">9</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="1263.65" y1="992.12" x2="1267.97" y2="978.44" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="1258.00" y1="1010.00" x2="1263.65" y2="992.12" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 1270.00 972.00 L 1271.58 981.94 L 1267.97 978.44 L 1263.00 979.23 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (refers to): some have argued that &#34;Artificial Intelligence&#34; is incapable of abduction → abduction</title><rect x="1251.00" y="1003.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1258.00" y="1010.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">8</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): some have argued that &#34;Artificial Intelligence&#34; is incapable of abduction → abduction</title><rect x="1251.00" y="1003.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1258.00" y="1010.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">9</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="83" data-edge-base="expresses" data-edge-from="67" data-edge-to="7">
