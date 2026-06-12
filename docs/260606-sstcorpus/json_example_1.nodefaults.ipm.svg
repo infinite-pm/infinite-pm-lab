@@ -33,31 +33,31 @@
   </g>
   <g id="edges">
     <g class="edge" data-edge-idx="0" data-edge-base="expresses" data-edge-from="10" data-edge-to="1">
-      <line class="edge-ghost" x1="377.00" y1="1035.00" x2="363.00" y2="685.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="393.00" y1="970.00" x2="351.00" y2="740.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="377.00" y1="1035.00" x2="363.00" y2="685.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="370" y="860" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="393.00" y1="970.00" x2="351.00" y2="740.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="372" y="855" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has page number</title>has...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="400.00" y1="1009.00" x2="387.82" y2="1022.76" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="387.82" y1="1022.76" x2="377.00" y2="1035.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <line x1="400.00" y1="1009.00" x2="396.29" y2="988.35" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="396.29" y1="988.35" x2="393.00" y2="970.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
         <g class="edge-badge"><title>Expresses (has page number): Partial json element -- &#34; metadata&#34;: {
       &#34;total&#34;: 2,
       &#34;page&#34;: 1,
       &#34;limit&#34;: 10
-    } → 1</title><rect x="370.00" y="1028.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="377.00" y="1035.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
+    } → 1</title><rect x="386.00" y="963.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="393.00" y="970.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="352.18" y1="681.24" x2="346.38" y2="679.22" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="363.00" y1="685.00" x2="352.18" y2="681.24" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 340.00 677.00 L 349.98 675.71 L 346.38 679.22 L 347.02 684.21 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <line x1="345.82" y1="710.35" x2="341.16" y2="683.65" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="351.00" y1="740.00" x2="345.82" y2="710.35" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+    <path d="M 340.00 677.00 L 345.98 685.09 L 341.16 683.65 L 337.12 686.64 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
         <g class="edge-badge"><title>Expresses (has page number): Partial json element -- &#34; metadata&#34;: {
       &#34;total&#34;: 2,
       &#34;page&#34;: 1,
       &#34;limit&#34;: 10
-    } → 1</title><rect x="356.00" y="678.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="363.00" y="685.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
+    } → 1</title><rect x="344.00" y="733.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="351.00" y="740.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="1" data-edge-base="expresses" data-edge-from="10" data-edge-to="3">
@@ -107,23 +107,23 @@
     <path d="M 442.14 1161.00 L 449.50 1154.13 L 448.62 1159.09 L 452.05 1162.76 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="10" data-edge-base="expresses" data-edge-from="7" data-edge-to="12">
-      <line class="edge-ghost" x1="377.00" y1="485.00" x2="290.00" y2="195.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="389.00" y1="384.00" x2="351.00" y2="201.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="377.00" y1="485.00" x2="290.00" y2="195.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="333" y="340" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="389.00" y1="384.00" x2="351.00" y2="201.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="370" y="292" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has status</title>has...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="400.00" y1="435.00" x2="387.82" y2="461.47" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="387.82" y1="461.47" x2="377.00" y2="485.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has status): &#34;Instance of a users array {\n        \&#34;id\&#34;: 1,\n        \&#34;username\&#34;: \&#34;alice\&#34;,\n        \&#34;email\&#34;: \&#34;alice@example.com\&#34;,\n        \&#34;active\&#34;: true,\n        \&#34;roles\&#34;: → active</title><rect x="370.00" y="478.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="377.00" y="485.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
+        <line x1="400.00" y1="435.00" x2="394.18" y2="408.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="394.18" y1="408.00" x2="389.00" y2="384.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (has status): &#34;Instance of a users array {\n        \&#34;id\&#34;: 1,\n        \&#34;username\&#34;: \&#34;alice\&#34;,\n        \&#34;email\&#34;: \&#34;alice@example.com\&#34;,\n        \&#34;active\&#34;: true,\n        \&#34;roles\&#34;: → active</title><rect x="382.00" y="377.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="389.00" y="384.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="313.53" y1="173.82" x2="334.98" y2="154.52" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="290.00" y1="195.00" x2="313.53" y2="173.82" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 340.00 150.00 L 336.32 159.37 L 334.98 154.52 L 330.30 152.68 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has status): &#34;Instance of a users array {\n        \&#34;id\&#34;: 1,\n        \&#34;username\&#34;: \&#34;alice\&#34;,\n        \&#34;email\&#34;: \&#34;alice@example.com\&#34;,\n        \&#34;active\&#34;: true,\n        \&#34;roles\&#34;: → active</title><rect x="283.00" y="188.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="290.00" y="195.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
+        <line x1="345.82" y1="177.00" x2="341.42" y2="156.60" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="351.00" y1="201.00" x2="345.82" y2="177.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+    <path d="M 340.00 150.00 L 346.30 157.85 L 341.42 156.60 L 337.50 159.75 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (has status): &#34;Instance of a users array {\n        \&#34;id\&#34;: 1,\n        \&#34;username\&#34;: \&#34;alice\&#34;,\n        \&#34;email\&#34;: \&#34;alice@example.com\&#34;,\n        \&#34;active\&#34;: true,\n        \&#34;roles\&#34;: → active</title><rect x="344.00" y="194.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="351.00" y="201.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="11" data-edge-base="expresses" data-edge-from="7" data-edge-to="13">
@@ -206,23 +206,23 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="23" data-edge-base="expresses" data-edge-from="9" data-edge-to="21">
-      <line class="edge-ghost" x1="1097.00" y1="240.00" x2="683.00" y2="769.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="1095.00" y1="317.00" x2="725.00" y2="793.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="1097.00" y1="240.00" x2="683.00" y2="769.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="890" y="504" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="1095.00" y1="317.00" x2="725.00" y2="793.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="910" y="555" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has data</title>has...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="1120.00" y1="285.00" x2="1107.82" y2="261.18" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="1107.82" y1="261.18" x2="1097.00" y2="240.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has data): &#34;My json object representation is an EVENT {\n   \&#34;name\&#34;: \&#34;Example API Response\&#34;,\n   \&#34;version\&#34;: \&#34;1.0.0\&#34;,\n   \&#34;status\&#34;: \&#34;success\&#34;,\n\n   \&#34;data\&#34;: {\n\n      \&#34;users\&#34;: → &#34;{ \&#34;users\&#34;:</title><rect x="1090.00" y="233.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1097.00" y="240.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
+        <line x1="1120.00" y1="285.00" x2="1106.76" y2="301.94" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="1106.76" y1="301.94" x2="1095.00" y2="317.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (has data): &#34;My json object representation is an EVENT {\n   \&#34;name\&#34;: \&#34;Example API Response\&#34;,\n   \&#34;version\&#34;: \&#34;1.0.0\&#34;,\n   \&#34;status\&#34;: \&#34;success\&#34;,\n\n   \&#34;data\&#34;: {\n\n      \&#34;users\&#34;: → &#34;{ \&#34;users\&#34;:</title><rect x="1088.00" y="310.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1095.00" y="317.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="691.00" y1="795.35" x2="698.04" y2="818.54" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="683.00" y1="769.00" x2="691.00" y2="795.35" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 700.00 825.00 L 693.08 817.70 L 698.04 818.54 L 701.69 815.08 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has data): &#34;My json object representation is an EVENT {\n   \&#34;name\&#34;: \&#34;Example API Response\&#34;,\n   \&#34;version\&#34;: \&#34;1.0.0\&#34;,\n   \&#34;status\&#34;: \&#34;success\&#34;,\n\n   \&#34;data\&#34;: {\n\n      \&#34;users\&#34;: → &#34;{ \&#34;users\&#34;:</title><rect x="676.00" y="762.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="683.00" y="769.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
+        <line x1="713.24" y1="808.06" x2="704.16" y2="819.68" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="725.00" y1="793.00" x2="713.24" y2="808.06" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+    <path d="M 700.00 825.00 L 701.99 815.14 L 704.16 819.68 L 709.09 820.68 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (has data): &#34;My json object representation is an EVENT {\n   \&#34;name\&#34;: \&#34;Example API Response\&#34;,\n   \&#34;version\&#34;: \&#34;1.0.0\&#34;,\n   \&#34;status\&#34;: \&#34;success\&#34;,\n\n   \&#34;data\&#34;: {\n\n      \&#34;users\&#34;: → &#34;{ \&#34;users\&#34;:</title><rect x="718.00" y="786.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="725.00" y="793.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="24" data-edge-base="leadsto" data-edge-from="9" data-edge-to="25">

@@ -62,23 +62,23 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="5" data-edge-base="expresses" data-edge-from="13" data-edge-to="10">
-      <line class="edge-ghost" x1="280.00" y1="684.00" x2="363.00" y2="1620.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="340.00" y1="690.00" x2="340.00" y2="1578.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="280.00" y1="684.00" x2="363.00" y2="1620.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="321" y="1152" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="340.00" y1="690.00" x2="340.00" y2="1578.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="340" y="1134" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>refers to</title>refe...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="340.00" y1="650.00" x2="308.24" y2="668.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="308.24" y1="668.00" x2="280.00" y2="684.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (refers to): The Moon affects the sur5 heard → Moon</title><rect x="273.00" y="677.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="280.00" y="684.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
+        <line x1="340.00" y1="650.00" x2="340.00" y2="671.18" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="340.00" y1="671.18" x2="340.00" y2="690.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (refers to): The Moon affects the sur5 heard → Moon</title><rect x="333.00" y="683.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="340.00" y="690.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="352.18" y1="1619.06" x2="346.72" y2="1618.58" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="363.00" y1="1620.00" x2="352.18" y2="1619.06" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 340.00 1618.00 L 349.36 1614.30 L 346.72 1618.58 L 348.58 1623.26 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (refers to): The Moon affects the sur5 heard → Moon</title><rect x="356.00" y="1613.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="363.00" y="1620.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
+        <line x1="340.00" y1="1596.82" x2="340.00" y2="1611.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="340.00" y1="1578.00" x2="340.00" y2="1596.82" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+    <path d="M 340.00 1618.00 L 335.50 1609.00 L 340.00 1611.25 L 344.50 1609.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (refers to): The Moon affects the sur5 heard → Moon</title><rect x="333.00" y="1571.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="340.00" y="1578.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="6" data-edge-base="leadsto" data-edge-from="13" data-edge-to="6">

@@ -143,23 +143,23 @@
     <path d="M 9260.00 396.00 L 9255.50 387.00 L 9260.00 389.25 L 9264.50 387.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="1" data-edge-base="expresses" data-edge-from="10" data-edge-to="95">
-      <line class="edge-ghost" x1="9166.00" y1="230.00" x2="6483.00" y2="160.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="9160.00" y1="204.00" x2="6500.00" y2="176.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="9166.00" y1="230.00" x2="6483.00" y2="160.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="7824" y="195" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="9160.00" y1="204.00" x2="6500.00" y2="176.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="7830" y="190" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>involves</title>invo...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="9200.00" y1="204.00" x2="9182.00" y2="217.76" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="9182.00" y1="217.76" x2="9166.00" y2="230.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (involves): Internal granular layer. The main entry point for incoming sensory signals. Direct signals from the thalamus. → thalamus</title><rect x="9159.00" y="223.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="9166.00" y="230.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
+        <line x1="9200.00" y1="204.00" x2="9178.82" y2="204.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="9178.82" y1="204.00" x2="9160.00" y2="204.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (involves): Internal granular layer. The main entry point for incoming sensory signals. Direct signals from the thalamus. → thalamus</title><rect x="9153.00" y="197.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="9160.00" y="204.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">5</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="6472.18" y1="167.53" x2="6465.54" y2="172.15" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="6483.00" y1="160.00" x2="6472.18" y2="167.53" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 6460.00 176.00 L 6464.82 167.17 L 6465.54 172.15 L 6469.96 174.55 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (involves): Internal granular layer. The main entry point for incoming sensory signals. Direct signals from the thalamus. → thalamus</title><rect x="6476.00" y="153.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="6483.00" y="160.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
+        <line x1="6481.18" y1="176.00" x2="6466.75" y2="176.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="6500.00" y1="176.00" x2="6481.18" y2="176.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+    <path d="M 6460.00 176.00 L 6469.00 171.50 L 6466.75 176.00 L 6469.00 180.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (involves): Internal granular layer. The main entry point for incoming sensory signals. Direct signals from the thalamus. → thalamus</title><rect x="6493.00" y="169.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="6500.00" y="176.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">5</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="2" data-edge-base="leadsto" data-edge-from="100" data-edge-to="119">
@@ -167,23 +167,23 @@
     <path d="M 7440.00 1622.00 L 7435.50 1613.00 L 7440.00 1615.25 L 7444.50 1613.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="3" data-edge-base="expresses" data-edge-from="100" data-edge-to="67">
-      <line class="edge-ghost" x1="7463.00" y1="1344.00" x2="7977.00" y2="290.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="7516.00" y1="1359.00" x2="7984.00" y2="316.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="7463.00" y1="1344.00" x2="7977.00" y2="290.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="7720" y="817" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="7516.00" y1="1359.00" x2="7984.00" y2="316.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="7750" y="837" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>involves</title>invo...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="7500.00" y1="1396.00" x2="7480.41" y2="1368.47" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="7480.41" y1="1368.47" x2="7463.00" y2="1344.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (involves): ultimately expand in mammals to become the neocortex → neocortex</title><rect x="7456.00" y="1337.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="7463.00" y="1344.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
+        <line x1="7500.00" y1="1396.00" x2="7508.47" y2="1376.41" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="7508.47" y1="1376.41" x2="7516.00" y2="1359.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (involves): ultimately expand in mammals to become the neocortex → neocortex</title><rect x="7509.00" y="1352.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="7516.00" y="1359.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">C</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="7987.82" y1="284.82" x2="7993.91" y2="281.91" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="7977.00" y1="290.00" x2="7987.82" y2="284.82" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 8000.00 279.00 L 7993.82 286.94 L 7993.91 281.91 L 7989.94 278.82 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (involves): ultimately expand in mammals to become the neocortex → neocortex</title><rect x="7970.00" y="283.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="7977.00" y="290.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
+        <line x1="7991.53" y1="298.59" x2="7997.32" y2="285.20" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="7984.00" y1="316.00" x2="7991.53" y2="298.59" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+    <path d="M 8000.00 279.00 L 8000.56 289.05 L 7997.32 285.20 L 7992.30 285.47 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (involves): ultimately expand in mammals to become the neocortex → neocortex</title><rect x="7977.00" y="309.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="7984.00" y="316.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">C</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="4" data-edge-base="leadsto" data-edge-from="101" data-edge-to="119">
@@ -252,23 +252,23 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="18" data-edge-base="expresses" data-edge-from="12" data-edge-to="76">
-      <line class="edge-ghost" x1="2223.00" y1="230.00" x2="2417.00" y2="770.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="2217.00" y1="278.00" x2="2423.00" y2="732.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="2223.00" y1="230.00" x2="2417.00" y2="770.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="2320" y="500" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="2217.00" y1="278.00" x2="2423.00" y2="732.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="2320" y="505" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>discusses</title>disc...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="2200.00" y1="242.00" x2="2212.18" y2="235.65" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="2212.18" y1="235.65" x2="2223.00" y2="230.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (discusses): Left–right-alternating theta sweeps in entorhinal–hippocampal maps of space → place cells</title><rect x="2216.00" y="223.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2223.00" y="230.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
+        <line x1="2200.00" y1="242.00" x2="2209.00" y2="261.06" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="2209.00" y1="261.06" x2="2217.00" y2="278.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (discusses): Left–right-alternating theta sweeps in entorhinal–hippocampal maps of space → place cells</title><rect x="2210.00" y="271.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2217.00" y="278.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">A</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="2427.82" y1="769.06" x2="2433.28" y2="768.58" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="2417.00" y1="770.00" x2="2427.82" y2="769.06" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 2440.00 768.00 L 2431.42 773.26 L 2433.28 768.58 L 2430.64 764.30 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (discusses): Left–right-alternating theta sweeps in entorhinal–hippocampal maps of space → place cells</title><rect x="2410.00" y="763.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2417.00" y="770.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
+        <line x1="2431.00" y1="748.94" x2="2437.12" y2="761.90" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="2423.00" y1="732.00" x2="2431.00" y2="748.94" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+    <path d="M 2440.00 768.00 L 2432.09 761.78 L 2437.12 761.90 L 2440.23 757.94 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (discusses): Left–right-alternating theta sweeps in entorhinal–hippocampal maps of space → place cells</title><rect x="2416.00" y="725.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2423.00" y="732.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">A</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="19" data-edge-base="expresses" data-edge-from="12" data-edge-to="77">
@@ -279,23 +279,23 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="20" data-edge-base="expresses" data-edge-from="12" data-edge-to="96">
-      <line class="edge-ghost" x1="2223.00" y1="210.00" x2="2657.00" y2="210.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="2240.00" y1="220.00" x2="2640.00" y2="213.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="2223.00" y1="210.00" x2="2657.00" y2="210.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="2440" y="210" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="2240.00" y1="220.00" x2="2640.00" y2="213.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="2440" y="216" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>discusses</title>disc...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="2200.00" y1="221.00" x2="2212.18" y2="215.18" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="2212.18" y1="215.18" x2="2223.00" y2="210.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (discusses): Left–right-alternating theta sweeps in entorhinal–hippocampal maps of space → theta waves</title><rect x="2216.00" y="203.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2223.00" y="210.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">4</text></g>
+        <line x1="2200.00" y1="221.00" x2="2221.18" y2="220.47" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="2221.18" y1="220.47" x2="2240.00" y2="220.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (discusses): Left–right-alternating theta sweeps in entorhinal–hippocampal maps of space → theta waves</title><rect x="2233.00" y="213.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2240.00" y="220.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">8</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="2667.82" y1="210.94" x2="2673.28" y2="211.42" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="2657.00" y1="210.00" x2="2667.82" y2="210.94" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 2680.00 212.00 L 2670.64 215.70 L 2673.28 211.42 L 2671.42 206.74 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (discusses): Left–right-alternating theta sweeps in entorhinal–hippocampal maps of space → theta waves</title><rect x="2650.00" y="203.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2657.00" y="210.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">4</text></g>
+        <line x1="2658.82" y1="212.53" x2="2673.25" y2="212.17" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="2640.00" y1="213.00" x2="2658.82" y2="212.53" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+    <path d="M 2680.00 212.00 L 2671.12 216.72 L 2673.25 212.17 L 2670.89 207.73 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (discusses): Left–right-alternating theta sweeps in entorhinal–hippocampal maps of space → theta waves</title><rect x="2633.00" y="206.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2640.00" y="213.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">8</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="21" data-edge-base="leadsto" data-edge-from="120" data-edge-to="86">
@@ -327,23 +327,23 @@
     <path d="M 3160.00 216.00 L 3155.50 207.00 L 3160.00 209.25 L 3164.50 207.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="28" data-edge-base="expresses" data-edge-from="14" data-edge-to="12">
-      <line class="edge-ghost" x1="3066.00" y1="152.00" x2="2223.00" y2="170.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="3060.00" y1="151.00" x2="2240.00" y2="167.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="3066.00" y1="152.00" x2="2223.00" y2="170.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="2644" y="161" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="3060.00" y1="151.00" x2="2240.00" y2="167.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="2650" y="159" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>is the publisher of</title>is t...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="3100.00" y1="150.00" x2="3082.00" y2="151.06" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="3082.00" y1="151.06" x2="3066.00" y2="152.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (is the publisher of): Nature → Left–right-alternating theta sweeps in entorhinal–hippocampal maps of space</title><rect x="3059.00" y="145.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3066.00" y="152.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">5</text></g>
+        <line x1="3100.00" y1="150.00" x2="3078.82" y2="150.53" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="3078.82" y1="150.53" x2="3060.00" y2="151.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (is the publisher of): Nature → Left–right-alternating theta sweeps in entorhinal–hippocampal maps of space</title><rect x="3053.00" y="144.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3060.00" y="151.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">4</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="2212.18" y1="169.06" x2="2206.72" y2="168.58" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="2223.00" y1="170.00" x2="2212.18" y2="169.06" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 2200.00 168.00 L 2209.36 164.30 L 2206.72 168.58 L 2208.58 173.26 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (is the publisher of): Nature → Left–right-alternating theta sweeps in entorhinal–hippocampal maps of space</title><rect x="2216.00" y="163.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2223.00" y="170.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">5</text></g>
+        <line x1="2221.18" y1="167.47" x2="2206.75" y2="167.83" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="2240.00" y1="167.00" x2="2221.18" y2="167.47" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+    <path d="M 2200.00 168.00 L 2208.88 163.28 L 2206.75 167.83 L 2209.11 172.27 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (is the publisher of): Nature → Left–right-alternating theta sweeps in entorhinal–hippocampal maps of space</title><rect x="2233.00" y="160.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2240.00" y="167.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">4</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="29" data-edge-base="expresses" data-edge-from="15" data-edge-to="22">
@@ -562,23 +562,23 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="64" data-edge-base="expresses" data-edge-from="50" data-edge-to="40">
-      <line class="edge-ghost" x1="7523.00" y1="370.00" x2="7517.00" y2="1946.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="7501.00" y1="406.00" x2="7539.00" y2="1898.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="7523.00" y1="370.00" x2="7517.00" y2="1946.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="7520" y="1158" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="7501.00" y1="406.00" x2="7539.00" y2="1898.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="7520" y="1152" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>takes place at location</title>take...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="7500.00" y1="366.00" x2="7512.18" y2="368.12" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="7512.18" y1="368.12" x2="7523.00" y2="370.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (takes place at location): hypothalamus → forebrain</title><rect x="7516.00" y="363.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="7523.00" y="370.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">6</text></g>
+        <line x1="7500.00" y1="366.00" x2="7500.53" y2="387.18" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="7500.53" y1="387.18" x2="7501.00" y2="406.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (takes place at location): hypothalamus → forebrain</title><rect x="7494.00" y="399.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="7501.00" y="406.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">E</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="7527.82" y1="1942.24" x2="7533.62" y2="1940.22" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="7517.00" y1="1946.00" x2="7527.82" y2="1942.24" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 7540.00 1938.00 L 7532.98 1945.21 L 7533.62 1940.22 L 7530.02 1936.71 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (takes place at location): hypothalamus → forebrain</title><rect x="7510.00" y="1939.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="7517.00" y="1946.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">6</text></g>
+        <line x1="7539.47" y1="1916.82" x2="7539.83" y2="1931.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="7539.00" y1="1898.00" x2="7539.47" y2="1916.82" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+    <path d="M 7540.00 1938.00 L 7535.28 1929.12 L 7539.83 1931.25 L 7544.27 1928.89 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (takes place at location): hypothalamus → forebrain</title><rect x="7532.00" y="1891.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="7539.00" y="1898.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">E</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="65" data-edge-base="leadsto" data-edge-from="50" data-edge-to="47">
@@ -596,63 +596,63 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="67" data-edge-base="expresses" data-edge-from="50" data-edge-to="66">
-      <line class="edge-ghost" x1="7523.00" y1="350.00" x2="7614.00" y2="718.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="7511.00" y1="433.00" x2="7549.00" y2="685.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="7523.00" y1="350.00" x2="7614.00" y2="718.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="7568" y="534" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="7511.00" y1="433.00" x2="7549.00" y2="685.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="7530" y="559" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has a role</title>has...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="7500.00" y1="358.00" x2="7512.18" y2="353.76" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="7512.18" y1="353.76" x2="7523.00" y2="350.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has a role): hypothalamus → monitoring signals in the bloodstream and neural signals</title><rect x="7516.00" y="343.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="7523.00" y="350.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">7</text></g>
+        <line x1="7500.00" y1="358.00" x2="7505.82" y2="397.71" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="7505.82" y1="397.71" x2="7511.00" y2="433.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (has a role): hypothalamus → monitoring signals in the bloodstream and neural signals</title><rect x="7504.00" y="426.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="7511.00" y="433.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">F</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="7588.59" y1="737.76" x2="7565.33" y2="755.86" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="7614.00" y1="718.00" x2="7588.59" y2="737.76" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 7560.00 760.00 L 7564.34 750.92 L 7565.33 755.86 L 7569.87 758.03 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has a role): hypothalamus → monitoring signals in the bloodstream and neural signals</title><rect x="7607.00" y="711.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="7614.00" y="718.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">7</text></g>
+        <line x1="7554.18" y1="720.29" x2="7559.02" y2="753.32" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="7549.00" y1="685.00" x2="7554.18" y2="720.29" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+    <path d="M 7560.00 760.00 L 7554.24 751.75 L 7559.02 753.32 L 7563.15 750.44 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (has a role): hypothalamus → monitoring signals in the bloodstream and neural signals</title><rect x="7542.00" y="678.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="7549.00" y="685.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">F</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="68" data-edge-base="expresses" data-edge-from="50" data-edge-to="83">
-      <line class="edge-ghost" x1="7434.00" y1="392.00" x2="7266.00" y2="748.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="7373.00" y1="402.00" x2="7330.00" y2="715.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="7434.00" y1="392.00" x2="7266.00" y2="748.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="7350" y="570" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="7373.00" y1="402.00" x2="7330.00" y2="715.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="7351" y="558" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has a role</title>has...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="7380.00" y1="350.00" x2="7408.59" y2="372.24" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="7408.59" y1="372.24" x2="7434.00" y2="392.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has a role): hypothalamus → regulate bodily functions—blood pressure, heart rate, enzyme levels, digestion, gut peristalsis, sweating, shivering, sleep, arousal</title><rect x="7427.00" y="385.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="7434.00" y="392.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">8</text></g>
+        <line x1="7380.00" y1="350.00" x2="7376.29" y2="377.53" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="7376.29" y1="377.53" x2="7373.00" y2="402.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (has a role): hypothalamus → regulate bodily functions—blood pressure, heart rate, enzyme levels, digestion, gut peristalsis, sweating, shivering, sleep, arousal</title><rect x="7366.00" y="395.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="7373.00" y="402.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">D</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="7291.41" y1="767.76" x2="7314.67" y2="785.86" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="7266.00" y1="748.00" x2="7291.41" y2="767.76" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 7320.00 790.00 L 7310.13 788.03 L 7314.67 785.86 L 7315.66 780.92 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has a role): hypothalamus → regulate bodily functions—blood pressure, heart rate, enzyme levels, digestion, gut peristalsis, sweating, shivering, sleep, arousal</title><rect x="7259.00" y="741.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="7266.00" y="748.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">8</text></g>
+        <line x1="7325.29" y1="750.29" x2="7320.89" y2="783.31" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="7330.00" y1="715.00" x2="7325.29" y2="750.29" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+    <path d="M 7320.00 790.00 L 7316.73 780.48 L 7320.89 783.31 L 7325.65 781.67 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (has a role): hypothalamus → regulate bodily functions—blood pressure, heart rate, enzyme levels, digestion, gut peristalsis, sweating, shivering, sleep, arousal</title><rect x="7323.00" y="708.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="7330.00" y="715.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">D</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="69" data-edge-base="expresses" data-edge-from="54" data-edge-to="15">
-      <line class="edge-ghost" x1="9830.00" y1="122.00" x2="10070.00" y2="228.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="9860.00" y1="96.00" x2="10040.00" y2="254.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="9830.00" y1="122.00" x2="10070.00" y2="228.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="9860.00" y1="96.00" x2="10040.00" y2="254.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <text x="9950" y="175" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has description</title>has...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="9830.00" y1="70.00" x2="9830.00" y2="97.53" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="9830.00" y1="97.53" x2="9830.00" y2="122.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has description): layer 1 → Outer molecular layer. Dense mat of axons, dendrites, and &#34;glial cells&#34;, containing few neuronal cell bodies. Inputs from &#34;brain stem&#34;.</title><rect x="9823.00" y="115.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="9830.00" y="122.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">9</text></g>
+        <line x1="9830.00" y1="70.00" x2="9845.88" y2="83.76" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="9845.88" y1="83.76" x2="9860.00" y2="96.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (has description): layer 1 → Outer molecular layer. Dense mat of axons, dendrites, and &#34;glial cells&#34;, containing few neuronal cell bodies. Inputs from &#34;brain stem&#34;.</title><rect x="9853.00" y="89.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="9860.00" y="96.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="10070.00" y1="252.47" x2="10070.00" y2="273.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="10070.00" y1="228.00" x2="10070.00" y2="252.47" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 10070.00 280.00 L 10065.50 271.00 L 10070.00 273.25 L 10074.50 271.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has description): layer 1 → Outer molecular layer. Dense mat of axons, dendrites, and &#34;glial cells&#34;, containing few neuronal cell bodies. Inputs from &#34;brain stem&#34;.</title><rect x="10063.00" y="221.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="10070.00" y="228.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">9</text></g>
+        <line x1="10054.12" y1="266.24" x2="10064.90" y2="275.58" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="10040.00" y1="254.00" x2="10054.12" y2="266.24" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+    <path d="M 10070.00 280.00 L 10060.25 277.51 L 10064.90 275.58 L 10066.15 270.71 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (has description): layer 1 → Outer molecular layer. Dense mat of axons, dendrites, and &#34;glial cells&#34;, containing few neuronal cell bodies. Inputs from &#34;brain stem&#34;.</title><rect x="10033.00" y="247.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="10040.00" y="254.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="70" data-edge-base="expresses" data-edge-from="54" data-edge-to="33">
@@ -670,43 +670,43 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="72" data-edge-base="expresses" data-edge-from="55" data-edge-to="27">
-      <line class="edge-ghost" x1="5163.00" y1="60.00" x2="5537.00" y2="210.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="5178.00" y1="73.00" x2="5522.00" y2="184.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="5163.00" y1="60.00" x2="5537.00" y2="210.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="5350" y="135" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="5178.00" y1="73.00" x2="5522.00" y2="184.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="5350" y="128" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has a role</title>has...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="5140.00" y1="61.00" x2="5152.18" y2="60.47" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="5152.18" y1="60.47" x2="5163.00" y2="60.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has a role): layer 2 → collect sensory information and integrate with neighbouring columns</title><rect x="5156.00" y="53.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="5163.00" y="60.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">A</text></g>
+        <line x1="5140.00" y1="61.00" x2="5160.12" y2="67.35" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="5160.12" y1="67.35" x2="5178.00" y2="73.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (has a role): layer 2 → collect sensory information and integrate with neighbouring columns</title><rect x="5171.00" y="66.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="5178.00" y="73.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="5547.82" y1="203.41" x2="5554.23" y2="199.51" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="5537.00" y1="210.00" x2="5547.82" y2="203.41" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 5560.00 196.00 L 5554.65 204.52 L 5554.23 199.51 L 5549.97 196.84 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has a role): layer 2 → collect sensory information and integrate with neighbouring columns</title><rect x="5530.00" y="203.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="5537.00" y="210.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">A</text></g>
+        <line x1="5539.88" y1="189.65" x2="5553.56" y2="193.97" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="5522.00" y1="184.00" x2="5539.88" y2="189.65" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+    <path d="M 5560.00 196.00 L 5550.06 197.58 L 5553.56 193.97 L 5552.77 189.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (has a role): layer 2 → collect sensory information and integrate with neighbouring columns</title><rect x="5515.00" y="177.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="5522.00" y="184.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="73" data-edge-base="expresses" data-edge-from="55" data-edge-to="8">
-      <line class="edge-ghost" x1="5163.00" y1="80.00" x2="5802.00" y2="246.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="5260.00" y1="112.00" x2="5791.00" y2="259.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="5163.00" y1="80.00" x2="5802.00" y2="246.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="5482" y="163" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="5260.00" y1="112.00" x2="5791.00" y2="259.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="5525" y="185" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has description</title>has...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="5140.00" y1="79.00" x2="5152.18" y2="79.53" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="5152.18" y1="79.53" x2="5163.00" y2="80.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has description): layer 2 → External granular layer. Composed of small &#34;pyramidal cells&#34; and &#34;inhibitory cells&#34;. Receives input from deeper layers.</title><rect x="5156.00" y="73.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="5163.00" y="80.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">C</text></g>
+        <line x1="5140.00" y1="79.00" x2="5203.53" y2="96.47" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="5203.53" y1="96.47" x2="5260.00" y2="112.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (has description): layer 2 → External granular layer. Composed of small &#34;pyramidal cells&#34; and &#34;inhibitory cells&#34;. Receives input from deeper layers.</title><rect x="5253.00" y="105.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="5260.00" y="112.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="5815.18" y1="257.29" x2="5824.88" y2="265.61" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="5802.00" y1="246.00" x2="5815.18" y2="257.29" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 5830.00 270.00 L 5820.24 267.56 L 5824.88 265.61 L 5826.10 260.73 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has description): layer 2 → External granular layer. Composed of small &#34;pyramidal cells&#34; and &#34;inhibitory cells&#34;. Receives input from deeper layers.</title><rect x="5795.00" y="239.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="5802.00" y="246.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">C</text></g>
+        <line x1="5809.35" y1="264.18" x2="5823.50" y2="268.17" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="5791.00" y1="259.00" x2="5809.35" y2="264.18" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+    <path d="M 5830.00 270.00 L 5820.12 271.89 L 5823.50 268.17 L 5822.56 263.23 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (has description): layer 2 → External granular layer. Composed of small &#34;pyramidal cells&#34; and &#34;inhibitory cells&#34;. Receives input from deeper layers.</title><rect x="5784.00" y="252.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="5791.00" y="259.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="74" data-edge-base="expresses" data-edge-from="56" data-edge-to="19">
@@ -731,23 +731,23 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="77" data-edge-base="expresses" data-edge-from="57" data-edge-to="10">
-      <line class="edge-ghost" x1="8923.00" y1="200.00" x2="9166.00" y2="250.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="8939.00" y1="212.00" x2="9161.00" y2="266.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="8923.00" y1="200.00" x2="9166.00" y2="250.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="9044" y="225" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="8939.00" y1="212.00" x2="9161.00" y2="266.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="9050" y="239" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has description</title>has...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="8900.00" y1="202.00" x2="8912.18" y2="200.94" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="8912.18" y1="200.94" x2="8923.00" y2="200.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has description): layer 4 → Internal granular layer. The main entry point for incoming sensory signals. Direct signals from the thalamus.</title><rect x="8916.00" y="193.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="8923.00" y="200.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">D</text></g>
+        <line x1="8900.00" y1="202.00" x2="8920.65" y2="207.29" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="8920.65" y1="207.29" x2="8939.00" y2="212.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (has description): layer 4 → Internal granular layer. The main entry point for incoming sensory signals. Direct signals from the thalamus.</title><rect x="8932.00" y="205.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="8939.00" y="212.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">7</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="9182.00" y1="262.24" x2="9194.64" y2="271.90" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="9166.00" y1="250.00" x2="9182.00" y2="262.24" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 9200.00 276.00 L 9190.12 274.11 L 9194.64 271.90 L 9195.58 266.96 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has description): layer 4 → Internal granular layer. The main entry point for incoming sensory signals. Direct signals from the thalamus.</title><rect x="9159.00" y="243.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="9166.00" y="250.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">D</text></g>
+        <line x1="9179.35" y1="270.71" x2="9193.46" y2="274.32" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="9161.00" y1="266.00" x2="9179.35" y2="270.71" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+    <path d="M 9200.00 276.00 L 9190.16 278.12 L 9193.46 274.32 L 9192.40 269.41 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (has description): layer 4 → Internal granular layer. The main entry point for incoming sensory signals. Direct signals from the thalamus.</title><rect x="9154.00" y="259.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="9161.00" y="266.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">7</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="78" data-edge-base="leadsto" data-edge-from="57" data-edge-to="131">
@@ -881,23 +881,23 @@
     <path d="M 6820.00 446.00 L 6815.50 437.00 L 6820.00 439.25 L 6824.50 437.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="100" data-edge-base="expresses" data-edge-from="85" data-edge-to="95">
-      <line class="edge-ghost" x1="6750.00" y1="334.00" x2="6483.00" y2="180.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="6727.00" y1="358.00" x2="6493.00" y2="204.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="6750.00" y1="334.00" x2="6483.00" y2="180.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="6616" y="257" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="6727.00" y1="358.00" x2="6493.00" y2="204.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="6610" y="281" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>involves</title>invo...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="6760.00" y1="380.00" x2="6754.71" y2="355.65" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="6754.71" y1="355.65" x2="6750.00" y2="334.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (involves): return data back to thalamus → thalamus</title><rect x="6743.00" y="327.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="6750.00" y="334.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">E</text></g>
+        <line x1="6760.00" y1="380.00" x2="6742.53" y2="368.35" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="6742.53" y1="368.35" x2="6727.00" y2="358.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (involves): return data back to thalamus → thalamus</title><rect x="6720.00" y="351.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="6727.00" y="358.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">6</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="6472.18" y1="180.94" x2="6466.72" y2="181.42" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="6483.00" y1="180.00" x2="6472.18" y2="180.94" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 6460.00 182.00 L 6468.58 176.74 L 6466.72 181.42 L 6469.36 185.70 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (involves): return data back to thalamus → thalamus</title><rect x="6476.00" y="173.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="6483.00" y="180.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">E</text></g>
+        <line x1="6477.47" y1="193.65" x2="6465.62" y2="185.74" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="6493.00" y1="204.00" x2="6477.47" y2="193.65" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+    <path d="M 6460.00 182.00 L 6469.98 183.25 L 6465.62 185.74 L 6464.99 190.74 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (involves): return data back to thalamus → thalamus</title><rect x="6486.00" y="197.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="6493.00" y="204.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">6</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="101" data-edge-base="leadsto" data-edge-from="86" data-edge-to="23">
@@ -962,23 +962,23 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="111" data-edge-base="expresses" data-edge-from="95" data-edge-to="40">
-      <line class="edge-ghost" x1="6483.00" y1="200.00" x2="7517.00" y2="1926.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="6487.00" y1="232.00" x2="7519.00" y2="1896.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="6483.00" y1="200.00" x2="7517.00" y2="1926.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="7000" y="1063" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="6487.00" y1="232.00" x2="7519.00" y2="1896.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="7003" y="1064" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>takes place at location</title>take...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="6460.00" y1="188.00" x2="6472.18" y2="194.35" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="6472.18" y1="194.35" x2="6483.00" y2="200.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (takes place at location): thalamus → forebrain</title><rect x="6476.00" y="193.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="6483.00" y="200.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">F</text></g>
+        <line x1="6460.00" y1="188.00" x2="6474.29" y2="211.29" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="6474.29" y1="211.29" x2="6487.00" y2="232.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (takes place at location): thalamus → forebrain</title><rect x="6480.00" y="225.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="6487.00" y="232.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">9</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="7527.82" y1="1927.88" x2="7533.35" y2="1928.84" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="7517.00" y1="1926.00" x2="7527.82" y2="1927.88" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 7540.00 1930.00 L 7530.36 1932.89 L 7533.35 1928.84 L 7531.90 1924.02 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (takes place at location): thalamus → forebrain</title><rect x="7510.00" y="1919.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="7517.00" y="1926.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">F</text></g>
+        <line x1="7528.88" y1="1912.00" x2="7536.45" y2="1924.26" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="7519.00" y1="1896.00" x2="7528.88" y2="1912.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+    <path d="M 7540.00 1930.00 L 7531.44 1924.71 L 7536.45 1924.26 L 7539.10 1919.98 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (takes place at location): thalamus → forebrain</title><rect x="7512.00" y="1889.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="7519.00" y="1896.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">9</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="112" data-edge-base="expresses" data-edge-from="95" data-edge-to="73">

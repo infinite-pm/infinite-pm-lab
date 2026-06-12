@@ -305,22 +305,22 @@
     <path d="M 7960.00 356.00 L 7955.50 347.00 L 7960.00 349.25 L 7964.50 347.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="23" data-edge-base="nearto" data-edge-from="126" data-edge-to="127">
-      <line class="edge-ghost" x1="12734.00" y1="260.00" x2="13567.00" y2="161.00" stroke="#999999" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="12740.00" y1="256.00" x2="13560.00" y2="155.00" stroke="#999999" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="12734.00" y1="260.00" x2="13567.00" y2="161.00" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" />
-    <text x="13150" y="210" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#999999">
+        <line x1="12740.00" y1="256.00" x2="13560.00" y2="155.00" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" />
+    <text x="13150" y="205" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#999999">
       <title>same as</title>same...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="12700.00" y1="261.00" x2="12718.00" y2="260.47" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" />
-        <line x1="12718.00" y1="260.47" x2="12734.00" y2="260.00" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>NearTo (same as): strategic context ↔ strategic labelling / tagging</title><rect x="12727.00" y="253.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#999999" stroke-width="1.5" /><text x="12734.00" y="260.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#999999">1</text></g>
+        <line x1="12700.00" y1="261.00" x2="12721.18" y2="258.35" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" />
+        <line x1="12721.18" y1="258.35" x2="12740.00" y2="256.00" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>NearTo (same as): strategic context ↔ strategic labelling / tagging</title><rect x="12733.00" y="249.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#999999" stroke-width="1.5" /><text x="12740.00" y="256.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#999999">3</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="13582.53" y1="155.82" x2="13600.00" y2="150.00" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" />
-        <line x1="13567.00" y1="161.00" x2="13582.53" y2="155.82" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>NearTo (same as): strategic context ↔ strategic labelling / tagging</title><rect x="13560.00" y="154.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#999999" stroke-width="1.5" /><text x="13567.00" y="161.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#999999">1</text></g>
+        <line x1="13578.82" y1="152.65" x2="13600.00" y2="150.00" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" />
+        <line x1="13560.00" y1="155.00" x2="13578.82" y2="152.65" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>NearTo (same as): strategic context ↔ strategic labelling / tagging</title><rect x="13553.00" y="148.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#999999" stroke-width="1.5" /><text x="13560.00" y="155.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#999999">3</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="24" data-edge-base="leadsto" data-edge-from="126" data-edge-to="161">
@@ -338,23 +338,23 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="27" data-edge-base="expresses" data-edge-from="13" data-edge-to="3">
-      <line class="edge-ghost" x1="696.00" y1="60.00" x2="416.00" y2="145.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="692.00" y1="74.00" x2="438.00" y2="157.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="696.00" y1="60.00" x2="416.00" y2="145.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="556" y="102" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="692.00" y1="74.00" x2="438.00" y2="157.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="565" y="115" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has example</title>has...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="730.00" y1="61.00" x2="712.00" y2="60.47" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="712.00" y1="60.47" x2="696.00" y2="60.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has example): &gt;link &gt;arrow types used in notes → &gt;arrow &#34;has emergency procedure&#34;</title><rect x="689.00" y="53.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="696.00" y="60.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
+        <line x1="730.00" y1="61.00" x2="709.88" y2="67.88" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="709.88" y1="67.88" x2="692.00" y2="74.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (has example): &gt;link &gt;arrow types used in notes → &gt;arrow &#34;has emergency procedure&#34;</title><rect x="685.00" y="67.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="692.00" y="74.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="408.47" y1="156.76" x2="403.64" y2="164.31" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="416.00" y1="145.00" x2="408.47" y2="156.76" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 400.00 170.00 L 401.06 159.99 L 403.64 164.31 L 408.64 164.85 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has example): &gt;link &gt;arrow types used in notes → &gt;arrow &#34;has emergency procedure&#34;</title><rect x="409.00" y="138.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="416.00" y="145.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
+        <line x1="420.12" y1="163.12" x2="406.39" y2="167.82" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="438.00" y1="157.00" x2="420.12" y2="163.12" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+    <path d="M 400.00 170.00 L 407.06 162.83 L 406.39 167.82 L 409.97 171.34 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (has example): &gt;link &gt;arrow types used in notes → &gt;arrow &#34;has emergency procedure&#34;</title><rect x="431.00" y="150.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="438.00" y="157.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="28" data-edge-base="expresses" data-edge-from="13" data-edge-to="4">
@@ -386,23 +386,23 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="32" data-edge-base="expresses" data-edge-from="13" data-edge-to="8">
-      <line class="edge-ghost" x1="884.00" y1="80.00" x2="1162.00" y2="149.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="889.00" y1="90.00" x2="1141.00" y2="159.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="884.00" y1="80.00" x2="1162.00" y2="149.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="1023" y="114" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="889.00" y1="90.00" x2="1141.00" y2="159.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="1015" y="124" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has example</title>has...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="850.00" y1="79.00" x2="868.00" y2="79.53" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="868.00" y1="79.53" x2="884.00" y2="80.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has example): &gt;link &gt;arrow types used in notes → &gt;arrow &#34;then verify&#34;</title><rect x="877.00" y="73.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="884.00" y="80.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
+        <line x1="850.00" y1="79.00" x2="870.65" y2="84.82" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="870.65" y1="84.82" x2="889.00" y2="90.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (has example): &gt;link &gt;arrow types used in notes → &gt;arrow &#34;then verify&#34;</title><rect x="882.00" y="83.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="889.00" y="90.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="1170.47" y1="158.88" x2="1175.61" y2="164.88" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="1162.00" y1="149.00" x2="1170.47" y2="158.88" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 1180.00 170.00 L 1170.73 166.10 L 1175.61 164.88 L 1177.56 160.24 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has example): &gt;link &gt;arrow types used in notes → &gt;arrow &#34;then verify&#34;</title><rect x="1155.00" y="142.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1162.00" y="149.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
+        <line x1="1159.35" y1="164.18" x2="1173.50" y2="168.17" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="1141.00" y1="159.00" x2="1159.35" y2="164.18" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+    <path d="M 1180.00 170.00 L 1170.12 171.89 L 1173.50 168.17 L 1172.56 163.23 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (has example): &gt;link &gt;arrow types used in notes → &gt;arrow &#34;then verify&#34;</title><rect x="1134.00" y="152.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1141.00" y="159.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="33" data-edge-base="expresses" data-edge-from="132" data-edge-to="109">
@@ -677,43 +677,43 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="85" data-edge-base="expresses" data-edge-from="43" data-edge-to="1">
-      <line class="edge-ghost" x1="8523.00" y1="170.00" x2="9186.00" y2="200.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="8540.00" y1="168.00" x2="9180.00" y2="203.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="8523.00" y1="170.00" x2="9186.00" y2="200.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="8854" y="185" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="8540.00" y1="168.00" x2="9180.00" y2="203.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="8860" y="185" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>used for</title>used...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="8500.00" y1="166.00" x2="8512.18" y2="168.12" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="8512.18" y1="168.12" x2="8523.00" y2="170.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (used for): N4L → &gt;&#34;n4l notes&#34; as a link between &gt;logical &gt;thinking and &gt;brainstorming</title><rect x="8516.00" y="163.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="8523.00" y="170.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">4</text></g>
+        <line x1="8500.00" y1="166.00" x2="8521.18" y2="167.06" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="8521.18" y1="167.06" x2="8540.00" y2="168.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (used for): N4L → &gt;&#34;n4l notes&#34; as a link between &gt;logical &gt;thinking and &gt;brainstorming</title><rect x="8533.00" y="161.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="8540.00" y="168.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">5</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="9202.00" y1="202.35" x2="9213.32" y2="204.02" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="9186.00" y1="200.00" x2="9202.00" y2="202.35" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 9220.00 205.00 L 9210.44 208.14 L 9213.32 204.02 L 9211.75 199.24 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (used for): N4L → &gt;&#34;n4l notes&#34; as a link between &gt;logical &gt;thinking and &gt;brainstorming</title><rect x="9179.00" y="193.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="9186.00" y="200.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">4</text></g>
+        <line x1="9198.82" y1="203.94" x2="9213.26" y2="204.66" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="9180.00" y1="203.00" x2="9198.82" y2="203.94" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+    <path d="M 9220.00 205.00 L 9210.79 209.04 L 9213.26 204.66 L 9211.24 200.06 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (used for): N4L → &gt;&#34;n4l notes&#34; as a link between &gt;logical &gt;thinking and &gt;brainstorming</title><rect x="9173.00" y="196.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="9180.00" y="203.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">5</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="86" data-edge-base="expresses" data-edge-from="43" data-edge-to="103">
-      <line class="edge-ghost" x1="8523.00" y1="150.00" x2="9666.00" y2="160.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="8696.00" y1="159.00" x2="9660.00" y2="162.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="8523.00" y1="150.00" x2="9666.00" y2="160.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="9094" y="155" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="8696.00" y1="159.00" x2="9660.00" y2="162.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="9178" y="160" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>used for</title>used...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="8500.00" y1="158.00" x2="8512.18" y2="153.76" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="8512.18" y1="153.76" x2="8523.00" y2="150.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (used for): N4L → note-taking</title><rect x="8516.00" y="143.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="8523.00" y="150.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">5</text></g>
+        <line x1="8500.00" y1="158.00" x2="8603.76" y2="158.53" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="8603.76" y1="158.53" x2="8696.00" y2="159.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (used for): N4L → note-taking</title><rect x="8689.00" y="152.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="8696.00" y="159.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">4</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="9682.00" y1="160.94" x2="9693.26" y2="161.60" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="9666.00" y1="160.00" x2="9682.00" y2="160.94" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 9700.00 162.00 L 9690.75 165.96 L 9693.26 161.60 L 9691.28 156.98 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (used for): N4L → note-taking</title><rect x="9659.00" y="153.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="9666.00" y="160.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">5</text></g>
+        <line x1="9678.82" y1="162.00" x2="9693.25" y2="162.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="9660.00" y1="162.00" x2="9678.82" y2="162.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+    <path d="M 9700.00 162.00 L 9691.00 166.50 L 9693.25 162.00 L 9691.00 157.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (used for): N4L → note-taking</title><rect x="9653.00" y="155.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="9660.00" y="162.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">4</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="87" data-edge-base="expresses" data-edge-from="43" data-edge-to="104">
@@ -864,23 +864,23 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="111" data-edge-base="expresses" data-edge-from="77" data-edge-to="126">
-      <line class="edge-ghost" x1="13157.00" y1="210.00" x2="12734.00" y2="280.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="13140.00" y1="218.00" x2="12763.00" y2="270.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="13157.00" y1="210.00" x2="12734.00" y2="280.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="12945" y="245" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="13140.00" y1="218.00" x2="12763.00" y2="270.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="12951" y="244" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>generalizes</title>gene...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="13180.00" y1="212.00" x2="13167.82" y2="210.94" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="13167.82" y1="210.94" x2="13157.00" y2="210.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (generalizes): context → strategic context</title><rect x="13150.00" y="203.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="13157.00" y="210.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">6</text></g>
+        <line x1="13180.00" y1="212.00" x2="13158.82" y2="215.18" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="13158.82" y1="215.18" x2="13140.00" y2="218.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (generalizes): context → strategic context</title><rect x="13133.00" y="211.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="13140.00" y="218.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">6</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="12718.00" y1="279.53" x2="12706.75" y2="279.20" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="12734.00" y1="280.00" x2="12718.00" y2="279.53" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 12700.00 279.00 L 12709.13 274.77 L 12706.75 279.20 L 12708.86 283.76 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (generalizes): context → strategic context</title><rect x="12727.00" y="273.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="12734.00" y="280.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">6</text></g>
+        <line x1="12733.35" y1="274.24" x2="12706.68" y2="278.05" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="12763.00" y1="270.00" x2="12733.35" y2="274.24" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+    <path d="M 12700.00 279.00 L 12708.27 273.27 L 12706.68 278.05 L 12709.55 282.18 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (generalizes): context → strategic context</title><rect x="12756.00" y="263.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="12763.00" y="270.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">6</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="112" data-edge-base="leadsto" data-edge-from="77" data-edge-to="165">

@@ -43,16 +43,16 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="2" data-edge-base="expresses" data-edge-from="14" data-edge-to="12">
-      <line class="edge-ghost" x1="3366.00" y1="240.00" x2="3074.00" y2="150.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="3360.00" y1="150.00" x2="3080.00" y2="150.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="3366.00" y1="240.00" x2="3074.00" y2="150.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="3220" y="195" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="3360.00" y1="150.00" x2="3080.00" y2="150.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="3220" y="150" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has example</title>has...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="3400.00" y1="150.00" x2="3382.00" y2="197.65" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="3382.00" y1="197.65" x2="3366.00" y2="240.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <line x1="3400.00" y1="150.00" x2="3378.82" y2="150.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="3378.82" y1="150.00" x2="3360.00" y2="150.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
         <g class="edge-badge"><title>Expresses (has example): package main
 
 import (
@@ -64,11 +64,11 @@ import (
 func main () {  // brace must go here
 
       fmt.Println(&#34;Hello world&#34;)
-} → hello world</title><rect x="3359.00" y="233.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3366.00" y="240.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
+} → hello world</title><rect x="3353.00" y="143.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3360.00" y="150.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="3058.00" y1="150.00" x2="3046.75" y2="150.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="3074.00" y1="150.00" x2="3058.00" y2="150.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <line x1="3061.18" y1="150.00" x2="3046.75" y2="150.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="3080.00" y1="150.00" x2="3061.18" y2="150.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 3040.00 150.00 L 3049.00 145.50 L 3046.75 150.00 L 3049.00 154.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
         <g class="edge-badge"><title>Expresses (has example): package main
 
@@ -81,7 +81,7 @@ import (
 func main () {  // brace must go here
 
       fmt.Println(&#34;Hello world&#34;)
-} → hello world</title><rect x="3067.00" y="143.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3074.00" y="150.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
+} → hello world</title><rect x="3073.00" y="143.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3080.00" y="150.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="3" data-edge-base="leadsto" data-edge-from="14" data-edge-to="23">
@@ -116,22 +116,22 @@ func main () {  // brace must go here
     <path d="M 100.00 116.00 L 95.50 107.00 L 100.00 109.25 L 104.50 107.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="10" data-edge-base="nearto" data-edge-from="6" data-edge-to="12">
-      <line class="edge-ghost" x1="1634.00" y1="150.00" x2="2886.00" y2="150.00" stroke="#999999" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="1640.00" y1="150.00" x2="2880.00" y2="150.00" stroke="#999999" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="1634.00" y1="150.00" x2="2886.00" y2="150.00" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" />
+        <line x1="1640.00" y1="150.00" x2="2880.00" y2="150.00" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" />
     <text x="2260" y="150" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#999999">
       <title>same as</title>same...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="1600.00" y1="150.00" x2="1618.00" y2="150.00" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" />
-        <line x1="1618.00" y1="150.00" x2="1634.00" y2="150.00" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>NearTo (same as): basic example ↔ hello world</title><rect x="1627.00" y="143.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#999999" stroke-width="1.5" /><text x="1634.00" y="150.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#999999">2</text></g>
+        <line x1="1600.00" y1="150.00" x2="1621.18" y2="150.00" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" />
+        <line x1="1621.18" y1="150.00" x2="1640.00" y2="150.00" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>NearTo (same as): basic example ↔ hello world</title><rect x="1633.00" y="143.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#999999" stroke-width="1.5" /><text x="1640.00" y="150.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#999999">1</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="2902.00" y1="150.00" x2="2920.00" y2="150.00" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" />
-        <line x1="2886.00" y1="150.00" x2="2902.00" y2="150.00" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>NearTo (same as): basic example ↔ hello world</title><rect x="2879.00" y="143.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#999999" stroke-width="1.5" /><text x="2886.00" y="150.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#999999">2</text></g>
+        <line x1="2898.82" y1="150.00" x2="2920.00" y2="150.00" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" />
+        <line x1="2880.00" y1="150.00" x2="2898.82" y2="150.00" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>NearTo (same as): basic example ↔ hello world</title><rect x="2873.00" y="143.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#999999" stroke-width="1.5" /><text x="2880.00" y="150.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#999999">1</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="11" data-edge-base="leadsto" data-edge-from="6" data-edge-to="19">
