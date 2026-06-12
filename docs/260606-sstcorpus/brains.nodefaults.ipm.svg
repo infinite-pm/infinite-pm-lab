@@ -562,17 +562,17 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="64" data-edge-base="expresses" data-edge-from="50" data-edge-to="40">
-      <line class="edge-ghost" x1="7501.00" y1="406.00" x2="7539.00" y2="1898.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="7502.00" y1="430.00" x2="7539.00" y2="1898.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="7501.00" y1="406.00" x2="7539.00" y2="1898.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="7520" y="1152" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="7502.00" y1="430.00" x2="7539.00" y2="1898.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="7520" y="1164" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>takes place at location</title>take...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="7500.00" y1="366.00" x2="7500.53" y2="387.18" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="7500.53" y1="387.18" x2="7501.00" y2="406.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (takes place at location): hypothalamus → forebrain</title><rect x="7494.00" y="399.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="7501.00" y="406.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">A</text></g>
+        <line x1="7500.00" y1="366.00" x2="7501.06" y2="399.88" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="7501.06" y1="399.88" x2="7502.00" y2="430.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (takes place at location): hypothalamus → forebrain</title><rect x="7495.00" y="423.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="7502.00" y="430.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">A</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="7539.47" y1="1916.82" x2="7539.83" y2="1931.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />

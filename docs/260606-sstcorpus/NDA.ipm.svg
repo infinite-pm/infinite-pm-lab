@@ -1351,14 +1351,14 @@
     <path d="M 520.00 5975.00 L 524.50 5984.00 L 520.00 5981.75 L 515.50 5984.00 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="208" data-edge-base="partof" data-edge-from="207" data-edge-to="213">
-      <line class="edge-ghost" x1="548.00" y1="6910.00" x2="460.00" y2="28710.00" stroke="#82b366" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="372.00" y1="6910.00" x2="460.00" y2="28710.00" stroke="#82b366" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="548.00" y1="6910.00" x2="460.00" y2="28710.00" stroke="#82b366" stroke-width="3" />
+        <line x1="372.00" y1="6910.00" x2="460.00" y2="28710.00" stroke="#82b366" stroke-width="3" />
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="520.00" y1="6910.00" x2="534.82" y2="6910.00" stroke="#82b366" stroke-width="3" />
-        <line x1="534.82" y1="6910.00" x2="548.00" y2="6910.00" stroke="#82b366" stroke-width="3" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>PartOf: obligations hereunder → part 2 of NDA about: processing terms, personal data, protection regulation, data regulation, organizational measures, data breach, data subject</title><rect x="541.00" y="6903.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#82b366" stroke-width="1.5" /><text x="548.00" y="6910.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#82b366">1</text></g>
+        <line x1="400.00" y1="6910.00" x2="385.18" y2="6910.00" stroke="#82b366" stroke-width="3" />
+        <line x1="385.18" y1="6910.00" x2="372.00" y2="6910.00" stroke="#82b366" stroke-width="3" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>PartOf: obligations hereunder → part 2 of NDA about: processing terms, personal data, protection regulation, data regulation, organizational measures, data breach, data subject</title><rect x="365.00" y="6903.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#82b366" stroke-width="1.5" /><text x="372.00" y="6910.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#82b366">1</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="460.00" y1="28728.82" x2="460.00" y2="28743.25" stroke="#82b366" stroke-width="3" />

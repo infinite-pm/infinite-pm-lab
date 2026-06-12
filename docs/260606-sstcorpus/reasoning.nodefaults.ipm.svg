@@ -218,10 +218,10 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="16" data-edge-base="expresses" data-edge-from="2" data-edge-to="37">
-      <line class="edge-ghost" x1="1160.00" y1="1286.00" x2="2581.00" y2="1155.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="1160.00" y1="1286.00" x2="2545.00" y2="1158.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="1160.00" y1="1286.00" x2="2581.00" y2="1155.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="1870" y="1220" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="1160.00" y1="1286.00" x2="2545.00" y2="1158.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="1852" y="1222" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>refers to</title>refe...
     </text>
       </g>
@@ -231,10 +231,10 @@
         <g class="edge-badge"><title>Expresses (refers to): &#34;established facts&#34; tend to suggest explanations → established facts</title><rect x="1153.00" y="1279.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1160.00" y="1286.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">A</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="2599.82" y1="1153.12" x2="2614.28" y2="1151.67" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="2581.00" y1="1155.00" x2="2599.82" y2="1153.12" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 2621.00 1151.00 L 2612.49 1156.37 L 2614.28 1151.67 L 2611.60 1147.42 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (refers to): &#34;established facts&#34; tend to suggest explanations → established facts</title><rect x="2574.00" y="1148.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2581.00" y="1155.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">A</text></g>
+        <line x1="2580.76" y1="1154.71" x2="2614.28" y2="1151.62" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="2545.00" y1="1158.00" x2="2580.76" y2="1154.71" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+    <path d="M 2621.00 1151.00 L 2612.45 1156.31 L 2614.28 1151.62 L 2611.63 1147.34 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (refers to): &#34;established facts&#34; tend to suggest explanations → established facts</title><rect x="2538.00" y="1151.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2545.00" y="1158.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">A</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="17" data-edge-base="expresses" data-edge-from="2" data-edge-to="39">
@@ -510,17 +510,17 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="56" data-edge-base="expresses" data-edge-from="42" data-edge-to="48">
-      <line class="edge-ghost" x1="1244.00" y1="346.00" x2="2239.00" y2="939.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="1062.00" y1="310.00" x2="2239.00" y2="939.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="1244.00" y1="346.00" x2="2239.00" y2="939.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="1741" y="642" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="1062.00" y1="310.00" x2="2239.00" y2="939.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="1650" y="624" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>represents/models</title>repr...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="1210.00" y1="325.00" x2="1228.00" y2="336.12" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="1228.00" y1="336.12" x2="1244.00" y2="346.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (represents/models): expressing SST properties → induction</title><rect x="1237.00" y="339.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1244.00" y="346.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
+        <line x1="1090.00" y1="310.00" x2="1075.18" y2="310.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="1075.18" y1="310.00" x2="1062.00" y2="310.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (represents/models): expressing SST properties → induction</title><rect x="1055.00" y="303.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1062.00" y="310.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="2255.00" y1="948.88" x2="2267.26" y2="956.45" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />

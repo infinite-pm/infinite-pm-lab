@@ -227,12 +227,12 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="13300.00" y1="350.00" x2="13316.94" y2="337.82" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" />
         <line x1="13316.94" y1="337.82" x2="13332.00" y2="327.00" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>NearTo (is a variant of): intentionality ↔ intent</title><rect x="13325.00" y="320.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#999999" stroke-width="1.5" /><text x="13332.00" y="327.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#999999">4</text></g>
+        <g class="edge-badge"><title>NearTo (is a variant of): intentionality ↔ intent</title><rect x="13325.00" y="320.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#999999" stroke-width="1.5" /><text x="13332.00" y="327.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#999999">5</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="13673.06" y1="82.18" x2="13690.00" y2="70.00" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" />
         <line x1="13658.00" y1="93.00" x2="13673.06" y2="82.18" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>NearTo (is a variant of): intentionality ↔ intent</title><rect x="13651.00" y="86.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#999999" stroke-width="1.5" /><text x="13658.00" y="93.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#999999">4</text></g>
+        <g class="edge-badge"><title>NearTo (is a variant of): intentionality ↔ intent</title><rect x="13651.00" y="86.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#999999" stroke-width="1.5" /><text x="13658.00" y="93.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#999999">5</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="8" data-edge-base="expresses" data-edge-from="114" data-edge-to="105">
@@ -599,23 +599,23 @@ $ psql
       </g>
     </g>
     <g class="edge" data-edge-idx="60" data-edge-base="expresses" data-edge-from="43" data-edge-to="17">
-      <line class="edge-ghost" x1="5552.00" y1="100.00" x2="5298.00" y2="178.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="5738.00" y1="70.00" x2="5298.00" y2="178.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="5552.00" y1="100.00" x2="5298.00" y2="178.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="5425" y="139" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="5738.00" y1="70.00" x2="5298.00" y2="178.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="5518" y="124" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>might be used for</title>migh...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="5590.00" y1="88.00" x2="5569.88" y2="94.35" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="5569.88" y1="94.35" x2="5552.00" y2="100.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (might be used for): Making %notes → Forensic fact assimilation and reasoning.</title><rect x="5545.00" y="93.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="5552.00" y="100.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">5</text></g>
+        <line x1="5710.00" y1="70.00" x2="5724.82" y2="70.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="5724.82" y1="70.00" x2="5738.00" y2="70.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (might be used for): Making %notes → Forensic fact assimilation and reasoning.</title><rect x="5731.00" y="63.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="5738.00" y="70.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="5280.12" y1="183.65" x2="5266.44" y2="187.97" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="5298.00" y1="178.00" x2="5280.12" y2="183.65" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 5260.00 190.00 L 5267.23 183.00 L 5266.44 187.97 L 5269.94 191.58 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (might be used for): Making %notes → Forensic fact assimilation and reasoning.</title><rect x="5291.00" y="171.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="5298.00" y="178.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">5</text></g>
+        <g class="edge-badge"><title>Expresses (might be used for): Making %notes → Forensic fact assimilation and reasoning.</title><rect x="5291.00" y="171.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="5298.00" y="178.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="61" data-edge-base="expresses" data-edge-from="43" data-edge-to="35">
@@ -640,23 +640,23 @@ $ psql
     </text>
     </g>
     <g class="edge" data-edge-idx="64" data-edge-base="expresses" data-edge-from="43" data-edge-to="54">
-      <line class="edge-ghost" x1="5749.00" y1="78.00" x2="6181.00" y2="172.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="5761.00" y1="81.00" x2="6181.00" y2="172.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="5749.00" y1="78.00" x2="6181.00" y2="172.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="5965" y="125" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="5761.00" y1="81.00" x2="6181.00" y2="172.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="5971" y="126" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>might be used for</title>migh...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="5710.00" y1="70.00" x2="5730.65" y2="74.24" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="5730.65" y1="74.24" x2="5749.00" y2="78.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (might be used for): Making %notes → Reasoning with mathematical support</title><rect x="5742.00" y="71.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="5749.00" y="78.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
+        <line x1="5710.00" y1="70.00" x2="5737.00" y2="75.82" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="5737.00" y1="75.82" x2="5761.00" y2="81.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (might be used for): Making %notes → Reasoning with mathematical support</title><rect x="5754.00" y="74.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="5761.00" y="81.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">4</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="6199.35" y1="175.76" x2="6213.39" y2="178.64" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="6181.00" y1="172.00" x2="6199.35" y2="175.76" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 6220.00 180.00 L 6210.28 182.60 L 6213.39 178.64 L 6212.09 173.78 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (might be used for): Making %notes → Reasoning with mathematical support</title><rect x="6174.00" y="165.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="6181.00" y="172.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
+        <g class="edge-badge"><title>Expresses (might be used for): Making %notes → Reasoning with mathematical support</title><rect x="6174.00" y="165.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="6181.00" y="172.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">4</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="65" data-edge-base="expresses" data-edge-from="43" data-edge-to="55">
@@ -667,23 +667,23 @@ $ psql
     </text>
     </g>
     <g class="edge" data-edge-idx="66" data-edge-base="expresses" data-edge-from="43" data-edge-to="56">
-      <line class="edge-ghost" x1="5770.00" y1="74.00" x2="6002.00" y2="157.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="5782.00" y1="78.00" x2="6002.00" y2="157.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="5770.00" y1="74.00" x2="6002.00" y2="157.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="5886" y="115" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="5782.00" y1="78.00" x2="6002.00" y2="157.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="5892" y="117" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>might be used for</title>migh...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="5710.00" y1="52.00" x2="5741.76" y2="63.65" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="5741.76" y1="63.65" x2="5770.00" y2="74.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (might be used for): Making %notes → SRE problem diagnosis methods</title><rect x="5763.00" y="67.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="5770.00" y="74.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
+        <line x1="5710.00" y1="52.00" x2="5748.12" y2="65.76" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="5748.12" y1="65.76" x2="5782.00" y2="78.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (might be used for): Making %notes → SRE problem diagnosis methods</title><rect x="5775.00" y="71.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="5782.00" y="78.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="6019.88" y1="163.12" x2="6033.61" y2="167.82" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="6002.00" y1="157.00" x2="6019.88" y2="163.12" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 6040.00 170.00 L 6030.03 171.34 L 6033.61 167.82 L 6032.94 162.83 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (might be used for): Making %notes → SRE problem diagnosis methods</title><rect x="5995.00" y="150.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="6002.00" y="157.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
+        <g class="edge-badge"><title>Expresses (might be used for): Making %notes → SRE problem diagnosis methods</title><rect x="5995.00" y="150.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="6002.00" y="157.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="67" data-edge-base="leadsto" data-edge-from="44" data-edge-to="34">
