@@ -57,7 +57,7 @@
     <rect x="880" y="140" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="640" y="2750" width="120" height="100" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="280" y="5100" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="280" y="6210" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="280" y="5460" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="100" y="4700" width="120" height="300" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="2260" y="280" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="100" y="6900" width="120" height="180" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
@@ -432,9 +432,9 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="49" data-edge-base="expresses" data-edge-from="5" data-edge-to="57">
-    <line x1="220.32" y1="5493.99" x2="279.13" y2="6220.29" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 279.68 6227.01 L 274.47 6218.41 L 279.13 6220.29 L 283.44 6217.68 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="249" y="5856" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <line x1="224.00" y1="5490.00" x2="269.25" y2="5490.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 276.00 5490.00 L 267.00 5494.50 L 269.25 5490.00 L 267.00 5485.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="246" y="5490" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>involves</title>invo...
     </text>
     </g>
@@ -453,27 +453,27 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="52" data-edge-base="expresses" data-edge-from="6" data-edge-to="57">
-      <line class="edge-ghost" x1="163.00" y1="6951.00" x2="257.00" y2="6250.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="161.00" y1="6954.00" x2="257.00" y2="5500.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="163.00" y1="6951.00" x2="257.00" y2="6250.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="210" y="6600" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="161.00" y1="6954.00" x2="257.00" y2="5500.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="209" y="6227" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>involves</title>invo...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="220.00" y1="6990.00" x2="189.82" y2="6969.35" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="189.82" y1="6969.35" x2="163.00" y2="6951.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <line x1="220.00" y1="6990.00" x2="188.76" y2="6970.94" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="188.76" y1="6970.94" x2="161.00" y2="6954.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
         <g class="edge-badge"><title>Expresses (involves): $ shell command
 openshift-install wait-for install-complete --dirinstlller_dir
- → instlller</title><rect x="156.00" y="6944.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="163.00" y="6951.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
+ → instlller</title><rect x="154.00" y="6947.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="161.00" y="6954.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="267.82" y1="6249.53" x2="273.26" y2="6249.29" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="257.00" y1="6250.00" x2="267.82" y2="6249.53" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 280.00 6249.00 L 271.20 6253.89 L 273.26 6249.29 L 270.81 6244.90 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <line x1="267.82" y1="5500.94" x2="273.28" y2="5501.42" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="257.00" y1="5500.00" x2="267.82" y2="5500.94" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+    <path d="M 280.00 5502.00 L 270.64 5505.70 L 273.28 5501.42 L 271.42 5496.74 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
         <g class="edge-badge"><title>Expresses (involves): $ shell command
 openshift-install wait-for install-complete --dirinstlller_dir
- → instlller</title><rect x="250.00" y="6243.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="257.00" y="6250.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
+ → instlller</title><rect x="250.00" y="5493.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="257.00" y="5500.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="53" data-edge-base="leadsto" data-edge-from="61" data-edge-to="25">
@@ -892,8 +892,8 @@ openshift-install wait-for install-complete --dirinstlller_dir
     <text x="700" y="2834" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">ootstrap.ign</text>
     <rect x="280" y="5100" width="120" height="60" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
     <text x="340" y="5130" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">installer</text>
-    <rect x="280" y="6210" width="120" height="60" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="340" y="6240" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">instlller</text>
+    <rect x="280" y="5460" width="120" height="60" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+    <text x="340" y="5490" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">instlller</text>
     <rect x="100" y="4700" width="120" height="300" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
     <text x="160" y="4749" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">source the</text>
     <text x="160" y="4766" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">functions</text>

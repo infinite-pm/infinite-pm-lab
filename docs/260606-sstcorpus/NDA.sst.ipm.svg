@@ -125,7 +125,7 @@
     <rect x="400" y="6720" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="400" y="6800" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="400" y="29730" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="400" y="17390" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="400" y="6880" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="400" y="6960" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="400" y="40600" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="760" y="2020" width="120" height="140" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
@@ -1177,7 +1177,7 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="169" data-edge-base="partof" data-edge-from="179" data-edge-to="212">
-    <polyline points="459.78,18316.01 370,18330 370,18210 390,18150 370,18050 390,17990 434.29,17948.60" fill="none" stroke="#82b366" stroke-width="3" />
+    <polyline points="459.78,18316.01 390,18310 390,18230 390,18150 370,18050 390,17990 434.29,17948.60" fill="none" stroke="#82b366" stroke-width="3" />
     <path d="M 439.22 17943.99 L 435.72 17953.43 L 434.29 17948.60 L 429.57 17946.85 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="170" data-edge-base="leadsto" data-edge-from="18" data-edge-to="19">
@@ -1200,7 +1200,7 @@
     <path d="M 435.33 29033.99 L 432.22 29043.56 L 430.59 29038.79 L 425.81 29037.24 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="174" data-edge-base="partof" data-edge-from="182" data-edge-to="212">
-    <polyline points="459.86,18396.00 530,18390 530,18310 380,18320 380,18220 390,18150 370,18050 390,17990 439.00,17948.37" fill="none" stroke="#82b366" stroke-width="3" />
+    <polyline points="459.86,18396.00 370,18410 370,18290 390,18150 370,18050 390,17990 439.00,17948.37" fill="none" stroke="#82b366" stroke-width="3" />
     <path d="M 444.14 17944.00 L 440.19 17953.25 L 439.00 17948.37 L 434.37 17946.40 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="175" data-edge-base="partof" data-edge-from="183" data-edge-to="211">
@@ -1319,7 +1319,7 @@
     <path d="M 520.18 5907.00 L 516.08 5897.81 L 520.48 5900.26 L 525.07 5898.21 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="200" data-edge-base="partof" data-edge-from="200" data-edge-to="212">
-    <polyline points="459.96,18556.00 530,18550 530,18470 530,18310 380,18320 380,18220 390,18150 370,18050 390,17990 448.56,17947.94" fill="none" stroke="#82b366" stroke-width="3" />
+    <polyline points="459.96,18556.00 530,18550 530,18470 530,18310 390,18310 390,18230 390,18150 370,18050 390,17990 448.56,17947.94" fill="none" stroke="#82b366" stroke-width="3" />
     <path d="M 454.04 17944.00 L 449.35 17952.91 L 448.56 17947.94 L 444.10 17945.60 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="201" data-edge-base="partof" data-edge-from="201" data-edge-to="211">
@@ -1331,7 +1331,7 @@
     <path d="M 460.00 17944.00 L 454.95 17952.70 L 454.36 17947.71 L 450.01 17945.18 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="203" data-edge-base="partof" data-edge-from="203" data-edge-to="212">
-    <polyline points="460.03,18716.00 530,18710 530,18630 530,18470 530,18310 380,18320 390,18230 390,18150 370,18050 390,17990 459.22,17947.53" fill="none" stroke="#82b366" stroke-width="3" />
+    <polyline points="460.03,18716.00 530,18710 530,18630 530,18470 530,18310 390,18310 390,18230 390,18150 370,18050 390,17990 459.22,17947.53" fill="none" stroke="#82b366" stroke-width="3" />
     <path d="M 464.97 17944.00 L 459.66 17952.54 L 459.22 17947.53 L 454.95 17944.87 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="204" data-edge-base="partof" data-edge-from="204" data-edge-to="211">
@@ -1347,15 +1347,28 @@
     <path d="M 461.99 29034.00 L 456.83 29042.64 L 456.30 29037.63 L 451.98 29035.05 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="207" data-edge-base="partof" data-edge-from="207" data-edge-to="211">
-    <polyline points="460.00,17386.00 370,7170 390,6950 530,6950 540,6700 530,6470 530,6310 390,6310 390,6230 370,6130 390,6070 464.14,6027.36" fill="none" stroke="#82b366" stroke-width="3" />
-    <path d="M 470.00 6024.00 L 464.44 6032.39 L 464.14 6027.36 L 459.95 6024.59 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <polyline points="460.05,6876.00 530,6870 530,6790 530,6550 530,6390 530,6310 390,6310 390,6230 370,6130 390,6070 464.10,6027.37" fill="none" stroke="#82b366" stroke-width="3" />
+    <path d="M 469.95 6024.00 L 464.40 6032.39 L 464.10 6027.37 L 459.91 6024.59 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="208" data-edge-base="partof" data-edge-from="207" data-edge-to="213">
-    <polyline points="460.00,17454.00 370,17770 459.94,28739.25" fill="none" stroke="#82b366" stroke-width="3" />
-    <path d="M 460.00 28746.00 L 455.43 28737.04 L 459.94 28739.25 L 464.43 28736.96 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+      <line class="edge-ghost" x1="460.00" y1="6948.00" x2="460.00" y2="28716.00" stroke="#82b366" stroke-width="1" stroke-opacity="0.22" />
+      <g class="edge-full" opacity="0">
+        <line x1="460.00" y1="6948.00" x2="460.00" y2="28716.00" stroke="#82b366" stroke-width="3" />
+      </g>
+      <g class="edge-stub" data-stub-end="source">
+        <line x1="460.00" y1="6940.00" x2="460.00" y2="6944.24" stroke="#82b366" stroke-width="3" />
+        <line x1="460.00" y1="6944.24" x2="460.00" y2="6948.00" stroke="#82b366" stroke-width="3" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>PartOf: obligations hereunder → part 2 of NDA about: processing terms, personal data, protection regulation, data regulation, organizational measures, data breach, data subject</title><rect x="453.00" y="6941.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#82b366" stroke-width="1.5" /><text x="460.00" y="6948.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#82b366">1</text></g>
+      </g>
+      <g class="edge-stub" data-stub-end="target">
+        <line x1="460.00" y1="28732.00" x2="460.00" y2="28743.25" stroke="#82b366" stroke-width="3" />
+        <line x1="460.00" y1="28716.00" x2="460.00" y2="28732.00" stroke="#82b366" stroke-width="3" stroke-opacity="0.35" />
+    <path d="M 460.00 28750.00 L 455.50 28741.00 L 460.00 28743.25 L 464.50 28741.00 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>PartOf: obligations hereunder → part 2 of NDA about: processing terms, personal data, protection regulation, data regulation, organizational measures, data breach, data subject</title><rect x="453.00" y="28709.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#82b366" stroke-width="1.5" /><text x="460.00" y="28716.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#82b366">1</text></g>
+      </g>
     </g>
     <g class="edge" data-edge-idx="209" data-edge-base="partof" data-edge-from="208" data-edge-to="211">
-    <polyline points="460.06,6956.00 530,6870 530,6790 530,6550 530,6390 530,6310 390,6310 390,6230 390,6150 390,6070 469.00,6027.21" fill="none" stroke="#82b366" stroke-width="3" />
+    <polyline points="460.06,6956.00 530,6950 530,6870 540,6620 530,6470 530,6310 390,6310 390,6230 390,6150 390,6070 469.00,6027.21" fill="none" stroke="#82b366" stroke-width="3" />
     <path d="M 474.94 6024.00 L 469.17 6032.24 L 469.00 6027.21 L 464.88 6024.33 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="210" data-edge-base="partof" data-edge-from="209" data-edge-to="214">
@@ -1374,7 +1387,7 @@
     <path d="M 520.25 5910.01 L 516.32 5900.74 L 520.67 5903.27 L 525.31 5901.31 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="213" data-edge-base="partof" data-edge-from="210" data-edge-to="211">
-    <polyline points="460.08,7036.00 530,7030 530,6950 530,6630 530,6390 530,6310 390,6310 390,6230 390,6150 390,6070 473.91,6027.07" fill="none" stroke="#82b366" stroke-width="3" />
+    <polyline points="460.08,7036.00 530,7030 530,6950 540,6620 530,6390 530,6310 390,6310 390,6230 390,6150 390,6070 473.91,6027.07" fill="none" stroke="#82b366" stroke-width="3" />
     <path d="M 479.92 6024.00 L 473.96 6032.10 L 473.91 6027.07 L 469.86 6024.09 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="214" data-edge-base="leadsto" data-edge-from="215" data-edge-to="250">
@@ -1382,7 +1395,7 @@
     <path d="M 460.00 47396.00 L 455.50 47387.00 L 460.00 47389.25 L 464.50 47387.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="215" data-edge-base="partof" data-edge-from="216" data-edge-to="212">
-    <polyline points="460.05,18796.00 530,18790 530,18710 530,18470 530,18310 380,18320 390,18230 390,18150 380,18060 390,17990 464.10,17947.37" fill="none" stroke="#82b366" stroke-width="3" />
+    <polyline points="460.05,18796.00 530,18790 530,18710 530,18470 530,18310 390,18310 390,18230 390,18150 370,18050 390,17990 464.10,17947.37" fill="none" stroke="#82b366" stroke-width="3" />
     <path d="M 469.95 17944.00 L 464.40 17952.39 L 464.10 17947.37 L 459.91 17944.59 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="216" data-edge-base="partof" data-edge-from="217" data-edge-to="214">
@@ -1394,7 +1407,7 @@
     <path d="M 449.08 40224.00 L 444.74 40233.08 L 443.76 40228.15 L 439.22 40225.98 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="218" data-edge-base="partof" data-edge-from="219" data-edge-to="211">
-    <polyline points="460.09,7116.00 390,7110 390,7030 390,6790 530,6790 530,6470 530,6310 390,6310 390,6230 390,6150 390,6070 478.83,6026.94" fill="none" stroke="#82b366" stroke-width="3" />
+    <polyline points="460.09,7116.00 530,7110 530,7030 530,6710 530,6470 530,6310 390,6310 390,6230 390,6150 390,6070 478.83,6026.94" fill="none" stroke="#82b366" stroke-width="3" />
     <path d="M 484.91 6024.00 L 478.77 6031.97 L 478.83 6026.94 L 474.85 6023.87 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="219" data-edge-base="leadsto" data-edge-from="22" data-edge-to="164">
@@ -1437,7 +1450,7 @@
     <path d="M 479.92 17944.00 L 473.96 17952.10 L 473.91 17947.07 L 469.86 17944.09 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="228" data-edge-base="partof" data-edge-from="227" data-edge-to="211">
-    <polyline points="460.10,7196.00 530,7190 540,6700 530,6390 530,6310 390,6310 390,6230 390,6150 390,6070 483.77,6026.82" fill="none" stroke="#82b366" stroke-width="3" />
+    <polyline points="460.10,7196.00 530,7190 530,7110 530,6710 530,6390 530,6310 390,6310 390,6230 390,6150 390,6070 483.77,6026.82" fill="none" stroke="#82b366" stroke-width="3" />
     <path d="M 489.90 6024.00 L 483.61 6031.85 L 483.77 6026.82 L 479.84 6023.68 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="229" data-edge-base="partof" data-edge-from="228" data-edge-to="214">
@@ -1488,7 +1501,7 @@
     <path d="M 489.90 40224.00 L 483.61 40231.85 L 483.77 40226.82 L 479.84 40223.68 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="240" data-edge-base="partof" data-edge-from="237" data-edge-to="212">
-    <polyline points="460.10,19116.00 540,19120 540,19020 530,18630 530,18310 530,18230 390,18230 390,18150 390,18070 390,17990 483.77,17946.82" fill="none" stroke="#82b366" stroke-width="3" />
+    <polyline points="460.10,19116.00 540,19120 540,19020 530,18630 530,18310 390,18310 390,18230 390,18150 370,18050 390,17990 483.77,17946.82" fill="none" stroke="#82b366" stroke-width="3" />
     <path d="M 489.90 17944.00 L 483.61 17951.85 L 483.77 17946.82 L 479.84 17943.68 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="241" data-edge-base="partof" data-edge-from="238" data-edge-to="213">
@@ -3478,9 +3491,9 @@
     <rect x="400" y="29730" width="120" height="60" rx="6" ry="6" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
     <text x="460" y="29750" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">norwegian</text>
     <text x="460" y="29770" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">krone</text>
-    <rect x="400" y="17390" width="120" height="60" rx="6" ry="6" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
-    <text x="460" y="17410" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">obligations</text>
-    <text x="460" y="17430" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">hereunder</text>
+    <rect x="400" y="6880" width="120" height="60" rx="6" ry="6" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="460" y="6900" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">obligations</text>
+    <text x="460" y="6920" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">hereunder</text>
     <rect x="400" y="6960" width="120" height="60" rx="6" ry="6" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
     <text x="460" y="6980" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">organization</text>
     <text x="460" y="7000" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">number</text>

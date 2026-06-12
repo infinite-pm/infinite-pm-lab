@@ -660,13 +660,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="4173.00" y1="160.00" x2="4155.00" y2="162.12" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="4155.00" y1="162.12" x2="4139.00" y2="164.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (represents/models): nodes → events</title><rect x="4130.00" y="155.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="4139.00" y="164.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">10</text></g>
+        <g class="edge-badge"><title>Expresses (represents/models): nodes → events</title><rect x="4132.00" y="157.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="4139.00" y="164.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">A</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="3885.18" y1="170.94" x2="3879.72" y2="171.42" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="3896.00" y1="170.00" x2="3885.18" y2="170.94" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 3873.00 172.00 L 3881.58 166.74 L 3879.72 171.42 L 3882.36 175.70 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (represents/models): nodes → events</title><rect x="3887.00" y="161.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3896.00" y="170.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">10</text></g>
+        <g class="edge-badge"><title>Expresses (represents/models): nodes → events</title><rect x="3889.00" y="163.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3896.00" y="170.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">A</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="69" data-edge-base="expresses" data-edge-from="54" data-edge-to="69">
@@ -725,13 +725,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="2613.00" y1="980.00" x2="2625.18" y2="974.71" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="2625.18" y1="974.71" x2="2636.00" y2="970.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (refers to): reasoning goes back to 350 BC Greece and Aristotle. → Aristotle</title><rect x="2627.00" y="961.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2636.00" y="970.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">11</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): reasoning goes back to 350 BC Greece and Aristotle. → Aristotle</title><rect x="2629.00" y="963.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2636.00" y="970.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">C</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="1498.00" y1="1059.53" x2="1486.75" y2="1059.20" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="1514.00" y1="1060.00" x2="1498.00" y2="1059.53" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 1480.00 1059.00 L 1489.13 1054.77 L 1486.75 1059.20 L 1488.86 1063.76 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (refers to): reasoning goes back to 350 BC Greece and Aristotle. → Aristotle</title><rect x="1505.00" y="1051.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1514.00" y="1060.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">11</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): reasoning goes back to 350 BC Greece and Aristotle. → Aristotle</title><rect x="1507.00" y="1053.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1514.00" y="1060.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">C</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="79" data-edge-base="expresses" data-edge-from="64" data-edge-to="63">
@@ -745,13 +745,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="2493.00" y1="980.00" x2="2511.00" y2="978.94" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="2511.00" y1="978.94" x2="2527.00" y2="978.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (refers to): reasoning goes back to 350 BC Greece and Aristotle. → reasoning</title><rect x="2518.00" y="969.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2527.00" y="978.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">12</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): reasoning goes back to 350 BC Greece and Aristotle. → reasoning</title><rect x="2520.00" y="971.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2527.00" y="978.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">D</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="3495.00" y1="1059.53" x2="3506.25" y2="1059.20" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="3479.00" y1="1060.00" x2="3495.00" y2="1059.53" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 3513.00 1059.00 L 3504.14 1063.76 L 3506.25 1059.20 L 3503.87 1054.77 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (refers to): reasoning goes back to 350 BC Greece and Aristotle. → reasoning</title><rect x="3470.00" y="1051.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3479.00" y="1060.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">12</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): reasoning goes back to 350 BC Greece and Aristotle. → reasoning</title><rect x="3472.00" y="1053.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3479.00" y="1060.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">D</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="80" data-edge-base="leadsto" data-edge-from="64" data-edge-to="74">
@@ -776,13 +776,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="940.00" y1="1992.00" x2="952.18" y2="2001.53" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="952.18" y1="2001.53" x2="963.00" y2="2010.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (refers to): some have argued that &#34;Artificial Intelligence&#34; is incapable of abduction → abduction</title><rect x="954.00" y="2001.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="963.00" y="2010.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">13</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): some have argued that &#34;Artificial Intelligence&#34; is incapable of abduction → abduction</title><rect x="956.00" y="2003.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="963.00" y="2010.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">E</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="1257.82" y1="970.94" x2="1263.28" y2="971.42" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="1247.00" y1="970.00" x2="1257.82" y2="970.94" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 1270.00 972.00 L 1260.64 975.70 L 1263.28 971.42 L 1261.42 966.74 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (refers to): some have argued that &#34;Artificial Intelligence&#34; is incapable of abduction → abduction</title><rect x="1238.00" y="961.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1247.00" y="970.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">13</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): some have argued that &#34;Artificial Intelligence&#34; is incapable of abduction → abduction</title><rect x="1240.00" y="963.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1247.00" y="970.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">E</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="83" data-edge-base="expresses" data-edge-from="67" data-edge-to="7">

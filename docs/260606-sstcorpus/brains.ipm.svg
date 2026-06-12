@@ -687,13 +687,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="5140.00" y1="79.00" x2="5152.18" y2="79.53" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="5152.18" y1="79.53" x2="5163.00" y2="80.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has description): layer 2 → External granular layer. Composed of small &#34;pyramidal cells&#34; and &#34;inhibitory cells&#34;. Receives input from deeper layers.</title><rect x="5154.00" y="71.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="5163.00" y="80.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">10</text></g>
+        <g class="edge-badge"><title>Expresses (has description): layer 2 → External granular layer. Composed of small &#34;pyramidal cells&#34; and &#34;inhibitory cells&#34;. Receives input from deeper layers.</title><rect x="5156.00" y="73.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="5163.00" y="80.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">A</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="5815.18" y1="257.29" x2="5824.88" y2="265.61" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="5802.00" y1="246.00" x2="5815.18" y2="257.29" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 5830.00 270.00 L 5820.24 267.56 L 5824.88 265.61 L 5826.10 260.73 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has description): layer 2 → External granular layer. Composed of small &#34;pyramidal cells&#34; and &#34;inhibitory cells&#34;. Receives input from deeper layers.</title><rect x="5793.00" y="237.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="5802.00" y="246.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">10</text></g>
+        <g class="edge-badge"><title>Expresses (has description): layer 2 → External granular layer. Composed of small &#34;pyramidal cells&#34; and &#34;inhibitory cells&#34;. Receives input from deeper layers.</title><rect x="5795.00" y="239.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="5802.00" y="246.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">A</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="74" data-edge-base="expresses" data-edge-from="56" data-edge-to="19">
@@ -728,13 +728,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="8900.00" y1="202.00" x2="8912.18" y2="200.94" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="8912.18" y1="200.94" x2="8923.00" y2="200.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has description): layer 4 → Internal granular layer. The main entry point for incoming sensory signals. Direct signals from the thalamus.</title><rect x="8914.00" y="191.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="8923.00" y="200.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">11</text></g>
+        <g class="edge-badge"><title>Expresses (has description): layer 4 → Internal granular layer. The main entry point for incoming sensory signals. Direct signals from the thalamus.</title><rect x="8916.00" y="193.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="8923.00" y="200.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">C</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="9182.00" y1="262.24" x2="9194.64" y2="271.90" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="9166.00" y1="250.00" x2="9182.00" y2="262.24" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 9200.00 276.00 L 9190.12 274.11 L 9194.64 271.90 L 9195.58 266.96 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has description): layer 4 → Internal granular layer. The main entry point for incoming sensory signals. Direct signals from the thalamus.</title><rect x="9157.00" y="241.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="9166.00" y="250.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">11</text></g>
+        <g class="edge-badge"><title>Expresses (has description): layer 4 → Internal granular layer. The main entry point for incoming sensory signals. Direct signals from the thalamus.</title><rect x="9159.00" y="243.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="9166.00" y="250.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">C</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="78" data-edge-base="leadsto" data-edge-from="57" data-edge-to="131">
@@ -878,13 +878,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="6760.00" y1="380.00" x2="6754.71" y2="355.65" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="6754.71" y1="355.65" x2="6750.00" y2="334.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (involves): return data back to thalamus → thalamus</title><rect x="6741.00" y="325.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="6750.00" y="334.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">12</text></g>
+        <g class="edge-badge"><title>Expresses (involves): return data back to thalamus → thalamus</title><rect x="6743.00" y="327.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="6750.00" y="334.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">D</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="6472.18" y1="180.94" x2="6466.72" y2="181.42" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="6483.00" y1="180.00" x2="6472.18" y2="180.94" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 6460.00 182.00 L 6468.58 176.74 L 6466.72 181.42 L 6469.36 185.70 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (involves): return data back to thalamus → thalamus</title><rect x="6474.00" y="171.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="6483.00" y="180.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">12</text></g>
+        <g class="edge-badge"><title>Expresses (involves): return data back to thalamus → thalamus</title><rect x="6476.00" y="173.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="6483.00" y="180.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">D</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="101" data-edge-base="leadsto" data-edge-from="86" data-edge-to="23">
@@ -959,13 +959,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="6460.00" y1="188.00" x2="6472.18" y2="194.35" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="6472.18" y1="194.35" x2="6483.00" y2="200.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (takes place at location): thalamus → forebrain</title><rect x="6474.00" y="191.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="6483.00" y="200.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">13</text></g>
+        <g class="edge-badge"><title>Expresses (takes place at location): thalamus → forebrain</title><rect x="6476.00" y="193.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="6483.00" y="200.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">E</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="7527.82" y1="1927.88" x2="7533.35" y2="1928.84" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="7517.00" y1="1926.00" x2="7527.82" y2="1927.88" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 7540.00 1930.00 L 7530.36 1932.89 L 7533.35 1928.84 L 7531.90 1924.02 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (takes place at location): thalamus → forebrain</title><rect x="7508.00" y="1917.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="7517.00" y="1926.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">13</text></g>
+        <g class="edge-badge"><title>Expresses (takes place at location): thalamus → forebrain</title><rect x="7510.00" y="1919.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="7517.00" y="1926.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">E</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="112" data-edge-base="expresses" data-edge-from="95" data-edge-to="73">

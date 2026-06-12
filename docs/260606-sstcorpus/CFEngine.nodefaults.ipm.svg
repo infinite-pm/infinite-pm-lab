@@ -463,13 +463,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="940.00" y1="1174.00" x2="927.82" y2="1169.76" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="927.82" y1="1169.76" x2="917.00" y2="1166.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has example): CFEngine promise type → classes</title><rect x="908.00" y="1157.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="917.00" y="1166.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">10</text></g>
+        <g class="edge-badge"><title>Expresses (has example): CFEngine promise type → classes</title><rect x="910.00" y="1159.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="917.00" y="1166.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">A</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="658.00" y1="1236.00" x2="646.75" y2="1236.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="674.00" y1="1236.00" x2="658.00" y2="1236.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 640.00 1236.00 L 649.00 1231.50 L 646.75 1236.00 L 649.00 1240.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has example): CFEngine promise type → classes</title><rect x="665.00" y="1227.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="674.00" y="1236.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">10</text></g>
+        <g class="edge-badge"><title>Expresses (has example): CFEngine promise type → classes</title><rect x="667.00" y="1229.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="674.00" y="1236.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">A</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="46" data-edge-base="expresses" data-edge-from="6" data-edge-to="22">
@@ -497,13 +497,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="940.00" y1="1182.00" x2="927.82" y2="1184.12" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="927.82" y1="1184.12" x2="917.00" y2="1186.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has example): CFEngine promise type → files</title><rect x="908.00" y="1177.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="917.00" y="1186.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">11</text></g>
+        <g class="edge-badge"><title>Expresses (has example): CFEngine promise type → files</title><rect x="910.00" y="1179.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="917.00" y="1186.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">C</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="832.18" y1="1606.94" x2="826.72" y2="1607.42" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="843.00" y1="1606.00" x2="832.18" y2="1606.94" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 820.00 1608.00 L 828.58 1602.74 L 826.72 1607.42 L 829.36 1611.70 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has example): CFEngine promise type → files</title><rect x="834.00" y="1597.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="843.00" y="1606.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">11</text></g>
+        <g class="edge-badge"><title>Expresses (has example): CFEngine promise type → files</title><rect x="836.00" y="1599.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="843.00" y="1606.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">C</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="49" data-edge-base="expresses" data-edge-from="6" data-edge-to="49">
@@ -517,13 +517,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="1060.00" y1="1154.00" x2="1072.18" y2="1155.06" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="1072.18" y1="1155.06" x2="1083.00" y2="1156.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has example): CFEngine promise type → vars</title><rect x="1074.00" y="1147.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1083.00" y="1156.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">12</text></g>
+        <g class="edge-badge"><title>Expresses (has example): CFEngine promise type → vars</title><rect x="1076.00" y="1149.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1083.00" y="1156.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">D</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="1402.00" y1="279.53" x2="1413.25" y2="279.20" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="1386.00" y1="280.00" x2="1402.00" y2="279.53" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 1420.00 279.00 L 1411.14 283.76 L 1413.25 279.20 L 1410.87 274.77 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has example): CFEngine promise type → vars</title><rect x="1377.00" y="271.00" width="18.00" height="18.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1386.00" y="280.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">12</text></g>
+        <g class="edge-badge"><title>Expresses (has example): CFEngine promise type → vars</title><rect x="1379.00" y="273.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1386.00" y="280.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">D</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="50" data-edge-base="leadsto" data-edge-from="6" data-edge-to="51">
