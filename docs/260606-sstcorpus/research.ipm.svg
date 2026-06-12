@@ -25,18 +25,42 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="1" data-edge-base="expresses" data-edge-from="3" data-edge-to="4">
-    <line x1="301.39" y1="102.12" x2="480.88" y2="214.30" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 486.61 217.88 L 476.59 216.93 L 480.88 214.30 L 481.36 209.29 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="390" y="158" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+      <g class="edge-full" opacity="0">
+        <line x1="290.00" y1="134.00" x2="263.00" y2="518.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="276" y="326" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has abstract</title>has...
     </text>
+      </g>
+      <g class="edge-stub" data-stub-end="source">
+        <line x1="298.00" y1="100.00" x2="293.76" y2="118.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="293.76" y1="118.00" x2="290.00" y2="134.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (has abstract): Gravity from entropy → Gravity is derived from an entropic action coupling matter fields with geometry. The fundamental idea is to relate the metric of Lorentzian spacetime to a quantum operator, playing the role of an renormalizable effective density matrix and to describe the matter fields topologically, according to a Dirac-Kähler formalism, as the direct sum of a zero-form, a one-form and a two-form. While the geometry of spacetime is defined by its metric, the matter fields can be used to define an alternative metric, the metric induced by the matter fields, which geometrically describes the interplay between spacetime and matter. The proposed entropic action is the quantum relative entropy between the metric of spacetime and the metric induced by the matter fields. The modified Einstein equations obtained from this action reduce to the Einstein equations with zero cosmological constant in the regime of low coupling. By introducing the G-field, which acts as a set of Lagrangian multipliers, the proposed entropic action reduces to a dressed Einstein-Hilbert action with an emergent small and positive cosmological constant only dependent on the G-field. The obtained equations of modified gravity remain second order in the metric and in the G-field. A canonical quantization of this field theory could bring new insights into quantum gravity while further research might clarify the role that the G-field could have for dark matter.</title><rect x="283.00" y="127.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="290.00" y="134.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
+      </g>
+      <g class="edge-stub" data-stub-end="target">
+        <line x1="369.82" y1="377.76" x2="485.91" y2="225.37" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="263.00" y1="518.00" x2="369.82" y2="377.76" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+    <path d="M 490.00 220.00 L 488.13 229.89 L 485.91 225.37 L 480.97 224.43 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (has abstract): Gravity from entropy → Gravity is derived from an entropic action coupling matter fields with geometry. The fundamental idea is to relate the metric of Lorentzian spacetime to a quantum operator, playing the role of an renormalizable effective density matrix and to describe the matter fields topologically, according to a Dirac-Kähler formalism, as the direct sum of a zero-form, a one-form and a two-form. While the geometry of spacetime is defined by its metric, the matter fields can be used to define an alternative metric, the metric induced by the matter fields, which geometrically describes the interplay between spacetime and matter. The proposed entropic action is the quantum relative entropy between the metric of spacetime and the metric induced by the matter fields. The modified Einstein equations obtained from this action reduce to the Einstein equations with zero cosmological constant in the regime of low coupling. By introducing the G-field, which acts as a set of Lagrangian multipliers, the proposed entropic action reduces to a dressed Einstein-Hilbert action with an emergent small and positive cosmological constant only dependent on the G-field. The obtained equations of modified gravity remain second order in the metric and in the G-field. A canonical quantization of this field theory could bring new insights into quantum gravity while further research might clarify the role that the G-field could have for dark matter.</title><rect x="256.00" y="511.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="263.00" y="518.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
+      </g>
     </g>
     <g class="edge" data-edge-idx="2" data-edge-base="expresses" data-edge-from="3" data-edge-to="9">
-    <line x1="343.90" y1="70.87" x2="1139.51" y2="247.67" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 1146.10 249.13 L 1136.33 251.57 L 1139.51 247.67 L 1138.29 242.79 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="741" y="158" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+      <g class="edge-full" opacity="0">
+        <line x1="370.00" y1="90.00" x2="1130.00" y2="232.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="750" y="161" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has arxiv reference</title>has...
     </text>
+      </g>
+      <g class="edge-stub" data-stub-end="source">
+        <line x1="340.00" y1="70.00" x2="355.88" y2="80.59" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="355.88" y1="80.59" x2="370.00" y2="90.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (has arxiv reference): Gravity from entropy → https://arxiv.org/abs/2408.14391</title><rect x="363.00" y="83.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="370.00" y="90.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
+      </g>
+      <g class="edge-stub" data-stub-end="target">
+        <line x1="1139.41" y1="240.47" x2="1144.98" y2="245.48" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="1130.00" y1="232.00" x2="1139.41" y2="240.47" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+    <path d="M 1150.00 250.00 L 1140.30 247.32 L 1144.98 245.48 L 1146.32 240.63 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (has arxiv reference): Gravity from entropy → https://arxiv.org/abs/2408.14391</title><rect x="1123.00" y="225.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1130.00" y="232.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
+      </g>
     </g>
     <g class="edge" data-edge-idx="3" data-edge-base="expresses" data-edge-from="6" data-edge-to="10">
     <line x1="1450.00" y1="124.00" x2="1450.00" y2="149.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
@@ -53,11 +77,23 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="5" data-edge-base="expresses" data-edge-from="7" data-edge-to="8">
-    <line x1="162.73" y1="112.92" x2="722.66" y2="712.15" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 727.27 717.08 L 717.84 713.57 L 722.66 712.15 L 724.41 707.43 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="442" y="412" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+      <g class="edge-full" opacity="0">
+        <line x1="144.00" y1="157.00" x2="810.00" y2="613.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="477" y="385" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has arxiv reference</title>has...
     </text>
+      </g>
+      <g class="edge-stub" data-stub-end="source">
+        <line x1="160.00" y1="110.00" x2="151.53" y2="134.88" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="151.53" y1="134.88" x2="144.00" y2="157.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (has arxiv reference): The topological Dirac equation of networks and simplicial complexes → We define the topological Dirac equation describing the evolution of a topological wave function on networks or on simplicial complexes. On networks, the topological wave function describes the dynamics of topological signals or cochains, i.e. dynamical signals defined both on nodes and on links. On simplicial complexes the wave function is also defined on higher-dimensional simplices. Therefore the topological wave function satisfies a relaxed condition of locality as it acquires the same value along simplices of dimension larger than zero. The topological Dirac equation defines eigenstates whose dispersion relation is determined by the spectral properties of the Dirac &#34;(or chiral)&#34; operator defined on networks and generalized network structures including simplicial complexes and multiplex networks. On simplicial complexes the Dirac equation leads to multiple energy bands. On multiplex networks the topological Dirac equation can be generalized to distinguish between different mutlilinks leading to a natural definition of rotations of the topological spinor. The topological Dirac equation is here initially formulated on a spatial network or simplicial complex for describing the evolution of the topological wave function in continuous time. This framework is also extended to treat the topological Dirac equation on 1+d spaces describing a discrete space-time with one temporal dimension and d spatial dimensions with d∈{1,2,3}. This work includes also the discussion of numerical results obtained by implementing the topological Dirac equation on simplicial complex models and on real simple and multiplex network data.</title><rect x="137.00" y="150.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="144.00" y="157.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
+      </g>
+      <g class="edge-stub" data-stub-end="target">
+        <line x1="772.35" y1="663.35" x2="734.04" y2="714.59" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="810.00" y1="613.00" x2="772.35" y2="663.35" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+    <path d="M 730.00 720.00 L 731.79 710.10 L 734.04 714.59 L 738.99 715.49 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (has arxiv reference): The topological Dirac equation of networks and simplicial complexes → We define the topological Dirac equation describing the evolution of a topological wave function on networks or on simplicial complexes. On networks, the topological wave function describes the dynamics of topological signals or cochains, i.e. dynamical signals defined both on nodes and on links. On simplicial complexes the wave function is also defined on higher-dimensional simplices. Therefore the topological wave function satisfies a relaxed condition of locality as it acquires the same value along simplices of dimension larger than zero. The topological Dirac equation defines eigenstates whose dispersion relation is determined by the spectral properties of the Dirac &#34;(or chiral)&#34; operator defined on networks and generalized network structures including simplicial complexes and multiplex networks. On simplicial complexes the Dirac equation leads to multiple energy bands. On multiplex networks the topological Dirac equation can be generalized to distinguish between different mutlilinks leading to a natural definition of rotations of the topological spinor. The topological Dirac equation is here initially formulated on a spatial network or simplicial complex for describing the evolution of the topological wave function in continuous time. This framework is also extended to treat the topological Dirac equation on 1+d spaces describing a discrete space-time with one temporal dimension and d spatial dimensions with d∈{1,2,3}. This work includes also the discussion of numerical results obtained by implementing the topological Dirac equation on simplicial complex models and on real simple and multiplex network data.</title><rect x="803.00" y="606.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="810.00" y="613.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
+      </g>
     </g>
   </g>
   <g id="nodes">

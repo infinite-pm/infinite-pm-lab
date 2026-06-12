@@ -189,11 +189,23 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="17" data-edge-base="expresses" data-edge-from="21" data-edge-to="47">
-    <line x1="280.24" y1="4006.01" x2="339.37" y2="3006.73" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 339.76 2999.99 L 343.72 3009.24 L 339.37 3006.73 L 334.74 3008.71 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="309" y="3506" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+      <g class="edge-full" opacity="0">
+        <line x1="162.00" y1="3969.00" x2="317.00" y2="3000.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="239" y="3484" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>refers to</title>refe...
     </text>
+      </g>
+      <g class="edge-stub" data-stub-end="source">
+        <line x1="280.00" y1="4010.00" x2="217.53" y2="3988.29" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="217.53" y1="3988.29" x2="162.00" y2="3969.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (refers to): Fill in the vpc_id, project_id and normalized_cluster_name in the &#34;cluster.yaml&#34; file, and adjust the values to your liking. The defaults should be sufficient for a POC cluster of Openshift. → cluster.yaml</title><rect x="155.00" y="3962.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="162.00" y="3969.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
+      </g>
+      <g class="edge-stub" data-stub-end="target">
+        <line x1="327.82" y1="2998.12" x2="333.35" y2="2997.16" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="317.00" y1="3000.00" x2="327.82" y2="2998.12" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+    <path d="M 340.00 2996.00 L 331.90 3001.98 L 333.35 2997.16 L 330.36 2993.11 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (refers to): Fill in the vpc_id, project_id and normalized_cluster_name in the &#34;cluster.yaml&#34; file, and adjust the values to your liking. The defaults should be sufficient for a POC cluster of Openshift. → cluster.yaml</title><rect x="310.00" y="2993.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="317.00" y="3000.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
+      </g>
     </g>
     <g class="edge" data-edge-idx="18" data-edge-base="leadsto" data-edge-from="22" data-edge-to="40">
     <line x1="160.00" y1="5964.00" x2="160.00" y2="6009.25" stroke="#ff8000" stroke-width="3" />
@@ -311,11 +323,23 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="35" data-edge-base="expresses" data-edge-from="38" data-edge-to="47">
-    <line x1="280.73" y1="3306.07" x2="338.03" y2="2998.57" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 339.27 2991.93 L 342.04 3001.60 L 338.03 2998.57 L 333.19 2999.96 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="309" y="3152" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+      <g class="edge-full" opacity="0">
+        <line x1="170.00" y1="3255.00" x2="317.00" y2="2980.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="243" y="3117" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>refers to</title>refe...
     </text>
+      </g>
+      <g class="edge-stub" data-stub-end="source">
+        <line x1="280.00" y1="3310.00" x2="221.76" y2="3280.88" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="221.76" y1="3280.88" x2="170.00" y2="3255.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (refers to): Repeat the above process to create RHCOS image for control plane nodes and worker nodes respectively, so that they boot and fetch ignition configs from the master.ign and worker.ign files in your s3 bucket. This will be the image ids you confgure for control plane and worker nodes in the &#34;cluster.yaml&#34; file later → cluster.yaml</title><rect x="163.00" y="3248.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="170.00" y="3255.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
+      </g>
+      <g class="edge-stub" data-stub-end="target">
+        <line x1="327.82" y1="2983.76" x2="333.62" y2="2985.78" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="317.00" y1="2980.00" x2="327.82" y2="2983.76" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+    <path d="M 340.00 2988.00 L 330.02 2989.29 L 333.62 2985.78 L 332.98 2980.79 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (refers to): Repeat the above process to create RHCOS image for control plane nodes and worker nodes respectively, so that they boot and fetch ignition configs from the master.ign and worker.ign files in your s3 bucket. This will be the image ids you confgure for control plane and worker nodes in the &#34;cluster.yaml&#34; file later → cluster.yaml</title><rect x="310.00" y="2973.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="317.00" y="2980.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
+      </g>
     </g>
     <g class="edge" data-edge-idx="36" data-edge-base="leadsto" data-edge-from="39" data-edge-to="1">
     <line x1="160.00" y1="4384.00" x2="160.00" y2="4429.25" stroke="#ff8000" stroke-width="3" />
@@ -406,11 +430,27 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="49" data-edge-base="expresses" data-edge-from="5" data-edge-to="57">
-    <line x1="220.32" y1="5493.99" x2="279.13" y2="6220.29" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 279.68 6227.01 L 274.47 6218.41 L 279.13 6220.29 L 283.44 6217.68 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="249" y="5856" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+      <g class="edge-full" opacity="0">
+        <line x1="163.00" y1="5529.00" x2="257.00" y2="6230.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="210" y="5879" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>involves</title>invo...
     </text>
+      </g>
+      <g class="edge-stub" data-stub-end="source">
+        <line x1="220.00" y1="5490.00" x2="189.82" y2="5510.65" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="189.82" y1="5510.65" x2="163.00" y2="5529.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (involves): $ shell command
+openshift-install wait-for bootstrap-complete --dirinstlller_dir 
+ → instlller</title><rect x="156.00" y="5522.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="163.00" y="5529.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
+      </g>
+      <g class="edge-stub" data-stub-end="target">
+        <line x1="267.82" y1="6230.47" x2="273.26" y2="6230.71" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="257.00" y1="6230.00" x2="267.82" y2="6230.47" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+    <path d="M 280.00 6231.00 L 270.81 6235.10 L 273.26 6230.71 L 271.20 6226.11 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (involves): $ shell command
+openshift-install wait-for bootstrap-complete --dirinstlller_dir 
+ → instlller</title><rect x="250.00" y="6223.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="257.00" y="6230.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
+      </g>
     </g>
     <g class="edge" data-edge-idx="50" data-edge-base="leadsto" data-edge-from="58" data-edge-to="2">
     <line x1="160.00" y1="5004.00" x2="160.00" y2="5049.25" stroke="#ff8000" stroke-width="3" />
@@ -427,11 +467,27 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="52" data-edge-base="expresses" data-edge-from="6" data-edge-to="57">
-    <line x1="220.32" y1="6986.01" x2="279.13" y2="6259.71" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 279.68 6252.99 L 283.44 6262.32 L 279.13 6259.71 L 274.47 6261.59 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="249" y="6622" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+      <g class="edge-full" opacity="0">
+        <line x1="163.00" y1="6951.00" x2="257.00" y2="6250.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="210" y="6600" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>involves</title>invo...
     </text>
+      </g>
+      <g class="edge-stub" data-stub-end="source">
+        <line x1="220.00" y1="6990.00" x2="189.82" y2="6969.35" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="189.82" y1="6969.35" x2="163.00" y2="6951.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (involves): $ shell command
+openshift-install wait-for install-complete --dirinstlller_dir
+ → instlller</title><rect x="156.00" y="6944.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="163.00" y="6951.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">4</text></g>
+      </g>
+      <g class="edge-stub" data-stub-end="target">
+        <line x1="267.82" y1="6249.53" x2="273.26" y2="6249.29" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="257.00" y1="6250.00" x2="267.82" y2="6249.53" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+    <path d="M 280.00 6249.00 L 271.20 6253.89 L 273.26 6249.29 L 270.81 6244.90 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (involves): $ shell command
+openshift-install wait-for install-complete --dirinstlller_dir
+ → instlller</title><rect x="250.00" y="6243.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="257.00" y="6250.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">4</text></g>
+      </g>
     </g>
     <g class="edge" data-edge-idx="53" data-edge-base="leadsto" data-edge-from="61" data-edge-to="25">
     <line x1="160.00" y1="84.00" x2="160.00" y2="109.25" stroke="#ff8000" stroke-width="3" />
