@@ -812,24 +812,11 @@ $ psql
     </text>
     </g>
     <g class="edge" data-edge-idx="86" data-edge-base="expresses" data-edge-from="59" data-edge-to="57">
-      <line class="edge-ghost" x1="2104.00" y1="327.00" x2="1129.00" y2="790.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
-      <g class="edge-full" opacity="0">
-        <line x1="2104.00" y1="327.00" x2="1129.00" y2="790.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="1616" y="558" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <line x1="2136.39" y1="311.72" x2="1102.71" y2="802.39" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 1096.61 805.28 L 1102.81 797.36 L 1102.71 802.39 L 1106.67 805.49 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="1619" y="556" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>refers to</title>refe...
     </text>
-      </g>
-      <g class="edge-stub" data-stub-end="source">
-        <line x1="2140.00" y1="310.00" x2="2120.94" y2="319.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="2120.94" y1="319.00" x2="2104.00" y2="327.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (refers to): SSTorytime takes a &#34;Promise Theory&#34; approach. → SSTorytime</title><rect x="2097.00" y="320.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2104.00" y="327.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">7</text></g>
-      </g>
-      <g class="edge-stub" data-stub-end="target">
-        <line x1="1112.06" y1="798.00" x2="1099.10" y2="804.12" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="1129.00" y1="790.00" x2="1112.06" y2="798.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 1093.00 807.00 L 1099.22 799.09 L 1099.10 804.12 L 1103.06 807.23 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (refers to): SSTorytime takes a &#34;Promise Theory&#34; approach. → SSTorytime</title><rect x="1122.00" y="783.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1129.00" y="790.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">7</text></g>
-      </g>
     </g>
     <g class="edge" data-edge-idx="87" data-edge-base="leadsto" data-edge-from="6" data-edge-to="44">
     <line x1="3340.00" y1="1184.00" x2="3340.00" y2="1229.25" stroke="#ff8000" stroke-width="3" />

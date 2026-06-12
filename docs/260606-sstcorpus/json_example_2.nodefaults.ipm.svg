@@ -60,13 +60,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="400.00" y1="750.00" x2="396.82" y2="771.18" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="396.82" y1="771.18" x2="394.00" y2="790.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has status): User 2 → inactive</title><rect x="387.00" y="783.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="394.00" y="790.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">5</text></g>
+        <g class="edge-badge"><title>Expresses (has status): User 2 → inactive</title><rect x="387.00" y="783.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="394.00" y="790.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">4</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="344.24" y1="1123.00" x2="341.05" y2="1143.33" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="348.00" y1="1099.00" x2="344.24" y2="1123.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 340.00 1150.00 L 336.95 1140.41 L 341.05 1143.33 L 345.84 1141.81 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has status): User 2 → inactive</title><rect x="341.00" y="1092.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="348.00" y="1099.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">5</text></g>
+        <g class="edge-badge"><title>Expresses (has status): User 2 → inactive</title><rect x="341.00" y="1092.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="348.00" y="1099.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">4</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="4" data-edge-base="expresses" data-edge-from="10" data-edge-to="20">
@@ -85,13 +85,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="400.00" y1="714.00" x2="396.29" y2="693.35" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="396.29" y1="693.35" x2="393.00" y2="675.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has id): User 2 → 2</title><rect x="386.00" y="668.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="393.00" y="675.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">4</text></g>
+        <g class="edge-badge"><title>Expresses (has id): User 2 → 2</title><rect x="386.00" y="668.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="393.00" y="675.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="343.71" y1="379.65" x2="341.19" y2="365.64" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="347.00" y1="398.00" x2="343.71" y2="379.65" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 340.00 359.00 L 346.02 367.06 L 341.19 365.64 L 337.16 368.65 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has id): User 2 → 2</title><rect x="340.00" y="391.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="347.00" y="398.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">4</text></g>
+        <g class="edge-badge"><title>Expresses (has id): User 2 → 2</title><rect x="340.00" y="391.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="347.00" y="398.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="6" data-edge-base="partof" data-edge-from="11" data-edge-to="6">
@@ -143,24 +143,11 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="15" data-edge-base="expresses" data-edge-from="7" data-edge-to="6">
-      <line class="edge-ghost" x1="974.00" y1="243.00" x2="726.00" y2="541.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
-      <g class="edge-full" opacity="0">
-        <line x1="974.00" y1="243.00" x2="726.00" y2="541.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="850" y="392" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <line x1="997.44" y1="215.07" x2="706.88" y2="563.74" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 702.56 568.93 L 704.87 559.13 L 706.88 563.74 L 711.78 564.89 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="851" y="389" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has data</title>has...
     </text>
-      </g>
-      <g class="edge-stub" data-stub-end="source">
-        <line x1="1000.00" y1="212.00" x2="986.24" y2="228.41" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="986.24" y1="228.41" x2="974.00" y2="243.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has data): Example API Response → Data for &#34;Example API Response&#34;</title><rect x="967.00" y="236.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="974.00" y="243.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
-      </g>
-      <g class="edge-stub" data-stub-end="target">
-        <line x1="713.76" y1="555.59" x2="704.34" y2="566.83" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="726.00" y1="541.00" x2="713.76" y2="555.59" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 700.00 572.00 L 702.34 562.21 L 704.34 566.83 L 709.23 568.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has data): Example API Response → Data for &#34;Example API Response&#34;</title><rect x="719.00" y="534.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="726.00" y="541.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
-      </g>
     </g>
     <g class="edge" data-edge-idx="16" data-edge-base="expresses" data-edge-from="8" data-edge-to="1">
     <line x1="399.19" y1="528.08" x2="342.17" y2="251.53" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
@@ -205,13 +192,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="400.00" y1="616.00" x2="396.29" y2="595.35" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="396.29" y1="595.35" x2="393.00" y2="577.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has id): User 1 → 1</title><rect x="386.00" y="570.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="393.00" y="577.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
+        <g class="edge-badge"><title>Expresses (has id): User 1 → 1</title><rect x="386.00" y="570.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="393.00" y="577.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="343.71" y1="279.65" x2="341.19" y2="265.64" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="347.00" y1="298.00" x2="343.71" y2="279.65" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 340.00 259.00 L 346.02 267.06 L 341.19 265.64 L 337.16 268.65 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has id): User 1 → 1</title><rect x="340.00" y="291.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="347.00" y="298.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
+        <g class="edge-badge"><title>Expresses (has id): User 1 → 1</title><rect x="340.00" y="291.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="347.00" y="298.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="20" data-edge-base="partof" data-edge-from="9" data-edge-to="11">

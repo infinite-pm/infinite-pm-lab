@@ -242,13 +242,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="580.00" y1="854.00" x2="576.82" y2="887.88" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="576.82" y1="887.88" x2="574.00" y2="918.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (release format): A Farewell To Kings → Vinyl</title><rect x="567.00" y="911.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="574.00" y="918.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">N</text></g>
+        <g class="edge-badge"><title>Expresses (release format): A Farewell To Kings → Vinyl</title><rect x="567.00" y="911.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="574.00" y="918.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">P</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="522.65" y1="1462.47" x2="520.65" y2="1483.28" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="525.00" y1="1438.00" x2="522.65" y2="1462.47" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 520.00 1490.00 L 516.38 1480.61 L 520.65 1483.28 L 525.34 1481.47 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (release format): A Farewell To Kings → Vinyl</title><rect x="518.00" y="1431.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="525.00" y="1438.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">N</text></g>
+        <g class="edge-badge"><title>Expresses (release format): A Farewell To Kings → Vinyl</title><rect x="518.00" y="1431.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="525.00" y="1438.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">P</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="18" data-edge-base="leadsto" data-edge-from="26" data-edge-to="67">
@@ -283,23 +283,23 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="21" data-edge-base="expresses" data-edge-from="3" data-edge-to="33">
-      <line class="edge-ghost" x1="2156.00" y1="699.00" x2="3060.00" y2="694.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="1900.00" y1="778.00" x2="3060.00" y2="694.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="2156.00" y1="699.00" x2="3060.00" y2="694.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="2608" y="696" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="1900.00" y1="778.00" x2="3060.00" y2="694.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="2480" y="736" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>refers to</title>refe...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="1960.00" y1="700.00" x2="2063.76" y2="699.47" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="2063.76" y1="699.47" x2="2156.00" y2="699.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (refers to): &#34;BTHV-3-1&#34;, &#34;3. Scherzo. Allegro vivace. (live)&#34; → BTHV-3-1</title><rect x="2149.00" y="692.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2156.00" y="699.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">H</text></g>
+        <line x1="1900.00" y1="750.00" x2="1900.00" y2="764.82" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="1900.00" y1="764.82" x2="1900.00" y2="778.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (refers to): &#34;BTHV-3-1&#34;, &#34;3. Scherzo. Allegro vivace. (live)&#34; → BTHV-3-1</title><rect x="1893.00" y="771.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1900.00" y="778.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">F</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="3078.82" y1="694.00" x2="3093.25" y2="694.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="3060.00" y1="694.00" x2="3078.82" y2="694.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 3100.00 694.00 L 3091.00 698.50 L 3093.25 694.00 L 3091.00 689.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (refers to): &#34;BTHV-3-1&#34;, &#34;3. Scherzo. Allegro vivace. (live)&#34; → BTHV-3-1</title><rect x="3053.00" y="687.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3060.00" y="694.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">H</text></g>
+        <g class="edge-badge"><title>Expresses (refers to): &#34;BTHV-3-1&#34;, &#34;3. Scherzo. Allegro vivace. (live)&#34; → BTHV-3-1</title><rect x="3053.00" y="687.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3060.00" y="694.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">F</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="22" data-edge-base="partof" data-edge-from="3" data-edge-to="38">
@@ -332,43 +332,30 @@
     <path d="M 6340.00 716.00 L 6335.50 707.00 L 6340.00 709.25 L 6344.50 707.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="27" data-edge-base="expresses" data-edge-from="38" data-edge-to="17">
-      <line class="edge-ghost" x1="1785.00" y1="905.00" x2="1834.00" y2="1298.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
-      <g class="edge-full" opacity="0">
-        <line x1="1785.00" y1="905.00" x2="1834.00" y2="1298.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="1809" y="1101" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <line x1="1780.49" y1="868.97" x2="1838.68" y2="1339.33" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 1839.51 1346.03 L 1833.94 1337.65 L 1838.68 1339.33 L 1842.87 1336.55 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="1809" y="1103" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has sampling rate</title>has...
     </text>
-      </g>
-      <g class="edge-stub" data-stub-end="source">
-        <line x1="1780.00" y1="865.00" x2="1782.65" y2="886.18" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="1782.65" y1="886.18" x2="1785.00" y2="905.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has sampling rate): Beethoven, Symphony No. 3, Opus 55, &#34;Eroica&#34; → 192kHz / 24-bit</title><rect x="1778.00" y="898.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1785.00" y="905.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">M</text></g>
-      </g>
-      <g class="edge-stub" data-stub-end="target">
-        <line x1="1836.82" y1="1322.47" x2="1839.23" y2="1343.29" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="1834.00" y1="1298.00" x2="1836.82" y2="1322.47" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 1840.00 1350.00 L 1834.50 1341.58 L 1839.23 1343.29 L 1843.44 1340.54 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has sampling rate): Beethoven, Symphony No. 3, Opus 55, &#34;Eroica&#34; → 192kHz / 24-bit</title><rect x="1827.00" y="1291.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1834.00" y="1298.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">M</text></g>
-      </g>
     </g>
     <g class="edge" data-edge-idx="28" data-edge-base="expresses" data-edge-from="38" data-edge-to="20">
-      <line class="edge-ghost" x1="1787.00" y1="933.00" x2="1835.00" y2="1398.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="1784.00" y1="909.00" x2="1835.00" y2="1398.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="1787.00" y1="933.00" x2="1835.00" y2="1398.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="1811" y="1165" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="1784.00" y1="909.00" x2="1835.00" y2="1398.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="1809" y="1153" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>recording date</title>reco...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="1780.00" y1="869.00" x2="1783.71" y2="902.88" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="1783.71" y1="902.88" x2="1787.00" y2="933.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (recording date): Beethoven, Symphony No. 3, Opus 55, &#34;Eroica&#34; → 2018</title><rect x="1780.00" y="926.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1787.00" y="933.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">R</text></g>
+        <line x1="1780.00" y1="869.00" x2="1782.12" y2="890.18" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="1782.12" y1="890.18" x2="1784.00" y2="909.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (recording date): Beethoven, Symphony No. 3, Opus 55, &#34;Eroica&#34; → 2018</title><rect x="1777.00" y="902.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1784.00" y="909.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">N</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="1837.35" y1="1422.47" x2="1839.35" y2="1443.28" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="1835.00" y1="1398.00" x2="1837.35" y2="1422.47" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 1840.00 1450.00 L 1834.66 1441.47 L 1839.35 1443.28 L 1843.62 1440.61 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (recording date): Beethoven, Symphony No. 3, Opus 55, &#34;Eroica&#34; → 2018</title><rect x="1828.00" y="1391.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1835.00" y="1398.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">R</text></g>
+        <g class="edge-badge"><title>Expresses (recording date): Beethoven, Symphony No. 3, Opus 55, &#34;Eroica&#34; → 2018</title><rect x="1828.00" y="1391.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1835.00" y="1398.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">N</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="29" data-edge-base="expresses" data-edge-from="38" data-edge-to="33">
@@ -382,33 +369,33 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="1780.00" y1="856.00" x2="1801.18" y2="853.35" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="1801.18" y1="853.35" x2="1820.00" y2="851.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has abbreviation): Beethoven, Symphony No. 3, Opus 55, &#34;Eroica&#34; → BTHV-3-1</title><rect x="1813.00" y="844.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1820.00" y="851.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">J</text></g>
+        <g class="edge-badge"><title>Expresses (has abbreviation): Beethoven, Symphony No. 3, Opus 55, &#34;Eroica&#34; → BTHV-3-1</title><rect x="1813.00" y="844.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1820.00" y="851.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">H</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="3066.12" y1="709.71" x2="3093.29" y2="706.73" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="3036.00" y1="713.00" x2="3066.12" y2="709.71" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 3100.00 706.00 L 3091.54 711.45 L 3093.29 706.73 L 3090.56 702.51 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has abbreviation): Beethoven, Symphony No. 3, Opus 55, &#34;Eroica&#34; → BTHV-3-1</title><rect x="3029.00" y="706.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3036.00" y="713.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">J</text></g>
+        <g class="edge-badge"><title>Expresses (has abbreviation): Beethoven, Symphony No. 3, Opus 55, &#34;Eroica&#34; → BTHV-3-1</title><rect x="3029.00" y="706.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3036.00" y="713.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">H</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="30" data-edge-base="expresses" data-edge-from="38" data-edge-to="49">
-      <line class="edge-ghost" x1="1788.00" y1="962.00" x2="1835.00" y2="1498.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="1786.00" y1="938.00" x2="1835.00" y2="1498.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="1788.00" y1="962.00" x2="1835.00" y2="1498.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="1811" y="1230" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="1786.00" y1="938.00" x2="1835.00" y2="1498.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="1810" y="1218" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>release format</title>rele...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="1780.00" y1="874.00" x2="1784.24" y2="920.59" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="1784.24" y1="920.59" x2="1788.00" y2="962.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (release format): Beethoven, Symphony No. 3, Opus 55, &#34;Eroica&#34; → FLAC</title><rect x="1781.00" y="955.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1788.00" y="962.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">U</text></g>
+        <line x1="1780.00" y1="874.00" x2="1783.18" y2="907.88" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="1783.18" y1="907.88" x2="1786.00" y2="938.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (release format): Beethoven, Symphony No. 3, Opus 55, &#34;Eroica&#34; → FLAC</title><rect x="1779.00" y="931.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1786.00" y="938.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">T</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="1837.35" y1="1522.47" x2="1839.35" y2="1543.28" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="1835.00" y1="1498.00" x2="1837.35" y2="1522.47" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 1840.00 1550.00 L 1834.66 1541.47 L 1839.35 1543.28 L 1843.62 1540.61 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (release format): Beethoven, Symphony No. 3, Opus 55, &#34;Eroica&#34; → FLAC</title><rect x="1828.00" y="1491.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1835.00" y="1498.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">U</text></g>
+        <g class="edge-badge"><title>Expresses (release format): Beethoven, Symphony No. 3, Opus 55, &#34;Eroica&#34; → FLAC</title><rect x="1828.00" y="1491.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1835.00" y="1498.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">T</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="31" data-edge-base="leadsto" data-edge-from="38" data-edge-to="67">
@@ -454,23 +441,23 @@
     <path d="M 1780.97 863.88 L 1787.52 871.52 L 1782.61 870.43 L 1778.79 873.70 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="36" data-edge-base="expresses" data-edge-from="40" data-edge-to="30">
-      <line class="edge-ghost" x1="3211.00" y1="690.00" x2="3420.00" y2="715.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="2980.00" y1="728.00" x2="3420.00" y2="715.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="3211.00" y1="690.00" x2="3420.00" y2="715.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="3315" y="702" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="2980.00" y1="728.00" x2="3420.00" y2="715.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="3200" y="721" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has tempo</title>has...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="3040.00" y1="670.00" x2="3130.53" y2="680.59" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="3130.53" y1="680.59" x2="3211.00" y2="690.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has tempo): CBES-1, First Movement → Allegro</title><rect x="3204.00" y="683.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3211.00" y="690.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">F</text></g>
+        <line x1="2980.00" y1="700.00" x2="2980.00" y2="714.82" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="2980.00" y1="714.82" x2="2980.00" y2="728.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (has tempo): CBES-1, First Movement → Allegro</title><rect x="2973.00" y="721.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2980.00" y="728.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">J</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="3438.82" y1="717.35" x2="3453.30" y2="719.16" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="3420.00" y1="715.00" x2="3438.82" y2="717.35" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 3460.00 720.00 L 3450.51 723.35 L 3453.30 719.16 L 3451.63 714.42 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has tempo): CBES-1, First Movement → Allegro</title><rect x="3413.00" y="708.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3420.00" y="715.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">F</text></g>
+        <g class="edge-badge"><title>Expresses (has tempo): CBES-1, First Movement → Allegro</title><rect x="3413.00" y="708.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3420.00" y="715.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">J</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="37" data-edge-base="leadsto" data-edge-from="40" data-edge-to="43">
@@ -570,13 +557,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="2560.00" y1="925.00" x2="2539.35" y2="928.71" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="2539.35" y1="928.71" x2="2521.00" y2="932.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has sampling rate): Celebrated Composer, The Early Symphonies → 44kHz / 16-bit</title><rect x="2514.00" y="925.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2521.00" y="932.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">P</text></g>
+        <g class="edge-badge"><title>Expresses (has sampling rate): Celebrated Composer, The Early Symphonies → 44kHz / 16-bit</title><rect x="2514.00" y="925.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2521.00" y="932.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">R</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="540.65" y1="1295.29" x2="526.64" y2="1297.81" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="559.00" y1="1292.00" x2="540.65" y2="1295.29" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 520.00 1299.00 L 528.06 1292.98 L 526.64 1297.81 L 529.65 1301.84 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has sampling rate): Celebrated Composer, The Early Symphonies → 44kHz / 16-bit</title><rect x="552.00" y="1285.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="559.00" y="1292.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">P</text></g>
+        <g class="edge-badge"><title>Expresses (has sampling rate): Celebrated Composer, The Early Symphonies → 44kHz / 16-bit</title><rect x="552.00" y="1285.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="559.00" y="1292.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">R</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="51" data-edge-base="expresses" data-edge-from="46" data-edge-to="39">
@@ -677,23 +664,23 @@
     <path d="M 4660.00 216.00 L 4655.50 207.00 L 4660.00 209.25 L 4664.50 207.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="61" data-edge-base="expresses" data-edge-from="52" data-edge-to="38">
-      <line class="edge-ghost" x1="4827.00" y1="179.00" x2="1866.00" y2="815.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="4900.00" y1="208.00" x2="1720.00" y2="918.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="4827.00" y1="179.00" x2="1866.00" y2="815.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="3346" y="497" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="4900.00" y1="208.00" x2="1720.00" y2="918.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="3310" y="563" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>conductor of</title>cond...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="4960.00" y1="150.00" x2="4889.59" y2="165.35" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="4889.59" y1="165.35" x2="4827.00" y2="179.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (conductor of): Manfred Honeck → Beethoven, Symphony No. 3, Opus 55, &#34;Eroica&#34;</title><rect x="4820.00" y="172.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="4827.00" y="179.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">A</text></g>
+        <line x1="4900.00" y1="180.00" x2="4900.00" y2="194.82" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="4900.00" y1="194.82" x2="4900.00" y2="208.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (conductor of): Manfred Honeck → Beethoven, Symphony No. 3, Opus 55, &#34;Eroica&#34;</title><rect x="4893.00" y="201.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="4900.00" y="208.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">A</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="1825.53" y1="823.94" x2="1786.59" y2="832.54" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="1866.00" y1="815.00" x2="1825.53" y2="823.94" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 1780.00 834.00 L 1787.82 827.66 L 1786.59 832.54 L 1789.76 836.45 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (conductor of): Manfred Honeck → Beethoven, Symphony No. 3, Opus 55, &#34;Eroica&#34;</title><rect x="1859.00" y="808.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1866.00" y="815.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">A</text></g>
+        <line x1="1720.00" y1="904.82" x2="1720.00" y2="896.75" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="1720.00" y1="918.00" x2="1720.00" y2="904.82" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+    <path d="M 1720.00 890.00 L 1724.50 899.00 L 1720.00 896.75 L 1715.50 899.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (conductor of): Manfred Honeck → Beethoven, Symphony No. 3, Opus 55, &#34;Eroica&#34;</title><rect x="1713.00" y="911.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1720.00" y="918.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">A</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="62" data-edge-base="leadsto" data-edge-from="52" data-edge-to="81">
@@ -725,23 +712,23 @@
     <path d="M 5140.00 216.00 L 5135.50 207.00 L 5140.00 209.25 L 5144.50 207.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="65" data-edge-base="expresses" data-edge-from="54" data-edge-to="26">
-      <line class="edge-ghost" x1="349.00" y1="1857.00" x2="560.00" y2="945.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="349.00" y1="1857.00" x2="640.00" y2="898.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="349.00" y1="1857.00" x2="560.00" y2="945.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="454" y="1401" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="349.00" y1="1857.00" x2="640.00" y2="898.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="494" y="1377" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>composer of</title>comp...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
         <line x1="340.00" y1="1896.00" x2="344.76" y2="1875.35" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="344.76" y1="1875.35" x2="349.00" y2="1857.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (composer of): Music by &#34;Alex Lifeson&#34;, &#34;Geddy Lee&#34;, lyrics by &#34;Neil Peart&#34; → A Farewell To Kings</title><rect x="342.00" y="1850.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="349.00" y="1857.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">T</text></g>
+        <g class="edge-badge"><title>Expresses (composer of): Music by &#34;Alex Lifeson&#34;, &#34;Geddy Lee&#34;, lyrics by &#34;Neil Peart&#34; → A Farewell To Kings</title><rect x="342.00" y="1850.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="349.00" y="1857.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">M</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="569.41" y1="904.53" x2="578.47" y2="865.57" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="560.00" y1="945.00" x2="569.41" y2="904.53" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 580.00 859.00 L 582.34 868.79 L 578.47 865.57 L 573.58 866.75 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (composer of): Music by &#34;Alex Lifeson&#34;, &#34;Geddy Lee&#34;, lyrics by &#34;Neil Peart&#34; → A Farewell To Kings</title><rect x="553.00" y="938.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="560.00" y="945.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">T</text></g>
+        <line x1="640.00" y1="884.82" x2="640.00" y2="876.75" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="640.00" y1="898.00" x2="640.00" y2="884.82" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+    <path d="M 640.00 870.00 L 644.50 879.00 L 640.00 876.75 L 635.50 879.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (composer of): Music by &#34;Alex Lifeson&#34;, &#34;Geddy Lee&#34;, lyrics by &#34;Neil Peart&#34; → A Farewell To Kings</title><rect x="633.00" y="891.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="640.00" y="898.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">M</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="66" data-edge-base="expresses" data-edge-from="54" data-edge-to="29">
@@ -829,30 +816,30 @@
     <path d="M 579.22 814.08 L 573.06 806.12 L 577.91 807.45 L 581.89 804.37 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="76" data-edge-base="expresses" data-edge-from="6" data-edge-to="59">
-      <line class="edge-ghost" x1="460.00" y1="657.00" x2="460.00" y2="873.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="548.00" y1="515.00" x2="548.00" y2="1015.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="460.00" y1="657.00" x2="460.00" y2="873.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="460" y="765" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="548.00" y1="515.00" x2="548.00" y2="1015.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="548" y="765" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>refers to</title>refe...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="460.00" y1="545.00" x2="460.00" y2="604.29" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="460.00" y1="604.29" x2="460.00" y2="657.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (refers to): &#34;RUSH-5&#34;, 1. A Farewell To Kings → RUSH-5</title><rect x="453.00" y="650.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="460.00" y="657.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">D</text></g>
+        <line x1="520.00" y1="515.00" x2="534.82" y2="515.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="534.82" y1="515.00" x2="548.00" y2="515.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <g class="edge-badge"><title>Expresses (refers to): &#34;RUSH-5&#34;, 1. A Farewell To Kings → RUSH-5</title><rect x="541.00" y="508.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="548.00" y="515.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">D</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="460.00" y1="925.71" x2="460.00" y2="978.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="460.00" y1="873.00" x2="460.00" y2="925.71" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 460.00 985.00 L 455.50 976.00 L 460.00 978.25 L 464.50 976.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (refers to): &#34;RUSH-5&#34;, 1. A Farewell To Kings → RUSH-5</title><rect x="453.00" y="866.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="460.00" y="873.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">D</text></g>
+        <line x1="534.82" y1="1015.00" x2="526.75" y2="1015.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="548.00" y1="1015.00" x2="534.82" y2="1015.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+    <path d="M 520.00 1015.00 L 529.00 1010.50 L 526.75 1015.00 L 529.00 1019.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (refers to): &#34;RUSH-5&#34;, 1. A Farewell To Kings → RUSH-5</title><rect x="541.00" y="1008.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="548.00" y="1015.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">D</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="77" data-edge-base="expresses" data-edge-from="60" data-edge-to="38">
-      <line class="edge-ghost" x1="5761.00" y1="157.00" x2="1890.00" y2="820.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="5761.00" y1="157.00" x2="1632.00" y2="850.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="5761.00" y1="157.00" x2="1890.00" y2="820.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="3825" y="488" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="5761.00" y1="157.00" x2="1632.00" y2="850.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="3696" y="503" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>is the publisher of</title>is t...
     </text>
       </g>
@@ -862,10 +849,10 @@
         <g class="edge-badge"><title>Expresses (is the publisher of): Reference Recordings → Beethoven, Symphony No. 3, Opus 55, &#34;Eroica&#34;</title><rect x="5754.00" y="150.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="5761.00" y="157.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="1838.24" y1="828.94" x2="1786.65" y2="837.85" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="1890.00" y1="820.00" x2="1838.24" y2="828.94" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 1780.00 839.00 L 1788.10 833.03 L 1786.65 837.85 L 1789.63 841.90 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (is the publisher of): Reference Recordings → Beethoven, Symphony No. 3, Opus 55, &#34;Eroica&#34;</title><rect x="1883.00" y="813.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1890.00" y="820.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
+        <line x1="1645.18" y1="850.00" x2="1653.25" y2="850.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <line x1="1632.00" y1="850.00" x2="1645.18" y2="850.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+    <path d="M 1660.00 850.00 L 1651.00 854.50 L 1653.25 850.00 L 1651.00 845.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (is the publisher of): Reference Recordings → Beethoven, Symphony No. 3, Opus 55, &#34;Eroica&#34;</title><rect x="1625.00" y="843.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1632.00" y="850.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="78" data-edge-base="leadsto" data-edge-from="60" data-edge-to="89">

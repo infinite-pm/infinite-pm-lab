@@ -267,24 +267,11 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="24" data-edge-base="expresses" data-edge-from="39" data-edge-to="20">
-      <line class="edge-ghost" x1="693.00" y1="1575.00" x2="647.00" y2="1293.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
-      <g class="edge-full" opacity="0">
-        <line x1="693.00" y1="1575.00" x2="647.00" y2="1293.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="670" y="1434" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <line x1="699.34" y1="1610.05" x2="641.77" y2="1264.60" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 640.66 1257.95 L 646.58 1266.08 L 641.77 1264.60 L 637.70 1267.56 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="670" y="1437" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has an attribute</title>has...
     </text>
-      </g>
-      <g class="edge-stub" data-stub-end="source">
-        <line x1="700.00" y1="1614.00" x2="696.29" y2="1593.35" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="696.29" y1="1593.35" x2="693.00" y2="1575.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has an attribute): files → classes</title><rect x="686.00" y="1568.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="693.00" y="1575.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">D</text></g>
-      </g>
-      <g class="edge-stub" data-stub-end="target">
-        <line x1="643.71" y1="1274.65" x2="641.19" y2="1260.64" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="647.00" y1="1293.00" x2="643.71" y2="1274.65" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 640.00 1254.00 L 646.02 1262.06 L 641.19 1260.64 L 637.16 1263.65 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has an attribute): files → classes</title><rect x="640.00" y="1286.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="647.00" y="1293.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">D</text></g>
-      </g>
     </g>
     <g class="edge" data-edge-idx="25" data-edge-base="expresses" data-edge-from="39" data-edge-to="21">
     <line x1="823.53" y1="1645.88" x2="870.51" y2="1670.94" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
@@ -463,13 +450,13 @@
       <g class="edge-stub" data-stub-end="source">
         <line x1="940.00" y1="1174.00" x2="919.35" y2="1178.24" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="919.35" y1="1178.24" x2="901.00" y2="1182.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has example): CFEngine promise type → classes</title><rect x="894.00" y="1175.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="901.00" y="1182.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">A</text></g>
+        <g class="edge-badge"><title>Expresses (has example): CFEngine promise type → classes</title><rect x="894.00" y="1175.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="901.00" y="1182.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">9</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="660.65" y1="1231.76" x2="646.61" y2="1234.64" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <line x1="679.00" y1="1228.00" x2="660.65" y2="1231.76" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
     <path d="M 640.00 1236.00 L 647.91 1229.78 L 646.61 1234.64 L 649.72 1238.60 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has example): CFEngine promise type → classes</title><rect x="672.00" y="1221.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="679.00" y="1228.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">A</text></g>
+        <g class="edge-badge"><title>Expresses (has example): CFEngine promise type → classes</title><rect x="672.00" y="1221.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="679.00" y="1228.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">9</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="46" data-edge-base="expresses" data-edge-from="6" data-edge-to="22">
@@ -487,44 +474,18 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="48" data-edge-base="expresses" data-edge-from="6" data-edge-to="39">
-      <line class="edge-ghost" x1="929.00" y1="1221.00" x2="831.00" y2="1569.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
-      <g class="edge-full" opacity="0">
-        <line x1="929.00" y1="1221.00" x2="831.00" y2="1569.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="880" y="1395" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <line x1="938.92" y1="1185.85" x2="822.91" y2="1597.65" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 821.08 1604.15 L 819.19 1594.27 L 822.91 1597.65 L 827.86 1596.71 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="880" y="1391" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has example</title>has...
     </text>
-      </g>
-      <g class="edge-stub" data-stub-end="source">
-        <line x1="940.00" y1="1182.00" x2="934.18" y2="1202.65" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="934.18" y1="1202.65" x2="929.00" y2="1221.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has example): CFEngine promise type → files</title><rect x="922.00" y="1214.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="929.00" y="1221.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">C</text></g>
-      </g>
-      <g class="edge-stub" data-stub-end="target">
-        <line x1="825.82" y1="1587.35" x2="821.83" y2="1601.50" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="831.00" y1="1569.00" x2="825.82" y2="1587.35" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 820.00 1608.00 L 818.11 1598.12 L 821.83 1601.50 L 826.77 1600.56 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has example): CFEngine promise type → files</title><rect x="824.00" y="1562.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="831.00" y="1569.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">C</text></g>
-      </g>
     </g>
     <g class="edge" data-edge-idx="49" data-edge-base="expresses" data-edge-from="6" data-edge-to="49">
-      <line class="edge-ghost" x1="1075.00" y1="1117.00" x2="1405.00" y2="316.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
-      <g class="edge-full" opacity="0">
-        <line x1="1075.00" y1="1117.00" x2="1405.00" y2="316.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="1240" y="716" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <line x1="1061.52" y1="1150.30" x2="1415.91" y2="288.94" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 1418.48 282.70 L 1419.22 292.73 L 1415.91 288.94 L 1410.89 289.31 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="1238" y="719" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has example</title>has...
     </text>
-      </g>
-      <g class="edge-stub" data-stub-end="source">
-        <line x1="1060.00" y1="1154.00" x2="1067.94" y2="1134.41" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="1067.94" y1="1134.41" x2="1075.00" y2="1117.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has example): CFEngine promise type → vars</title><rect x="1068.00" y="1110.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1075.00" y="1117.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">9</text></g>
-      </g>
-      <g class="edge-stub" data-stub-end="target">
-        <line x1="1412.06" y1="298.59" x2="1417.46" y2="285.26" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="1405.00" y1="316.00" x2="1412.06" y2="298.59" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 1420.00 279.00 L 1420.79 289.03 L 1417.46 285.26 L 1412.45 285.65 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has example): CFEngine promise type → vars</title><rect x="1398.00" y="309.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1405.00" y="316.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">9</text></g>
-      </g>
     </g>
     <g class="edge" data-edge-idx="50" data-edge-base="leadsto" data-edge-from="6" data-edge-to="51">
     <line x1="1000.00" y1="1200.00" x2="1000.00" y2="1275.25" stroke="#ff8000" stroke-width="3" />
