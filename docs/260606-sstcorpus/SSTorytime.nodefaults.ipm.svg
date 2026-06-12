@@ -370,8 +370,8 @@
     <path d="M 1596.08 229.20 L 1586.36 231.82 L 1589.47 227.86 L 1588.16 223.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="33" data-edge-base="leadsto" data-edge-from="159" data-edge-to="95">
-    <polyline points="834.08,80.80 210,110 108.41,224.16" fill="none" stroke="#ff8000" stroke-width="3" />
-    <path d="M 103.92 229.20 L 106.54 219.49 L 108.41 224.16 L 113.26 225.47 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
+    <polyline points="834.08,80.80 190,90 107.47,223.46" fill="none" stroke="#ff8000" stroke-width="3" />
+    <path d="M 103.92 229.20 L 104.83 219.18 L 107.47 223.46 L 112.48 223.92 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="34" data-edge-base="leadsto" data-edge-from="161" data-edge-to="64">
     <line x1="3340.00" y1="84.00" x2="3340.00" y2="109.25" stroke="#ff8000" stroke-width="3" />
@@ -876,9 +876,9 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="109" data-edge-base="leadsto" data-edge-from="95" data-edge-to="133">
-    <polyline points="103.47,291.98 210,410 754.41,664.16" fill="none" stroke="#ff8000" stroke-width="3" />
-    <path d="M 760.53 667.02 L 750.47 667.29 L 754.41 664.16 L 754.27 659.13 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="156" y="350" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#ff8000">
+    <polyline points="103.47,291.98 190,430 754.29,664.43" fill="none" stroke="#ff8000" stroke-width="3" />
+    <path d="M 760.53 667.02 L 750.49 667.72 L 754.29 664.43 L 753.94 659.41 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="146" y="360" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#ff8000">
       <title>sustains</title>sust...
     </text>
     </g>

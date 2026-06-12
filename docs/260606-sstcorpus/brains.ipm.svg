@@ -504,9 +504,9 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="65" data-edge-base="leadsto" data-edge-from="50" data-edge-to="47">
-    <polyline points="7383.35,383.95 7310,950 7242.19,1239.48" fill="none" stroke="#ff8000" stroke-width="3" />
-    <path d="M 7240.65 1246.05 L 7238.32 1236.26 L 7242.19 1239.48 L 7247.09 1238.32 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="7346" y="666" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#ff8000">
+    <polyline points="7383.35,383.95 7330,970 7242.73,1239.63" fill="none" stroke="#ff8000" stroke-width="3" />
+    <path d="M 7240.65 1246.05 L 7239.14 1236.11 L 7242.73 1239.63 L 7247.71 1238.88 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="7356" y="676" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#ff8000">
       <title>influences</title>infl...
     </text>
     </g>
@@ -574,9 +574,9 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="75" data-edge-base="expresses" data-edge-from="56" data-edge-to="27">
-    <polyline points="5323.30,81.27 5370,250 5549.96,242.03" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 5556.70 241.73 L 5547.91 246.63 L 5549.96 242.03 L 5547.51 237.64 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="5346" y="165" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <polyline points="5323.30,81.27 5350,270 5550.02,242.65" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 5556.70 241.73 L 5548.40 247.41 L 5550.02 242.65 L 5547.18 238.49 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="5336" y="175" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has a role</title>has...
     </text>
     </g>
@@ -739,9 +739,9 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="102" data-edge-base="expresses" data-edge-from="90" data-edge-to="20">
-    <polyline points="10956.98,72.62 10860,130 10816.88,191.84" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 10813.02 197.38 L 10814.48 187.42 L 10816.88 191.84 L 10821.86 192.57 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="10908" y="101" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <polyline points="10956.98,72.62 10840,110 10815.01,190.93" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 10813.02 197.38 L 10811.38 187.45 L 10815.01 190.93 L 10819.98 190.11 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="10898" y="91" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>works by method</title>work...
     </text>
     </g>

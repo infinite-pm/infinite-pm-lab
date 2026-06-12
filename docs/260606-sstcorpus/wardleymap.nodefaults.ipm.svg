@@ -69,9 +69,9 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="6" data-edge-base="leadsto" data-edge-from="12" data-edge-to="13">
-    <polyline points="637.70,423.27 480,470 432.61,710.11" fill="none" stroke="#ff8000" stroke-width="3" />
-    <path d="M 431.30 716.73 L 428.63 707.03 L 432.61 710.11 L 437.46 708.77 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="558" y="446" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#ff8000">
+    <polyline points="637.70,423.27 460,450 432.02,710.02" fill="none" stroke="#ff8000" stroke-width="3" />
+    <path d="M 431.30 716.73 L 427.79 707.30 L 432.02 710.02 L 436.74 708.26 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="548" y="436" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#ff8000">
       <title>matures into</title>matu...
     </text>
     </g>
@@ -87,8 +87,8 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="9" data-edge-base="leadsto" data-edge-from="15" data-edge-to="19">
-    <polyline points="280.40,303.98 300,590 331.67,817.33" fill="none" stroke="#ff8000" stroke-width="3" />
-    <path d="M 332.60 824.02 L 326.90 815.73 L 331.67 817.33 L 335.82 814.49 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
+    <polyline points="280.40,303.98 280,570 331.23,817.41" fill="none" stroke="#ff8000" stroke-width="3" />
+    <path d="M 332.60 824.02 L 326.37 816.12 L 331.23 817.41 L 335.18 814.29 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="10" data-edge-base="leadsto" data-edge-from="16" data-edge-to="5">
     <line x1="460.00" y1="304.00" x2="460.00" y2="349.25" stroke="#ff8000" stroke-width="3" />

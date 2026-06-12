@@ -107,9 +107,9 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="9" data-edge-base="expresses" data-edge-from="24" data-edge-to="10">
-    <polyline points="163.59,53.76 210,110 350,110 392.20,162.96" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 396.41 168.24 L 387.28 164.00 L 392.20 162.96 L 394.32 158.39 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="186" y="81" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <polyline points="163.59,53.76 200,120 360,120 392.34,162.85" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 396.41 168.24 L 387.40 163.76 L 392.34 162.85 L 394.58 158.34 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="181" y="86" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has friend</title>has...
     </text>
     </g>
@@ -240,9 +240,9 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="28" data-edge-base="expresses" data-edge-from="26" data-edge-to="21">
-    <polyline points="2503.67,167.59 2550,310 2690,310 2731.31,272.92" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 2736.33 268.41 L 2732.64 277.77 L 2731.31 272.92 L 2726.63 271.07 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="2526" y="238" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <polyline points="2503.67,167.59 2530,330 2710,330 2733.68,274.62" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 2736.33 268.41 L 2736.93 278.45 L 2733.68 274.62 L 2728.65 274.92 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="2516" y="248" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has friend</title>has...
     </text>
     </g>
