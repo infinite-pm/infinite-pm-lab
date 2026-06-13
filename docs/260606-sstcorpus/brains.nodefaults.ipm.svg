@@ -143,10 +143,10 @@
     <path d="M 9260.00 395.00 L 9255.50 386.00 L 9260.00 388.25 L 9264.50 386.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="1" data-edge-base="expresses" data-edge-from="10" data-edge-to="95">
-      <line class="edge-ghost" x1="9160.00" y1="158.00" x2="6500.00" y2="190.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="9160.00" y1="158.00" x2="6500.00" y2="159.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="9160.00" y1="158.00" x2="6500.00" y2="190.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="7830" y="174" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="9160.00" y1="158.00" x2="6500.00" y2="159.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="7830" y="158" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>involves</title>invo...
     </text>
       </g>
@@ -155,9 +155,9 @@
         <g class="edge-badge"><title>Expresses (involves): Internal granular layer. The main entry point for incoming sensory signals. Direct signals from the thalamus. → thalamus</title><rect x="9153.00" y="151.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="9160.00" y="158.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="6500.00" y1="190.00" x2="6466.75" y2="190.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 6460.00 190.00 L 6469.00 185.50 L 6466.75 190.00 L 6469.00 194.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (involves): Internal granular layer. The main entry point for incoming sensory signals. Direct signals from the thalamus. → thalamus</title><rect x="6493.00" y="183.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="6500.00" y="190.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
+        <line x1="6500.00" y1="159.00" x2="6466.75" y2="159.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 6460.00 159.00 L 6469.00 154.50 L 6466.75 159.00 L 6469.00 163.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (involves): Internal granular layer. The main entry point for incoming sensory signals. Direct signals from the thalamus. → thalamus</title><rect x="6493.00" y="152.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="6500.00" y="159.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="2" data-edge-base="leadsto" data-edge-from="100" data-edge-to="119">
@@ -273,10 +273,10 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="20" data-edge-base="expresses" data-edge-from="12" data-edge-to="96">
-      <line class="edge-ghost" x1="2240.00" y1="171.00" x2="2640.00" y2="189.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="2240.00" y1="171.00" x2="2640.00" y2="179.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="2240.00" y1="171.00" x2="2640.00" y2="189.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="2440" y="180" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="2240.00" y1="171.00" x2="2640.00" y2="179.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="2440" y="175" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>discusses</title>disc...
     </text>
       </g>
@@ -285,9 +285,9 @@
         <g class="edge-badge"><title>Expresses (discusses): Left–right-alternating theta sweeps in entorhinal–hippocampal maps of space → theta waves</title><rect x="2233.00" y="164.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2240.00" y="171.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="2640.00" y1="189.00" x2="2673.25" y2="189.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 2680.00 189.00 L 2671.00 193.50 L 2673.25 189.00 L 2671.00 184.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (discusses): Left–right-alternating theta sweeps in entorhinal–hippocampal maps of space → theta waves</title><rect x="2633.00" y="182.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2640.00" y="189.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
+        <line x1="2640.00" y1="179.00" x2="2673.25" y2="179.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 2680.00 179.00 L 2671.00 183.50 L 2673.25 179.00 L 2671.00 174.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (discusses): Left–right-alternating theta sweeps in entorhinal–hippocampal maps of space → theta waves</title><rect x="2633.00" y="172.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2640.00" y="179.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="21" data-edge-base="leadsto" data-edge-from="120" data-edge-to="86">

@@ -102,10 +102,10 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="3" data-edge-base="expresses" data-edge-from="20" data-edge-to="28">
-      <line class="edge-ghost" x1="558.00" y1="1166.00" x2="580.00" y2="246.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="558.00" y1="1166.00" x2="558.00" y2="246.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="558.00" y1="1166.00" x2="580.00" y2="246.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="569" y="706" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="558.00" y1="1166.00" x2="558.00" y2="246.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="558" y="706" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>generalizes</title>gene...
     </text>
       </g>
@@ -114,9 +114,9 @@
         <g class="edge-badge"><title>Expresses (generalizes): classes → editfiles classes</title><rect x="551.00" y="1159.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="558.00" y="1166.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">6</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="580.00" y1="246.00" x2="580.00" y2="212.75" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 580.00 206.00 L 584.50 215.00 L 580.00 212.75 L 575.50 215.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (generalizes): classes → editfiles classes</title><rect x="573.00" y="239.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="580.00" y="246.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">6</text></g>
+        <line x1="558.00" y1="246.00" x2="558.00" y2="212.75" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 558.00 206.00 L 562.50 215.00 L 558.00 212.75 L 553.50 215.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (generalizes): classes → editfiles classes</title><rect x="551.00" y="239.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="558.00" y="246.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">6</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="4" data-edge-base="leadsto" data-edge-from="20" data-edge-to="55">
@@ -135,10 +135,10 @@
     <path d="M 340.00 1301.00 L 335.50 1292.00 L 340.00 1294.25 L 344.50 1292.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="7" data-edge-base="expresses" data-edge-from="24" data-edge-to="30">
-      <line class="edge-ghost" x1="1860.00" y1="170.00" x2="900.00" y2="155.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="1860.00" y1="170.00" x2="900.00" y2="165.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="1860.00" y1="170.00" x2="900.00" y2="155.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="1380" y="162" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="1860.00" y1="170.00" x2="900.00" y2="165.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="1380" y="167" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>generalizes</title>gene...
     </text>
       </g>
@@ -147,9 +147,9 @@
         <g class="edge-badge"><title>Expresses (generalizes): delete → editfiles delete_lines</title><rect x="1853.00" y="163.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1860.00" y="170.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="900.00" y1="155.00" x2="866.75" y2="155.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 860.00 155.00 L 869.00 150.50 L 866.75 155.00 L 869.00 159.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (generalizes): delete → editfiles delete_lines</title><rect x="893.00" y="148.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="900.00" y="155.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
+        <line x1="900.00" y1="165.00" x2="866.75" y2="165.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 860.00 165.00 L 869.00 160.50 L 866.75 165.00 L 869.00 169.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (generalizes): delete → editfiles delete_lines</title><rect x="893.00" y="158.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="900.00" y="165.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="8" data-edge-base="leadsto" data-edge-from="24" data-edge-to="59">
@@ -221,10 +221,10 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="19" data-edge-base="expresses" data-edge-from="37" data-edge-to="31">
-      <line class="edge-ghost" x1="2100.00" y1="170.00" x2="1120.00" y2="155.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="2100.00" y1="170.00" x2="1120.00" y2="165.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="2100.00" y1="170.00" x2="1120.00" y2="155.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="1610" y="162" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="2100.00" y1="170.00" x2="1120.00" y2="165.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="1610" y="167" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>generalizes</title>gene...
     </text>
       </g>
@@ -233,9 +233,9 @@
         <g class="edge-badge"><title>Expresses (generalizes): field → editfiles field_edits</title><rect x="2093.00" y="163.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2100.00" y="170.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">4</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="1120.00" y1="155.00" x2="1086.75" y2="155.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 1080.00 155.00 L 1089.00 150.50 L 1086.75 155.00 L 1089.00 159.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (generalizes): field → editfiles field_edits</title><rect x="1113.00" y="148.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1120.00" y="155.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">4</text></g>
+        <line x1="1120.00" y1="165.00" x2="1086.75" y2="165.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 1080.00 165.00 L 1089.00 160.50 L 1086.75 165.00 L 1089.00 169.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (generalizes): field → editfiles field_edits</title><rect x="1113.00" y="158.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1120.00" y="165.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">4</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="20" data-edge-base="leadsto" data-edge-from="37" data-edge-to="67">
@@ -279,10 +279,10 @@
     <path d="M 760.00 1741.00 L 755.50 1732.00 L 760.00 1734.25 L 764.50 1732.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="27" data-edge-base="expresses" data-edge-from="40" data-edge-to="32">
-      <line class="edge-ghost" x1="2340.00" y1="170.00" x2="1340.00" y2="155.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="2340.00" y1="170.00" x2="1340.00" y2="165.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="2340.00" y1="170.00" x2="1340.00" y2="155.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="1840" y="162" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="2340.00" y1="170.00" x2="1340.00" y2="165.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="1840" y="167" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>generalizes</title>gene...
     </text>
       </g>
@@ -291,9 +291,9 @@
         <g class="edge-badge"><title>Expresses (generalizes): insert → editfiles insert_lines</title><rect x="2333.00" y="163.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2340.00" y="170.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">5</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="1340.00" y1="155.00" x2="1306.75" y2="155.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 1300.00 155.00 L 1309.00 150.50 L 1306.75 155.00 L 1309.00 159.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (generalizes): insert → editfiles insert_lines</title><rect x="1333.00" y="148.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1340.00" y="155.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">5</text></g>
+        <line x1="1340.00" y1="165.00" x2="1306.75" y2="165.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 1300.00 165.00 L 1309.00 160.50 L 1306.75 165.00 L 1309.00 169.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (generalizes): insert → editfiles insert_lines</title><rect x="1333.00" y="158.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1340.00" y="165.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">5</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="28" data-edge-base="leadsto" data-edge-from="40" data-edge-to="69">
