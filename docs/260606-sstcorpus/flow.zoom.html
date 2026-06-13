@@ -31,11 +31,12 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #fff; colo
 .panel h3 { font-size: 16px; margin-bottom: 10px; color: #333; }
 
 #view-panel { flex-shrink: 0; padding: 8px 10px; }
-#view-panel .panel-row { display: flex; align-items: center; gap: 6px; }
-#view-panel .panel-row h3 { margin: 0; flex: 1; }
+#view-panel .panel-row { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+#view-panel .panel-row h3 { margin: 0 4px 0 0; }
 .icon-btn { width: 32px; height: 32px; padding: 0; background: #e0e0e0; color: #333; border: 1px solid #ccc; border-radius: 4px; cursor: pointer; font-size: 16px; line-height: 1; display: inline-flex; align-items: center; justify-content: center; font-family: inherit; text-decoration: none; }
 .icon-btn:hover { background: #533483; color: #fff; }
 .icon-btn.flash { background: #4caf50; color: #fff; }
+.icon-btn:disabled { opacity: 0.35; pointer-events: none; }
 
 #inspector { flex: 0 1 auto; overflow-y: auto; }
 #inspector .field { margin-bottom: 7px; }
@@ -127,6 +128,8 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #fff; colo
     <div id="view-panel" class="panel">
       <div class="panel-row">
         <h3>View</h3>
+        <button class="icon-btn" id="nav-back-btn" title="Back to the previous view">◀</button>
+        <button class="icon-btn" id="nav-fwd-btn" title="Forward to the next view">▶</button>
         <button class="icon-btn" id="help-btn" title="Shortcuts &amp; help (?)">?</button>
         <button class="icon-btn" id="toggle-inspector-btn" title="Show/hide the inspector panel (free up canvas space)">▤</button>
         <button class="icon-btn" id="copy-url-btn" title="Copy a URL that restores the current state, selection, zoom and pan">🔗</button>
@@ -176,6 +179,7 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #fff; colo
       <dt><kbd>Scroll</kbd></dt><dd>zoom in / out</dd>
       <dt><kbd>Esc</kbd></dt><dd>clear the selection, then zoom out</dd>
       <dt>Breadcrumb</dt><dd>jump back to a parent state (top bar)</dd>
+      <dt>◀ ▶</dt><dd>step back / forward through your recent views (highlight, open, zoom — pan/zoom restore with each step)</dd>
     </dl>
 
     <div class="help-sec">Toolbar</div>
@@ -226,6 +230,16 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
   let pinchStartScale = 1;
   let pinchAnchorLayoutX = 0, pinchAnchorLayoutY = 0;
 
+  // --- View history (in-app ◀/▶ back-forward) ---
+  // Snapshots = {stateID, nodeID, edgeIdx, zoom, panX, panY}; viewCursor is the
+  // current position. A new interaction drops any forward entries and pushes one.
+  // Pan/wheel don't add entries (they never call updateSelection) — the camera is
+  // just kept on whatever the current entry is.
+  let viewHistory = [];
+  let viewCursor = -1;
+  let suppressHistory = false;   // true while restoring a snapshot (don't re-record)
+  let commitScheduled = false;   // coalesce the many updateSelection calls of one interaction
+
   // --- DOM refs ---
   const sourceLabel = document.getElementById("source-label");
   const breadcrumb = document.getElementById("breadcrumb");
@@ -235,6 +249,8 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
   const stateInfo = document.getElementById("state-info");
   const zoomInfo = document.getElementById("zoom-info");
   const helpOverlay = document.getElementById("help-overlay");
+  const navBackBtn = document.getElementById("nav-back-btn");
+  const navFwdBtn = document.getElementById("nav-fwd-btn");
 
   // --- Init ---
   // The offline single-page bundle pre-populates window.__BUNDLED_MODEL and
@@ -295,6 +311,9 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
     document.getElementById("help-close").addEventListener("click", closeHelp);
     // Click the dimmed backdrop (but not the panel) to dismiss.
     helpOverlay.addEventListener("click", function (e) { if (e.target === helpOverlay) closeHelp(); });
+    navBackBtn.addEventListener("click", function () { goToViewHistory(-1); });
+    navFwdBtn.addEventListener("click", function () { goToViewHistory(1); });
+    updateHistoryButtons();
 
     // Offline bundle has no server to download from — hide the icon so users
     // don't get a confusing 404 from clicking it under file://.
@@ -818,6 +837,10 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
     } else {
       inspectorContent.innerHTML = "<em>Click a node or edge to inspect</em>";
     }
+    // updateSelection is the one call every view change funnels through (each
+    // selection change + every render), and never a bare pan/wheel — so it's the
+    // natural place to record a view-history step (deferred + coalesced).
+    scheduleCommit();
   }
 
   function updateInspector() {
@@ -1253,6 +1276,73 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
   function openHelp() { helpOverlay.hidden = false; }
   function closeHelp() { helpOverlay.hidden = true; }
 
+  // --- View history (◀/▶) ---
+  // recordView runs deferred (microtask) so the whole synchronous interaction
+  // (state + selection + camera) settles first and we capture the final view
+  // once. scheduleCommit is hooked into updateSelection — the universal "view
+  // changed" signal: it fires on every selection change and every render, but
+  // never on a bare pan/wheel, so those don't create history steps.
+  function scheduleCommit() {
+    if (suppressHistory || commitScheduled) return;
+    commitScheduled = true;
+    Promise.resolve().then(function () { commitScheduled = false; recordView(); });
+  }
+
+  function recordView() {
+    if (suppressHistory || currentStateID == null) return;
+    const snap = { stateID: currentStateID, nodeID: selectedNodeID, edgeIdx: selectedEdgeIdx,
+                   zoom: cameraScale, panX: panX, panY: panY };
+    const cur = viewHistory[viewCursor];
+    // Same logical view (state + selection) → just refresh its camera in place.
+    if (cur && cur.stateID === snap.stateID && cur.nodeID === snap.nodeID && cur.edgeIdx === snap.edgeIdx) {
+      cur.zoom = snap.zoom; cur.panX = snap.panX; cur.panY = snap.panY;
+      updateHistoryButtons();
+      return;
+    }
+    viewHistory = viewHistory.slice(0, viewCursor + 1); // drop any forward entries
+    viewHistory.push(snap);
+    const MAX = 200;
+    if (viewHistory.length > MAX) viewHistory = viewHistory.slice(viewHistory.length - MAX);
+    viewCursor = viewHistory.length - 1;
+    updateHistoryButtons();
+  }
+
+  function goToViewHistory(delta) {
+    const target = viewCursor + delta;
+    if (target < 0 || target >= viewHistory.length) return;
+    // Save the live camera into the current entry first, so ▶ returns you to
+    // exactly where you were (including any panning since this step was made).
+    const cur = viewHistory[viewCursor];
+    if (cur) { cur.zoom = cameraScale; cur.panX = panX; cur.panY = panY; }
+    viewCursor = target;
+    restoreView(viewHistory[viewCursor]);
+    updateHistoryButtons();
+  }
+
+  function restoreView(snap) {
+    if (!snap || !statesByID[snap.stateID]) return;
+    suppressHistory = true;
+    try {
+      currentStateID = snap.stateID;
+      syncHistory(snap.stateID);
+      selectedNodeID = (snap.nodeID != null && findNodeById(snap.nodeID)) ? snap.nodeID : null;
+      const st = currentState();
+      selectedEdgeIdx = (snap.edgeIdx != null && st && st.edges && st.edges[snap.edgeIdx]) ? snap.edgeIdx : null;
+      renderState(true);                 // draws SVG + highlights + breadcrumb (skipFit)
+      cameraScale = snap.zoom; minCameraScale = cameraScale * 0.2;
+      panX = snap.panX; panY = snap.panY;
+      applyTransform();
+      // URL stays current (shareable) but we don't push browser history here.
+      history.replaceState({ stateID: currentStateID, nodeID: selectedNodeID }, "",
+                           buildHash(currentStateID, selectedNodeID));
+    } finally { suppressHistory = false; }
+  }
+
+  function updateHistoryButtons() {
+    if (navBackBtn) navBackBtn.disabled = viewCursor <= 0;
+    if (navFwdBtn) navFwdBtn.disabled = viewCursor >= viewHistory.length - 1;
+  }
+
   // Show/hide the inspector panel — frees the canvas space it floats over.
   function toggleInspector() {
     const insp = document.getElementById("inspector");
@@ -1586,6 +1676,7 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
     },
     setCameraScale: function (s) { cameraScale = s; applyTransform(); },
     setPan: function (x, y) { panX = x; panY = y; applyTransform(); },
+    viewHistoryInfo: function () { return { length: viewHistory.length, cursor: viewCursor }; },
   };
 
   init();
