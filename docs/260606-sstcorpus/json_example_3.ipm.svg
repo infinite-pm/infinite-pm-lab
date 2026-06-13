@@ -30,8 +30,8 @@
   </g>
   <g id="edges">
     <g class="edge" data-edge-idx="0" data-edge-base="partof" data-edge-from="1" data-edge-to="2">
-    <polyline points="1852.00,252.90 2170,230 2339.93,147.06" fill="none" stroke="#82b366" stroke-width="3" />
-    <path d="M 2346.00 144.10 L 2339.89 152.09 L 2339.93 147.06 L 2335.94 144.00 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <polyline points="1852.00,252.90 2210,270 2341.05,148.69" fill="none" stroke="#82b366" stroke-width="3" />
+    <path d="M 2346.00 144.10 L 2342.45 153.52 L 2341.05 148.69 L 2336.34 146.91 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="1" data-edge-base="partof" data-edge-from="10" data-edge-to="5">
     <line x1="1900.00" y1="105.00" x2="1900.00" y2="128.25" stroke="#82b366" stroke-width="3" />
@@ -46,11 +46,11 @@
     <path d="M 1951.42 135.72 L 1958.88 128.97 L 1957.92 133.91 L 1961.29 137.64 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="4" data-edge-base="partof" data-edge-from="13" data-edge-to="3">
-    <polyline points="165.00,70.22 190,130 1000,230 1970,210 2010.87,157.12" fill="none" stroke="#82b366" stroke-width="3" />
+    <polyline points="165.00,70.22 150,170 1000,230 1970,210 2010.87,157.12" fill="none" stroke="#82b366" stroke-width="3" />
     <path d="M 2015.00 151.78 L 2013.06 161.65 L 2010.87 157.12 L 2005.94 156.15 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="5" data-edge-base="partof" data-edge-from="14" data-edge-to="3">
-    <polyline points="345.00,70.28 370,130 1000,230 1970,210 2010.29,168.56" fill="none" stroke="#82b366" stroke-width="3" />
+    <polyline points="345.00,70.28 330,170 1000,230 1970,210 2010.29,168.56" fill="none" stroke="#82b366" stroke-width="3" />
     <path d="M 2015.00 163.72 L 2011.95 173.31 L 2010.29 168.56 L 2005.50 167.04 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="6" data-edge-base="partof" data-edge-from="15" data-edge-to="4">
@@ -74,7 +74,7 @@
     <path d="M 2476.00 130.40 L 2480.68 121.50 L 2481.48 126.46 L 2485.93 128.80 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="11" data-edge-base="partof" data-edge-from="19" data-edge-to="3">
-    <polyline points="525.00,70.35 550,130 1000,230 1830,210 1970,210 2009.63,179.74" fill="none" stroke="#82b366" stroke-width="3" />
+    <polyline points="525.00,70.35 510,170 1000,230 1830,210 1970,210 2009.63,179.74" fill="none" stroke="#82b366" stroke-width="3" />
     <path d="M 2015.00 175.65 L 2010.58 184.68 L 2009.63 179.74 L 2005.12 177.53 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="12" data-edge-base="partof" data-edge-from="20" data-edge-to="4">

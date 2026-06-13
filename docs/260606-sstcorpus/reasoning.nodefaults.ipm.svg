@@ -241,8 +241,8 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="18" data-edge-base="leadsto" data-edge-from="2" data-edge-to="74">
-    <polyline points="1069.95,1333.00 1150,1452 1841.76,1721.55" fill="none" stroke="#ff8000" stroke-width="3" />
-    <path d="M 1848.05 1724.00 L 1838.03 1724.93 L 1841.76 1721.55 L 1841.30 1716.54 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
+    <polyline points="1069.95,1333.00 1110,1492 1841.61,1721.98" fill="none" stroke="#ff8000" stroke-width="3" />
+    <path d="M 1848.05 1724.00 L 1838.11 1725.59 L 1841.61 1721.98 L 1840.81 1717.01 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="19" data-edge-base="expresses" data-edge-from="20" data-edge-to="21">
     <line x1="5196.00" y1="105.00" x2="5147.90" y2="131.72" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
@@ -292,9 +292,9 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="27" data-edge-base="leadsto" data-edge-from="25" data-edge-to="57">
-    <polyline points="1339.64,1113.00 1330,1228 1583.62,1242.61" fill="none" stroke="#ff8000" stroke-width="3" />
-    <path d="M 1590.36 1243.00 L 1581.11 1246.97 L 1583.62 1242.61 L 1581.63 1237.99 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="1334" y="1170" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#ff8000">
+    <polyline points="1339.64,1113.00 1310,1248 1583.61,1243.12" fill="none" stroke="#ff8000" stroke-width="3" />
+    <path d="M 1590.36 1243.00 L 1581.44 1247.66 L 1583.61 1243.12 L 1581.28 1238.66 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="1324" y="1180" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#ff8000">
       <title>proposes</title>prop...
     </text>
     </g>
@@ -720,10 +720,10 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="82" data-edge-base="expresses" data-edge-from="67" data-edge-to="25">
-      <line class="edge-ghost" x1="1675.00" y1="1929.00" x2="1308.00" y2="1148.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="1675.00" y1="1929.00" x2="1330.00" y2="1172.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="1675.00" y1="1929.00" x2="1308.00" y2="1148.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="1491" y="1538" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="1675.00" y1="1929.00" x2="1330.00" y2="1172.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="1502" y="1550" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>refers to</title>refe...
     </text>
       </g>
@@ -732,9 +732,9 @@
         <g class="edge-badge"><title>Expresses (refers to): some have argued that &#34;Artificial Intelligence&#34; is incapable of abduction → abduction</title><rect x="1668.00" y="1922.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1675.00" y="1929.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">6</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="1308.00" y1="1148.00" x2="1308.00" y2="1114.75" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 1308.00 1108.00 L 1312.50 1117.00 L 1308.00 1114.75 L 1303.50 1117.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (refers to): some have argued that &#34;Artificial Intelligence&#34; is incapable of abduction → abduction</title><rect x="1301.00" y="1141.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1308.00" y="1148.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">6</text></g>
+        <line x1="1330.00" y1="1172.00" x2="1330.00" y2="1114.75" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 1330.00 1108.00 L 1334.50 1117.00 L 1330.00 1114.75 L 1325.50 1117.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (refers to): some have argued that &#34;Artificial Intelligence&#34; is incapable of abduction → abduction</title><rect x="1323.00" y="1165.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1330.00" y="1172.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">6</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="83" data-edge-base="expresses" data-edge-from="67" data-edge-to="7">
@@ -774,8 +774,8 @@
     <path d="M 4893.00 395.00 L 4888.50 386.00 L 4893.00 388.25 L 4897.50 386.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="89" data-edge-base="leadsto" data-edge-from="73" data-edge-to="25">
-    <polyline points="1919.28,745.00 1330,868 1339.35,1036.26" fill="none" stroke="#ff8000" stroke-width="3" />
-    <path d="M 1339.72 1043.00 L 1334.73 1034.26 L 1339.35 1036.26 L 1343.72 1033.76 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
+    <polyline points="1919.28,745.00 1290,828 1338.20,1036.42" fill="none" stroke="#ff8000" stroke-width="3" />
+    <path d="M 1339.72 1043.00 L 1333.31 1035.25 L 1338.20 1036.42 L 1342.08 1033.22 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="90" data-edge-base="leadsto" data-edge-from="73" data-edge-to="35">
     <line x1="1934.45" y1="745.00" x2="1785.61" y2="1036.99" stroke="#ff8000" stroke-width="3" />

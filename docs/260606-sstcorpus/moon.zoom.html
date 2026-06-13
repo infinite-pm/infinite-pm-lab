@@ -368,7 +368,8 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
   }
 
   // Hash format: #<stateID>[/<nodeID>][?z=...&x=...&y=...]
-  // - stateID and nodeID are URI-encoded path-style (slash-separated)
+  // - stateID and nodeID are kept fragment-clean (":" and "+" stay literal, e.g.
+  //   #s:2.8+5/10); parse still decodeURIComponent()s so older %3A-encoded links load
   // - zoom/pan are query-style and only included by Copy URL (default
   //   navigation doesn't touch them, so panning doesn't spam history)
   function parseHash() {
@@ -403,9 +404,17 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
     return { stateID: stateID, nodeID: nodeID, zoom: view.zoom, panX: view.panX, panY: view.panY, inspectorHidden: view.inspectorHidden };
   }
 
+  // State / node IDs only ever contain fragment-safe characters (e.g.
+  // "s:2.8+5.13", "shell-2"). Keep ":" and "+" literal so the URL reads cleanly
+  // and matches what users share, while still escaping anything genuinely unsafe
+  // (notably the "/" stateID|nodeID separator). parseHash decodeURIComponent()s,
+  // so older "%3A"-encoded links still load.
+  function encId(s) {
+    return encodeURIComponent(String(s)).replace(/%3A/g, ":").replace(/%2B/g, "+");
+  }
   function buildHash(stateID, nodeID, view) {
-    let h = "#" + encodeURIComponent(stateID);
-    if (nodeID != null && nodeID !== "") h += "/" + encodeURIComponent(String(nodeID));
+    let h = "#" + encId(stateID);
+    if (nodeID != null && nodeID !== "") h += "/" + encId(nodeID);
     const parts = [];
     if (view) {
       if (view.zoom != null) parts.push("z=" + encodeURIComponent(view.zoom));

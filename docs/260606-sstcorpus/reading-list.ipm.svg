@@ -41,9 +41,9 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="1" data-edge-base="expresses" data-edge-from="10" data-edge-to="18">
-    <polyline points="345.00,95.96 370,230 448.92,268.11" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 455.00 271.04 L 444.94 271.18 L 448.92 268.11 L 448.85 263.08 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="357" y="162" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <polyline points="345.00,95.96 350,250 448.38,269.72" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 455.00 271.04 L 445.29 273.69 L 448.38 269.72 L 447.06 264.86 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="347" y="172" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>is about topic/them</title>is a...
     </text>
     </g>
@@ -200,9 +200,9 @@
       </g>
     </g>
     <g class="edge" data-edge-idx="19" data-edge-base="expresses" data-edge-from="14" data-edge-to="4">
-    <polyline points="165.00,53.40 190,10 370,10 569.66,164.46" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 575.00 168.60 L 565.13 166.65 L 569.66 164.46 L 570.64 159.53 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="177" y="31" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <polyline points="165.00,53.40 150,-30 410,-30 570.69,163.40" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 575.00 168.60 L 565.79 164.55 L 570.69 163.40 L 572.71 158.80 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="157" y="11" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has author</title>has...
     </text>
     </g>

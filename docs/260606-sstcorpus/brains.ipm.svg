@@ -619,9 +619,9 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="72" data-edge-base="expresses" data-edge-from="55" data-edge-to="27">
-    <polyline points="5745.00,62.61 5770,10 5950,10 6130,110 6153.08,187.92" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 6155.00 194.39 L 6148.13 187.04 L 6153.08 187.92 L 6156.76 184.49 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="5757" y="36" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <polyline points="5745.00,62.61 5730,-30 5990,-30 6170,70 6155.81,187.69" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 6155.00 194.39 L 6151.61 184.92 L 6155.81 187.69 L 6160.55 186.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="5737" y="16" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has a role</title>has...
     </text>
     </g>
@@ -640,9 +640,9 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="75" data-edge-base="expresses" data-edge-from="56" data-edge-to="27">
-    <polyline points="5925.00,82.44 5950,270 6148.32,241.52" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 6155.00 240.56 L 6146.73 246.30 L 6148.32 241.52 L 6145.45 237.39 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="5937" y="176" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <polyline points="5925.00,82.44 5930,290 6148.41,242.01" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 6155.00 240.56 L 6147.18 246.89 L 6148.41 242.01 L 6145.24 238.10 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="5927" y="186" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has a role</title>has...
     </text>
     </g>
@@ -827,9 +827,9 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="102" data-edge-base="expresses" data-edge-from="90" data-edge-to="20">
-    <polyline points="11265.00,74.33 11150,110 11126.89,189.19" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 11125.00 195.67 L 11123.20 185.77 L 11126.89 189.19 L 11131.84 188.29 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="11207" y="92" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <polyline points="11265.00,74.33 11110,70 11124.20,188.96" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 11125.00 195.67 L 11119.47 187.26 L 11124.20 188.96 L 11128.40 186.20 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="11187" y="72" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>works by method</title>work...
     </text>
     </g>
