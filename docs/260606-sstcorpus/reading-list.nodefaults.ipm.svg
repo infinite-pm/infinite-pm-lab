@@ -78,12 +78,12 @@
       </g>
       <g class="edge-stub" data-stub-end="source">
         <line x1="2200.00" y1="90.00" x2="2240.00" y2="90.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <g class="edge-badge"><title>Expresses (is about topic/them): The Dictators Handbook → incentive structures</title><rect x="2233.00" y="83.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2240.00" y="90.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">4</text></g>
+        <g class="edge-badge"><title>Expresses (is about topic/them): The Dictators Handbook → incentive structures</title><rect x="2233.00" y="83.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2240.00" y="90.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="3120.00" y1="99.00" x2="3153.25" y2="99.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 3160.00 99.00 L 3151.00 103.50 L 3153.25 99.00 L 3151.00 94.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (is about topic/them): The Dictators Handbook → incentive structures</title><rect x="3113.00" y="92.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3120.00" y="99.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">4</text></g>
+        <g class="edge-badge"><title>Expresses (is about topic/them): The Dictators Handbook → incentive structures</title><rect x="3113.00" y="92.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3120.00" y="99.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="6" data-edge-base="expresses" data-edge-from="11" data-edge-to="24">
@@ -115,22 +115,11 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="10" data-edge-base="expresses" data-edge-from="12" data-edge-to="9">
-      <line class="edge-ghost" x1="2456.00" y1="80.00" x2="2760.00" y2="149.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
-      <g class="edge-full" opacity="0">
-        <line x1="2456.00" y1="80.00" x2="2760.00" y2="149.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="2608" y="114" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <polyline points="2385.00,80.08 2750,130 2789.89,164.50" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 2795.00 168.92 L 2785.25 166.43 L 2789.89 164.50 L 2791.14 159.63 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="2567" y="105" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has bibtex citation</title>has...
     </text>
-      </g>
-      <g class="edge-stub" data-stub-end="source">
-        <line x1="2380.00" y1="80.00" x2="2456.00" y2="80.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <g class="edge-badge"><title>Expresses (has bibtex citation): The Origins of Political Order → Seeing Like a State</title><rect x="2449.00" y="73.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2456.00" y="80.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
-      </g>
-      <g class="edge-stub" data-stub-end="target">
-        <line x1="2760.00" y1="149.00" x2="2793.25" y2="149.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 2800.00 149.00 L 2791.00 153.50 L 2793.25 149.00 L 2791.00 144.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has bibtex citation): The Origins of Political Order → Seeing Like a State</title><rect x="2753.00" y="142.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2760.00" y="149.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
-      </g>
     </g>
     <g class="edge" data-edge-idx="11" data-edge-base="expresses" data-edge-from="13" data-edge-to="18">
     <line x1="1164.11" y1="201.85" x2="591.70" y2="268.63" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
@@ -168,76 +157,32 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="16" data-edge-base="expresses" data-edge-from="14" data-edge-to="17">
-      <line class="edge-ghost" x1="200.00" y1="49.00" x2="720.00" y2="149.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
-      <g class="edge-full" opacity="0">
-        <line x1="200.00" y1="49.00" x2="720.00" y2="149.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="460" y="99" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <polyline points="165.00,52.98 210,30 350,30 710,130 749.90,164.59" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 755.00 169.02 L 745.25 166.52 L 749.90 164.59 L 751.15 159.72 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="187" y="41" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>is about topic/them</title>is a...
     </text>
-      </g>
-      <g class="edge-stub" data-stub-end="source">
-        <line x1="160.00" y1="49.00" x2="200.00" y2="49.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <g class="edge-badge"><title>Expresses (is about topic/them): Thinking in Systems → complexity</title><rect x="193.00" y="42.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="200.00" y="49.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
-      </g>
-      <g class="edge-stub" data-stub-end="target">
-        <line x1="720.00" y1="149.00" x2="753.25" y2="149.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 760.00 149.00 L 751.00 153.50 L 753.25 149.00 L 751.00 144.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (is about topic/them): Thinking in Systems → complexity</title><rect x="713.00" y="142.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="720.00" y="149.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
-      </g>
     </g>
     <g class="edge" data-edge-idx="17" data-edge-base="expresses" data-edge-from="14" data-edge-to="18">
-      <line class="edge-ghost" x1="200.00" y1="91.00" x2="396.00" y2="259.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
-      <g class="edge-full" opacity="0">
-        <line x1="200.00" y1="91.00" x2="396.00" y2="259.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="298" y="175" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <polyline points="165.00,90.88 210,210 448.38,256.82" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 455.00 258.12 L 445.30 260.80 L 448.38 256.82 L 447.04 251.97 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="187" y="150" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>is about topic/them</title>is a...
     </text>
-      </g>
-      <g class="edge-stub" data-stub-end="source">
-        <line x1="160.00" y1="91.00" x2="200.00" y2="91.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <g class="edge-badge"><title>Expresses (is about topic/them): Thinking in Systems → decision making</title><rect x="193.00" y="84.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="200.00" y="91.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">5</text></g>
-      </g>
-      <g class="edge-stub" data-stub-end="target">
-        <line x1="396.00" y1="259.00" x2="453.25" y2="259.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 460.00 259.00 L 451.00 263.50 L 453.25 259.00 L 451.00 254.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (is about topic/them): Thinking in Systems → decision making</title><rect x="389.00" y="252.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="396.00" y="259.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">5</text></g>
-      </g>
     </g>
     <g class="edge" data-edge-idx="18" data-edge-base="expresses" data-edge-from="14" data-edge-to="20">
-      <line class="edge-ghost" x1="200.00" y1="70.00" x2="900.00" y2="149.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
-      <g class="edge-full" opacity="0">
-        <line x1="200.00" y1="70.00" x2="900.00" y2="149.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="550" y="109" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <polyline points="165.00,64.68 210,30 350,30 890,130 929.92,164.88" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 935.00 169.32 L 925.26 166.79 L 929.92 164.88 L 931.18 160.01 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="187" y="47" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>is about topic/them</title>is a...
     </text>
-      </g>
-      <g class="edge-stub" data-stub-end="source">
-        <line x1="160.00" y1="70.00" x2="200.00" y2="70.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <g class="edge-badge"><title>Expresses (is about topic/them): Thinking in Systems → feedback loops</title><rect x="193.00" y="63.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="200.00" y="70.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
-      </g>
-      <g class="edge-stub" data-stub-end="target">
-        <line x1="900.00" y1="149.00" x2="933.25" y2="149.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 940.00 149.00 L 931.00 153.50 L 933.25 149.00 L 931.00 144.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (is about topic/them): Thinking in Systems → feedback loops</title><rect x="893.00" y="142.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="900.00" y="149.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
-      </g>
     </g>
     <g class="edge" data-edge-idx="19" data-edge-base="expresses" data-edge-from="14" data-edge-to="4">
-      <line class="edge-ghost" x1="140.00" y1="140.00" x2="540.00" y2="149.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
-      <g class="edge-full" opacity="0">
-        <line x1="140.00" y1="140.00" x2="540.00" y2="149.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="340" y="144" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <polyline points="165.00,77.12 210,30 350,30 569.26,165.34" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 575.00 168.88 L 564.98 167.98 L 569.26 165.34 L 569.71 160.32 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="187" y="53" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has author</title>has...
     </text>
-      </g>
-      <g class="edge-stub" data-stub-end="source">
-        <line x1="140.00" y1="100.00" x2="140.00" y2="140.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <g class="edge-badge"><title>Expresses (has author): Thinking in Systems → Donella Meadows</title><rect x="133.00" y="133.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="140.00" y="140.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">6</text></g>
-      </g>
-      <g class="edge-stub" data-stub-end="target">
-        <line x1="540.00" y1="149.00" x2="573.25" y2="149.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 580.00 149.00 L 571.00 153.50 L 573.25 149.00 L 571.00 144.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has author): Thinking in Systems → Donella Meadows</title><rect x="533.00" y="142.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="540.00" y="149.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">6</text></g>
-      </g>
     </g>
     <g class="edge" data-edge-idx="20" data-edge-base="expresses" data-edge-from="7" data-edge-to="1">
     <line x1="1360.00" y1="305.00" x2="1360.00" y2="328.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
@@ -254,22 +199,11 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="22" data-edge-base="expresses" data-edge-from="7" data-edge-to="21">
-      <line class="edge-ghost" x1="1460.00" y1="259.00" x2="1800.00" y2="240.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
-      <g class="edge-full" opacity="0">
-        <line x1="1460.00" y1="259.00" x2="1800.00" y2="240.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="1630" y="249" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <line x1="1375.83" y1="297.66" x2="1828.32" y2="230.73" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 1835.00 229.74 L 1826.76 235.51 L 1828.32 230.73 L 1825.44 226.60 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="1601" y="263" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>is about topic/them</title>is a...
     </text>
-      </g>
-      <g class="edge-stub" data-stub-end="source">
-        <line x1="1420.00" y1="259.00" x2="1460.00" y2="259.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <g class="edge-badge"><title>Expresses (is about topic/them): Judgment under Uncertainty → heuristics</title><rect x="1453.00" y="252.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1460.00" y="259.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">7</text></g>
-      </g>
-      <g class="edge-stub" data-stub-end="target">
-        <line x1="1800.00" y1="240.00" x2="1833.25" y2="240.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 1840.00 240.00 L 1831.00 244.50 L 1833.25 240.00 L 1831.00 235.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (is about topic/them): Judgment under Uncertainty → heuristics</title><rect x="1793.00" y="233.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1800.00" y="240.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">7</text></g>
-      </g>
     </g>
     <g class="edge" data-edge-idx="23" data-edge-base="expresses" data-edge-from="7" data-edge-to="3">
     <line x1="1425.00" y1="266.58" x2="1469.43" y2="236.22" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />

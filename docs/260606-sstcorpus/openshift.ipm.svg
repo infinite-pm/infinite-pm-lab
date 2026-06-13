@@ -427,26 +427,11 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="52" data-edge-base="expresses" data-edge-from="6" data-edge-to="57">
-      <line class="edge-ghost" x1="200.00" y1="6860.00" x2="299.00" y2="5560.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
-      <g class="edge-full" opacity="0">
-        <line x1="200.00" y1="6860.00" x2="299.00" y2="5560.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="249" y="6210" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <line x1="220.64" y1="6974.01" x2="279.08" y2="5524.73" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 279.36 5517.99 L 283.49 5527.16 L 279.08 5524.73 L 274.50 5526.80 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="249" y="6249" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>involves</title>invo...
     </text>
-      </g>
-      <g class="edge-stub" data-stub-end="source">
-        <line x1="200.00" y1="6900.00" x2="200.00" y2="6860.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <g class="edge-badge"><title>Expresses (involves): $ shell command
-openshift-install wait-for install-complete --dirinstlller_dir
- → instlller</title><rect x="193.00" y="6853.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="200.00" y="6860.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
-      </g>
-      <g class="edge-stub" data-stub-end="target">
-        <line x1="299.00" y1="5560.00" x2="299.00" y2="5526.75" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 299.00 5520.00 L 303.50 5529.00 L 299.00 5526.75 L 294.50 5529.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (involves): $ shell command
-openshift-install wait-for install-complete --dirinstlller_dir
- → instlller</title><rect x="292.00" y="5553.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="299.00" y="5560.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
-      </g>
     </g>
     <g class="edge" data-edge-idx="53" data-edge-base="leadsto" data-edge-from="61" data-edge-to="25">
     <line x1="160.00" y1="85.00" x2="160.00" y2="108.25" stroke="#ff8000" stroke-width="3" />

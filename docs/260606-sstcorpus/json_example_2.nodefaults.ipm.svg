@@ -71,12 +71,12 @@
       </g>
       <g class="edge-stub" data-stub-end="source">
         <line x1="400.00" y1="742.00" x2="360.00" y2="742.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <g class="edge-badge"><title>Expresses (has id): User 2 → 2</title><rect x="353.00" y="735.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="360.00" y="742.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
+        <g class="edge-badge"><title>Expresses (has id): User 2 → 2</title><rect x="353.00" y="735.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="360.00" y="742.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="392.00" y1="370.00" x2="346.75" y2="370.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 340.00 370.00 L 349.00 365.50 L 346.75 370.00 L 349.00 374.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has id): User 2 → 2</title><rect x="385.00" y="363.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="392.00" y="370.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
+        <g class="edge-badge"><title>Expresses (has id): User 2 → 2</title><rect x="385.00" y="363.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="392.00" y="370.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="6" data-edge-base="partof" data-edge-from="11" data-edge-to="6">
@@ -156,20 +156,9 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="19" data-edge-base="expresses" data-edge-from="9" data-edge-to="1">
-      <line class="edge-ghost" x1="360.00" y1="611.00" x2="380.00" y2="270.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
-      <g class="edge-full" opacity="0">
-        <line x1="360.00" y1="611.00" x2="380.00" y2="270.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <line x1="397.35" y1="600.22" x2="343.77" y2="281.44" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 342.65 274.78 L 348.58 282.91 L 343.77 281.44 L 339.71 284.40 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     <text x="370" y="440" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">has id</text>
-      </g>
-      <g class="edge-stub" data-stub-end="source">
-        <line x1="400.00" y1="611.00" x2="360.00" y2="611.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <g class="edge-badge"><title>Expresses (has id): User 1 → 1</title><rect x="353.00" y="604.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="360.00" y="611.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
-      </g>
-      <g class="edge-stub" data-stub-end="target">
-        <line x1="380.00" y1="270.00" x2="346.75" y2="270.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 340.00 270.00 L 349.00 265.50 L 346.75 270.00 L 349.00 274.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has id): User 1 → 1</title><rect x="373.00" y="263.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="380.00" y="270.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
-      </g>
     </g>
     <g class="edge" data-edge-idx="20" data-edge-base="partof" data-edge-from="9" data-edge-to="11">
     <polyline points="460.64,597.00 530,572 530,492 483.45,469.90" fill="none" stroke="#82b366" stroke-width="3" />
