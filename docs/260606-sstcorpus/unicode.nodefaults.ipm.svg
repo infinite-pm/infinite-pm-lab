@@ -30,57 +30,57 @@
   </g>
   <g id="edges">
     <g class="edge" data-edge-idx="0" data-edge-base="expresses" data-edge-from="12" data-edge-to="17">
-    <line x1="280.00" y1="104.00" x2="280.00" y2="129.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 280.00 136.00 L 275.50 127.00 L 280.00 129.25 L 284.50 127.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="280.00" y1="105.00" x2="280.00" y2="128.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 280.00 135.00 L 275.50 126.00 L 280.00 128.25 L 284.50 126.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     <text x="280" y="116" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>used for</title>used...
     </text>
     </g>
     <g class="edge" data-edge-idx="1" data-edge-base="expresses" data-edge-from="12" data-edge-to="18">
-    <line x1="341.33" y1="73.77" x2="396.42" y2="229.86" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 398.67 236.23 L 391.43 229.24 L 396.42 229.86 L 399.92 226.24 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="345.00" y1="84.17" x2="392.75" y2="219.47" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 395.00 225.83 L 387.76 218.84 L 392.75 219.47 L 396.25 215.85 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     <text x="368" y="151" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has example</title>has...
     </text>
     </g>
     <g class="edge" data-edge-idx="2" data-edge-base="expresses" data-edge-from="12" data-edge-to="3">
-    <line x1="218.32" y1="73.63" x2="164.50" y2="190.24" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 161.68 196.37 L 161.36 186.31 L 164.50 190.24 L 169.53 190.08 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="215.00" y1="80.83" x2="167.83" y2="183.04" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 165.00 189.17 L 164.69 179.11 L 167.83 183.04 L 172.86 182.88 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     <text x="191" y="131" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has example</title>has...
     </text>
     </g>
     <g class="edge" data-edge-idx="3" data-edge-base="expresses" data-edge-from="13" data-edge-to="21">
-    <line x1="943.85" y1="101.07" x2="1073.64" y2="137.12" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 1080.15 138.93 L 1070.27 140.86 L 1073.64 137.12 L 1072.68 132.18 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="1008" y="119" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <line x1="955.42" y1="104.28" x2="1062.08" y2="133.91" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 1068.58 135.72 L 1058.71 137.64 L 1062.08 133.91 L 1061.12 128.97 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="1008" y="118" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has resource/reference</title>has...
     </text>
     </g>
     <g class="edge" data-edge-idx="4" data-edge-base="expresses" data-edge-from="14" data-edge-to="21">
-    <line x1="1120.00" y1="104.00" x2="1120.00" y2="129.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 1120.00 136.00 L 1115.50 127.00 L 1120.00 129.25 L 1124.50 127.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="1120.00" y1="105.00" x2="1120.00" y2="128.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 1120.00 135.00 L 1115.50 126.00 L 1120.00 128.25 L 1124.50 126.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     <text x="1120" y="116" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has resource/reference</title>has...
     </text>
     </g>
     <g class="edge" data-edge-idx="5" data-edge-base="expresses" data-edge-from="18" data-edge-to="15">
-    <line x1="460.00" y1="344.00" x2="460.00" y2="369.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 460.00 376.00 L 455.50 367.00 L 460.00 369.25 L 464.50 367.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="460.00" y1="345.00" x2="460.00" y2="368.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 460.00 375.00 L 455.50 366.00 L 460.00 368.25 L 464.50 366.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     <text x="460" y="356" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has URL</title>has...
     </text>
     </g>
     <g class="edge" data-edge-idx="6" data-edge-base="expresses" data-edge-from="20" data-edge-to="21">
-    <line x1="1296.15" y1="101.07" x2="1166.36" y2="137.12" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 1159.85 138.93 L 1167.32 132.18 L 1166.36 137.12 L 1169.73 140.86 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="1231" y="119" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <line x1="1284.58" y1="104.28" x2="1177.92" y2="133.91" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 1171.42 135.72 L 1178.88 128.97 L 1177.92 133.91 L 1181.29 137.64 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="1230" y="118" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has resource/reference</title>has...
     </text>
     </g>
     <g class="edge" data-edge-idx="7" data-edge-base="partof" data-edge-from="6" data-edge-to="16">
-    <line x1="700.00" y1="104.00" x2="700.00" y2="129.25" stroke="#82b366" stroke-width="3" />
-    <path d="M 700.00 136.00 L 695.50 127.00 L 700.00 129.25 L 704.50 127.00 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="700.00" y1="105.00" x2="700.00" y2="128.25" stroke="#82b366" stroke-width="3" />
+    <path d="M 700.00 135.00 L 695.50 126.00 L 700.00 128.25 L 704.50 126.00 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
   </g>
   <g id="nodes">

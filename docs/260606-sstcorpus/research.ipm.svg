@@ -18,50 +18,37 @@
   </g>
   <g id="edges">
     <g class="edge" data-edge-idx="0" data-edge-base="expresses" data-edge-from="3" data-edge-to="2">
-    <line x1="260.36" y1="103.65" x2="212.41" y2="210.20" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 209.64 216.35 L 209.23 206.30 L 212.41 210.20 L 217.44 209.99 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="259.75" y1="105.00" x2="213.02" y2="208.84" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 210.25 215.00 L 209.84 204.95 L 213.02 208.84 L 218.05 208.64 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     <text x="236" y="156" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has author</title>has...
     </text>
     </g>
     <g class="edge" data-edge-idx="1" data-edge-base="expresses" data-edge-from="3" data-edge-to="4">
-    <line x1="301.39" y1="102.12" x2="480.88" y2="214.30" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 486.61 217.88 L 476.59 216.93 L 480.88 214.30 L 481.36 209.29 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="390" y="158" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <line x1="306.00" y1="105.00" x2="476.28" y2="211.42" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 482.00 215.00 L 471.98 214.05 L 476.28 211.42 L 476.75 206.41 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="391" y="158" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has abstract</title>has...
     </text>
     </g>
     <g class="edge" data-edge-idx="2" data-edge-base="expresses" data-edge-from="3" data-edge-to="9">
-      <line class="edge-ghost" x1="379.00" y1="79.00" x2="1111.00" y2="241.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
-      <g class="edge-full" opacity="0">
-        <line x1="379.00" y1="79.00" x2="1111.00" y2="241.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="745" y="160" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <polyline points="345.00,71.11 1100,210 1139.89,244.48" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 1145.00 248.89 L 1135.25 246.41 L 1139.89 244.48 L 1141.13 239.60 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="722" y="140" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has arxiv reference</title>has...
     </text>
-      </g>
-      <g class="edge-stub" data-stub-end="source">
-        <line x1="340.00" y1="70.00" x2="360.65" y2="74.76" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="360.65" y1="74.76" x2="379.00" y2="79.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has arxiv reference): Gravity from entropy → https://arxiv.org/abs/2408.14391</title><rect x="372.00" y="72.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="379.00" y="79.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
-      </g>
-      <g class="edge-stub" data-stub-end="target">
-        <line x1="1129.35" y1="245.24" x2="1143.42" y2="248.48" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="1111.00" y1="241.00" x2="1129.35" y2="245.24" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 1150.00 250.00 L 1140.22 252.36 L 1143.42 248.48 L 1142.24 243.59 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has arxiv reference): Gravity from entropy → https://arxiv.org/abs/2408.14391</title><rect x="1104.00" y="234.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1111.00" y="241.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
-      </g>
     </g>
     <g class="edge" data-edge-idx="3" data-edge-base="expresses" data-edge-from="6" data-edge-to="10">
-    <line x1="1450.00" y1="124.00" x2="1450.00" y2="149.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 1450.00 156.00 L 1445.50 147.00 L 1450.00 149.25 L 1454.50 147.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="1450.00" y1="125.00" x2="1450.00" y2="148.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 1450.00 155.00 L 1445.50 146.00 L 1450.00 148.25 L 1454.50 146.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     <text x="1450" y="136" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has bibtex citation</title>has...
     </text>
     </g>
     <g class="edge" data-edge-idx="4" data-edge-base="expresses" data-edge-from="7" data-edge-to="2">
-    <line x1="103.50" y1="181.94" x2="162.60" y2="214.78" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 168.50 218.06 L 158.45 217.62 L 162.60 214.78 L 162.82 209.75 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="132" y="197" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <line x1="109.00" y1="185.00" x2="157.10" y2="211.72" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 163.00 215.00 L 152.95 214.56 L 157.10 211.72 L 157.32 206.70 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="133" y="198" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has author</title>has...
     </text>
     </g>
@@ -74,15 +61,13 @@
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="160.00" y1="110.00" x2="174.29" y2="125.35" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="174.29" y1="125.35" x2="187.00" y2="139.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has arxiv reference): The topological Dirac equation of networks and simplicial complexes → We define the topological Dirac equation describing the evolution of a topological wave function on networks or on simplicial complexes. On networks, the topological wave function describes the dynamics of topological signals or cochains, i.e. dynamical signals defined both on nodes and on links. On simplicial complexes the wave function is also defined on higher-dimensional simplices. Therefore the topological wave function satisfies a relaxed condition of locality as it acquires the same value along simplices of dimension larger than zero. The topological Dirac equation defines eigenstates whose dispersion relation is determined by the spectral properties of the Dirac &#34;(or chiral)&#34; operator defined on networks and generalized network structures including simplicial complexes and multiplex networks. On simplicial complexes the Dirac equation leads to multiple energy bands. On multiplex networks the topological Dirac equation can be generalized to distinguish between different mutlilinks leading to a natural definition of rotations of the topological spinor. The topological Dirac equation is here initially formulated on a spatial network or simplicial complex for describing the evolution of the topological wave function in continuous time. This framework is also extended to treat the topological Dirac equation on 1+d spaces describing a discrete space-time with one temporal dimension and d spatial dimensions with d∈{1,2,3}. This work includes also the discussion of numerical results obtained by implementing the topological Dirac equation on simplicial complex models and on real simple and multiplex network data.</title><rect x="180.00" y="132.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="187.00" y="139.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
+        <line x1="160.00" y1="110.00" x2="187.00" y2="139.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <g class="edge-badge"><title>Expresses (has arxiv reference): The topological Dirac equation of networks and simplicial complexes → We define the topological Dirac equation describing the evolution of a topological wave function on networks or on simplicial complexes. On networks, the topological wave function describes the dynamics of topological signals or cochains, i.e. dynamical signals defined both on nodes and on links. On simplicial complexes the wave function is also defined on higher-dimensional simplices. Therefore the topological wave function satisfies a relaxed condition of locality as it acquires the same value along simplices of dimension larger than zero. The topological Dirac equation defines eigenstates whose dispersion relation is determined by the spectral properties of the Dirac &#34;(or chiral)&#34; operator defined on networks and generalized network structures including simplicial complexes and multiplex networks. On simplicial complexes the Dirac equation leads to multiple energy bands. On multiplex networks the topological Dirac equation can be generalized to distinguish between different mutlilinks leading to a natural definition of rotations of the topological spinor. The topological Dirac equation is here initially formulated on a spatial network or simplicial complex for describing the evolution of the topological wave function in continuous time. This framework is also extended to treat the topological Dirac equation on 1+d spaces describing a discrete space-time with one temporal dimension and d spatial dimensions with d∈{1,2,3}. This work includes also the discussion of numerical results obtained by implementing the topological Dirac equation on simplicial complex models and on real simple and multiplex network data.</title><rect x="180.00" y="132.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="187.00" y="139.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="715.71" y1="704.65" x2="725.40" y2="715.06" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="703.00" y1="691.00" x2="715.71" y2="704.65" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <line x1="703.00" y1="691.00" x2="725.40" y2="715.06" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 730.00 720.00 L 720.57 716.48 L 725.40 715.06 L 727.16 710.35 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has arxiv reference): The topological Dirac equation of networks and simplicial complexes → We define the topological Dirac equation describing the evolution of a topological wave function on networks or on simplicial complexes. On networks, the topological wave function describes the dynamics of topological signals or cochains, i.e. dynamical signals defined both on nodes and on links. On simplicial complexes the wave function is also defined on higher-dimensional simplices. Therefore the topological wave function satisfies a relaxed condition of locality as it acquires the same value along simplices of dimension larger than zero. The topological Dirac equation defines eigenstates whose dispersion relation is determined by the spectral properties of the Dirac &#34;(or chiral)&#34; operator defined on networks and generalized network structures including simplicial complexes and multiplex networks. On simplicial complexes the Dirac equation leads to multiple energy bands. On multiplex networks the topological Dirac equation can be generalized to distinguish between different mutlilinks leading to a natural definition of rotations of the topological spinor. The topological Dirac equation is here initially formulated on a spatial network or simplicial complex for describing the evolution of the topological wave function in continuous time. This framework is also extended to treat the topological Dirac equation on 1+d spaces describing a discrete space-time with one temporal dimension and d spatial dimensions with d∈{1,2,3}. This work includes also the discussion of numerical results obtained by implementing the topological Dirac equation on simplicial complex models and on real simple and multiplex network data.</title><rect x="696.00" y="684.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="703.00" y="691.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
+        <g class="edge-badge"><title>Expresses (has arxiv reference): The topological Dirac equation of networks and simplicial complexes → We define the topological Dirac equation describing the evolution of a topological wave function on networks or on simplicial complexes. On networks, the topological wave function describes the dynamics of topological signals or cochains, i.e. dynamical signals defined both on nodes and on links. On simplicial complexes the wave function is also defined on higher-dimensional simplices. Therefore the topological wave function satisfies a relaxed condition of locality as it acquires the same value along simplices of dimension larger than zero. The topological Dirac equation defines eigenstates whose dispersion relation is determined by the spectral properties of the Dirac &#34;(or chiral)&#34; operator defined on networks and generalized network structures including simplicial complexes and multiplex networks. On simplicial complexes the Dirac equation leads to multiple energy bands. On multiplex networks the topological Dirac equation can be generalized to distinguish between different mutlilinks leading to a natural definition of rotations of the topological spinor. The topological Dirac equation is here initially formulated on a spatial network or simplicial complex for describing the evolution of the topological wave function in continuous time. This framework is also extended to treat the topological Dirac equation on 1+d spaces describing a discrete space-time with one temporal dimension and d spatial dimensions with d∈{1,2,3}. This work includes also the discussion of numerical results obtained by implementing the topological Dirac equation on simplicial complex models and on real simple and multiplex network data.</title><rect x="696.00" y="684.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="703.00" y="691.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
       </g>
     </g>
   </g>

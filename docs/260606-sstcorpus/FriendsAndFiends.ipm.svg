@@ -44,72 +44,72 @@
   </g>
   <g id="edges">
     <g class="edge" data-edge-idx="0" data-edge-base="expresses" data-edge-from="1" data-edge-to="12">
-    <line x1="3402.19" y1="381.35" x2="3454.13" y2="461.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 3457.81 466.65 L 3449.13 461.57 L 3454.13 461.00 L 3456.67 456.65 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="3405.00" y1="385.67" x2="3451.31" y2="456.68" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 3455.00 462.33 L 3446.31 457.25 L 3451.31 456.68 L 3453.85 452.34 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     <text x="3428" y="420" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has friend</title>has...
     </text>
     </g>
     <g class="edge" data-edge-idx="1" data-edge-base="expresses" data-edge-from="1" data-edge-to="13">
-    <line x1="3402.91" y1="349.25" x2="3632.19" y2="132.39" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 3637.09 127.75 L 3633.65 137.20 L 3632.19 132.39 L 3627.46 130.66 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="3405.00" y1="347.27" x2="3630.10" y2="134.37" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 3635.00 129.73 L 3631.55 139.18 L 3630.10 134.37 L 3625.37 132.64 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     <text x="3517" y="240" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has friend</title>has...
     </text>
     </g>
     <g class="edge" data-edge-idx="2" data-edge-base="expresses" data-edge-from="1" data-edge-to="25">
-    <line x1="3403.82" y1="359.80" x2="3809.74" y2="232.22" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 3816.18 230.20 L 3808.95 237.19 L 3809.74 232.22 L 3806.25 228.60 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="3405.00" y1="359.43" x2="3808.56" y2="232.60" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 3815.00 230.57 L 3807.76 237.56 L 3808.56 232.60 L 3805.06 228.98 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     <text x="3606" y="295" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has friend</title>has...
     </text>
     </g>
     <g class="edge" data-edge-idx="3" data-edge-base="expresses" data-edge-from="1" data-edge-to="27">
-    <line x1="3403.95" y1="369.40" x2="3989.37" y2="280.61" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 3996.05 279.60 L 3987.82 285.40 L 3989.37 280.61 L 3986.47 276.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="3405.00" y1="369.24" x2="3988.33" y2="280.77" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 3995.00 279.76 L 3986.78 285.56 L 3988.33 280.77 L 3985.43 276.66 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     <text x="3696" y="324" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has friend</title>has...
     </text>
     </g>
     <g class="edge" data-edge-idx="4" data-edge-base="expresses" data-edge-from="1" data-edge-to="34">
-    <line x1="3403.98" y1="388.42" x2="4169.31" y2="468.88" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 4176.02 469.58 L 4166.60 473.12 L 4169.31 468.88 L 4167.54 464.17 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="3405.00" y1="388.53" x2="4168.29" y2="468.77" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 4175.00 469.47 L 4165.58 473.01 L 4168.29 468.77 L 4166.52 464.06 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     <text x="3786" y="428" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has friend</title>has...
     </text>
     </g>
     <g class="edge" data-edge-idx="5" data-edge-base="expresses" data-edge-from="1" data-edge-to="4">
-    <line x1="3340.00" y1="404.00" x2="3340.00" y2="429.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 3340.00 436.00 L 3335.50 427.00 L 3340.00 429.25 L 3344.50 427.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="3340.00" y1="405.00" x2="3340.00" y2="428.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 3340.00 435.00 L 3335.50 426.00 L 3340.00 428.25 L 3344.50 426.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     <text x="3340" y="416" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has friend</title>has...
     </text>
     </g>
     <g class="edge" data-edge-idx="6" data-edge-base="expresses" data-edge-from="16" data-edge-to="1">
-    <line x1="3181.88" y1="300.96" x2="3329.56" y2="337.42" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 3336.12 339.04 L 3326.30 341.25 L 3329.56 337.42 L 3328.46 332.51 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="3193.53" y1="303.84" x2="3317.91" y2="334.55" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 3324.47 336.16 L 3314.65 338.38 L 3317.91 334.55 L 3316.81 329.64 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     <text x="3255" y="318" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has friend</title>has...
     </text>
     </g>
     <g class="edge" data-edge-idx="7" data-edge-base="expresses" data-edge-from="16" data-edge-to="17">
-    <line x1="3143.64" y1="303.65" x2="3155.59" y2="330.20" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 3158.36 336.35 L 3150.56 329.99 L 3155.59 330.20 L 3158.77 326.30 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="3144.25" y1="305.00" x2="3154.98" y2="328.84" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 3157.75 335.00 L 3149.95 328.64 L 3154.98 328.84 L 3158.16 324.95 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     <text x="3149" y="316" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has friend</title>has...
     </text>
     </g>
     <g class="edge" data-edge-idx="8" data-edge-base="expresses" data-edge-from="16" data-edge-to="18">
-    <line x1="3096.26" y1="280.42" x2="2870.05" y2="366.19" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 2863.74 368.58 L 2870.56 361.18 L 2870.05 366.19 L 2873.75 369.60 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="2983" y="323" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <line x1="3095.00" y1="280.90" x2="2871.31" y2="365.71" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 2865.00 368.10 L 2871.82 360.71 L 2871.31 365.71 L 2875.01 369.12 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="2983" y="322" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has friend</title>has...
     </text>
     </g>
     <g class="edge" data-edge-idx="9" data-edge-base="expresses" data-edge-from="24" data-edge-to="10">
-    <polyline points="163.59,53.76 200,120 360,120 392.34,162.85" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 396.41 168.24 L 387.40 163.76 L 392.34 162.85 L 394.58 158.34 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="181" y="86" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <polyline points="165.00,54.46 200,120 360,120 391.00,162.11" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 395.00 167.54 L 386.04 162.96 L 391.00 162.11 L 393.29 157.63 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="182" y="87" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has friend</title>has...
     </text>
     </g>
@@ -122,15 +122,13 @@
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="160.00" y1="74.00" x2="180.65" y2="78.76" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="180.65" y1="78.76" x2="199.00" y2="83.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has friend): Mark → Carol</title><rect x="192.00" y="76.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="199.00" y="83.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">D</text></g>
+        <line x1="160.00" y1="74.00" x2="199.00" y2="83.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <g class="edge-badge"><title>Expresses (has friend): Mark → Carol</title><rect x="192.00" y="76.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="199.00" y="83.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">F</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="559.35" y1="165.24" x2="573.42" y2="168.48" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="541.00" y1="161.00" x2="559.35" y2="165.24" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <line x1="541.00" y1="161.00" x2="573.42" y2="168.48" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 580.00 170.00 L 570.22 172.36 L 573.42 168.48 L 572.24 163.59 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has friend): Mark → Carol</title><rect x="534.00" y="154.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="541.00" y="161.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">D</text></g>
+        <g class="edge-badge"><title>Expresses (has friend): Mark → Carol</title><rect x="534.00" y="154.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="541.00" y="161.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">F</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="11" data-edge-base="expresses" data-edge-from="24" data-edge-to="14">
@@ -142,15 +140,13 @@
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="136.00" y1="100.00" x2="136.00" y2="114.82" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="136.00" y1="114.82" x2="136.00" y2="128.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has friend): Mark → Doug</title><rect x="129.00" y="121.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="136.00" y="128.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">L</text></g>
+        <line x1="136.00" y1="100.00" x2="136.00" y2="128.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <g class="edge-badge"><title>Expresses (has friend): Mark → Doug</title><rect x="129.00" y="121.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="136.00" y="128.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">H</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="738.82" y1="166.82" x2="753.32" y2="169.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="720.00" y1="164.00" x2="738.82" y2="166.82" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <line x1="720.00" y1="164.00" x2="753.32" y2="169.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 760.00 170.00 L 750.43 173.12 L 753.32 169.00 L 751.77 164.21 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has friend): Mark → Doug</title><rect x="713.00" y="157.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="720.00" y="164.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">L</text></g>
+        <g class="edge-badge"><title>Expresses (has friend): Mark → Doug</title><rect x="713.00" y="157.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="720.00" y="164.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">H</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="12" data-edge-base="expresses" data-edge-from="24" data-edge-to="15">
@@ -162,13 +158,11 @@
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="160.00" y1="70.00" x2="174.82" y2="70.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="174.82" y1="70.00" x2="188.00" y2="70.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <line x1="160.00" y1="70.00" x2="188.00" y2="70.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <g class="edge-badge"><title>Expresses (has friend): Mark → Hans</title><rect x="181.00" y="63.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="188.00" y="70.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="918.82" y1="167.35" x2="933.30" y2="169.16" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="900.00" y1="165.00" x2="918.82" y2="167.35" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <line x1="900.00" y1="165.00" x2="933.30" y2="169.16" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 940.00 170.00 L 930.51 173.35 L 933.30 169.16 L 931.63 164.42 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
         <g class="edge-badge"><title>Expresses (has friend): Mark → Hans</title><rect x="893.00" y="158.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="900.00" y="165.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
       </g>
@@ -182,13 +176,11 @@
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="136.00" y1="40.00" x2="136.00" y2="25.18" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="136.00" y1="25.18" x2="136.00" y2="12.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <line x1="136.00" y1="40.00" x2="136.00" y2="12.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <g class="edge-badge"><title>Expresses (has friend): Mark → Joyce</title><rect x="129.00" y="5.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="136.00" y="12.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="1098.82" y1="167.88" x2="1113.28" y2="169.33" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="1080.00" y1="166.00" x2="1098.82" y2="167.88" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <line x1="1080.00" y1="166.00" x2="1113.28" y2="169.33" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 1120.00 170.00 L 1110.60 173.58 L 1113.28 169.33 L 1111.49 164.63 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
         <g class="edge-badge"><title>Expresses (has friend): Mark → Joyce</title><rect x="1073.00" y="159.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1080.00" y="166.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
       </g>
@@ -202,13 +194,11 @@
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="160.00" y1="70.00" x2="174.82" y2="70.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="174.82" y1="70.00" x2="188.00" y2="70.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <line x1="160.00" y1="70.00" x2="188.00" y2="70.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <g class="edge-badge"><title>Expresses (has friend): Mark → Kat</title><rect x="181.00" y="63.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="188.00" y="70.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">4</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="1278.82" y1="150.41" x2="1293.27" y2="151.50" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="1260.00" y1="149.00" x2="1278.82" y2="150.41" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <line x1="1260.00" y1="149.00" x2="1293.27" y2="151.50" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 1300.00 152.00 L 1290.69 155.81 L 1293.27 151.50 L 1291.36 146.84 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
         <g class="edge-badge"><title>Expresses (has friend): Mark → Kat</title><rect x="1253.00" y="142.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1260.00" y="149.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">4</text></g>
       </g>
@@ -222,13 +212,11 @@
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="160.00" y1="70.00" x2="174.82" y2="70.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="174.82" y1="70.00" x2="188.00" y2="70.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <line x1="160.00" y1="70.00" x2="188.00" y2="70.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <g class="edge-badge"><title>Expresses (has friend): Mark → Mandy</title><rect x="181.00" y="63.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="188.00" y="70.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">5</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="1458.82" y1="147.41" x2="1473.27" y2="148.50" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="1440.00" y1="146.00" x2="1458.82" y2="147.41" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <line x1="1440.00" y1="146.00" x2="1473.27" y2="148.50" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 1480.00 149.00 L 1470.69 152.81 L 1473.27 148.50 L 1471.36 143.84 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
         <g class="edge-badge"><title>Expresses (has friend): Mark → Mandy</title><rect x="1433.00" y="139.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1440.00" y="146.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">5</text></g>
       </g>
@@ -242,13 +230,11 @@
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="160.00" y1="70.00" x2="174.82" y2="70.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="174.82" y1="70.00" x2="188.00" y2="70.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <line x1="160.00" y1="70.00" x2="188.00" y2="70.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <g class="edge-badge"><title>Expresses (has friend): Mark → Matt</title><rect x="181.00" y="63.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="188.00" y="70.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">6</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="3798.82" y1="210.47" x2="3813.25" y2="210.83" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="3780.00" y1="210.00" x2="3798.82" y2="210.47" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <line x1="3780.00" y1="210.00" x2="3813.25" y2="210.83" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 3820.00 211.00 L 3810.89 215.27 L 3813.25 210.83 L 3811.12 206.28 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
         <g class="edge-badge"><title>Expresses (has friend): Mark → Matt</title><rect x="3773.00" y="203.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3780.00" y="210.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">6</text></g>
       </g>
@@ -262,20 +248,18 @@
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="160.00" y1="70.00" x2="174.82" y2="70.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="174.82" y1="70.00" x2="188.00" y2="70.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <line x1="160.00" y1="70.00" x2="188.00" y2="70.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <g class="edge-badge"><title>Expresses (has friend): Mark → Mike</title><rect x="181.00" y="63.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="188.00" y="70.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">7</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="2358.82" y1="153.94" x2="2373.26" y2="154.66" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="2340.00" y1="153.00" x2="2358.82" y2="153.94" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <line x1="2340.00" y1="153.00" x2="2373.26" y2="154.66" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 2380.00 155.00 L 2370.79 159.04 L 2373.26 154.66 L 2371.24 150.06 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
         <g class="edge-badge"><title>Expresses (has friend): Mark → Mike</title><rect x="2333.00" y="146.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2340.00" y="153.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">7</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="18" data-edge-base="expresses" data-edge-from="24" data-edge-to="3">
-    <line x1="100.00" y1="104.00" x2="100.00" y2="129.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 100.00 136.00 L 95.50 127.00 L 100.00 129.25 L 104.50 127.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="100.00" y1="105.00" x2="100.00" y2="128.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 100.00 135.00 L 95.50 126.00 L 100.00 128.25 L 104.50 126.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     <text x="100" y="116" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has friend</title>has...
     </text>
@@ -289,13 +273,11 @@
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="160.00" y1="70.00" x2="174.82" y2="70.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="174.82" y1="70.00" x2="188.00" y2="70.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <line x1="160.00" y1="70.00" x2="188.00" y2="70.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <g class="edge-badge"><title>Expresses (has friend): Mark → Silvy</title><rect x="181.00" y="63.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="188.00" y="70.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">8</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="1638.82" y1="148.94" x2="1653.26" y2="149.66" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="1620.00" y1="148.00" x2="1638.82" y2="148.94" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <line x1="1620.00" y1="148.00" x2="1653.26" y2="149.66" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 1660.00 150.00 L 1650.79 154.04 L 1653.26 149.66 L 1651.24 145.06 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
         <g class="edge-badge"><title>Expresses (has friend): Mark → Silvy</title><rect x="1613.00" y="141.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1620.00" y="148.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">8</text></g>
       </g>
@@ -309,13 +291,11 @@
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="160.00" y1="70.00" x2="174.82" y2="70.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="174.82" y1="70.00" x2="188.00" y2="70.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <line x1="160.00" y1="70.00" x2="188.00" y2="70.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <g class="edge-badge"><title>Expresses (has friend): Mark → Tamar</title><rect x="181.00" y="63.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="188.00" y="70.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">9</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="1818.82" y1="149.94" x2="1833.26" y2="150.66" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="1800.00" y1="149.00" x2="1818.82" y2="149.94" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <line x1="1800.00" y1="149.00" x2="1833.26" y2="150.66" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 1840.00 151.00 L 1830.79 155.04 L 1833.26 150.66 L 1831.24 146.06 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
         <g class="edge-badge"><title>Expresses (has friend): Mark → Tamar</title><rect x="1793.00" y="142.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1800.00" y="149.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">9</text></g>
       </g>
@@ -329,13 +309,11 @@
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="160.00" y1="70.00" x2="174.82" y2="70.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="174.82" y1="70.00" x2="188.00" y2="70.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <line x1="160.00" y1="70.00" x2="188.00" y2="70.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <g class="edge-badge"><title>Expresses (has friend): Mark → Tore</title><rect x="181.00" y="63.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="188.00" y="70.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">A</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="1998.82" y1="147.94" x2="2013.26" y2="148.66" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="1980.00" y1="147.00" x2="1998.82" y2="147.94" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <line x1="1980.00" y1="147.00" x2="2013.26" y2="148.66" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 2020.00 149.00 L 2010.79 153.04 L 2013.26 148.66 L 2011.24 144.06 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
         <g class="edge-badge"><title>Expresses (has friend): Mark → Tore</title><rect x="1973.00" y="140.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1980.00" y="147.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">A</text></g>
       </g>
@@ -349,43 +327,28 @@
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="160.00" y1="70.00" x2="174.82" y2="70.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="174.82" y1="70.00" x2="188.00" y2="70.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <line x1="160.00" y1="70.00" x2="188.00" y2="70.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
         <g class="edge-badge"><title>Expresses (has friend): Mark → Zhao</title><rect x="181.00" y="63.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="188.00" y="70.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">C</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="2178.82" y1="150.94" x2="2193.26" y2="151.66" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="2160.00" y1="150.00" x2="2178.82" y2="150.94" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <line x1="2160.00" y1="150.00" x2="2193.26" y2="151.66" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 2200.00 152.00 L 2190.79 156.04 L 2193.26 151.66 L 2191.24 147.06 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
         <g class="edge-badge"><title>Expresses (has friend): Mark → Zhao</title><rect x="2153.00" y="143.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2160.00" y="150.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">C</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="23" data-edge-base="expresses" data-edge-from="24" data-edge-to="5">
-    <line x1="162.31" y1="88.27" x2="213.80" y2="161.22" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 217.69 166.73 L 208.83 161.97 L 213.80 161.22 L 216.18 156.78 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="187" y="124" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <line x1="165.00" y1="92.08" x2="211.11" y2="157.40" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 215.00 162.92 L 206.13 158.16 L 211.11 157.40 L 213.49 152.97 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="188" y="124" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has friend</title>has...
     </text>
     </g>
     <g class="edge" data-edge-idx="24" data-edge-base="expresses" data-edge-from="26" data-edge-to="16">
-      <line class="edge-ghost" x1="2539.00" y1="159.00" x2="3061.00" y2="254.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
-      <g class="edge-full" opacity="0">
-        <line x1="2539.00" y1="159.00" x2="3061.00" y2="254.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="2800" y="206" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <polyline points="2505.00,152.91 3050,230 3089.39,256.34" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 3095.00 260.09 L 3085.02 258.83 L 3089.39 256.34 L 3090.02 251.35 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="2777" y="191" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has friend</title>has...
     </text>
-      </g>
-      <g class="edge-stub" data-stub-end="source">
-        <line x1="2500.00" y1="152.00" x2="2520.65" y2="155.71" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="2520.65" y1="155.71" x2="2539.00" y2="159.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has friend): Mike → Jan</title><rect x="2532.00" y="152.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2539.00" y="159.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">M</text></g>
-      </g>
-      <g class="edge-stub" data-stub-end="target">
-        <line x1="3079.35" y1="257.29" x2="3093.36" y2="259.81" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="3061.00" y1="254.00" x2="3079.35" y2="257.29" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 3100.00 261.00 L 3090.35 263.84 L 3093.36 259.81 L 3091.94 254.98 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has friend): Mike → Jan</title><rect x="3054.00" y="247.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3061.00" y="254.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">M</text></g>
-      </g>
     </g>
     <g class="edge" data-edge-idx="25" data-edge-base="expresses" data-edge-from="26" data-edge-to="18">
       <line class="edge-ghost" x1="2551.00" y1="227.00" x2="2708.00" y2="346.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
@@ -396,203 +359,152 @@
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="2500.00" y1="188.00" x2="2527.00" y2="208.65" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="2527.00" y1="208.65" x2="2551.00" y2="227.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has friend): Mike → Jane1</title><rect x="2544.00" y="220.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2551.00" y="227.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">R</text></g>
+        <line x1="2500.00" y1="188.00" x2="2551.00" y2="227.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <g class="edge-badge"><title>Expresses (has friend): Mike → Jane1</title><rect x="2544.00" y="220.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2551.00" y="227.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">L</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="2723.06" y1="357.29" x2="2734.60" y2="365.95" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="2708.00" y1="346.00" x2="2723.06" y2="357.29" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <line x1="2708.00" y1="346.00" x2="2734.60" y2="365.95" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 2740.00 370.00 L 2730.10 368.20 L 2734.60 365.95 L 2735.50 361.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has friend): Mike → Jane1</title><rect x="2701.00" y="339.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2708.00" y="346.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">R</text></g>
+        <g class="edge-badge"><title>Expresses (has friend): Mike → Jane1</title><rect x="2701.00" y="339.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2708.00" y="346.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">L</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="26" data-edge-base="expresses" data-edge-from="26" data-edge-to="19">
-    <line x1="2502.00" y1="169.46" x2="2554.63" y2="260.69" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 2558.00 266.54 L 2549.61 260.99 L 2554.63 260.69 L 2557.40 256.49 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="2527" y="214" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <line x1="2505.00" y1="174.67" x2="2551.63" y2="255.49" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 2555.00 261.33 L 2546.60 255.79 L 2551.63 255.49 L 2554.40 251.29 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="2528" y="214" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has friend</title>has...
     </text>
     </g>
     <g class="edge" data-edge-idx="27" data-edge-base="expresses" data-edge-from="26" data-edge-to="2">
-    <line x1="2440.00" y1="204.00" x2="2440.00" y2="229.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 2440.00 236.00 L 2435.50 227.00 L 2440.00 229.25 L 2444.50 227.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="2440.00" y1="205.00" x2="2440.00" y2="228.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 2440.00 235.00 L 2435.50 226.00 L 2440.00 228.25 L 2444.50 226.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     <text x="2440" y="216" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has friend</title>has...
     </text>
     </g>
     <g class="edge" data-edge-idx="28" data-edge-base="expresses" data-edge-from="26" data-edge-to="21">
-    <polyline points="2503.75,181.40 2530,330 2710,330 2733.60,274.80" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 2736.25 268.60 L 2736.85 278.64 L 2733.60 274.80 L 2728.58 275.10 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="2516" y="255" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <polyline points="2505.00,181.88 2530,330 2710,330 2732.47,274.38" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 2735.00 268.12 L 2735.80 278.16 L 2732.47 274.38 L 2727.46 274.78 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="2517" y="255" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has friend</title>has...
     </text>
     </g>
     <g class="edge" data-edge-idx="29" data-edge-base="expresses" data-edge-from="26" data-edge-to="27">
-      <line class="edge-ghost" x1="2564.00" y1="163.00" x2="3960.00" y2="258.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="2528.00" y1="170.00" x2="3960.00" y2="258.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="2564.00" y1="163.00" x2="3960.00" y2="258.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="3262" y="210" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="2528.00" y1="170.00" x2="3960.00" y2="258.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="3244" y="214" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has friend</title>has...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="2500.00" y1="159.00" x2="2533.88" y2="161.12" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="2533.88" y1="161.12" x2="2564.00" y2="163.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has friend): Mike → Paul</title><rect x="2557.00" y="156.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2564.00" y="163.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">N</text></g>
+        <line x1="2500.00" y1="170.00" x2="2528.00" y2="170.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <g class="edge-badge"><title>Expresses (has friend): Mike → Paul</title><rect x="2521.00" y="163.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2528.00" y="170.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">J</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="3978.82" y1="259.41" x2="3993.27" y2="260.50" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="3960.00" y1="258.00" x2="3978.82" y2="259.41" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <line x1="3960.00" y1="258.00" x2="3993.27" y2="260.50" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 4000.00 261.00 L 3990.69 264.81 L 3993.27 260.50 L 3991.36 255.84 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has friend): Mike → Paul</title><rect x="3953.00" y="251.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3960.00" y="258.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">N</text></g>
+        <g class="edge-badge"><title>Expresses (has friend): Mike → Paul</title><rect x="3953.00" y="251.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3960.00" y="258.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">J</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="30" data-edge-base="expresses" data-edge-from="26" data-edge-to="28">
-      <line class="edge-ghost" x1="2539.00" y1="182.00" x2="2881.00" y2="261.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="2551.00" y1="185.00" x2="2881.00" y2="261.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="2539.00" y1="182.00" x2="2881.00" y2="261.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="2710" y="221" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="2551.00" y1="185.00" x2="2881.00" y2="261.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="2716" y="223" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has friend</title>has...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="2500.00" y1="173.00" x2="2520.65" y2="177.76" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="2520.65" y1="177.76" x2="2539.00" y2="182.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has friend): Mike → Peter</title><rect x="2532.00" y="175.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2539.00" y="182.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">P</text></g>
+        <line x1="2500.00" y1="173.00" x2="2551.00" y2="185.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <g class="edge-badge"><title>Expresses (has friend): Mike → Peter</title><rect x="2544.00" y="178.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2551.00" y="185.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">K</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="2899.35" y1="265.24" x2="2913.42" y2="268.48" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="2881.00" y1="261.00" x2="2899.35" y2="265.24" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <line x1="2881.00" y1="261.00" x2="2913.42" y2="268.48" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 2920.00 270.00 L 2910.22 272.36 L 2913.42 268.48 L 2912.24 263.59 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has friend): Mike → Peter</title><rect x="2874.00" y="254.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2881.00" y="261.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">P</text></g>
+        <g class="edge-badge"><title>Expresses (has friend): Mike → Peter</title><rect x="2874.00" y="254.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2881.00" y="261.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">K</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="31" data-edge-base="expresses" data-edge-from="29" data-edge-to="13">
-      <line class="edge-ghost" x1="1076.00" y1="100.00" x2="3612.00" y2="107.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
-      <g class="edge-full" opacity="0">
-        <line x1="1076.00" y1="100.00" x2="3612.00" y2="107.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="2344" y="103" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <line x1="1016.00" y1="99.96" x2="3628.25" y2="93.03" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 3635.00 93.01 L 3626.01 97.54 L 3628.25 93.03 L 3625.99 88.54 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="2321" y="96" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has an employer</title>has...
     </text>
-      </g>
-      <g class="edge-stub" data-stub-end="source">
-        <line x1="1000.00" y1="100.00" x2="1040.24" y2="100.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="1040.24" y1="100.00" x2="1076.00" y2="100.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has an employer): Rob1Bot21 → Company of Friends</title><rect x="1069.00" y="93.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1076.00" y="100.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">J</text></g>
-      </g>
-      <g class="edge-stub" data-stub-end="target">
-        <line x1="3625.18" y1="107.00" x2="3633.25" y2="107.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="3612.00" y1="107.00" x2="3625.18" y2="107.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 3640.00 107.00 L 3631.00 111.50 L 3633.25 107.00 L 3631.00 102.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has an employer): Rob1Bot21 → Company of Friends</title><rect x="3605.00" y="100.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3612.00" y="107.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">J</text></g>
-      </g>
     </g>
     <g class="edge" data-edge-idx="32" data-edge-base="expresses" data-edge-from="30" data-edge-to="13">
-      <line class="edge-ghost" x1="1256.00" y1="100.00" x2="3588.00" y2="98.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
-      <g class="edge-full" opacity="0">
-        <line x1="1256.00" y1="100.00" x2="3588.00" y2="98.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="2422" y="99" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <line x1="1196.00" y1="99.99" x2="3628.25" y2="98.01" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 3635.00 98.00 L 3626.00 102.51 L 3628.25 98.01 L 3626.00 93.51 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="2411" y="98" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has an employer</title>has...
     </text>
-      </g>
-      <g class="edge-stub" data-stub-end="source">
-        <line x1="1180.00" y1="100.00" x2="1220.24" y2="100.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="1220.24" y1="100.00" x2="1256.00" y2="100.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has an employer): Robo1 → Company of Friends</title><rect x="1249.00" y="93.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1256.00" y="100.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">E</text></g>
-      </g>
-      <g class="edge-stub" data-stub-end="target">
-        <line x1="3612.47" y1="98.00" x2="3633.25" y2="98.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="3588.00" y1="98.00" x2="3612.47" y2="98.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 3640.00 98.00 L 3631.00 102.50 L 3633.25 98.00 L 3631.00 93.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has an employer): Robo1 → Company of Friends</title><rect x="3581.00" y="91.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3588.00" y="98.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">E</text></g>
-      </g>
     </g>
     <g class="edge" data-edge-idx="33" data-edge-base="expresses" data-edge-from="31" data-edge-to="13">
-    <line x1="1424.00" y1="88.00" x2="3629.25" y2="88.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 3636.00 88.00 L 3627.00 92.50 L 3629.25 88.00 L 3627.00 83.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="1425.00" y1="88.00" x2="3628.25" y2="88.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 3635.00 88.00 L 3626.00 92.50 L 3628.25 88.00 L 3626.00 83.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     <text x="2526" y="88" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has an employer</title>has...
     </text>
     </g>
     <g class="edge" data-edge-idx="34" data-edge-base="expresses" data-edge-from="6" data-edge-to="13">
-      <line class="edge-ghost" x1="356.00" y1="100.00" x2="3564.00" y2="104.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
-      <g class="edge-full" opacity="0">
-        <line x1="356.00" y1="100.00" x2="3564.00" y2="104.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="1960" y="102" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+    <line x1="296.00" y1="100.02" x2="3628.25" y2="103.99" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 3635.00 103.99 L 3625.99 108.48 L 3628.25 103.99 L 3626.01 99.48 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <text x="1961" y="101" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has an employer</title>has...
     </text>
-      </g>
-      <g class="edge-stub" data-stub-end="source">
-        <line x1="280.00" y1="100.00" x2="320.24" y2="100.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="320.24" y1="100.00" x2="356.00" y2="100.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has an employer): Bot1 → Company of Friends</title><rect x="349.00" y="93.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="356.00" y="100.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">F</text></g>
-      </g>
-      <g class="edge-stub" data-stub-end="target">
-        <line x1="3599.76" y1="104.00" x2="3633.25" y2="104.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="3564.00" y1="104.00" x2="3599.76" y2="104.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 3640.00 104.00 L 3631.00 108.50 L 3633.25 104.00 L 3631.00 99.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has an employer): Bot1 → Company of Friends</title><rect x="3557.00" y="97.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3564.00" y="104.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">F</text></g>
-      </g>
     </g>
     <g class="edge" data-edge-idx="35" data-edge-base="expresses" data-edge-from="7" data-edge-to="13">
-      <line class="edge-ghost" x1="536.00" y1="100.00" x2="3664.00" y2="49.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="548.00" y1="70.00" x2="3664.00" y2="49.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="536.00" y1="100.00" x2="3664.00" y2="49.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="2100" y="74" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="548.00" y1="70.00" x2="3664.00" y2="49.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="2106" y="59" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has an employer</title>has...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="460.00" y1="100.00" x2="500.24" y2="100.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="500.24" y1="100.00" x2="536.00" y2="100.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has an employer): Bot2 → Company of Friends</title><rect x="529.00" y="93.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="536.00" y="100.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
+        <line x1="520.00" y1="70.00" x2="548.00" y2="70.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <g class="edge-badge"><title>Expresses (has an employer): Bot2 → Company of Friends</title><rect x="541.00" y="63.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="548.00" y="70.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="3664.00" y1="62.18" x2="3664.00" y2="70.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="3664.00" y1="49.00" x2="3664.00" y2="62.18" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <line x1="3664.00" y1="49.00" x2="3664.00" y2="70.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 3664.00 77.00 L 3659.50 68.00 L 3664.00 70.25 L 3668.50 68.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
         <g class="edge-badge"><title>Expresses (has an employer): Bot2 → Company of Friends</title><rect x="3657.00" y="42.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3664.00" y="49.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="36" data-edge-base="expresses" data-edge-from="8" data-edge-to="13">
-      <line class="edge-ghost" x1="716.00" y1="100.00" x2="3664.00" y2="165.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="728.00" y1="70.00" x2="3600.00" y2="114.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="716.00" y1="100.00" x2="3664.00" y2="165.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="2190" y="132" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="728.00" y1="70.00" x2="3600.00" y2="114.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="2164" y="92" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has an employer</title>has...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="640.00" y1="100.00" x2="680.24" y2="100.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="680.24" y1="100.00" x2="716.00" y2="100.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has an employer): Bot3 → Company of Friends</title><rect x="709.00" y="93.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="716.00" y="100.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">H</text></g>
+        <line x1="700.00" y1="70.00" x2="728.00" y2="70.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <g class="edge-badge"><title>Expresses (has an employer): Bot3 → Company of Friends</title><rect x="721.00" y="63.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="728.00" y="70.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">D</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="3664.00" y1="151.82" x2="3664.00" y2="143.75" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="3664.00" y1="165.00" x2="3664.00" y2="151.82" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-    <path d="M 3664.00 137.00 L 3668.50 146.00 L 3664.00 143.75 L 3659.50 146.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has an employer): Bot3 → Company of Friends</title><rect x="3657.00" y="158.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3664.00" y="165.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">H</text></g>
+        <line x1="3600.00" y1="114.00" x2="3633.25" y2="114.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 3640.00 114.00 L 3631.00 118.50 L 3633.25 114.00 L 3631.00 109.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (has an employer): Bot3 → Company of Friends</title><rect x="3593.00" y="107.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3600.00" y="114.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">D</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="37" data-edge-base="expresses" data-edge-from="9" data-edge-to="13">
-      <line class="edge-ghost" x1="896.00" y1="101.00" x2="3588.00" y2="120.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="908.00" y1="70.00" x2="3576.00" y2="120.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="896.00" y1="101.00" x2="3588.00" y2="120.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="2242" y="110" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="908.00" y1="70.00" x2="3576.00" y2="120.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="2242" y="95" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has an employer</title>has...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="820.00" y1="100.00" x2="860.24" y2="100.53" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="860.24" y1="100.53" x2="896.00" y2="101.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
-        <g class="edge-badge"><title>Expresses (has an employer): Bot4 → Company of Friends</title><rect x="889.00" y="94.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="896.00" y="101.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">K</text></g>
+        <line x1="880.00" y1="70.00" x2="908.00" y2="70.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <g class="edge-badge"><title>Expresses (has an employer): Bot4 → Company of Friends</title><rect x="901.00" y="63.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="908.00" y="70.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">E</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="3612.47" y1="120.00" x2="3633.25" y2="120.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <line x1="3588.00" y1="120.00" x2="3612.47" y2="120.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" stroke-opacity="0.35" />
+        <line x1="3576.00" y1="120.00" x2="3633.25" y2="120.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 3640.00 120.00 L 3631.00 124.50 L 3633.25 120.00 L 3631.00 115.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has an employer): Bot4 → Company of Friends</title><rect x="3581.00" y="113.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3588.00" y="120.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">K</text></g>
+        <g class="edge-badge"><title>Expresses (has an employer): Bot4 → Company of Friends</title><rect x="3569.00" y="113.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="3576.00" y="120.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">E</text></g>
       </g>
     </g>
   </g>
