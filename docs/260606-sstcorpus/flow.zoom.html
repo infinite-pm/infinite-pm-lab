@@ -1083,6 +1083,11 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
       const idx = parseInt(t.getAttribute("data-edge-idx"), 10);
       if (isNaN(idx)) return;
       ev.stopPropagation();
+      // The 2nd click of a double-click-to-follow: don't toggle the selection —
+      // the dblclick handler does the follow. stopPropagation already ran, so
+      // this won't bubble to the background-deselect; keeps the history clean and
+      // the edge selected at the destination.
+      if (ev.detail > 1) return;
       if (selectedEdgeIdx === idx) {
         selectedEdgeIdx = null;
         selectedNodeID = null;
@@ -1795,8 +1800,15 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
   document.addEventListener("keydown", function (e) {
     if (e.key === "?") { openHelp(); return; }
     // [ / ] step the in-app view history back / forward (same as the ◀ / ▶ arrows).
-    if (e.key === "[") { e.preventDefault(); goToViewHistory(-1); return; }
-    if (e.key === "]") { e.preventDefault(); goToViewHistory(1); return; }
+    // [ / ] step the in-app view history (like ◀ / ▶). Bare keys only — let
+    // Cmd/Ctrl+[ , Cmd/Ctrl+] stay as the browser's Back/Forward — and not while
+    // a modal is open (Escape handles those).
+    if ((e.key === "[" || e.key === "]") && !e.ctrlKey && !e.metaKey && !e.altKey) {
+      if (!helpOverlay.hidden || menuOpen()) return;
+      e.preventDefault();
+      goToViewHistory(e.key === "[" ? -1 : 1);
+      return;
+    }
     if (e.key === "Escape") {
       if (!helpOverlay.hidden) { closeHelp(); return; } // help takes precedence
       if (menuOpen()) { closeMenu(); return; }           // then the ⋮ menu
