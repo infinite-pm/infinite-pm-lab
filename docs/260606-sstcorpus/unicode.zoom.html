@@ -37,6 +37,17 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #fff; colo
 .icon-btn:hover { background: #533483; color: #fff; }
 .icon-btn.flash { background: #4caf50; color: #fff; }
 .icon-btn:disabled { opacity: 0.35; pointer-events: none; }
+.icon-btn[aria-expanded="true"] { background: #533483; color: #fff; }
+
+/* "⋮ More actions" dropdown menu in the View panel. */
+.menu-wrap { position: relative; display: inline-flex; }
+.menu { position: absolute; top: calc(100% + 6px); right: 0; min-width: 200px; max-width: 92vw; max-height: calc(100vh - 80px); overflow-y: auto; background: #fff; border: 1px solid #ccc; border-radius: 6px; box-shadow: 0 4px 16px rgba(0,0,0,0.18); padding: 4px; z-index: 2500; }
+.menu[hidden] { display: none; }
+.menu-item { display: block; width: 100%; text-align: left; padding: 7px 10px; background: none; border: 0; border-radius: 4px; font-family: inherit; font-size: 14px; color: #333; cursor: pointer; text-decoration: none; white-space: nowrap; }
+.menu-item:hover, .menu-item:focus { background: #533483; color: #fff; outline: none; }
+.menu-item.flash { background: #4caf50; color: #fff; }
+.menu-item:disabled { opacity: 0.4; cursor: default; }
+.menu-item:disabled:hover { background: none; color: #333; }
 
 #inspector { flex: 0 1 auto; overflow-y: auto; }
 #inspector .field { margin-bottom: 7px; }
@@ -105,6 +116,7 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #fff; colo
 .edge.edge-selected .edge-full,
 .edge.edge-connected .edge-full { opacity: 1; }
 .edge.edge-selected > line, .edge.edge-connected > line,
+.edge.edge-selected > polyline, .edge.edge-connected > polyline,
 .edge.edge-selected .edge-full, .edge.edge-connected .edge-full,
 .edge.edge-selected .edge-stub, .edge.edge-connected .edge-stub { filter: drop-shadow(0 0 3px #ffd700) drop-shadow(0 0 2px #ffd700); }
 .edge.edge-selected .edge-stub line, .edge.edge-connected .edge-stub line { stroke-opacity: 1; }
@@ -130,11 +142,17 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #fff; colo
         <h3>View</h3>
         <button class="icon-btn" id="nav-back-btn" title="Back to the previous view">◀</button>
         <button class="icon-btn" id="nav-fwd-btn" title="Forward to the next view">▶</button>
-        <button class="icon-btn" id="help-btn" title="Shortcuts &amp; help (?)">?</button>
         <button class="icon-btn" id="toggle-inspector-btn" title="Show/hide the inspector panel (free up canvas space)">▤</button>
-        <button class="icon-btn" id="copy-url-btn" title="Copy a URL that restores the current state, selection, zoom and pan">🔗</button>
-        <button class="icon-btn" id="expand-all-btn" title="Navigate to the fully-expanded state">⛶</button>
-        <a class="icon-btn" id="download-offline-btn" href="/offline.html" download title="Download a self-contained HTML page that runs offline (no server)">⬇</a>
+        <div class="menu-wrap">
+          <button class="icon-btn" id="view-menu-btn" title="More actions" aria-haspopup="true" aria-expanded="false">⋮</button>
+          <div id="view-menu" class="menu" role="menu" hidden>
+            <button class="menu-item" id="help-btn" role="menuitem" title="Shortcuts &amp; help (?)">Shortcuts &amp; help</button>
+            <button class="menu-item" id="copy-url-btn" role="menuitem" title="Copy a URL that restores the current state, selection, zoom and pan">Copy view URL</button>
+            <button class="menu-item" id="expand-all-btn" role="menuitem" title="Navigate to the fully-expanded state">Expand all</button>
+            <button class="menu-item" id="collapse-all-btn" role="menuitem" title="Collapse everything back to the root state">Unexpand all</button>
+            <a class="menu-item" id="download-offline-btn" href="/offline.html" download role="menuitem" title="Download a self-contained HTML page that runs offline (no server)">Download offline copy</a>
+          </div>
+        </div>
       </div>
     </div>
     <div id="inspector" class="panel">
@@ -150,7 +168,7 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #fff; colo
 </div>
 
 <div id="help-overlay" hidden>
-  <div id="help-panel" class="panel" role="dialog" aria-label="Shortcuts and help">
+  <div id="help-panel" class="panel" role="dialog" aria-modal="true" aria-label="Shortcuts and help">
     <div class="help-head">
       <h3>Shortcuts &amp; help</h3>
       <button class="icon-btn" id="help-close" title="Close (Esc)">✕</button>
@@ -158,8 +176,9 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #fff; colo
 
     <div class="help-sec">Select &amp; inspect</div>
     <dl class="help-keys">
-      <dt><kbd>Click</kbd> node</dt><dd>highlight &amp; inspect it — click it again to clear</dd>
+      <dt><kbd>Click</kbd> node</dt><dd>highlight &amp; inspect it — click it again to clear (the S / E start &amp; end markers too)</dd>
       <dt><kbd>Click</kbd> edge</dt><dd>select the edge (rings both ends)</dd>
+      <dt><kbd>Double-click</kbd> edge</dt><dd>if its other end is off-screen, jump the view there</dd>
       <dt><span class="chip">?</span> badge</dt><dd>a hidden cross-component edge — click to reveal it, <kbd>double-click</kbd> to jump to the node at its far end</dd>
       <dt><kbd>Click</kbd> empty</dt><dd>clear the selection</dd>
     </dl>
@@ -179,16 +198,14 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #fff; colo
       <dt><kbd>Scroll</kbd></dt><dd>zoom in / out</dd>
       <dt><kbd>Esc</kbd></dt><dd>clear the selection, then zoom out</dd>
       <dt>Breadcrumb</dt><dd>jump back to a parent state (top bar)</dd>
-      <dt>◀ ▶</dt><dd>step back / forward through your recent views (highlight, open, zoom — pan/zoom restore with each step)</dd>
+      <dt>◀ ▶ <span style="color:#888">or</span> <kbd>[</kbd> <kbd>]</kbd></dt><dd>step back / forward through your recent views (highlight, open, zoom — pan/zoom restore with each step)</dd>
     </dl>
 
-    <div class="help-sec">Toolbar</div>
+    <div class="help-sec">Toolbar (View panel)</div>
     <dl class="help-keys">
-      <dt>?</dt><dd>this help</dd>
+      <dt>◀ ▶</dt><dd>back / forward through your recent views</dd>
       <dt>▤</dt><dd>show / hide the inspector panel</dd>
-      <dt>🔗</dt><dd>copy a link that restores this exact view</dd>
-      <dt>⛶</dt><dd>jump to the fully-expanded state</dd>
-      <dt>⬇</dt><dd>download a self-contained offline copy</dd>
+      <dt>⋮</dt><dd>more actions: this help, copy view URL, expand all, unexpand all, download offline copy</dd>
     </dl>
   </div>
 </div>
@@ -251,6 +268,8 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
   const helpOverlay = document.getElementById("help-overlay");
   const navBackBtn = document.getElementById("nav-back-btn");
   const navFwdBtn = document.getElementById("nav-fwd-btn");
+  const viewMenu = document.getElementById("view-menu");
+  const viewMenuBtn = document.getElementById("view-menu-btn");
 
   // --- Init ---
   // The offline single-page bundle pre-populates window.__BUNDLED_MODEL and
@@ -300,7 +319,13 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
       const targetID = (e.state && e.state.stateID) || ph.stateID || model.rootStateID;
       if (statesByID[targetID]) {
         const nid = (e.state && e.state.nodeID) || ph.nodeID;
+        // The browser's Back/Forward and the in-app ◀/▶ history are independent;
+        // a browser-driven navigation must NOT record into (and truncate) the
+        // in-app stack. suppressHistory makes scheduleCommit a no-op synchronously,
+        // so the deferred recordView is never scheduled for this activation.
+        suppressHistory = true;
         activateState(targetID, { push: false, replaceHash: false, nodeID: nid });
+        suppressHistory = false;
       }
     });
 
@@ -314,6 +339,21 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
     navBackBtn.addEventListener("click", function () { goToViewHistory(-1); });
     navFwdBtn.addEventListener("click", function () { goToViewHistory(1); });
     updateHistoryButtons();
+
+    // "⋮ More actions" menu.
+    document.getElementById("collapse-all-btn").addEventListener("click", goToRoot);
+    viewMenuBtn.addEventListener("click", function (e) { e.stopPropagation(); toggleMenu(); });
+    // Close after an item is chosen — except Copy URL, which stays open so its
+    // green "copied" flash is visible.
+    viewMenu.addEventListener("click", function (e) {
+      const item = e.target.closest(".menu-item");
+      if (item && item.id !== "copy-url-btn") closeMenu();
+    });
+    viewMenu.addEventListener("keydown", onMenuKeydown);
+    // Click anywhere outside the menu closes it.
+    document.addEventListener("click", function (e) {
+      if (menuOpen() && !e.target.closest(".menu-wrap")) closeMenu();
+    });
 
     // Offline bundle has no server to download from — hide the icon so users
     // don't get a confusing 404 from clicking it under file://.
@@ -586,7 +626,9 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
     svg.appendChild(chipLayer);
 
     for (const n of st.nodes) {
-      if (n.type === "boundary") continue;
+      // Boundary markers (the S / E start/end boxes) have no transition, so they
+      // fall through to the plain-node path below: a click target that
+      // highlights/inspects them (and records the selection in the view history).
 
       const isContainer = n.container && n.container.childNodeIDs && n.container.childNodeIDs.length > 0;
       if (n.renderKind && n.renderKind.indexOf("container") >= 0 && !isContainer) continue;
@@ -1004,16 +1046,25 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
       if (g.querySelector(".edge-full")) continue; // stubbed edges handle themselves
       const idx = parseInt(g.getAttribute("data-edge-idx"), 10);
       if (isNaN(idx) || !st.edges || !st.edges[idx]) continue;
-      const line = g.querySelector(":scope > line");
-      if (!line) continue;
+      // Straight edges render as <line>, bended (routed) ones as <polyline>;
+      // build a fat transparent hit copy of whichever shape this edge uses so
+      // both are clickable. (Solid stroke, so dotted near-to edges are hittable
+      // along their gaps.)
+      const shape = g.querySelector(":scope > line, :scope > polyline");
+      if (!shape) continue;
       const e = st.edges[idx];
-      const hit = svgEl("line", {
-        x1: line.getAttribute("x1"), y1: line.getAttribute("y1"),
-        x2: line.getAttribute("x2"), y2: line.getAttribute("y2"),
-        // Solid (no dasharray) so dotted nearto edges are clickable along their gaps.
-        stroke: "transparent", "stroke-width": 16, "pointer-events": "stroke",
+      const tag = shape.tagName.toLowerCase();
+      const hitAttrs = {
+        fill: "none", stroke: "transparent", "stroke-width": 16, "pointer-events": "stroke",
         "data-edge-idx": String(idx), class: "edge-hit", cursor: "pointer",
-      });
+      };
+      if (tag === "polyline") {
+        hitAttrs.points = shape.getAttribute("points");
+      } else {
+        hitAttrs.x1 = shape.getAttribute("x1"); hitAttrs.y1 = shape.getAttribute("y1");
+        hitAttrs.x2 = shape.getAttribute("x2"); hitAttrs.y2 = shape.getAttribute("y2");
+      }
+      const hit = svgEl(tag, hitAttrs);
       const title = svgEl("title", {});
       title.textContent = edgeTipLines(e, "middle").map(function (l) {
         return "(" + l.label + ") " + l.value;
@@ -1040,6 +1091,48 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
         selectEdge(idx);
       }
     });
+    // Double-click an edge whose far endpoint is off-screen → follow the edge
+    // there (pan to the off-screen "second" node), like the hidden-edge chip's
+    // double-click. No-op when both endpoints are already on-screen.
+    layer.addEventListener("dblclick", function (ev) {
+      if (didDrag) return;
+      const t = ev.target.closest("[data-edge-idx]");
+      if (!t) return;
+      const idx = parseInt(t.getAttribute("data-edge-idx"), 10);
+      if (isNaN(idx) || !st.edges || !st.edges[idx]) return;
+      ev.stopPropagation();
+      ev.preventDefault();
+      const e = st.edges[idx];
+      const target = edgeFollowTarget(findNodeById(e.from), findNodeById(e.to), ev);
+      if (!target) return;
+      if (selectedEdgeIdx !== idx) selectEdge(idx); // keep the edge lit at the destination
+      centreOnNode(target);
+    });
+  }
+
+  // True when any part of the node's box is within the canvas viewport.
+  function isNodeOnscreen(node) {
+    const cw = canvasWrap.clientWidth, ch = canvasWrap.clientHeight;
+    const sx = node.x * cameraScale + panX, sy = node.y * cameraScale + panY;
+    const sw = node.width * cameraScale, sh = node.height * cameraScale;
+    return sx + sw > 0 && sx < cw && sy + sh > 0 && sy < ch;
+  }
+
+  // For an edge double-click: which endpoint to follow to — the off-screen one.
+  // Null when both are already on-screen (nothing to follow). If both are
+  // off-screen, the one farther from the click point (follow away from the click).
+  function edgeFollowTarget(a, b, ev) {
+    if (!a && !b) return null;
+    if (!a) return b;
+    if (!b) return a;
+    const aOff = !isNodeOnscreen(a), bOff = !isNodeOnscreen(b);
+    if (!aOff && !bOff) return null;
+    if (aOff !== bOff) return aOff ? a : b;
+    const rect = canvasWrap.getBoundingClientRect();
+    const lx = (ev.clientX - rect.left - panX) / cameraScale;
+    const ly = (ev.clientY - rect.top - panY) / cameraScale;
+    const d2 = function (n) { const cx = n.x + n.width / 2, cy = n.y + n.height / 2; return (cx - lx) * (cx - lx) + (cy - ly) * (cy - ly); };
+    return d2(b) >= d2(a) ? b : a;
   }
 
   function selectEdge(idx) {
@@ -1271,10 +1364,74 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
 
   function hideEdgeTooltip() { if (edgeTip) edgeTip.style.display = "none"; }
 
-  // Help overlay (the "?" toolbar button / "?" key) — a dismissible modal of
-  // gestures & shortcuts. Closed by its ✕, the backdrop, or Escape.
-  function openHelp() { helpOverlay.hidden = false; }
-  function closeHelp() { helpOverlay.hidden = true; }
+  // Help overlay (the "?" key / the menu's "Shortcuts & help" item) — a
+  // dismissible modal of gestures & shortcuts. Closed by its ✕, the backdrop, or
+  // Escape. Opening converges both entry points: it always closes the ⋮ menu
+  // first (so "?" while the menu is open never leaves it floating under the
+  // modal), moves focus into the dialog, and restores it to the opener on close.
+  let helpLastFocus = null;
+  function openHelp() {
+    helpLastFocus = document.activeElement;
+    if (menuOpen()) closeMenu();
+    helpOverlay.hidden = false;
+    helpOverlay.querySelector("#help-close").focus();
+  }
+  function closeHelp() {
+    helpOverlay.hidden = true;
+    const back = (helpLastFocus && helpLastFocus.focus && helpLastFocus.offsetParent !== null) ? helpLastFocus : viewMenuBtn;
+    if (back && back.focus) back.focus();
+  }
+
+  // "⋮ More actions" dropdown (help / copy URL / expand all / unexpand all /
+  // download). Closes on Escape, on an outside click, and after most item clicks
+  // (Copy URL keeps it open so its "copied" flash is visible).
+  function menuOpen() { return viewMenu && !viewMenu.hidden; }
+  function openMenu() {
+    refreshMenuItems();
+    viewMenu.hidden = false;
+    viewMenuBtn.setAttribute("aria-expanded", "true");
+    // Move focus into the menu (role=menu contract) — first enabled item.
+    const first = viewMenu.querySelector(".menu-item:not([disabled])");
+    if (first) first.focus();
+  }
+  function closeMenu() {
+    if (!viewMenu) return;
+    // Return focus to the kebab if it was inside the menu (else hiding the menu
+    // would drop focus to <body> when an item is display:none'd).
+    if (viewMenu.contains(document.activeElement) && viewMenuBtn) viewMenuBtn.focus();
+    viewMenu.hidden = true;
+    viewMenuBtn.setAttribute("aria-expanded", "false");
+  }
+  // Roving arrow-key navigation within the open menu (honors role=menu).
+  function onMenuKeydown(e) {
+    if (e.key !== "ArrowDown" && e.key !== "ArrowUp" && e.key !== "Home" && e.key !== "End") return;
+    const items = Array.prototype.slice.call(viewMenu.querySelectorAll(".menu-item"))
+      .filter(function (it) { return !it.disabled; });
+    if (!items.length) return;
+    e.preventDefault();
+    let i = items.indexOf(document.activeElement);
+    if (e.key === "ArrowDown") i = i < 0 ? 0 : (i + 1) % items.length;
+    else if (e.key === "ArrowUp") i = i <= 0 ? items.length - 1 : i - 1;
+    else if (e.key === "Home") i = 0;
+    else i = items.length - 1; // End
+    items[i].focus();
+  }
+  function toggleMenu() { if (menuOpen()) closeMenu(); else openMenu(); }
+  // Grey out actions that would be no-ops in the current state.
+  function refreshMenuItems() {
+    const expandBtn = document.getElementById("expand-all-btn");
+    const collapseBtn = document.getElementById("collapse-all-btn");
+    const fe = model && model.fullyExpandedStateID;
+    if (expandBtn) expandBtn.disabled = !(fe && fe !== currentStateID && statesByID[fe]);
+    if (collapseBtn) collapseBtn.disabled = !(model && model.rootStateID && model.rootStateID !== currentStateID);
+  }
+
+  // "Unexpand all" — collapse everything back to the root state.
+  function goToRoot() {
+    const id = model && model.rootStateID;
+    if (!id || id === currentStateID || !statesByID[id]) return;
+    activateState(id, { push: true, replaceHash: false });
+  }
 
   // --- View history (◀/▶) ---
   // recordView runs deferred (microtask) so the whole synchronous interaction
@@ -1637,8 +1794,12 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
 
   document.addEventListener("keydown", function (e) {
     if (e.key === "?") { openHelp(); return; }
+    // [ / ] step the in-app view history back / forward (same as the ◀ / ▶ arrows).
+    if (e.key === "[") { e.preventDefault(); goToViewHistory(-1); return; }
+    if (e.key === "]") { e.preventDefault(); goToViewHistory(1); return; }
     if (e.key === "Escape") {
       if (!helpOverlay.hidden) { closeHelp(); return; } // help takes precedence
+      if (menuOpen()) { closeMenu(); return; }           // then the ⋮ menu
       if (selectedNodeID) {
         selectedNodeID = null;
         updateSelection();
