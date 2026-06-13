@@ -63,21 +63,21 @@
     <path d="M 580.00 215.00 L 575.50 206.00 L 580.00 208.25 L 584.50 206.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="8" data-edge-base="expresses" data-edge-from="5" data-edge-to="3">
-      <line class="edge-ghost" x1="484.00" y1="167.00" x2="196.00" y2="302.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="480.00" y1="170.00" x2="200.00" y2="289.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="484.00" y1="167.00" x2="196.00" y2="302.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="340" y="234" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="480.00" y1="170.00" x2="200.00" y2="289.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="340" y="229" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>has example</title>has...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="520.00" y1="150.00" x2="484.00" y2="167.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <g class="edge-badge"><title>Expresses (has example): Nursery rhyme → Mary had a little lamb</title><rect x="477.00" y="160.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="484.00" y="167.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
+        <line x1="520.00" y1="170.00" x2="480.00" y2="170.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <g class="edge-badge"><title>Expresses (has example): Nursery rhyme → Mary had a little lamb</title><rect x="473.00" y="163.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="480.00" y="170.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="196.00" y1="302.00" x2="166.10" y2="316.12" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 160.00 319.00 L 166.22 311.09 L 166.10 316.12 L 170.06 319.23 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has example): Nursery rhyme → Mary had a little lamb</title><rect x="189.00" y="295.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="196.00" y="302.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
+        <line x1="200.00" y1="289.00" x2="166.75" y2="289.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 160.00 289.00 L 169.00 284.50 L 166.75 289.00 L 169.00 293.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (has example): Nursery rhyme → Mary had a little lamb</title><rect x="193.00" y="282.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="200.00" y="289.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="9" data-edge-base="leadsto" data-edge-from="6" data-edge-to="9">

@@ -1351,13 +1351,13 @@
     <path d="M 469.94 6025.00 L 464.31 6033.34 L 464.06 6028.31 L 459.89 6025.49 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="208" data-edge-base="partof" data-edge-from="207" data-edge-to="213">
-      <line class="edge-ghost" x1="372.00" y1="6928.00" x2="460.00" y2="28710.00" stroke="#82b366" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="360.00" y1="6930.00" x2="460.00" y2="28710.00" stroke="#82b366" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="372.00" y1="6928.00" x2="460.00" y2="28710.00" stroke="#82b366" stroke-width="3" />
+        <line x1="360.00" y1="6930.00" x2="460.00" y2="28710.00" stroke="#82b366" stroke-width="3" />
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="400.00" y1="6928.00" x2="372.00" y2="6928.00" stroke="#82b366" stroke-width="3" />
-        <g class="edge-badge"><title>PartOf: obligations hereunder → part 2 of NDA about: processing terms, personal data, protection regulation, data regulation, organizational measures, data breach, data subject</title><rect x="365.00" y="6921.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#82b366" stroke-width="1.5" /><text x="372.00" y="6928.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#82b366">1</text></g>
+        <line x1="400.00" y1="6930.00" x2="360.00" y2="6930.00" stroke="#82b366" stroke-width="3" />
+        <g class="edge-badge"><title>PartOf: obligations hereunder → part 2 of NDA about: processing terms, personal data, protection regulation, data regulation, organizational measures, data breach, data subject</title><rect x="353.00" y="6923.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#82b366" stroke-width="1.5" /><text x="360.00" y="6930.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#82b366">1</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
         <line x1="460.00" y1="28710.00" x2="460.00" y2="28743.25" stroke="#82b366" stroke-width="3" />

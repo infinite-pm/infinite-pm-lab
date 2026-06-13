@@ -705,39 +705,39 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="57" data-edge-base="expresses" data-edge-from="147" data-edge-to="140">
-      <line class="edge-ghost" x1="2520.00" y1="195.00" x2="2900.00" y2="195.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="2520.00" y1="189.00" x2="2900.00" y2="200.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="2520.00" y1="195.00" x2="2900.00" y2="195.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="2710" y="195" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="2520.00" y1="189.00" x2="2900.00" y2="200.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="2710" y="194" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>pinyin has english</title>piny...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="2480.00" y1="195.00" x2="2520.00" y2="195.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <g class="edge-badge"><title>Expresses (pinyin has english): wánchéng → to be/come finished</title><rect x="2513.00" y="188.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2520.00" y="195.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
+        <line x1="2480.00" y1="189.00" x2="2520.00" y2="189.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <g class="edge-badge"><title>Expresses (pinyin has english): wánchéng → to be/come finished</title><rect x="2513.00" y="182.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2520.00" y="189.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="2900.00" y1="195.00" x2="2933.25" y2="195.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 2940.00 195.00 L 2931.00 199.50 L 2933.25 195.00 L 2931.00 190.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (pinyin has english): wánchéng → to be/come finished</title><rect x="2893.00" y="188.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2900.00" y="195.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
+        <line x1="2900.00" y1="200.00" x2="2933.25" y2="200.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 2940.00 200.00 L 2931.00 204.50 L 2933.25 200.00 L 2931.00 195.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (pinyin has english): wánchéng → to be/come finished</title><rect x="2893.00" y="193.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2900.00" y="200.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="58" data-edge-base="expresses" data-edge-from="147" data-edge-to="230">
-      <line class="edge-ghost" x1="2508.00" y1="192.00" x2="2721.00" y2="148.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="2544.00" y1="189.00" x2="2720.00" y2="170.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="2508.00" y1="192.00" x2="2721.00" y2="148.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="2614" y="170" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="2544.00" y1="189.00" x2="2720.00" y2="170.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="2632" y="179" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>pinyin has hanzi</title>piny...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="2480.00" y1="192.00" x2="2508.00" y2="192.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <g class="edge-badge"><title>Expresses (pinyin has hanzi): wánchéng → 完成</title><rect x="2501.00" y="185.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2508.00" y="192.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
+        <line x1="2480.00" y1="189.00" x2="2544.00" y2="189.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <g class="edge-badge"><title>Expresses (pinyin has hanzi): wánchéng → 完成</title><rect x="2537.00" y="182.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2544.00" y="189.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="2721.00" y1="148.00" x2="2753.36" y2="142.19" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 2760.00 141.00 L 2751.94 147.02 L 2753.36 142.19 L 2750.35 138.16 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (pinyin has hanzi): wánchéng → 完成</title><rect x="2714.00" y="141.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2721.00" y="148.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
+        <line x1="2720.00" y1="170.00" x2="2753.25" y2="170.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 2760.00 170.00 L 2751.00 174.50 L 2753.25 170.00 L 2751.00 165.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (pinyin has hanzi): wánchéng → 完成</title><rect x="2713.00" y="163.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2720.00" y="170.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="59" data-edge-base="leadsto" data-edge-from="147" data-edge-to="299">
@@ -2038,21 +2038,21 @@
     <path d="M 2265.29 375.29 L 2272.57 368.35 L 2271.74 373.31 L 2275.22 376.95 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="246" data-edge-base="expresses" data-edge-from="235" data-edge-to="68">
-      <line class="edge-ghost" x1="2540.00" y1="220.00" x2="2120.00" y2="211.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="2540.00" y1="209.00" x2="2120.00" y2="230.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="2540.00" y1="220.00" x2="2120.00" y2="211.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="2330" y="215" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="2540.00" y1="209.00" x2="2120.00" y2="230.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="2330" y="219" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>hanzi has english</title>hanz...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="2580.00" y1="221.00" x2="2540.00" y2="220.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <g class="edge-badge"><title>Expresses (hanzi has english): 成 → become</title><rect x="2533.00" y="213.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2540.00" y="220.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">4</text></g>
+        <line x1="2580.00" y1="209.00" x2="2540.00" y2="209.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <g class="edge-badge"><title>Expresses (hanzi has english): 成 → become</title><rect x="2533.00" y="202.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2540.00" y="209.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">4</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="2120.00" y1="211.00" x2="2086.75" y2="210.17" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 2080.00 210.00 L 2089.11 205.73 L 2086.75 210.17 L 2088.88 214.72 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (hanzi has english): 成 → become</title><rect x="2113.00" y="204.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2120.00" y="211.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">4</text></g>
+        <line x1="2120.00" y1="230.00" x2="2086.75" y2="230.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 2080.00 230.00 L 2089.00 225.50 L 2086.75 230.00 L 2089.00 234.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (hanzi has english): 成 → become</title><rect x="2113.00" y="223.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2120.00" y="230.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">4</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="247" data-edge-base="expresses" data-edge-from="236" data-edge-to="141">
@@ -2577,21 +2577,21 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="324" data-edge-base="expresses" data-edge-from="74" data-edge-to="235">
-      <line class="edge-ghost" x1="1940.00" y1="223.00" x2="2516.00" y2="237.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="1940.00" y1="230.00" x2="2516.00" y2="209.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="1940.00" y1="223.00" x2="2516.00" y2="237.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="2228" y="230" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="1940.00" y1="230.00" x2="2516.00" y2="209.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="2228" y="219" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>pinyin has hanzi</title>piny...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="1900.00" y1="222.00" x2="1940.00" y2="223.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <g class="edge-badge"><title>Expresses (pinyin has hanzi): chéng → 成</title><rect x="1933.00" y="216.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1940.00" y="223.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">5</text></g>
+        <line x1="1900.00" y1="230.00" x2="1940.00" y2="230.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <g class="edge-badge"><title>Expresses (pinyin has hanzi): chéng → 成</title><rect x="1933.00" y="223.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1940.00" y="230.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="2516.00" y1="237.00" x2="2573.25" y2="238.79" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 2580.00 239.00 L 2570.86 243.22 L 2573.25 238.79 L 2571.14 234.22 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (pinyin has hanzi): chéng → 成</title><rect x="2509.00" y="230.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2516.00" y="237.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">5</text></g>
+        <line x1="2516.00" y1="209.00" x2="2573.25" y2="209.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 2580.00 209.00 L 2571.00 213.50 L 2573.25 209.00 L 2571.00 204.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (pinyin has hanzi): chéng → 成</title><rect x="2509.00" y="202.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2516.00" y="209.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="325" data-edge-base="leadsto" data-edge-from="74" data-edge-to="299">
@@ -2634,39 +2634,39 @@
     </text>
     </g>
     <g class="edge" data-edge-idx="331" data-edge-base="expresses" data-edge-from="77" data-edge-to="141">
-      <line class="edge-ghost" x1="2300.00" y1="204.00" x2="2900.00" y2="248.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="2300.00" y1="230.00" x2="2900.00" y2="239.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="2300.00" y1="204.00" x2="2900.00" y2="248.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="2600" y="226" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="2300.00" y1="230.00" x2="2900.00" y2="239.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="2600" y="234" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>pinyin has english</title>piny...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="2260.00" y1="201.00" x2="2300.00" y2="204.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <g class="edge-badge"><title>Expresses (pinyin has english): chéngwéi → to become</title><rect x="2293.00" y="197.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2300.00" y="204.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
+        <line x1="2260.00" y1="230.00" x2="2300.00" y2="230.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <g class="edge-badge"><title>Expresses (pinyin has english): chéngwéi → to become</title><rect x="2293.00" y="223.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2300.00" y="230.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">5</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="2900.00" y1="248.00" x2="2933.27" y2="250.50" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 2940.00 251.00 L 2930.69 254.81 L 2933.27 250.50 L 2931.36 245.84 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (pinyin has english): chéngwéi → to become</title><rect x="2893.00" y="241.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2900.00" y="248.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
+        <line x1="2900.00" y1="239.00" x2="2933.25" y2="239.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 2940.00 239.00 L 2931.00 243.50 L 2933.25 239.00 L 2931.00 234.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (pinyin has english): chéngwéi → to become</title><rect x="2893.00" y="232.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2900.00" y="239.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">5</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="332" data-edge-base="expresses" data-edge-from="77" data-edge-to="236">
-      <line class="edge-ghost" x1="2236.00" y1="268.00" x2="2720.00" y2="295.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <line class="edge-ghost" x1="2324.00" y1="230.00" x2="2720.00" y2="289.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="2236.00" y1="268.00" x2="2720.00" y2="295.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="2478" y="281" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
+        <line x1="2324.00" y1="230.00" x2="2720.00" y2="289.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <text x="2522" y="259" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
       <title>pinyin has hanzi</title>piny...
     </text>
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="2236.00" y1="240.00" x2="2236.00" y2="268.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <g class="edge-badge"><title>Expresses (pinyin has hanzi): chéngwéi → 成为</title><rect x="2229.00" y="261.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2236.00" y="268.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">6</text></g>
+        <line x1="2260.00" y1="230.00" x2="2324.00" y2="230.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <g class="edge-badge"><title>Expresses (pinyin has hanzi): chéngwéi → 成为</title><rect x="2317.00" y="223.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2324.00" y="230.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">6</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="2720.00" y1="295.00" x2="2753.32" y2="300.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 2760.00 301.00 L 2750.43 304.12 L 2753.32 300.00 L 2751.77 295.21 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (pinyin has hanzi): chéngwéi → 成为</title><rect x="2713.00" y="288.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2720.00" y="295.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">6</text></g>
+        <line x1="2720.00" y1="289.00" x2="2753.25" y2="289.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 2760.00 289.00 L 2751.00 293.50 L 2753.25 289.00 L 2751.00 284.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses (pinyin has hanzi): chéngwéi → 成为</title><rect x="2713.00" y="282.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="2720.00" y="289.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">6</text></g>
       </g>
     </g>
     <g class="edge" data-edge-idx="333" data-edge-base="leadsto" data-edge-from="77" data-edge-to="299">
