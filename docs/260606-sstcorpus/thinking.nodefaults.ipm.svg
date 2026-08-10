@@ -1,119 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="560" height="880" viewBox="0 0 560 880">
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="880" viewBox="0 0 380 880">
   <defs>
   </defs>
   <g id="container-shells">
   </g>
   <g id="node-shadows">
-    <rect x="220" y="280" width="120" height="80" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="400" y="420" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="40" y="400" width="120" height="100" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="220" y="700" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="220" y="540" width="120" height="100" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="220" y="420" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="220" y="120" width="120" height="100" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="260" y="40" width="40" height="40" rx="4" ry="4" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="260" y="800" width="40" height="40" rx="4" ry="4" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="40" y="280" width="120" height="80" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="220" y="490" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="220" y="350" width="120" height="100" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="40" y="700" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="40" y="540" width="120" height="100" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="40" y="420" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="40" y="120" width="120" height="100" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="80" y="40" width="40" height="40" rx="4" ry="4" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="80" y="800" width="40" height="40" rx="4" ry="4" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
   </g>
   <g id="edges">
-    <g class="edge" data-edge-idx="0" data-edge-base="leadsto" data-edge-from="1" data-edge-to="6">
-    <line x1="280.00" y1="365.00" x2="280.00" y2="408.25" stroke="#ff8000" stroke-width="3" />
-    <path d="M 280.00 415.00 L 275.50 406.00 L 280.00 408.25 L 284.50 406.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="280" y="386" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#ff8000">
-      <title>then followed by</title>then...
-    </text>
+    <g class="edge" data-edge-idx="0" data-edge-base="leadsto" data-edge-from="7" data-edge-to="1">
+    <line x1="100.00" y1="225.00" x2="100.00" y2="268.25" stroke="#ff8000" stroke-width="3" />
+    <path d="M 100.00 275.00 L 95.50 266.00 L 100.00 268.25 L 104.50 266.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="1" data-edge-base="leadsto" data-edge-from="4" data-edge-to="9">
-    <line x1="280.00" y1="765.00" x2="280.00" y2="788.25" stroke="#ff8000" stroke-width="3" />
-    <path d="M 280.00 795.00 L 275.50 786.00 L 280.00 788.25 L 284.50 786.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
+    <g class="edge" data-edge-idx="1" data-edge-base="leadsto" data-edge-from="1" data-edge-to="6">
+    <line x1="100.00" y1="365.00" x2="100.00" y2="408.25" stroke="#ff8000" stroke-width="3" />
+    <path d="M 100.00 415.00 L 95.50 406.00 L 100.00 408.25 L 104.50 406.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="2" data-edge-base="leadsto" data-edge-from="5" data-edge-to="4">
-    <line x1="280.00" y1="645.00" x2="280.00" y2="688.25" stroke="#ff8000" stroke-width="3" />
-    <path d="M 280.00 695.00 L 275.50 686.00 L 280.00 688.25 L 284.50 686.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="280" y="666" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#ff8000">
-      <title>then followed by</title>then...
-    </text>
+    <g class="edge" data-edge-idx="2" data-edge-base="leadsto" data-edge-from="6" data-edge-to="5">
+    <line x1="100.00" y1="485.00" x2="100.00" y2="528.25" stroke="#ff8000" stroke-width="3" />
+    <path d="M 100.00 535.00 L 95.50 526.00 L 100.00 528.25 L 104.50 526.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="3" data-edge-base="expresses" data-edge-from="6" data-edge-to="2">
-    <line x1="345.00" y1="450.00" x2="388.25" y2="450.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 395.00 450.00 L 386.00 454.50 L 388.25 450.00 L 386.00 445.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="366" y="450" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
-      <title>pending question</title>pend...
-    </text>
+    <g class="edge" data-edge-idx="3" data-edge-base="expresses" data-edge-from="6" data-edge-to="3">
+    <line x1="165.00" y1="435.00" x2="208.25" y2="435.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 215.00 435.00 L 206.00 439.50 L 208.25 435.00 L 206.00 430.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="4" data-edge-base="expresses" data-edge-from="6" data-edge-to="3">
-    <line x1="215.00" y1="450.00" x2="171.75" y2="450.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 165.00 450.00 L 174.00 445.50 L 171.75 450.00 L 174.00 454.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="193" y="450" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
-      <title>pending question</title>pend...
-    </text>
+    <g class="edge" data-edge-idx="4" data-edge-base="expresses" data-edge-from="6" data-edge-to="2">
+    <line x1="165.00" y1="469.58" x2="210.02" y2="510.86" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 215.00 515.42 L 205.32 512.65 L 210.02 510.86 L 211.41 506.02 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="5" data-edge-base="leadsto" data-edge-from="6" data-edge-to="5">
-    <line x1="280.00" y1="485.00" x2="280.00" y2="528.25" stroke="#ff8000" stroke-width="3" />
-    <path d="M 280.00 535.00 L 275.50 526.00 L 280.00 528.25 L 284.50 526.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="280" y="506" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#ff8000">
-      <title>then followed by</title>then...
-    </text>
+    <g class="edge" data-edge-idx="5" data-edge-base="leadsto" data-edge-from="5" data-edge-to="4">
+    <line x1="100.00" y1="645.00" x2="100.00" y2="688.25" stroke="#ff8000" stroke-width="3" />
+    <path d="M 100.00 695.00 L 95.50 686.00 L 100.00 688.25 L 104.50 686.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="6" data-edge-base="leadsto" data-edge-from="7" data-edge-to="1">
-    <line x1="280.00" y1="225.00" x2="280.00" y2="268.25" stroke="#ff8000" stroke-width="3" />
-    <path d="M 280.00 275.00 L 275.50 266.00 L 280.00 268.25 L 284.50 266.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="280" y="246" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#ff8000">
-      <title>then followed by</title>then...
-    </text>
+    <g class="edge" data-edge-idx="6" data-edge-base="leadsto" data-edge-from="8" data-edge-to="7">
+    <line x1="100.00" y1="85.00" x2="100.00" y2="108.25" stroke="#ff8000" stroke-width="3" />
+    <path d="M 100.00 115.00 L 95.50 106.00 L 100.00 108.25 L 104.50 106.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="7" data-edge-base="leadsto" data-edge-from="8" data-edge-to="7">
-    <line x1="280.00" y1="85.00" x2="280.00" y2="108.25" stroke="#ff8000" stroke-width="3" />
-    <path d="M 280.00 115.00 L 275.50 106.00 L 280.00 108.25 L 284.50 106.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
+    <g class="edge" data-edge-idx="7" data-edge-base="leadsto" data-edge-from="4" data-edge-to="9">
+    <line x1="100.00" y1="765.00" x2="100.00" y2="788.25" stroke="#ff8000" stroke-width="3" />
+    <path d="M 100.00 795.00 L 95.50 786.00 L 100.00 788.25 L 104.50 786.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
   </g>
   <g id="nodes">
-    <rect x="220" y="280" width="120" height="80" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
-    <text x="280" y="295" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">Events in a</text>
-    <text x="280" y="312" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">process are</text>
-    <text x="280" y="328" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">like places we</text>
-    <text x="280" y="345" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">visit</text>
-    <rect x="400" y="420" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="#9e9e9e" stroke-width="2" stroke-dasharray="6 4"/>
-    <text x="460" y="431" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">How do we</text>
-    <text x="460" y="450" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">join the</text>
-    <text x="460" y="469" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">dots?</text>
-    <rect x="488" y="463" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="494.0" y="469.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
-    <rect x="503" y="463" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
-    <text x="509.0" y="469.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
-    <rect x="40" y="400" width="120" height="100" rx="6" ry="6" fill="#ececec" stroke="#9e9e9e" stroke-width="2" stroke-dasharray="6 4"/>
-    <text x="100" y="425" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Is tech an</text>
-    <text x="100" y="442" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">accelerator or</text>
-    <text x="100" y="458" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">an obstacle to</text>
-    <text x="100" y="475" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">learning?</text>
-    <rect x="128" y="483" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="134.0" y="489.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
-    <rect x="143" y="483" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
-    <text x="149.0" y="489.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
-    <rect x="220" y="700" width="120" height="60" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
-    <text x="280" y="730" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">Map it out!</text>
+    <rect x="40" y="280" width="120" height="80" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
+    <text x="100" y="295" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">Events in a</text>
+    <text x="100" y="312" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">process are</text>
+    <text x="100" y="328" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">like places we</text>
+    <text x="100" y="345" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">visit</text>
+    <rect x="220" y="490" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="220" y="490" width="120" height="60" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 4 6 14" stroke-dashoffset="0"/>
+    <rect x="220" y="490" width="120" height="60" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 24" stroke-dashoffset="-20"/>
+    <text x="280" y="501" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">How do we</text>
+    <text x="280" y="520" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">join the</text>
+    <text x="280" y="539" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">dots?</text>
+    <rect x="308" y="533" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+    <text x="314.0" y="539.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+    <rect x="323" y="533" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="329.0" y="539.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="220" y="350" width="120" height="100" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="220" y="350" width="120" height="100" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 4 6 14" stroke-dashoffset="0"/>
+    <rect x="220" y="350" width="120" height="100" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 24" stroke-dashoffset="-20"/>
+    <text x="280" y="375" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Is tech an</text>
+    <text x="280" y="392" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">accelerator or</text>
+    <text x="280" y="408" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">an obstacle to</text>
+    <text x="280" y="425" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">learning?</text>
+    <rect x="308" y="433" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+    <text x="314.0" y="439.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+    <rect x="323" y="433" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="329.0" y="439.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="40" y="700" width="120" height="60" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
+    <text x="100" y="730" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">Map it out!</text>
     <g>
       <title>Play with your food, Wednesday!</title>
-    <rect x="220" y="540" width="120" height="100" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
-    <text x="280" y="565" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">Play is</text>
-    <text x="280" y="582" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">associated</text>
-    <text x="280" y="598" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">with planning</text>
-    <text x="280" y="615" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">and thinking</text>
+    <rect x="40" y="540" width="120" height="100" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
+    <text x="100" y="565" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">Play is</text>
+    <text x="100" y="582" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">associated</text>
+    <text x="100" y="598" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">with planning</text>
+    <text x="100" y="615" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">and thinking</text>
     </g>
     <g>
       <title>Databases don&#39;t reflect that structure usually</title>
-    <rect x="220" y="420" width="120" height="60" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
-    <text x="280" y="440" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">Stick it in</text>
-    <text x="280" y="460" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">a Database</text>
+    <rect x="40" y="420" width="120" height="60" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
+    <text x="100" y="440" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">Stick it in</text>
+    <text x="100" y="460" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">a Database</text>
     </g>
-    <rect x="220" y="120" width="120" height="100" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
-    <text x="280" y="145" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">Thinking is a</text>
-    <text x="280" y="162" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">spacetime</text>
-    <text x="280" y="178" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">process, a map</text>
-    <text x="280" y="195" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">of events</text>
-    <rect x="260" y="40" width="40" height="40" rx="4" ry="4" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
-    <text x="280" y="60" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">S</text>
-    <rect x="260" y="800" width="40" height="40" rx="4" ry="4" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
-    <text x="280" y="820" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">E</text>
+    <rect x="40" y="120" width="120" height="100" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
+    <text x="100" y="145" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">Thinking is a</text>
+    <text x="100" y="162" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">spacetime</text>
+    <text x="100" y="178" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">process, a map</text>
+    <text x="100" y="195" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">of events</text>
+    <rect x="80" y="40" width="40" height="40" rx="4" ry="4" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
+    <text x="100" y="60" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">S</text>
+    <rect x="80" y="800" width="40" height="40" rx="4" ry="4" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
+    <text x="100" y="820" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">E</text>
   </g>
 </svg>

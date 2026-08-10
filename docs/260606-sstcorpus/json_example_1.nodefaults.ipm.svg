@@ -1,413 +1,492 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1580" height="1413" viewBox="0 0 1580 1413">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="2080" viewBox="0 0 1000 2080">
   <defs>
   </defs>
   <g id="container-shells">
   </g>
   <g id="node-shadows">
-    <rect x="220" y="645" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="400" y="985" width="120" height="140" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="400" y="1165" width="120" height="80" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="220" y="120" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="220" y="220" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="220" y="320" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="220" y="420" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="220" y="720" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="220" y="820" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="220" y="920" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="940" y="726" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="940" y="626" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="220" y="570" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="580" y="795" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="620" y="40" width="40" height="40" rx="4" ry="4" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="620" y="1333" width="40" height="40" rx="4" ry="4" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="1220" y="526" width="40" height="40" rx="4" ry="4" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="1220" y="846" width="40" height="40" rx="4" ry="4" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="220" y="1233" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="220" y="990" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="1420" y="626" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="1420" y="726" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="400" y="405" width="120" height="260" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="400" y="705" width="120" height="240" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="1120" y="606" width="240" height="200" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="120" y="330" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="840" y="840" width="120" height="140" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="240" y="790" width="240" height="240" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="120" y="1130" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="120" y="630" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="120" y="430" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="120" y="530" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="120" y="220" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="80" y="700" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="120" y="1200" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="840" y="1770" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="840" y="1670" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="120" y="1045" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="540" y="770" width="240" height="280" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="640" y="1460" width="40" height="40" rx="4" ry="4" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="640" y="2000" width="40" height="40" rx="4" ry="4" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="640" y="40" width="40" height="40" rx="4" ry="4" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="640" y="1300" width="40" height="40" rx="4" ry="4" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="840" y="1020" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="120" y="120" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="840" y="1870" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="840" y="1570" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="300" y="470" width="120" height="280" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="300" y="170" width="120" height="260" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="540" y="1540" width="240" height="420" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
   </g>
   <g id="edges">
-    <g class="edge" data-edge-idx="0" data-edge-base="expresses" data-edge-from="10" data-edge-to="1">
-      <line class="edge-ghost" x1="360.00" y1="1007.00" x2="392.00" y2="695.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+    <g class="edge" data-edge-idx="0" data-edge-base="expresses" data-edge-from="10" data-edge-to="4">
+      <line class="edge-ghost" x1="876.00" y1="810.00" x2="204.00" y2="200.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
-        <line x1="360.00" y1="1007.00" x2="392.00" y2="695.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="376" y="851" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
-      <title>has page number</title>has...
-    </text>
+        <line x1="876.00" y1="810.00" x2="204.00" y2="200.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
       </g>
       <g class="edge-stub" data-stub-end="source">
-        <line x1="400.00" y1="1007.00" x2="360.00" y2="1007.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <g class="edge-badge"><title>Expresses (has page number): Partial json element -- &#34; metadata&#34;: {
+        <line x1="876.00" y1="835.00" x2="876.00" y2="810.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <g class="edge-badge"><title>Expresses: Partial json element -- &#34; metadata&#34;: {
       &#34;total&#34;: 2,
       &#34;page&#34;: 1,
       &#34;limit&#34;: 10
-    } → 1</title><rect x="353.00" y="1000.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="360.00" y="1007.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
+    } → 2</title><rect x="869.00" y="803.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="876.00" y="810.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
       </g>
       <g class="edge-stub" data-stub-end="target">
-        <line x1="392.00" y1="695.00" x2="346.75" y2="695.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 340.00 695.00 L 349.00 690.50 L 346.75 695.00 L 349.00 699.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has page number): Partial json element -- &#34; metadata&#34;: {
+        <line x1="204.00" y1="200.00" x2="204.00" y2="191.75" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 204.00 185.00 L 208.50 194.00 L 204.00 191.75 L 199.50 194.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses: Partial json element -- &#34; metadata&#34;: {
       &#34;total&#34;: 2,
       &#34;page&#34;: 1,
       &#34;limit&#34;: 10
-    } → 1</title><rect x="385.00" y="688.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="392.00" y="695.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">1</text></g>
+    } → 2</title><rect x="197.00" y="193.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="204.00" y="200.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
       </g>
     </g>
-    <g class="edge" data-edge-idx="1" data-edge-base="expresses" data-edge-from="10" data-edge-to="3">
-    <line x1="395.36" y1="1080.31" x2="346.60" y2="1241.23" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 344.64 1247.69 L 342.94 1237.77 L 346.60 1241.23 L 351.56 1240.38 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="370" y="1160" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
-      <title>has a limit of</title>has...
-    </text>
+    <g class="edge" data-edge-idx="1" data-edge-base="expresses" data-edge-from="10" data-edge-to="1">
+      <line class="edge-ghost" x1="810.00" y1="882.00" x2="90.00" y2="372.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <g class="edge-full" opacity="0">
+        <line x1="810.00" y1="882.00" x2="90.00" y2="372.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+      </g>
+      <g class="edge-stub" data-stub-end="source">
+        <line x1="835.00" y1="882.00" x2="810.00" y2="882.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <g class="edge-badge"><title>Expresses: Partial json element -- &#34; metadata&#34;: {
+      &#34;total&#34;: 2,
+      &#34;page&#34;: 1,
+      &#34;limit&#34;: 10
+    } → 1</title><rect x="803.00" y="875.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="810.00" y="882.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
+      </g>
+      <g class="edge-stub" data-stub-end="target">
+        <line x1="90.00" y1="372.00" x2="108.25" y2="372.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 115.00 372.00 L 106.00 376.50 L 108.25 372.00 L 106.00 367.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses: Partial json element -- &#34; metadata&#34;: {
+      &#34;total&#34;: 2,
+      &#34;page&#34;: 1,
+      &#34;limit&#34;: 10
+    } → 1</title><rect x="83.00" y="365.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="90.00" y="372.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">3</text></g>
+      </g>
     </g>
-    <g class="edge" data-edge-idx="2" data-edge-base="expresses" data-edge-from="10" data-edge-to="4">
-    <line x1="395.00" y1="1020.00" x2="351.75" y2="1020.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 345.00 1020.00 L 354.00 1015.50 L 351.75 1020.00 L 354.00 1024.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="373" y="1020" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
-      <title>has total value</title>has...
-    </text>
+    <g class="edge" data-edge-idx="2" data-edge-base="expresses" data-edge-from="10" data-edge-to="3">
+    <line x1="900.00" y1="985.00" x2="900.00" y2="1008.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 900.00 1015.00 L 895.50 1006.00 L 900.00 1008.25 L 904.50 1006.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="3" data-edge-base="partof" data-edge-from="11" data-edge-to="21">
-    <line x1="522.55" y1="1189.21" x2="576.37" y2="856.46" stroke="#82b366" stroke-width="3" />
-    <path d="M 577.45 849.79 L 580.45 859.40 L 576.37 856.46 L 571.57 857.96 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <g class="edge" data-edge-idx="3" data-edge-base="expresses" data-edge-from="7" data-edge-to="1">
+    <line x1="348.75" y1="465.00" x2="197.42" y2="397.74" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 191.25 395.00 L 201.30 394.54 L 197.42 397.74 L 197.65 402.77 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="4" data-edge-base="expresses" data-edge-from="21" data-edge-to="10">
-    <line x1="576.10" y1="831.52" x2="525.54" y2="1032.93" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 523.90 1039.48 L 521.72 1029.66 L 525.54 1032.93 L 530.45 1031.85 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="550" y="931" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
-      <title>has metadata</title>has...
-    </text>
+    <g class="edge" data-edge-idx="4" data-edge-base="expresses" data-edge-from="7" data-edge-to="14">
+    <line x1="295.00" y1="533.33" x2="249.05" y2="472.07" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 245.00 466.67 L 254.00 471.17 L 249.05 472.07 L 246.80 476.57 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="5" data-edge-base="leadsto" data-edge-from="21" data-edge-to="23">
-    <line x1="640.00" y1="860.00" x2="640.00" y2="1321.25" stroke="#ff8000" stroke-width="3" />
-    <path d="M 640.00 1328.00 L 635.50 1319.00 L 640.00 1321.25 L 644.50 1319.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
+    <g class="edge" data-edge-idx="5" data-edge-base="expresses" data-edge-from="7" data-edge-to="15">
+    <line x1="295.00" y1="605.83" x2="250.19" y2="568.49" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 245.00 564.17 L 254.79 566.47 L 250.19 568.49 L 249.03 573.39 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="6" data-edge-base="leadsto" data-edge-from="22" data-edge-to="21">
-    <line x1="640.00" y1="85.00" x2="640.00" y2="783.25" stroke="#ff8000" stroke-width="3" />
-    <path d="M 640.00 790.00 L 635.50 781.00 L 640.00 783.25 L 644.50 781.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
+    <g class="edge" data-edge-idx="6" data-edge-base="expresses" data-edge-from="7" data-edge-to="13">
+    <line x1="295.00" y1="680.00" x2="251.75" y2="680.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 245.00 680.00 L 254.00 675.50 L 251.75 680.00 L 254.00 684.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="7" data-edge-base="leadsto" data-edge-from="24" data-edge-to="9">
-    <line x1="1240.00" y1="571.00" x2="1240.00" y2="594.25" stroke="#ff8000" stroke-width="3" />
-    <path d="M 1240.00 601.00 L 1235.50 592.00 L 1240.00 594.25 L 1244.50 592.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
+    <g class="edge" data-edge-idx="7" data-edge-base="expresses" data-edge-from="7" data-edge-to="20">
+    <polyline points="425.00,567.12 460,603 460,1033 251.65,1069.94" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 245.00 1071.11 L 253.08 1065.11 L 251.65 1069.94 L 254.65 1073.97 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="8" data-edge-base="expresses" data-edge-from="7" data-edge-to="1">
-    <line x1="395.00" y1="655.00" x2="351.75" y2="655.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 345.00 655.00 L 354.00 650.50 L 351.75 655.00 L 354.00 659.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="373" y="655" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">has id</text>
+    <g class="edge" data-edge-idx="8" data-edge-base="expresses" data-edge-from="7" data-edge-to="12">
+    <polyline points="425.00,660.42 480,698 480,1105 251.66,1143.06" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 245.00 1144.17 L 253.14 1138.25 L 251.66 1143.06 L 254.62 1147.13 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="9" data-edge-base="partof" data-edge-from="7" data-edge-to="11">
-    <polyline points="459.82,670.00 550,675 550,975 530,1135 448.67,1158.15" fill="none" stroke="#82b366" stroke-width="3" />
-    <path d="M 442.18 1160.00 L 449.60 1153.21 L 448.67 1158.15 L 452.07 1161.86 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <g class="edge" data-edge-idx="9" data-edge-base="expresses" data-edge-from="8" data-edge-to="4">
+    <line x1="295.00" y1="227.92" x2="248.89" y2="162.60" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 245.00 157.08 L 253.87 161.84 L 248.89 162.60 L 246.51 167.03 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="10" data-edge-base="expresses" data-edge-from="7" data-edge-to="12">
-    <line x1="396.70" y1="419.34" x2="344.69" y2="172.26" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 343.30 165.66 L 349.55 173.54 L 344.69 172.26 L 340.75 175.39 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="370" y="295" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
-      <title>has status</title>has...
-    </text>
+    <g class="edge" data-edge-idx="10" data-edge-base="expresses" data-edge-from="8" data-edge-to="16">
+    <line x1="295.00" y1="355.42" x2="248.12" y2="265.57" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 245.00 259.58 L 253.15 265.48 L 248.12 265.57 L 245.17 269.64 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="11" data-edge-base="expresses" data-edge-from="7" data-edge-to="13">
-    <line x1="395.18" y1="424.74" x2="346.85" y2="271.69" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 344.82 265.26 L 351.82 272.48 L 346.85 271.69 L 343.24 275.19 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="370" y="347" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
-      <title>has a role</title>has...
-    </text>
+    <g class="edge" data-edge-idx="11" data-edge-base="expresses" data-edge-from="8" data-edge-to="17">
+    <polyline points="295.00,398.79 40,439 40,675 70.23,705.23" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 75.00 710.00 L 65.45 706.82 L 70.23 705.23 L 71.82 700.45 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="12" data-edge-base="expresses" data-edge-from="7" data-edge-to="14">
-    <line x1="395.00" y1="437.08" x2="348.60" y2="363.62" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 345.00 357.92 L 353.61 363.12 L 348.60 363.62 L 346.00 367.93 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="371" y="400" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
-      <title>has username</title>has...
-    </text>
+    <g class="edge" data-edge-idx="12" data-edge-base="expresses" data-edge-from="8" data-edge-to="20">
+      <line class="edge-ghost" x1="384.00" y1="450.00" x2="204.00" y2="1015.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
+      <g class="edge-full" opacity="0">
+        <line x1="384.00" y1="450.00" x2="204.00" y2="1015.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+      </g>
+      <g class="edge-stub" data-stub-end="source">
+        <line x1="384.00" y1="435.00" x2="384.00" y2="450.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+        <g class="edge-badge"><title>Expresses: Instance of a users array {
+        &#34;id&#34;: 2,
+        &#34;username&#34;: &#34;bob&#34;,
+        &#34;email&#34;: &#34;bob@example.com&#34;,
+        &#34;active&#34;: false,
+        &#34;roles&#34;: [&#34;user&#34;]
+      } → user</title><rect x="377.00" y="443.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="384.00" y="450.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">4</text></g>
+      </g>
+      <g class="edge-stub" data-stub-end="target">
+        <line x1="204.00" y1="1015.00" x2="204.00" y2="1033.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 204.00 1040.00 L 199.50 1031.00 L 204.00 1033.25 L 208.50 1031.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+        <g class="edge-badge"><title>Expresses: Instance of a users array {
+        &#34;id&#34;: 2,
+        &#34;username&#34;: &#34;bob&#34;,
+        &#34;email&#34;: &#34;bob@example.com&#34;,
+        &#34;active&#34;: false,
+        &#34;roles&#34;: [&#34;user&#34;]
+      } → user</title><rect x="197.00" y="1008.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="204.00" y="1015.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">4</text></g>
+      </g>
     </g>
-    <g class="edge" data-edge-idx="13" data-edge-base="expresses" data-edge-from="7" data-edge-to="15">
-    <line x1="395.00" y1="450.00" x2="351.75" y2="450.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 345.00 450.00 L 354.00 445.50 L 351.75 450.00 L 354.00 454.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="373" y="450" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
-      <title>has email</title>has...
-    </text>
+    <g class="edge" data-edge-idx="13" data-edge-base="expresses" data-edge-from="8" data-edge-to="18">
+    <polyline points="425.00,346.28 510,385 510,1175 251.68,1213.27" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 245.00 1214.26 L 253.24 1208.49 L 251.68 1213.27 L 254.56 1217.39 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="14" data-edge-base="expresses" data-edge-from="7" data-edge-to="20">
-    <line x1="395.00" y1="600.00" x2="351.75" y2="600.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 345.00 600.00 L 354.00 595.50 L 351.75 600.00 L 354.00 604.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="373" y="600" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
-      <title>has a role</title>has...
-    </text>
+    <g class="edge" data-edge-idx="14" data-edge-base="partof" data-edge-from="7" data-edge-to="11">
+    <line x1="360.00" y1="755.00" x2="360.00" y2="778.25" stroke="#82b366" stroke-width="3" />
+    <path d="M 360.00 785.00 L 355.50 776.00 L 360.00 778.25 L 364.50 776.00 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="15" data-edge-base="partof" data-edge-from="8" data-edge-to="11">
-    <polyline points="460.41,950.00 530,975 530,1135 483.68,1157.09" fill="none" stroke="#82b366" stroke-width="3" />
-    <path d="M 477.59 1160.00 L 483.78 1152.06 L 483.68 1157.09 L 487.65 1160.19 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <polyline points="425.00,257.28 510,296 510,820 489.77,840.23" fill="none" stroke="#82b366" stroke-width="3" />
+    <path d="M 485.00 845.00 L 488.18 835.45 L 489.77 840.23 L 494.55 841.82 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="16" data-edge-base="expresses" data-edge-from="8" data-edge-to="16">
-    <line x1="395.00" y1="750.00" x2="351.75" y2="750.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 345.00 750.00 L 354.00 745.50 L 351.75 750.00 L 354.00 754.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="373" y="750" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
-      <title>has username</title>has...
-    </text>
+    <g class="edge" data-edge-idx="16" data-edge-base="partof" data-edge-from="11" data-edge-to="21">
+    <line x1="485.00" y1="910.00" x2="528.25" y2="910.00" stroke="#82b366" stroke-width="3" />
+    <path d="M 535.00 910.00 L 526.00 914.50 L 528.25 910.00 L 526.00 905.50 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="17" data-edge-base="expresses" data-edge-from="8" data-edge-to="17">
-    <line x1="395.00" y1="850.00" x2="351.75" y2="850.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 345.00 850.00 L 354.00 845.50 L 351.75 850.00 L 354.00 854.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="373" y="850" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
-      <title>has email</title>has...
-    </text>
+    <g class="edge" data-edge-idx="17" data-edge-base="expresses" data-edge-from="21" data-edge-to="10">
+    <line x1="785.00" y1="910.00" x2="828.25" y2="910.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 835.00 910.00 L 826.00 914.50 L 828.25 910.00 L 826.00 905.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="18" data-edge-base="expresses" data-edge-from="8" data-edge-to="18">
-    <line x1="395.00" y1="932.00" x2="351.75" y2="932.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 345.00 932.00 L 354.00 927.50 L 351.75 932.00 L 354.00 936.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="373" y="932" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
-      <title>has status</title>has...
-    </text>
+    <g class="edge" data-edge-idx="18" data-edge-base="expresses" data-edge-from="9" data-edge-to="6">
+    <line x1="785.00" y1="1624.00" x2="828.25" y2="1624.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 835.00 1624.00 L 826.00 1628.50 L 828.25 1624.00 L 826.00 1619.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="19" data-edge-base="expresses" data-edge-from="8" data-edge-to="20">
-    <line x1="395.00" y1="728.42" x2="347.88" y2="628.69" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 345.00 622.58 L 352.91 628.80 L 347.88 628.69 L 344.78 632.64 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="371" y="678" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
-      <title>has a role</title>has...
-    </text>
+    <g class="edge" data-edge-idx="19" data-edge-base="expresses" data-edge-from="9" data-edge-to="2">
+    <line x1="785.00" y1="1708.00" x2="828.25" y2="1708.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 835.00 1708.00 L 826.00 1712.50 L 828.25 1708.00 L 826.00 1703.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="20" data-edge-base="expresses" data-edge-from="8" data-edge-to="4">
-    <line x1="395.00" y1="932.83" x2="348.99" y2="995.72" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 345.00 1001.17 L 346.68 991.25 L 348.99 995.72 L 353.95 996.56 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="371" y="963" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">has id</text>
+    <g class="edge" data-edge-idx="20" data-edge-base="expresses" data-edge-from="9" data-edge-to="19">
+    <line x1="785.00" y1="1792.00" x2="828.25" y2="1792.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 835.00 1792.00 L 826.00 1796.50 L 828.25 1792.00 L 826.00 1787.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="21" data-edge-base="expresses" data-edge-from="9" data-edge-to="19">
-    <line x1="1115.00" y1="756.00" x2="1071.75" y2="756.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 1065.00 756.00 L 1074.00 751.50 L 1071.75 756.00 L 1074.00 760.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="1093" y="756" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
-      <title>has status</title>has...
-    </text>
+    <g class="edge" data-edge-idx="21" data-edge-base="expresses" data-edge-from="9" data-edge-to="5">
+    <line x1="785.00" y1="1876.00" x2="828.25" y2="1876.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 835.00 1876.00 L 826.00 1880.50 L 828.25 1876.00 L 826.00 1871.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="22" data-edge-base="expresses" data-edge-from="9" data-edge-to="2">
-    <line x1="1115.00" y1="656.00" x2="1071.75" y2="656.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 1065.00 656.00 L 1074.00 651.50 L 1071.75 656.00 L 1074.00 660.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="1093" y="656" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
-      <title>has version</title>has...
-    </text>
+    <g class="edge" data-edge-idx="22" data-edge-base="expresses" data-edge-from="9" data-edge-to="21">
+    <line x1="600.00" y1="1535.00" x2="600.00" y2="1061.75" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 600.00 1055.00 L 604.50 1064.00 L 600.00 1061.75 L 595.50 1064.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="23" data-edge-base="expresses" data-edge-from="9" data-edge-to="21">
-      <line class="edge-ghost" x1="1080.00" y1="774.00" x2="740.00" y2="804.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
-      <g class="edge-full" opacity="0">
-        <line x1="1080.00" y1="774.00" x2="740.00" y2="804.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <text x="910" y="789" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
-      <title>has data</title>has...
-    </text>
-      </g>
-      <g class="edge-stub" data-stub-end="source">
-        <line x1="1120.00" y1="774.00" x2="1080.00" y2="774.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-        <g class="edge-badge"><title>Expresses (has data): &#34;My json object representation is an EVENT {\n   \&#34;name\&#34;: \&#34;Example API Response\&#34;,\n   \&#34;version\&#34;: \&#34;1.0.0\&#34;,\n   \&#34;status\&#34;: \&#34;success\&#34;,\n\n   \&#34;data\&#34;: {\n\n      \&#34;users\&#34;: → &#34;{ \&#34;users\&#34;:</title><rect x="1073.00" y="767.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="1080.00" y="774.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
-      </g>
-      <g class="edge-stub" data-stub-end="target">
-        <line x1="740.00" y1="804.00" x2="706.75" y2="804.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 700.00 804.00 L 709.00 799.50 L 706.75 804.00 L 709.00 808.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-        <g class="edge-badge"><title>Expresses (has data): &#34;My json object representation is an EVENT {\n   \&#34;name\&#34;: \&#34;Example API Response\&#34;,\n   \&#34;version\&#34;: \&#34;1.0.0\&#34;,\n   \&#34;status\&#34;: \&#34;success\&#34;,\n\n   \&#34;data\&#34;: {\n\n      \&#34;users\&#34;: → &#34;{ \&#34;users\&#34;:</title><rect x="733.00" y="797.00" width="14.00" height="14.00" rx="3" fill="#ffffff" stroke="#6c8ebf" stroke-width="1.5" /><text x="740.00" y="804.00" text-anchor="middle" dominant-baseline="central" font-size="11" font-family="Helvetica,Arial,sans-serif" fill="#6c8ebf">2</text></g>
-      </g>
+    <g class="edge" data-edge-idx="23" data-edge-base="leadsto" data-edge-from="22" data-edge-to="9">
+    <line x1="660.00" y1="1505.00" x2="660.00" y2="1528.25" stroke="#ff8000" stroke-width="3" />
+    <path d="M 660.00 1535.00 L 655.50 1526.00 L 660.00 1528.25 L 664.50 1526.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="24" data-edge-base="leadsto" data-edge-from="9" data-edge-to="25">
-    <line x1="1240.00" y1="811.00" x2="1240.00" y2="834.25" stroke="#ff8000" stroke-width="3" />
-    <path d="M 1240.00 841.00 L 1235.50 832.00 L 1240.00 834.25 L 1244.50 832.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
+    <g class="edge" data-edge-idx="24" data-edge-base="leadsto" data-edge-from="9" data-edge-to="23">
+    <line x1="660.00" y1="1965.00" x2="660.00" y2="1988.25" stroke="#ff8000" stroke-width="3" />
+    <path d="M 660.00 1995.00 L 655.50 1986.00 L 660.00 1988.25 L 664.50 1986.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="25" data-edge-base="expresses" data-edge-from="9" data-edge-to="5">
-    <line x1="1365.00" y1="656.00" x2="1408.25" y2="656.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 1415.00 656.00 L 1406.00 660.50 L 1408.25 656.00 L 1406.00 651.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="1386" y="656" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
-      <title>has timestamp</title>has...
-    </text>
+    <g class="edge" data-edge-idx="25" data-edge-base="leadsto" data-edge-from="24" data-edge-to="21">
+    <line x1="660.00" y1="85.00" x2="660.00" y2="758.25" stroke="#ff8000" stroke-width="3" />
+    <path d="M 660.00 765.00 L 655.50 756.00 L 660.00 758.25 L 664.50 756.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="26" data-edge-base="expresses" data-edge-from="9" data-edge-to="6">
-    <line x1="1365.00" y1="756.00" x2="1408.25" y2="756.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 1415.00 756.00 L 1406.00 760.50 L 1408.25 756.00 L 1406.00 751.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="1386" y="756" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
-      <title>has name</title>has...
-    </text>
+    <g class="edge" data-edge-idx="26" data-edge-base="leadsto" data-edge-from="21" data-edge-to="25">
+    <line x1="660.00" y1="1055.00" x2="660.00" y2="1288.25" stroke="#ff8000" stroke-width="3" />
+    <path d="M 660.00 1295.00 L 655.50 1286.00 L 660.00 1288.25 L 664.50 1286.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
   </g>
   <g id="nodes">
-    <rect x="220" y="645" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="#9e9e9e" stroke-width="2" stroke-dasharray="6 4"/>
-    <text x="280" y="675" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">1</text>
-    <rect x="308" y="688" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="314.0" y="694.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
-    <rect x="323" y="688" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
-    <text x="329.0" y="694.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
-    <rect x="400" y="985" width="120" height="140" rx="6" ry="6" fill="#ececec" stroke="#9e9e9e" stroke-width="2" stroke-dasharray="6 4"/>
-    <text x="460" y="971" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Partial json</text>
-    <text x="460" y="988" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">element --</text>
-    <text x="460" y="1005" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;</text>
-    <text x="460" y="1021" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">metadata&#34;:</text>
-    <text x="460" y="1038" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">{</text>
-    <text x="460" y="1055" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;total&#34;:</text>
-    <text x="460" y="1072" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">2,</text>
-    <text x="460" y="1089" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;page&#34;:</text>
-    <text x="460" y="1105" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">1,</text>
-    <text x="460" y="1122" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;limit&#34;:</text>
-    <text x="460" y="1139" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">10 }</text>
-    <rect x="488" y="1108" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="494.0" y="1114.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
-    <rect x="503" y="1108" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
-    <text x="509.0" y="1114.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
-    <rect x="400" y="1165" width="120" height="80" rx="6" ry="6" fill="#ececec" stroke="#9e9e9e" stroke-width="2" stroke-dasharray="6 4"/>
-    <text x="460" y="1171" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;Partial</text>
-    <text x="460" y="1188" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">json element</text>
-    <text x="460" y="1205" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">--</text>
-    <text x="460" y="1222" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">\&#34;users\&#34;</text>
-    <text x="460" y="1239" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">:</text>
-    <rect x="488" y="1228" width="12" height="12" rx="2" ry="2" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
-    <text x="494.0" y="1234.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#009900">t</text>
-    <rect x="503" y="1228" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
-    <text x="509.0" y="1234.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
-    <rect x="220" y="120" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="#9e9e9e" stroke-width="2" stroke-dasharray="6 4"/>
-    <text x="280" y="150" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">active</text>
-    <rect x="308" y="163" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="314.0" y="169.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
-    <rect x="323" y="163" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
-    <text x="329.0" y="169.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
-    <rect x="220" y="220" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="#9e9e9e" stroke-width="2" stroke-dasharray="6 4"/>
-    <text x="280" y="250" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">admin</text>
-    <rect x="308" y="263" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="314.0" y="269.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
-    <rect x="323" y="263" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
-    <text x="329.0" y="269.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
-    <rect x="220" y="320" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="#9e9e9e" stroke-width="2" stroke-dasharray="6 4"/>
-    <text x="280" y="350" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">alice</text>
-    <rect x="308" y="363" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="314.0" y="369.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
-    <rect x="323" y="363" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
-    <text x="329.0" y="369.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
-    <rect x="220" y="420" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="#9e9e9e" stroke-width="2" stroke-dasharray="6 4"/>
-    <text x="280" y="440" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">alice@exampl</text>
-    <text x="280" y="460" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">e.com</text>
-    <rect x="308" y="463" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="314.0" y="469.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
-    <rect x="323" y="463" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
-    <text x="329.0" y="469.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
-    <rect x="220" y="720" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="#9e9e9e" stroke-width="2" stroke-dasharray="6 4"/>
-    <text x="280" y="750" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">bob</text>
-    <rect x="308" y="763" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="314.0" y="769.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
-    <rect x="323" y="763" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
-    <text x="329.0" y="769.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
-    <rect x="220" y="820" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="#9e9e9e" stroke-width="2" stroke-dasharray="6 4"/>
-    <text x="280" y="840" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">bob@example.</text>
-    <text x="280" y="860" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">com</text>
-    <rect x="308" y="863" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="314.0" y="869.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
-    <rect x="323" y="863" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
-    <text x="329.0" y="869.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
-    <rect x="220" y="920" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="#9e9e9e" stroke-width="2" stroke-dasharray="6 4"/>
-    <text x="280" y="950" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">inactive</text>
-    <rect x="308" y="963" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="314.0" y="969.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
-    <rect x="323" y="963" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
-    <text x="329.0" y="969.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
-    <rect x="940" y="726" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="#9e9e9e" stroke-width="2" stroke-dasharray="6 4"/>
-    <text x="1000" y="756" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">success</text>
-    <rect x="1028" y="769" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="1034.0" y="775.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
-    <rect x="1043" y="769" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
-    <text x="1049.0" y="775.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
-    <rect x="940" y="626" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="#9e9e9e" stroke-width="2" stroke-dasharray="6 4"/>
-    <text x="1000" y="656" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">1.0.0</text>
-    <rect x="1028" y="669" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="1034.0" y="675.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
-    <rect x="1043" y="669" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
-    <text x="1049.0" y="675.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
-    <rect x="220" y="570" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="#9e9e9e" stroke-width="2" stroke-dasharray="6 4"/>
-    <text x="280" y="600" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">user</text>
-    <rect x="308" y="613" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="314.0" y="619.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
-    <rect x="323" y="613" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
-    <text x="329.0" y="619.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
-    <rect x="580" y="795" width="120" height="60" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
-    <text x="640" y="815" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">&#34;{</text>
-    <text x="640" y="835" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">\&#34;users\&#34;:</text>
-    <rect x="620" y="40" width="40" height="40" rx="4" ry="4" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
-    <text x="640" y="60" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">S</text>
-    <rect x="620" y="1333" width="40" height="40" rx="4" ry="4" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
-    <text x="640" y="1353" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">E</text>
-    <rect x="1220" y="526" width="40" height="40" rx="4" ry="4" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
-    <text x="1240" y="546" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">S</text>
-    <rect x="1220" y="846" width="40" height="40" rx="4" ry="4" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
-    <text x="1240" y="866" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">E</text>
-    <rect x="220" y="1233" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="#9e9e9e" stroke-width="2" stroke-dasharray="6 4"/>
-    <text x="280" y="1263" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">10</text>
-    <rect x="308" y="1276" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="314.0" y="1282.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
-    <rect x="323" y="1276" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
-    <text x="329.0" y="1282.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
-    <rect x="220" y="990" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="#9e9e9e" stroke-width="2" stroke-dasharray="6 4"/>
-    <text x="280" y="1020" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">2</text>
-    <rect x="308" y="1033" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="314.0" y="1039.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
-    <rect x="323" y="1033" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
-    <text x="329.0" y="1039.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
-    <rect x="1420" y="626" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="#9e9e9e" stroke-width="2" stroke-dasharray="6 4"/>
-    <text x="1480" y="646" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">2025-10-17T1</text>
-    <text x="1480" y="666" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">4:30:00Z</text>
-    <rect x="1508" y="669" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="1514.0" y="675.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
-    <rect x="1523" y="669" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
-    <text x="1529.0" y="675.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
-    <rect x="1420" y="726" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="#9e9e9e" stroke-width="2" stroke-dasharray="6 4"/>
-    <text x="1480" y="746" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">Example API</text>
-    <text x="1480" y="766" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">Response</text>
-    <rect x="1508" y="769" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="1514.0" y="775.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
-    <rect x="1523" y="769" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
-    <text x="1529.0" y="775.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
-    <rect x="400" y="405" width="120" height="260" rx="6" ry="6" fill="#ececec" stroke="#9e9e9e" stroke-width="2" stroke-dasharray="6 4"/>
-    <text x="460" y="426" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;Instance</text>
-    <text x="460" y="443" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">of a users</text>
-    <text x="460" y="459" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">array {\n</text>
-    <text x="460" y="476" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">\&#34;id\&#34;:</text>
-    <text x="460" y="493" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">1,\n</text>
-    <text x="460" y="510" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">\&#34;username\&#34;</text>
-    <text x="460" y="527" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">:</text>
-    <text x="460" y="543" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">\&#34;alice\&#34;,\n</text>
-    <text x="460" y="560" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">\&#34;email\&#34;:</text>
-    <text x="460" y="577" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">\&#34;alice@exam</text>
-    <text x="460" y="594" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">ple.com\&#34;,\n</text>
-    <text x="460" y="611" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">\&#34;active\&#34;:</text>
-    <text x="460" y="627" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">true,\n</text>
-    <text x="460" y="644" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">\&#34;roles\&#34;:</text>
-    <rect x="488" y="648" width="12" height="12" rx="2" ry="2" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
-    <text x="494.0" y="654.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#009900">t</text>
-    <rect x="503" y="648" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
-    <text x="509.0" y="654.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
-    <rect x="400" y="705" width="120" height="240" rx="6" ry="6" fill="#ececec" stroke="#9e9e9e" stroke-width="2" stroke-dasharray="6 4"/>
-    <text x="460" y="716" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;Instance</text>
-    <text x="460" y="733" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">of a users</text>
-    <text x="460" y="749" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">array {\n</text>
-    <text x="460" y="766" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">\&#34;id\&#34;:</text>
-    <text x="460" y="783" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">2,\n</text>
-    <text x="460" y="800" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">\&#34;username\&#34;</text>
-    <text x="460" y="817" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">:</text>
-    <text x="460" y="833" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">\&#34;bob\&#34;,\n</text>
-    <text x="460" y="850" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">\&#34;email\&#34;:</text>
-    <text x="460" y="867" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">\&#34;bob@exampl</text>
-    <text x="460" y="884" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">e.com\&#34;,\n</text>
-    <text x="460" y="901" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">\&#34;active\&#34;:</text>
-    <text x="460" y="917" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">false,\n</text>
-    <text x="460" y="934" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">\&#34;roles\&#34;:</text>
-    <rect x="488" y="928" width="12" height="12" rx="2" ry="2" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
-    <text x="494.0" y="934.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#009900">t</text>
-    <rect x="503" y="928" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
-    <text x="509.0" y="934.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
-    <rect x="1120" y="606" width="240" height="200" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
-    <text x="1240" y="622" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;My json object</text>
-    <text x="1240" y="639" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">representati on is an EVENT</text>
-    <text x="1240" y="656" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">{\n \&#34;name\&#34;:</text>
-    <text x="1240" y="672" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">\&#34;Example API</text>
-    <text x="1240" y="689" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">Response\&#34;,\ n</text>
-    <text x="1240" y="706" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">\&#34;version\&#34;:</text>
-    <text x="1240" y="723" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">\&#34;1.0.0\&#34;,\n</text>
-    <text x="1240" y="740" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">\&#34;status\&#34;:</text>
-    <text x="1240" y="756" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">\&#34;success\&#34;, \n\n</text>
-    <text x="1240" y="773" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">\&#34;data\&#34;: {\n\n</text>
-    <text x="1240" y="790" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">\&#34;users\&#34;:</text>
+    <rect x="120" y="330" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="120" y="330" width="120" height="60" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 4 6 14" stroke-dashoffset="0"/>
+    <rect x="120" y="330" width="120" height="60" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 24" stroke-dashoffset="-20"/>
+    <text x="180" y="360" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">1</text>
+    <rect x="208" y="373" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+    <text x="214.0" y="379.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+    <rect x="223" y="373" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="229.0" y="379.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="840" y="840" width="120" height="140" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="840" y="840" width="120" height="140" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 4 6 14" stroke-dashoffset="0"/>
+    <rect x="840" y="840" width="120" height="140" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 24" stroke-dashoffset="-20"/>
+    <text x="900" y="826" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Partial json</text>
+    <text x="900" y="843" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">element --</text>
+    <text x="900" y="860" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;</text>
+    <text x="900" y="876" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">metadata&#34;:</text>
+    <text x="900" y="893" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">{</text>
+    <text x="900" y="910" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;total&#34</text>
+    <text x="900" y="927" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">;: 2,</text>
+    <text x="900" y="944" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;page&#34;</text>
+    <text x="900" y="960" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">: 1,</text>
+    <text x="900" y="977" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;limit&#34</text>
+    <text x="900" y="994" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">;: 10 }</text>
+    <rect x="928" y="963" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+    <text x="934.0" y="969.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+    <rect x="943" y="963" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="949.0" y="969.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="240" y="790" width="240" height="240" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="240" y="790" width="240" height="240" rx="6" ry="6" fill="none" stroke="#82b366" stroke-width="2" stroke-dasharray="6 4 6 14" stroke-dashoffset="0"/>
+    <rect x="240" y="790" width="240" height="240" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 24" stroke-dashoffset="-20"/>
+    <text x="360" y="759" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Partial json element --</text>
+    <text x="360" y="776" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;users&#34; : [ {</text>
+    <text x="360" y="792" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;id&#34;: 1,</text>
+    <text x="360" y="809" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;username&#34;:</text>
+    <text x="360" y="826" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;alice&#34;,</text>
+    <text x="360" y="843" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;email&#34;:</text>
+    <text x="360" y="860" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;alice@example.com&#34;,</text>
+    <text x="360" y="876" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;active&#34;: true,</text>
+    <text x="360" y="893" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;roles&#34;:</text>
+    <text x="360" y="910" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">[&#34;admin&#34;,</text>
+    <text x="360" y="927" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;user&#34;] }, {</text>
+    <text x="360" y="944" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;id&#34;: 2,</text>
+    <text x="360" y="960" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;username&#34;:</text>
+    <text x="360" y="977" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;bob&#34;,</text>
+    <text x="360" y="994" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;email&#34;:</text>
+    <text x="360" y="1011" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;bob@example.com&#34;,</text>
+    <text x="360" y="1028" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;active&#34;: false,</text>
+    <text x="360" y="1044" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;roles&#34;:</text>
+    <text x="360" y="1061" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">[&#34;user&#34;] } ]</text>
+    <rect x="448" y="1013" width="12" height="12" rx="2" ry="2" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="454.0" y="1019.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#009900">t</text>
+    <rect x="463" y="1013" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="469.0" y="1019.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="120" y="1130" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="120" y="1130" width="120" height="60" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 4 6 14" stroke-dashoffset="0"/>
+    <rect x="120" y="1130" width="120" height="60" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 24" stroke-dashoffset="-20"/>
+    <text x="180" y="1160" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">active</text>
+    <rect x="208" y="1173" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+    <text x="214.0" y="1179.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+    <rect x="223" y="1173" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="229.0" y="1179.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="120" y="630" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="120" y="630" width="120" height="60" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 4 6 14" stroke-dashoffset="0"/>
+    <rect x="120" y="630" width="120" height="60" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 24" stroke-dashoffset="-20"/>
+    <text x="180" y="660" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">admin</text>
+    <rect x="208" y="673" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+    <text x="214.0" y="679.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+    <rect x="223" y="673" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="229.0" y="679.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="120" y="430" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="120" y="430" width="120" height="60" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 4 6 14" stroke-dashoffset="0"/>
+    <rect x="120" y="430" width="120" height="60" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 24" stroke-dashoffset="-20"/>
+    <text x="180" y="460" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">alice</text>
+    <rect x="208" y="473" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+    <text x="214.0" y="479.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+    <rect x="223" y="473" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="229.0" y="479.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="120" y="530" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="120" y="530" width="120" height="60" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 4 6 14" stroke-dashoffset="0"/>
+    <rect x="120" y="530" width="120" height="60" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 24" stroke-dashoffset="-20"/>
+    <text x="180" y="550" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">alice@exampl</text>
+    <text x="180" y="570" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">e.com</text>
+    <rect x="208" y="573" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+    <text x="214.0" y="579.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+    <rect x="223" y="573" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="229.0" y="579.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="120" y="220" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="120" y="220" width="120" height="60" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 4 6 14" stroke-dashoffset="0"/>
+    <rect x="120" y="220" width="120" height="60" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 24" stroke-dashoffset="-20"/>
+    <text x="180" y="250" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">bob</text>
+    <rect x="208" y="263" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+    <text x="214.0" y="269.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+    <rect x="223" y="263" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="229.0" y="269.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="80" y="700" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="80" y="700" width="120" height="60" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 4 6 14" stroke-dashoffset="0"/>
+    <rect x="80" y="700" width="120" height="60" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 24" stroke-dashoffset="-20"/>
+    <text x="140" y="720" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">bob@example.</text>
+    <text x="140" y="740" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">com</text>
+    <rect x="168" y="743" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+    <text x="174.0" y="749.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+    <rect x="183" y="743" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="189.0" y="749.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="120" y="1200" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="120" y="1200" width="120" height="60" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 4 6 14" stroke-dashoffset="0"/>
+    <rect x="120" y="1200" width="120" height="60" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 24" stroke-dashoffset="-20"/>
+    <text x="180" y="1230" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">inactive</text>
+    <rect x="208" y="1243" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+    <text x="214.0" y="1249.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+    <rect x="223" y="1243" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="229.0" y="1249.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="840" y="1770" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="840" y="1770" width="120" height="60" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 4 6 14" stroke-dashoffset="0"/>
+    <rect x="840" y="1770" width="120" height="60" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 24" stroke-dashoffset="-20"/>
+    <text x="900" y="1800" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">success</text>
+    <rect x="928" y="1813" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+    <text x="934.0" y="1819.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+    <rect x="943" y="1813" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="949.0" y="1819.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="840" y="1670" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="840" y="1670" width="120" height="60" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 4 6 14" stroke-dashoffset="0"/>
+    <rect x="840" y="1670" width="120" height="60" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 24" stroke-dashoffset="-20"/>
+    <text x="900" y="1700" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">1.0.0</text>
+    <rect x="928" y="1713" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+    <text x="934.0" y="1719.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+    <rect x="943" y="1713" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="949.0" y="1719.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="120" y="1045" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="120" y="1045" width="120" height="60" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 4 6 14" stroke-dashoffset="0"/>
+    <rect x="120" y="1045" width="120" height="60" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 24" stroke-dashoffset="-20"/>
+    <text x="180" y="1075" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">user</text>
+    <rect x="208" y="1088" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+    <text x="214.0" y="1094.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+    <rect x="223" y="1088" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="229.0" y="1094.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="540" y="770" width="240" height="280" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
+    <text x="660" y="734" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">{ &#34;users&#34;: [ {</text>
+    <text x="660" y="750" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;id&#34;: 1,</text>
+    <text x="660" y="767" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;username&#34;:</text>
+    <text x="660" y="784" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;alice&#34;,</text>
+    <text x="660" y="801" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;email&#34;:</text>
+    <text x="660" y="818" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;alice@example.com&#34;,</text>
+    <text x="660" y="834" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;active&#34;: true,</text>
+    <text x="660" y="851" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;roles&#34;:</text>
+    <text x="660" y="868" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">[&#34;admin&#34;,</text>
+    <text x="660" y="885" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;user&#34;] }, {</text>
+    <text x="660" y="902" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;id&#34;: 2,</text>
+    <text x="660" y="918" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;username&#34;:</text>
+    <text x="660" y="935" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;bob&#34;,</text>
+    <text x="660" y="952" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;email&#34;:</text>
+    <text x="660" y="969" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;bob@example.com&#34;,</text>
+    <text x="660" y="986" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;active&#34;: false,</text>
+    <text x="660" y="1002" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;roles&#34;:</text>
+    <text x="660" y="1019" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">[&#34;user&#34;] } ],</text>
+    <text x="660" y="1036" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;metadata&#34;: {</text>
+    <text x="660" y="1053" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;total&#34;: 2,</text>
+    <text x="660" y="1070" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;page&#34;: 1,</text>
+    <text x="660" y="1086" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;limit&#34;: 10 } }</text>
+    <rect x="640" y="1460" width="40" height="40" rx="4" ry="4" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
+    <text x="660" y="1480" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">S</text>
+    <rect x="640" y="2000" width="40" height="40" rx="4" ry="4" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
+    <text x="660" y="2020" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">E</text>
+    <rect x="640" y="40" width="40" height="40" rx="4" ry="4" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
+    <text x="660" y="60" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">S</text>
+    <rect x="640" y="1300" width="40" height="40" rx="4" ry="4" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
+    <text x="660" y="1320" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">E</text>
+    <rect x="840" y="1020" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="840" y="1020" width="120" height="60" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 4 6 14" stroke-dashoffset="0"/>
+    <rect x="840" y="1020" width="120" height="60" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 24" stroke-dashoffset="-20"/>
+    <text x="900" y="1050" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">10</text>
+    <rect x="928" y="1063" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+    <text x="934.0" y="1069.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+    <rect x="943" y="1063" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="949.0" y="1069.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="120" y="120" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="120" y="120" width="120" height="60" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 4 6 14" stroke-dashoffset="0"/>
+    <rect x="120" y="120" width="120" height="60" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 24" stroke-dashoffset="-20"/>
+    <text x="180" y="150" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">2</text>
+    <rect x="208" y="163" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+    <text x="214.0" y="169.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+    <rect x="223" y="163" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="229.0" y="169.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="840" y="1870" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="840" y="1870" width="120" height="60" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 4 6 14" stroke-dashoffset="0"/>
+    <rect x="840" y="1870" width="120" height="60" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 24" stroke-dashoffset="-20"/>
+    <text x="900" y="1890" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">2025-10-</text>
+    <text x="900" y="1910" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">17T14:30:00Z</text>
+    <rect x="928" y="1913" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+    <text x="934.0" y="1919.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+    <rect x="943" y="1913" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="949.0" y="1919.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="840" y="1570" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="840" y="1570" width="120" height="60" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 4 6 14" stroke-dashoffset="0"/>
+    <rect x="840" y="1570" width="120" height="60" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 24" stroke-dashoffset="-20"/>
+    <text x="900" y="1590" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">Example API</text>
+    <text x="900" y="1610" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">Response</text>
+    <rect x="928" y="1613" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+    <text x="934.0" y="1619.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+    <rect x="943" y="1613" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="949.0" y="1619.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="300" y="470" width="120" height="280" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="300" y="470" width="120" height="280" rx="6" ry="6" fill="none" stroke="#82b366" stroke-width="2" stroke-dasharray="6 4 6 14" stroke-dashoffset="0"/>
+    <rect x="300" y="470" width="120" height="280" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 24" stroke-dashoffset="-20"/>
+    <text x="360" y="450" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Instance of a</text>
+    <text x="360" y="467" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">users array {</text>
+    <text x="360" y="484" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;id&#34;:</text>
+    <text x="360" y="501" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">1,</text>
+    <text x="360" y="518" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;username&</text>
+    <text x="360" y="534" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">#34;:</text>
+    <text x="360" y="551" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;alice&#34</text>
+    <text x="360" y="568" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">;,</text>
+    <text x="360" y="585" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;email&#34</text>
+    <text x="360" y="602" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">;:</text>
+    <text x="360" y="618" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;alice@exa</text>
+    <text x="360" y="635" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">mple.com&#34;,</text>
+    <text x="360" y="652" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;active&#3</text>
+    <text x="360" y="669" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">4;: true,</text>
+    <text x="360" y="686" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;roles&#34</text>
+    <text x="360" y="702" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">;:</text>
+    <text x="360" y="719" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">[&#34;admin&#3</text>
+    <text x="360" y="736" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">4;,</text>
+    <text x="360" y="753" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;user&#34;</text>
+    <text x="360" y="770" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">] }</text>
+    <rect x="388" y="733" width="12" height="12" rx="2" ry="2" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="394.0" y="739.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#009900">t</text>
+    <rect x="403" y="733" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="409.0" y="739.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="300" y="170" width="120" height="260" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="300" y="170" width="120" height="260" rx="6" ry="6" fill="none" stroke="#82b366" stroke-width="2" stroke-dasharray="6 4 6 14" stroke-dashoffset="0"/>
+    <rect x="300" y="170" width="120" height="260" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 24" stroke-dashoffset="-20"/>
+    <text x="360" y="166" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Instance of a</text>
+    <text x="360" y="182" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">users array {</text>
+    <text x="360" y="199" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;id&#34;:</text>
+    <text x="360" y="216" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">2,</text>
+    <text x="360" y="233" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;username&</text>
+    <text x="360" y="250" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">#34;:</text>
+    <text x="360" y="266" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;bob&#34;,</text>
+    <text x="360" y="283" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;email&#34</text>
+    <text x="360" y="300" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">;:</text>
+    <text x="360" y="317" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;bob@examp</text>
+    <text x="360" y="334" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">le.com&#34;,</text>
+    <text x="360" y="350" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;active&#3</text>
+    <text x="360" y="367" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">4;: false,</text>
+    <text x="360" y="384" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;roles&#34</text>
+    <text x="360" y="401" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">;:</text>
+    <text x="360" y="418" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">[&#34;user&#34</text>
+    <text x="360" y="434" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">;] }</text>
+    <rect x="388" y="413" width="12" height="12" rx="2" ry="2" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="394.0" y="419.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#009900">t</text>
+    <rect x="403" y="413" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="409.0" y="419.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="540" y="1540" width="240" height="420" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
+    <text x="660" y="1473" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">My json object</text>
+    <text x="660" y="1490" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">representation is an EVENT {</text>
+    <text x="660" y="1506" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;name&#34;: &#34;Example</text>
+    <text x="660" y="1523" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">API Response&#34;,</text>
+    <text x="660" y="1540" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;version&#34;:</text>
+    <text x="660" y="1557" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;1.0.0&#34;,</text>
+    <text x="660" y="1574" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;status&#34;:</text>
+    <text x="660" y="1590" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;success&#34;,</text>
+    <text x="660" y="1607" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;data&#34;: {</text>
+    <text x="660" y="1624" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;users&#34;: [ {</text>
+    <text x="660" y="1641" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;id&#34;: 1,</text>
+    <text x="660" y="1658" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;username&#34;:</text>
+    <text x="660" y="1674" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;alice&#34;,</text>
+    <text x="660" y="1691" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;email&#34;:</text>
+    <text x="660" y="1708" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;alice@example.com&#34;,</text>
+    <text x="660" y="1725" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;active&#34;: true,</text>
+    <text x="660" y="1742" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;roles&#34;:</text>
+    <text x="660" y="1758" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">[&#34;admin&#34;,</text>
+    <text x="660" y="1775" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;user&#34;] }, {</text>
+    <text x="660" y="1792" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;id&#34;: 2,</text>
+    <text x="660" y="1809" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;username&#34;:</text>
+    <text x="660" y="1826" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;bob&#34;,</text>
+    <text x="660" y="1842" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;email&#34;:</text>
+    <text x="660" y="1859" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;bob@example.com&#34;,</text>
+    <text x="660" y="1876" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;active&#34;: false,</text>
+    <text x="660" y="1893" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;roles&#34;:</text>
+    <text x="660" y="1910" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">[&#34;user&#34;] } ],</text>
+    <text x="660" y="1926" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;metadata&#34;: {</text>
+    <text x="660" y="1943" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;total&#34;: 2,</text>
+    <text x="660" y="1960" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;page&#34;: 1,</text>
+    <text x="660" y="1977" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;limit&#34;: 10 } },</text>
+    <text x="660" y="1994" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;timestamp&#34;:</text>
+    <text x="660" y="2010" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;2025-10-</text>
+    <text x="660" y="2027" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">17T14:30:00Z&#34; }</text>
   </g>
 </svg>

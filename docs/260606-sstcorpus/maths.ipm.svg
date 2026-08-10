@@ -1,213 +1,178 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="2600" height="420" viewBox="0 0 2600 420">
+<svg xmlns="http://www.w3.org/2000/svg" width="1720" height="760" viewBox="0 0 1720 760">
   <defs>
   </defs>
   <g id="container-shells">
   </g>
   <g id="node-shadows">
     <rect x="40" y="160" width="120" height="180" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="1780" y="140" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="220" y="160" width="120" height="180" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="1960" y="140" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="640" y="140" width="120" height="240" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="2200" y="140" width="120" height="80" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="2440" y="40" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="2440" y="140" width="120" height="120" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="1540" y="140" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="880" y="140" width="120" height="100" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="1120" y="140" width="120" height="100" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="460" y="140" width="120" height="100" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="2200" y="40" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="880" y="40" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="1120" y="40" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="130" y="40" width="120" height="80" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="550" y="40" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="1450" y="40" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="1360" y="140" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="1870" y="40" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="240" y="160" width="120" height="180" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="1560" y="140" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="680" y="140" width="120" height="240" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="520" y="600" width="120" height="80" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="760" y="500" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="760" y="600" width="120" height="120" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="1120" y="140" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="40" y="600" width="120" height="100" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="280" y="600" width="120" height="100" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="480" y="140" width="120" height="100" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="520" y="500" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="40" y="500" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="280" y="500" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="140" y="40" width="120" height="80" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="580" y="40" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="1020" y="40" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="920" y="140" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="1460" y="40" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
   </g>
   <g id="edges">
-    <g class="edge" data-edge-idx="0" data-edge-base="expresses" data-edge-from="15" data-edge-to="16">
-    <line x1="2500.00" y1="105.00" x2="2500.00" y2="128.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 2500.00 135.00 L 2495.50 126.00 L 2500.00 128.25 L 2504.50 126.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="2500" y="116" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
-      <title>typically denotes</title>typi...
-    </text>
+    <g class="edge" data-edge-idx="0" data-edge-base="expresses" data-edge-from="20" data-edge-to="14">
+    <line x1="580.00" y1="565.00" x2="580.00" y2="588.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 580.00 595.00 L 575.50 586.00 L 580.00 588.25 L 584.50 586.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="1" data-edge-base="expresses" data-edge-from="20" data-edge-to="14">
-    <line x1="2260.00" y1="105.00" x2="2260.00" y2="128.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 2260.00 135.00 L 2255.50 126.00 L 2260.00 128.25 L 2264.50 126.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="2260" y="116" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
-      <title>typically denotes</title>typi...
-    </text>
+    <g class="edge" data-edge-idx="1" data-edge-base="expresses" data-edge-from="15" data-edge-to="16">
+    <line x1="820.00" y1="565.00" x2="820.00" y2="588.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 820.00 595.00 L 815.50 586.00 L 820.00 588.25 L 824.50 586.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="2" data-edge-base="expresses" data-edge-from="3" data-edge-to="18">
-    <line x1="940.00" y1="105.00" x2="940.00" y2="128.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 940.00 135.00 L 935.50 126.00 L 940.00 128.25 L 944.50 126.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="940" y="116" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
-      <title>typically denotes</title>typi...
-    </text>
+    <g class="edge" data-edge-idx="2" data-edge-base="expresses" data-edge-from="4" data-edge-to="19">
+    <line x1="340.00" y1="565.00" x2="340.00" y2="588.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 340.00 595.00 L 335.50 586.00 L 340.00 588.25 L 344.50 586.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="3" data-edge-base="expresses" data-edge-from="4" data-edge-to="19">
-    <line x1="1180.00" y1="105.00" x2="1180.00" y2="128.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 1180.00 135.00 L 1175.50 126.00 L 1180.00 128.25 L 1184.50 126.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="1180" y="116" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
-      <title>typically denotes</title>typi...
-    </text>
+    <g class="edge" data-edge-idx="3" data-edge-base="expresses" data-edge-from="3" data-edge-to="18">
+    <line x1="100.00" y1="565.00" x2="100.00" y2="588.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 100.00 595.00 L 95.50 586.00 L 100.00 588.25 L 104.50 586.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="4" data-edge-base="expresses" data-edge-from="5" data-edge-to="1">
-    <line x1="163.00" y1="125.00" x2="114.90" y2="151.72" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 109.00 155.00 L 114.68 146.70 L 114.90 151.72 L 119.05 154.56 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="138" y="138" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
-      <title>has example</title>has...
-    </text>
+    <g class="edge" data-edge-idx="4" data-edge-base="expresses" data-edge-from="7" data-edge-to="17">
+    <line x1="1118.75" y1="105.00" x2="1165.39" y2="131.65" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 1171.25 135.00 L 1161.20 134.44 L 1165.39 131.65 L 1165.67 126.63 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="5" data-edge-base="expresses" data-edge-from="5" data-edge-to="11">
-    <line x1="217.00" y1="125.00" x2="265.10" y2="151.72" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 271.00 155.00 L 260.95 154.56 L 265.10 151.72 L 265.32 146.70 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="241" y="138" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
-      <title>denotes</title>deno...
-    </text>
+    <g class="edge" data-edge-idx="5" data-edge-base="expresses" data-edge-from="7" data-edge-to="8">
+    <line x1="1041.25" y1="105.00" x2="994.61" y2="131.65" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 988.75 135.00 L 994.33 126.63 L 994.61 131.65 L 998.80 134.44 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="6" data-edge-base="expresses" data-edge-from="6" data-edge-to="13">
-    <line x1="637.00" y1="105.00" x2="685.10" y2="131.72" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 691.00 135.00 L 680.95 134.56 L 685.10 131.72 L 685.32 126.70 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="661" y="118" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
-      <title>denotes</title>deno...
-    </text>
+    <g class="edge" data-edge-idx="6" data-edge-base="expresses" data-edge-from="9" data-edge-to="12">
+    <line x1="1558.75" y1="105.00" x2="1605.39" y2="131.65" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 1611.25 135.00 L 1601.20 134.44 L 1605.39 131.65 L 1605.67 126.63 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="7" data-edge-base="expresses" data-edge-from="6" data-edge-to="2">
-    <line x1="583.00" y1="105.00" x2="534.90" y2="131.72" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 529.00 135.00 L 534.68 126.70 L 534.90 131.72 L 539.05 134.56 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="558" y="118" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
-      <title>has example</title>has...
-    </text>
+    <g class="edge" data-edge-idx="7" data-edge-base="expresses" data-edge-from="9" data-edge-to="10">
+    <line x1="1481.25" y1="105.00" x2="1434.61" y2="131.65" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 1428.75 135.00 L 1434.33 126.63 L 1434.61 131.65 L 1438.80 134.44 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="8" data-edge-base="expresses" data-edge-from="7" data-edge-to="17">
-    <line x1="1537.00" y1="105.00" x2="1585.10" y2="131.72" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 1591.00 135.00 L 1580.95 134.56 L 1585.10 131.72 L 1585.32 126.70 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="1561" y="118" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
-      <title>denotes</title>deno...
-    </text>
+    <g class="edge" data-edge-idx="8" data-edge-base="expresses" data-edge-from="6" data-edge-to="13">
+    <line x1="678.75" y1="105.00" x2="725.39" y2="131.65" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 731.25 135.00 L 721.20 134.44 L 725.39 131.65 L 725.67 126.63 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="9" data-edge-base="expresses" data-edge-from="7" data-edge-to="8">
-    <line x1="1483.00" y1="105.00" x2="1434.90" y2="131.72" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 1429.00 135.00 L 1434.68 126.70 L 1434.90 131.72 L 1439.05 134.56 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="1458" y="118" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
-      <title>has example</title>has...
-    </text>
+    <g class="edge" data-edge-idx="9" data-edge-base="expresses" data-edge-from="6" data-edge-to="2">
+    <line x1="601.25" y1="105.00" x2="554.61" y2="131.65" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 548.75 135.00 L 554.33 126.63 L 554.61 131.65 L 558.80 134.44 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="10" data-edge-base="expresses" data-edge-from="9" data-edge-to="10">
-    <line x1="1903.00" y1="105.00" x2="1854.90" y2="131.72" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 1849.00 135.00 L 1854.68 126.70 L 1854.90 131.72 L 1859.05 134.56 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="1878" y="118" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
-      <title>has example</title>has...
-    </text>
+    <g class="edge" data-edge-idx="10" data-edge-base="expresses" data-edge-from="5" data-edge-to="11">
+    <line x1="238.75" y1="125.00" x2="285.39" y2="151.65" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 291.25 155.00 L 281.20 154.44 L 285.39 151.65 L 285.67 146.63 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="11" data-edge-base="expresses" data-edge-from="9" data-edge-to="12">
-    <line x1="1957.00" y1="105.00" x2="2005.10" y2="131.72" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 2011.00 135.00 L 2000.95 134.56 L 2005.10 131.72 L 2005.32 126.70 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
-    <text x="1981" y="118" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="11" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" fill="#6c8ebf">
-      <title>denotes</title>deno...
-    </text>
+    <g class="edge" data-edge-idx="11" data-edge-base="expresses" data-edge-from="5" data-edge-to="1">
+    <line x1="161.25" y1="125.00" x2="114.61" y2="151.65" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 108.75 155.00 L 114.33 146.63 L 114.61 151.65 L 118.80 154.44 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
   </g>
   <g id="nodes">
     <rect x="40" y="160" width="120" height="180" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
     <text x="100" y="200" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">\(</text>
-    <text x="100" y="216" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">\frac{\parti</text>
-    <text x="100" y="233" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">al y}{\partial</text>
-    <text x="100" y="250" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">x} ,</text>
-    <text x="100" y="267" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">\frac{\parti</text>
-    <text x="100" y="284" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">al f}{\partial</text>
-    <text x="100" y="300" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">x} \)</text>
-    <rect x="1780" y="140" width="120" height="60" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="1840" y="151" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">\( \sum_{n =</text>
-    <text x="1840" y="170" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">1}^4 n(n+1)</text>
-    <text x="1840" y="189" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">\)</text>
-    <rect x="220" y="160" width="120" height="180" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="280" y="183" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">a partial</text>
-    <text x="280" y="200" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">derivative</text>
-    <text x="280" y="216" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">operation on</text>
-    <text x="280" y="233" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">the variable</text>
-    <text x="280" y="250" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">x, i.e. a</text>
-    <text x="280" y="267" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">derivative</text>
-    <text x="280" y="284" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">along an</text>
-    <text x="280" y="300" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">exclusive</text>
-    <text x="280" y="317" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">direction</text>
-    <rect x="1960" y="140" width="120" height="60" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="2020" y="153" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">a summation</text>
-    <text x="2020" y="170" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">(addition of</text>
-    <text x="2020" y="187" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">terms)</text>
-    <rect x="640" y="140" width="120" height="240" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="700" y="176" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">a total</text>
-    <text x="700" y="193" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">derivative</text>
-    <text x="700" y="210" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">operation on</text>
-    <text x="700" y="226" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">the variable</text>
-    <text x="700" y="243" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">x, i.e. the</text>
-    <text x="700" y="260" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">contributsio n</text>
-    <text x="700" y="277" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">from all</text>
-    <text x="700" y="294" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">directions and</text>
-    <text x="700" y="310" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">parameters</text>
-    <text x="700" y="327" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">that vary</text>
-    <text x="700" y="344" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">along x</text>
-    <rect x="2200" y="140" width="120" height="80" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="2260" y="155" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">a variable, or</text>
-    <text x="2260" y="172" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">unknown</text>
-    <text x="2260" y="188" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">quantity to</text>
-    <text x="2260" y="205" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">solve for</text>
-    <rect x="2440" y="40" width="120" height="60" rx="6" ry="6" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
-    <text x="2500" y="70" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">a,b,c</text>
-    <rect x="2440" y="140" width="120" height="120" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="2500" y="175" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">constant fixed</text>
-    <text x="2500" y="192" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">parameters to</text>
-    <text x="2500" y="208" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">substitute</text>
-    <text x="2500" y="225" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">values for</text>
-    <rect x="1540" y="140" width="120" height="60" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="1600" y="160" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">the integral</text>
-    <text x="1600" y="180" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">sign</text>
-    <rect x="880" y="140" width="120" height="100" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="940" y="156" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">three</text>
-    <text x="940" y="173" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">dimensional</text>
-    <text x="940" y="190" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">Euclidean</text>
-    <text x="940" y="207" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">coordinate in</text>
-    <text x="940" y="224" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">a volume</text>
-    <rect x="1120" y="140" width="120" height="100" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="1180" y="156" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">two</text>
-    <text x="1180" y="173" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">dimensional</text>
-    <text x="1180" y="190" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">Euclidean</text>
-    <text x="1180" y="207" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">coordinates in</text>
-    <text x="1180" y="224" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">a plane</text>
-    <rect x="460" y="140" width="120" height="100" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="520" y="165" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">\(</text>
-    <text x="520" y="182" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">\frac{dy}{dx }</text>
-    <text x="520" y="198" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">, \frac{df}{dx</text>
-    <text x="520" y="215" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">} \)</text>
-    <rect x="2200" y="40" width="120" height="60" rx="6" ry="6" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
-    <text x="2260" y="70" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">x</text>
-    <rect x="880" y="40" width="120" height="60" rx="6" ry="6" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
-    <text x="940" y="60" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">\( (x,y,z)</text>
-    <text x="940" y="80" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">\)</text>
-    <rect x="1120" y="40" width="120" height="60" rx="6" ry="6" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
-    <text x="1180" y="70" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">\( (y,x) \)</text>
-    <rect x="130" y="40" width="120" height="80" rx="6" ry="6" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
-    <text x="190" y="55" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#009900">\(</text>
-    <text x="190" y="72" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#009900">\frac{\parti</text>
-    <text x="190" y="88" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#009900">al}{\partial</text>
-    <text x="190" y="105" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#009900">x} \)</text>
-    <rect x="550" y="40" width="120" height="60" rx="6" ry="6" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
-    <text x="610" y="51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">\(</text>
-    <text x="610" y="70" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">\frac{d}{dx}</text>
-    <text x="610" y="89" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">\)</text>
+    <text x="100" y="216" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">\frac{\partial</text>
+    <text x="100" y="233" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">y}{\partial x}</text>
+    <text x="100" y="250" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">,</text>
+    <text x="100" y="267" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">\frac{\partial</text>
+    <text x="100" y="284" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">f}{\partial x}</text>
+    <text x="100" y="300" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">\)</text>
+    <rect x="1360" y="140" width="120" height="60" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+    <text x="1420" y="151" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">\( \sum_{n =</text>
+    <text x="1420" y="170" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">1}^4 n(n+1)</text>
+    <text x="1420" y="189" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">\)</text>
+    <rect x="240" y="160" width="120" height="180" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+    <text x="300" y="183" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">a partial</text>
+    <text x="300" y="200" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">derivative</text>
+    <text x="300" y="216" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">operation on</text>
+    <text x="300" y="233" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">the variable</text>
+    <text x="300" y="250" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">x, i.e. a</text>
+    <text x="300" y="267" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">derivative</text>
+    <text x="300" y="284" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">along an</text>
+    <text x="300" y="300" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">exclusive</text>
+    <text x="300" y="317" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">direction</text>
+    <rect x="1560" y="140" width="120" height="60" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+    <text x="1620" y="153" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">a summation</text>
+    <text x="1620" y="170" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">(addition of</text>
+    <text x="1620" y="187" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">terms)</text>
+    <rect x="680" y="140" width="120" height="240" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+    <text x="740" y="176" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">a total</text>
+    <text x="740" y="193" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">derivative</text>
+    <text x="740" y="210" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">operation on</text>
+    <text x="740" y="226" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">the variable</text>
+    <text x="740" y="243" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">x, i.e. the</text>
+    <text x="740" y="260" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">contributsion</text>
+    <text x="740" y="277" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">from all</text>
+    <text x="740" y="294" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">directions and</text>
+    <text x="740" y="310" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">parameters</text>
+    <text x="740" y="327" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">that vary</text>
+    <text x="740" y="344" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">along x</text>
+    <rect x="520" y="600" width="120" height="80" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+    <text x="580" y="615" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">a variable, or</text>
+    <text x="580" y="632" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">unknown</text>
+    <text x="580" y="648" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">quantity to</text>
+    <text x="580" y="665" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">solve for</text>
+    <rect x="760" y="500" width="120" height="60" rx="6" ry="6" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="820" y="530" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">a,b,c</text>
+    <rect x="760" y="600" width="120" height="120" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+    <text x="820" y="635" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">constant fixed</text>
+    <text x="820" y="652" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">parameters to</text>
+    <text x="820" y="668" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">substitute</text>
+    <text x="820" y="685" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">values for</text>
+    <rect x="1120" y="140" width="120" height="60" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+    <text x="1180" y="160" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">the integral</text>
+    <text x="1180" y="180" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">sign</text>
+    <rect x="40" y="600" width="120" height="100" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+    <text x="100" y="616" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">three</text>
+    <text x="100" y="633" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">dimensional</text>
+    <text x="100" y="650" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">Euclidean</text>
+    <text x="100" y="667" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">coordinate in</text>
+    <text x="100" y="684" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">a volume</text>
+    <rect x="280" y="600" width="120" height="100" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+    <text x="340" y="616" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">two</text>
+    <text x="340" y="633" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">dimensional</text>
+    <text x="340" y="650" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">Euclidean</text>
+    <text x="340" y="667" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">coordinates in</text>
+    <text x="340" y="684" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">a plane</text>
+    <rect x="480" y="140" width="120" height="100" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+    <text x="540" y="156" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">\(</text>
+    <text x="540" y="173" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">\frac{dy}{dx}</text>
+    <text x="540" y="190" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">,</text>
+    <text x="540" y="207" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">\frac{df}{dx}</text>
+    <text x="540" y="224" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">\)</text>
+    <rect x="520" y="500" width="120" height="60" rx="6" ry="6" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="580" y="530" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">x</text>
+    <rect x="40" y="500" width="120" height="60" rx="6" ry="6" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="100" y="520" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">\( (x,y,z)</text>
+    <text x="100" y="540" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">\)</text>
+    <rect x="280" y="500" width="120" height="60" rx="6" ry="6" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="340" y="530" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">\( (y,x) \)</text>
+    <rect x="140" y="40" width="120" height="80" rx="6" ry="6" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="200" y="55" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#009900">\(</text>
+    <text x="200" y="72" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#009900">\frac{\partial</text>
+    <text x="200" y="88" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#009900">}{\partial x}</text>
+    <text x="200" y="105" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#009900">\)</text>
+    <rect x="580" y="40" width="120" height="60" rx="6" ry="6" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="640" y="51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">\(</text>
+    <text x="640" y="70" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">\frac{d}{dx}</text>
+    <text x="640" y="89" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">\)</text>
     <g>
       <title>this is an old language S intended to imply summation</title>
-    <rect x="1450" y="40" width="120" height="60" rx="6" ry="6" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
-    <text x="1510" y="70" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">\( \int \)</text>
+    <rect x="1020" y="40" width="120" height="60" rx="6" ry="6" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="1080" y="70" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">\( \int \)</text>
     </g>
-    <rect x="1360" y="140" width="120" height="60" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="1420" y="160" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">\( \int_0^1</text>
-    <text x="1420" y="180" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">x^2\;dx \)</text>
-    <rect x="1870" y="40" width="120" height="60" rx="6" ry="6" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
-    <text x="1930" y="70" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">\( \sum \)</text>
+    <rect x="920" y="140" width="120" height="60" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+    <text x="980" y="160" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">\( \int_0^1</text>
+    <text x="980" y="180" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">x^2\;dx \)</text>
+    <rect x="1460" y="40" width="120" height="60" rx="6" ry="6" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="1520" y="70" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">\( \sum \)</text>
   </g>
 </svg>

@@ -67,6 +67,14 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #fff; colo
 .insp-type[data-type="event"] { background: #ff8000; }
 .insp-type[data-type="thing"] { background: #4d8a3a; }
 .insp-type[data-type="concept"] { background: #6c8ebf; }
+/* Multi-selection list (shift+click). Shown only when more than one thing is
+   selected; each chip re-points the inspector at that item without changing
+   the set. The primary chip matches the solid gold canvas ring. */
+.insp-multi { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px solid #333; }
+.insp-multi-count { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: #888; width: 100%; }
+.insp-multi-item { font: inherit; font-size: 11px; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: 2px 7px; border-radius: 10px; cursor: pointer; color: #ddd; background: #2a2a2a; border: 1px solid #444; }
+.insp-multi-item:hover { background: #333; border-color: #666; }
+.insp-multi-item.is-primary { color: #1a1a1a; background: #ffd700; border-color: #ffd700; font-weight: 600; cursor: default; }
 .insp-type[data-rel="leadsto"] { background: #ff8000; }
 .insp-type[data-rel="partof"] { background: #82b366; }
 .insp-type[data-rel="expresses"] { background: #6c8ebf; }
@@ -75,6 +83,9 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #fff; colo
 .action-btn.rel-partof { border-left: 3px solid #82b366; }
 .action-btn.rel-expresses { border-left: 3px solid #6c8ebf; }
 .action-btn.rel-nearto { border-left: 3px solid #999999; }
+/* "?" badge on a Connected-list entry whose edge is a hidden cross-component
+   stub (mirrors the canvas "?" badge). currentColor adapts to the button state. */
+.hidden-chip { display: inline-block; min-width: 15px; padding: 0 3px; line-height: 14px; text-align: center; border: 1px solid currentColor; border-radius: 4px; font-size: 10px; font-weight: 700; opacity: 0.85; }
 
 /* Help overlay — a dismissible modal listing all gestures/shortcuts. */
 #help-overlay { position: fixed; inset: 0; z-index: 3000; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.35); }
@@ -178,9 +189,10 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #fff; colo
     <dl class="help-keys">
       <dt><kbd>Click</kbd> node</dt><dd>highlight &amp; inspect it — click it again to clear (the S / E start &amp; end markers too)</dd>
       <dt><kbd>Click</kbd> edge</dt><dd>select the edge (rings both ends)</dd>
+      <dt><kbd>Shift</kbd>+<kbd>Click</kbd></dt><dd>add a node or edge to the highlight set — <kbd>Shift</kbd>+<kbd>Click</kbd> it again to drop it. The one you clicked last gets the solid ring and the inspector; the rest are dashed.</dd>
       <dt><kbd>Double-click</kbd> edge</dt><dd>if its other end is off-screen, jump the view there</dd>
       <dt><span class="chip">?</span> badge</dt><dd>a hidden cross-component edge — click to reveal it, <kbd>double-click</kbd> to jump to the node at its far end</dd>
-      <dt><kbd>Click</kbd> empty</dt><dd>clear the selection</dd>
+      <dt><kbd>Click</kbd> empty</dt><dd>clear the selection (all of it)</dd>
     </dl>
 
     <div class="help-sec">Open / collapse a node</div>
@@ -211,8 +223,8 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #fff; colo
 </div>
 
 <script>
-window.__BUNDLED_MODEL = {"source":"golang.ipmt","rootStateID":"s:","fullyExpandedStateID":"s:+13","states":[{"id":"s:","openSet":null,"expandedTCs":null,"transitions":{"expand":{"13":"s:+13"}},"bounds":{"width":680,"height":480,"marginX":40,"marginY":40},"nodes":[{"id":"6","type":"event","label":"basic example","alias":"e6","x":200,"y":120,"width":120,"height":60,"degree":3,"navTargets":{"prev":[{"id":"18","label":"S","type":"boundary"}],"next":[{"id":"19","label":"E","type":"boundary"}]}},{"id":"12","type":"event","label":"hello world","alias":"e12","x":360,"y":120,"width":120,"height":60,"degree":4,"navTargets":{"prev":[{"id":"20","label":"S","type":"boundary"}],"next":[{"id":"21","label":"E","type":"boundary"}]}},{"id":"14","type":"event","label":"package main\n\nimport (\n    \"dependency 1\"\n    \"dependency 2\"\n    \"fmt\"\n)\n\nfunc main () {  // brace must go here\n\n      fmt.Println( \"Hello world\")\n}","label-original":"package main\n\nimport (\n    \"dependency 1\"\n    \"dependency 2\"\n    \"fmt\"\n)\n\nfunc main () {  // brace must go here\n\n      fmt.Println(\"Hello world\")\n}","alias":"e14","x":520,"y":120,"width":120,"height":240,"degree":3,"navTargets":{"prev":[{"id":"22","label":"S","type":"boundary"}],"next":[{"id":"23","label":"E","type":"boundary"}]}},{"id":"15","type":"event","label":"runes","alias":"e15","x":40,"y":120,"width":120,"height":60,"degree":2,"navTargets":{"prev":[{"id":"24","label":"S","type":"boundary"}],"next":[{"id":"17","label":"unicode","type":"event"}]}},{"id":"17","type":"event","label":"unicode","alias":"e17","x":40,"y":240,"width":120,"height":60,"degree":2,"navTargets":{"prev":[{"id":"15","label":"runes","type":"event"}],"next":[{"id":"25","label":"E","type":"boundary"}]}},{"id":"18","type":"boundary","label":"S","x":240,"y":40,"width":40,"height":40,"degree":1,"navTargets":{"next":[{"id":"6","label":"basic example","type":"event"}]}},{"id":"19","type":"boundary","label":"E","x":240,"y":220,"width":40,"height":40,"degree":1,"navTargets":{"prev":[{"id":"6","label":"basic example","type":"event"}]}},{"id":"20","type":"boundary","label":"S","x":400,"y":40,"width":40,"height":40,"degree":1,"navTargets":{"next":[{"id":"12","label":"hello world","type":"event"}]}},{"id":"21","type":"boundary","label":"E","x":400,"y":220,"width":40,"height":40,"degree":1,"navTargets":{"prev":[{"id":"12","label":"hello world","type":"event"}]}},{"id":"22","type":"boundary","label":"S","x":560,"y":40,"width":40,"height":40,"degree":1,"navTargets":{"next":[{"id":"14","label":"package main\n\nimport (\n    \"dependency 1\"\n    \"dependency 2\"\n    \"fmt\"\n)\n\nfunc main () {  // brace must go here\n\n      fmt.Println( \"Hello world\")\n}","type":"event"}]}},{"id":"23","type":"boundary","label":"E","x":560,"y":400,"width":40,"height":40,"degree":1,"navTargets":{"prev":[{"id":"14","label":"package main\n\nimport (\n    \"dependency 1\"\n    \"dependency 2\"\n    \"fmt\"\n)\n\nfunc main () {  // brace must go here\n\n      fmt.Println( \"Hello world\")\n}","type":"event"}]}},{"id":"24","type":"boundary","label":"S","x":80,"y":40,"width":40,"height":40,"degree":1,"navTargets":{"next":[{"id":"15","label":"runes","type":"event"}]}},{"id":"25","type":"boundary","label":"E","x":80,"y":340,"width":40,"height":40,"degree":1,"navTargets":{"prev":[{"id":"17","label":"unicode","type":"event"}]}}],"edges":[{"from":"12","to":"21","dir":"fwd","base":"leadsto","style":"leadsto","route":{"source":{"side":"bottom","position":0.5},"target":{"side":"top","position":0.5}}},{"from":"14","to":"12","dir":"fwd","base":"expresses","style":"expresses","label":"has example","route":{"source":{"side":"left","position":0.125},"target":{"side":"right","position":0.5}}},{"from":"14","to":"23","dir":"fwd","base":"leadsto","style":"leadsto","route":{"source":{"side":"bottom","position":0.5},"target":{"side":"top","position":0.5}}},{"from":"15","to":"17","dir":"fwd","base":"leadsto","style":"leadsto","label":"implements","route":{"source":{"side":"bottom","position":0.5},"target":{"side":"top","position":0.5}}},{"from":"17","to":"25","dir":"fwd","base":"leadsto","style":"leadsto","route":{"source":{"side":"bottom","position":0.5},"target":{"side":"top","position":0.5}}},{"from":"18","to":"6","dir":"fwd","base":"leadsto","style":"leadsto","route":{"source":{"side":"bottom","position":0.5},"target":{"side":"top","position":0.5}}},{"from":"20","to":"12","dir":"fwd","base":"leadsto","style":"leadsto","route":{"source":{"side":"bottom","position":0.5},"target":{"side":"top","position":0.5}}},{"from":"22","to":"14","dir":"fwd","base":"leadsto","style":"leadsto","route":{"source":{"side":"bottom","position":0.5},"target":{"side":"top","position":0.5}}},{"from":"24","to":"15","dir":"fwd","base":"leadsto","style":"leadsto","route":{"source":{"side":"bottom","position":0.5},"target":{"side":"top","position":0.5}}},{"from":"6","to":"12","dir":"none","base":"nearto","style":"nearto","label":"same as","route":{"source":{"side":"right","position":0.5},"target":{"side":"left","position":0.5}}},{"from":"6","to":"19","dir":"fwd","base":"leadsto","style":"leadsto","route":{"source":{"side":"bottom","position":0.5},"target":{"side":"top","position":0.5}}}],"ancestorChain":["s:"]},{"id":"s:+13","openSet":null,"expandedTCs":[13],"transitions":{"collapse":{"13":"s:"}},"bounds":{"width":840,"height":480,"marginX":40,"marginY":40},"nodes":[{"id":"5","type":"thing","label":"associative arrays","alias":"t5","x":200,"y":40,"width":120,"height":60,"degree":0,"navTargets":{}},{"id":"6","type":"event","label":"basic example","alias":"e6","x":360,"y":120,"width":120,"height":60,"degree":3,"navTargets":{"prev":[{"id":"18","label":"S","type":"boundary"}],"next":[{"id":"19","label":"E","type":"boundary"}]}},{"id":"12","type":"event","label":"hello world","alias":"e12","x":520,"y":120,"width":120,"height":60,"degree":4,"navTargets":{"prev":[{"id":"20","label":"S","type":"boundary"}],"next":[{"id":"21","label":"E","type":"boundary"}]}},{"id":"14","type":"event","label":"package main\n\nimport (\n    \"dependency 1\"\n    \"dependency 2\"\n    \"fmt\"\n)\n\nfunc main () {  // brace must go here\n\n      fmt.Println( \"Hello world\")\n}","label-original":"package main\n\nimport (\n    \"dependency 1\"\n    \"dependency 2\"\n    \"fmt\"\n)\n\nfunc main () {  // brace must go here\n\n      fmt.Println(\"Hello world\")\n}","alias":"e14","x":680,"y":120,"width":120,"height":240,"degree":3,"navTargets":{"prev":[{"id":"22","label":"S","type":"boundary"}],"next":[{"id":"23","label":"E","type":"boundary"}]}},{"id":"15","type":"event","label":"runes","alias":"e15","x":40,"y":120,"width":120,"height":60,"degree":2,"navTargets":{"prev":[{"id":"24","label":"S","type":"boundary"}],"next":[{"id":"17","label":"unicode","type":"event"}]}},{"id":"17","type":"event","label":"unicode","alias":"e17","x":40,"y":240,"width":120,"height":60,"degree":2,"navTargets":{"prev":[{"id":"15","label":"runes","type":"event"}],"next":[{"id":"25","label":"E","type":"boundary"}]}},{"id":"18","type":"boundary","label":"S","x":400,"y":40,"width":40,"height":40,"degree":1,"navTargets":{"next":[{"id":"6","label":"basic example","type":"event"}]}},{"id":"19","type":"boundary","label":"E","x":400,"y":220,"width":40,"height":40,"degree":1,"navTargets":{"prev":[{"id":"6","label":"basic example","type":"event"}]}},{"id":"20","type":"boundary","label":"S","x":560,"y":40,"width":40,"height":40,"degree":1,"navTargets":{"next":[{"id":"12","label":"hello world","type":"event"}]}},{"id":"21","type":"boundary","label":"E","x":560,"y":220,"width":40,"height":40,"degree":1,"navTargets":{"prev":[{"id":"12","label":"hello world","type":"event"}]}},{"id":"22","type":"boundary","label":"S","x":720,"y":40,"width":40,"height":40,"degree":1,"navTargets":{"next":[{"id":"14","label":"package main\n\nimport (\n    \"dependency 1\"\n    \"dependency 2\"\n    \"fmt\"\n)\n\nfunc main () {  // brace must go here\n\n      fmt.Println( \"Hello world\")\n}","type":"event"}]}},{"id":"23","type":"boundary","label":"E","x":720,"y":400,"width":40,"height":40,"degree":1,"navTargets":{"prev":[{"id":"14","label":"package main\n\nimport (\n    \"dependency 1\"\n    \"dependency 2\"\n    \"fmt\"\n)\n\nfunc main () {  // brace must go here\n\n      fmt.Println( \"Hello world\")\n}","type":"event"}]}},{"id":"24","type":"boundary","label":"S","x":80,"y":40,"width":40,"height":40,"degree":1,"navTargets":{"next":[{"id":"15","label":"runes","type":"event"}]}},{"id":"25","type":"boundary","label":"E","x":80,"y":340,"width":40,"height":40,"degree":1,"navTargets":{"prev":[{"id":"17","label":"unicode","type":"event"}]}}],"edges":[{"from":"12","to":"21","dir":"fwd","base":"leadsto","style":"leadsto","route":{"source":{"side":"bottom","position":0.5},"target":{"side":"top","position":0.5}}},{"from":"14","to":"12","dir":"fwd","base":"expresses","style":"expresses","label":"has example","route":{"source":{"side":"left","position":0.125},"target":{"side":"right","position":0.5}}},{"from":"14","to":"23","dir":"fwd","base":"leadsto","style":"leadsto","route":{"source":{"side":"bottom","position":0.5},"target":{"side":"top","position":0.5}}},{"from":"15","to":"17","dir":"fwd","base":"leadsto","style":"leadsto","label":"implements","route":{"source":{"side":"bottom","position":0.5},"target":{"side":"top","position":0.5}}},{"from":"17","to":"25","dir":"fwd","base":"leadsto","style":"leadsto","route":{"source":{"side":"bottom","position":0.5},"target":{"side":"top","position":0.5}}},{"from":"18","to":"6","dir":"fwd","base":"leadsto","style":"leadsto","route":{"source":{"side":"bottom","position":0.5},"target":{"side":"top","position":0.5}}},{"from":"20","to":"12","dir":"fwd","base":"leadsto","style":"leadsto","route":{"source":{"side":"bottom","position":0.5},"target":{"side":"top","position":0.5}}},{"from":"22","to":"14","dir":"fwd","base":"leadsto","style":"leadsto","route":{"source":{"side":"bottom","position":0.5},"target":{"side":"top","position":0.5}}},{"from":"24","to":"15","dir":"fwd","base":"leadsto","style":"leadsto","route":{"source":{"side":"bottom","position":0.5},"target":{"side":"top","position":0.5}}},{"from":"6","to":"12","dir":"none","base":"nearto","style":"nearto","label":"same as","route":{"source":{"side":"right","position":0.5},"target":{"side":"left","position":0.5}}},{"from":"6","to":"19","dir":"fwd","base":"leadsto","style":"leadsto","route":{"source":{"side":"bottom","position":0.5},"target":{"side":"top","position":0.5}}}],"ancestorChain":["s:","s:+13"]}]};
-window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u003e\n\u003csvg xmlns=\"http://www.w3.org/2000/svg\" width=\"680\" height=\"480\" viewBox=\"0 0 680 480\"\u003e\n  \u003cdefs\u003e\n  \u003c/defs\u003e\n  \u003cg id=\"container-shells\"\u003e\n  \u003c/g\u003e\n  \u003cg id=\"node-shadows\"\u003e\n    \u003crect x=\"360\" y=\"120\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"520\" y=\"120\" width=\"120\" height=\"240\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"40\" y=\"120\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"40\" y=\"240\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"240\" y=\"40\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"240\" y=\"220\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"400\" y=\"40\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"400\" y=\"220\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"560\" y=\"40\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"560\" y=\"400\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"80\" y=\"40\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"80\" y=\"340\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"200\" y=\"120\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n  \u003c/g\u003e\n  \u003cg id=\"edges\"\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"0\" data-edge-base=\"leadsto\" data-edge-from=\"12\" data-edge-to=\"21\"\u003e\n    \u003cline x1=\"420.00\" y1=\"185.00\" x2=\"420.00\" y2=\"208.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 420.00 215.00 L 415.50 206.00 L 420.00 208.25 L 424.50 206.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"1\" data-edge-base=\"expresses\" data-edge-from=\"14\" data-edge-to=\"12\"\u003e\n    \u003cline x1=\"515.00\" y1=\"150.00\" x2=\"491.75\" y2=\"150.00\" stroke=\"#6c8ebf\" stroke-width=\"3\" stroke-dasharray=\"9 6\" /\u003e\n    \u003cpath d=\"M 485.00 150.00 L 494.00 145.50 L 491.75 150.00 L 494.00 154.50 Z\" fill=\"#6c8ebf\" stroke=\"#6c8ebf\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"503\" y=\"150\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#6c8ebf\"\u003e\n      \u003ctitle\u003ehas example\u003c/title\u003ehas...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"2\" data-edge-base=\"leadsto\" data-edge-from=\"14\" data-edge-to=\"23\"\u003e\n    \u003cline x1=\"580.00\" y1=\"365.00\" x2=\"580.00\" y2=\"388.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 580.00 395.00 L 575.50 386.00 L 580.00 388.25 L 584.50 386.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"3\" data-edge-base=\"leadsto\" data-edge-from=\"15\" data-edge-to=\"17\"\u003e\n    \u003cline x1=\"100.00\" y1=\"185.00\" x2=\"100.00\" y2=\"228.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 100.00 235.00 L 95.50 226.00 L 100.00 228.25 L 104.50 226.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"100\" y=\"206\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003eimplements\u003c/title\u003eimpl...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"4\" data-edge-base=\"leadsto\" data-edge-from=\"17\" data-edge-to=\"25\"\u003e\n    \u003cline x1=\"100.00\" y1=\"305.00\" x2=\"100.00\" y2=\"328.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 100.00 335.00 L 95.50 326.00 L 100.00 328.25 L 104.50 326.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"5\" data-edge-base=\"leadsto\" data-edge-from=\"18\" data-edge-to=\"6\"\u003e\n    \u003cline x1=\"260.00\" y1=\"85.00\" x2=\"260.00\" y2=\"108.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 260.00 115.00 L 255.50 106.00 L 260.00 108.25 L 264.50 106.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"6\" data-edge-base=\"leadsto\" data-edge-from=\"20\" data-edge-to=\"12\"\u003e\n    \u003cline x1=\"420.00\" y1=\"85.00\" x2=\"420.00\" y2=\"108.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 420.00 115.00 L 415.50 106.00 L 420.00 108.25 L 424.50 106.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"7\" data-edge-base=\"leadsto\" data-edge-from=\"22\" data-edge-to=\"14\"\u003e\n    \u003cline x1=\"580.00\" y1=\"85.00\" x2=\"580.00\" y2=\"108.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 580.00 115.00 L 575.50 106.00 L 580.00 108.25 L 584.50 106.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"8\" data-edge-base=\"leadsto\" data-edge-from=\"24\" data-edge-to=\"15\"\u003e\n    \u003cline x1=\"100.00\" y1=\"85.00\" x2=\"100.00\" y2=\"108.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 100.00 115.00 L 95.50 106.00 L 100.00 108.25 L 104.50 106.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"9\" data-edge-base=\"nearto\" data-edge-from=\"6\" data-edge-to=\"12\"\u003e\n    \u003cline x1=\"325.00\" y1=\"150.00\" x2=\"355.00\" y2=\"150.00\" stroke=\"#999999\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-dasharray=\"0 6\" /\u003e\n    \u003ctext x=\"340\" y=\"150\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#999999\"\u003e\n      \u003ctitle\u003esame as\u003c/title\u003esame...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"10\" data-edge-base=\"leadsto\" data-edge-from=\"6\" data-edge-to=\"19\"\u003e\n    \u003cline x1=\"260.00\" y1=\"185.00\" x2=\"260.00\" y2=\"208.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 260.00 215.00 L 255.50 206.00 L 260.00 208.25 L 264.50 206.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n  \u003c/g\u003e\n  \u003cg id=\"nodes\"\u003e\n    \u003crect x=\"360\" y=\"120\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"420\" y=\"150\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003ehello world\u003c/text\u003e\n    \u003crect x=\"520\" y=\"120\" width=\"120\" height=\"240\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"580\" y=\"139\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003epackage main\u003c/text\u003e\n    \u003ctext x=\"580\" y=\"156\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003eimport (\u003c/text\u003e\n    \u003ctext x=\"580\" y=\"173\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003e\u0026#34;dependency\u003c/text\u003e\n    \u003ctext x=\"580\" y=\"190\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003e1\u0026#34;\u003c/text\u003e\n    \u003ctext x=\"580\" y=\"206\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003e\u0026#34;dependency\u003c/text\u003e\n    \u003ctext x=\"580\" y=\"223\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003e2\u0026#34;\u003c/text\u003e\n    \u003ctext x=\"580\" y=\"240\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003e\u0026#34;fmt\u0026#34;\u003c/text\u003e\n    \u003ctext x=\"580\" y=\"257\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003e) func main ()\u003c/text\u003e\n    \u003ctext x=\"580\" y=\"274\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003e{ // brace\u003c/text\u003e\n    \u003ctext x=\"580\" y=\"290\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003emust go here\u003c/text\u003e\n    \u003ctext x=\"580\" y=\"307\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003efmt.Println(\u003c/text\u003e\n    \u003ctext x=\"580\" y=\"324\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003e\u0026#34;Hello\u003c/text\u003e\n    \u003ctext x=\"580\" y=\"341\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003eworld\u0026#34;) }\u003c/text\u003e\n    \u003crect x=\"40\" y=\"120\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"100\" y=\"150\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003erunes\u003c/text\u003e\n    \u003crect x=\"40\" y=\"240\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"100\" y=\"270\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eunicode\u003c/text\u003e\n    \u003crect x=\"240\" y=\"40\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"260\" y=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eS\u003c/text\u003e\n    \u003crect x=\"240\" y=\"220\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"260\" y=\"240\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eE\u003c/text\u003e\n    \u003crect x=\"400\" y=\"40\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"420\" y=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eS\u003c/text\u003e\n    \u003crect x=\"400\" y=\"220\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"420\" y=\"240\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eE\u003c/text\u003e\n    \u003crect x=\"560\" y=\"40\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"580\" y=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eS\u003c/text\u003e\n    \u003crect x=\"560\" y=\"400\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"580\" y=\"420\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eE\u003c/text\u003e\n    \u003crect x=\"80\" y=\"40\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"100\" y=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eS\u003c/text\u003e\n    \u003crect x=\"80\" y=\"340\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"100\" y=\"360\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eE\u003c/text\u003e\n    \u003crect x=\"200\" y=\"120\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"260\" y=\"140\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003ebasic\u003c/text\u003e\n    \u003ctext x=\"260\" y=\"160\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eexample\u003c/text\u003e\n  \u003c/g\u003e\n\u003c/svg\u003e\n","s:+13":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u003e\n\u003csvg xmlns=\"http://www.w3.org/2000/svg\" width=\"840\" height=\"480\" viewBox=\"0 0 840 480\"\u003e\n  \u003cdefs\u003e\n  \u003c/defs\u003e\n  \u003cg id=\"container-shells\"\u003e\n  \u003c/g\u003e\n  \u003cg id=\"node-shadows\"\u003e\n    \u003crect x=\"520\" y=\"120\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"680\" y=\"120\" width=\"120\" height=\"240\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"40\" y=\"120\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"40\" y=\"240\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"400\" y=\"40\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"400\" y=\"220\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"560\" y=\"40\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"560\" y=\"220\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"720\" y=\"40\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"720\" y=\"400\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"80\" y=\"40\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"80\" y=\"340\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"200\" y=\"40\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"360\" y=\"120\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n  \u003c/g\u003e\n  \u003cg id=\"edges\"\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"0\" data-edge-base=\"leadsto\" data-edge-from=\"12\" data-edge-to=\"21\"\u003e\n    \u003cline x1=\"580.00\" y1=\"185.00\" x2=\"580.00\" y2=\"208.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 580.00 215.00 L 575.50 206.00 L 580.00 208.25 L 584.50 206.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"1\" data-edge-base=\"expresses\" data-edge-from=\"14\" data-edge-to=\"12\"\u003e\n    \u003cline x1=\"675.00\" y1=\"150.00\" x2=\"651.75\" y2=\"150.00\" stroke=\"#6c8ebf\" stroke-width=\"3\" stroke-dasharray=\"9 6\" /\u003e\n    \u003cpath d=\"M 645.00 150.00 L 654.00 145.50 L 651.75 150.00 L 654.00 154.50 Z\" fill=\"#6c8ebf\" stroke=\"#6c8ebf\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"663\" y=\"150\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#6c8ebf\"\u003e\n      \u003ctitle\u003ehas example\u003c/title\u003ehas...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"2\" data-edge-base=\"leadsto\" data-edge-from=\"14\" data-edge-to=\"23\"\u003e\n    \u003cline x1=\"740.00\" y1=\"365.00\" x2=\"740.00\" y2=\"388.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 740.00 395.00 L 735.50 386.00 L 740.00 388.25 L 744.50 386.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"3\" data-edge-base=\"leadsto\" data-edge-from=\"15\" data-edge-to=\"17\"\u003e\n    \u003cline x1=\"100.00\" y1=\"185.00\" x2=\"100.00\" y2=\"228.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 100.00 235.00 L 95.50 226.00 L 100.00 228.25 L 104.50 226.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003ctext x=\"100\" y=\"206\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#ff8000\"\u003e\n      \u003ctitle\u003eimplements\u003c/title\u003eimpl...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"4\" data-edge-base=\"leadsto\" data-edge-from=\"17\" data-edge-to=\"25\"\u003e\n    \u003cline x1=\"100.00\" y1=\"305.00\" x2=\"100.00\" y2=\"328.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 100.00 335.00 L 95.50 326.00 L 100.00 328.25 L 104.50 326.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"5\" data-edge-base=\"leadsto\" data-edge-from=\"18\" data-edge-to=\"6\"\u003e\n    \u003cline x1=\"420.00\" y1=\"85.00\" x2=\"420.00\" y2=\"108.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 420.00 115.00 L 415.50 106.00 L 420.00 108.25 L 424.50 106.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"6\" data-edge-base=\"leadsto\" data-edge-from=\"20\" data-edge-to=\"12\"\u003e\n    \u003cline x1=\"580.00\" y1=\"85.00\" x2=\"580.00\" y2=\"108.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 580.00 115.00 L 575.50 106.00 L 580.00 108.25 L 584.50 106.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"7\" data-edge-base=\"leadsto\" data-edge-from=\"22\" data-edge-to=\"14\"\u003e\n    \u003cline x1=\"740.00\" y1=\"85.00\" x2=\"740.00\" y2=\"108.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 740.00 115.00 L 735.50 106.00 L 740.00 108.25 L 744.50 106.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"8\" data-edge-base=\"leadsto\" data-edge-from=\"24\" data-edge-to=\"15\"\u003e\n    \u003cline x1=\"100.00\" y1=\"85.00\" x2=\"100.00\" y2=\"108.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 100.00 115.00 L 95.50 106.00 L 100.00 108.25 L 104.50 106.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"9\" data-edge-base=\"nearto\" data-edge-from=\"6\" data-edge-to=\"12\"\u003e\n    \u003cline x1=\"485.00\" y1=\"150.00\" x2=\"515.00\" y2=\"150.00\" stroke=\"#999999\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-dasharray=\"0 6\" /\u003e\n    \u003ctext x=\"500\" y=\"150\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"11\" paint-order=\"stroke\" stroke=\"#ffffff\" stroke-width=\"3\" stroke-linejoin=\"round\" fill=\"#999999\"\u003e\n      \u003ctitle\u003esame as\u003c/title\u003esame...\n    \u003c/text\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"10\" data-edge-base=\"leadsto\" data-edge-from=\"6\" data-edge-to=\"19\"\u003e\n    \u003cline x1=\"420.00\" y1=\"185.00\" x2=\"420.00\" y2=\"208.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 420.00 215.00 L 415.50 206.00 L 420.00 208.25 L 424.50 206.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n  \u003c/g\u003e\n  \u003cg id=\"nodes\"\u003e\n    \u003crect x=\"520\" y=\"120\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"580\" y=\"150\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003ehello world\u003c/text\u003e\n    \u003crect x=\"680\" y=\"120\" width=\"120\" height=\"240\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"740\" y=\"139\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003epackage main\u003c/text\u003e\n    \u003ctext x=\"740\" y=\"156\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003eimport (\u003c/text\u003e\n    \u003ctext x=\"740\" y=\"173\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003e\u0026#34;dependency\u003c/text\u003e\n    \u003ctext x=\"740\" y=\"190\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003e1\u0026#34;\u003c/text\u003e\n    \u003ctext x=\"740\" y=\"206\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003e\u0026#34;dependency\u003c/text\u003e\n    \u003ctext x=\"740\" y=\"223\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003e2\u0026#34;\u003c/text\u003e\n    \u003ctext x=\"740\" y=\"240\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003e\u0026#34;fmt\u0026#34;\u003c/text\u003e\n    \u003ctext x=\"740\" y=\"257\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003e) func main ()\u003c/text\u003e\n    \u003ctext x=\"740\" y=\"274\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003e{ // brace\u003c/text\u003e\n    \u003ctext x=\"740\" y=\"290\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003emust go here\u003c/text\u003e\n    \u003ctext x=\"740\" y=\"307\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003efmt.Println(\u003c/text\u003e\n    \u003ctext x=\"740\" y=\"324\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003e\u0026#34;Hello\u003c/text\u003e\n    \u003ctext x=\"740\" y=\"341\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003eworld\u0026#34;) }\u003c/text\u003e\n    \u003crect x=\"40\" y=\"120\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"100\" y=\"150\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003erunes\u003c/text\u003e\n    \u003crect x=\"40\" y=\"240\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"100\" y=\"270\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eunicode\u003c/text\u003e\n    \u003crect x=\"400\" y=\"40\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"420\" y=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eS\u003c/text\u003e\n    \u003crect x=\"400\" y=\"220\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"420\" y=\"240\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eE\u003c/text\u003e\n    \u003crect x=\"560\" y=\"40\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"580\" y=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eS\u003c/text\u003e\n    \u003crect x=\"560\" y=\"220\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"580\" y=\"240\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eE\u003c/text\u003e\n    \u003crect x=\"720\" y=\"40\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"740\" y=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eS\u003c/text\u003e\n    \u003crect x=\"720\" y=\"400\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"740\" y=\"420\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eE\u003c/text\u003e\n    \u003crect x=\"80\" y=\"40\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"100\" y=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eS\u003c/text\u003e\n    \u003crect x=\"80\" y=\"340\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"100\" y=\"360\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eE\u003c/text\u003e\n    \u003crect x=\"200\" y=\"40\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#d5e8d4\" stroke=\"#82b366\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"260\" y=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"normal\" fill=\"#009900\"\u003eassociative\u003c/text\u003e\n    \u003ctext x=\"260\" y=\"80\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"normal\" fill=\"#009900\"\u003earrays\u003c/text\u003e\n    \u003crect x=\"360\" y=\"120\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"420\" y=\"140\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003ebasic\u003c/text\u003e\n    \u003ctext x=\"420\" y=\"160\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eexample\u003c/text\u003e\n  \u003c/g\u003e\n\u003c/svg\u003e\n"};
+window.__BUNDLED_MODEL = {"source":"golang.ipmt","rootStateID":"s:","fullyExpandedStateID":"s:+13","states":[{"id":"s:","openSet":null,"expandedTCs":null,"transitions":{"expand":{"13":"s:+13"}},"bounds":{"width":680,"height":480,"marginX":40,"marginY":40},"nodes":[{"id":"6","type":"event","label":"basic example","alias":"e6","x":360,"y":210,"width":120,"height":60,"degree":3,"navTargets":{"prev":[{"id":"18","label":"S","type":"boundary"}],"next":[{"id":"19","label":"E","type":"boundary"}]}},{"id":"12","type":"event","label":"hello world","alias":"e12","x":200,"y":210,"width":120,"height":60,"degree":4,"navTargets":{"prev":[{"id":"20","label":"S","type":"boundary"}],"next":[{"id":"21","label":"E","type":"boundary"}]}},{"id":"14","type":"event","label":"package main\n\nimport (\n    \"dependency 1\"\n    \"dependency 2\"\n    \"fmt\"\n)\n\nfunc main () {  // brace must go here\n\n      fmt.Println(\"Hello world\")\n}","alias":"e14","x":40,"y":120,"width":120,"height":240,"degree":3,"navTargets":{"prev":[{"id":"22","label":"S","type":"boundary"}],"next":[{"id":"23","label":"E","type":"boundary"}]}},{"id":"15","type":"event","label":"runes","alias":"e15","x":520,"y":120,"width":120,"height":60,"degree":2,"navTargets":{"prev":[{"id":"24","label":"S","type":"boundary"}],"next":[{"id":"17","label":"unicode","type":"event"}]}},{"id":"17","type":"event","label":"unicode","alias":"e17","x":520,"y":240,"width":120,"height":60,"degree":2,"navTargets":{"prev":[{"id":"15","label":"runes","type":"event"}],"next":[{"id":"25","label":"E","type":"boundary"}]}},{"id":"18","type":"boundary","label":"S","x":400,"y":130,"width":40,"height":40,"degree":1,"navTargets":{"next":[{"id":"6","label":"basic example","type":"event"}]}},{"id":"19","type":"boundary","label":"E","x":400,"y":310,"width":40,"height":40,"degree":1,"navTargets":{"prev":[{"id":"6","label":"basic example","type":"event"}]}},{"id":"20","type":"boundary","label":"S","x":240,"y":130,"width":40,"height":40,"degree":1,"navTargets":{"next":[{"id":"12","label":"hello world","type":"event"}]}},{"id":"21","type":"boundary","label":"E","x":240,"y":310,"width":40,"height":40,"degree":1,"navTargets":{"prev":[{"id":"12","label":"hello world","type":"event"}]}},{"id":"22","type":"boundary","label":"S","x":80,"y":40,"width":40,"height":40,"degree":1,"navTargets":{"next":[{"id":"14","label":"package main\n\nimport (\n    \"dependency 1\"\n    \"dependency 2\"\n    \"fmt\"\n)\n\nfunc main () {  // brace must go here\n\n      fmt.Println(\"Hello world\")\n}","type":"event"}]}},{"id":"23","type":"boundary","label":"E","x":80,"y":400,"width":40,"height":40,"degree":1,"navTargets":{"prev":[{"id":"14","label":"package main\n\nimport (\n    \"dependency 1\"\n    \"dependency 2\"\n    \"fmt\"\n)\n\nfunc main () {  // brace must go here\n\n      fmt.Println(\"Hello world\")\n}","type":"event"}]}},{"id":"24","type":"boundary","label":"S","x":560,"y":40,"width":40,"height":40,"degree":1,"navTargets":{"next":[{"id":"15","label":"runes","type":"event"}]}},{"id":"25","type":"boundary","label":"E","x":560,"y":340,"width":40,"height":40,"degree":1,"navTargets":{"prev":[{"id":"17","label":"unicode","type":"event"}]}}],"edges":[{"from":"15","to":"17","dir":"fwd","base":"leadsto","style":"leadsto","route":{"source":{"side":"bottom","position":0.5},"target":{"side":"top","position":0.5}}},{"from":"6","to":"12","dir":"undir","base":"nearto","style":"nearto","route":{"source":{"side":"left","position":0.5},"target":{"side":"right","position":0.5}}},{"from":"14","to":"12","dir":"fwd","base":"expresses","style":"expresses","route":{"source":{"side":"right","position":0.5},"target":{"side":"left","position":0.5}}},{"from":"18","to":"6","dir":"fwd","base":"leadsto","style":"leadsto","route":{"source":{"side":"bottom","position":0.5},"target":{"side":"top","position":0.5}}},{"from":"6","to":"19","dir":"fwd","base":"leadsto","style":"leadsto","route":{"source":{"side":"bottom","position":0.5},"target":{"side":"top","position":0.5}}},{"from":"20","to":"12","dir":"fwd","base":"leadsto","style":"leadsto","route":{"source":{"side":"bottom","position":0.5},"target":{"side":"top","position":0.5}}},{"from":"12","to":"21","dir":"fwd","base":"leadsto","style":"leadsto","route":{"source":{"side":"bottom","position":0.5},"target":{"side":"top","position":0.5}}},{"from":"22","to":"14","dir":"fwd","base":"leadsto","style":"leadsto","route":{"source":{"side":"bottom","position":0.5},"target":{"side":"top","position":0.5}}},{"from":"14","to":"23","dir":"fwd","base":"leadsto","style":"leadsto","route":{"source":{"side":"bottom","position":0.5},"target":{"side":"top","position":0.5}}},{"from":"24","to":"15","dir":"fwd","base":"leadsto","style":"leadsto","route":{"source":{"side":"bottom","position":0.5},"target":{"side":"top","position":0.5}}},{"from":"17","to":"25","dir":"fwd","base":"leadsto","style":"leadsto","route":{"source":{"side":"bottom","position":0.5},"target":{"side":"top","position":0.5}}}],"ancestorChain":["s:"]},{"id":"s:+13","openSet":null,"expandedTCs":[13],"transitions":{"collapse":{"13":"s:"}},"bounds":{"width":840,"height":480,"marginX":40,"marginY":40},"nodes":[{"id":"5","type":"thing","label":"associative arrays","alias":"t5","x":520,"y":40,"width":120,"height":60,"degree":0,"navTargets":{}},{"id":"6","type":"event","label":"basic example","alias":"e6","x":360,"y":210,"width":120,"height":60,"degree":3,"navTargets":{"prev":[{"id":"18","label":"S","type":"boundary"}],"next":[{"id":"19","label":"E","type":"boundary"}]}},{"id":"12","type":"event","label":"hello world","alias":"e12","x":200,"y":210,"width":120,"height":60,"degree":4,"navTargets":{"prev":[{"id":"20","label":"S","type":"boundary"}],"next":[{"id":"21","label":"E","type":"boundary"}]}},{"id":"14","type":"event","label":"package main\n\nimport (\n    \"dependency 1\"\n    \"dependency 2\"\n    \"fmt\"\n)\n\nfunc main () {  // brace must go here\n\n      fmt.Println(\"Hello world\")\n}","alias":"e14","x":40,"y":120,"width":120,"height":240,"degree":3,"navTargets":{"prev":[{"id":"22","label":"S","type":"boundary"}],"next":[{"id":"23","label":"E","type":"boundary"}]}},{"id":"15","type":"event","label":"runes","alias":"e15","x":680,"y":120,"width":120,"height":60,"degree":2,"navTargets":{"prev":[{"id":"24","label":"S","type":"boundary"}],"next":[{"id":"17","label":"unicode","type":"event"}]}},{"id":"17","type":"event","label":"unicode","alias":"e17","x":680,"y":240,"width":120,"height":60,"degree":2,"navTargets":{"prev":[{"id":"15","label":"runes","type":"event"}],"next":[{"id":"25","label":"E","type":"boundary"}]}},{"id":"18","type":"boundary","label":"S","x":400,"y":130,"width":40,"height":40,"degree":1,"navTargets":{"next":[{"id":"6","label":"basic example","type":"event"}]}},{"id":"19","type":"boundary","label":"E","x":400,"y":310,"width":40,"height":40,"degree":1,"navTargets":{"prev":[{"id":"6","label":"basic example","type":"event"}]}},{"id":"20","type":"boundary","label":"S","x":240,"y":130,"width":40,"height":40,"degree":1,"navTargets":{"next":[{"id":"12","label":"hello world","type":"event"}]}},{"id":"21","type":"boundary","label":"E","x":240,"y":310,"width":40,"height":40,"degree":1,"navTargets":{"prev":[{"id":"12","label":"hello world","type":"event"}]}},{"id":"22","type":"boundary","label":"S","x":80,"y":40,"width":40,"height":40,"degree":1,"navTargets":{"next":[{"id":"14","label":"package main\n\nimport (\n    \"dependency 1\"\n    \"dependency 2\"\n    \"fmt\"\n)\n\nfunc main () {  // brace must go here\n\n      fmt.Println(\"Hello world\")\n}","type":"event"}]}},{"id":"23","type":"boundary","label":"E","x":80,"y":400,"width":40,"height":40,"degree":1,"navTargets":{"prev":[{"id":"14","label":"package main\n\nimport (\n    \"dependency 1\"\n    \"dependency 2\"\n    \"fmt\"\n)\n\nfunc main () {  // brace must go here\n\n      fmt.Println(\"Hello world\")\n}","type":"event"}]}},{"id":"24","type":"boundary","label":"S","x":720,"y":40,"width":40,"height":40,"degree":1,"navTargets":{"next":[{"id":"15","label":"runes","type":"event"}]}},{"id":"25","type":"boundary","label":"E","x":720,"y":340,"width":40,"height":40,"degree":1,"navTargets":{"prev":[{"id":"17","label":"unicode","type":"event"}]}}],"edges":[{"from":"15","to":"17","dir":"fwd","base":"leadsto","style":"leadsto","route":{"source":{"side":"bottom","position":0.5},"target":{"side":"top","position":0.5}}},{"from":"6","to":"12","dir":"undir","base":"nearto","style":"nearto","route":{"source":{"side":"left","position":0.5},"target":{"side":"right","position":0.5}}},{"from":"14","to":"12","dir":"fwd","base":"expresses","style":"expresses","route":{"source":{"side":"right","position":0.5},"target":{"side":"left","position":0.5}}},{"from":"18","to":"6","dir":"fwd","base":"leadsto","style":"leadsto","route":{"source":{"side":"bottom","position":0.5},"target":{"side":"top","position":0.5}}},{"from":"6","to":"19","dir":"fwd","base":"leadsto","style":"leadsto","route":{"source":{"side":"bottom","position":0.5},"target":{"side":"top","position":0.5}}},{"from":"20","to":"12","dir":"fwd","base":"leadsto","style":"leadsto","route":{"source":{"side":"bottom","position":0.5},"target":{"side":"top","position":0.5}}},{"from":"12","to":"21","dir":"fwd","base":"leadsto","style":"leadsto","route":{"source":{"side":"bottom","position":0.5},"target":{"side":"top","position":0.5}}},{"from":"22","to":"14","dir":"fwd","base":"leadsto","style":"leadsto","route":{"source":{"side":"bottom","position":0.5},"target":{"side":"top","position":0.5}}},{"from":"14","to":"23","dir":"fwd","base":"leadsto","style":"leadsto","route":{"source":{"side":"bottom","position":0.5},"target":{"side":"top","position":0.5}}},{"from":"24","to":"15","dir":"fwd","base":"leadsto","style":"leadsto","route":{"source":{"side":"bottom","position":0.5},"target":{"side":"top","position":0.5}}},{"from":"17","to":"25","dir":"fwd","base":"leadsto","style":"leadsto","route":{"source":{"side":"bottom","position":0.5},"target":{"side":"top","position":0.5}}}],"ancestorChain":["s:","s:+13"]}]};
+window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u003e\n\u003csvg xmlns=\"http://www.w3.org/2000/svg\" width=\"680\" height=\"480\" viewBox=\"0 0 680 480\"\u003e\n  \u003cdefs\u003e\n  \u003c/defs\u003e\n  \u003cg id=\"container-shells\"\u003e\n  \u003c/g\u003e\n  \u003cg id=\"node-shadows\"\u003e\n    \u003crect x=\"200\" y=\"210\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"40\" y=\"120\" width=\"120\" height=\"240\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"520\" y=\"120\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"520\" y=\"240\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"400\" y=\"130\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"400\" y=\"310\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"240\" y=\"130\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"240\" y=\"310\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"80\" y=\"40\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"80\" y=\"400\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"560\" y=\"40\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"560\" y=\"340\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"360\" y=\"210\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n  \u003c/g\u003e\n  \u003cg id=\"edges\"\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"0\" data-edge-base=\"leadsto\" data-edge-from=\"15\" data-edge-to=\"17\"\u003e\n    \u003cline x1=\"580.00\" y1=\"185.00\" x2=\"580.00\" y2=\"228.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 580.00 235.00 L 575.50 226.00 L 580.00 228.25 L 584.50 226.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"1\" data-edge-base=\"nearto\" data-edge-from=\"6\" data-edge-to=\"12\"\u003e\n    \u003cline x1=\"355.00\" y1=\"240.00\" x2=\"325.00\" y2=\"240.00\" stroke=\"#999999\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-dasharray=\"0 6.000\" /\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"2\" data-edge-base=\"expresses\" data-edge-from=\"14\" data-edge-to=\"12\"\u003e\n    \u003cline x1=\"165.00\" y1=\"240.00\" x2=\"188.25\" y2=\"240.00\" stroke=\"#6c8ebf\" stroke-width=\"3\" stroke-dasharray=\"9 6\" /\u003e\n    \u003cpath d=\"M 195.00 240.00 L 186.00 244.50 L 188.25 240.00 L 186.00 235.50 Z\" fill=\"#6c8ebf\" stroke=\"#6c8ebf\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"3\" data-edge-base=\"leadsto\" data-edge-from=\"18\" data-edge-to=\"6\"\u003e\n    \u003cline x1=\"420.00\" y1=\"175.00\" x2=\"420.00\" y2=\"198.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 420.00 205.00 L 415.50 196.00 L 420.00 198.25 L 424.50 196.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"4\" data-edge-base=\"leadsto\" data-edge-from=\"6\" data-edge-to=\"19\"\u003e\n    \u003cline x1=\"420.00\" y1=\"275.00\" x2=\"420.00\" y2=\"298.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 420.00 305.00 L 415.50 296.00 L 420.00 298.25 L 424.50 296.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"5\" data-edge-base=\"leadsto\" data-edge-from=\"20\" data-edge-to=\"12\"\u003e\n    \u003cline x1=\"260.00\" y1=\"175.00\" x2=\"260.00\" y2=\"198.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 260.00 205.00 L 255.50 196.00 L 260.00 198.25 L 264.50 196.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"6\" data-edge-base=\"leadsto\" data-edge-from=\"12\" data-edge-to=\"21\"\u003e\n    \u003cline x1=\"260.00\" y1=\"275.00\" x2=\"260.00\" y2=\"298.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 260.00 305.00 L 255.50 296.00 L 260.00 298.25 L 264.50 296.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"7\" data-edge-base=\"leadsto\" data-edge-from=\"22\" data-edge-to=\"14\"\u003e\n    \u003cline x1=\"100.00\" y1=\"85.00\" x2=\"100.00\" y2=\"108.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 100.00 115.00 L 95.50 106.00 L 100.00 108.25 L 104.50 106.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"8\" data-edge-base=\"leadsto\" data-edge-from=\"14\" data-edge-to=\"23\"\u003e\n    \u003cline x1=\"100.00\" y1=\"365.00\" x2=\"100.00\" y2=\"388.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 100.00 395.00 L 95.50 386.00 L 100.00 388.25 L 104.50 386.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"9\" data-edge-base=\"leadsto\" data-edge-from=\"24\" data-edge-to=\"15\"\u003e\n    \u003cline x1=\"580.00\" y1=\"85.00\" x2=\"580.00\" y2=\"108.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 580.00 115.00 L 575.50 106.00 L 580.00 108.25 L 584.50 106.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"10\" data-edge-base=\"leadsto\" data-edge-from=\"17\" data-edge-to=\"25\"\u003e\n    \u003cline x1=\"580.00\" y1=\"305.00\" x2=\"580.00\" y2=\"328.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 580.00 335.00 L 575.50 326.00 L 580.00 328.25 L 584.50 326.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n  \u003c/g\u003e\n  \u003cg id=\"nodes\"\u003e\n    \u003crect x=\"200\" y=\"210\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"260\" y=\"240\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003ehello world\u003c/text\u003e\n    \u003crect x=\"40\" y=\"120\" width=\"120\" height=\"240\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"100\" y=\"139\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003epackage main\u003c/text\u003e\n    \u003ctext x=\"100\" y=\"156\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003eimport (\u003c/text\u003e\n    \u003ctext x=\"100\" y=\"173\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003e\u0026#34;dependenc\u003c/text\u003e\n    \u003ctext x=\"100\" y=\"190\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003ey 1\u0026#34;\u003c/text\u003e\n    \u003ctext x=\"100\" y=\"206\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003e\u0026#34;dependenc\u003c/text\u003e\n    \u003ctext x=\"100\" y=\"223\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003ey 2\u0026#34;\u003c/text\u003e\n    \u003ctext x=\"100\" y=\"240\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003e\u0026#34;fmt\u0026#34;\u003c/text\u003e\n    \u003ctext x=\"100\" y=\"257\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003e) func main ()\u003c/text\u003e\n    \u003ctext x=\"100\" y=\"274\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003e{ // brace\u003c/text\u003e\n    \u003ctext x=\"100\" y=\"290\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003emust go here\u003c/text\u003e\n    \u003ctext x=\"100\" y=\"307\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003efmt.Println(\u0026#\u003c/text\u003e\n    \u003ctext x=\"100\" y=\"324\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003e34;Hello\u003c/text\u003e\n    \u003ctext x=\"100\" y=\"341\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003eworld\u0026#34;) }\u003c/text\u003e\n    \u003crect x=\"520\" y=\"120\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"580\" y=\"150\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003erunes\u003c/text\u003e\n    \u003crect x=\"520\" y=\"240\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"580\" y=\"270\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eunicode\u003c/text\u003e\n    \u003crect x=\"400\" y=\"130\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"420\" y=\"150\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eS\u003c/text\u003e\n    \u003crect x=\"400\" y=\"310\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"420\" y=\"330\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eE\u003c/text\u003e\n    \u003crect x=\"240\" y=\"130\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"260\" y=\"150\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eS\u003c/text\u003e\n    \u003crect x=\"240\" y=\"310\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"260\" y=\"330\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eE\u003c/text\u003e\n    \u003crect x=\"80\" y=\"40\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"100\" y=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eS\u003c/text\u003e\n    \u003crect x=\"80\" y=\"400\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"100\" y=\"420\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eE\u003c/text\u003e\n    \u003crect x=\"560\" y=\"40\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"580\" y=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eS\u003c/text\u003e\n    \u003crect x=\"560\" y=\"340\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"580\" y=\"360\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eE\u003c/text\u003e\n    \u003crect x=\"360\" y=\"210\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"420\" y=\"230\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003ebasic\u003c/text\u003e\n    \u003ctext x=\"420\" y=\"250\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eexample\u003c/text\u003e\n  \u003c/g\u003e\n\u003c/svg\u003e\n","s:+13":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u003e\n\u003csvg xmlns=\"http://www.w3.org/2000/svg\" width=\"840\" height=\"480\" viewBox=\"0 0 840 480\"\u003e\n  \u003cdefs\u003e\n  \u003c/defs\u003e\n  \u003cg id=\"container-shells\"\u003e\n  \u003c/g\u003e\n  \u003cg id=\"node-shadows\"\u003e\n    \u003crect x=\"200\" y=\"210\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"40\" y=\"120\" width=\"120\" height=\"240\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"680\" y=\"120\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"680\" y=\"240\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"400\" y=\"130\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"400\" y=\"310\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"240\" y=\"130\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"240\" y=\"310\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"80\" y=\"40\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"80\" y=\"400\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"720\" y=\"40\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"720\" y=\"340\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"520\" y=\"40\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n    \u003crect x=\"360\" y=\"210\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n  \u003c/g\u003e\n  \u003cg id=\"edges\"\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"0\" data-edge-base=\"leadsto\" data-edge-from=\"15\" data-edge-to=\"17\"\u003e\n    \u003cline x1=\"740.00\" y1=\"185.00\" x2=\"740.00\" y2=\"228.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 740.00 235.00 L 735.50 226.00 L 740.00 228.25 L 744.50 226.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"1\" data-edge-base=\"nearto\" data-edge-from=\"6\" data-edge-to=\"12\"\u003e\n    \u003cline x1=\"355.00\" y1=\"240.00\" x2=\"325.00\" y2=\"240.00\" stroke=\"#999999\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-dasharray=\"0 6.000\" /\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"2\" data-edge-base=\"expresses\" data-edge-from=\"14\" data-edge-to=\"12\"\u003e\n    \u003cline x1=\"165.00\" y1=\"240.00\" x2=\"188.25\" y2=\"240.00\" stroke=\"#6c8ebf\" stroke-width=\"3\" stroke-dasharray=\"9 6\" /\u003e\n    \u003cpath d=\"M 195.00 240.00 L 186.00 244.50 L 188.25 240.00 L 186.00 235.50 Z\" fill=\"#6c8ebf\" stroke=\"#6c8ebf\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"3\" data-edge-base=\"leadsto\" data-edge-from=\"18\" data-edge-to=\"6\"\u003e\n    \u003cline x1=\"420.00\" y1=\"175.00\" x2=\"420.00\" y2=\"198.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 420.00 205.00 L 415.50 196.00 L 420.00 198.25 L 424.50 196.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"4\" data-edge-base=\"leadsto\" data-edge-from=\"6\" data-edge-to=\"19\"\u003e\n    \u003cline x1=\"420.00\" y1=\"275.00\" x2=\"420.00\" y2=\"298.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 420.00 305.00 L 415.50 296.00 L 420.00 298.25 L 424.50 296.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"5\" data-edge-base=\"leadsto\" data-edge-from=\"20\" data-edge-to=\"12\"\u003e\n    \u003cline x1=\"260.00\" y1=\"175.00\" x2=\"260.00\" y2=\"198.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 260.00 205.00 L 255.50 196.00 L 260.00 198.25 L 264.50 196.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"6\" data-edge-base=\"leadsto\" data-edge-from=\"12\" data-edge-to=\"21\"\u003e\n    \u003cline x1=\"260.00\" y1=\"275.00\" x2=\"260.00\" y2=\"298.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 260.00 305.00 L 255.50 296.00 L 260.00 298.25 L 264.50 296.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"7\" data-edge-base=\"leadsto\" data-edge-from=\"22\" data-edge-to=\"14\"\u003e\n    \u003cline x1=\"100.00\" y1=\"85.00\" x2=\"100.00\" y2=\"108.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 100.00 115.00 L 95.50 106.00 L 100.00 108.25 L 104.50 106.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"8\" data-edge-base=\"leadsto\" data-edge-from=\"14\" data-edge-to=\"23\"\u003e\n    \u003cline x1=\"100.00\" y1=\"365.00\" x2=\"100.00\" y2=\"388.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 100.00 395.00 L 95.50 386.00 L 100.00 388.25 L 104.50 386.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"9\" data-edge-base=\"leadsto\" data-edge-from=\"24\" data-edge-to=\"15\"\u003e\n    \u003cline x1=\"740.00\" y1=\"85.00\" x2=\"740.00\" y2=\"108.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 740.00 115.00 L 735.50 106.00 L 740.00 108.25 L 744.50 106.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n    \u003cg class=\"edge\" data-edge-idx=\"10\" data-edge-base=\"leadsto\" data-edge-from=\"17\" data-edge-to=\"25\"\u003e\n    \u003cline x1=\"740.00\" y1=\"305.00\" x2=\"740.00\" y2=\"328.25\" stroke=\"#ff8000\" stroke-width=\"3\" /\u003e\n    \u003cpath d=\"M 740.00 335.00 L 735.50 326.00 L 740.00 328.25 L 744.50 326.00 Z\" fill=\"#ff8000\" stroke=\"#ff8000\" stroke-width=\"3\" stroke-miterlimit=\"10\"/\u003e\n    \u003c/g\u003e\n  \u003c/g\u003e\n  \u003cg id=\"nodes\"\u003e\n    \u003crect x=\"200\" y=\"210\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"260\" y=\"240\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003ehello world\u003c/text\u003e\n    \u003crect x=\"40\" y=\"120\" width=\"120\" height=\"240\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"100\" y=\"139\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003epackage main\u003c/text\u003e\n    \u003ctext x=\"100\" y=\"156\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003eimport (\u003c/text\u003e\n    \u003ctext x=\"100\" y=\"173\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003e\u0026#34;dependenc\u003c/text\u003e\n    \u003ctext x=\"100\" y=\"190\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003ey 1\u0026#34;\u003c/text\u003e\n    \u003ctext x=\"100\" y=\"206\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003e\u0026#34;dependenc\u003c/text\u003e\n    \u003ctext x=\"100\" y=\"223\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003ey 2\u0026#34;\u003c/text\u003e\n    \u003ctext x=\"100\" y=\"240\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003e\u0026#34;fmt\u0026#34;\u003c/text\u003e\n    \u003ctext x=\"100\" y=\"257\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003e) func main ()\u003c/text\u003e\n    \u003ctext x=\"100\" y=\"274\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003e{ // brace\u003c/text\u003e\n    \u003ctext x=\"100\" y=\"290\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003emust go here\u003c/text\u003e\n    \u003ctext x=\"100\" y=\"307\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003efmt.Println(\u0026#\u003c/text\u003e\n    \u003ctext x=\"100\" y=\"324\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003e34;Hello\u003c/text\u003e\n    \u003ctext x=\"100\" y=\"341\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"14\" font-weight=\"bold\" fill=\"#ff8000\"\u003eworld\u0026#34;) }\u003c/text\u003e\n    \u003crect x=\"680\" y=\"120\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"740\" y=\"150\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003erunes\u003c/text\u003e\n    \u003crect x=\"680\" y=\"240\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"740\" y=\"270\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eunicode\u003c/text\u003e\n    \u003crect x=\"400\" y=\"130\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"420\" y=\"150\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eS\u003c/text\u003e\n    \u003crect x=\"400\" y=\"310\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"420\" y=\"330\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eE\u003c/text\u003e\n    \u003crect x=\"240\" y=\"130\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"260\" y=\"150\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eS\u003c/text\u003e\n    \u003crect x=\"240\" y=\"310\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"260\" y=\"330\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eE\u003c/text\u003e\n    \u003crect x=\"80\" y=\"40\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"100\" y=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eS\u003c/text\u003e\n    \u003crect x=\"80\" y=\"400\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"100\" y=\"420\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eE\u003c/text\u003e\n    \u003crect x=\"720\" y=\"40\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"740\" y=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eS\u003c/text\u003e\n    \u003crect x=\"720\" y=\"340\" width=\"40\" height=\"40\" rx=\"4\" ry=\"4\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"740\" y=\"360\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eE\u003c/text\u003e\n    \u003crect x=\"520\" y=\"40\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#d5e8d4\" stroke=\"#82b366\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"580\" y=\"60\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"normal\" fill=\"#009900\"\u003eassociative\u003c/text\u003e\n    \u003ctext x=\"580\" y=\"80\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"normal\" fill=\"#009900\"\u003earrays\u003c/text\u003e\n    \u003crect x=\"360\" y=\"210\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#ffe6cc\" stroke=\"#ff8000\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"420\" y=\"230\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003ebasic\u003c/text\u003e\n    \u003ctext x=\"420\" y=\"250\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"bold\" fill=\"#ff8000\"\u003eexample\u003c/text\u003e\n  \u003c/g\u003e\n\u003c/svg\u003e\n"};
 </script>
 <script>
 // Zoomlayout Canvas — client
@@ -229,8 +241,17 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
   // --- Runtime state ---
   let currentStateID = null;
   let historyStack = [];         // breadcrumb trail of visited state IDs
+  // Selection is a PRIMARY plus a set of extras. The primary is what the
+  // inspector, the URL hash, the view history and navigation carry-through all
+  // read — keeping it a single value means none of that had to change. Extras
+  // are the shift-clicked additions: highlighted on the canvas and listed in
+  // the inspector, but never in the hash (a URL of N ids is not worth it).
+  // The primary is exclusive: a node OR an edge, never both. Shift-clicking the
+  // other kind demotes the current primary into the extras.
   let selectedNodeID = null;
   let selectedEdgeIdx = null;
+  const extraNodeIDs = new Set();   // additionally highlighted node ids
+  const extraEdgeIdxs = new Set();  // additionally highlighted edge indices
   let cameraScale = 1;
   let minCameraScale = 0.1;
   let panX = 0, panY = 0;
@@ -368,8 +389,8 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
   }
 
   // Hash format: #<stateID>[/<nodeID>][?z=...&x=...&y=...]
-  // - stateID and nodeID are kept fragment-clean (":" and "+" stay literal, e.g.
-  //   #s:2.8+5/10); parse still decodeURIComponent()s so older %3A-encoded links load
+  // - stateID and nodeID go in verbatim — they only contain fragment-safe chars
+  //   (e.g. #s:2.8+5/10, #s:2/shell-2), so no %-encoding, clean readable URLs.
   // - zoom/pan are query-style and only included by Copy URL (default
   //   navigation doesn't touch them, so panning doesn't spam history)
   function parseHash() {
@@ -395,26 +416,20 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
     const slash = raw.indexOf("/");
     let stateID, nodeID = null;
     if (slash < 0) {
-      stateID = decodeURIComponent(raw);
+      stateID = raw;
     } else {
-      stateID = decodeURIComponent(raw.slice(0, slash));
+      stateID = raw.slice(0, slash);
       const n = raw.slice(slash + 1);
-      if (n) nodeID = decodeURIComponent(n);
+      if (n) nodeID = n;
     }
     return { stateID: stateID, nodeID: nodeID, zoom: view.zoom, panX: view.panX, panY: view.panY, inspectorHidden: view.inspectorHidden };
   }
 
-  // State / node IDs only ever contain fragment-safe characters (e.g.
-  // "s:2.8+5.13", "shell-2"). Keep ":" and "+" literal so the URL reads cleanly
-  // and matches what users share, while still escaping anything genuinely unsafe
-  // (notably the "/" stateID|nodeID separator). parseHash decodeURIComponent()s,
-  // so older "%3A"-encoded links still load.
-  function encId(s) {
-    return encodeURIComponent(String(s)).replace(/%3A/g, ":").replace(/%2B/g, "+");
-  }
   function buildHash(stateID, nodeID, view) {
-    let h = "#" + encId(stateID);
-    if (nodeID != null && nodeID !== "") h += "/" + encId(nodeID);
+    // IDs go in verbatim — they only contain fragment-safe chars and never the
+    // "/" separator, so parseHash reads them straight back (no encode/decode).
+    let h = "#" + String(stateID);
+    if (nodeID != null && nodeID !== "") h += "/" + String(nodeID);
     const parts = [];
     if (view) {
       if (view.zoom != null) parts.push("z=" + encodeURIComponent(view.zoom));
@@ -495,6 +510,7 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
 
     currentStateID = targetID;
     selectedNodeID = null;
+    clearExtras(); // a new state renders new nodes; the old highlight set is meaningless
     syncHistory(targetID);
     // Hash is finalized later (after callers may set selectedNodeID) via
     // syncHash; push a placeholder entry now so back/forward works.
@@ -662,6 +678,7 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
             e.stopPropagation();
             if (!findNodeById(id)) return;
             if (e.ctrlKey || e.metaKey) handleNodeClick(id, { shallow: e.altKey, select: selectedNodeID === id });
+            else if (e.shiftKey) toggleNodeInSelection(id); // add to / drop from the highlight set
             else selectNodeOnly(id);
           };
         })(n.id));
@@ -696,6 +713,7 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
           // Plain click highlights/selects only. Ctrl/Cmd+click navigates,
           // keeping the highlight only if the node was already selected.
           if (e.ctrlKey || e.metaKey) handleNodeClick(id, { shallow: e.altKey, select: selectedNodeID === id });
+          else if (e.shiftKey) toggleNodeInSelection(id); // add to / drop from the highlight set
           else selectNodeOnly(id);
         };
       })(n.id));
@@ -762,9 +780,90 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
   // selected node toggles the highlight back off. Navigation is reserved for
   // Ctrl/Cmd+click, double-click and the corner chip.
   function selectNodeOnly(nodeID) {
+    // A plain click is a fresh single selection: it drops the extras.
+    clearExtras();
     selectedNodeID = (selectedNodeID === nodeID) ? null : nodeID;
     updateSelection();
     updateInspector();
+    syncHash();
+  }
+
+  function clearExtras() {
+    extraNodeIDs.clear();
+    extraEdgeIdxs.clear();
+  }
+
+  // Every selected node / edge, primary first. Used for the highlights, the
+  // inspector list and the debug API.
+  function allSelectedNodeIDs() {
+    const out = selectedNodeID ? [selectedNodeID] : [];
+    for (const id of extraNodeIDs) if (id !== selectedNodeID) out.push(id);
+    return out;
+  }
+
+  function allSelectedEdgeIdxs() {
+    const out = selectedEdgeIdx != null ? [selectedEdgeIdx] : [];
+    for (const i of extraEdgeIdxs) if (i !== selectedEdgeIdx) out.push(i);
+    return out;
+  }
+
+  function selectionCount() {
+    return allSelectedNodeIDs().length + allSelectedEdgeIdxs().length;
+  }
+
+  function clearSelection() {
+    selectedNodeID = null;
+    selectedEdgeIdx = null;
+    clearExtras();
+  }
+
+  // Shift+click a node: add it to the highlight set, or take it out if it is
+  // already in. The clicked node becomes the PRIMARY so the inspector follows
+  // the thing you just pointed at; whatever was primary before is kept as an
+  // extra, so nothing you had highlighted is lost.
+  function toggleNodeInSelection(nodeID) {
+    if (selectedNodeID === nodeID) {
+      // Removing the primary: promote an extra so a multi-selection does not
+      // lose its inspector, rather than collapsing to nothing.
+      extraNodeIDs.delete(nodeID);
+      const next = extraNodeIDs.values().next();
+      selectedNodeID = next.done ? null : next.value;
+      if (!next.done) extraNodeIDs.delete(selectedNodeID);
+    } else if (extraNodeIDs.has(nodeID)) {
+      extraNodeIDs.delete(nodeID);
+    } else {
+      if (selectedNodeID) extraNodeIDs.add(selectedNodeID);
+      if (selectedEdgeIdx != null) extraEdgeIdxs.add(selectedEdgeIdx);
+      selectedNodeID = nodeID;
+      selectedEdgeIdx = null;
+    }
+    // No updateInspector() here: updateSelection dispatches to the right
+    // inspector already, and renderNodeInspector clears selectedEdgeIdx — so
+    // calling it while an EDGE is primary silently dropped that edge.
+    updateSelection();
+    syncHash();
+  }
+
+  // Shift+click an edge: the mirror of toggleNodeInSelection.
+  function toggleEdgeInSelection(idx) {
+    if (selectedEdgeIdx === idx) {
+      extraEdgeIdxs.delete(idx);
+      const next = extraEdgeIdxs.values().next();
+      selectedEdgeIdx = next.done ? null : next.value;
+      if (!next.done) extraEdgeIdxs.delete(selectedEdgeIdx);
+      if (selectedEdgeIdx == null) {
+        const n = extraNodeIDs.values().next();
+        if (!n.done) { selectedNodeID = n.value; extraNodeIDs.delete(selectedNodeID); }
+      }
+    } else if (extraEdgeIdxs.has(idx)) {
+      extraEdgeIdxs.delete(idx);
+    } else {
+      if (selectedNodeID) extraNodeIDs.add(selectedNodeID);
+      if (selectedEdgeIdx != null) extraEdgeIdxs.add(selectedEdgeIdx);
+      selectedNodeID = null;
+      selectedEdgeIdx = idx;
+    }
+    updateSelection();
     syncHash();
   }
 
@@ -859,42 +958,137 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
     const es = svgContainer.querySelectorAll("g.edge.edge-selected, g.edge.edge-connected");
     for (let i = 0; i < es.length; i++) es[i].classList.remove("edge-selected", "edge-connected");
     clearEndpointHighlight();
-    if (selectedNodeID) {
-      const node = findNodeById(selectedNodeID);
-      if (node) {
-        const svg = svgContainer.querySelector("svg");
-        if (svg) {
-          const rr = String(selectionRingRadius(node));
-          const h = svgEl("rect", {
-            x: node.x - 2, y: node.y - 2,
-            width: node.width + 4, height: node.height + 4,
-            rx: rr, ry: rr,
-            fill: "none", stroke: "#ffd700", "stroke-width": "3",
-            class: "selection-highlight", "pointer-events": "none",
-          });
-          svg.appendChild(h);
-        }
-      }
-      updateInspector();
-      highlightConnectedEdges(selectedNodeID);
-      highlightConnectedNodeBorders(selectedNodeID);
-    } else if (selectedEdgeIdx != null) {
-      const eg = svgContainer.querySelector('g.edge[data-edge-idx="' + selectedEdgeIdx + '"]');
-      if (eg) eg.classList.add("edge-selected");
-      const stE = currentState();
-      const selE = stE && stE.edges && stE.edges[selectedEdgeIdx];
-      if (selE) highlightEdgeEndpoints(selE.from, selE.to);
-      updateEdgeInspector();
-    } else {
-      inspectorContent.innerHTML = "<em>Click a node or edge to inspect</em>";
+
+    const nodeIDs = allSelectedNodeIDs();
+    const edgeIdxs = allSelectedEdgeIdxs();
+
+    // Inspector FIRST: updateInspector clears every edge-selected class (its
+    // single-selection invariant), so the edge highlights below have to be
+    // applied after it or the extras would be wiped.
+    if (selectedNodeID) updateInspector();
+    else if (selectedEdgeIdx != null) updateEdgeInspector();
+    else inspectorContent.innerHTML = "<em>Click a node or edge to inspect</em>";
+
+    const svg = svgContainer.querySelector("svg");
+    for (const id of nodeIDs) {
+      const node = findNodeById(id);
+      if (!node || !svg) continue;
+      const rr = String(selectionRingRadius(node));
+      const attrs = {
+        x: node.x - 2, y: node.y - 2,
+        width: node.width + 4, height: node.height + 4,
+        rx: rr, ry: rr,
+        fill: "none", stroke: "#ffd700", "stroke-width": "3",
+        class: "selection-highlight", "pointer-events": "none",
+      };
+      // The primary ring is solid; extras are dashed, so it stays visible WHICH
+      // of several highlighted nodes the inspector is describing. Set only when
+      // dashed — svgEl writes every key it is given, so a null would land as the
+      // literal string "null" and dash the primary too.
+      if (id !== selectedNodeID) attrs["stroke-dasharray"] = "6 4";
+      svg.appendChild(svgEl("rect", attrs));
     }
+
+    const stE = currentState();
+    for (const idx of edgeIdxs) {
+      const eg = svgContainer.querySelector('g.edge[data-edge-idx="' + idx + '"]');
+      if (eg) eg.classList.add("edge-selected");
+      const selE = stE && stE.edges && stE.edges[idx];
+      if (selE) highlightEdgeEndpoints(selE.from, selE.to);
+    }
+
+    // Connected-edge / attaching-border marks are the union over every selected
+    // node, so two highlighted nodes show both their neighbourhoods at once —
+    // which is the point of being able to select more than one.
+    for (const id of nodeIDs) {
+      highlightConnectedEdges(id);
+      highlightConnectedNodeBorders(id);
+    }
+    // The multi-select header is prepended by updateInspector /
+    // updateEdgeInspector themselves — several callers run updateInspector AFTER
+    // updateSelection, which rewrites inspectorContent wholesale, so anything
+    // prepended here would be wiped.
+
     // updateSelection is the one call every view change funnels through (each
     // selection change + every render), and never a bare pan/wheel — so it's the
     // natural place to record a view-history step (deferred + coalesced).
     scheduleCommit();
   }
 
+  // updateInspector / updateEdgeInspector = render the primary, then prepend the
+  // multi-select list. Wrapping rather than appending inside the renderers keeps
+  // their early returns intact, and keeps the header attached to whoever writes
+  // inspectorContent LAST (several callers run updateInspector after
+  // updateSelection, which rewrites it wholesale).
   function updateInspector() {
+    renderNodeInspector();
+    if (selectionCount() > 1) renderMultiSelectHeader(allSelectedNodeIDs(), allSelectedEdgeIdxs());
+  }
+
+  function updateEdgeInspector() {
+    renderEdgeInspector();
+    if (selectionCount() > 1) renderMultiSelectHeader(allSelectedNodeIDs(), allSelectedEdgeIdxs());
+  }
+
+  // With more than one thing selected, prepend a compact list to the inspector:
+  // the count, then every selected item as a chip. The primary is marked; the
+  // others are clickable, which makes one of them primary so you can read its
+  // details without losing the set.
+  function renderMultiSelectHeader(nodeIDs, edgeIdxs) {
+    const st = currentState();
+    let html = '<div class="insp-multi"><div class="insp-multi-count">' +
+      selectionCount() + ' selected</div>';
+    for (const id of nodeIDs) {
+      const n = findNodeById(id);
+      const primary = id === selectedNodeID;
+      html += '<button class="insp-multi-item' + (primary ? ' is-primary' : '') +
+        '" data-sel-node="' + escapeAttr(String(id)) + '">' +
+        escapeHTML((n && n.label) || String(id)) + '</button>';
+    }
+    for (const idx of edgeIdxs) {
+      const e = st && st.edges && st.edges[idx];
+      const primary = idx === selectedEdgeIdx;
+      const name = e ? (edgeNodeName(e.from) + " → " + edgeNodeName(e.to)) : ("edge " + idx);
+      html += '<button class="insp-multi-item' + (primary ? ' is-primary' : '') +
+        '" data-sel-edge="' + idx + '">' + escapeHTML(name) + '</button>';
+    }
+    html += '</div>';
+    inspectorContent.innerHTML = html + inspectorContent.innerHTML;
+    const items = inspectorContent.querySelectorAll(".insp-multi-item");
+    for (let i = 0; i < items.length; i++) {
+      items[i].addEventListener("click", function () {
+        const nid = this.getAttribute("data-sel-node");
+        const eid = this.getAttribute("data-sel-edge");
+        if (nid != null) makeNodePrimary(nid);
+        else if (eid != null) makeEdgePrimary(parseInt(eid, 10));
+      });
+    }
+  }
+
+  // Move the primary within the existing set — no add, no remove.
+  function makeNodePrimary(nodeID) {
+    if (selectedNodeID === nodeID) return;
+    if (selectedNodeID) extraNodeIDs.add(selectedNodeID);
+    if (selectedEdgeIdx != null) extraEdgeIdxs.add(selectedEdgeIdx);
+    extraNodeIDs.delete(nodeID);
+    selectedNodeID = nodeID;
+    selectedEdgeIdx = null;
+    updateSelection(); // dispatches to renderNodeInspector; see toggleNodeInSelection
+    syncHash();
+  }
+
+  function makeEdgePrimary(idx) {
+    if (selectedEdgeIdx === idx) return;
+    if (selectedNodeID) extraNodeIDs.add(selectedNodeID);
+    if (selectedEdgeIdx != null) extraEdgeIdxs.add(selectedEdgeIdx);
+    extraEdgeIdxs.delete(idx);
+    selectedNodeID = null;
+    selectedEdgeIdx = idx;
+    updateSelection();
+    syncHash();
+  }
+
+  function renderNodeInspector() {
     // A node is being inspected → drop any edge selection/highlight.
     selectedEdgeIdx = null;
     const es = svgContainer.querySelectorAll("g.edge.edge-selected");
@@ -966,28 +1160,42 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
     // matching the connected edges highlighted on the canvas.
     const conn = [];
     if (st && st.edges) {
+      // Use the SAME membership set the canvas highlight uses, so the list matches
+      // the lit edges/borders. For a container that's every edge crossing its
+      // boundary (not just the shell's own); for a plain node the set is {node.id}.
+      const ids = connectedIdSet(node.id);
       for (let i = 0; i < st.edges.length; i++) {
         const e = st.edges[i];
+        const fromIn = ids.has(String(e.from)), toIn = ids.has(String(e.to));
+        if (fromIn === toIn) continue; // unrelated, or internal to a container / self-loop
         const undir = e.base === "nearto" || e.dir === "undir";
-        if (e.from === node.id) conn.push({ base: e.base, other: e.to, arrow: undir ? "---" : "→", source: true });
-        else if (e.to === node.id) conn.push({ base: e.base, other: e.from, arrow: undir ? "---" : "←", source: false });
+        const source = fromIn; // the selection side is the edge's FROM endpoint
+        conn.push({
+          base: e.base,
+          other: fromIn ? e.to : e.from,
+          arrow: undir ? "---" : (source ? "→" : "←"),
+          source: source,
+          // Only now — for an actually-connected edge — check if it's a hidden stub
+          // (avoids a DOM query per edge in the whole state).
+          hidden: !!svgContainer.querySelector('g.edge[data-edge-idx="' + i + '"] .edge-full'),
+        });
       }
     }
-    // Order: source (outgoing) edges first, then by the OTHER node's kind —
-    // events, then things, then concepts.
-    const typeRank = function (id) {
-      const n = findNodeById(id);
-      const r = { event: 0, thing: 1, concept: 2 };
-      return (n && r[n.type] != null) ? r[n.type] : 3;
+    // Order: this node as SOURCE (outgoing) first, then as TARGET; within each,
+    // by relation type — leads-to, part-of, expresses, near-to.
+    const relRank = function (base) {
+      const r = { leadsto: 0, partof: 1, expresses: 2, nearto: 3 };
+      return r[base] != null ? r[base] : 4;
     };
     conn.sort(function (a, b) {
       if (a.source !== b.source) return a.source ? -1 : 1;
-      return typeRank(a.other) - typeRank(b.other);
+      return relRank(a.base) - relRank(b.base);
     });
     if (conn.length) {
       html += '<div class="actions"><div class="label" style="margin: 6px 0 4px;">Connected (' + conn.length + ')</div>';
       for (const c of conn) {
         html += '<button class="action-btn rel-' + escapeAttr(c.base) + '" onclick="window.__selectNode(\'' + escapeAttr(c.other) + '\')">' +
+                (c.hidden ? '<span class="hidden-chip" title="hidden cross-component edge — revealed on the canvas">?</span> ' : '') +
                 c.arrow + ' ' + escapeHTML(relationHyphen(c.base)) + ': ' + escapeHTML(edgeNodeName(c.other)) + '</button>';
       }
       html += '</div>';
@@ -1016,10 +1224,11 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
         if (didDrag) return; // a drag-to-pan that ended here, not a click
         ev.stopPropagation();
         hideEdgeTooltip();
-        if (selectedEdgeIdx === idx) {
+        if (ev.shiftKey) {
+          toggleEdgeInSelection(idx); // add to / drop from the highlight set
+        } else if (selectedEdgeIdx === idx) {
           // toggle off → hide the edge (e.g. click the remote sibling after following it)
-          selectedEdgeIdx = null;
-          selectedNodeID = null;
+          clearSelection();
           updateSelection();
         } else {
           selectEdge(idx); // toggle on → reveal/highlight the edge
@@ -1097,9 +1306,12 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
       // this won't bubble to the background-deselect; keeps the history clean and
       // the edge selected at the destination.
       if (ev.detail > 1) return;
+      if (ev.shiftKey) {
+        toggleEdgeInSelection(idx);
+        return;
+      }
       if (selectedEdgeIdx === idx) {
-        selectedEdgeIdx = null;
-        selectedNodeID = null;
+        clearSelection();
         updateSelection();
       } else {
         selectEdge(idx);
@@ -1150,6 +1362,7 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
   }
 
   function selectEdge(idx) {
+    clearExtras();
     selectedNodeID = null;
     selectedEdgeIdx = idx;
     updateSelection();
@@ -1169,7 +1382,7 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
     return (n && n.label) ? n.label : id;
   }
 
-  function updateEdgeInspector() {
+  function renderEdgeInspector() {
     const st = currentState();
     const e = st && st.edges && st.edges[selectedEdgeIdx];
     if (!e) { inspectorContent.innerHTML = "<em>Edge not found</em>"; return; }
@@ -1247,11 +1460,34 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
 
   // Highlight every edge touching the selected node (including hidden stub edges,
   // whose full middle is revealed) via the shared .edge-connected highlight.
+  // The set of node IDs an edge must touch to count as "connected" to the
+  // selection: the node itself plus — when it's a container — every node nested
+  // inside it (recursively). So selecting a container lights every edge into or
+  // out of its contents, not just the shell's own edges.
+  function connectedIdSet(nodeID) {
+    const set = new Set([String(nodeID)]);
+    const node = findNodeById(nodeID);
+    if (node && node.container && node.container.childNodeIDs) {
+      const queue = node.container.childNodeIDs.slice();
+      while (queue.length) {
+        const cid = String(queue.shift());
+        if (set.has(cid)) continue;
+        set.add(cid);
+        const cn = findNodeById(cid);
+        if (cn && cn.container && cn.container.childNodeIDs) {
+          for (const gc of cn.container.childNodeIDs) queue.push(gc);
+        }
+      }
+    }
+    return set;
+  }
+
   function highlightConnectedEdges(nodeID) {
+    const ids = connectedIdSet(nodeID);
     const edges = svgContainer.querySelectorAll("g.edge");
     for (let i = 0; i < edges.length; i++) {
       const g = edges[i];
-      if (g.getAttribute("data-edge-from") === nodeID || g.getAttribute("data-edge-to") === nodeID) {
+      if (ids.has(g.getAttribute("data-edge-from")) || ids.has(g.getAttribute("data-edge-to"))) {
         g.classList.add("edge-connected");
       }
     }
@@ -1268,12 +1504,12 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
     if (!st || !st.edges) return;
     const svg = svgContainer.querySelector("svg");
     if (!svg) return;
+    const ids = connectedIdSet(nodeID); // node (+ its contents, if a container)
     for (let i = 0; i < st.edges.length; i++) {
       const e = st.edges[i];
-      let farID = null;
-      if (String(e.from) === String(nodeID)) farID = e.to;
-      else if (String(e.to) === String(nodeID)) farID = e.from;
-      else continue;
+      const fromIn = ids.has(String(e.from)), toIn = ids.has(String(e.to));
+      if (fromIn === toIn) continue; // unrelated, or internal to a container → no external endpoint to mark
+      const farID = fromIn ? e.to : e.from;
       const far = findNodeById(farID);
       if (!far) continue; // far end not rendered in this state
       const g = svg.querySelector('g.edge[data-edge-idx="' + i + '"]');
@@ -1459,13 +1695,26 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
     Promise.resolve().then(function () { commitScheduled = false; recordView(); });
   }
 
+  // A stable signature for "which view is this" — state plus the WHOLE selection,
+  // not just the primary. Dropping one extra leaves the primary alone, so a
+  // primary-only signature treated that as the same view and recorded no step,
+  // making it un-undoable.
+  function viewKey(snap) {
+    return snap.stateID +
+      "|n:" + (snap.nodes || []).slice().sort().join(",") +
+      "|e:" + (snap.edges || []).slice().sort(function (a, b) { return a - b; }).join(",");
+  }
+
   function recordView() {
     if (suppressHistory || currentStateID == null) return;
     const snap = { stateID: currentStateID, nodeID: selectedNodeID, edgeIdx: selectedEdgeIdx,
+                   // The full set, so ◀ / ▶ restore a multi-selection and not
+                   // just the item that happened to be primary.
+                   nodes: allSelectedNodeIDs(), edges: allSelectedEdgeIdxs(),
                    zoom: cameraScale, panX: panX, panY: panY };
     const cur = viewHistory[viewCursor];
     // Same logical view (state + selection) → just refresh its camera in place.
-    if (cur && cur.stateID === snap.stateID && cur.nodeID === snap.nodeID && cur.edgeIdx === snap.edgeIdx) {
+    if (cur && viewKey(cur) === viewKey(snap) && cur.nodeID === snap.nodeID && cur.edgeIdx === snap.edgeIdx) {
       cur.zoom = snap.zoom; cur.panX = snap.panX; cur.panY = snap.panY;
       updateHistoryButtons();
       return;
@@ -1499,6 +1748,15 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
       selectedNodeID = (snap.nodeID != null && findNodeById(snap.nodeID)) ? snap.nodeID : null;
       const st = currentState();
       selectedEdgeIdx = (snap.edgeIdx != null && st && st.edges && st.edges[snap.edgeIdx]) ? snap.edgeIdx : null;
+      // Rebuild the extras too, skipping the primary and anything this state no
+      // longer renders (an older snapshot can name nodes that are hidden here).
+      clearExtras();
+      for (const id of (snap.nodes || [])) {
+        if (id !== selectedNodeID && findNodeById(id)) extraNodeIDs.add(id);
+      }
+      for (const i of (snap.edges || [])) {
+        if (i !== selectedEdgeIdx && st && st.edges && st.edges[i]) extraEdgeIdxs.add(i);
+      }
       renderState(true);                 // draws SVG + highlights + breadcrumb (skipFit)
       cameraScale = snap.zoom; minCameraScale = cameraScale * 0.2;
       panX = snap.panX; panY = snap.panY;
@@ -1798,9 +2056,8 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
   });
 
   function backgroundAction() {
-    if (selectedNodeID || selectedEdgeIdx != null) {
-      selectedNodeID = null;
-      selectedEdgeIdx = null;
+    if (selectionCount() > 0) {
+      clearSelection(); // clears the extras too — one click to drop the lot
       updateSelection(); // its "nothing selected" branch resets the inspector
       syncHash();
     }
@@ -1821,8 +2078,8 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
     if (e.key === "Escape") {
       if (!helpOverlay.hidden) { closeHelp(); return; } // help takes precedence
       if (menuOpen()) { closeMenu(); return; }           // then the ⋮ menu
-      if (selectedNodeID) {
-        selectedNodeID = null;
+      if (selectionCount() > 0) {
+        clearSelection();
         updateSelection();
         updateInspector();
         syncHash();
@@ -1851,6 +2108,17 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
     },
     clickNode: function (nodeID) { handleNodeClick(nodeID); },
     selectNode: function (nodeID) { selectNodeOnly(nodeID); },
+    shiftSelectNode: function (nodeID) { toggleNodeInSelection(nodeID); },
+    shiftSelectEdge: function (idx) { toggleEdgeInSelection(idx); },
+    selectionInfo: function () {
+      return {
+        primaryNode: selectedNodeID,
+        primaryEdge: selectedEdgeIdx,
+        nodes: allSelectedNodeIDs(),
+        edges: allSelectedEdgeIdxs(),
+        count: selectionCount(),
+      };
+    },
     listStates: function () { return Object.keys(statesByID); },
     currentTransitions: function () {
       const st = currentState();
