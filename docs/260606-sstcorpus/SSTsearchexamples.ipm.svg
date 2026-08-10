@@ -332,8 +332,8 @@
     <text x="1060" y="2584" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#009900">signified with</text>
     <text x="1060" y="2601" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#009900">a backslash</text>
     <text x="1060" y="2618" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#009900">e.g.</text>
-    <text x="1060" y="2635" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#009900">&#34;\command&</text>
-    <text x="1060" y="2652" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#009900">#34;, but on a</text>
+    <text x="1060" y="2635" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#009900">&#34;\command&#34;,</text>
+    <text x="1060" y="2652" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#009900">but on a</text>
     <text x="1060" y="2668" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#009900">command line,</text>
     <text x="1060" y="2685" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#009900">you need to</text>
     <text x="1060" y="2702" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#009900">escape them</text>
@@ -386,9 +386,9 @@
     <text x="1240" y="2118" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#009900">Type commands</text>
     <text x="1240" y="2135" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#009900">to search,</text>
     <text x="1240" y="2152" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#009900">e.g.</text>
-    <text x="1240" y="2168" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#009900">&#34;monitorin</text>
-    <text x="1240" y="2185" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#009900">g signal&#34;</text>
-    <text x="1240" y="2202" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#009900">or brain</text>
+    <text x="1240" y="2168" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#009900">&#34;monitoring</text>
+    <text x="1240" y="2185" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#009900">signal&#34; or</text>
+    <text x="1240" y="2202" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#009900">brain</text>
     <rect x="1340" y="1800" width="120" height="60" rx="6" ry="6" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
     <text x="1400" y="1820" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">Find a</text>
     <text x="1400" y="1840" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">chapter</text>
@@ -483,9 +483,9 @@
     <rect x="1420" y="40" width="120" height="60" rx="6" ry="6" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
     <text x="1480" y="70" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">\sequence</text>
     <rect x="2020" y="160" width="120" height="60" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="2080" y="173" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">\sequence</text>
-    <text x="2080" y="190" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">&#34;create a</text>
-    <text x="2080" y="207" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">pod&#34;</text>
+    <text x="2080" y="171" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">\sequence</text>
+    <text x="2080" y="190" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">&#34;create a</text>
+    <text x="2080" y="209" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">pod&#34;</text>
     <rect x="700" y="2100" width="120" height="60" rx="6" ry="6" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
     <text x="760" y="2130" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#009900">\stats</text>
     <rect x="1600" y="40" width="120" height="60" rx="6" ry="6" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
@@ -522,10 +522,9 @@
     <text x="800" y="198" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">e.g. \notes</text>
     <text x="800" y="215" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">\on brain</text>
     <rect x="220" y="820" width="120" height="80" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="280" y="835" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">recipe fish</text>
-    <text x="280" y="852" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">soup \chapter</text>
-    <text x="280" y="868" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">&#34;my</text>
-    <text x="280" y="885" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">recipes&#34;</text>
+    <text x="280" y="843" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">recipe fish</text>
+    <text x="280" y="860" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">soup \chapter</text>
+    <text x="280" y="877" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">&#34;my recipes&#34;</text>
     <rect x="220" y="1100" width="120" height="80" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
     <text x="280" y="1123" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">recipe fish</text>
     <text x="280" y="1140" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">soup \chapter</text>
@@ -549,11 +548,9 @@
     <text x="100" y="2725" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">\from !start!,</text>
     <text x="100" y="2742" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">\from b3</text>
     <rect x="220" y="220" width="120" height="80" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="280" y="226" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">Just type:</text>
-    <text x="280" y="243" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">&#34;ephemeral</text>
-    <text x="280" y="260" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">or</text>
-    <text x="280" y="277" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">persistent&#34</text>
-    <text x="280" y="294" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">;</text>
+    <text x="280" y="243" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">Just type:</text>
+    <text x="280" y="260" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">&#34;ephemeral or</text>
+    <text x="280" y="277" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">persistent&#34;</text>
     <rect x="760" y="2620" width="120" height="120" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
     <text x="820" y="2646" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">search for</text>
     <text x="820" y="2663" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">paths going to</text>
@@ -592,14 +589,12 @@
     <text x="880" y="1930" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">depth of path</text>
     <text x="880" y="1947" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">search</text>
     <rect x="220" y="1240" width="120" height="160" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="280" y="1261" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">word1 word2</text>
-    <text x="280" y="1278" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">word3 \chapter</text>
-    <text x="280" y="1295" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">&#34;my</text>
-    <text x="280" y="1312" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">chapter&#34;</text>
+    <text x="280" y="1278" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">word1 word2</text>
+    <text x="280" y="1295" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">word3 \chapter</text>
+    <text x="280" y="1312" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">&#34;my chapter&#34;</text>
     <text x="280" y="1328" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">yourchapter</text>
     <text x="280" y="1345" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">\context</text>
-    <text x="280" y="1362" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">&#34;weird</text>
-    <text x="280" y="1379" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">words&#34;</text>
+    <text x="280" y="1362" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">&#34;weird words&#34;</text>
     <rect x="220" y="700" width="120" height="80" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
     <text x="280" y="723" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">word1 word2</text>
     <text x="280" y="740" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">word3 \chapter</text>
@@ -609,10 +604,9 @@
     <text x="2260" y="80" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#009900">entire</text>
     <text x="2260" y="97" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#009900">story/sequence</text>
     <rect x="220" y="960" width="120" height="100" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="280" y="985" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">word1 word2</text>
-    <text x="280" y="1002" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">word3 \context</text>
-    <text x="280" y="1018" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">&#34;weird</text>
-    <text x="280" y="1035" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">words&#34;</text>
+    <text x="280" y="993" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">word1 word2</text>
+    <text x="280" y="1010" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">word3 \context</text>
+    <text x="280" y="1027" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#3399ff">&#34;weird words&#34;</text>
     <rect x="80" y="40" width="40" height="40" rx="4" ry="4" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
     <text x="100" y="60" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">S</text>
     <rect x="80" y="1640" width="40" height="40" rx="4" ry="4" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>

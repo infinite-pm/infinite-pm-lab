@@ -185,17 +185,15 @@
     <rect x="80" y="440" width="120" height="200" rx="6" ry="6" fill="#ececec" stroke="none"/>
     <rect x="80" y="440" width="120" height="200" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 4 6 14" stroke-dashoffset="0"/>
     <rect x="80" y="440" width="120" height="200" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 24" stroke-dashoffset="-20"/>
-    <text x="140" y="456" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">select S from</text>
-    <text x="140" y="473" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Node where</text>
-    <text x="140" y="490" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">translate(S,&#</text>
-    <text x="140" y="506" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">39;ǎáà&#39;,&#</text>
-    <text x="140" y="523" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">39;aaa&#39;)</text>
+    <text x="140" y="473" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">select S from</text>
+    <text x="140" y="490" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Node where</text>
+    <text x="140" y="506" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">translate(S,&#39;ǎ</text>
+    <text x="140" y="523" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">áà&#39;,&#39;aaa&#39;)</text>
     <text x="140" y="540" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">like</text>
-    <text x="140" y="557" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#39;%shang%&#</text>
-    <text x="140" y="574" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">39;;</text>
-    <text x="140" y="590" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">introduction</text>
-    <text x="140" y="607" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">to database</text>
-    <text x="140" y="624" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">issues (url)</text>
+    <text x="140" y="557" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#39;%shang%&#39;;</text>
+    <text x="140" y="574" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">introduction</text>
+    <text x="140" y="590" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">to database</text>
+    <text x="140" y="607" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">issues (url)</text>
     <rect x="168" y="623" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
     <text x="174.0" y="629.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
     <rect x="183" y="623" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
@@ -276,12 +274,10 @@
     <rect x="80" y="180" width="120" height="120" rx="6" ry="6" fill="#ececec" stroke="none"/>
     <rect x="80" y="180" width="120" height="120" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 4 6 14" stroke-dashoffset="0"/>
     <rect x="80" y="180" width="120" height="120" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 24" stroke-dashoffset="-20"/>
-    <text x="140" y="198" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">RETURN</text>
-    <text x="140" y="215" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">translate($1,</text>
-    <text x="140" y="232" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#39;éçàêè...&</text>
-    <text x="140" y="248" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">#39;,</text>
-    <text x="140" y="265" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#39;ecaee...&</text>
-    <text x="140" y="282" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">#39;) ;</text>
+    <text x="140" y="215" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">RETURN</text>
+    <text x="140" y="232" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">translate($1,</text>
+    <text x="140" y="248" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#39;éçàêè...&#39;,</text>
+    <text x="140" y="265" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#39;ecaee...&#39;) ;</text>
     <rect x="168" y="283" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
     <text x="174.0" y="289.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
     <rect x="183" y="283" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
@@ -345,19 +341,18 @@
     <rect x="800" y="900" width="240" height="280" rx="6" ry="6" fill="none" stroke="#82b366" stroke-width="2" stroke-dasharray="6 4 6 24" stroke-dashoffset="0"/>
     <rect x="800" y="900" width="240" height="280" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-20"/>
     <rect x="800" y="900" width="240" height="280" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-30"/>
-    <text x="920" y="939" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">There are often several ways</text>
-    <text x="920" y="956" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">to represent the same</text>
-    <text x="920" y="973" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">string. For example, an é</text>
-    <text x="920" y="990" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">[e-acute] can be represented</text>
-    <text x="920" y="1006" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">in a string as a single rune</text>
-    <text x="920" y="1023" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">[&#34;\u00e9&#34;] or an</text>
-    <text x="920" y="1040" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">’e&#39; followed by an acute</text>
-    <text x="920" y="1057" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">accent [&#34;e\u0301&#34;].</text>
-    <text x="920" y="1074" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">According to the Unicode</text>
-    <text x="920" y="1090" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">standard, these two are</text>
-    <text x="920" y="1107" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;canonically</text>
-    <text x="920" y="1124" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">equivalent&#34; and should</text>
-    <text x="920" y="1141" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">be treated as equal.</text>
+    <text x="920" y="948" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">There are often several ways</text>
+    <text x="920" y="964" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">to represent the same</text>
+    <text x="920" y="981" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">string. For example, an é</text>
+    <text x="920" y="998" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">[e-acute] can be represented</text>
+    <text x="920" y="1015" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">in a string as a single rune</text>
+    <text x="920" y="1032" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">[&#34;\u00e9&#34;] or an ’e&#39;</text>
+    <text x="920" y="1048" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">followed by an acute accent</text>
+    <text x="920" y="1065" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">[&#34;e\u0301&#34;]. According to</text>
+    <text x="920" y="1082" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">the Unicode standard, these</text>
+    <text x="920" y="1099" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">two are &#34;canonically</text>
+    <text x="920" y="1116" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">equivalent&#34; and should be</text>
+    <text x="920" y="1132" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">treated as equal.</text>
     <rect x="993" y="1163" width="12" height="12" rx="2" ry="2" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
     <text x="999.0" y="1169.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#009900">t</text>
     <rect x="1008" y="1163" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
@@ -369,15 +364,15 @@
     <rect x="1160" y="900" width="240" height="240" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-20"/>
     <rect x="1160" y="900" width="240" height="240" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-30"/>
     <text x="1280" y="944" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Unicode also defines a</text>
-    <text x="1280" y="961" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;compatibility</text>
-    <text x="1280" y="978" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">equivalence&#34; to equate</text>
-    <text x="1280" y="995" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">characters that represent</text>
-    <text x="1280" y="1012" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">the same characters, but may</text>
-    <text x="1280" y="1028" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">have a different visual</text>
-    <text x="1280" y="1045" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">appearance. For example, the</text>
-    <text x="1280" y="1062" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">superscript digit ‘⁹’ and</text>
-    <text x="1280" y="1079" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">the regular digit ‘9’ are</text>
-    <text x="1280" y="1096" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">equivalent in this form.</text>
+    <text x="1280" y="961" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;compatibility equivalence&#34;</text>
+    <text x="1280" y="978" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">to equate characters that</text>
+    <text x="1280" y="995" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">represent the same</text>
+    <text x="1280" y="1012" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">characters, but may have a</text>
+    <text x="1280" y="1028" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">different visual appearance.</text>
+    <text x="1280" y="1045" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">For example, the superscript</text>
+    <text x="1280" y="1062" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">digit ‘⁹’ and the regular</text>
+    <text x="1280" y="1079" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">digit ‘9’ are equivalent in</text>
+    <text x="1280" y="1096" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">this form.</text>
     <rect x="1353" y="1123" width="12" height="12" rx="2" ry="2" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
     <text x="1359.0" y="1129.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#009900">t</text>
     <rect x="1368" y="1123" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
@@ -388,17 +383,15 @@
     <rect x="1520" y="900" width="120" height="240" rx="6" ry="6" fill="none" stroke="#82b366" stroke-width="2" stroke-dasharray="6 4 6 24" stroke-dashoffset="0"/>
     <rect x="1520" y="900" width="120" height="240" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-20"/>
     <rect x="1520" y="900" width="120" height="240" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-30"/>
-    <text x="1580" y="936" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Unicode is a</text>
-    <text x="1580" y="953" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;two-byte</text>
-    <text x="1580" y="970" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">per</text>
-    <text x="1580" y="986" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">character&#34;</text>
-    <text x="1580" y="1003" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">way of</text>
-    <text x="1580" y="1020" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">encoding text</text>
-    <text x="1580" y="1037" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">for all kinds</text>
-    <text x="1580" y="1054" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">of alphabets</text>
-    <text x="1580" y="1070" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">and</text>
-    <text x="1580" y="1087" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">non-alphabetic</text>
-    <text x="1580" y="1104" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">languages.</text>
+    <text x="1580" y="953" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Unicode is a</text>
+    <text x="1580" y="970" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;two-byte per</text>
+    <text x="1580" y="986" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">character&#34; way</text>
+    <text x="1580" y="1003" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">of encoding</text>
+    <text x="1580" y="1020" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">text for all</text>
+    <text x="1580" y="1037" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">kinds of</text>
+    <text x="1580" y="1054" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">alphabets and</text>
+    <text x="1580" y="1070" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">non-alphabetic</text>
+    <text x="1580" y="1087" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">languages.</text>
     <rect x="1593" y="1123" width="12" height="12" rx="2" ry="2" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
     <text x="1599.0" y="1129.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#009900">t</text>
     <rect x="1608" y="1123" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>

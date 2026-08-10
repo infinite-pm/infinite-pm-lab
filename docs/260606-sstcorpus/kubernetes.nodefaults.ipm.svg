@@ -1565,11 +1565,10 @@
   </g>
   <g id="nodes">
     <rect x="1280" y="1880" width="120" height="100" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
-    <text x="1340" y="1896" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;client</text>
-    <text x="1340" y="1913" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">certs&#34; or</text>
-    <text x="1340" y="1930" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;service</text>
-    <text x="1340" y="1947" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">account</text>
-    <text x="1340" y="1964" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">tokens&#34;</text>
+    <text x="1340" y="1905" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;client certs&#34;</text>
+    <text x="1340" y="1922" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">or &#34;service</text>
+    <text x="1340" y="1938" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">account</text>
+    <text x="1340" y="1955" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">tokens&#34;</text>
     <rect x="2830" y="200" width="120" height="100" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
     <text x="2890" y="225" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">API server,</text>
     <text x="2890" y="242" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">scheduler,</text>
@@ -1776,8 +1775,7 @@
     <rect x="2000" y="4830" width="120" height="60" rx="6" ry="6" fill="none" stroke="#82b366" stroke-width="2" stroke-dasharray="6 4 6 24" stroke-dashoffset="0"/>
     <rect x="2000" y="4830" width="120" height="60" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-20"/>
     <rect x="2000" y="4830" width="120" height="60" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-30"/>
-    <text x="2060" y="4850" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">or &#34;pea</text>
-    <text x="2060" y="4870" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">pod&#34;</text>
+    <text x="2060" y="4860" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">or &#34;pea pod&#34;</text>
     <rect x="2073" y="4873" width="12" height="12" rx="2" ry="2" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
     <text x="2079.0" y="4879.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#009900">t</text>
     <rect x="2088" y="4873" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
@@ -2085,10 +2083,8 @@
     <text x="2889.0" y="3519.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
     </g>
     <rect x="3410" y="1970" width="120" height="60" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
-    <text x="3470" y="1975" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">with</text>
-    <text x="3470" y="1992" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;client</text>
-    <text x="3470" y="2008" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">certificate&#3</text>
-    <text x="3470" y="2025" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">4;</text>
+    <text x="3470" y="1990" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">with &#34;client</text>
+    <text x="3470" y="2010" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">certificate&#34;</text>
     <rect x="1693" y="1190" width="120" height="60" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
     <text x="1753" y="1220" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">CRDs</text>
     <rect x="3170" y="1850" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="none"/>
@@ -2301,10 +2297,10 @@
     <rect x="800" y="4830" width="120" height="200" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-30"/>
     <text x="860" y="4863" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Kubernetes</text>
     <text x="860" y="4880" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">uses a</text>
-    <text x="860" y="4896" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&gt;&#34;hub-</text>
-    <text x="860" y="4913" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">and-spoke API</text>
-    <text x="860" y="4930" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">pattern&#34;.</text>
-    <text x="860" y="4947" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">All API usage</text>
+    <text x="860" y="4896" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&gt;&#34;hub-and-</text>
+    <text x="860" y="4913" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">spoke API</text>
+    <text x="860" y="4930" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">pattern&#34;. All</text>
+    <text x="860" y="4947" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">API usage</text>
     <text x="860" y="4964" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">terminates at</text>
     <text x="860" y="4980" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">the API</text>
     <text x="860" y="4997" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">server.</text>
@@ -2331,18 +2327,17 @@
     <rect x="4570" y="340" width="120" height="220" rx="6" ry="6" fill="#ececec" stroke="none"/>
     <rect x="4570" y="340" width="120" height="220" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 4 6 14" stroke-dashoffset="0"/>
     <rect x="4570" y="340" width="120" height="220" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 24" stroke-dashoffset="-20"/>
-    <text x="4630" y="358" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Observing the</text>
-    <text x="4630" y="374" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;actual</text>
-    <text x="4630" y="391" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">state&#34; and</text>
-    <text x="4630" y="408" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">compares to</text>
-    <text x="4630" y="425" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">the</text>
-    <text x="4630" y="442" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;desired</text>
-    <text x="4630" y="458" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">state&#34;. It</text>
-    <text x="4630" y="475" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">infers the</text>
-    <text x="4630" y="492" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">steps needed</text>
-    <text x="4630" y="509" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">to achieve</text>
-    <text x="4630" y="526" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">promised</text>
-    <text x="4630" y="542" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">state.</text>
+    <text x="4630" y="366" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Observing the</text>
+    <text x="4630" y="383" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;actual state&#34;</text>
+    <text x="4630" y="400" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">and compares</text>
+    <text x="4630" y="416" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">to the</text>
+    <text x="4630" y="433" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;desired</text>
+    <text x="4630" y="450" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">state&#34;. It</text>
+    <text x="4630" y="467" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">infers the</text>
+    <text x="4630" y="484" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">steps needed</text>
+    <text x="4630" y="500" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">to achieve</text>
+    <text x="4630" y="517" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">promised</text>
+    <text x="4630" y="534" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">state.</text>
     <rect x="4658" y="543" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
     <text x="4664.0" y="549.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
     <rect x="4673" y="543" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
@@ -2360,8 +2355,8 @@
     <text x="2429.0" y="4339.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
     <rect x="1280" y="2770" width="120" height="100" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
     <text x="1340" y="2786" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">A &#34;root</text>
-    <text x="1340" y="2803" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">certificate&#3</text>
-    <text x="1340" y="2820" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">4; should be</text>
+    <text x="1340" y="2803" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">certificate&#34;</text>
+    <text x="1340" y="2820" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">should be</text>
     <text x="1340" y="2837" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">installed on</text>
     <text x="1340" y="2854" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">each node</text>
     <rect x="447" y="340" width="120" height="60" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
@@ -2704,26 +2699,23 @@
     <text x="1520" y="4290" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">cluster</text>
     <text x="1520" y="4310" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">scope</text>
     <rect x="800" y="2890" width="120" height="200" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
-    <text x="860" y="2914" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">commands like:</text>
-    <text x="860" y="2931" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;kubectl</text>
-    <text x="860" y="2948" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">get pods -n</text>
-    <text x="860" y="2965" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">kube-</text>
-    <text x="860" y="2982" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">system&#34;</text>
-    <text x="860" y="2998" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;kubectl</text>
-    <text x="860" y="3015" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">apply -f</text>
+    <text x="860" y="2931" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">commands like:</text>
+    <text x="860" y="2948" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;kubectl get</text>
+    <text x="860" y="2965" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">pods -n</text>
+    <text x="860" y="2982" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">kube-system&#34;</text>
+    <text x="860" y="2998" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;kubectl apply</text>
+    <text x="860" y="3015" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">-f</text>
     <text x="860" y="3032" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">https://github</text>
-    <text x="860" y="3049" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">.com/app.yml&#</text>
-    <text x="860" y="3066" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">34;</text>
+    <text x="860" y="3049" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">.com/app.yml&#34;</text>
     <rect x="1280" y="2070" width="120" height="60" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
     <text x="1340" y="2100" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">API server</text>
     <rect x="4480" y="150" width="120" height="100" rx="6" ry="6" fill="#ececec" stroke="none"/>
     <rect x="4480" y="150" width="120" height="100" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 4 6 14" stroke-dashoffset="0"/>
     <rect x="4480" y="150" width="120" height="100" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 24" stroke-dashoffset="-20"/>
-    <text x="4540" y="166" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">compares</text>
-    <text x="4540" y="183" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;desired</text>
-    <text x="4540" y="200" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">state&#34; and</text>
-    <text x="4540" y="217" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;actual</text>
-    <text x="4540" y="234" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">state&#34;</text>
+    <text x="4540" y="175" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">compares</text>
+    <text x="4540" y="192" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;desired</text>
+    <text x="4540" y="208" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">state&#34; and</text>
+    <text x="4540" y="225" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;actual state&#34;</text>
     <rect x="4568" y="233" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
     <text x="4574.0" y="239.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
     <rect x="4583" y="233" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
@@ -2736,8 +2728,8 @@
     <rect x="40" y="220" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="none"/>
     <rect x="40" y="220" width="120" height="60" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 4 6 14" stroke-dashoffset="0"/>
     <rect x="40" y="220" width="120" height="60" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 24" stroke-dashoffset="-20"/>
-    <text x="100" y="240" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">consumer&#39</text>
-    <text x="100" y="260" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">;s promise</text>
+    <text x="100" y="240" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">consumer&#39;s</text>
+    <text x="100" y="260" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">promise</text>
     <rect x="128" y="263" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
     <text x="134.0" y="269.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
     <rect x="143" y="263" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>

@@ -640,19 +640,18 @@ $ psql
     <rect x="40" y="120" width="240" height="280" rx="6" ry="6" fill="#ececec" stroke="none"/>
     <rect x="40" y="120" width="240" height="280" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 4 6 14" stroke-dashoffset="0"/>
     <rect x="40" y="120" width="240" height="280" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 24" stroke-dashoffset="-20"/>
-    <text x="160" y="159" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">$ sudo su - $ su - postgres</text>
-    <text x="160" y="176" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">$ psql # CREATE user</text>
-    <text x="160" y="193" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">sstoryline password</text>
-    <text x="160" y="210" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#39;sst_1234&#39;</text>
-    <text x="160" y="226" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">superuser; # CREATE DATABASE</text>
-    <text x="160" y="243" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">sstoryline; # CREATE</text>
-    <text x="160" y="260" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">DATABASE newdb; # GRANT ALL</text>
-    <text x="160" y="277" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">PRIVILEGES ON DATABASE</text>
-    <text x="160" y="294" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">sstoryline TO sstoryline; #</text>
-    <text x="160" y="310" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">GRANT ALL PRIVILEGES ON</text>
-    <text x="160" y="327" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">DATABASE newdb TO</text>
-    <text x="160" y="344" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">sstoryline; # CREATE</text>
-    <text x="160" y="361" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">EXTENSION UNACCENT;</text>
+    <text x="160" y="168" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">$ sudo su - $ su - postgres</text>
+    <text x="160" y="184" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">$ psql # CREATE user</text>
+    <text x="160" y="201" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">sstoryline password</text>
+    <text x="160" y="218" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#39;sst_1234&#39; superuser; #</text>
+    <text x="160" y="235" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">CREATE DATABASE sstoryline;</text>
+    <text x="160" y="252" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161"># CREATE DATABASE newdb; #</text>
+    <text x="160" y="268" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">GRANT ALL PRIVILEGES ON</text>
+    <text x="160" y="285" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">DATABASE sstoryline TO</text>
+    <text x="160" y="302" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">sstoryline; # GRANT ALL</text>
+    <text x="160" y="319" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">PRIVILEGES ON DATABASE newdb</text>
+    <text x="160" y="336" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">TO sstoryline; # CREATE</text>
+    <text x="160" y="352" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">EXTENSION UNACCENT;</text>
     <rect x="248" y="383" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
     <text x="254.0" y="389.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
     <rect x="263" y="383" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
@@ -778,9 +777,9 @@ $ psql
     <rect x="1860" y="3690" width="120" height="160" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-30"/>
     <text x="1920" y="3711" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">host all all</text>
     <text x="1920" y="3728" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">::1/128</text>
-    <text x="1920" y="3745" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">password&#34;</text>
-    <text x="1920" y="3762" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161"># to finish</text>
-    <text x="1920" y="3778" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">... stored</text>
+    <text x="1920" y="3745" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">password&#34; # to</text>
+    <text x="1920" y="3762" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">finish ...</text>
+    <text x="1920" y="3778" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">stored</text>
     <text x="1920" y="3795" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">procedures/fun</text>
     <text x="1920" y="3812" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">ctions in</text>
     <text x="1920" y="3829" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">postgres &#34;</text>
@@ -918,17 +917,16 @@ $ psql
     <rect x="2963" y="4833" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
     <text x="2969.0" y="4839.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
     <rect x="1540" y="690" width="240" height="240" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
-    <text x="1660" y="726" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">Context has two roles in</text>
-    <text x="1660" y="743" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">knowledge: promise</text>
-    <text x="1660" y="760" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">theoretically it has a</text>
-    <text x="1660" y="776" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#39;+&#39; donor role when</text>
-    <text x="1660" y="793" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">categorizing information</text>
-    <text x="1660" y="810" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">through notes. It also has a</text>
-    <text x="1660" y="827" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;-&#34; acceptance or</text>
-    <text x="1660" y="844" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">filtering role when</text>
-    <text x="1660" y="860" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">searching. Both of these are</text>
-    <text x="1660" y="877" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">represented by the &#34;::</text>
-    <text x="1660" y="894" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">... ::&#34; lines in N4L.</text>
+    <text x="1660" y="734" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">Context has two roles in</text>
+    <text x="1660" y="751" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">knowledge: promise</text>
+    <text x="1660" y="768" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">theoretically it has a &#39;+&#39;</text>
+    <text x="1660" y="785" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">donor role when categorizing</text>
+    <text x="1660" y="802" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">information through notes.</text>
+    <text x="1660" y="818" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">It also has a &#34;-&#34; acceptance</text>
+    <text x="1660" y="835" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">or filtering role when</text>
+    <text x="1660" y="852" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">searching. Both of these are</text>
+    <text x="1660" y="869" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">represented by the &#34;:: ...</text>
+    <text x="1660" y="886" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">::&#34; lines in N4L.</text>
     <rect x="2620" y="4750" width="120" height="100" rx="6" ry="6" fill="#ececec" stroke="none"/>
     <rect x="2620" y="4750" width="120" height="100" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 4 6 14" stroke-dashoffset="0"/>
     <rect x="2620" y="4750" width="120" height="100" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 24" stroke-dashoffset="-20"/>
@@ -1015,19 +1013,18 @@ $ psql
     <rect x="2140" y="5350" width="120" height="260" rx="6" ry="6" fill="#ececec" stroke="none"/>
     <rect x="2140" y="5350" width="120" height="260" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 4 6 14" stroke-dashoffset="0"/>
     <rect x="2140" y="5350" width="120" height="260" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 24" stroke-dashoffset="-20"/>
-    <text x="2200" y="5379" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">obtains all</text>
-    <text x="2200" y="5396" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">possible paths</text>
-    <text x="2200" y="5413" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">from a</text>
-    <text x="2200" y="5430" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">starting node,</text>
-    <text x="2200" y="5446" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">with</text>
-    <text x="2200" y="5463" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">orientation</text>
-    <text x="2200" y="5480" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;fwd,bwd,a</text>
-    <text x="2200" y="5497" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">ny&#34; as</text>
-    <text x="2200" y="5514" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">link arrays</text>
-    <text x="2200" y="5530" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">matching the</text>
-    <text x="2200" y="5547" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">chapter and</text>
-    <text x="2200" y="5564" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">context</text>
-    <text x="2200" y="5581" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">criteria</text>
+    <text x="2200" y="5388" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">obtains all</text>
+    <text x="2200" y="5404" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">possible paths</text>
+    <text x="2200" y="5421" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">from a</text>
+    <text x="2200" y="5438" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">starting node,</text>
+    <text x="2200" y="5455" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">with</text>
+    <text x="2200" y="5472" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">orientation</text>
+    <text x="2200" y="5488" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;fwd,bwd,any&#34;</text>
+    <text x="2200" y="5505" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">as link arrays</text>
+    <text x="2200" y="5522" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">matching the</text>
+    <text x="2200" y="5539" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">chapter and</text>
+    <text x="2200" y="5556" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">context</text>
+    <text x="2200" y="5572" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">criteria</text>
     <rect x="2228" y="5593" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
     <text x="2234.0" y="5599.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
     <rect x="2243" y="5593" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
@@ -1261,8 +1258,8 @@ $ psql
     <text x="2980" y="4014" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">index I [ST_TOP][]Link //</text>
     <text x="2980" y="4030" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">link incidence list, by</text>
     <text x="2980" y="4047" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">STindex - these are the</text>
-    <text x="2980" y="4064" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;vectors&#34; +/- //</text>
-    <text x="2980" y="4081" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">NOTE: carefully how STindex</text>
+    <text x="2980" y="4064" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">&#34;vectors&#34; +/- // NOTE:</text>
+    <text x="2980" y="4081" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">carefully how STindex</text>
     <text x="2980" y="4098" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">offsets represent negative</text>
     <text x="2980" y="4114" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">SSTtypes }</text>
     <rect x="3068" y="4153" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
@@ -1315,25 +1312,25 @@ $ psql
     <text x="1840" y="4046" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">ret_paths Text; appendix Text; tot_path</text>
     <text x="1840" y="4062" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Text; BEGIN IF depth = maxdepth THEN</text>
     <text x="1840" y="4079" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">ret_paths :=</text>
-    <text x="1840" y="4096" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Format(&#39;%s\n%s&#39;,ret_paths,path);</text>
-    <text x="1840" y="4113" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">RETURN ret_paths; END IF; fwdlinks :=</text>
+    <text x="1840" y="4096" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Format(&#39;%s\n%s&#39;,ret_paths,path); RETURN</text>
+    <text x="1840" y="4113" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">ret_paths; END IF; fwdlinks :=</text>
     <text x="1840" y="4130" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">GetFwdLinks(start.Dst,exclude,sttype);</text>
     <text x="1840" y="4146" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">FOREACH lnk IN ARRAY fwdlinks LOOP IF NOT</text>
     <text x="1840" y="4163" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">lnk.Dst = ANY(exclude) THEN exclude =</text>
     <text x="1840" y="4180" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">array_append(exclude,lnk.Dst); IF lnk IS</text>
     <text x="1840" y="4197" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">NULL THEN ret_paths :=</text>
-    <text x="1840" y="4214" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Format(&#39;%s\n%s&#39;,ret_paths,path);</text>
-    <text x="1840" y="4230" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">RETURN ret_paths; ELSE tot_path :=</text>
-    <text x="1840" y="4247" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Format(&#39;%s;%s&#39;,path,lnk::Text);</text>
-    <text x="1840" y="4264" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">appendix :=</text>
+    <text x="1840" y="4214" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Format(&#39;%s\n%s&#39;,ret_paths,path); RETURN</text>
+    <text x="1840" y="4230" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">ret_paths; ELSE tot_path :=</text>
+    <text x="1840" y="4247" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Format(&#39;%s;%s&#39;,path,lnk::Text); appendix</text>
+    <text x="1840" y="4264" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">:=</text>
     <text x="1840" y="4281" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">SumFwdPaths(lnk,tot_path,sttype,depth+1,ma</text>
     <text x="1840" y="4298" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">xdepth,exclude); IF appendix IS NOT NULL</text>
     <text x="1840" y="4314" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">THEN ret_paths :=</text>
-    <text x="1840" y="4331" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Format(&#39;%s\n%s&#39;,ret_paths,appendix</text>
-    <text x="1840" y="4348" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">); ELSE ret_paths :=</text>
-    <text x="1840" y="4365" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Format(&#39;%s\n%s&#39;,ret_paths,tot_path</text>
-    <text x="1840" y="4382" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">); END IF; END IF; END IF; END LOOP;</text>
-    <text x="1840" y="4398" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">RETURN ret_paths; END;</text>
+    <text x="1840" y="4331" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Format(&#39;%s\n%s&#39;,ret_paths,appendix); ELSE</text>
+    <text x="1840" y="4348" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">ret_paths :=</text>
+    <text x="1840" y="4365" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Format(&#39;%s\n%s&#39;,ret_paths,tot_path); END</text>
+    <text x="1840" y="4382" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">IF; END IF; END IF; END LOOP; RETURN</text>
+    <text x="1840" y="4398" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">ret_paths; END;</text>
     <rect x="1988" y="4453" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
     <text x="1994.0" y="4459.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
     <rect x="2003" y="4453" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
@@ -1427,8 +1424,8 @@ $ psql
     <text x="1660" y="2951" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">was written, uploaded, or</text>
     <text x="1660" y="2968" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">when something actually</text>
     <text x="1660" y="2985" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">happened? The technology</text>
-    <text x="1660" y="3002" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">can&#39;t guess this for</text>
-    <text x="1660" y="3018" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">you, because it needs to be</text>
+    <text x="1660" y="3002" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">can&#39;t guess this for you,</text>
+    <text x="1660" y="3018" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">because it needs to be</text>
     <text x="1660" y="3035" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">intentional. The ambient</text>
     <text x="1660" y="3052" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">time isn&#39;t necessarily</text>
     <text x="1660" y="3069" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">relevant.</text>
@@ -1508,8 +1505,8 @@ $ psql
     <rect x="2620" y="6310" width="120" height="160" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-20"/>
     <rect x="2620" y="6310" width="120" height="160" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-30"/>
     <text x="2680" y="6340" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">%&#34;Longer</text>
-    <text x="2680" y="6356" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">phrases&#34;</text>
-    <text x="2680" y="6373" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">used a limited</text>
+    <text x="2680" y="6356" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">phrases&#34; used</text>
+    <text x="2680" y="6373" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">a limited</text>
     <text x="2680" y="6390" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">number of</text>
     <text x="2680" y="6407" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">times are</text>
     <text x="2680" y="6424" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">common</text>
@@ -1684,13 +1681,12 @@ $ psql
     <rect x="2860" y="6310" width="120" height="160" rx="6" ry="6" fill="none" stroke="#82b366" stroke-width="2" stroke-dasharray="6 4 6 24" stroke-dashoffset="0"/>
     <rect x="2860" y="6310" width="120" height="160" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-20"/>
     <rect x="2860" y="6310" width="120" height="160" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-30"/>
-    <text x="2920" y="6340" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">%&#34;Short</text>
-    <text x="2920" y="6356" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">phrases&#34;</text>
-    <text x="2920" y="6373" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">used once are</text>
-    <text x="2920" y="6390" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">usually unique</text>
-    <text x="2920" y="6407" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">names i.e. a</text>
-    <text x="2920" y="6424" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">%&#34;proper</text>
-    <text x="2920" y="6440" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">name&#34;</text>
+    <text x="2920" y="6348" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">%&#34;Short</text>
+    <text x="2920" y="6365" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">phrases&#34; used</text>
+    <text x="2920" y="6382" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">once are</text>
+    <text x="2920" y="6398" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">usually unique</text>
+    <text x="2920" y="6415" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">names i.e. a</text>
+    <text x="2920" y="6432" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">%&#34;proper name&#34;</text>
     <rect x="2933" y="6453" width="12" height="12" rx="2" ry="2" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
     <text x="2939.0" y="6459.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#009900">t</text>
     <rect x="2948" y="6453" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
@@ -1768,13 +1764,12 @@ $ psql
     <rect x="2963" y="5093" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
     <text x="2969.0" y="5099.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
     <rect x="4620" y="1620" width="120" height="160" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
-    <text x="4680" y="1650" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">Graphs are for</text>
-    <text x="4680" y="1666" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">following</text>
-    <text x="4680" y="1683" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">paths with</text>
-    <text x="4680" y="1700" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">different</text>
-    <text x="4680" y="1717" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">meanings - or</text>
-    <text x="4680" y="1734" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;semantics</text>
-    <text x="4680" y="1750" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;.</text>
+    <text x="4680" y="1658" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">Graphs are for</text>
+    <text x="4680" y="1675" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">following</text>
+    <text x="4680" y="1692" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">paths with</text>
+    <text x="4680" y="1708" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">different</text>
+    <text x="4680" y="1725" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">meanings - or</text>
+    <text x="4680" y="1742" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;semantics&#34;.</text>
     <rect x="3040" y="480" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="none"/>
     <rect x="3040" y="480" width="120" height="60" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 4 6 14" stroke-dashoffset="0"/>
     <rect x="3040" y="480" width="120" height="60" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 24" stroke-dashoffset="-20"/>
@@ -1846,8 +1841,7 @@ $ psql
     <rect x="3320" y="180" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="none"/>
     <rect x="3320" y="180" width="120" height="60" rx="6" ry="6" fill="none" stroke="#82b366" stroke-width="2" stroke-dasharray="6 4 6 14" stroke-dashoffset="0"/>
     <rect x="3320" y="180" width="120" height="60" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 24" stroke-dashoffset="-20"/>
-    <text x="3380" y="200" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">%&#34;n-</text>
-    <text x="3380" y="220" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">grams&#34;</text>
+    <text x="3380" y="210" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">%&#34;n-grams&#34;</text>
     <rect x="3408" y="223" width="12" height="12" rx="2" ry="2" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
     <text x="3414.0" y="229.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#009900">t</text>
     <rect x="3423" y="223" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
@@ -1898,10 +1892,10 @@ $ psql
     <rect x="4620" y="1240" width="120" height="320" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
     <text x="4680" y="1299" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">Most graph</text>
     <text x="4680" y="1316" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">databases</text>
-    <text x="4680" y="1333" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">don&#39;t give</text>
-    <text x="4680" y="1350" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">any guidance</text>
-    <text x="4680" y="1366" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">in modelling</text>
-    <text x="4680" y="1383" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">or searching.</text>
+    <text x="4680" y="1333" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">don&#39;t give any</text>
+    <text x="4680" y="1350" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">guidance in</text>
+    <text x="4680" y="1366" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">modelling or</text>
+    <text x="4680" y="1383" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">searching.</text>
     <text x="4680" y="1400" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">They are based</text>
     <text x="4680" y="1417" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">on SQL random</text>
     <text x="4680" y="1434" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">access search,</text>
@@ -2065,22 +2059,21 @@ $ psql
     <text x="880" y="580" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">SSTorytime</text>
     </g>
     <rect x="1540" y="3150" width="240" height="340" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
-    <text x="1660" y="3194" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">SSTorytime shows you the</text>
-    <text x="1660" y="3211" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">ambient time in a coarse</text>
-    <text x="1660" y="3228" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">grained form after every</text>
-    <text x="1660" y="3244" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">search, so that you can copy</text>
-    <text x="1660" y="3261" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">and paste this into context</text>
-    <text x="1660" y="3278" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">tags if you want to be able</text>
-    <text x="1660" y="3295" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">to use it later. If you make</text>
-    <text x="1660" y="3312" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">a search without any search</text>
-    <text x="1660" y="3328" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">terms, you will see any</text>
-    <text x="1660" y="3345" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">items that are labelled in a</text>
-    <text x="1660" y="3362" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">matching time. So, if you</text>
-    <text x="1660" y="3379" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">have specific</text>
-    <text x="1660" y="3396" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;to-do&#34;/todo / to do</text>
-    <text x="1660" y="3412" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">lists for specific times,</text>
-    <text x="1660" y="3429" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">these will pop up by</text>
-    <text x="1660" y="3446" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">themselves.</text>
+    <text x="1660" y="3202" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">SSTorytime shows you the</text>
+    <text x="1660" y="3219" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">ambient time in a coarse</text>
+    <text x="1660" y="3236" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">grained form after every</text>
+    <text x="1660" y="3253" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">search, so that you can copy</text>
+    <text x="1660" y="3270" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">and paste this into context</text>
+    <text x="1660" y="3286" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">tags if you want to be able</text>
+    <text x="1660" y="3303" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">to use it later. If you make</text>
+    <text x="1660" y="3320" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">a search without any search</text>
+    <text x="1660" y="3337" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">terms, you will see any</text>
+    <text x="1660" y="3354" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">items that are labelled in a</text>
+    <text x="1660" y="3370" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">matching time. So, if you</text>
+    <text x="1660" y="3387" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">have specific &#34;to-do&#34;/todo /</text>
+    <text x="1660" y="3404" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">to do lists for specific</text>
+    <text x="1660" y="3421" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">times, these will pop up by</text>
+    <text x="1660" y="3438" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">themselves.</text>
     <rect x="1600" y="530" width="120" height="100" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
     <text x="1660" y="546" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">SSTorytime</text>
     <text x="1660" y="563" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">takes a</text>
@@ -2150,9 +2143,9 @@ $ psql
     <text x="1660" y="2425" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">didn&#39;t intend. This</text>
     <text x="1660" y="2442" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">possibility for bridging is</text>
     <text x="1660" y="2459" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">intentional, as it allows</text>
-    <text x="1660" y="2476" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;lateral thinking&#34;,</text>
-    <text x="1660" y="2492" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">which is an important source</text>
-    <text x="1660" y="2509" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">of discovery.</text>
+    <text x="1660" y="2476" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;lateral thinking&#34;, which is</text>
+    <text x="1660" y="2492" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">an important source of</text>
+    <text x="1660" y="2509" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">discovery.</text>
     <rect x="2620" y="5730" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="none"/>
     <rect x="2620" y="5730" width="120" height="60" rx="6" ry="6" fill="none" stroke="#82b366" stroke-width="2" stroke-dasharray="6 4 6 24" stroke-dashoffset="0"/>
     <rect x="2620" y="5730" width="120" height="60" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-20"/>
@@ -2197,19 +2190,18 @@ $ psql
     <rect x="3563" y="6473" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
     <text x="3569.0" y="6479.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
     <rect x="1540" y="1550" width="240" height="320" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
-    <text x="1660" y="1609" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">The overlap between</text>
-    <text x="1660" y="1626" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;+&#34; and &#34;-&#34;</text>
-    <text x="1660" y="1643" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">promises is the outcome. In</text>
-    <text x="1660" y="1660" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">order to make this</text>
-    <text x="1660" y="1676" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">effective, it requires some</text>
-    <text x="1660" y="1693" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">planning in the way we name</text>
-    <text x="1660" y="1710" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">sections. This is something</text>
-    <text x="1660" y="1727" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">that develops over time, so</text>
-    <text x="1660" y="1744" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">we have to understand that</text>
-    <text x="1660" y="1760" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">knowledge is individual,</text>
-    <text x="1660" y="1777" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">dynamic and interactive--a</text>
-    <text x="1660" y="1794" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">process, not a stale archive</text>
-    <text x="1660" y="1811" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">written once and for all.</text>
+    <text x="1660" y="1618" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">The overlap between &#34;+&#34; and</text>
+    <text x="1660" y="1634" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;-&#34; promises is the outcome.</text>
+    <text x="1660" y="1651" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">In order to make this</text>
+    <text x="1660" y="1668" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">effective, it requires some</text>
+    <text x="1660" y="1685" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">planning in the way we name</text>
+    <text x="1660" y="1702" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">sections. This is something</text>
+    <text x="1660" y="1718" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">that develops over time, so</text>
+    <text x="1660" y="1735" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">we have to understand that</text>
+    <text x="1660" y="1752" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">knowledge is individual,</text>
+    <text x="1660" y="1769" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">dynamic and interactive--a</text>
+    <text x="1660" y="1786" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">process, not a stale archive</text>
+    <text x="1660" y="1802" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">written once and for all.</text>
     <rect x="2860" y="5730" width="120" height="80" rx="6" ry="6" fill="#ececec" stroke="none"/>
     <rect x="2860" y="5730" width="120" height="80" rx="6" ry="6" fill="none" stroke="#82b366" stroke-width="2" stroke-dasharray="6 4 6 24" stroke-dashoffset="0"/>
     <rect x="2860" y="5730" width="120" height="80" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-20"/>
@@ -2283,36 +2275,34 @@ $ psql
     <text x="1660" y="2691" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">Precise times are irrelevant</text>
     <text x="1660" y="2708" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">because they never repeat.</text>
     <text x="1660" y="2725" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">Coarse grains of time like</text>
-    <text x="1660" y="2742" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;Monday morning&#34; do</text>
-    <text x="1660" y="2758" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">repeat and may be relevant</text>
-    <text x="1660" y="2775" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">in finding intended</text>
+    <text x="1660" y="2742" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;Monday morning&#34; do repeat</text>
+    <text x="1660" y="2758" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">and may be relevant in</text>
+    <text x="1660" y="2775" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">finding intended</text>
     <text x="1660" y="2792" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">information. But how do we</text>
     <text x="1660" y="2809" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">record the time? Is it the</text>
     <text x="1660" y="2826" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">time at which information</text>
     <rect x="1600" y="990" width="120" height="240" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
-    <text x="1660" y="1026" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">When we are</text>
-    <text x="1660" y="1043" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">laying out new</text>
-    <text x="1660" y="1060" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">information,</text>
-    <text x="1660" y="1076" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">we use the</text>
-    <text x="1660" y="1093" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">context</text>
-    <text x="1660" y="1110" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">tags/tokens</text>
-    <text x="1660" y="1127" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">like a section</text>
-    <text x="1660" y="1144" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">heading. This</text>
-    <text x="1660" y="1160" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">is the</text>
-    <text x="1660" y="1177" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;+&#34;</text>
-    <text x="1660" y="1194" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">promise.</text>
+    <text x="1660" y="1034" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">When we are</text>
+    <text x="1660" y="1051" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">laying out new</text>
+    <text x="1660" y="1068" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">information,</text>
+    <text x="1660" y="1085" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">we use the</text>
+    <text x="1660" y="1102" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">context</text>
+    <text x="1660" y="1118" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">tags/tokens</text>
+    <text x="1660" y="1135" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">like a section</text>
+    <text x="1660" y="1152" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">heading. This</text>
+    <text x="1660" y="1169" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">is the &#34;+&#34;</text>
+    <text x="1660" y="1186" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">promise.</text>
     <rect x="1600" y="1290" width="120" height="200" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
-    <text x="1660" y="1306" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">When we are</text>
-    <text x="1660" y="1323" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">searching, we</text>
-    <text x="1660" y="1340" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">use context</text>
-    <text x="1660" y="1356" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">tags as a</text>
-    <text x="1660" y="1373" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">filter to</text>
-    <text x="1660" y="1390" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">reduce the</text>
-    <text x="1660" y="1407" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">scope of a</text>
-    <text x="1660" y="1424" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">search. This</text>
-    <text x="1660" y="1440" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">is the</text>
-    <text x="1660" y="1457" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">&#34;-&#34;</text>
-    <text x="1660" y="1474" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">promise.</text>
+    <text x="1660" y="1314" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">When we are</text>
+    <text x="1660" y="1331" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">searching, we</text>
+    <text x="1660" y="1348" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">use context</text>
+    <text x="1660" y="1365" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">tags as a</text>
+    <text x="1660" y="1382" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">filter to</text>
+    <text x="1660" y="1398" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">reduce the</text>
+    <text x="1660" y="1415" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">scope of a</text>
+    <text x="1660" y="1432" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">search. This</text>
+    <text x="1660" y="1449" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">is the &#34;-&#34;</text>
+    <text x="1660" y="1466" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">promise.</text>
     <rect x="1540" y="1930" width="240" height="240" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
     <text x="1660" y="1974" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">While engaged in a search</text>
     <text x="1660" y="1991" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">process, the knowledge agent</text>
@@ -2370,18 +2360,17 @@ $ psql
     <rect x="1900" y="6690" width="240" height="260" rx="6" ry="6" fill="none" stroke="#82b366" stroke-width="2" stroke-dasharray="6 4 6 24" stroke-dashoffset="0"/>
     <rect x="1900" y="6690" width="240" height="260" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-20"/>
     <rect x="1900" y="6690" width="240" height="260" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-30"/>
-    <text x="2020" y="6728" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">You can start broad with</text>
-    <text x="2020" y="6744" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">general search terms,</text>
-    <text x="2020" y="6761" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">without specifying specific</text>
-    <text x="2020" y="6778" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">chapters. If you have a lot</text>
-    <text x="2020" y="6795" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">of data, this becomes less</text>
-    <text x="2020" y="6812" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">and less likely to succeed.</text>
-    <text x="2020" y="6828" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">As data grow, we need to</text>
-    <text x="2020" y="6845" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">narrow the search and we</text>
-    <text x="2020" y="6862" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">can&#39;t use popularity</text>
-    <text x="2020" y="6879" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">voting like PageRank to</text>
-    <text x="2020" y="6896" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">guess which are the</text>
-    <text x="2020" y="6912" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">important results.</text>
+    <text x="2020" y="6736" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">You can start broad with</text>
+    <text x="2020" y="6753" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">general search terms,</text>
+    <text x="2020" y="6770" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">without specifying specific</text>
+    <text x="2020" y="6786" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">chapters. If you have a lot</text>
+    <text x="2020" y="6803" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">of data, this becomes less</text>
+    <text x="2020" y="6820" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">and less likely to succeed.</text>
+    <text x="2020" y="6837" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">As data grow, we need to</text>
+    <text x="2020" y="6854" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">narrow the search and we</text>
+    <text x="2020" y="6870" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">can&#39;t use popularity voting</text>
+    <text x="2020" y="6887" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">like PageRank to guess which</text>
+    <text x="2020" y="6904" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">are the important results.</text>
     <rect x="2093" y="6933" width="12" height="12" rx="2" ry="2" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
     <text x="2099.0" y="6939.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#009900">t</text>
     <rect x="2108" y="6933" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
@@ -2578,8 +2567,8 @@ $ psql
     <rect x="3340" y="5130" width="120" height="120" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 24" stroke-dashoffset="-20"/>
     <text x="3400" y="5156" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">appending a</text>
     <text x="3400" y="5173" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">node when you</text>
-    <text x="3400" y="5190" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">don&#39;t want</text>
-    <text x="3400" y="5207" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">to manage the</text>
+    <text x="3400" y="5190" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">don&#39;t want to</text>
+    <text x="3400" y="5207" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">manage the</text>
     <text x="3400" y="5224" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">NPtr values.</text>
     <rect x="3428" y="5233" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
     <text x="3434.0" y="5239.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
