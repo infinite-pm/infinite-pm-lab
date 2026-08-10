@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>lab.infinite.pm — experiments, POCs &amp; sandbox</title>
   <meta name="description" content="The infinite.pm laboratory: experiments, proofs of concept and a sandbox for Infinite Process Modeling (infinite.pm) and Semantic Spacetime γ(3,4).">
-  <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'&gt;&lt;text y='13' font-size='13'&gt;🧪&lt;/text&gt;&lt;/svg&gt;">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <style>
     :root {
       --orange: #ff8000;
@@ -45,11 +47,13 @@
       display: flex; align-items: center; justify-content: space-between;
       padding: 0.7rem 0; gap: 1rem;
     }
-    .brand { display: flex; align-items: baseline; gap: .15rem; font-weight: 800; font-size: 1.15rem; letter-spacing: -.01em; }
-    .brand .lab { color: var(--orange); }
-    .brand .dot { color: var(--muted); font-weight: 600; }
-    .brand .inf { color: var(--green); }
-    .brand .pm { color: var(--blue); }
+    /* the corner says the whole name, drawn: lab.infinite.pm as ONE wordmark,
+       the logo's own letters in the logo's own palette. The mark with "lab"
+       over it was tried here and reads as a stack of two small things rather
+       than as one logo — that drawing is for a sixteen-pixel tab, where there
+       is no room for the name at all, and a header has the room. */
+    .brand { display: flex; align-items: center; }
+    .brand img { height: 1.3rem; width: auto; display: block; }
     nav.top-links a {
       color: var(--muted); text-decoration: none; font-size: .92rem; font-weight: 600;
       margin-left: 1.1rem; border-bottom: 2px solid transparent; padding-bottom: 2px; transition: color .15s, border-color .15s;
@@ -60,9 +64,15 @@
     .hero { text-align: center; padding: 0.3rem 0 .4rem; }
     .hero img { width: 100%; max-width: 360px; height: auto; display: block; margin: 0 auto; }
     .hero h1 { font-size: clamp(1.8rem, 5vw, 2.1rem); font-weight: 800; letter-spacing: -.02em; margin-top: .1rem; }
+    /* the name inside the heading wears the LOGO's colours, letter for letter:
+       infinite green, the dot grey, the p orange, the m blue. "The" is grey
+       with them — it is grammar, not name, and colouring it green made it read
+       as part of the word. */
     .hero h1 .t { color: var(--green); }
     .hero h1 .c { color: var(--blue); }
     .hero h1 .e { color: var(--orange); }
+    .hero h1 .n { color: var(--muted); }
+    .hero h1 .dot { color: var(--muted); }
     .hero .tagline { color: var(--muted); font-size: 1.08rem; margin-top: .5rem; }
     .hero .tagline b.e { color: var(--orange); } .hero .tagline b.t { color: var(--green); } .hero .tagline b.c { color: var(--blue); }
     .hero .lead { max-width: 640px; margin: .9rem auto 0; color: var(--muted); }
@@ -155,7 +165,7 @@
 
     @media (max-width: 560px) {
       nav.top-links a { margin-left: .8rem; font-size: .85rem; }
-      .brand { font-size: 1.02rem; }
+      .brand img { height: 1.1rem; }
     }
   </style>
 </head>
@@ -163,7 +173,7 @@
   <div class="wrap">
 
     <header class="top">
-      <div class="brand"><span class="lab">lab</span><span class="dot">.</span><span class="inf">infinite</span><span class="dot">.</span><span class="pm">pm</span></div>
+      <div class="brand"><img src="logo/wordmark-lab.svg" alt="lab.infinite.pm" width="1119" height="160"></div>
       <nav class="top-links">
         <a href="https://infinite.pm">infinite.pm</a>
         <a href="https://semantic.st">semantic.st</a>
@@ -179,7 +189,7 @@
         <span class="hot beaker" data-tip="🔍 find the core flask…" aria-hidden="true"></span>
         <a class="hot core" href="ipm-triangle.html" data-tip="👀 find what's inside →" aria-label="The γ(3,4) triangle, explained"></a>
       </div>
-      <h1><span class="t">The infinite</span><span class="dot">.</span><span class="c">pm</span> <span class="e">lab</span></h1>
+      <h1><span class="n">The</span> <span class="t">infinite</span><span class="dot">.</span><span class="e">p</span><span class="c">m</span> <span class="e">lab</span></h1>
       <p class="tagline">experiments &middot; proofs of concept &middot; sandbox</p>
       <p class="lead">
         A workbench for <a href="https://infinite.pm">infinite.pm</a> — playing with Mark Burgess's
