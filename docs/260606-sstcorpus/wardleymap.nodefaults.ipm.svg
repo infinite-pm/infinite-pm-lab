@@ -43,8 +43,8 @@
     <path d="M 880.00 395.00 L 875.50 386.00 L 880.00 388.25 L 884.50 386.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="4" data-edge-base="leadsto" data-edge-from="4" data-edge-to="13">
-    <line x1="668.42" y1="625.00" x2="610.60" y2="808.56" stroke="#ff8000" stroke-width="3" />
-    <path d="M 608.58 815.00 L 606.99 805.06 L 610.60 808.56 L 615.57 807.77 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
+    <polyline points="635.00,590.00 595,590 595.00,808.25" fill="none" stroke="#ff8000" stroke-width="3" />
+    <path d="M 595.00 815.00 L 590.50 806.00 L 595.00 808.25 L 599.50 806.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="5" data-edge-base="leadsto" data-edge-from="4" data-edge-to="2">
     <line x1="727.50" y1="625.00" x2="705.52" y2="668.96" stroke="#ff8000" stroke-width="3" />
@@ -83,8 +83,8 @@
     <path d="M 490.00 675.00 L 485.50 666.00 L 490.00 668.25 L 494.50 666.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="14" data-edge-base="leadsto" data-edge-from="12" data-edge-to="13">
-    <line x1="876.54" y1="465.00" x2="638.30" y2="809.45" stroke="#ff8000" stroke-width="3" />
-    <path d="M 634.46 815.00 L 635.88 805.04 L 638.30 809.45 L 643.28 810.16 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
+    <polyline points="838.00,465.00 838,850 666.75,850.00" fill="none" stroke="#ff8000" stroke-width="3" />
+    <path d="M 660.00 850.00 L 669.00 845.50 L 666.75 850.00 L 669.00 854.50 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="15" data-edge-base="leadsto" data-edge-from="14" data-edge-to="8">
     <line x1="880.00" y1="225.00" x2="880.00" y2="268.25" stroke="#ff8000" stroke-width="3" />

@@ -315,25 +315,25 @@
       "id": 48,
       "name": "亲切",
       "alias": "",
-      "type": "Thing"
+      "type": "Event"
     },
     {
       "id": 49,
       "name": "吃惊",
       "alias": "",
-      "type": "Thing"
+      "type": "Event"
     },
     {
       "id": 50,
       "name": "认真",
       "alias": "",
-      "type": "Thing"
+      "type": "Event"
     },
     {
       "id": 51,
       "name": "难为情",
       "alias": "",
-      "type": "Thing"
+      "type": "Event"
     }
   ],
   "edges": [
@@ -344,6 +344,15 @@
       "dir": "",
       "tooltip": "hanzi has english",
       "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 49,
+      "target": 50,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
       "semOrigin": ""
     },
     {
@@ -366,6 +375,15 @@
     },
     {
       "id": 0,
+      "source": 50,
+      "target": 51,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
       "source": 39,
       "target": 50,
       "dir": "",
@@ -380,6 +398,15 @@
       "dir": "",
       "tooltip": "pinyin has english",
       "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 51,
+      "target": 48,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
       "semOrigin": ""
     },
     {
@@ -758,6 +785,15 @@
       "dir": "",
       "tooltip": "pinyin has english",
       "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 27,
+      "target": 49,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
       "semOrigin": ""
     },
     {

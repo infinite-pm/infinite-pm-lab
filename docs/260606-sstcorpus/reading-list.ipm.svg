@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1140" height="1060" viewBox="0 0 1140 1060">
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="1060" viewBox="0 0 980 1060">
   <defs>
   </defs>
   <g id="container-shells">
@@ -23,7 +23,7 @@
     <rect x="780" y="40" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="600" y="480" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="140" y="140" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="980" y="520" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="780" y="660" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="40" y="640" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="320" y="240" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="780" y="140" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
@@ -34,8 +34,8 @@
   </g>
   <g id="edges">
     <g class="edge" data-edge-idx="0" data-edge-base="expresses" data-edge-from="10" data-edge-to="18">
-    <line x1="242.50" y1="405.00" x2="304.48" y2="528.96" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 307.50 535.00 L 299.45 528.96 L 304.48 528.96 L 307.50 524.94 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="232.86" y1="405.00" x2="303.79" y2="529.14" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 307.14 535.00 L 298.77 529.42 L 303.79 529.14 L 306.58 524.95 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="1" data-edge-base="expresses" data-edge-from="10" data-edge-to="25">
     <polyline points="135.00,350.00 100,315 100,225 130.23,194.77" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
@@ -46,20 +46,20 @@
     <path d="M 200.00 305.00 L 204.50 314.00 L 200.00 311.75 L 195.50 314.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="3" data-edge-base="expresses" data-edge-from="10" data-edge-to="13">
-    <line x1="230.16" y1="405.00" x2="239.63" y2="708.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 239.84 715.00 L 235.06 706.14 L 239.63 708.25 L 244.06 705.86 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="230.00" y1="405.00" x2="230.00" y2="708.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 230.00 715.00 L 225.50 706.00 L 230.00 708.25 L 234.50 706.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="4" data-edge-base="expresses" data-edge-from="7" data-edge-to="21">
     <polyline points="195.00,535.00 210,520 241,520 278.96,948.28" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 279.56 955.00 L 274.28 946.43 L 278.96 948.28 L 283.24 945.64 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="5" data-edge-base="expresses" data-edge-from="7" data-edge-to="16">
-    <line x1="200.00" y1="605.00" x2="200.00" y2="788.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 200.00 795.00 L 195.50 786.00 L 200.00 788.25 L 204.50 786.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="120.00" y1="605.00" x2="120.00" y2="788.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 120.00 795.00 L 115.50 786.00 L 120.00 788.25 L 124.50 786.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="6" data-edge-base="expresses" data-edge-from="7" data-edge-to="3">
-    <line x1="124.00" y1="605.00" x2="124.00" y2="628.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 124.00 635.00 L 119.50 626.00 L 124.00 628.25 L 128.50 626.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="117.50" y1="605.00" x2="105.52" y2="628.96" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 102.50 635.00 L 102.50 624.94 L 105.52 628.96 L 110.55 628.96 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="7" data-edge-base="expresses" data-edge-from="7" data-edge-to="1">
     <line x1="160.00" y1="535.00" x2="160.00" y2="511.75" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
@@ -78,11 +78,11 @@
     <path d="M 620.00 205.00 L 624.50 214.00 L 620.00 211.75 L 615.50 214.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="11" data-edge-base="expresses" data-edge-from="14" data-edge-to="20">
-    <polyline points="315.00,355.25 280,329 280,115 309.60,92.80" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 315.00 88.75 L 310.50 97.75 L 309.60 92.80 L 305.10 90.55 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <polyline points="315.00,376.00 270,340 270,125 309.73,93.22" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 315.00 89.00 L 310.78 98.14 L 309.73 93.22 L 305.16 91.11 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="12" data-edge-base="expresses" data-edge-from="14" data-edge-to="17">
-    <polyline points="315.00,375.00 290,350 290,215 310.23,194.77" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <polyline points="315.00,354.00 290,329 290,215 310.23,194.77" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 315.00 190.00 L 311.82 199.55 L 310.23 194.77 L 305.45 193.18 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="13" data-edge-base="expresses" data-edge-from="14" data-edge-to="18">
@@ -106,12 +106,12 @@
     <path d="M 300.00 955.00 L 295.50 946.00 L 300.00 948.25 L 304.50 946.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="18" data-edge-base="expresses" data-edge-from="13" data-edge-to="3">
-    <line x1="148.73" y1="715.23" x2="121.71" y2="706.79" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 115.27 704.77 L 125.20 703.16 L 121.71 706.79 L 122.52 711.75 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <polyline points="135.00,750.00 120,750 104.51,711.27" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 102.00 705.00 L 109.52 711.69 L 104.51 711.27 L 101.16 715.03 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="19" data-edge-base="expresses" data-edge-from="13" data-edge-to="7">
-    <line x1="188.50" y1="715.00" x2="198.83" y2="611.72" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 199.50 605.00 L 203.08 614.40 L 198.83 611.72 L 194.13 613.51 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="169.25" y1="715.00" x2="153.75" y2="611.68" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 152.75 605.00 L 158.54 613.23 L 153.75 611.68 L 149.63 614.57 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="20" data-edge-base="expresses" data-edge-from="9" data-edge-to="15">
     <polyline points="775.00,390.00 750,415 750,485 770.23,505.23" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
@@ -130,15 +130,15 @@
     <path d="M 840.00 305.00 L 844.50 314.00 L 840.00 311.75 L 835.50 314.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="24" data-edge-base="expresses" data-edge-from="12" data-edge-to="26">
-    <line x1="905.00" y1="456.25" x2="970.78" y2="538.48" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 975.00 543.75 L 965.86 539.53 L 970.78 538.48 L 972.89 533.91 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <polyline points="905.00,465.12 940,501 940,635 909.77,665.23" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 905.00 670.00 L 908.18 660.45 L 909.77 665.23 L 914.55 666.82 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="25" data-edge-base="expresses" data-edge-from="12" data-edge-to="24">
     <polyline points="775.00,450.00 761,450 700.65,472.63" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 694.33 475.00 L 701.18 467.63 L 700.65 472.63 L 704.34 476.05 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="26" data-edge-base="expresses" data-edge-from="12" data-edge-to="5">
-    <polyline points="905.00,430.00 940,395 940,225 909.77,194.77" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <polyline points="905.00,434.00 940,399 940,225 909.77,194.77" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 905.00 190.00 L 914.55 193.18 L 909.77 194.77 L 908.18 199.55 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="27" data-edge-base="expresses" data-edge-from="12" data-edge-to="9">
@@ -214,9 +214,9 @@
     <text x="660" y="520" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">coalitions</text>
     <rect x="140" y="140" width="120" height="60" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
     <text x="200" y="170" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">prediction</text>
-    <rect x="980" y="520" width="120" height="60" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
-    <text x="1040" y="540" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">state</text>
-    <text x="1040" y="560" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">formation</text>
+    <rect x="780" y="660" width="120" height="60" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+    <text x="840" y="680" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">state</text>
+    <text x="840" y="700" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">formation</text>
     <rect x="40" y="640" width="120" height="60" rx="6" ry="6" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
     <text x="100" y="660" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">Daniel</text>
     <text x="100" y="680" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#3399ff">Kahneman</text>

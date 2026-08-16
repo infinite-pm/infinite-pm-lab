@@ -9,12 +9,15 @@ t8::a Monday's child is fair of face... ::t
 t9::a Mum's birthday ::t
 t10::a Mum's birthday coming up ::t
 t11::a Order lunch delivery on Mondays ::t
-t12::a "Regular call with %\"Sven F\"" ::t
+t12::a "Regular call with \"Sven F\"" ::t
 t13::a "Regular meetings, prepare" ::t
 t14::a Saturday's child works hard for a living... ::t
 t15::a "Spring cleaning: air and wash bedding, clean windows" ::t
-t16::a "The child that is born on Sabbath day, is bonny and blithe, good and gay" ::t
-t17::a Thursday's child has far to go... ::t
-t18::a Tuesday's child is full of grace... ::t
-t19::a Wednesday's child is full of woe... ::t
-t20::a to do: Write conference talk ::t
+c16::a Sven F ::c
+t17::a "The child that is born on Sabbath day, is bonny and blithe, good and gay" ::t
+t18::a Thursday's child has far to go... ::t
+t19::a Tuesday's child is full of grace... ::t
+t20::a Wednesday's child is full of woe... ::t
+t21::a to do: Write conference talk ::t
+
+t12 --::X "involves"--> c16

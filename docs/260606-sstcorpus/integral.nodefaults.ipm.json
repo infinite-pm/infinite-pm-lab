@@ -90,15 +90,6 @@
     },
     {
       "id": 13,
-      "source": 4,
-      "target": 7,
-      "dir": "DirFwd",
-      "tooltip": "then followed by",
-      "sstLinkType": "LeadsTo",
-      "semOrigin": "SemExplicit"
-    },
-    {
-      "id": 14,
       "source": 5,
       "target": 6,
       "dir": "DirFwd",
@@ -107,7 +98,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 15,
+      "id": 14,
       "source": 6,
       "target": 9,
       "dir": "DirFwd",
@@ -116,7 +107,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 16,
+      "id": 15,
       "source": 9,
       "target": 3,
       "dir": "DirFwd",
@@ -125,9 +116,18 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 17,
+      "id": 16,
       "source": 3,
       "target": 8,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 17,
+      "source": 4,
+      "target": 7,
       "dir": "DirFwd",
       "tooltip": "then followed by",
       "sstLinkType": "LeadsTo",

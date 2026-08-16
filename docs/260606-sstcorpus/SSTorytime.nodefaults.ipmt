@@ -30,7 +30,7 @@ u29::a "GetDBSingletonBySTType(ctx PoSST,sttypes []int,chap string,cn []string) 
 u30::a "GetEntireNCSuperConePathsAsLinks(ctx PoSST,orientation string,start []NodePtr,depth int,chapter string,context []string,limit int) ([][]Link,int)" ::?tec
 u31::a "GetFwdConeAsNodes(ctx PoSST, start NodePtr, sttype,depth int,limit int) []NodePtr" ::?tec
 u32::a "GetFwdPathsAsLinks(ctx PoSST, start NodePtr, sttype,depth int, maxlimit int) ([][]Link,int)" ::?tec
-u33::a GetSTtypesFromArrows(arrows []ArrowPtr) []int ::?tec
+u33::a "GetSTtypesFromArrows(arrows []ArrowPtr) []int" ::?tec
 e34::a "Graphs are for following paths with different meanings - or \"semantics\"." ::e
 u35::a HOW-TO sequences and recipes ::?ce
 u36::a "IdempDBAddLink(ctx PoSST,from Node,link Link,to Node)" ::?tec

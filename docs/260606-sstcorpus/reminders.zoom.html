@@ -1,0 +1,2250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zoomlayout Canvas</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: system-ui, -apple-system, sans-serif; background: #fff; color: #222; overflow: hidden; height: 100vh; display: flex; flex-direction: column; }
+
+/* Top bar */
+#topbar { display: flex; align-items: center; gap: 12px; padding: 8px 16px; background: #f5f5f5; border-bottom: 1px solid #ddd; min-height: 40px; flex-shrink: 0; }
+#topbar .source { color: #888; font-size: 13px; }
+#breadcrumb { display: flex; gap: 4px; align-items: center; }
+#breadcrumb .crumb { padding: 3px 8px; border-radius: 4px; font-size: 13px; cursor: pointer; background: #e0e0e0; color: #333; }
+#breadcrumb .crumb.active { background: #533483; color: #fff; }
+#breadcrumb .crumb:hover { background: #533483; color: #fff; }
+#breadcrumb .sep { color: #999; font-size: 12px; }
+
+/* Main area */
+#main { flex: 1; overflow: hidden; position: relative; }
+
+/* Canvas */
+#canvas-wrap { width: 100%; height: 100%; overflow: hidden; position: relative; cursor: grab; touch-action: none; -webkit-user-select: none; user-select: none; }
+#canvas-wrap.dragging { cursor: grabbing; }
+#svg-container { transform-origin: 0 0; position: absolute; top: 0; left: 0; }
+
+/* Floating right-side panels stack — hovers above the canvas, doesn't eat width */
+#right-stack { position: absolute; top: 12px; right: 12px; bottom: 12px; width: 280px; display: flex; flex-direction: column; gap: 10px; pointer-events: none; }
+.panel { background: rgba(245,245,245,0.95); border: 1px solid #ddd; border-radius: 6px; padding: 12px; font-size: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); pointer-events: auto; }
+.panel h3 { font-size: 16px; margin-bottom: 10px; color: #333; }
+
+#view-panel { flex-shrink: 0; padding: 8px 10px; }
+#view-panel .panel-row { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+#view-panel .panel-row h3 { margin: 0 4px 0 0; }
+.icon-btn { width: 32px; height: 32px; padding: 0; background: #e0e0e0; color: #333; border: 1px solid #ccc; border-radius: 4px; cursor: pointer; font-size: 16px; line-height: 1; display: inline-flex; align-items: center; justify-content: center; font-family: inherit; text-decoration: none; }
+.icon-btn:hover { background: #533483; color: #fff; }
+.icon-btn.flash { background: #4caf50; color: #fff; }
+.icon-btn:disabled { opacity: 0.35; pointer-events: none; }
+.icon-btn[aria-expanded="true"] { background: #533483; color: #fff; }
+
+/* "⋮ More actions" dropdown menu in the View panel. */
+.menu-wrap { position: relative; display: inline-flex; }
+.menu { position: absolute; top: calc(100% + 6px); right: 0; min-width: 200px; max-width: 92vw; max-height: calc(100vh - 80px); overflow-y: auto; background: #fff; border: 1px solid #ccc; border-radius: 6px; box-shadow: 0 4px 16px rgba(0,0,0,0.18); padding: 4px; z-index: 2500; }
+.menu[hidden] { display: none; }
+.menu-item { display: block; width: 100%; text-align: left; padding: 7px 10px; background: none; border: 0; border-radius: 4px; font-family: inherit; font-size: 14px; color: #333; cursor: pointer; text-decoration: none; white-space: nowrap; }
+.menu-item:hover, .menu-item:focus { background: #533483; color: #fff; outline: none; }
+.menu-item.flash { background: #4caf50; color: #fff; }
+.menu-item:disabled { opacity: 0.4; cursor: default; }
+.menu-item:disabled:hover { background: none; color: #333; }
+
+#inspector { flex: 0 1 auto; overflow-y: auto; }
+#inspector .field { margin-bottom: 7px; }
+#inspector .field .label { color: #888; font-size: 12px; text-transform: uppercase; }
+#inspector .field .value { color: #222; }
+#inspector .actions { margin-top: 14px; }
+.action-btn { display: block; width: 100%; padding: 7px 9px; margin-bottom: 5px; background: #e0e0e0; color: #333; border: 1px solid #ccc; border-radius: 4px; cursor: pointer; font-size: 14px; text-align: left; font-family: inherit; }
+.action-btn:hover { background: #533483; color: #fff; }
+.action-btn.flash { background: #4caf50; color: #fff; }
+/* Compact inspector header + colour-coded type / relation accents. */
+.insp-head { display: flex; align-items: baseline; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
+.insp-label { font-size: 16px; font-weight: 600; color: #222; word-break: break-word; flex: 1 1 auto; line-height: 1.3; }
+.insp-type { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; padding: 2px 6px; border-radius: 3px; color: #fff; background: #888; white-space: nowrap; }
+/* Node-type badge colours from the ipmt palette (pkg/ipmtokens/palette.json):
+   event=orange, thing=green, concept=blue. Relation badges use the canvas edge
+   colours (leadsto orange / partof green / expresses blue / nearto grey). */
+.insp-type[data-type="event"] { background: #ff8000; }
+.insp-type[data-type="thing"] { background: #4d8a3a; }
+.insp-type[data-type="concept"] { background: #6c8ebf; }
+/* Multi-selection list (shift+click). Shown only when more than one thing is
+   selected; each chip re-points the inspector at that item without changing
+   the set. The primary chip matches the solid gold canvas ring. */
+.insp-multi { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px solid #333; }
+.insp-multi-count { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: #888; width: 100%; }
+.insp-multi-item { font: inherit; font-size: 11px; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: 2px 7px; border-radius: 10px; cursor: pointer; color: #ddd; background: #2a2a2a; border: 1px solid #444; }
+.insp-multi-item:hover { background: #333; border-color: #666; }
+.insp-multi-item.is-primary { color: #1a1a1a; background: #ffd700; border-color: #ffd700; font-weight: 600; cursor: default; }
+.insp-type[data-rel="leadsto"] { background: #ff8000; }
+.insp-type[data-rel="partof"] { background: #82b366; }
+.insp-type[data-rel="expresses"] { background: #6c8ebf; }
+.insp-type[data-rel="nearto"] { background: #999999; }
+.action-btn.rel-leadsto { border-left: 3px solid #ff8000; }
+.action-btn.rel-partof { border-left: 3px solid #82b366; }
+.action-btn.rel-expresses { border-left: 3px solid #6c8ebf; }
+.action-btn.rel-nearto { border-left: 3px solid #999999; }
+/* "?" badge on a Connected-list entry whose edge is a hidden cross-component
+   stub (mirrors the canvas "?" badge). currentColor adapts to the button state. */
+.hidden-chip { display: inline-block; min-width: 15px; padding: 0 3px; line-height: 14px; text-align: center; border: 1px solid currentColor; border-radius: 4px; font-size: 10px; font-weight: 700; opacity: 0.85; }
+
+/* Help overlay — a dismissible modal listing all gestures/shortcuts. */
+#help-overlay { position: fixed; inset: 0; z-index: 3000; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.35); }
+#help-overlay[hidden] { display: none; }
+#help-panel { width: 440px; max-width: 92vw; max-height: 86vh; overflow-y: auto; }
+.help-head { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+.help-head h3 { margin: 0; flex: 1; }
+.help-sec { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #888; margin: 14px 0 6px; }
+.help-keys { display: grid; grid-template-columns: max-content 1fr; gap: 6px 14px; align-items: baseline; }
+.help-keys dt { white-space: nowrap; }
+.help-keys dd { color: #444; font-size: 14px; line-height: 1.4; margin: 0; }
+.help-keys kbd { display: inline-block; padding: 1px 6px; font: 12px/1.6 ui-monospace, SFMono-Regular, Menlo, monospace; background: #fff; border: 1px solid #ccc; border-bottom-width: 2px; border-radius: 4px; color: #333; }
+.help-keys .chip { display: inline-block; width: 16px; height: 16px; line-height: 14px; text-align: center; border: 1px solid #999; border-radius: 4px; background: #fff; font-size: 11px; color: #333; }
+
+/* Bottom bar */
+#bottombar { display: flex; align-items: center; gap: 16px; padding: 4px 16px; background: #f5f5f5; border-top: 1px solid #ddd; font-size: 12px; color: #888; min-height: 28px; flex-shrink: 0; }
+
+/* SVG interaction styles */
+.node-group { cursor: pointer; }
+.node-group:hover rect { opacity: 0.3; }
+.click-targets, .chip-targets { pointer-events: all; }
+.selection-highlight { pointer-events: none; }
+/* Dotted gold marker on the one side of a CONNECTED node where the selected
+   node's edge attaches (drawn by highlightConnectedNodeBorders). */
+.connected-border-highlight { pointer-events: none; filter: drop-shadow(0 0 2px #ffd700); }
+
+/* Cross-component edge stubs: full edge hidden until the edge is SELECTED (click).
+   Hovering only shows a tooltip — it does not reveal the edge. A selected edge is
+   highlighted with the same yellow glow as a node selection (no fading). */
+/* The stub's full middle is INVISIBLE by default (opacity 0) but still hoverable
+   (pointer-events on its line) so the MIDDLE part gets its own tooltip; it becomes
+   painted only when the edge is revealed by selection/connection. (display:none
+   would give it zero geometry → no mouseenter → dead middle tooltip.) */
+.edge-full { opacity: 0; }
+.edge-full line { pointer-events: stroke; }
+/* A selected edge (.edge-selected) OR an edge connected to the selected NODE
+   (.edge-connected) gets the same yellow highlight; stub edges reveal their full
+   middle too. Same style for normal lines, stub middles, and stub segments. */
+.edge.edge-selected .edge-full,
+.edge.edge-connected .edge-full { opacity: 1; }
+.edge.edge-selected > line, .edge.edge-connected > line,
+.edge.edge-selected > polyline, .edge.edge-connected > polyline,
+.edge.edge-selected .edge-full, .edge.edge-connected .edge-full,
+.edge.edge-selected .edge-stub, .edge.edge-connected .edge-stub { filter: drop-shadow(0 0 3px #ffd700) drop-shadow(0 0 2px #ffd700); }
+.edge.edge-selected .edge-stub line, .edge.edge-connected .edge-stub line { stroke-opacity: 1; }
+.edge.edge-selected .edge-badge rect, .edge.edge-connected .edge-badge rect { fill: #ffd700; }
+.edge-stub { cursor: pointer; }
+.edge-tip { position: fixed; pointer-events: none; background: rgba(20,20,20,0.94); color: #fff; padding: 6px 9px; border-radius: 5px; font-size: 13px; line-height: 1.4; max-width: 340px; box-shadow: 0 2px 10px rgba(0,0,0,0.35); z-index: 2000; display: none; }
+</style>
+</head>
+<body>
+
+<div id="topbar">
+  <span class="source" id="source-label">—</span>
+  <div id="breadcrumb"></div>
+</div>
+
+<div id="main">
+  <div id="canvas-wrap">
+    <div id="svg-container"></div>
+  </div>
+  <div id="right-stack">
+    <div id="view-panel" class="panel">
+      <div class="panel-row">
+        <h3>View</h3>
+        <button class="icon-btn" id="nav-back-btn" title="Back to the previous view">◀</button>
+        <button class="icon-btn" id="nav-fwd-btn" title="Forward to the next view">▶</button>
+        <button class="icon-btn" id="toggle-inspector-btn" title="Show/hide the inspector panel (free up canvas space)">▤</button>
+        <div class="menu-wrap">
+          <button class="icon-btn" id="view-menu-btn" title="More actions" aria-haspopup="true" aria-expanded="false">⋮</button>
+          <div id="view-menu" class="menu" role="menu" hidden>
+            <button class="menu-item" id="help-btn" role="menuitem" title="Shortcuts &amp; help (?)">Shortcuts &amp; help</button>
+            <button class="menu-item" id="copy-url-btn" role="menuitem" title="Copy a URL that restores the current state, selection, zoom and pan">Copy view URL</button>
+            <button class="menu-item" id="expand-all-btn" role="menuitem" title="Navigate to the fully-expanded state">Expand all</button>
+            <button class="menu-item" id="collapse-all-btn" role="menuitem" title="Collapse everything back to the root state">Unexpand all</button>
+            <a class="menu-item" id="download-offline-btn" href="/offline.html" download role="menuitem" title="Download a self-contained HTML page that runs offline (no server)">Download offline copy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="inspector" class="panel">
+      <h3>Inspector</h3>
+      <div id="inspector-content"><em>Click a node to inspect</em></div>
+    </div>
+  </div>
+</div>
+
+<div id="bottombar">
+  <span id="state-info">—</span>
+  <span id="zoom-info">zoom: 100%</span>
+</div>
+
+<div id="help-overlay" hidden>
+  <div id="help-panel" class="panel" role="dialog" aria-modal="true" aria-label="Shortcuts and help">
+    <div class="help-head">
+      <h3>Shortcuts &amp; help</h3>
+      <button class="icon-btn" id="help-close" title="Close (Esc)">✕</button>
+    </div>
+
+    <div class="help-sec">Select &amp; inspect</div>
+    <dl class="help-keys">
+      <dt><kbd>Click</kbd> node</dt><dd>highlight &amp; inspect it — click it again to clear (the S / E start &amp; end markers too)</dd>
+      <dt><kbd>Click</kbd> edge</dt><dd>select the edge (rings both ends)</dd>
+      <dt><kbd>Shift</kbd>+<kbd>Click</kbd></dt><dd>add a node or edge to the highlight set — <kbd>Shift</kbd>+<kbd>Click</kbd> it again to drop it. The one you clicked last gets the solid ring and the inspector; the rest are dashed.</dd>
+      <dt><kbd>Double-click</kbd> edge</dt><dd>if its other end is off-screen, jump the view there</dd>
+      <dt><span class="chip">?</span> badge</dt><dd>a hidden cross-component edge — click to reveal it, <kbd>double-click</kbd> to jump to the node at its far end</dd>
+      <dt><kbd>Click</kbd> empty</dt><dd>clear the selection (all of it)</dd>
+    </dl>
+
+    <div class="help-sec">Open / collapse a node</div>
+    <dl class="help-keys">
+      <dt><span class="chip">+</span> chip</dt><dd>the corner badge — a single click opens/collapses</dd>
+      <dt><kbd>Double-click</kbd></dt><dd>same as the chip</dd>
+      <dt><kbd>Ctrl</kbd>/<kbd>⌘</kbd>+<kbd>Click</kbd></dt><dd>same — opens the whole subtree</dd>
+      <dt>… +<kbd>Alt</kbd></dt><dd>open just one level instead</dd>
+    </dl>
+    <p style="color:#888; font-size:13px; margin:6px 0 0;">A highlighted node stays highlighted after it opens; a plain click never navigates.</p>
+
+    <div class="help-sec">Move around</div>
+    <dl class="help-keys">
+      <dt><kbd>Drag</kbd></dt><dd>pan — you can start the drag anywhere, even on a node</dd>
+      <dt><kbd>Scroll</kbd></dt><dd>zoom in / out</dd>
+      <dt><kbd>Esc</kbd></dt><dd>clear the selection, then zoom out</dd>
+      <dt>Breadcrumb</dt><dd>jump back to a parent state (top bar)</dd>
+      <dt>◀ ▶ <span style="color:#888">or</span> <kbd>[</kbd> <kbd>]</kbd></dt><dd>step back / forward through your recent views (highlight, open, zoom — pan/zoom restore with each step)</dd>
+    </dl>
+
+    <div class="help-sec">Toolbar (View panel)</div>
+    <dl class="help-keys">
+      <dt>◀ ▶</dt><dd>back / forward through your recent views</dd>
+      <dt>▤</dt><dd>show / hide the inspector panel</dd>
+      <dt>⋮</dt><dd>more actions: this help, copy view URL, expand all, unexpand all, download offline copy</dd>
+    </dl>
+  </div>
+</div>
+
+<script>
+window.__BUNDLED_MODEL = {"source":"reminders.ipmt","rootStateID":"s:","fullyExpandedStateID":"s:+12","states":[{"id":"s:","openSet":null,"expandedTCs":null,"transitions":{"expand":{"12":"s:+12"}},"bounds":{"width":40,"height":40,"marginX":40,"marginY":40},"nodes":[],"edges":[],"ancestorChain":["s:"]},{"id":"s:+12","openSet":null,"expandedTCs":[12],"transitions":{"collapse":{"12":"s:"}},"bounds":{"width":200,"height":140,"marginX":40,"marginY":40},"nodes":[{"id":"16","type":"concept","label":"Sven F","alias":"c16","x":40,"y":40,"width":120,"height":60,"degree":0,"navTargets":{}}],"edges":[],"ancestorChain":["s:","s:+12"]}]};
+window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u003e\n\u003csvg xmlns=\"http://www.w3.org/2000/svg\" width=\"40\" height=\"40\" viewBox=\"0 0 40 40\"\u003e\n  \u003cdefs\u003e\n  \u003c/defs\u003e\n  \u003cg id=\"container-shells\"\u003e\n  \u003c/g\u003e\n  \u003cg id=\"node-shadows\"\u003e\n  \u003c/g\u003e\n  \u003cg id=\"edges\"\u003e\n  \u003c/g\u003e\n  \u003cg id=\"nodes\"\u003e\n  \u003c/g\u003e\n\u003c/svg\u003e\n","s:+12":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u003e\n\u003csvg xmlns=\"http://www.w3.org/2000/svg\" width=\"200\" height=\"140\" viewBox=\"0 0 200 140\"\u003e\n  \u003cdefs\u003e\n  \u003c/defs\u003e\n  \u003cg id=\"container-shells\"\u003e\n  \u003c/g\u003e\n  \u003cg id=\"node-shadows\"\u003e\n    \u003crect x=\"40\" y=\"40\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#000000\" stroke=\"#000000\" stroke-width=\"2\" opacity=\"0.25\" transform=\"translate(2,3)\"/\u003e\n  \u003c/g\u003e\n  \u003cg id=\"edges\"\u003e\n  \u003c/g\u003e\n  \u003cg id=\"nodes\"\u003e\n    \u003crect x=\"40\" y=\"40\" width=\"120\" height=\"60\" rx=\"6\" ry=\"6\" fill=\"#dae8fc\" stroke=\"#6c8ebf\" stroke-width=\"2\"/\u003e\n    \u003ctext x=\"100\" y=\"70\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-family=\"Helvetica,Inter,Segoe UI,Arial\" font-size=\"16\" font-weight=\"normal\" fill=\"#3399ff\"\u003eSven F\u003c/text\u003e\n  \u003c/g\u003e\n\u003c/svg\u003e\n"};
+</script>
+<script>
+// Zoomlayout Canvas — client
+// Drives a click-path state model: state = (O, E), ID = "s:<O>+<E>".
+// Hash URL (#<stateID>) is the single source of truth for the current state.
+"use strict";
+
+(function () {
+  // --- Model (loaded from /model.json) ---
+  let model = null;              // {source, rootStateID, states: [...]}
+  let statesByID = {};           // stateID → state record
+  let svgCache = {};             // stateID → pre-rendered SVG text
+
+  // --- Runtime state ---
+  let currentStateID = null;
+  let historyStack = [];         // breadcrumb trail of visited state IDs
+  // Selection is a PRIMARY plus a set of extras. The primary is what the
+  // inspector, the URL hash, the view history and navigation carry-through all
+  // read — keeping it a single value means none of that had to change. Extras
+  // are the shift-clicked additions: highlighted on the canvas and listed in
+  // the inspector, but never in the hash (a URL of N ids is not worth it).
+  // The primary is exclusive: a node OR an edge, never both. Shift-clicking the
+  // other kind demotes the current primary into the extras.
+  let selectedNodeID = null;
+  let selectedEdgeIdx = null;
+  const extraNodeIDs = new Set();   // additionally highlighted node ids
+  const extraEdgeIdxs = new Set();  // additionally highlighted edge indices
+  let cameraScale = 1;
+  let minCameraScale = 0.1;
+  let panX = 0, panY = 0;
+  let isPanning = false;
+  let didDrag = false;
+  let panStartX = 0, panStartY = 0;
+  let panStartPanX = 0, panStartPanY = 0;
+  let lastMouseX = 0, lastMouseY = 0;
+  // Touch state. touchMode: null | "pan" | "pinch". Pinch uses a layout-space
+  // anchor (the midpoint between fingers, mapped to layout coords at gesture
+  // start) so the pinched point stays under the fingers as the scale changes.
+  let touchMode = null;
+  let pinchStartDist = 0;
+  let pinchStartScale = 1;
+  let pinchAnchorLayoutX = 0, pinchAnchorLayoutY = 0;
+
+  // --- View history (in-app ◀/▶ back-forward) ---
+  // Snapshots = {stateID, nodeID, edgeIdx, zoom, panX, panY}; viewCursor is the
+  // current position. A new interaction drops any forward entries and pushes one.
+  // Pan/wheel don't add entries (they never call updateSelection) — the camera is
+  // just kept on whatever the current entry is.
+  let viewHistory = [];
+  let viewCursor = -1;
+  let suppressHistory = false;   // true while restoring a snapshot (don't re-record)
+  let commitScheduled = false;   // coalesce the many updateSelection calls of one interaction
+
+  // --- DOM refs ---
+  const sourceLabel = document.getElementById("source-label");
+  const breadcrumb = document.getElementById("breadcrumb");
+  const svgContainer = document.getElementById("svg-container");
+  const canvasWrap = document.getElementById("canvas-wrap");
+  const inspectorContent = document.getElementById("inspector-content");
+  const stateInfo = document.getElementById("state-info");
+  const zoomInfo = document.getElementById("zoom-info");
+  const helpOverlay = document.getElementById("help-overlay");
+  const navBackBtn = document.getElementById("nav-back-btn");
+  const navFwdBtn = document.getElementById("nav-fwd-btn");
+  const viewMenu = document.getElementById("view-menu");
+  const viewMenuBtn = document.getElementById("view-menu-btn");
+
+  // --- Init ---
+  // The offline single-page bundle pre-populates window.__BUNDLED_MODEL and
+  // window.__BUNDLED_SVGS so the page works under file:// without any
+  // network. Online mode fetches from the canvas-server endpoints. Same
+  // shape; the rest of the app doesn't care which path supplied the data.
+  async function loadModel() {
+    if (window.__BUNDLED_MODEL) return window.__BUNDLED_MODEL;
+    const resp = await fetch("/model.json");
+    return resp.json();
+  }
+  async function loadStateSVG(stateID) {
+    if (window.__BUNDLED_SVGS && window.__BUNDLED_SVGS[stateID] != null) {
+      return window.__BUNDLED_SVGS[stateID];
+    }
+    const resp = await fetch("/state/" + encodeURIComponent(stateID) + ".svg");
+    return resp.text();
+  }
+
+  async function init() {
+    model = await loadModel();
+    statesByID = {};
+    for (const st of model.states) {
+      statesByID[st.id] = st;
+    }
+    sourceLabel.textContent = model.source || "unknown";
+
+    await Promise.all(model.states.map(fetchStateSVG));
+
+    const parsed = parseHash();
+    const initialID = (parsed.stateID && statesByID[parsed.stateID]) ? parsed.stateID : model.rootStateID;
+    historyStack = (statesByID[initialID].ancestorChain || [initialID]).slice();
+    if (parsed.inspectorHidden) {
+      const insp = document.getElementById("inspector");
+      if (insp) insp.style.display = "none"; // before activateState so its hash write keeps i=0
+    }
+    activateState(initialID, { push: false, replaceHash: true, nodeID: parsed.nodeID });
+    // After activateState, which has applied the primary node and rewritten the
+    // hash. Deliberately no syncHash afterwards: the URL we just parsed already
+    // says this, and rewriting it here would drop the z/x/y the sender chose.
+    applySelectionFromHash(parsed);
+    if (parsed.zoom != null) {
+      cameraScale = parsed.zoom;
+      if (parsed.panX != null) panX = parsed.panX;
+      if (parsed.panY != null) panY = parsed.panY;
+      applyTransform();
+    }
+
+    window.addEventListener("popstate", function (e) {
+      const ph = parseHash();
+      const targetID = (e.state && e.state.stateID) || ph.stateID || model.rootStateID;
+      if (statesByID[targetID]) {
+        const nid = (e.state && e.state.nodeID) || ph.nodeID;
+        // The browser's Back/Forward and the in-app ◀/▶ history are independent;
+        // a browser-driven navigation must NOT record into (and truncate) the
+        // in-app stack. suppressHistory makes scheduleCommit a no-op synchronously,
+        // so the deferred recordView is never scheduled for this activation.
+        suppressHistory = true;
+        activateState(targetID, { push: false, replaceHash: false, nodeID: nid });
+        applySelectionFromHash(ph);   // Back/Forward restores the whole selection, not just its primary
+        suppressHistory = false;
+      }
+    });
+
+    document.getElementById("copy-url-btn").addEventListener("click", copyViewURL);
+    document.getElementById("expand-all-btn").addEventListener("click", goToFullyExpanded);
+    document.getElementById("toggle-inspector-btn").addEventListener("click", toggleInspector);
+    document.getElementById("help-btn").addEventListener("click", openHelp);
+    document.getElementById("help-close").addEventListener("click", closeHelp);
+    // Click the dimmed backdrop (but not the panel) to dismiss.
+    helpOverlay.addEventListener("click", function (e) { if (e.target === helpOverlay) closeHelp(); });
+    navBackBtn.addEventListener("click", function () { goToViewHistory(-1); });
+    navFwdBtn.addEventListener("click", function () { goToViewHistory(1); });
+    updateHistoryButtons();
+
+    // "⋮ More actions" menu.
+    document.getElementById("collapse-all-btn").addEventListener("click", goToRoot);
+    viewMenuBtn.addEventListener("click", function (e) { e.stopPropagation(); toggleMenu(); });
+    // Close after an item is chosen — except Copy URL, which stays open so its
+    // green "copied" flash is visible.
+    viewMenu.addEventListener("click", function (e) {
+      const item = e.target.closest(".menu-item");
+      if (item && item.id !== "copy-url-btn") closeMenu();
+    });
+    viewMenu.addEventListener("keydown", onMenuKeydown);
+    // Click anywhere outside the menu closes it.
+    document.addEventListener("click", function (e) {
+      if (menuOpen() && !e.target.closest(".menu-wrap")) closeMenu();
+    });
+
+    // Offline bundle has no server to download from — hide the icon so users
+    // don't get a confusing 404 from clicking it under file://.
+    if (window.__BUNDLED_MODEL) {
+      const dl = document.getElementById("download-offline-btn");
+      if (dl) dl.style.display = "none";
+    }
+  }
+
+  async function fetchStateSVG(st) {
+    svgCache[st.id] = await loadStateSVG(st.id);
+  }
+
+  // Hash format: #<stateID>[/<nodeID>][?z=...&x=...&y=...]
+  // - stateID and nodeID go in verbatim — they only contain fragment-safe chars
+  //   (e.g. #s:2.8+5/10, #s:2/shell-2), so no %-encoding, clean readable URLs.
+  // - zoom/pan are query-style and only included by Copy URL (default
+  //   navigation doesn't touch them, so panning doesn't spam history)
+  function parseHash() {
+    const h = location.hash;
+    if (!h || h.length < 2) return { stateID: null, nodeID: null, zoom: null, panX: null, panY: null };
+    let raw = h.slice(1);
+    let view = { zoom: null, panX: null, panY: null, inspectorHidden: false };
+    let sel = { edgeIdx: null, extraNodeIDs: [], extraEdgeIdxs: [] };
+    const q = raw.indexOf("?");
+    if (q >= 0) {
+      const qs = raw.slice(q + 1);
+      raw = raw.slice(0, q);
+      for (const pair of qs.split("&")) {
+        // Split on the FIRST "=" only: ids are percent-encoded, so they cannot
+        // contain a bare "=", but destructuring split("=") would silently drop
+        // everything past a second one.
+        const eq = pair.indexOf("=");
+        if (eq < 0) continue;
+        const k = pair.slice(0, eq);
+        const v = pair.slice(eq + 1);
+        if (!v) continue;
+        // The list params carry ids, not numbers, so they are read before the
+        // numeric guard below -- which would otherwise throw them away as NaN.
+        if (k === "sn") {
+          sel.extraNodeIDs = v.split(",").map(decodeURIComponent).filter(Boolean);
+          continue;
+        }
+        if (k === "se") {
+          sel.extraEdgeIdxs = v.split(",")
+            .map(function (s) { return Number(decodeURIComponent(s)); })
+            .filter(function (n) { return Number.isInteger(n); });
+          continue;
+        }
+        const num = Number(decodeURIComponent(v));
+        if (isNaN(num)) continue;
+        if (k === "z") view.zoom = num;
+        else if (k === "x") view.panX = num;
+        else if (k === "y") view.panY = num;
+        else if (k === "i") view.inspectorHidden = (num === 0);
+        else if (k === "pe") sel.edgeIdx = num;
+      }
+    }
+    const slash = raw.indexOf("/");
+    let stateID, nodeID = null;
+    if (slash < 0) {
+      stateID = raw;
+    } else {
+      stateID = raw.slice(0, slash);
+      const n = raw.slice(slash + 1);
+      if (n) nodeID = n;
+    }
+    return {
+      stateID: stateID, nodeID: nodeID,
+      zoom: view.zoom, panX: view.panX, panY: view.panY, inspectorHidden: view.inspectorHidden,
+      edgeIdx: sel.edgeIdx, extraNodeIDs: sel.extraNodeIDs, extraEdgeIdxs: sel.extraEdgeIdxs,
+    };
+  }
+
+  function buildHash(stateID, nodeID, view) {
+    // IDs go in verbatim — they only contain fragment-safe chars and never the
+    // "/" separator, so parseHash reads them straight back (no encode/decode).
+    let h = "#" + String(stateID);
+    if (nodeID != null && nodeID !== "") h += "/" + String(nodeID);
+    const parts = [];
+    if (view) {
+      if (view.zoom != null) parts.push("z=" + encodeURIComponent(view.zoom));
+      if (view.panX != null) parts.push("x=" + encodeURIComponent(view.panX));
+      if (view.panY != null) parts.push("y=" + encodeURIComponent(view.panY));
+    }
+    // The rest of the selection: a primary EDGE, and every shift-clicked extra
+    // of either kind. Only the primary node used to travel (in the path above),
+    // so "Copy view URL" handed back a different picture from the one you
+    // copied -- an edge selection arrived empty, and a multi-selection arrived
+    // as one node -- while the button's own tooltip promised the selection.
+    //
+    // Read from the live selection rather than passed in, so syncHash keeps the
+    // address bar honest as you shift-click, and copying is then just reading it.
+    if (selectedEdgeIdx != null) parts.push("pe=" + encodeURIComponent(selectedEdgeIdx));
+    const extraNodes = Array.from(extraNodeIDs).filter(function (id) { return id !== selectedNodeID; });
+    const extraEdges = Array.from(extraEdgeIdxs).filter(function (i) { return i !== selectedEdgeIdx; });
+    if (extraNodes.length) parts.push("sn=" + extraNodes.map(encodeURIComponent).join(","));
+    if (extraEdges.length) parts.push("se=" + extraEdges.map(encodeURIComponent).join(","));
+    // Reflect the inspector panel's visibility so a shared URL restores it.
+    if (inspectorIsHidden()) parts.push("i=0");
+    if (parts.length > 0) h += "?" + parts.join("&");
+    return h;
+  }
+
+  // Put a parsed hash's selection back onto the canvas, on top of whatever
+  // primary node activateState already applied.
+  //
+  // Ids and indices the current state does not have are dropped rather than
+  // fatal: a shared URL outlives the render it was copied from, and edge
+  // indices in particular are positional, so a re-render can invalidate them.
+  // Half a selection is a better answer than a blank canvas or a thrown error.
+  function applySelectionFromHash(p) {
+    if (!p) return;
+    const st = currentState();
+    if (!st) return;
+    const edges = st.edges || [];
+    const knownEdge = function (i) { return Number.isInteger(i) && i >= 0 && i < edges.length; };
+
+    // The primary is a node OR an edge, never both. A primary node came in
+    // through the path and has already been applied, so an edge only takes the
+    // primary slot when no node holds it.
+    if (p.edgeIdx != null && knownEdge(p.edgeIdx)) {
+      if (selectedNodeID == null) selectedEdgeIdx = p.edgeIdx;
+      else extraEdgeIdxs.add(p.edgeIdx);
+    }
+    for (const id of p.extraNodeIDs || []) {
+      if (id !== selectedNodeID && findNodeById(id)) extraNodeIDs.add(id);
+    }
+    for (const i of p.extraEdgeIdxs || []) {
+      if (i !== selectedEdgeIdx && knownEdge(i)) extraEdgeIdxs.add(i);
+    }
+    // updateSelection picks the inspector that matches the primary. Calling
+    // updateInspector() here as well looked harmless and was not:
+    // renderNodeInspector opens by setting selectedEdgeIdx = null -- "a node is
+    // being inspected, drop any edge selection" -- so the restore wiped the very
+    // edge it had just put back, and only for edges, which is why the node case
+    // looked fine.
+    updateSelection();
+  }
+
+  // The address bar follows the VIEW as well as the selection, once the reader
+  // has moved it: a wheel, a drag-pan or a follow-to-node marks the view as
+  // the reader's (viewTouched) and, after a short pause, writes z/x/y into the
+  // hash -- so reload, bookmark and copy all give back what was on screen,
+  // without a click on "Copy view URL". Debounced, because a wheel fires
+  // dozens of times per gesture and every one is a replaceState. The initial
+  // fit and every state change reset the flag (resetCamera): a fresh state's
+  // URL is just its id until the reader touches it, and the history entries
+  // activateState pushes stay clean.
+  const VIEW_HASH_DELAY_MS = 350;
+  let viewTouched = false;
+  let viewHashTimer = null;
+  function currentView() {
+    return { zoom: cameraScale, panX: Math.round(panX), panY: Math.round(panY) };
+  }
+  function viewChangedByUser() {
+    viewTouched = true;
+    if (viewHashTimer) clearTimeout(viewHashTimer);
+    viewHashTimer = setTimeout(function () {
+      viewHashTimer = null;
+      syncHash();
+    }, VIEW_HASH_DELAY_MS);
+  }
+
+  function syncHash() {
+    const h = buildHash(currentStateID, selectedNodeID, viewTouched ? currentView() : null);
+    history.replaceState({ stateID: currentStateID, nodeID: selectedNodeID }, "", h);
+  }
+
+  // Keep historyStack in sync with the new state: truncate if the state is
+  // already a prefix, otherwise append. This way zoom-out / collapse shrinks
+  // the breadcrumb, zoom-in / expand grows it.
+  function syncHistory(stateID) {
+    const pos = historyStack.indexOf(stateID);
+    if (pos >= 0) {
+      historyStack = historyStack.slice(0, pos + 1);
+    } else {
+      historyStack.push(stateID);
+    }
+  }
+
+  // --- State activation ---
+  function activateState(stateID, opts) {
+    opts = opts || {};
+    if (!statesByID[stateID]) return;
+    currentStateID = stateID;
+    // Restore selection from opts if the node is still visible in this state.
+    selectedNodeID = (opts.nodeID && findNodeById(opts.nodeID)) ? opts.nodeID : null;
+
+    syncHistory(stateID);
+
+    const hashValue = buildHash(stateID, selectedNodeID);
+    const histState = { stateID: stateID, nodeID: selectedNodeID };
+    if (opts.replaceHash) {
+      history.replaceState(histState, "", hashValue);
+    } else if (opts.push) {
+      history.pushState(histState, "", hashValue);
+    }
+
+    resetCamera();
+    renderState();
+    if (selectedNodeID) {
+      updateSelection();
+      updateInspector();
+    }
+  }
+
+  function goToStateFromNode(targetID, srcNode, opts) {
+    if (!statesByID[targetID]) return;
+    opts = opts || {};
+
+    // For canvas clicks: anchor on the cursor (so the clicked node lands under
+    // the mouse). For inspector clicks (anchorOnNode): anchor on the source
+    // node's CENTER — keeps the node visually in place even when it grows
+    // (zoom-in turning a closed event into a bigger open shell).
+    let relX = 0.5, relY = 0.5;
+    let anchorScreenX = lastMouseX;
+    let anchorScreenY = lastMouseY;
+    if (srcNode) {
+      if (opts.anchorOnNode) {
+        anchorScreenX = (srcNode.x + srcNode.width / 2) * cameraScale + panX;
+        anchorScreenY = (srcNode.y + srcNode.height / 2) * cameraScale + panY;
+      } else {
+        const mouseLayoutX = (lastMouseX - panX) / cameraScale;
+        const mouseLayoutY = (lastMouseY - panY) / cameraScale;
+        relX = Math.max(0, Math.min(1, (mouseLayoutX - srcNode.x) / srcNode.width));
+        relY = Math.max(0, Math.min(1, (mouseLayoutY - srcNode.y) / srcNode.height));
+      }
+    }
+
+    currentStateID = targetID;
+    selectedNodeID = null;
+    clearExtras(); // a new state renders new nodes; the old highlight set is meaningless
+    syncHistory(targetID);
+    // Hash is finalized later (after callers may set selectedNodeID) via
+    // syncHash; push a placeholder entry now so back/forward works.
+    history.pushState({ stateID: targetID, nodeID: null }, "", buildHash(targetID, null));
+
+    const newSt = statesByID[targetID];
+    const b = newSt.bounds;
+    const newW = b.width + b.marginX * 2;
+    const newH = b.height + b.marginY * 2;
+    if (!opts.preserveZoom) {
+      const cw = canvasWrap.clientWidth;
+      const ch = canvasWrap.clientHeight;
+      cameraScale = Math.min(cw / newW, ch / newH, 1.5);
+      minCameraScale = cameraScale * 0.2;
+    }
+
+    let anchorLayoutX = newW / 2;
+    let anchorLayoutY = newH / 2;
+    let foundInNewState = false;
+    if (srcNode && srcNode.id != null) {
+      for (const n of newSt.nodes) {
+        if (n.id === srcNode.id) {
+          anchorLayoutX = n.x + n.width * relX;
+          anchorLayoutY = n.y + n.height * relY;
+          foundInNewState = true;
+          break;
+        }
+      }
+    }
+    if (opts.anchorOnNode && !foundInNewState) {
+      // Source node disappeared (e.g. zoom-out hid the child). Don't drag the
+      // whole layout to where the node used to be — leave pan as-is.
+    } else {
+      panX = anchorScreenX - anchorLayoutX * cameraScale;
+      panY = anchorScreenY - anchorLayoutY * cameraScale;
+    }
+
+    applyTransform();
+    renderState(true);
+  }
+
+  // Cursor-based zoom-out: pick the innermost zoomOut target whose node
+  // contains the cursor (in layout coords). If the cursor isn't over any
+  // open composite, fall back to the outermost zoomOut target.
+  function zoomOutAtCursor() {
+    const st = currentState();
+    const zo = st && st.transitions && st.transitions.zoomOut;
+    if (!zo) return false;
+    const keys = Object.keys(zo);
+    if (keys.length === 0) return false;
+
+    const mx = (lastMouseX - panX) / cameraScale;
+    const my = (lastMouseY - panY) / cameraScale;
+
+    let innermost = null;
+    let outermost = null;
+    for (const k of keys) {
+      const n = findNodeById(k);
+      if (!n) continue;
+      const area = n.width * n.height;
+      if (mx >= n.x && mx <= n.x + n.width && my >= n.y && my <= n.y + n.height) {
+        if (!innermost || area < innermost.area) innermost = { id: k, n: n, area: area };
+      }
+      if (!outermost || area > outermost.area) outermost = { id: k, n: n, area: area };
+    }
+    const pick = innermost || outermost;
+    if (!pick) return false;
+    const anchor = { id: pick.id, x: pick.n.x, y: pick.n.y, width: pick.n.width, height: pick.n.height };
+    goToStateFromNode(zo[pick.id], anchor);
+    return true;
+  }
+
+  function resetCamera() {
+    cameraScale = 1;
+    panX = 0;
+    panY = 0;
+    viewTouched = false;
+    if (viewHashTimer) { clearTimeout(viewHashTimer); viewHashTimer = null; }
+    fitToViewport();
+  }
+
+  function fitToViewport() {
+    const st = currentState();
+    if (!st) return;
+    const b = st.bounds;
+    const cw = canvasWrap.clientWidth;
+    const ch = canvasWrap.clientHeight;
+    const svgW = b.width + b.marginX * 2;
+    const svgH = b.height + b.marginY * 2;
+    cameraScale = Math.min(cw / svgW, ch / svgH, 1.5);
+    minCameraScale = cameraScale * 0.2;
+    panX = (cw - svgW * cameraScale) / 2;
+    panY = (ch - svgH * cameraScale) / 2;
+    applyTransform();
+  }
+
+  function applyTransform() {
+    svgContainer.style.transform = "translate(" + panX + "px," + panY + "px) scale(" + cameraScale + ")";
+    zoomInfo.textContent = "zoom: " + Math.round(cameraScale * 100) + "%";
+  }
+
+  function currentState() { return statesByID[currentStateID]; }
+
+  // --- Transition lookup ---
+  // Returns {kind, targetID} for the first matching transition on nodeID, or null.
+  function transitionForNode(nodeID) {
+    const st = currentState();
+    if (!st || !st.transitions) return null;
+    const t = st.transitions;
+    const order = ["zoomIn", "expand", "zoomOut", "collapse"];
+    for (const k of order) {
+      const m = t[k];
+      if (m && m[String(nodeID)] !== undefined) {
+        return { kind: k, targetID: m[String(nodeID)] };
+      }
+    }
+    return null;
+  }
+
+  function zoomInTarget(nodeID) {
+    const st = currentState();
+    const m = st && st.transitions && st.transitions.zoomIn;
+    return m ? m[String(nodeID)] : undefined;
+  }
+
+  // --- Rendering ---
+  function renderState(skipFit) {
+    const st = currentState();
+    if (!st) return;
+
+    svgContainer.innerHTML = svgCache[st.id] || "";
+    const svg = svgContainer.querySelector("svg");
+    if (!svg) return;
+
+    const overlayLayer = svgEl("g", { class: "click-targets" });
+    svg.appendChild(overlayLayer);
+    // Corner-chip hit targets sit ABOVE the node bodies so a click on the chip
+    // navigates even though the body underneath only selects.
+    const chipLayer = svgEl("g", { class: "chip-targets" });
+    svg.appendChild(chipLayer);
+
+    for (const n of st.nodes) {
+      // Boundary markers (the S / E start/end boxes) have no transition, so they
+      // fall through to the plain-node path below: a click target that
+      // highlights/inspects them (and records the selection in the view history).
+
+      const isContainer = n.container && n.container.childNodeIDs && n.container.childNodeIDs.length > 0;
+      if (n.renderKind && n.renderKind.indexOf("container") >= 0 && !isContainer) continue;
+
+      // Container shells: only the border (edge) is clickable. The interior
+      // passes mouse events through to inner nodes / the canvas. Clicking the
+      // shell border selects the container in the inspector.
+      if (isContainer) {
+        const g = svgEl("g", { class: "node-group", "data-node-id": n.id });
+        const edge = svgEl("rect", {
+          x: n.x, y: n.y, width: n.width, height: n.height,
+          fill: "none", stroke: "transparent", "stroke-width": 14,
+          "pointer-events": "stroke", cursor: "pointer",
+        });
+        g.appendChild(edge);
+        // Same gesture model as plain nodes: plain click selects the container;
+        // Ctrl/Cmd+click or double-click navigates (collapse / zoom-out), keeping
+        // the highlight only if the container was already selected.
+        g.addEventListener("click", (function (id) {
+          return function (e) {
+            if (didDrag) return; // a drag-to-pan that ended here, not a click
+            e.stopPropagation();
+            if (!findNodeById(id)) return;
+            if (e.ctrlKey || e.metaKey) handleNodeClick(id, { shallow: e.altKey, select: selectedNodeID === id });
+            else if (e.shiftKey) toggleNodeInSelection(id); // add to / drop from the highlight set
+            else selectNodeOnly(id);
+          };
+        })(n.id));
+        g.addEventListener("dblclick", (function (id) {
+          return function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            if (!findNodeById(id)) return;
+            // Double-click navigates; an already-highlighted node stays
+            // highlighted after it expands (the two toggle-clicks net out, so
+            // selectedNodeID here reflects the pre-double-click selection).
+            handleNodeClick(id, { shallow: e.altKey, select: selectedNodeID === id });
+          };
+        })(n.id));
+        overlayLayer.appendChild(g);
+        addChipTarget(chipLayer, n);
+        continue;
+      }
+
+      const g = svgEl("g", { class: "node-group", "data-node-id": n.id });
+      const rect = svgEl("rect", {
+        x: n.x, y: n.y, width: n.width, height: n.height,
+        // The body only selects, so it stays a plain pointer — the zoom/expand
+        // cursor lives on the corner chip (addChipTarget), the navigation target.
+        fill: "transparent", stroke: "transparent", cursor: "pointer",
+      });
+      g.appendChild(rect);
+      g.addEventListener("click", (function (id) {
+        return function (e) {
+          if (didDrag) return; // a drag-to-pan that ended here, not a click
+          e.stopPropagation();
+          // Plain click highlights/selects only. Ctrl/Cmd+click navigates,
+          // keeping the highlight only if the node was already selected.
+          if (e.ctrlKey || e.metaKey) handleNodeClick(id, { shallow: e.altKey, select: selectedNodeID === id });
+          else if (e.shiftKey) toggleNodeInSelection(id); // add to / drop from the highlight set
+          else selectNodeOnly(id);
+        };
+      })(n.id));
+      g.addEventListener("dblclick", (function (id) {
+        return function (e) {
+          e.stopPropagation();
+          e.preventDefault();
+          // Double-click navigates; an already-highlighted node stays highlighted
+          // after it expands (the two toggle-clicks net out, so selectedNodeID
+          // here reflects the pre-double-click selection).
+          handleNodeClick(id, { shallow: e.altKey, select: selectedNodeID === id });
+        };
+      })(n.id));
+      overlayLayer.appendChild(g);
+      addChipTarget(chipLayer, n);
+    }
+
+    wireEdgeInteraction(svg, st);
+    buildEdgeHitOverlay(svg, st, overlayLayer);
+
+    updateBreadcrumb();
+    updateStateInfo();
+    updateSelection();
+    if (!skipFit) fitToViewport();
+  }
+
+  function svgEl(tag, attrs) {
+    const el = document.createElementNS("http://www.w3.org/2000/svg", tag);
+    if (attrs) {
+      for (const k in attrs) el.setAttribute(k, attrs[k]);
+    }
+    return el;
+  }
+
+  // A navigable node carries a small corner badge ("chip", drawn server-side by
+  // GenerateWithHints at the node's top-right). It's the one place a PLAIN click
+  // still navigates (handleNodeClick) — and the only place that shows the zoom /
+  // expand cursor, so the node body stays a plain select target. Like the other
+  // navigation gestures, it keeps the highlight only if the node was already
+  // selected. No transition → no chip is drawn, so nothing is added.
+  function addChipTarget(layer, n) {
+    const tr = transitionForNode(n.id);
+    if (!tr) return;
+    const r = 5, inset = 2, half = 9; // badge radius/inset mirror GenerateWithHints; half = hit half-size
+    const cx = n.x + n.width - r - inset;
+    const cy = n.y + r + inset;
+    const cursor = (tr.kind === "zoomOut" || tr.kind === "collapse") ? "zoom-out" : "zoom-in";
+    const hit = svgEl("rect", {
+      x: cx - half, y: cy - half, width: half * 2, height: half * 2,
+      fill: "transparent", cursor: cursor, class: "chip-target", "data-node-id": n.id,
+    });
+    hit.addEventListener("click", (function (id) {
+      return function (e) {
+        if (didDrag) return; // a drag-to-pan that ended here, not a click
+        e.stopPropagation();
+        handleNodeClick(id, { shallow: e.altKey, select: selectedNodeID === id });
+      };
+    })(n.id));
+    layer.appendChild(hit);
+  }
+
+  // --- Interaction ---
+  // Plain click only highlights/inspects a node — and clicking the already-
+  // selected node toggles the highlight back off. Navigation is reserved for
+  // Ctrl/Cmd+click, double-click and the corner chip.
+  function selectNodeOnly(nodeID) {
+    // A plain click is a fresh single selection: it drops the extras.
+    clearExtras();
+    selectedNodeID = (selectedNodeID === nodeID) ? null : nodeID;
+    updateSelection();
+    updateInspector();
+    syncHash();
+  }
+
+  function clearExtras() {
+    extraNodeIDs.clear();
+    extraEdgeIdxs.clear();
+  }
+
+  // Every selected node / edge, primary first. Used for the highlights, the
+  // inspector list and the debug API.
+  function allSelectedNodeIDs() {
+    const out = selectedNodeID ? [selectedNodeID] : [];
+    for (const id of extraNodeIDs) if (id !== selectedNodeID) out.push(id);
+    return out;
+  }
+
+  function allSelectedEdgeIdxs() {
+    const out = selectedEdgeIdx != null ? [selectedEdgeIdx] : [];
+    for (const i of extraEdgeIdxs) if (i !== selectedEdgeIdx) out.push(i);
+    return out;
+  }
+
+  function selectionCount() {
+    return allSelectedNodeIDs().length + allSelectedEdgeIdxs().length;
+  }
+
+  function clearSelection() {
+    selectedNodeID = null;
+    selectedEdgeIdx = null;
+    clearExtras();
+  }
+
+  // Shift+click a node: add it to the highlight set, or take it out if it is
+  // already in. The clicked node becomes the PRIMARY so the inspector follows
+  // the thing you just pointed at; whatever was primary before is kept as an
+  // extra, so nothing you had highlighted is lost.
+  function toggleNodeInSelection(nodeID) {
+    if (selectedNodeID === nodeID) {
+      // Removing the primary: promote an extra so a multi-selection does not
+      // lose its inspector, rather than collapsing to nothing.
+      extraNodeIDs.delete(nodeID);
+      const next = extraNodeIDs.values().next();
+      selectedNodeID = next.done ? null : next.value;
+      if (!next.done) extraNodeIDs.delete(selectedNodeID);
+    } else if (extraNodeIDs.has(nodeID)) {
+      extraNodeIDs.delete(nodeID);
+    } else {
+      if (selectedNodeID) extraNodeIDs.add(selectedNodeID);
+      if (selectedEdgeIdx != null) extraEdgeIdxs.add(selectedEdgeIdx);
+      selectedNodeID = nodeID;
+      selectedEdgeIdx = null;
+    }
+    // No updateInspector() here: updateSelection dispatches to the right
+    // inspector already, and renderNodeInspector clears selectedEdgeIdx — so
+    // calling it while an EDGE is primary silently dropped that edge.
+    updateSelection();
+    syncHash();
+  }
+
+  // Shift+click an edge: the mirror of toggleNodeInSelection.
+  function toggleEdgeInSelection(idx) {
+    if (selectedEdgeIdx === idx) {
+      extraEdgeIdxs.delete(idx);
+      const next = extraEdgeIdxs.values().next();
+      selectedEdgeIdx = next.done ? null : next.value;
+      if (!next.done) extraEdgeIdxs.delete(selectedEdgeIdx);
+      if (selectedEdgeIdx == null) {
+        const n = extraNodeIDs.values().next();
+        if (!n.done) { selectedNodeID = n.value; extraNodeIDs.delete(selectedNodeID); }
+      }
+    } else if (extraEdgeIdxs.has(idx)) {
+      extraEdgeIdxs.delete(idx);
+    } else {
+      if (selectedNodeID) extraNodeIDs.add(selectedNodeID);
+      if (selectedEdgeIdx != null) extraEdgeIdxs.add(selectedEdgeIdx);
+      selectedNodeID = null;
+      selectedEdgeIdx = idx;
+    }
+    updateSelection();
+    syncHash();
+  }
+
+  // handleNodeClick performs NAVIGATION (zoom-in / expand / zoom-out / collapse)
+  // and is reached via Ctrl/Cmd+click, double-click, or a corner-chip click. It
+  // expands the whole subtree (zoomInAll/expandAll); holding Alt as well opens
+  // only one level — for stepping in gradually instead of jumping straight to the
+  // fully-expanded state. Navigation PRESERVES the current selection: callers
+  // pass opts.select = (the node was already selected), so an already-highlighted
+  // node stays highlighted after it expands, while navigating an unselected node
+  // adds no highlight (opts.select === false). It never highlights a node the
+  // user hadn't already picked.
+  function handleNodeClick(nodeID, opts) {
+    opts = opts || {};
+    const tr = transitionForNode(nodeID);
+    if (tr) {
+      let targetID = tr.targetID;
+      const st = currentState();
+      const deepMap =
+        tr.kind === "zoomIn" ? (st.transitions && st.transitions.zoomInAll) :
+        tr.kind === "expand" ? (st.transitions && st.transitions.expandAll) :
+        null;
+      const deepTarget = deepMap && deepMap[String(nodeID)];
+      if (!opts.shallow && deepTarget) {
+        targetID = deepTarget;
+      }
+      const srcNode = findNodeById(nodeID);
+      const anchor = srcNode ? { id: nodeID, x: srcNode.x, y: srcNode.y, width: srcNode.width, height: srcNode.height } : null;
+      goToStateFromNode(targetID, anchor, { preserveZoom: true });
+      // Carry an already-highlighted node through the navigation (select:true)
+      // so an expanded container keeps its ring and inspector; otherwise leave
+      // it unselected (goToStateFromNode already cleared the selection).
+      if (opts.select !== false && findNodeById(nodeID)) {
+        selectedNodeID = nodeID;
+        updateSelection();
+        updateInspector();
+      }
+      syncHash();
+      return;
+    }
+    // No transition (leaf node): a navigation-only gesture (select:false) is a
+    // no-op; a selecting caller falls back to plain selection.
+    if (opts.select === false) return;
+    selectedNodeID = nodeID;
+    updateSelection();
+    updateInspector();
+    syncHash();
+  }
+
+  function findNodeById(nodeID) {
+    const st = currentState();
+    if (!st) return null;
+    for (const n of st.nodes) {
+      if (n.id === nodeID) return n;
+    }
+    return null;
+  }
+
+  // --- UI ---
+  function updateBreadcrumb() {
+    breadcrumb.innerHTML = "";
+    for (let i = 0; i < historyStack.length; i++) {
+      if (i > 0) {
+        const sep = document.createElement("span");
+        sep.className = "sep";
+        sep.textContent = "›";
+        breadcrumb.appendChild(sep);
+      }
+      const id = historyStack[i];
+      const crumb = document.createElement("span");
+      crumb.className = "crumb" + (id === currentStateID ? " active" : "");
+      crumb.textContent = id;
+      crumb.addEventListener("click", (function (targetID) {
+        return function () {
+          activateState(targetID, { push: true });
+        };
+      })(id));
+      breadcrumb.appendChild(crumb);
+    }
+  }
+
+  function updateStateInfo() {
+    const st = currentState();
+    if (!st) return;
+    const dataNodes = st.nodes.filter(function (n) { return n.type !== "boundary"; });
+    stateInfo.textContent = "state: " + st.id + " | " + dataNodes.length + " nodes, " + st.edges.length + " edges";
+  }
+
+  function updateSelection() {
+    const old = svgContainer.querySelectorAll(".selection-highlight, .connected-border-highlight");
+    for (let i = 0; i < old.length; i++) old[i].remove();
+    const es = svgContainer.querySelectorAll("g.edge.edge-selected, g.edge.edge-connected");
+    for (let i = 0; i < es.length; i++) es[i].classList.remove("edge-selected", "edge-connected");
+    clearEndpointHighlight();
+
+    const nodeIDs = allSelectedNodeIDs();
+    const edgeIdxs = allSelectedEdgeIdxs();
+
+    // Inspector FIRST: updateInspector clears every edge-selected class (its
+    // single-selection invariant), so the edge highlights below have to be
+    // applied after it or the extras would be wiped.
+    if (selectedNodeID) updateInspector();
+    else if (selectedEdgeIdx != null) updateEdgeInspector();
+    else inspectorContent.innerHTML = "<em>Click a node or edge to inspect</em>";
+
+    const svg = svgContainer.querySelector("svg");
+    for (const id of nodeIDs) {
+      const node = findNodeById(id);
+      if (!node || !svg) continue;
+      const rr = String(selectionRingRadius(node));
+      const attrs = {
+        x: node.x - 2, y: node.y - 2,
+        width: node.width + 4, height: node.height + 4,
+        rx: rr, ry: rr,
+        fill: "none", stroke: "#ffd700", "stroke-width": "3",
+        class: "selection-highlight", "pointer-events": "none",
+      };
+      // The primary ring is solid; extras are dashed, so it stays visible WHICH
+      // of several highlighted nodes the inspector is describing. Set only when
+      // dashed — svgEl writes every key it is given, so a null would land as the
+      // literal string "null" and dash the primary too.
+      if (id !== selectedNodeID) attrs["stroke-dasharray"] = "6 4";
+      svg.appendChild(svgEl("rect", attrs));
+    }
+
+    const stE = currentState();
+    for (const idx of edgeIdxs) {
+      const eg = svgContainer.querySelector('g.edge[data-edge-idx="' + idx + '"]');
+      if (eg) eg.classList.add("edge-selected");
+      const selE = stE && stE.edges && stE.edges[idx];
+      if (selE) highlightEdgeEndpoints(selE.from, selE.to);
+    }
+
+    // Connected-edge / attaching-border marks are the union over every selected
+    // node, so two highlighted nodes show both their neighbourhoods at once —
+    // which is the point of being able to select more than one.
+    for (const id of nodeIDs) {
+      highlightConnectedEdges(id);
+      highlightConnectedNodeBorders(id);
+    }
+    // The multi-select header is prepended by updateInspector /
+    // updateEdgeInspector themselves — several callers run updateInspector AFTER
+    // updateSelection, which rewrites inspectorContent wholesale, so anything
+    // prepended here would be wiped.
+
+    // updateSelection is the one call every view change funnels through (each
+    // selection change + every render), and never a bare pan/wheel — so it's the
+    // natural place to record a view-history step (deferred + coalesced).
+    scheduleCommit();
+  }
+
+  // updateInspector / updateEdgeInspector = render the primary, then prepend the
+  // multi-select list. Wrapping rather than appending inside the renderers keeps
+  // their early returns intact, and keeps the header attached to whoever writes
+  // inspectorContent LAST (several callers run updateInspector after
+  // updateSelection, which rewrites it wholesale).
+  function updateInspector() {
+    renderNodeInspector();
+    if (selectionCount() > 1) renderMultiSelectHeader(allSelectedNodeIDs(), allSelectedEdgeIdxs());
+  }
+
+  function updateEdgeInspector() {
+    renderEdgeInspector();
+    if (selectionCount() > 1) renderMultiSelectHeader(allSelectedNodeIDs(), allSelectedEdgeIdxs());
+  }
+
+  // With more than one thing selected, prepend a compact list to the inspector:
+  // the count, then every selected item as a chip. The primary is marked; the
+  // others are clickable, which makes one of them primary so you can read its
+  // details without losing the set.
+  function renderMultiSelectHeader(nodeIDs, edgeIdxs) {
+    const st = currentState();
+    let html = '<div class="insp-multi"><div class="insp-multi-count">' +
+      selectionCount() + ' selected</div>';
+    for (const id of nodeIDs) {
+      const n = findNodeById(id);
+      const primary = id === selectedNodeID;
+      html += '<button class="insp-multi-item' + (primary ? ' is-primary' : '') +
+        '" data-sel-node="' + escapeAttr(String(id)) + '">' +
+        escapeHTML((n && n.label) || String(id)) + '</button>';
+    }
+    for (const idx of edgeIdxs) {
+      const e = st && st.edges && st.edges[idx];
+      const primary = idx === selectedEdgeIdx;
+      const name = e ? (edgeNodeName(e.from) + " → " + edgeNodeName(e.to)) : ("edge " + idx);
+      html += '<button class="insp-multi-item' + (primary ? ' is-primary' : '') +
+        '" data-sel-edge="' + idx + '">' + escapeHTML(name) + '</button>';
+    }
+    html += '</div>';
+    inspectorContent.innerHTML = html + inspectorContent.innerHTML;
+    const items = inspectorContent.querySelectorAll(".insp-multi-item");
+    for (let i = 0; i < items.length; i++) {
+      items[i].addEventListener("click", function () {
+        const nid = this.getAttribute("data-sel-node");
+        const eid = this.getAttribute("data-sel-edge");
+        if (nid != null) makeNodePrimary(nid);
+        else if (eid != null) makeEdgePrimary(parseInt(eid, 10));
+      });
+    }
+  }
+
+  // Move the primary within the existing set — no add, no remove.
+  function makeNodePrimary(nodeID) {
+    if (selectedNodeID === nodeID) return;
+    if (selectedNodeID) extraNodeIDs.add(selectedNodeID);
+    if (selectedEdgeIdx != null) extraEdgeIdxs.add(selectedEdgeIdx);
+    extraNodeIDs.delete(nodeID);
+    selectedNodeID = nodeID;
+    selectedEdgeIdx = null;
+    updateSelection(); // dispatches to renderNodeInspector; see toggleNodeInSelection
+    syncHash();
+  }
+
+  function makeEdgePrimary(idx) {
+    if (selectedEdgeIdx === idx) return;
+    if (selectedNodeID) extraNodeIDs.add(selectedNodeID);
+    if (selectedEdgeIdx != null) extraEdgeIdxs.add(selectedEdgeIdx);
+    extraEdgeIdxs.delete(idx);
+    selectedNodeID = null;
+    selectedEdgeIdx = idx;
+    updateSelection();
+    syncHash();
+  }
+
+  function renderNodeInspector() {
+    // A node is being inspected → drop any edge selection/highlight.
+    selectedEdgeIdx = null;
+    const es = svgContainer.querySelectorAll("g.edge.edge-selected");
+    for (let i = 0; i < es.length; i++) es[i].classList.remove("edge-selected");
+    clearEndpointHighlight();
+    if (!selectedNodeID) {
+      inspectorContent.innerHTML = "<em>Click a node or edge to inspect</em>";
+      return;
+    }
+    const node = findNodeById(selectedNodeID);
+    if (!node) {
+      inspectorContent.innerHTML = "<em>Node not found</em>";
+      return;
+    }
+
+    let html = "";
+    // Compact header: the label + a colour-coded type badge. Technical fields (id,
+    // position, size, render kind, degree, raw child/parent lists) are intentionally
+    // omitted — structure shows up below as colour-coded "Connected" links instead.
+    html += '<div class="insp-head"><span class="insp-label">' + escapeHTML(node.label || node.id) + '</span>';
+    if (node.type) html += '<span class="insp-type" data-type="' + escapeAttr(node.type) + '">' + escapeHTML(node.type) + '</span>';
+    html += '</div>';
+    const st = currentState();
+
+    const tr = transitionForNode(node.id);
+    const parentSelectID = node.visibleParentID || null;
+    // expandAll / zoomInAll come pre-resolved by the server: even when the
+    // selected node isn't directly keyed (e.g. node 13 partially-expanded in
+    // s:2.8+5.13), the server BFS-walks descendants and credits the deepest
+    // target back to the ancestor, so "Expand subtree" still appears.
+    const idStr = String(node.id);
+    const expandAllT = st.transitions && st.transitions.expandAll && st.transitions.expandAll[idStr];
+    const zoomInAllT = st.transitions && st.transitions.zoomInAll && st.transitions.zoomInAll[idStr];
+    const hasActions = tr || parentSelectID != null || expandAllT || zoomInAllT;
+    if (hasActions) {
+      html += '<div class="actions">';
+
+      if (zoomInAllT && zoomInAllT !== currentStateID && (!tr || zoomInAllT !== tr.targetID)) {
+        html += '<button class="action-btn" onclick="window.__goToStateFromNode(\'' + escapeAttr(zoomInAllT) + '\',\'' + escapeAttr(idStr) + '\')" title="Same as Ctrl+click or double-click the node">' +
+                'Zoom into subtree → ' + escapeHTML(zoomInAllT) + '</button>';
+      }
+      if (expandAllT && expandAllT !== currentStateID && (!tr || expandAllT !== tr.targetID)) {
+        html += '<button class="action-btn" onclick="window.__goToStateFromNode(\'' + escapeAttr(expandAllT) + '\',\'' + escapeAttr(idStr) + '\')" title="Same as Ctrl+click or double-click the node">' +
+                'Expand subtree → ' + escapeHTML(expandAllT) + '</button>';
+      }
+
+      if (tr) {
+        const label = {
+          zoomIn: "Zoom into",
+          zoomOut: "Zoom out of",
+          expand: "Expand",
+          collapse: "Collapse",
+        }[tr.kind] || tr.kind;
+        const title = (tr.kind === "zoomIn" || tr.kind === "expand") ? ' title="Ctrl+Alt+click or Alt+double-click the node — opens one level only"' : '';
+        html += '<button class="action-btn" onclick="window.__goToStateFromNode(\'' + escapeAttr(tr.targetID) + '\',\'' + escapeAttr(idStr) + '\')"' + title + '>' +
+                label + ' → ' + escapeHTML(tr.targetID) + '</button>';
+      }
+
+      if (parentSelectID != null) {
+        html += '<button class="action-btn" onclick="window.__selectNode(\'' + escapeAttr(parentSelectID) + '\')">' +
+                'Select container → ' + escapeHTML(parentSelectID) + '</button>';
+      }
+
+      html += '</div>';
+    }
+
+    // Walk graph = every edge touching this node (ALL relations, including hidden
+    // stub Expresses/NearTo), each a colour-coded button to the other endpoint —
+    // matching the connected edges highlighted on the canvas.
+    const conn = [];
+    if (st && st.edges) {
+      // Use the SAME membership set the canvas highlight uses, so the list matches
+      // the lit edges/borders. For a container that's every edge crossing its
+      // boundary (not just the shell's own); for a plain node the set is {node.id}.
+      const ids = connectedIdSet(node.id);
+      for (let i = 0; i < st.edges.length; i++) {
+        const e = st.edges[i];
+        const fromIn = ids.has(String(e.from)), toIn = ids.has(String(e.to));
+        if (fromIn === toIn) continue; // unrelated, or internal to a container / self-loop
+        const undir = e.base === "nearto" || e.dir === "undir";
+        const source = fromIn; // the selection side is the edge's FROM endpoint
+        conn.push({
+          base: e.base,
+          other: fromIn ? e.to : e.from,
+          arrow: undir ? "---" : (source ? "→" : "←"),
+          source: source,
+          // Only now — for an actually-connected edge — check if it's a hidden stub
+          // (avoids a DOM query per edge in the whole state).
+          hidden: !!svgContainer.querySelector('g.edge[data-edge-idx="' + i + '"] .edge-full'),
+        });
+      }
+    }
+    // Order: this node as SOURCE (outgoing) first, then as TARGET; within each,
+    // by relation type — leads-to, part-of, expresses, near-to.
+    const relRank = function (base) {
+      const r = { leadsto: 0, partof: 1, expresses: 2, nearto: 3 };
+      return r[base] != null ? r[base] : 4;
+    };
+    conn.sort(function (a, b) {
+      if (a.source !== b.source) return a.source ? -1 : 1;
+      return relRank(a.base) - relRank(b.base);
+    });
+    if (conn.length) {
+      html += '<div class="actions"><div class="label" style="margin: 6px 0 4px;">Connected (' + conn.length + ')</div>';
+      for (const c of conn) {
+        html += '<button class="action-btn rel-' + escapeAttr(c.base) + '" onclick="window.__selectNode(\'' + escapeAttr(c.other) + '\')">' +
+                (c.hidden ? '<span class="hidden-chip" title="hidden cross-component edge — revealed on the canvas">?</span> ' : '') +
+                c.arrow + ' ' + escapeHTML(relationHyphen(c.base)) + ': ' + escapeHTML(edgeNodeName(c.other)) + '</button>';
+      }
+      html += '</div>';
+    }
+
+    inspectorContent.innerHTML = html;
+  }
+
+  // --- Edge interaction (cross-component stub edges) ---
+
+  // wireEdgeInteraction attaches hover-reveal + click-to-inspect to each stubbed
+  // edge group (those with a hidden .edge-full). Hover reveals the full edge and a
+  // tooltip; click opens the edge inspector with From/To buttons.
+  function wireEdgeInteraction(svg, st) {
+    const edges = svg.querySelectorAll("g.edge");
+    for (let i = 0; i < edges.length; i++) {
+      const g = edges[i];
+      if (!g.querySelector(".edge-full")) continue; // only stubbed (cross-component) edges
+      const idx = parseInt(g.getAttribute("data-edge-idx"), 10);
+      if (isNaN(idx) || !st.edges || !st.edges[idx]) continue;
+      const e = st.edges[idx];
+      g.style.cursor = "pointer";
+      // Hidden (stub) edges show NO hover tooltip — the "?" reads as "click to see
+      // where this leads", and the from/to is shown in the inspector on click.
+      g.addEventListener("click", function (ev) {
+        if (didDrag) return; // a drag-to-pan that ended here, not a click
+        ev.stopPropagation();
+        hideEdgeTooltip();
+        if (ev.shiftKey) {
+          toggleEdgeInSelection(idx); // add to / drop from the highlight set
+        } else if (selectedEdgeIdx === idx) {
+          // toggle off → hide the edge (e.g. click the remote sibling after following it)
+          clearSelection();
+          updateSelection();
+        } else {
+          selectEdge(idx); // toggle on → reveal/highlight the edge
+        }
+      });
+      // Double-click a stub → follow the edge to its far end (the remote sibling):
+      // pan there and ring it yellow, keeping the edge selected.
+      const stubs = g.querySelectorAll(".edge-stub");
+      for (let s = 0; s < stubs.length; s++) {
+        const stub = stubs[s];
+        stub.addEventListener("dblclick", function (ev) {
+          ev.stopPropagation();
+          ev.preventDefault();
+          hideEdgeTooltip();
+          const remote = stub.getAttribute("data-stub-end") === "source" ? e.to : e.from;
+          if (selectedEdgeIdx !== idx) selectEdge(idx);
+          window.__panToEdgeEnd(remote);
+        });
+      }
+    }
+  }
+
+  // Normal (non-stub) edges are thin lines that sit UNDER the node overlay, so they
+  // can't be clicked directly. Build a transparent SOLID hit line per normal edge in
+  // an overlay inserted just BELOW the node click-targets (so node bodies still win
+  // where an edge runs under them, but the edge wins in empty space). One delegated
+  // click selects/toggles the edge. Stubbed edges keep their own wiring (.edge-full).
+  function buildEdgeHitOverlay(svg, st, nodeOverlay) {
+    const layer = svgEl("g", { class: "edge-hit-targets" });
+    const edges = svg.querySelectorAll("g.edge");
+    for (let i = 0; i < edges.length; i++) {
+      const g = edges[i];
+      if (g.querySelector(".edge-full")) continue; // stubbed edges handle themselves
+      const idx = parseInt(g.getAttribute("data-edge-idx"), 10);
+      if (isNaN(idx) || !st.edges || !st.edges[idx]) continue;
+      // Straight edges render as <line>, bended (routed) ones as <polyline>;
+      // build a fat transparent hit copy of whichever shape this edge uses so
+      // both are clickable. (Solid stroke, so dotted near-to edges are hittable
+      // along their gaps.)
+      const shape = g.querySelector(":scope > line, :scope > polyline");
+      if (!shape) continue;
+      const e = st.edges[idx];
+      const tag = shape.tagName.toLowerCase();
+      const hitAttrs = {
+        fill: "none", stroke: "transparent", "stroke-width": 16, "pointer-events": "stroke",
+        "data-edge-idx": String(idx), class: "edge-hit", cursor: "pointer",
+      };
+      if (tag === "polyline") {
+        hitAttrs.points = shape.getAttribute("points");
+      } else {
+        hitAttrs.x1 = shape.getAttribute("x1"); hitAttrs.y1 = shape.getAttribute("y1");
+        hitAttrs.x2 = shape.getAttribute("x2"); hitAttrs.y2 = shape.getAttribute("y2");
+      }
+      const hit = svgEl(tag, hitAttrs);
+      const title = svgEl("title", {});
+      title.textContent = edgeTipLines(e, "middle").map(function (l) {
+        return "(" + l.label + ") " + l.value;
+      }).join("\n");
+      hit.appendChild(title);
+      layer.appendChild(hit);
+    }
+    // Below the node click-targets, above the painted edges.
+    if (nodeOverlay && nodeOverlay.parentNode === svg) svg.insertBefore(layer, nodeOverlay);
+    else svg.appendChild(layer);
+    // One delegated handler — O(1) regardless of edge count.
+    layer.addEventListener("click", function (ev) {
+      if (didDrag) return; // a drag-to-pan that ended here, not a click
+      const t = ev.target.closest("[data-edge-idx]");
+      if (!t) return;
+      const idx = parseInt(t.getAttribute("data-edge-idx"), 10);
+      if (isNaN(idx)) return;
+      ev.stopPropagation();
+      // The 2nd click of a double-click-to-follow: don't toggle the selection —
+      // the dblclick handler does the follow. stopPropagation already ran, so
+      // this won't bubble to the background-deselect; keeps the history clean and
+      // the edge selected at the destination.
+      if (ev.detail > 1) return;
+      if (ev.shiftKey) {
+        toggleEdgeInSelection(idx);
+        return;
+      }
+      if (selectedEdgeIdx === idx) {
+        clearSelection();
+        updateSelection();
+      } else {
+        selectEdge(idx);
+      }
+    });
+    // Double-click an edge whose far endpoint is off-screen → follow the edge
+    // there (pan to the off-screen "second" node), like the hidden-edge chip's
+    // double-click. No-op when both endpoints are already on-screen.
+    layer.addEventListener("dblclick", function (ev) {
+      if (didDrag) return;
+      const t = ev.target.closest("[data-edge-idx]");
+      if (!t) return;
+      const idx = parseInt(t.getAttribute("data-edge-idx"), 10);
+      if (isNaN(idx) || !st.edges || !st.edges[idx]) return;
+      ev.stopPropagation();
+      ev.preventDefault();
+      const e = st.edges[idx];
+      const target = edgeFollowTarget(findNodeById(e.from), findNodeById(e.to), ev);
+      if (!target) return;
+      if (selectedEdgeIdx !== idx) selectEdge(idx); // keep the edge lit at the destination
+      centreOnNode(target);
+    });
+  }
+
+  // True when any part of the node's box is within the canvas viewport.
+  function isNodeOnscreen(node) {
+    const cw = canvasWrap.clientWidth, ch = canvasWrap.clientHeight;
+    const sx = node.x * cameraScale + panX, sy = node.y * cameraScale + panY;
+    const sw = node.width * cameraScale, sh = node.height * cameraScale;
+    return sx + sw > 0 && sx < cw && sy + sh > 0 && sy < ch;
+  }
+
+  // For an edge double-click: which endpoint to follow to — the off-screen one.
+  // Null when both are already on-screen (nothing to follow). If both are
+  // off-screen, the one farther from the click point (follow away from the click).
+  function edgeFollowTarget(a, b, ev) {
+    if (!a && !b) return null;
+    if (!a) return b;
+    if (!b) return a;
+    const aOff = !isNodeOnscreen(a), bOff = !isNodeOnscreen(b);
+    if (!aOff && !bOff) return null;
+    if (aOff !== bOff) return aOff ? a : b;
+    const rect = canvasWrap.getBoundingClientRect();
+    const lx = (ev.clientX - rect.left - panX) / cameraScale;
+    const ly = (ev.clientY - rect.top - panY) / cameraScale;
+    const d2 = function (n) { const cx = n.x + n.width / 2, cy = n.y + n.height / 2; return (cx - lx) * (cx - lx) + (cy - ly) * (cy - ly); };
+    return d2(b) >= d2(a) ? b : a;
+  }
+
+  function selectEdge(idx) {
+    clearExtras();
+    selectedNodeID = null;
+    selectedEdgeIdx = idx;
+    updateSelection();
+    syncHash(); // an edge selection is part of the address, like a node's
+  }
+
+  function linkTypeName(base) {
+    return ({ expresses: "Expresses", nearto: "NearTo", leadsto: "LeadsTo", partof: "PartOf" })[base] || base;
+  }
+
+  // Hyphenated lowercase relation for tooltips, e.g. "leads-to".
+  function relationHyphen(base) {
+    return ({ expresses: "expresses", nearto: "near-to", leadsto: "leads-to", partof: "part-of" })[base] || base;
+  }
+
+  function edgeNodeName(id) {
+    const n = findNodeById(id);
+    return (n && n.label) ? n.label : id;
+  }
+
+  function renderEdgeInspector() {
+    const st = currentState();
+    const e = st && st.edges && st.edges[selectedEdgeIdx];
+    if (!e) { inspectorContent.innerHTML = "<em>Edge not found</em>"; return; }
+    const undirected = e.base === "nearto" || e.dir === "undir";
+    let html = "";
+    // Header: phrase (the edge text) + a colour-coded relation badge.
+    html += '<div class="insp-head"><span class="insp-label">' + escapeHTML(e.label || linkTypeName(e.base)) + '</span>';
+    html += '<span class="insp-type" data-rel="' + escapeAttr(e.base) + '">' + escapeHTML(linkTypeName(e.base)) + '</span></div>';
+    html += '<div class="actions">';
+    html += '<div class="label" style="margin: 6px 0 4px;">Endpoints</div>';
+    html += edgeEndBtn(undirected ? "Endpoint" : "From", e.from, e.base);
+    html += edgeEndBtn(undirected ? "Endpoint" : "To", e.to, e.base);
+    html += '</div>';
+    inspectorContent.innerHTML = html;
+  }
+
+  function edgeEndBtn(prefix, id, base) {
+    // Pan to the endpoint and keep the EDGE selected (highlight the connected end),
+    // rather than switching to node selection. rel-<base> tints the left border.
+    return '<button class="action-btn rel-' + escapeAttr(base) + '" onclick="window.__panToEdgeEnd(\'' + escapeAttr(id) + '\')">' +
+           prefix + ' → ' + escapeHTML(edgeNodeName(id)) + '</button>';
+  }
+
+  // __panToEdgeEnd centres the viewport on an edge endpoint while keeping the edge
+  // selected — the From/To buttons in the edge inspector. The edge stays revealed
+  // (.edge-selected) and a ring marks the endpoint we moved to.
+  window.__panToEdgeEnd = function (nodeID) {
+    const node = findNodeById(nodeID);
+    if (!node) return;
+    centreOnNode(node); // pan only — the endpoint rings come from selecting the edge
+  };
+
+  function centreOnNode(node) {
+    const cw = canvasWrap.clientWidth, ch = canvasWrap.clientHeight;
+    panX = cw / 2 - (node.x + node.width / 2) * cameraScale;
+    panY = ch / 2 - (node.y + node.height / 2) * cameraScale;
+    applyTransform();
+    viewChangedByUser(); // a follow-to-node is the reader's move too
+  }
+
+  function clearEndpointHighlight() {
+    const old = svgContainer.querySelectorAll(".edge-endpoint-highlight");
+    for (let i = 0; i < old.length; i++) old[i].remove();
+  }
+
+  function ringEndpointNode(node) {
+    const svg = svgContainer.querySelector("svg");
+    if (!svg) return;
+    const rr = String(selectionRingRadius(node));
+    svg.appendChild(svgEl("rect", {
+      x: node.x - 2, y: node.y - 2, width: node.width + 4, height: node.height + 4,
+      rx: rr, ry: rr, fill: "none", stroke: "#ffd700", "stroke-width": "3",
+      class: "edge-endpoint-highlight", "pointer-events": "none",
+    }));
+  }
+
+  // The selection ring sits 2px outside a node, so its corner radius is the
+  // node's own corner radius + 2 — keeping it hugging the corners the same way on
+  // big rounded containers (rx 10) as on small nodes (rx 4) and normal ones (rx 6).
+  // Mirrors the radii ipmsvg uses (container shells rx 10; bodies rx 6, or 4 when
+  // a side is ≤ 40px).
+  function nodeCornerRadius(node) {
+    if (node.container) return 10;
+    return (node.width <= 40 || node.height <= 40) ? 4 : 6;
+  }
+  function selectionRingRadius(node) { return nodeCornerRadius(node) + 2; }
+
+  // Selecting an edge rings BOTH its endpoint nodes in the same yellow (#ffd700) as
+  // a node selection — so a clicked edge highlights its connected nodes too.
+  function highlightEdgeEndpoints(fromID, toID) {
+    clearEndpointHighlight();
+    const a = findNodeById(fromID), b = findNodeById(toID);
+    if (a) ringEndpointNode(a);
+    if (b) ringEndpointNode(b);
+  }
+
+  // Highlight every edge touching the selected node (including hidden stub edges,
+  // whose full middle is revealed) via the shared .edge-connected highlight.
+  // The set of node IDs an edge must touch to count as "connected" to the
+  // selection: the node itself plus — when it's a container — every node nested
+  // inside it (recursively). So selecting a container lights every edge into or
+  // out of its contents, not just the shell's own edges.
+  function connectedIdSet(nodeID) {
+    const set = new Set([String(nodeID)]);
+    const node = findNodeById(nodeID);
+    if (node && node.container && node.container.childNodeIDs) {
+      const queue = node.container.childNodeIDs.slice();
+      while (queue.length) {
+        const cid = String(queue.shift());
+        if (set.has(cid)) continue;
+        set.add(cid);
+        const cn = findNodeById(cid);
+        if (cn && cn.container && cn.container.childNodeIDs) {
+          for (const gc of cn.container.childNodeIDs) queue.push(gc);
+        }
+      }
+    }
+    return set;
+  }
+
+  function highlightConnectedEdges(nodeID) {
+    const ids = connectedIdSet(nodeID);
+    const edges = svgContainer.querySelectorAll("g.edge");
+    for (let i = 0; i < edges.length; i++) {
+      const g = edges[i];
+      if (ids.has(g.getAttribute("data-edge-from")) || ids.has(g.getAttribute("data-edge-to"))) {
+        g.classList.add("edge-connected");
+      }
+    }
+  }
+
+  // For the selected node, dash-highlight the ONE side of each CONNECTED node that
+  // its edge lands on (top / right / bottom / left) — so you can see where every
+  // edge attaches on the far node, not just that the edge is lit. The attachment
+  // side comes from the rendered edge's port point (its endpoint nearest the far
+  // node). Far ends not visible in this state (e.g. cross-component stubs whose
+  // other end is off-canvas) are skipped.
+  function highlightConnectedNodeBorders(nodeID) {
+    const st = currentState();
+    if (!st || !st.edges) return;
+    const svg = svgContainer.querySelector("svg");
+    if (!svg) return;
+    const ids = connectedIdSet(nodeID); // node (+ its contents, if a container)
+    for (let i = 0; i < st.edges.length; i++) {
+      const e = st.edges[i];
+      const fromIn = ids.has(String(e.from)), toIn = ids.has(String(e.to));
+      if (fromIn === toIn) continue; // unrelated, or internal to a container → no external endpoint to mark
+      const farID = fromIn ? e.to : e.from;
+      const far = findNodeById(farID);
+      if (!far) continue; // far end not rendered in this state
+      const g = svg.querySelector('g.edge[data-edge-idx="' + i + '"]');
+      const port = g ? edgePortOnNode(g, far) : null;
+      const side = port ? nearestSide(far, port[0], port[1]) : facingSide(far, nodeID);
+      if (side) drawConnectedBorder(svg, far, side);
+    }
+  }
+
+  // The point where an edge group meets a node: of all <line> endpoints in the
+  // group, the one closest to the node centre is its port — it sits on the node
+  // border, while every other vertex heads away (toward the other end / a stub
+  // badge). Works for both normal edges and revealed cross-component stubs.
+  function edgePortOnNode(edgeG, node) {
+    const cx = node.x + node.width / 2, cy = node.y + node.height / 2;
+    let best = null, bestD = Infinity;
+    const lines = edgeG.querySelectorAll("line");
+    for (let i = 0; i < lines.length; i++) {
+      const ln = lines[i];
+      const pts = [
+        [parseFloat(ln.getAttribute("x1")), parseFloat(ln.getAttribute("y1"))],
+        [parseFloat(ln.getAttribute("x2")), parseFloat(ln.getAttribute("y2"))],
+      ];
+      for (let p = 0; p < pts.length; p++) {
+        const px = pts[p][0], py = pts[p][1];
+        if (isNaN(px) || isNaN(py)) continue;
+        const d = (px - cx) * (px - cx) + (py - cy) * (py - cy);
+        if (d < bestD) { bestD = d; best = pts[p]; }
+      }
+    }
+    return best;
+  }
+
+  // Which side of a node's rect a point sits on (smallest perpendicular gap).
+  function nearestSide(node, px, py) {
+    const dl = Math.abs(px - node.x);
+    const dr = Math.abs(px - (node.x + node.width));
+    const dt = Math.abs(py - node.y);
+    const db = Math.abs(py - (node.y + node.height));
+    const m = Math.min(dl, dr, dt, db);
+    if (m === dt) return "top";
+    if (m === db) return "bottom";
+    if (m === dl) return "left";
+    return "right";
+  }
+
+  // Fallback when no edge geometry is available: the side of `node` facing the
+  // other node (by centre-to-centre direction, dominant axis wins).
+  function facingSide(node, otherID) {
+    const other = findNodeById(otherID);
+    if (!other) return null;
+    const dx = (other.x + other.width / 2) - (node.x + node.width / 2);
+    const dy = (other.y + other.height / 2) - (node.y + node.height / 2);
+    if (Math.abs(dx) >= Math.abs(dy)) return dx >= 0 ? "right" : "left";
+    return dy >= 0 ? "bottom" : "top";
+  }
+
+  // Dotted gold segment along one side of a node — the border its connected edge
+  // lands on. Same gold as the selection ring; dotted so it reads as the incoming
+  // attachment point rather than a full selection. Both ends inset by the node's
+  // own corner radius so the dots cover the full straight part of the side without
+  // running into the rounded corners, and the dot spacing is fitted so one dot
+  // lands on each end — symmetric margins at both corners.
+  function drawConnectedBorder(svg, node, side) {
+    const x = node.x, y = node.y, w = node.width, h = node.height;
+    const horiz = (side === "top" || side === "bottom");
+    const len = horiz ? w : h;
+    const inset = Math.min(nodeCornerRadius(node), Math.max(0, (len - 8) / 2));
+    const run = len - 2 * inset;
+    // Evenly spaced round dots with one exactly on each end (period divides run).
+    const spacing = run / Math.max(1, Math.round(run / 7));
+    let x1, y1, x2, y2;
+    if (side === "top") { x1 = x + inset; y1 = y; x2 = x + w - inset; y2 = y; }
+    else if (side === "bottom") { x1 = x + inset; y1 = y + h; x2 = x + w - inset; y2 = y + h; }
+    else if (side === "left") { x1 = x; y1 = y + inset; x2 = x; y2 = y + h - inset; }
+    else { x1 = x + w; y1 = y + inset; x2 = x + w; y2 = y + h - inset; }
+    svg.appendChild(svgEl("line", {
+      x1: x1, y1: y1, x2: x2, y2: y2,
+      stroke: "#ffd700", "stroke-width": "3.5",
+      "stroke-dasharray": "0.1 " + (spacing - 0.1).toFixed(2),
+      "stroke-linecap": "round", class: "connected-border-highlight",
+      "pointer-events": "none",
+    }));
+  }
+
+  // Hidden (stub) edges no longer show a hover tooltip; edgeTip stays null so the
+  // defensive hideEdgeTooltip() calls in the edge click/dblclick handlers are no-ops.
+  let edgeTip = null;
+
+  // Tooltip lines for an edge part, each { label, value }. The part nearest an
+  // endpoint omits that endpoint: source-side omits "source", target-side omits
+  // "target", "middle" (and normal edges) show all three. Rendered "(label) value".
+  function edgeTipLines(e, part) {
+    const rel = relationHyphen(e.base);
+    const src = { label: rel + " source", value: edgeNodeName(e.from) };
+    const txt = e.label ? { label: "edge text", value: e.label } : null;
+    const tgt = { label: rel + " target", value: edgeNodeName(e.to) };
+    if (part === "source") return [txt, tgt].filter(Boolean);
+    if (part === "target") return [src, txt].filter(Boolean);
+    return [src, txt, tgt].filter(Boolean);
+  }
+
+  function hideEdgeTooltip() { if (edgeTip) edgeTip.style.display = "none"; }
+
+  // Help overlay (the "?" key / the menu's "Shortcuts & help" item) — a
+  // dismissible modal of gestures & shortcuts. Closed by its ✕, the backdrop, or
+  // Escape. Opening converges both entry points: it always closes the ⋮ menu
+  // first (so "?" while the menu is open never leaves it floating under the
+  // modal), moves focus into the dialog, and restores it to the opener on close.
+  let helpLastFocus = null;
+  function openHelp() {
+    helpLastFocus = document.activeElement;
+    if (menuOpen()) closeMenu();
+    helpOverlay.hidden = false;
+    helpOverlay.querySelector("#help-close").focus();
+  }
+  function closeHelp() {
+    helpOverlay.hidden = true;
+    const back = (helpLastFocus && helpLastFocus.focus && helpLastFocus.offsetParent !== null) ? helpLastFocus : viewMenuBtn;
+    if (back && back.focus) back.focus();
+  }
+
+  // "⋮ More actions" dropdown (help / copy URL / expand all / unexpand all /
+  // download). Closes on Escape, on an outside click, and after most item clicks
+  // (Copy URL keeps it open so its "copied" flash is visible).
+  function menuOpen() { return viewMenu && !viewMenu.hidden; }
+  function openMenu() {
+    refreshMenuItems();
+    viewMenu.hidden = false;
+    viewMenuBtn.setAttribute("aria-expanded", "true");
+    // Move focus into the menu (role=menu contract) — first enabled item.
+    const first = viewMenu.querySelector(".menu-item:not([disabled])");
+    if (first) first.focus();
+  }
+  function closeMenu() {
+    if (!viewMenu) return;
+    // Return focus to the kebab if it was inside the menu (else hiding the menu
+    // would drop focus to <body> when an item is display:none'd).
+    if (viewMenu.contains(document.activeElement) && viewMenuBtn) viewMenuBtn.focus();
+    viewMenu.hidden = true;
+    viewMenuBtn.setAttribute("aria-expanded", "false");
+  }
+  // Roving arrow-key navigation within the open menu (honors role=menu).
+  function onMenuKeydown(e) {
+    if (e.key !== "ArrowDown" && e.key !== "ArrowUp" && e.key !== "Home" && e.key !== "End") return;
+    const items = Array.prototype.slice.call(viewMenu.querySelectorAll(".menu-item"))
+      .filter(function (it) { return !it.disabled; });
+    if (!items.length) return;
+    e.preventDefault();
+    let i = items.indexOf(document.activeElement);
+    if (e.key === "ArrowDown") i = i < 0 ? 0 : (i + 1) % items.length;
+    else if (e.key === "ArrowUp") i = i <= 0 ? items.length - 1 : i - 1;
+    else if (e.key === "Home") i = 0;
+    else i = items.length - 1; // End
+    items[i].focus();
+  }
+  function toggleMenu() { if (menuOpen()) closeMenu(); else openMenu(); }
+  // Grey out actions that would be no-ops in the current state.
+  function refreshMenuItems() {
+    const expandBtn = document.getElementById("expand-all-btn");
+    const collapseBtn = document.getElementById("collapse-all-btn");
+    const fe = model && model.fullyExpandedStateID;
+    if (expandBtn) expandBtn.disabled = !(fe && fe !== currentStateID && statesByID[fe]);
+    if (collapseBtn) collapseBtn.disabled = !(model && model.rootStateID && model.rootStateID !== currentStateID);
+  }
+
+  // "Unexpand all" — collapse everything back to the root state.
+  function goToRoot() {
+    const id = model && model.rootStateID;
+    if (!id || id === currentStateID || !statesByID[id]) return;
+    activateState(id, { push: true, replaceHash: false });
+  }
+
+  // --- View history (◀/▶) ---
+  // recordView runs deferred (microtask) so the whole synchronous interaction
+  // (state + selection + camera) settles first and we capture the final view
+  // once. scheduleCommit is hooked into updateSelection — the universal "view
+  // changed" signal: it fires on every selection change and every render, but
+  // never on a bare pan/wheel, so those don't create history steps.
+  function scheduleCommit() {
+    if (suppressHistory || commitScheduled) return;
+    commitScheduled = true;
+    Promise.resolve().then(function () { commitScheduled = false; recordView(); });
+  }
+
+  // A stable signature for "which view is this" — state plus the WHOLE selection,
+  // not just the primary. Dropping one extra leaves the primary alone, so a
+  // primary-only signature treated that as the same view and recorded no step,
+  // making it un-undoable.
+  function viewKey(snap) {
+    return snap.stateID +
+      "|n:" + (snap.nodes || []).slice().sort().join(",") +
+      "|e:" + (snap.edges || []).slice().sort(function (a, b) { return a - b; }).join(",");
+  }
+
+  function recordView() {
+    if (suppressHistory || currentStateID == null) return;
+    const snap = { stateID: currentStateID, nodeID: selectedNodeID, edgeIdx: selectedEdgeIdx,
+                   // The full set, so ◀ / ▶ restore a multi-selection and not
+                   // just the item that happened to be primary.
+                   nodes: allSelectedNodeIDs(), edges: allSelectedEdgeIdxs(),
+                   zoom: cameraScale, panX: panX, panY: panY };
+    const cur = viewHistory[viewCursor];
+    // Same logical view (state + selection) → just refresh its camera in place.
+    if (cur && viewKey(cur) === viewKey(snap) && cur.nodeID === snap.nodeID && cur.edgeIdx === snap.edgeIdx) {
+      cur.zoom = snap.zoom; cur.panX = snap.panX; cur.panY = snap.panY;
+      updateHistoryButtons();
+      return;
+    }
+    viewHistory = viewHistory.slice(0, viewCursor + 1); // drop any forward entries
+    viewHistory.push(snap);
+    const MAX = 200;
+    if (viewHistory.length > MAX) viewHistory = viewHistory.slice(viewHistory.length - MAX);
+    viewCursor = viewHistory.length - 1;
+    updateHistoryButtons();
+  }
+
+  function goToViewHistory(delta) {
+    const target = viewCursor + delta;
+    if (target < 0 || target >= viewHistory.length) return;
+    // Save the live camera into the current entry first, so ▶ returns you to
+    // exactly where you were (including any panning since this step was made).
+    const cur = viewHistory[viewCursor];
+    if (cur) { cur.zoom = cameraScale; cur.panX = panX; cur.panY = panY; }
+    viewCursor = target;
+    restoreView(viewHistory[viewCursor]);
+    updateHistoryButtons();
+  }
+
+  function restoreView(snap) {
+    if (!snap || !statesByID[snap.stateID]) return;
+    suppressHistory = true;
+    try {
+      currentStateID = snap.stateID;
+      syncHistory(snap.stateID);
+      selectedNodeID = (snap.nodeID != null && findNodeById(snap.nodeID)) ? snap.nodeID : null;
+      const st = currentState();
+      selectedEdgeIdx = (snap.edgeIdx != null && st && st.edges && st.edges[snap.edgeIdx]) ? snap.edgeIdx : null;
+      // Rebuild the extras too, skipping the primary and anything this state no
+      // longer renders (an older snapshot can name nodes that are hidden here).
+      clearExtras();
+      for (const id of (snap.nodes || [])) {
+        if (id !== selectedNodeID && findNodeById(id)) extraNodeIDs.add(id);
+      }
+      for (const i of (snap.edges || [])) {
+        if (i !== selectedEdgeIdx && st && st.edges && st.edges[i]) extraEdgeIdxs.add(i);
+      }
+      renderState(true);                 // draws SVG + highlights + breadcrumb (skipFit)
+      cameraScale = snap.zoom; minCameraScale = cameraScale * 0.2;
+      panX = snap.panX; panY = snap.panY;
+      applyTransform();
+      // URL stays current (shareable) but we don't push browser history here.
+      history.replaceState({ stateID: currentStateID, nodeID: selectedNodeID }, "",
+                           buildHash(currentStateID, selectedNodeID));
+    } finally { suppressHistory = false; }
+  }
+
+  function updateHistoryButtons() {
+    if (navBackBtn) navBackBtn.disabled = viewCursor <= 0;
+    if (navFwdBtn) navFwdBtn.disabled = viewCursor >= viewHistory.length - 1;
+  }
+
+  // Show/hide the inspector panel — frees the canvas space it floats over.
+  function toggleInspector() {
+    const insp = document.getElementById("inspector");
+    if (!insp) return;
+    insp.style.display = insp.style.display === "none" ? "" : "none";
+    syncHash(); // reflect the new inspector visibility in the URL immediately
+  }
+  function inspectorIsHidden() {
+    const insp = document.getElementById("inspector");
+    return !!(insp && insp.style.display === "none");
+  }
+
+  function copyViewURL() {
+    viewTouched = true; // the copied view stays in the address bar from here on
+    const view = currentView();
+    const hash = buildHash(currentStateID, selectedNodeID, view);
+    const url = location.origin + location.pathname + location.search + hash;
+    // Also reflect the copied (view-inclusive) URL in the address bar, so the page
+    // you copied IS the page you're looking at.
+    history.replaceState({ stateID: currentStateID, nodeID: selectedNodeID }, "", hash);
+    const btn = document.getElementById("copy-url-btn");
+    const flash = () => {
+      btn.classList.add("flash");
+      setTimeout(() => btn.classList.remove("flash"), 1000);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(url).then(flash, () => btn.title = "Copy failed");
+    } else {
+      const ta = document.createElement("textarea");
+      ta.value = url;
+      document.body.appendChild(ta);
+      ta.select();
+      try { document.execCommand("copy"); flash(); }
+      catch (_) { btn.title = "Copy failed"; }
+      document.body.removeChild(ta);
+    }
+  }
+
+  // Navigate to the maximally-expanded state (server-resolved at startup).
+  function goToFullyExpanded() {
+    const id = model.fullyExpandedStateID;
+    if (!id || id === currentStateID || !statesByID[id]) return;
+    activateState(id, { push: true, replaceHash: false });
+  }
+
+  function field(label, value) {
+    return '<div class="field"><div class="label">' + label + '</div><div class="value">' + escapeHTML(String(value)) + '</div></div>';
+  }
+
+  function escapeHTML(s) { return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
+  function escapeAttr(s) { return s.replace(/'/g, "\\'"); }
+
+  window.__goToState = function (id) {
+    if (!statesByID[id]) return;
+    activateState(id, { push: true, replaceHash: false });
+  };
+
+  // Select a node without changing state — used by the "Select parent" button.
+  // If the target lies outside the current viewport, pan just enough to reveal
+  // it from the nearest edge (instead of recentering) — mirrors the natural
+  // drag-to-reveal motion the user would do by hand.
+  window.__selectNode = function (nodeID) {
+    const node = findNodeById(nodeID);
+    if (!node) return;
+    selectedNodeID = nodeID;
+    panToReveal(node);
+    updateSelection();
+    updateInspector();
+    syncHash();
+  };
+
+  function panToReveal(node) {
+    const margin = 24; // screen px buffer between node and viewport edge
+    const cw = canvasWrap.clientWidth;
+    const ch = canvasWrap.clientHeight;
+    const screenX = node.x * cameraScale + panX;
+    const screenY = node.y * cameraScale + panY;
+    const screenW = node.width * cameraScale;
+    const screenH = node.height * cameraScale;
+
+    // Only shift on an axis where the node is fully outside the viewport.
+    // Bring the nearest edge of the node to the corresponding margin so the
+    // node enters from that direction — same as a manual drag-to-reveal.
+    if (screenX + screenW < 0) {
+      panX += margin - screenX;
+    } else if (screenX > cw) {
+      panX += (cw - margin) - (screenX + screenW);
+    }
+    if (screenY + screenH < 0) {
+      panY += margin - screenY;
+    } else if (screenY > ch) {
+      panY += (ch - margin) - (screenY + screenH);
+    }
+    applyTransform();
+  }
+
+  // Inspector buttons use this so the navigation preserves zoom and keeps
+  // the node selected (so the inspector doesn't blank out on collapse/expand).
+  // If the source node is no longer in the new state (e.g. zoom-out hid it),
+  // walk up its parent chain to find the closest still-visible ancestor.
+  window.__goToStateFromNode = function (targetID, sourceNodeID) {
+    if (!statesByID[targetID]) return;
+    const src = findNodeById(sourceNodeID);
+    // Wrappers like "shell-2" disappear on zoom-out but the underlying
+    // composite event ("2") becomes the visible closed node — try both.
+    const fallbacks = [];
+    if (src && src.parentNodeIDs) {
+      for (const pid of src.parentNodeIDs) {
+        fallbacks.push(pid);
+        const m = String(pid).match(/^shell-(.+)$/);
+        if (m) fallbacks.push(m[1]);
+      }
+    }
+    const anchor = src ? { id: sourceNodeID, x: src.x, y: src.y, width: src.width, height: src.height } : null;
+    goToStateFromNode(targetID, anchor, { preserveZoom: true, anchorOnNode: true });
+
+    let nextSelected = findNodeById(sourceNodeID) ? sourceNodeID : null;
+    if (nextSelected == null) {
+      for (const pid of fallbacks) {
+        if (findNodeById(pid)) { nextSelected = pid; break; }
+      }
+    }
+    if (nextSelected != null) {
+      selectedNodeID = nextSelected;
+      updateSelection();
+      updateInspector();
+    }
+    syncHash();
+  };
+
+  // --- Camera controls ---
+  canvasWrap.addEventListener("mousemove", function (e) {
+    const rect = canvasWrap.getBoundingClientRect();
+    lastMouseX = e.clientX - rect.left;
+    lastMouseY = e.clientY - rect.top;
+  });
+
+  canvasWrap.addEventListener("wheel", function (e) {
+    e.preventDefault();
+    const factor = e.deltaY < 0 ? 1.1 : 0.9;
+    const rect = canvasWrap.getBoundingClientRect();
+    const mx = e.clientX - rect.left;
+    const my = e.clientY - rect.top;
+    const newScale = Math.max(minCameraScale, Math.min(5, cameraScale * factor));
+    panX = mx - (mx - panX) * (newScale / cameraScale);
+    panY = my - (my - panY) * (newScale / cameraScale);
+    cameraScale = newScale;
+    applyTransform();
+    viewChangedByUser();
+  }, { passive: false });
+
+  canvasWrap.addEventListener("mousedown", function (e) {
+    if (e.button !== 0) return;
+    // Arm a potential pan from ANYWHERE — even on a node, edge or chip. If the
+    // pointer then moves past the drag threshold it becomes a pan and the click
+    // is suppressed (didDrag); otherwise it stays a plain click that
+    // selects/navigates. So you can start a drag-to-pan on top of a node and it
+    // still pans instead of selecting. The grab cursor only appears once it's
+    // actually a drag (set in mousemove), so a plain click doesn't flicker.
+    isPanning = true;
+    didDrag = false;
+    panStartX = e.clientX;
+    panStartY = e.clientY;
+    panStartPanX = panX;
+    panStartPanY = panY;
+  });
+
+  window.addEventListener("mousemove", function (e) {
+    if (!isPanning) return;
+    const dx = e.clientX - panStartX;
+    const dy = e.clientY - panStartY;
+    if (!didDrag) {
+      if (Math.abs(dx) <= 4 && Math.abs(dy) <= 4) return; // within click slop → not a drag yet
+      didDrag = true;
+      canvasWrap.classList.add("dragging");
+    }
+    panX = panStartPanX + dx;
+    panY = panStartPanY + dy;
+    applyTransform();
+  });
+
+  window.addEventListener("mouseup", function () {
+    if (isPanning) {
+      isPanning = false;
+      canvasWrap.classList.remove("dragging");
+      if (didDrag) viewChangedByUser();
+    }
+  });
+
+  canvasWrap.addEventListener("click", function (e) {
+    if (didDrag) { didDrag = false; return; }
+    const target = e.target;
+    if (target === canvasWrap || target === svgContainer) {
+      backgroundAction();
+      return;
+    }
+    if (!target.closest(".node-group")) backgroundAction();
+  });
+
+  // --- Touch controls (mobile / tablet) ---
+  // One finger on background → pan; two fingers → pinch-zoom anchored at the
+  // midpoint. Single-finger taps fall through to the synthesised click that
+  // the browser fires on touchend, preserving node selection / activation.
+  // didDrag is reused to suppress that synthesised click after a real gesture.
+  function touchDistance(a, b) {
+    const dx = a.clientX - b.clientX;
+    const dy = a.clientY - b.clientY;
+    return Math.sqrt(dx * dx + dy * dy);
+  }
+
+  canvasWrap.addEventListener("touchstart", function (e) {
+    const rect = canvasWrap.getBoundingClientRect();
+    if (e.touches.length === 1) {
+      const t = e.touches[0];
+      // Sync lastMouseX/Y so a tap-to-zoom anchors at the touched point —
+      // mousemove never fires on touch devices.
+      lastMouseX = t.clientX - rect.left;
+      lastMouseY = t.clientY - rect.top;
+      if (e.target.closest(".node-group, .chip-target")) {
+        // Tap on a node or its chip: let the synthesised click handle it.
+        touchMode = null;
+        return;
+      }
+      isPanning = true;
+      didDrag = false;
+      panStartX = t.clientX;
+      panStartY = t.clientY;
+      panStartPanX = panX;
+      panStartPanY = panY;
+      touchMode = "pan";
+    } else if (e.touches.length === 2) {
+      e.preventDefault();
+      isPanning = false;
+      const a = e.touches[0], b = e.touches[1];
+      pinchStartDist = touchDistance(a, b);
+      pinchStartScale = cameraScale;
+      const midScreenX = (a.clientX + b.clientX) / 2 - rect.left;
+      const midScreenY = (a.clientY + b.clientY) / 2 - rect.top;
+      pinchAnchorLayoutX = (midScreenX - panX) / cameraScale;
+      pinchAnchorLayoutY = (midScreenY - panY) / cameraScale;
+      touchMode = "pinch";
+      didDrag = true; // pinch is never a tap; suppress any synthesised click
+    }
+  }, { passive: false });
+
+  canvasWrap.addEventListener("touchmove", function (e) {
+    if (touchMode === "pan" && e.touches.length === 1) {
+      e.preventDefault();
+      const t = e.touches[0];
+      const dx = t.clientX - panStartX;
+      const dy = t.clientY - panStartY;
+      if (!didDrag && (Math.abs(dx) > 4 || Math.abs(dy) > 4)) didDrag = true;
+      panX = panStartPanX + dx;
+      panY = panStartPanY + dy;
+      applyTransform();
+    } else if (touchMode === "pinch" && e.touches.length === 2 && pinchStartDist > 0) {
+      e.preventDefault();
+      const rect = canvasWrap.getBoundingClientRect();
+      const a = e.touches[0], b = e.touches[1];
+      const dist = touchDistance(a, b);
+      const newScale = Math.max(minCameraScale, Math.min(5, pinchStartScale * (dist / pinchStartDist)));
+      const midScreenX = (a.clientX + b.clientX) / 2 - rect.left;
+      const midScreenY = (a.clientY + b.clientY) / 2 - rect.top;
+      // Keep the anchor (midpoint at gesture start, in layout coords) under
+      // the current midpoint so the pinch feels stuck to the fingers.
+      panX = midScreenX - pinchAnchorLayoutX * newScale;
+      panY = midScreenY - pinchAnchorLayoutY * newScale;
+      cameraScale = newScale;
+      applyTransform();
+    }
+  }, { passive: false });
+
+  canvasWrap.addEventListener("touchend", function () {
+    // Lifting any finger ends the current gesture. Requiring a fresh
+    // touchstart to resume avoids the jump from pinch midpoint to the
+    // remaining single finger.
+    isPanning = false;
+    touchMode = null;
+  });
+
+  canvasWrap.addEventListener("touchcancel", function () {
+    isPanning = false;
+    touchMode = null;
+  });
+
+  function backgroundAction() {
+    if (selectionCount() > 0) {
+      clearSelection(); // clears the extras too — one click to drop the lot
+      updateSelection(); // its "nothing selected" branch resets the inspector
+      syncHash();
+    }
+  }
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "?") { openHelp(); return; }
+    // [ / ] step the in-app view history back / forward (same as the ◀ / ▶ arrows).
+    // [ / ] step the in-app view history (like ◀ / ▶). Bare keys only — let
+    // Cmd/Ctrl+[ , Cmd/Ctrl+] stay as the browser's Back/Forward — and not while
+    // a modal is open (Escape handles those).
+    if ((e.key === "[" || e.key === "]") && !e.ctrlKey && !e.metaKey && !e.altKey) {
+      if (!helpOverlay.hidden || menuOpen()) return;
+      e.preventDefault();
+      goToViewHistory(e.key === "[" ? -1 : 1);
+      return;
+    }
+    if (e.key === "Escape") {
+      if (!helpOverlay.hidden) { closeHelp(); return; } // help takes precedence
+      if (menuOpen()) { closeMenu(); return; }           // then the ⋮ menu
+      if (selectionCount() > 0) {
+        clearSelection();
+        updateSelection();
+        updateInspector();
+        syncHash();
+      } else {
+        zoomOutAtCursor();
+      }
+    }
+  });
+
+  // --- Debug API for E2E tests ---
+  window.__canvasDebug = {
+    getState: function () {
+      return {
+        stateID: currentStateID,
+        hash: location.hash,
+        historyLength: historyStack.length,
+        cameraScale: cameraScale,
+        panX: panX,
+        panY: panY,
+      };
+    },
+    goToState: function (id) {
+      if (!statesByID[id]) return false;
+      activateState(id, { push: true, replaceHash: false });
+      return true;
+    },
+    clickNode: function (nodeID) { handleNodeClick(nodeID); },
+    selectNode: function (nodeID) { selectNodeOnly(nodeID); },
+    shiftSelectNode: function (nodeID) { toggleNodeInSelection(nodeID); },
+    shiftSelectEdge: function (idx) { toggleEdgeInSelection(idx); },
+    selectEdge: function (idx) { selectEdge(idx); },
+    // What the current URL says, as parsed. The selection round-trip is easy to
+    // get wrong in a way that looks like a rendering bug, so tests can see the
+    // two halves separately: what the hash carried, and what got applied.
+    parsedHash: function () { return parseHash(); },
+    selectionInfo: function () {
+      return {
+        primaryNode: selectedNodeID,
+        primaryEdge: selectedEdgeIdx,
+        nodes: allSelectedNodeIDs(),
+        edges: allSelectedEdgeIdxs(),
+        count: selectionCount(),
+      };
+    },
+    listStates: function () { return Object.keys(statesByID); },
+    currentTransitions: function () {
+      const st = currentState();
+      return st ? st.transitions : null;
+    },
+    setCameraScale: function (s) { cameraScale = s; applyTransform(); },
+    setPan: function (x, y) { panX = x; panY = y; applyTransform(); },
+    viewHistoryInfo: function () { return { length: viewHistory.length, cursor: viewCursor }; },
+  };
+
+  init();
+})();
+
+</script>
+</body>
+</html>

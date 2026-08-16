@@ -27,7 +27,11 @@
       "id": 3,
       "name": "Astronomy",
       "alias": "",
-      "type": "Event"
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
     },
     {
       "id": 4,
@@ -74,7 +78,11 @@
       "id": 10,
       "name": "Moon",
       "alias": "",
-      "type": "Event"
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
     },
     {
       "id": 11,
@@ -123,15 +131,6 @@
     }
   ],
   "edges": [
-    {
-      "id": 0,
-      "source": 10,
-      "target": 3,
-      "dir": "",
-      "tooltip": "then followed by",
-      "sstLinkType": "LeadsTo",
-      "semOrigin": ""
-    },
     {
       "id": 0,
       "source": 10,
@@ -262,15 +261,6 @@
       "id": 0,
       "source": 11,
       "target": 14,
-      "dir": "",
-      "tooltip": "then followed by",
-      "sstLinkType": "LeadsTo",
-      "semOrigin": ""
-    },
-    {
-      "id": 0,
-      "source": 14,
-      "target": 10,
       "dir": "",
       "tooltip": "then followed by",
       "sstLinkType": "LeadsTo",

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="1060" viewBox="0 0 1160 1060">
+  <defs>
+  </defs>
+  <g id="container-shells">
+  </g>
+  <g id="node-shadows">
+    <rect x="280" y="40" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="40" y="640" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="280" y="640" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="40" y="40" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="520" y="640" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="760" y="640" width="120" height="80" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="1000" y="640" width="120" height="120" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="40" y="140" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="40" y="880" width="120" height="140" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="280" y="880" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="520" y="880" width="120" height="80" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="520" y="40" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="760" y="880" width="120" height="80" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="1000" y="880" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="760" y="40" width="120" height="180" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="1000" y="40" width="120" height="160" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="40" y="340" width="120" height="180" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="280" y="340" width="120" height="80" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="520" y="340" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="760" y="340" width="120" height="80" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="1000" y="340" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+  </g>
+  <g id="edges">
+    <g class="edge" data-edge-idx="0" data-edge-base="expresses" data-edge-from="12" data-edge-to="16">
+    <line x1="100.00" y1="105.00" x2="100.00" y2="128.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 100.00 135.00 L 95.50 126.00 L 100.00 128.25 L 104.50 126.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    </g>
+  </g>
+  <g id="nodes">
+    <rect x="280" y="40" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="280" y="40" width="120" height="60" rx="6" ry="6" fill="none" stroke="#82b366" stroke-width="2" stroke-dasharray="6 4 6 24" stroke-dashoffset="0"/>
+    <rect x="280" y="40" width="120" height="60" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-20"/>
+    <rect x="280" y="40" width="120" height="60" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-30"/>
+    <text x="340" y="60" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">Check the</text>
+    <text x="340" y="80" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">bank</text>
+    <rect x="353" y="83" width="12" height="12" rx="2" ry="2" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="359.0" y="89.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#009900">t</text>
+    <rect x="368" y="83" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="374.0" y="89.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="383" y="83" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+    <text x="389.0" y="89.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+    <rect x="40" y="640" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="40" y="640" width="120" height="60" rx="6" ry="6" fill="none" stroke="#82b366" stroke-width="2" stroke-dasharray="6 4 6 24" stroke-dashoffset="0"/>
+    <rect x="40" y="640" width="120" height="60" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-20"/>
+    <rect x="40" y="640" width="120" height="60" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-30"/>
+    <text x="100" y="651" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">Mum&#39;s</text>
+    <text x="100" y="670" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">birthday</text>
+    <text x="100" y="689" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">coming up</text>
+    <rect x="113" y="683" width="12" height="12" rx="2" ry="2" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="119.0" y="689.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#009900">t</text>
+    <rect x="128" y="683" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="134.0" y="689.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="143" y="683" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+    <text x="149.0" y="689.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+    <rect x="280" y="640" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="280" y="640" width="120" height="60" rx="6" ry="6" fill="none" stroke="#82b366" stroke-width="2" stroke-dasharray="6 4 6 24" stroke-dashoffset="0"/>
+    <rect x="280" y="640" width="120" height="60" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-20"/>
+    <rect x="280" y="640" width="120" height="60" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-30"/>
+    <text x="340" y="653" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Order lunch</text>
+    <text x="340" y="670" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">delivery on</text>
+    <text x="340" y="687" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Mondays</text>
+    <rect x="353" y="683" width="12" height="12" rx="2" ry="2" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="359.0" y="689.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#009900">t</text>
+    <rect x="368" y="683" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="374.0" y="689.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="383" y="683" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+    <text x="389.0" y="689.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+    <rect x="40" y="40" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="40" y="40" width="120" height="60" rx="6" ry="6" fill="none" stroke="#82b366" stroke-width="2" stroke-dasharray="6 4 6 24" stroke-dashoffset="0"/>
+    <rect x="40" y="40" width="120" height="60" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-20"/>
+    <rect x="40" y="40" width="120" height="60" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-30"/>
+    <text x="100" y="51" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">Regular call</text>
+    <text x="100" y="70" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">with &#34;Sven</text>
+    <text x="100" y="89" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">F&#34;</text>
+    <rect x="113" y="83" width="12" height="12" rx="2" ry="2" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="119.0" y="89.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#009900">t</text>
+    <rect x="128" y="83" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="134.0" y="89.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="143" y="83" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+    <text x="149.0" y="89.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+    <rect x="520" y="640" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="520" y="640" width="120" height="60" rx="6" ry="6" fill="none" stroke="#82b366" stroke-width="2" stroke-dasharray="6 4 6 24" stroke-dashoffset="0"/>
+    <rect x="520" y="640" width="120" height="60" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-20"/>
+    <rect x="520" y="640" width="120" height="60" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-30"/>
+    <text x="580" y="651" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">Regular</text>
+    <text x="580" y="670" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">meetings,</text>
+    <text x="580" y="689" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">prepare</text>
+    <rect x="593" y="683" width="12" height="12" rx="2" ry="2" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="599.0" y="689.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#009900">t</text>
+    <rect x="608" y="683" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="614.0" y="689.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="623" y="683" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+    <text x="629.0" y="689.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+    <rect x="760" y="640" width="120" height="80" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="760" y="640" width="120" height="80" rx="6" ry="6" fill="none" stroke="#82b366" stroke-width="2" stroke-dasharray="6 4 6 24" stroke-dashoffset="0"/>
+    <rect x="760" y="640" width="120" height="80" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-20"/>
+    <rect x="760" y="640" width="120" height="80" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-30"/>
+    <text x="820" y="655" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Saturday&#39;s</text>
+    <text x="820" y="672" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">child works</text>
+    <text x="820" y="688" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">hard for a</text>
+    <text x="820" y="705" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">living...</text>
+    <rect x="833" y="703" width="12" height="12" rx="2" ry="2" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="839.0" y="709.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#009900">t</text>
+    <rect x="848" y="703" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="854.0" y="709.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="863" y="703" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+    <text x="869.0" y="709.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+    <rect x="1000" y="640" width="120" height="120" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="1000" y="640" width="120" height="120" rx="6" ry="6" fill="none" stroke="#82b366" stroke-width="2" stroke-dasharray="6 4 6 24" stroke-dashoffset="0"/>
+    <rect x="1000" y="640" width="120" height="120" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-20"/>
+    <rect x="1000" y="640" width="120" height="120" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-30"/>
+    <text x="1060" y="666" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Spring</text>
+    <text x="1060" y="683" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">cleaning: air</text>
+    <text x="1060" y="700" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">and wash</text>
+    <text x="1060" y="717" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">bedding, clean</text>
+    <text x="1060" y="734" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">windows</text>
+    <rect x="1073" y="743" width="12" height="12" rx="2" ry="2" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="1079.0" y="749.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#009900">t</text>
+    <rect x="1088" y="743" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="1094.0" y="749.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="1103" y="743" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+    <text x="1109.0" y="749.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+    <rect x="40" y="140" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="40" y="140" width="120" height="60" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 4 6 14" stroke-dashoffset="0"/>
+    <rect x="40" y="140" width="120" height="60" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 24" stroke-dashoffset="-20"/>
+    <text x="100" y="170" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">Sven F</text>
+    <rect x="128" y="183" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+    <text x="134.0" y="189.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+    <rect x="143" y="183" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="149.0" y="189.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="40" y="880" width="120" height="140" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="40" y="880" width="120" height="140" rx="6" ry="6" fill="none" stroke="#82b366" stroke-width="2" stroke-dasharray="6 4 6 24" stroke-dashoffset="0"/>
+    <rect x="40" y="880" width="120" height="140" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-20"/>
+    <rect x="40" y="880" width="120" height="140" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-30"/>
+    <text x="100" y="908" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">The child that</text>
+    <text x="100" y="925" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">is born on</text>
+    <text x="100" y="942" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Sabbath day,</text>
+    <text x="100" y="958" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">is bonny and</text>
+    <text x="100" y="975" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">blithe, good</text>
+    <text x="100" y="992" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">and gay</text>
+    <rect x="113" y="1003" width="12" height="12" rx="2" ry="2" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="119.0" y="1009.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#009900">t</text>
+    <rect x="128" y="1003" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="134.0" y="1009.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="143" y="1003" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+    <text x="149.0" y="1009.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+    <rect x="280" y="880" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="280" y="880" width="120" height="60" rx="6" ry="6" fill="none" stroke="#82b366" stroke-width="2" stroke-dasharray="6 4 6 24" stroke-dashoffset="0"/>
+    <rect x="280" y="880" width="120" height="60" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-20"/>
+    <rect x="280" y="880" width="120" height="60" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-30"/>
+    <text x="340" y="893" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Thursday&#39;s</text>
+    <text x="340" y="910" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">child has far</text>
+    <text x="340" y="927" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">to go...</text>
+    <rect x="353" y="923" width="12" height="12" rx="2" ry="2" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="359.0" y="929.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#009900">t</text>
+    <rect x="368" y="923" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="374.0" y="929.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="383" y="923" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+    <text x="389.0" y="929.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+    <rect x="520" y="880" width="120" height="80" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="520" y="880" width="120" height="80" rx="6" ry="6" fill="none" stroke="#82b366" stroke-width="2" stroke-dasharray="6 4 6 24" stroke-dashoffset="0"/>
+    <rect x="520" y="880" width="120" height="80" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-20"/>
+    <rect x="520" y="880" width="120" height="80" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-30"/>
+    <text x="580" y="903" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Tuesday&#39;s</text>
+    <text x="580" y="920" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">child is full</text>
+    <text x="580" y="937" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">of grace...</text>
+    <rect x="593" y="943" width="12" height="12" rx="2" ry="2" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="599.0" y="949.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#009900">t</text>
+    <rect x="608" y="943" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="614.0" y="949.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="623" y="943" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+    <text x="629.0" y="949.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+    <rect x="520" y="40" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="520" y="40" width="120" height="60" rx="6" ry="6" fill="none" stroke="#82b366" stroke-width="2" stroke-dasharray="6 4 6 24" stroke-dashoffset="0"/>
+    <rect x="520" y="40" width="120" height="60" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-20"/>
+    <rect x="520" y="40" width="120" height="60" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-30"/>
+    <text x="580" y="60" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">Check web</text>
+    <text x="580" y="80" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">stats</text>
+    <rect x="593" y="83" width="12" height="12" rx="2" ry="2" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="599.0" y="89.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#009900">t</text>
+    <rect x="608" y="83" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="614.0" y="89.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="623" y="83" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+    <text x="629.0" y="89.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+    <rect x="760" y="880" width="120" height="80" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="760" y="880" width="120" height="80" rx="6" ry="6" fill="none" stroke="#82b366" stroke-width="2" stroke-dasharray="6 4 6 24" stroke-dashoffset="0"/>
+    <rect x="760" y="880" width="120" height="80" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-20"/>
+    <rect x="760" y="880" width="120" height="80" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-30"/>
+    <text x="820" y="903" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Wednesday&#39;s</text>
+    <text x="820" y="920" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">child is full</text>
+    <text x="820" y="937" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">of woe...</text>
+    <rect x="833" y="943" width="12" height="12" rx="2" ry="2" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="839.0" y="949.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#009900">t</text>
+    <rect x="848" y="943" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="854.0" y="949.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="863" y="943" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+    <text x="869.0" y="949.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+    <rect x="1000" y="880" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="1000" y="880" width="120" height="60" rx="6" ry="6" fill="none" stroke="#82b366" stroke-width="2" stroke-dasharray="6 4 6 24" stroke-dashoffset="0"/>
+    <rect x="1000" y="880" width="120" height="60" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-20"/>
+    <rect x="1000" y="880" width="120" height="60" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-30"/>
+    <text x="1060" y="891" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">to do: Write</text>
+    <text x="1060" y="910" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">conference</text>
+    <text x="1060" y="929" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">talk</text>
+    <rect x="1073" y="923" width="12" height="12" rx="2" ry="2" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="1079.0" y="929.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#009900">t</text>
+    <rect x="1088" y="923" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="1094.0" y="929.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="1103" y="923" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+    <text x="1109.0" y="929.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+    <rect x="760" y="40" width="120" height="180" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="760" y="40" width="120" height="180" rx="6" ry="6" fill="none" stroke="#82b366" stroke-width="2" stroke-dasharray="6 4 6 24" stroke-dashoffset="0"/>
+    <rect x="760" y="40" width="120" height="180" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-20"/>
+    <rect x="760" y="40" width="120" height="180" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-30"/>
+    <text x="820" y="71" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Dynamic:</text>
+    <text x="820" y="88" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Regular</text>
+    <text x="820" y="105" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">coordination</text>
+    <text x="820" y="122" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">meeting at</text>
+    <text x="820" y="138" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">11:30 - TIME</text>
+    <text x="820" y="155" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">REMAINING ..</text>
+    <text x="820" y="172" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">{TimeUntil</text>
+    <text x="820" y="189" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Hr11 Min30} !!</text>
+    <rect x="833" y="203" width="12" height="12" rx="2" ry="2" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="839.0" y="209.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#009900">t</text>
+    <rect x="848" y="203" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="854.0" y="209.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="863" y="203" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+    <text x="869.0" y="209.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+    <rect x="1000" y="40" width="120" height="160" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="1000" y="40" width="120" height="160" rx="6" ry="6" fill="none" stroke="#82b366" stroke-width="2" stroke-dasharray="6 4 6 24" stroke-dashoffset="0"/>
+    <rect x="1000" y="40" width="120" height="160" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-20"/>
+    <rect x="1000" y="40" width="120" height="160" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-30"/>
+    <text x="1060" y="78" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Dynamic: Time</text>
+    <text x="1060" y="95" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">remaining</text>
+    <text x="1060" y="112" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">until</text>
+    <text x="1060" y="128" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Christmas ...</text>
+    <text x="1060" y="145" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">{TimeUntil 25</text>
+    <text x="1060" y="162" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">December}</text>
+    <rect x="1073" y="183" width="12" height="12" rx="2" ry="2" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="1079.0" y="189.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#009900">t</text>
+    <rect x="1088" y="183" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="1094.0" y="189.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="1103" y="183" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+    <text x="1109.0" y="189.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+    <rect x="40" y="340" width="120" height="180" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="40" y="340" width="120" height="180" rx="6" ry="6" fill="none" stroke="#82b366" stroke-width="2" stroke-dasharray="6 4 6 24" stroke-dashoffset="0"/>
+    <rect x="40" y="340" width="120" height="180" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-20"/>
+    <rect x="40" y="340" width="120" height="180" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-30"/>
+    <text x="100" y="363" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Dynamic:</text>
+    <text x="100" y="380" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">{TimeSince</text>
+    <text x="100" y="396" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Day25 May</text>
+    <text x="100" y="413" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Yr2018 Hr13}</text>
+    <text x="100" y="430" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">have elapsed</text>
+    <text x="100" y="447" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">since the</text>
+    <text x="100" y="464" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">ChiTek-i</text>
+    <text x="100" y="480" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">company was</text>
+    <text x="100" y="497" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">founded</text>
+    <rect x="113" y="503" width="12" height="12" rx="2" ry="2" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="119.0" y="509.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#009900">t</text>
+    <rect x="128" y="503" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="134.0" y="509.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="143" y="503" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+    <text x="149.0" y="509.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+    <rect x="280" y="340" width="120" height="80" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="280" y="340" width="120" height="80" rx="6" ry="6" fill="none" stroke="#82b366" stroke-width="2" stroke-dasharray="6 4 6 24" stroke-dashoffset="0"/>
+    <rect x="280" y="340" width="120" height="80" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-20"/>
+    <rect x="280" y="340" width="120" height="80" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-30"/>
+    <text x="340" y="363" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Friday&#39;s child</text>
+    <text x="340" y="380" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">is loving and</text>
+    <text x="340" y="397" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">giving...</text>
+    <rect x="353" y="403" width="12" height="12" rx="2" ry="2" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="359.0" y="409.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#009900">t</text>
+    <rect x="368" y="403" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="374.0" y="409.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="383" y="403" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+    <text x="389.0" y="409.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+    <rect x="520" y="340" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="520" y="340" width="120" height="60" rx="6" ry="6" fill="none" stroke="#82b366" stroke-width="2" stroke-dasharray="6 4 6 24" stroke-dashoffset="0"/>
+    <rect x="520" y="340" width="120" height="60" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-20"/>
+    <rect x="520" y="340" width="120" height="60" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-30"/>
+    <text x="580" y="353" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Meeting</text>
+    <text x="580" y="370" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">downtown, by</text>
+    <text x="580" y="387" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">the fountain</text>
+    <rect x="593" y="383" width="12" height="12" rx="2" ry="2" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="599.0" y="389.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#009900">t</text>
+    <rect x="608" y="383" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="614.0" y="389.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="623" y="383" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+    <text x="629.0" y="389.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+    <rect x="760" y="340" width="120" height="80" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="760" y="340" width="120" height="80" rx="6" ry="6" fill="none" stroke="#82b366" stroke-width="2" stroke-dasharray="6 4 6 24" stroke-dashoffset="0"/>
+    <rect x="760" y="340" width="120" height="80" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-20"/>
+    <rect x="760" y="340" width="120" height="80" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-30"/>
+    <text x="820" y="363" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">Monday&#39;s child</text>
+    <text x="820" y="380" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">is fair of</text>
+    <text x="820" y="397" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#616161">face...</text>
+    <rect x="833" y="403" width="12" height="12" rx="2" ry="2" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="839.0" y="409.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#009900">t</text>
+    <rect x="848" y="403" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="854.0" y="409.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="863" y="403" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+    <text x="869.0" y="409.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+    <rect x="1000" y="340" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="1000" y="340" width="120" height="60" rx="6" ry="6" fill="none" stroke="#82b366" stroke-width="2" stroke-dasharray="6 4 6 24" stroke-dashoffset="0"/>
+    <rect x="1000" y="340" width="120" height="60" rx="6" ry="6" fill="none" stroke="#ff8000" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-20"/>
+    <rect x="1000" y="340" width="120" height="60" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 34" stroke-dashoffset="-30"/>
+    <text x="1060" y="360" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">Mum&#39;s</text>
+    <text x="1060" y="380" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">birthday</text>
+    <rect x="1073" y="383" width="12" height="12" rx="2" ry="2" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="1079.0" y="389.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#009900">t</text>
+    <rect x="1088" y="383" width="12" height="12" rx="2" ry="2" fill="#ffe6cc" stroke="#ff8000" stroke-width="1"/>
+    <text x="1094.0" y="389.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#ff8000">e</text>
+    <rect x="1103" y="383" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+    <text x="1109.0" y="389.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+  </g>
+</svg>

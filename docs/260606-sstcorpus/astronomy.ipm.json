@@ -27,7 +27,7 @@
       "id": 3,
       "name": "Astronomy",
       "alias": "",
-      "type": "Event"
+      "type": "Thing"
     },
     {
       "id": 4,
@@ -74,7 +74,7 @@
       "id": 10,
       "name": "Moon",
       "alias": "",
-      "type": "Event"
+      "type": "Concept"
     },
     {
       "id": 11,
@@ -126,15 +126,6 @@
     {
       "id": 18,
       "source": 10,
-      "target": 3,
-      "dir": "DirFwd",
-      "tooltip": "then followed by",
-      "sstLinkType": "LeadsTo",
-      "semOrigin": "SemExplicit"
-    },
-    {
-      "id": 19,
-      "source": 10,
       "target": 17,
       "dir": "DirFwd",
       "tooltip": "has image",
@@ -142,7 +133,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 20,
+      "id": 19,
       "source": 3,
       "target": 5,
       "dir": "DirFwd",
@@ -151,7 +142,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 21,
+      "id": 20,
       "source": 3,
       "target": 16,
       "dir": "DirFwd",
@@ -160,7 +151,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 22,
+      "id": 21,
       "source": 4,
       "target": 1,
       "dir": "DirFwd",
@@ -169,7 +160,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 23,
+      "id": 22,
       "source": 1,
       "target": 12,
       "dir": "DirFwd",
@@ -178,7 +169,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 24,
+      "id": 23,
       "source": 7,
       "target": 8,
       "dir": "DirFwd",
@@ -187,7 +178,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 25,
+      "id": 24,
       "source": 12,
       "target": 2,
       "dir": "DirFwd",
@@ -196,7 +187,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 26,
+      "id": 25,
       "source": 2,
       "target": 13,
       "dir": "DirFwd",
@@ -205,7 +196,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 27,
+      "id": 26,
       "source": 13,
       "target": 6,
       "dir": "DirFwd",
@@ -214,7 +205,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 28,
+      "id": 27,
       "source": 13,
       "target": 10,
       "dir": "DirFwd",
@@ -223,7 +214,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 29,
+      "id": 28,
       "source": 6,
       "target": 9,
       "dir": "DirFwd",
@@ -232,7 +223,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 30,
+      "id": 29,
       "source": 9,
       "target": 7,
       "dir": "DirFwd",
@@ -241,7 +232,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 31,
+      "id": 30,
       "source": 8,
       "target": 15,
       "dir": "DirFwd",
@@ -250,7 +241,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 32,
+      "id": 31,
       "source": 15,
       "target": 11,
       "dir": "DirFwd",
@@ -259,18 +250,9 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 33,
+      "id": 32,
       "source": 11,
       "target": 14,
-      "dir": "DirFwd",
-      "tooltip": "then followed by",
-      "sstLinkType": "LeadsTo",
-      "semOrigin": "SemExplicit"
-    },
-    {
-      "id": 34,
-      "source": 14,
-      "target": 10,
       "dir": "DirFwd",
       "tooltip": "then followed by",
       "sstLinkType": "LeadsTo",

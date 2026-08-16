@@ -104,7 +104,11 @@
       "id": 10,
       "name": "Internal granular layer. The main entry point for incoming sensory signals. Direct signals from the thalamus.",
       "alias": "",
-      "type": "Event"
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
     },
     {
       "id": 11,
@@ -209,7 +213,7 @@
     },
     {
       "id": 22,
-      "name": "axons",
+      "name": "axons,",
       "alias": "",
       "type": "Unresolved",
       "candidates": [
@@ -344,7 +348,7 @@
     },
     {
       "id": 36,
-      "name": "dendrites",
+      "name": "dendrites,",
       "alias": "",
       "type": "Unresolved",
       "candidates": [
@@ -532,7 +536,12 @@
       "id": 57,
       "name": "layer 4",
       "alias": "",
-      "type": "Event"
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Event",
+        "Concept"
+      ]
     },
     {
       "id": 58,
@@ -849,7 +858,7 @@
     },
     {
       "id": 93,
-      "name": "telencephalon",
+      "name": "telencephalon,",
       "alias": "",
       "type": "Unresolved",
       "candidates": [
@@ -875,12 +884,22 @@
     },
     {
       "id": 96,
+      "name": "thalamus.",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Concept",
+        "Event"
+      ]
+    },
+    {
+      "id": 97,
       "name": "theta waves",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 97,
+      "id": 98,
       "name": "top of midbrain",
       "alias": "",
       "type": "Unresolved",
@@ -890,7 +909,7 @@
       ]
     },
     {
-      "id": 98,
+      "id": 99,
       "name": "type 1",
       "alias": "",
       "type": "Unresolved",
@@ -900,7 +919,7 @@
       ]
     },
     {
-      "id": 99,
+      "id": 100,
       "name": "type 2",
       "alias": "",
       "type": "Unresolved",
@@ -910,19 +929,19 @@
       ]
     },
     {
-      "id": 100,
+      "id": 101,
       "name": "ultimately expand in mammals to become the neocortex",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 101,
+      "id": 102,
       "name": "urges to eat, drink, sleep, find shelter, avoid whatever is causing pain or fear, or respond with defensive or aggressive behaviours.",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 102,
+      "id": 103,
       "name": "very relaxed, light or passive attention",
       "alias": "",
       "type": "Unresolved",
@@ -932,7 +951,7 @@
       ]
     },
     {
-      "id": 103,
+      "id": 104,
       "name": "what we can do with a object or service",
       "alias": "",
       "type": "Unresolved",
@@ -944,7 +963,7 @@
   ],
   "edges": [
     {
-      "id": 104,
+      "id": 105,
       "source": 28,
       "target": 67,
       "dir": "DirFwd",
@@ -953,7 +972,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 105,
+      "id": 106,
       "source": 67,
       "target": 65,
       "dir": "DirFwd",
@@ -962,7 +981,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 106,
+      "id": 107,
       "source": 67,
       "target": 16,
       "dir": "DirFwd",
@@ -971,7 +990,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 107,
+      "id": 108,
       "source": 50,
       "target": 47,
       "dir": "DirFwd",
@@ -980,25 +999,25 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 108,
+      "id": 109,
       "source": 50,
-      "target": 101,
+      "target": 102,
       "dir": "DirFwd",
       "tooltip": "influences",
       "sstLinkType": "LeadsTo",
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 109,
+      "id": 110,
       "source": 50,
-      "target": 100,
+      "target": 101,
       "dir": "DirFwd",
       "tooltip": "leads to",
       "sstLinkType": "LeadsTo",
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 110,
+      "id": 111,
       "source": 50,
       "target": 53,
       "dir": "DirFwd",
@@ -1007,7 +1026,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 111,
+      "id": 112,
       "source": 50,
       "target": 40,
       "dir": "DirFwd",
@@ -1016,7 +1035,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 112,
+      "id": 113,
       "source": 50,
       "target": 66,
       "dir": "DirFwd",
@@ -1025,7 +1044,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 113,
+      "id": 114,
       "source": 50,
       "target": 83,
       "dir": "DirFwd",
@@ -1034,7 +1053,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 114,
+      "id": 115,
       "source": 47,
       "target": 21,
       "dir": "DirFwd",
@@ -1043,7 +1062,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 115,
+      "id": 116,
       "source": 95,
       "target": 40,
       "dir": "DirFwd",
@@ -1052,7 +1071,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 116,
+      "id": 117,
       "source": 95,
       "target": 32,
       "dir": "DirFwd",
@@ -1061,7 +1080,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 117,
+      "id": 118,
       "source": 95,
       "target": 73,
       "dir": "DirFwd",
@@ -1070,7 +1089,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 118,
+      "id": 119,
       "source": 75,
       "target": 46,
       "dir": "DirFwd",
@@ -1079,7 +1098,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 119,
+      "id": 120,
       "source": 76,
       "target": 46,
       "dir": "DirFwd",
@@ -1088,7 +1107,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 120,
+      "id": 121,
       "source": 46,
       "target": 60,
       "dir": "DirFwd",
@@ -1097,7 +1116,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 121,
+      "id": 122,
       "source": 46,
       "target": 34,
       "dir": "DirFwd",
@@ -1106,7 +1125,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 122,
+      "id": 123,
       "source": 46,
       "target": 88,
       "dir": "DirFwd",
@@ -1115,7 +1134,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 123,
+      "id": 124,
       "source": 90,
       "target": 61,
       "dir": "DirFwd",
@@ -1124,7 +1143,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 124,
+      "id": 125,
       "source": 90,
       "target": 74,
       "dir": "DirFwd",
@@ -1133,7 +1152,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 125,
+      "id": 126,
       "source": 90,
       "target": 20,
       "dir": "DirFwd",
@@ -1142,25 +1161,25 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 126,
+      "id": 127,
       "source": 90,
-      "target": 97,
+      "target": 98,
       "dir": "DirFwd",
       "tooltip": "takes place at location",
       "sstLinkType": "Expresses",
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 127,
+      "id": 128,
       "source": 17,
-      "target": 103,
+      "target": 104,
       "dir": "DirFwd",
       "tooltip": "has a role",
       "sstLinkType": "Expresses",
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 128,
+      "id": 129,
       "source": 14,
       "target": 12,
       "dir": "DirFwd",
@@ -1169,7 +1188,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 129,
+      "id": 130,
       "source": 18,
       "target": 5,
       "dir": "DirFwd",
@@ -1178,16 +1197,16 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 130,
+      "id": 131,
       "source": 18,
-      "target": 102,
+      "target": 103,
       "dir": "DirFwd",
       "tooltip": "is characterized by",
       "sstLinkType": "Expresses",
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 131,
+      "id": 132,
       "source": 25,
       "target": 2,
       "dir": "DirFwd",
@@ -1196,7 +1215,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 132,
+      "id": 133,
       "source": 25,
       "target": 63,
       "dir": "DirFwd",
@@ -1205,7 +1224,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 133,
+      "id": 134,
       "source": 78,
       "target": 42,
       "dir": "DirFwd",
@@ -1214,7 +1233,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 134,
+      "id": 135,
       "source": 72,
       "target": 42,
       "dir": "DirFwd",
@@ -1223,7 +1242,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 135,
+      "id": 136,
       "source": 94,
       "target": 42,
       "dir": "DirFwd",
@@ -1232,7 +1251,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 136,
+      "id": 137,
       "source": 41,
       "target": 42,
       "dir": "DirFwd",
@@ -1241,7 +1260,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 137,
+      "id": 138,
       "source": 42,
       "target": 3,
       "dir": "DirFwd",
@@ -1250,7 +1269,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 138,
+      "id": 139,
       "source": 42,
       "target": 31,
       "dir": "DirFwd",
@@ -1259,7 +1278,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 139,
+      "id": 140,
       "source": 35,
       "target": 1,
       "dir": "DirFwd",
@@ -1268,7 +1287,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 140,
+      "id": 141,
       "source": 35,
       "target": 87,
       "dir": "DirFwd",
@@ -1277,18 +1296,9 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 141,
-      "source": 98,
-      "target": 96,
-      "dir": "DirFwd",
-      "tooltip": "",
-      "sstLinkType": "PartOf",
-      "semOrigin": "SemExplicit"
-    },
-    {
       "id": 142,
       "source": 99,
-      "target": 96,
+      "target": 97,
       "dir": "DirFwd",
       "tooltip": "",
       "sstLinkType": "PartOf",
@@ -1296,7 +1306,16 @@
     },
     {
       "id": 143,
-      "source": 96,
+      "source": 100,
+      "target": 97,
+      "dir": "DirFwd",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 144,
+      "source": 97,
       "target": 4,
       "dir": "DirFwd",
       "tooltip": "has frequency",
@@ -1304,7 +1323,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 144,
+      "id": 145,
       "source": 40,
       "target": 49,
       "dir": "DirFwd",
@@ -1313,7 +1332,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 145,
+      "id": 146,
       "source": 64,
       "target": 49,
       "dir": "DirFwd",
@@ -1322,7 +1341,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 146,
+      "id": 147,
       "source": 45,
       "target": 49,
       "dir": "DirFwd",
@@ -1331,7 +1350,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 147,
+      "id": 148,
       "source": 84,
       "target": 92,
       "dir": "DirFwd",
@@ -1340,7 +1359,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 148,
+      "id": 149,
       "source": 84,
       "target": 70,
       "dir": "DirFwd",
@@ -1349,7 +1368,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 149,
+      "id": 150,
       "source": 92,
       "target": 28,
       "dir": "DirFwd",
@@ -1358,7 +1377,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 150,
+      "id": 151,
       "source": 23,
       "target": 24,
       "dir": "DirFwd",
@@ -1367,7 +1386,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 151,
+      "id": 152,
       "source": 23,
       "target": 68,
       "dir": "DirFwd",
@@ -1376,7 +1395,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 152,
+      "id": 153,
       "source": 23,
       "target": 62,
       "dir": "DirFwd",
@@ -1385,7 +1404,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 153,
+      "id": 154,
       "source": 54,
       "target": 15,
       "dir": "DirFwd",
@@ -1394,7 +1413,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 154,
+      "id": 155,
       "source": 54,
       "target": 80,
       "dir": "DirFwd",
@@ -1403,7 +1422,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 155,
+      "id": 156,
       "source": 54,
       "target": 33,
       "dir": "DirFwd",
@@ -1412,7 +1431,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 156,
+      "id": 157,
       "source": 55,
       "target": 8,
       "dir": "DirFwd",
@@ -1421,7 +1440,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 157,
+      "id": 158,
       "source": 55,
       "target": 27,
       "dir": "DirFwd",
@@ -1430,7 +1449,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 158,
+      "id": 159,
       "source": 56,
       "target": 9,
       "dir": "DirFwd",
@@ -1439,7 +1458,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 159,
+      "id": 160,
       "source": 56,
       "target": 27,
       "dir": "DirFwd",
@@ -1448,7 +1467,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 160,
+      "id": 161,
       "source": 56,
       "target": 19,
       "dir": "DirFwd",
@@ -1457,7 +1476,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 161,
+      "id": 162,
       "source": 57,
       "target": 10,
       "dir": "DirFwd",
@@ -1466,7 +1485,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 162,
+      "id": 163,
       "source": 57,
       "target": 79,
       "dir": "DirFwd",
@@ -1475,7 +1494,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 163,
+      "id": 164,
       "source": 58,
       "target": 91,
       "dir": "DirFwd",
@@ -1484,7 +1503,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 164,
+      "id": 165,
       "source": 58,
       "target": 11,
       "dir": "DirFwd",
@@ -1493,7 +1512,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 165,
+      "id": 166,
       "source": 58,
       "target": 89,
       "dir": "DirFwd",
@@ -1502,7 +1521,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 166,
+      "id": 167,
       "source": 59,
       "target": 85,
       "dir": "DirFwd",
@@ -1511,7 +1530,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 167,
+      "id": 168,
       "source": 59,
       "target": 13,
       "dir": "DirFwd",
@@ -1520,7 +1539,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 168,
+      "id": 169,
       "source": 44,
       "target": 39,
       "dir": "DirFwd",
@@ -1529,7 +1548,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 169,
+      "id": 170,
       "source": 71,
       "target": 67,
       "dir": "DirFwd",
@@ -1538,7 +1557,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 170,
+      "id": 171,
       "source": 37,
       "target": 50,
       "dir": "DirFwd",
@@ -1547,7 +1566,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 171,
+      "id": 172,
       "source": 37,
       "target": 93,
       "dir": "DirFwd",
@@ -1556,8 +1575,8 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 172,
-      "source": 100,
+      "id": 173,
+      "source": 101,
       "target": 67,
       "dir": "DirFwd",
       "tooltip": "involves",
@@ -1565,7 +1584,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 173,
+      "id": 174,
       "source": 86,
       "target": 23,
       "dir": "DirFwd",
@@ -1574,7 +1593,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 174,
+      "id": 175,
       "source": 8,
       "target": 82,
       "dir": "DirFwd",
@@ -1583,7 +1602,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 175,
+      "id": 176,
       "source": 8,
       "target": 51,
       "dir": "DirFwd",
@@ -1592,7 +1611,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 176,
+      "id": 177,
       "source": 27,
       "target": 30,
       "dir": "DirFwd",
@@ -1601,16 +1620,16 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 177,
+      "id": 178,
       "source": 10,
-      "target": 95,
+      "target": 96,
       "dir": "DirFwd",
       "tooltip": "involves",
       "sstLinkType": "Expresses",
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 178,
+      "id": 179,
       "source": 85,
       "target": 95,
       "dir": "DirFwd",
@@ -1619,7 +1638,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 179,
+      "id": 180,
       "source": 7,
       "target": 48,
       "dir": "DirFwd",
@@ -1628,18 +1647,9 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 180,
-      "source": 12,
-      "target": 96,
-      "dir": "DirFwd",
-      "tooltip": "discusses",
-      "sstLinkType": "Expresses",
-      "semOrigin": "SemExplicit"
-    },
-    {
       "id": 181,
       "source": 12,
-      "target": 77,
+      "target": 97,
       "dir": "DirFwd",
       "tooltip": "discusses",
       "sstLinkType": "Expresses",
@@ -1648,7 +1658,7 @@
     {
       "id": 182,
       "source": 12,
-      "target": 76,
+      "target": 77,
       "dir": "DirFwd",
       "tooltip": "discusses",
       "sstLinkType": "Expresses",
@@ -1657,7 +1667,7 @@
     {
       "id": 183,
       "source": 12,
-      "target": 44,
+      "target": 76,
       "dir": "DirFwd",
       "tooltip": "discusses",
       "sstLinkType": "Expresses",
@@ -1665,6 +1675,15 @@
     },
     {
       "id": 184,
+      "source": 12,
+      "target": 44,
+      "dir": "DirFwd",
+      "tooltip": "discusses",
+      "sstLinkType": "Expresses",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 185,
       "source": 15,
       "target": 22,
       "dir": "DirFwd",
@@ -1673,7 +1692,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 185,
+      "id": 186,
       "source": 15,
       "target": 36,
       "dir": "DirFwd",
@@ -1682,7 +1701,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 186,
+      "id": 187,
       "source": 15,
       "target": 43,
       "dir": "DirFwd",
@@ -1691,7 +1710,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 187,
+      "id": 188,
       "source": 15,
       "target": 26,
       "dir": "DirFwd",
@@ -1700,7 +1719,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 188,
+      "id": 189,
       "source": 11,
       "target": 81,
       "dir": "DirFwd",
@@ -1709,7 +1728,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 189,
+      "id": 190,
       "source": 11,
       "target": 6,
       "dir": "DirFwd",

@@ -11,7 +11,7 @@
   "nodes": [
     {
       "id": 1,
-      "name": "Can you tell the difference between ‘K’ (",
+      "name": "Can you tell the difference between ‘K’ (\"\\u004B\") and ‘K’ (Kelvin sign \"\\u212A\") or ‘Ω’ (\"\\u03a9\") and ‘Ω’ (Ohm sign \"\\u2126\")? It is easy to overlook the sometimes minute differences between variants of the same underlying character. It is generally a good idea to disallow such variants in identifiers or anything where deceiving users with such look-alikes can pose a security hazard.",
       "alias": "",
       "type": "Thing"
     },
@@ -113,7 +113,7 @@
     },
     {
       "id": 18,
-      "name": "select S from Node where translate(S,'ǎáà','aaa') like '%shang%';\n\n  introduction to database issues (url) ",
+      "name": "select S from Node where translate(S,'ǎáà','aaa') like '%shang%';\n\n  introduction to database issues (url) \"https://www.enterprisedb.com/blog/unicode-normalization-postgresql-13\"\n\n                   ",
       "alias": "",
       "type": "Concept"
     },

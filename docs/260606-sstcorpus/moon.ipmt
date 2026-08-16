@@ -5,16 +5,16 @@ t4::a Mass of the Moon ::t
 t5::a Moment of Inertia of the Earth ::t
 t6::a Radius of the Moon ::t
 e7::a "Rate of distance (increase) \\( = 0.036\\) m/year, or 3.6 centimetres per year. (note) This can be measured by laser reflection off the Moon." ::e
-e8::a Rate of distance (increase) \[   \frac{dR}{dt} = \frac{2 \times 8.1 \times 10^{37}}{7.4 \times 10^{22} \times 3.8 \times 10^8} \left( \frac{27}{1} \times \frac{2 \times 10^{-5}}{3600 \times 24} \right) \] as the moon's orbit is about 27 days and the number of seconds in a day is about \(60 \times 60 \times 24\). ::e "There are some approximations and measurement uncertainties," ::tip
-e9::a Substuting from Kepler's law \[ I\dot\omega_E +  \frac{1}{2}\mu R\omega_M \frac{dR}{dt}  = 0 \] ::e
+e8::a "Rate of distance (increase) \\[   \\frac{dR}{dt} = \\frac{2 \\times 8.1 \\times 10^{37}}{7.4 \\times 10^{22} \\times 3.8 \\times 10^8} \\left( \\frac{27}{1} \\times \\frac{2 \\times 10^{-5}}{3600 \\times 24} \\right) \\] as the moon's orbit is about 27 days and the number of seconds in a day is about \\(60 \\times 60 \\times 24\\)." ::e "There are some approximations and measurement uncertainties," ::tip
+e9::a "Substuting from Kepler's law \\[ I\\dot\\omega_E +  \\frac{1}{2}\\mu R\\omega_M \\frac{dR}{dt}  = 0 \\]" ::e
 t10::a "The tides raised by the Moon are dragged ahead of the line of centres due to the \"friction\" of the contintental ocean floors. This means the Moon exerts a braking torque on the Earth. The loss of spin angular momentum is transferred to the Moon's orbital momentum." ::t
-e11::a The total angular momentum \(L\) of the Earth-Moon system is approximately constant. \[ L_{\rm TOT} = I\omega_{\rm earth} + \mu R^2 \omega_{\rm moon} \] where \(\mu\) is the reduced mass \[ \mu = \frac{mM}{m+M} = 7.4 \times 10^{22} kg \] ::e
+e11::a "The total angular momentum \\(L\\) of the Earth-Moon system is approximately constant. \\[ L_{\\rm TOT} = I\\omega_{\\rm earth} + \\mu R^2 \\omega_{\\rm moon} \\] where \\(\\mu\\) is the reduced mass \\[ \\mu = \\frac{mM}{m+M} = 7.4 \\times 10^{22} kg \\]" ::e
 e12::a "To invoke the conservation of momentum, differentiate %wrt time \\(d/dt = 0\\) \\[ 0 = I\\dot\\omega_E + \\frac{1}{2}\\mu R^{\\frac{1}{2}} \\sqrt{GM} \\frac{dR}{dt}\\]" ::e
 c13::a \( I = 8.1 \times 10^{37} kgm^2\) ::c
 c14::a \( M = 6 \times 10^{24} kg\) ::c
 c15::a \( R = 3.8 \times 10^{8} m\) ::c
 c16::a \( m = 7.4 \times 10^{22} kg\) ::c
-e17::a \(R\) and \(\omega\) are related by Kepler's Law: \[ \omega_{\rm Moon}^2 R^3 = GM\] thus the total angular momentum is \[ L_{\rm tot} = I \omega_E + \mu R^{\frac{1}{2}} \sqrt{GM} \] ::e
+e17::a "\\(R\\) and \\(\\omega\\) are related by Kepler's Law: \\[ \\omega_{\\rm Moon}^2 R^3 = GM\\] thus the total angular momentum is \\[ L_{\\rm tot} = I \\omega_E + \\mu R^{\\frac{1}{2}} \\sqrt{GM} \\]" ::e
 c18::a with respect to ::c
 e19::a wrt ::e
 

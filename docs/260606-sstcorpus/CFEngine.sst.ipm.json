@@ -11,12 +11,6 @@
   "nodes": [
     {
       "id": 1,
-      "name": "- edit_line bundles",
-      "alias": "",
-      "type": "Unresolved"
-    },
-    {
-      "id": 2,
       "name": "A promise type",
       "alias": "",
       "type": "Unresolved",
@@ -26,25 +20,25 @@
       ]
     },
     {
-      "id": 3,
+      "id": 2,
       "name": "A system outcome, usually a resource configuration, but maybe a message or behaviour.",
       "alias": "",
       "type": "Thing"
     },
     {
-      "id": 4,
+      "id": 3,
       "name": "CFEngine employs autonomous agents whose function is to keep certain \"promises\".",
       "alias": "",
       "type": "Unresolved"
     },
     {
-      "id": 5,
+      "id": 4,
       "name": "CFEngine is used for automating the configuration and maintenance of computer systems.",
       "alias": "",
       "type": "Unresolved"
     },
     {
-      "id": 6,
+      "id": 5,
       "name": "CFEngine promise type",
       "alias": "",
       "type": "Unresolved",
@@ -54,7 +48,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": 6,
       "name": "CFEngine promises",
       "alias": "",
       "type": "Unresolved",
@@ -65,7 +59,7 @@
       "tooltip": "Some might call promises \"rules\", but they are only self-imposed rules on the agents. · The agents can only promise its own intent to maintain state. If the operating sytem blocks an agent, or some other process interferes then even though it can keep its own promise to try and repair a deviant state, it can't promise that the system will end up according to specification."
     },
     {
-      "id": 8,
+      "id": 7,
       "name": "CFEngine syntax",
       "alias": "",
       "type": "Unresolved",
@@ -75,7 +69,7 @@
       ]
     },
     {
-      "id": 9,
+      "id": 8,
       "name": "Declarations of \"intended outcome\" or \"desired state\".",
       "alias": "",
       "type": "Unresolved",
@@ -85,19 +79,19 @@
       ]
     },
     {
-      "id": 10,
+      "id": 9,
       "name": "For example, the files type promise centers around managing file presence, content, and attributes while vars type promises hold data.",
       "alias": "",
       "type": "Unresolved"
     },
     {
-      "id": 11,
+      "id": 10,
       "name": "How autonomous entities called agents can declare their intended behaviour.",
       "alias": "",
       "type": "Thing"
     },
     {
-      "id": 12,
+      "id": 11,
       "name": "Promise Theory",
       "alias": "",
       "type": "Unresolved",
@@ -108,7 +102,7 @@
       "tooltip": "Promise Theory has nothing a priori to do with \"promises\" in programming languages like Javascript, though programming promise functionality is compatible with the Promise Theory definition.."
     },
     {
-      "id": 13,
+      "id": 12,
       "name": "Some might call promises \"rules\", but they are only self-imposed rules on the agents.",
       "alias": "",
       "type": "Unresolved",
@@ -118,165 +112,145 @@
       ]
     },
     {
-      "id": 14,
+      "id": 13,
       "name": "Suppose you have 1000 machines of different kinds ...",
       "alias": "",
       "type": "Unresolved"
     },
     {
-      "id": 15,
+      "id": 14,
       "name": "The desired state and/or maintainence schedule of an affected system resource / object",
       "alias": "",
       "type": "Thing"
     },
     {
-      "id": 16,
+      "id": 15,
       "name": "There was this one time, at LinkedIn camp....",
       "alias": "",
       "type": "Unresolved"
     },
     {
-      "id": 17,
+      "id": 16,
       "name": "Use basic promises rather than embedding shell commands",
       "alias": "",
       "type": "Unresolved"
     },
     {
-      "id": 18,
+      "id": 17,
       "name": "acl",
       "alias": "",
       "type": "Thing"
     },
     {
-      "id": 19,
+      "id": 18,
       "name": "action",
       "alias": "",
       "type": "Thing"
     },
     {
-      "id": 20,
+      "id": 19,
       "name": "classes",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 21,
+      "id": 20,
       "name": "copy_from",
       "alias": "",
       "type": "Thing"
     },
     {
-      "id": 22,
+      "id": 21,
       "name": "databases",
       "alias": "",
       "type": "Thing"
     },
     {
-      "id": 23,
+      "id": 22,
       "name": "defaults",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 24,
-      "name": "delete",
-      "alias": "",
-      "type": "Unresolved",
-      "candidates": [
-        "Thing",
-        "Concept"
-      ]
-    },
-    {
-      "id": 25,
+      "id": 23,
       "name": "delete_lines",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 26,
+      "id": 24,
       "name": "desired state",
       "alias": "",
       "type": "Thing"
     },
     {
-      "id": 27,
+      "id": 25,
       "name": "edit_line bundle",
       "alias": "",
       "type": "Unresolved"
     },
     {
-      "id": 28,
+      "id": 26,
       "name": "editfiles classes",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 29,
+      "id": 27,
       "name": "editfiles defaults",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 30,
+      "id": 28,
       "name": "editfiles delete_lines",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 31,
+      "id": 29,
       "name": "editfiles field_edits",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 32,
+      "id": 30,
       "name": "editfiles insert_lines",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 33,
+      "id": 31,
       "name": "editfiles meta",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 34,
+      "id": 32,
       "name": "editfiles replace_patterns",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 35,
+      "id": 33,
       "name": "editfiles reports",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 36,
+      "id": 34,
       "name": "editfiles vars",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 37,
-      "name": "field",
-      "alias": "",
-      "type": "Unresolved",
-      "candidates": [
-        "Thing",
-        "Concept"
-      ]
-    },
-    {
-      "id": 38,
+      "id": 35,
       "name": "field_edits",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 39,
+      "id": 36,
       "name": "files",
       "alias": "",
       "type": "Unresolved",
@@ -286,29 +260,19 @@
       ]
     },
     {
-      "id": 40,
-      "name": "insert",
-      "alias": "",
-      "type": "Unresolved",
-      "candidates": [
-        "Thing",
-        "Concept"
-      ]
-    },
-    {
-      "id": 41,
+      "id": 37,
       "name": "insert_lines",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 42,
+      "id": 38,
       "name": "intended outcome",
       "alias": "",
       "type": "Thing"
     },
     {
-      "id": 43,
+      "id": 39,
       "name": "meta",
       "alias": "",
       "type": "Unresolved",
@@ -318,41 +282,31 @@
       ]
     },
     {
-      "id": 44,
-      "name": "replace",
-      "alias": "",
-      "type": "Unresolved",
-      "candidates": [
-        "Thing",
-        "Concept"
-      ]
-    },
-    {
-      "id": 45,
+      "id": 40,
       "name": "replace_patterns",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 46,
+      "id": 41,
       "name": "reports",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 47,
+      "id": 42,
       "name": "rules",
       "alias": "",
       "type": "Thing"
     },
     {
-      "id": 48,
+      "id": 43,
       "name": "the kind of promise, usually a type of system resource.",
       "alias": "",
       "type": "Thing"
     },
     {
-      "id": 49,
+      "id": 44,
       "name": "vars",
       "alias": "",
       "type": "Event"
@@ -361,8 +315,8 @@
   "edges": [
     {
       "id": 0,
-      "source": 49,
-      "target": 36,
+      "source": 44,
+      "target": 34,
       "dir": "",
       "tooltip": "generalizes",
       "sstLinkType": "Expresses",
@@ -370,8 +324,8 @@
     },
     {
       "id": 0,
-      "source": 20,
-      "target": 28,
+      "source": 19,
+      "target": 26,
       "dir": "",
       "tooltip": "generalizes",
       "sstLinkType": "Expresses",
@@ -379,25 +333,7 @@
     },
     {
       "id": 0,
-      "source": 39,
-      "target": 19,
-      "dir": "",
-      "tooltip": "has an attribute",
-      "sstLinkType": "Expresses",
-      "semOrigin": ""
-    },
-    {
-      "id": 0,
-      "source": 39,
-      "target": 20,
-      "dir": "",
-      "tooltip": "has an attribute",
-      "sstLinkType": "Expresses",
-      "semOrigin": ""
-    },
-    {
-      "id": 0,
-      "source": 39,
+      "source": 36,
       "target": 18,
       "dir": "",
       "tooltip": "has an attribute",
@@ -406,8 +342,8 @@
     },
     {
       "id": 0,
-      "source": 39,
-      "target": 21,
+      "source": 36,
+      "target": 19,
       "dir": "",
       "tooltip": "has an attribute",
       "sstLinkType": "Expresses",
@@ -415,17 +351,26 @@
     },
     {
       "id": 0,
-      "source": 45,
-      "target": 35,
+      "source": 36,
+      "target": 17,
       "dir": "",
-      "tooltip": "comes before",
-      "sstLinkType": "LeadsTo",
+      "tooltip": "has an attribute",
+      "sstLinkType": "Expresses",
       "semOrigin": ""
     },
     {
       "id": 0,
-      "source": 43,
-      "target": 33,
+      "source": 36,
+      "target": 20,
+      "dir": "",
+      "tooltip": "has an attribute",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 23,
+      "target": 28,
       "dir": "",
       "tooltip": "generalizes",
       "sstLinkType": "Expresses",
@@ -433,7 +378,7 @@
     },
     {
       "id": 0,
-      "source": 23,
+      "source": 35,
       "target": 29,
       "dir": "",
       "tooltip": "generalizes",
@@ -442,7 +387,7 @@
     },
     {
       "id": 0,
-      "source": 24,
+      "source": 37,
       "target": 30,
       "dir": "",
       "tooltip": "generalizes",
@@ -451,11 +396,11 @@
     },
     {
       "id": 0,
-      "source": 37,
-      "target": 31,
+      "source": 40,
+      "target": 33,
       "dir": "",
-      "tooltip": "generalizes",
-      "sstLinkType": "Expresses",
+      "tooltip": "comes before",
+      "sstLinkType": "LeadsTo",
       "semOrigin": ""
     },
     {
@@ -469,8 +414,8 @@
     },
     {
       "id": 0,
-      "source": 44,
-      "target": 34,
+      "source": 39,
+      "target": 31,
       "dir": "",
       "tooltip": "generalizes",
       "sstLinkType": "Expresses",
@@ -478,8 +423,8 @@
     },
     {
       "id": 0,
-      "source": 46,
-      "target": 35,
+      "source": 22,
+      "target": 27,
       "dir": "",
       "tooltip": "generalizes",
       "sstLinkType": "Expresses",
@@ -487,8 +432,17 @@
     },
     {
       "id": 0,
-      "source": 12,
-      "target": 11,
+      "source": 41,
+      "target": 33,
+      "dir": "",
+      "tooltip": "generalizes",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 11,
+      "target": 10,
       "dir": "",
       "tooltip": "is about topic/them",
       "sstLinkType": "Expresses",
@@ -496,8 +450,8 @@
     },
     {
       "id": 0,
-      "source": 7,
-      "target": 9,
+      "source": 6,
+      "target": 8,
       "dir": "",
       "tooltip": "defined as",
       "sstLinkType": "Expresses",
@@ -505,8 +459,17 @@
     },
     {
       "id": 0,
+      "source": 6,
+      "target": 14,
+      "dir": "",
+      "tooltip": "has description",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
       "source": 7,
-      "target": 15,
+      "target": 6,
       "dir": "",
       "tooltip": "has description",
       "sstLinkType": "Expresses",
@@ -514,107 +477,44 @@
     },
     {
       "id": 0,
-      "source": 8,
-      "target": 7,
-      "dir": "",
-      "tooltip": "has description",
-      "sstLinkType": "Expresses",
-      "semOrigin": ""
-    },
-    {
-      "id": 0,
-      "source": 25,
-      "target": 27,
-      "dir": "",
-      "tooltip": "",
-      "sstLinkType": "PartOf",
-      "semOrigin": ""
-    },
-    {
-      "id": 0,
-      "source": 38,
-      "target": 27,
-      "dir": "",
-      "tooltip": "",
-      "sstLinkType": "PartOf",
-      "semOrigin": ""
-    },
-    {
-      "id": 0,
-      "source": 41,
-      "target": 27,
-      "dir": "",
-      "tooltip": "",
-      "sstLinkType": "PartOf",
-      "semOrigin": ""
-    },
-    {
-      "id": 0,
-      "source": 45,
-      "target": 27,
-      "dir": "",
-      "tooltip": "",
-      "sstLinkType": "PartOf",
-      "semOrigin": ""
-    },
-    {
-      "id": 0,
-      "source": 33,
-      "target": 49,
-      "dir": "",
-      "tooltip": "should precede/come before",
-      "sstLinkType": "LeadsTo",
-      "semOrigin": ""
-    },
-    {
-      "id": 0,
-      "source": 36,
-      "target": 23,
-      "dir": "",
-      "tooltip": "should precede/come before",
-      "sstLinkType": "LeadsTo",
-      "semOrigin": ""
-    },
-    {
-      "id": 0,
-      "source": 29,
-      "target": 20,
-      "dir": "",
-      "tooltip": "should precede/come before",
-      "sstLinkType": "LeadsTo",
-      "semOrigin": ""
-    },
-    {
-      "id": 0,
-      "source": 28,
+      "source": 23,
       "target": 25,
       "dir": "",
-      "tooltip": "should precede/come before",
-      "sstLinkType": "LeadsTo",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
       "semOrigin": ""
     },
     {
       "id": 0,
-      "source": 30,
-      "target": 38,
+      "source": 35,
+      "target": 25,
       "dir": "",
-      "tooltip": "should precede/come before",
-      "sstLinkType": "LeadsTo",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 37,
+      "target": 25,
+      "dir": "",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 40,
+      "target": 25,
+      "dir": "",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
       "semOrigin": ""
     },
     {
       "id": 0,
       "source": 31,
-      "target": 41,
-      "dir": "",
-      "tooltip": "should precede/come before",
-      "sstLinkType": "LeadsTo",
-      "semOrigin": ""
-    },
-    {
-      "id": 0,
-      "source": 32,
-      "target": 45,
+      "target": 44,
       "dir": "",
       "tooltip": "should precede/come before",
       "sstLinkType": "LeadsTo",
@@ -623,7 +523,7 @@
     {
       "id": 0,
       "source": 34,
-      "target": 46,
+      "target": 22,
       "dir": "",
       "tooltip": "should precede/come before",
       "sstLinkType": "LeadsTo",
@@ -631,8 +531,62 @@
     },
     {
       "id": 0,
-      "source": 2,
-      "target": 48,
+      "source": 27,
+      "target": 19,
+      "dir": "",
+      "tooltip": "should precede/come before",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 26,
+      "target": 23,
+      "dir": "",
+      "tooltip": "should precede/come before",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 28,
+      "target": 35,
+      "dir": "",
+      "tooltip": "should precede/come before",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 29,
+      "target": 37,
+      "dir": "",
+      "tooltip": "should precede/come before",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 30,
+      "target": 40,
+      "dir": "",
+      "tooltip": "should precede/come before",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 32,
+      "target": 41,
+      "dir": "",
+      "tooltip": "should precede/come before",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 1,
+      "target": 43,
       "dir": "",
       "tooltip": "defined as",
       "sstLinkType": "Expresses",
@@ -640,8 +594,8 @@
     },
     {
       "id": 0,
-      "source": 6,
-      "target": 3,
+      "source": 5,
+      "target": 2,
       "dir": "",
       "tooltip": "has description",
       "sstLinkType": "Expresses",
@@ -649,8 +603,8 @@
     },
     {
       "id": 0,
-      "source": 6,
-      "target": 49,
+      "source": 5,
+      "target": 44,
       "dir": "",
       "tooltip": "has example",
       "sstLinkType": "Expresses",
@@ -658,8 +612,8 @@
     },
     {
       "id": 0,
-      "source": 6,
-      "target": 20,
+      "source": 5,
+      "target": 19,
       "dir": "",
       "tooltip": "has example",
       "sstLinkType": "Expresses",
@@ -667,8 +621,8 @@
     },
     {
       "id": 0,
-      "source": 6,
-      "target": 39,
+      "source": 5,
+      "target": 36,
       "dir": "",
       "tooltip": "has example",
       "sstLinkType": "Expresses",
@@ -676,8 +630,8 @@
     },
     {
       "id": 0,
-      "source": 6,
-      "target": 22,
+      "source": 5,
+      "target": 21,
       "dir": "",
       "tooltip": "has example",
       "sstLinkType": "Expresses",
@@ -685,26 +639,26 @@
     },
     {
       "id": 0,
-      "source": 9,
+      "source": 8,
+      "target": 38,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 8,
+      "target": 24,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 12,
       "target": 42,
-      "dir": "",
-      "tooltip": "refers to",
-      "sstLinkType": "Expresses",
-      "semOrigin": ""
-    },
-    {
-      "id": 0,
-      "source": 9,
-      "target": 26,
-      "dir": "",
-      "tooltip": "refers to",
-      "sstLinkType": "Expresses",
-      "semOrigin": ""
-    },
-    {
-      "id": 0,
-      "source": 13,
-      "target": 47,
       "dir": "",
       "tooltip": "refers to",
       "sstLinkType": "Expresses",

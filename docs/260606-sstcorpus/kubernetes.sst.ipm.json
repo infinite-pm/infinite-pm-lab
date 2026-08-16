@@ -81,7 +81,7 @@
     },
     {
       "id": 10,
-      "name": "API server, scheduler, controller-manager, etcd",
+      "name": "API server, \"scheduler\", controller-manager, etcd",
       "alias": "",
       "type": "Unresolved",
       "candidates": [
@@ -101,12 +101,6 @@
     },
     {
       "id": 12,
-      "name": "CI",
-      "alias": "",
-      "type": "Thing"
-    },
-    {
-      "id": 13,
       "name": "CI/CD",
       "alias": "",
       "type": "Unresolved",
@@ -116,7 +110,7 @@
       ]
     },
     {
-      "id": 14,
+      "id": 13,
       "name": "CNCF",
       "alias": "",
       "type": "Unresolved",
@@ -126,31 +120,31 @@
       ]
     },
     {
-      "id": 15,
+      "id": 14,
       "name": "CRD",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 16,
+      "id": 15,
       "name": "CRD scope",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 17,
+      "id": 16,
       "name": "CRDs",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 18,
+      "id": 17,
       "name": "CSI",
       "alias": "",
       "type": "Thing"
     },
     {
-      "id": 19,
+      "id": 18,
       "name": "Continuous Integration / Continuous Deployment",
       "alias": "",
       "type": "Unresolved",
@@ -160,7 +154,7 @@
       ]
     },
     {
-      "id": 20,
+      "id": 19,
       "name": "Custom Resource Definition",
       "alias": "",
       "type": "Unresolved",
@@ -170,19 +164,19 @@
       ]
     },
     {
-      "id": 21,
-      "name": "EBS",
+      "id": 20,
+      "name": "EBS,",
       "alias": "",
       "type": "Thing"
     },
     {
-      "id": 22,
+      "id": 21,
       "name": "Google",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 23,
+      "id": 22,
       "name": "K8s",
       "alias": "",
       "type": "Unresolved",
@@ -192,31 +186,31 @@
       ]
     },
     {
-      "id": 24,
+      "id": 23,
       "name": "Kubernetes",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 25,
+      "id": 24,
       "name": "Kubernetes uses a \u003e\"hub-and-spoke API pattern\". All API usage terminates at the API server.",
       "alias": "",
       "type": "Unresolved"
     },
     {
-      "id": 26,
+      "id": 25,
       "name": "Linux control groups",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 27,
-      "name": "NFS",
+      "id": 26,
+      "name": "NFS,",
       "alias": "",
       "type": "Thing"
     },
     {
-      "id": 28,
+      "id": 27,
       "name": "Observing the \"actual state\" and compares to the \"desired state\". It infers the steps needed to achieve promised state.",
       "alias": "",
       "type": "Unresolved",
@@ -227,28 +221,34 @@
       "tooltip": "This is a kind of abductive reasoning."
     },
     {
-      "id": 29,
+      "id": 28,
       "name": "One-container-per-pod",
       "alias": "",
       "type": "Thing"
     },
     {
-      "id": 30,
+      "id": 29,
       "name": "PV",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 31,
+      "id": 30,
       "name": "PVC",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 32,
+      "id": 31,
       "name": "PVC to request volumes on demand",
       "alias": "",
       "type": "Event"
+    },
+    {
+      "id": 32,
+      "name": "PVC,",
+      "alias": "",
+      "type": "Thing"
     },
     {
       "id": 33,
@@ -354,13 +354,9 @@
     },
     {
       "id": 48,
-      "name": "Volumes in Kubernetes can be ephemeral or persistent. Ephemeral volumes exist only during the pod’s lifetime, while persistent volumes survive pod restarts or rescheduling.",
+      "name": "Volumes in Kubernetes can be ***ephemeral or ***persistent. Ephemeral volumes exist only during the pod’s lifetime, while persistent volumes survive pod restarts or rescheduling.",
       "alias": "",
-      "type": "Unresolved",
-      "candidates": [
-        "Thing",
-        "Concept"
-      ]
+      "type": "Unresolved"
     },
     {
       "id": 49,
@@ -624,79 +620,79 @@
     },
     {
       "id": 89,
+      "name": "controller-manager,",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 90,
       "name": "controllers",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 90,
+      "id": 91,
       "name": "cooperation",
       "alias": "",
       "type": "Thing"
     },
     {
-      "id": 91,
+      "id": 92,
       "name": "debugging",
       "alias": "",
       "type": "Thing"
     },
     {
-      "id": 92,
+      "id": 93,
       "name": "debugging a running pod",
       "alias": "",
       "type": "Thing"
     },
     {
-      "id": 93,
+      "id": 94,
       "name": "declarative",
       "alias": "",
       "type": "Thing"
     },
     {
-      "id": 94,
+      "id": 95,
       "name": "declarative automation of containerized workloads",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 95,
+      "id": 96,
       "name": "deployment",
       "alias": "",
       "type": "Thing"
     },
     {
-      "id": 96,
+      "id": 97,
       "name": "desired state",
       "alias": "",
       "type": "Thing"
     },
     {
-      "id": 97,
+      "id": 98,
       "name": "do not run at pod startup",
       "alias": "",
       "type": "Thing"
     },
     {
-      "id": 98,
+      "id": 99,
       "name": "docker",
       "alias": "",
       "type": "Unresolved"
     },
     {
-      "id": 99,
+      "id": 100,
       "name": "during pod startup",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 100,
-      "name": "environment",
-      "alias": "",
-      "type": "Thing"
-    },
-    {
       "id": 101,
-      "name": "ephemeral",
+      "name": "environment",
       "alias": "",
       "type": "Thing"
     },
@@ -792,7 +788,7 @@
     },
     {
       "id": 115,
-      "name": "logging",
+      "name": "logging,",
       "alias": "",
       "type": "Thing"
     },
@@ -900,33 +896,33 @@
     },
     {
       "id": 131,
-      "name": "persistent",
-      "alias": "",
-      "type": "Thing"
-    },
-    {
-      "id": 132,
       "name": "persists until deleted",
       "alias": "",
       "type": "Thing"
     },
     {
-      "id": 133,
+      "id": 132,
       "name": "pod",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 134,
+      "id": 133,
       "name": "pod of whales",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 135,
+      "id": 134,
       "name": "pod restart policy",
       "alias": "",
       "type": "Unresolved"
+    },
+    {
+      "id": 135,
+      "name": "pod,",
+      "alias": "",
+      "type": "Thing"
     },
     {
       "id": 136,
@@ -952,18 +948,24 @@
     },
     {
       "id": 139,
-      "name": "process",
+      "name": "pod’s",
       "alias": "",
       "type": "Thing"
     },
     {
       "id": 140,
-      "name": "promises",
+      "name": "process",
       "alias": "",
       "type": "Thing"
     },
     {
       "id": 141,
+      "name": "promises",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 142,
       "name": "promises that define system state",
       "alias": "",
       "type": "Unresolved",
@@ -973,109 +975,109 @@
       ]
     },
     {
-      "id": 142,
-      "name": "proxying",
+      "id": 143,
+      "name": "proxying,",
       "alias": "",
       "type": "Thing"
     },
     {
-      "id": 143,
+      "id": 144,
       "name": "reconciliation",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 144,
+      "id": 145,
       "name": "resources",
       "alias": "",
       "type": "Thing"
     },
     {
-      "id": 145,
+      "id": 146,
       "name": "resources allocated to processes",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 146,
+      "id": 147,
       "name": "root",
       "alias": "",
       "type": "Thing"
     },
     {
-      "id": 147,
+      "id": 148,
       "name": "root certificate",
       "alias": "",
       "type": "Thing"
     },
     {
-      "id": 148,
+      "id": 149,
       "name": "scheduler",
       "alias": "",
       "type": "Thing"
     },
     {
-      "id": 149,
+      "id": 150,
       "name": "security",
       "alias": "",
       "type": "Thing"
     },
     {
-      "id": 150,
+      "id": 151,
       "name": "self-hosted",
       "alias": "",
       "type": "Unresolved"
     },
     {
-      "id": 151,
+      "id": 152,
       "name": "separation of concerns",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 152,
+      "id": 153,
       "name": "service",
       "alias": "",
       "type": "Thing"
     },
     {
-      "id": 153,
+      "id": 154,
       "name": "service IPs to API server HTTPS endpoints",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 154,
+      "id": 155,
       "name": "service account",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 155,
+      "id": 156,
       "name": "service account tokens",
       "alias": "",
       "type": "Thing"
     },
     {
-      "id": 156,
+      "id": 157,
       "name": "setup tasks like config init or dependency checks",
       "alias": "",
       "type": "Thing"
     },
     {
-      "id": 157,
+      "id": 158,
       "name": "sidecar container",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 158,
-      "name": "sidecars",
+      "id": 159,
+      "name": "sidecars,",
       "alias": "",
       "type": "Thing"
     },
     {
-      "id": 159,
+      "id": 160,
       "name": "sidecars, init containers, and debugging",
       "alias": "",
       "type": "Unresolved",
@@ -1085,31 +1087,31 @@
       ]
     },
     {
-      "id": 160,
+      "id": 161,
       "name": "size and access requirements",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 161,
+      "id": 162,
       "name": "storage decoupling from the lifecycle of pods",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 162,
-      "name": "testing",
+      "id": 163,
+      "name": "testing,",
       "alias": "",
       "type": "Thing"
     },
     {
-      "id": 163,
+      "id": 164,
       "name": "the main container",
       "alias": "",
       "type": "Unresolved"
     },
     {
-      "id": 164,
+      "id": 165,
       "name": "the pod’s network and storage context",
       "alias": "",
       "type": "Unresolved",
@@ -1119,7 +1121,7 @@
       ]
     },
     {
-      "id": 165,
+      "id": 166,
       "name": "the same as restarting a pod",
       "alias": "",
       "type": "Unresolved",
@@ -1129,13 +1131,13 @@
       ]
     },
     {
-      "id": 166,
+      "id": 167,
       "name": "the smallest deployable computing unit in Kubernetes",
       "alias": "",
       "type": "Thing"
     },
     {
-      "id": 167,
+      "id": 168,
       "name": "usage pattern",
       "alias": "",
       "type": "Unresolved",
@@ -1145,7 +1147,7 @@
       ]
     },
     {
-      "id": 168,
+      "id": 169,
       "name": "v2",
       "alias": "",
       "type": "Unresolved",
@@ -1156,13 +1158,13 @@
       "tooltip": "this is the new generation"
     },
     {
-      "id": 169,
+      "id": 170,
       "name": "with \"client certificate\"",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 170,
+      "id": 171,
       "name": "worker",
       "alias": "",
       "type": "Thing"
@@ -1171,8 +1173,8 @@
   "edges": [
     {
       "id": 0,
-      "source": 24,
-      "target": 94,
+      "source": 23,
+      "target": 95,
       "dir": "",
       "tooltip": "enables",
       "sstLinkType": "LeadsTo",
@@ -1180,7 +1182,7 @@
     },
     {
       "id": 0,
-      "source": 24,
+      "source": 23,
       "target": 67,
       "dir": "",
       "tooltip": "implements",
@@ -1189,7 +1191,7 @@
     },
     {
       "id": 0,
-      "source": 24,
+      "source": 23,
       "target": 50,
       "dir": "",
       "tooltip": "represents/models",
@@ -1198,8 +1200,8 @@
     },
     {
       "id": 0,
-      "source": 24,
-      "target": 24,
+      "source": 23,
+      "target": 23,
       "dir": "",
       "tooltip": "refers to",
       "sstLinkType": "Expresses",
@@ -1207,8 +1209,8 @@
     },
     {
       "id": 0,
-      "source": 23,
-      "target": 24,
+      "source": 22,
+      "target": 23,
       "dir": "",
       "tooltip": "has abbreviation",
       "sstLinkType": "Expresses",
@@ -1216,8 +1218,8 @@
     },
     {
       "id": 0,
-      "source": 22,
-      "target": 24,
+      "source": 21,
+      "target": 23,
       "dir": "",
       "tooltip": "founds/founded",
       "sstLinkType": "LeadsTo",
@@ -1225,8 +1227,8 @@
     },
     {
       "id": 0,
-      "source": 14,
-      "target": 24,
+      "source": 13,
+      "target": 23,
       "dir": "",
       "tooltip": "maintains",
       "sstLinkType": "Expresses",
@@ -1234,7 +1236,7 @@
     },
     {
       "id": 0,
-      "source": 133,
+      "source": 132,
       "target": 9,
       "dir": "",
       "tooltip": "connects to",
@@ -1243,8 +1245,8 @@
     },
     {
       "id": 0,
-      "source": 133,
-      "target": 134,
+      "source": 132,
+      "target": 133,
       "dir": "",
       "tooltip": "named after",
       "sstLinkType": "LeadsTo",
@@ -1253,7 +1255,7 @@
     {
       "id": 0,
       "source": 126,
-      "target": 133,
+      "target": 132,
       "dir": "",
       "tooltip": "",
       "sstLinkType": "PartOf",
@@ -1261,8 +1263,8 @@
     },
     {
       "id": 0,
-      "source": 133,
-      "target": 166,
+      "source": 132,
+      "target": 167,
       "dir": "",
       "tooltip": "represents/models",
       "sstLinkType": "Expresses",
@@ -1270,8 +1272,8 @@
     },
     {
       "id": 0,
-      "source": 89,
-      "target": 133,
+      "source": 90,
+      "target": 132,
       "dir": "",
       "tooltip": "manages",
       "sstLinkType": "LeadsTo",
@@ -1279,8 +1281,8 @@
     },
     {
       "id": 0,
-      "source": 89,
-      "target": 89,
+      "source": 90,
+      "target": 90,
       "dir": "",
       "tooltip": "refers to",
       "sstLinkType": "Expresses",
@@ -1352,7 +1354,7 @@
     {
       "id": 0,
       "source": 88,
-      "target": 143,
+      "target": 144,
       "dir": "",
       "tooltip": "implements",
       "sstLinkType": "LeadsTo",
@@ -1369,7 +1371,7 @@
     },
     {
       "id": 0,
-      "source": 17,
+      "source": 16,
       "target": 127,
       "dir": "",
       "tooltip": "is used by",
@@ -1378,8 +1380,8 @@
     },
     {
       "id": 0,
-      "source": 17,
-      "target": 17,
+      "source": 16,
+      "target": 16,
       "dir": "",
       "tooltip": "refers to",
       "sstLinkType": "Expresses",
@@ -1406,7 +1408,7 @@
     {
       "id": 0,
       "source": 109,
-      "target": 153,
+      "target": 154,
       "dir": "",
       "tooltip": "redirects",
       "sstLinkType": "LeadsTo",
@@ -1414,7 +1416,7 @@
     },
     {
       "id": 0,
-      "source": 15,
+      "source": 14,
       "target": 58,
       "dir": "",
       "tooltip": "implements",
@@ -1423,7 +1425,7 @@
     },
     {
       "id": 0,
-      "source": 15,
+      "source": 14,
       "target": 123,
       "dir": "",
       "tooltip": "creates",
@@ -1432,7 +1434,7 @@
     },
     {
       "id": 0,
-      "source": 15,
+      "source": 14,
       "target": 127,
       "dir": "",
       "tooltip": "is used by",
@@ -1442,7 +1444,7 @@
     {
       "id": 0,
       "source": 122,
-      "target": 16,
+      "target": 15,
       "dir": "",
       "tooltip": "is used by",
       "sstLinkType": "LeadsTo",
@@ -1450,8 +1452,8 @@
     },
     {
       "id": 0,
-      "source": 143,
-      "target": 28,
+      "source": 144,
+      "target": 27,
       "dir": "",
       "tooltip": "means",
       "sstLinkType": "Expresses",
@@ -1459,17 +1461,8 @@
     },
     {
       "id": 0,
-      "source": 31,
-      "target": 161,
-      "dir": "",
-      "tooltip": "enables",
-      "sstLinkType": "LeadsTo",
-      "semOrigin": ""
-    },
-    {
-      "id": 0,
-      "source": 31,
-      "target": 31,
+      "source": 29,
+      "target": 29,
       "dir": "",
       "tooltip": "refers to",
       "sstLinkType": "Expresses",
@@ -1477,11 +1470,11 @@
     },
     {
       "id": 0,
-      "source": 31,
-      "target": 138,
+      "source": 30,
+      "target": 162,
       "dir": "",
-      "tooltip": "has behaviour",
-      "sstLinkType": "Expresses",
+      "tooltip": "enables",
+      "sstLinkType": "LeadsTo",
       "semOrigin": ""
     },
     {
@@ -1490,6 +1483,15 @@
       "target": 30,
       "dir": "",
       "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 30,
+      "target": 138,
+      "dir": "",
+      "tooltip": "has behaviour",
       "sstLinkType": "Expresses",
       "semOrigin": ""
     },
@@ -1514,7 +1516,7 @@
     {
       "id": 0,
       "source": 111,
-      "target": 169,
+      "target": 170,
       "dir": "",
       "tooltip": "authenticates",
       "sstLinkType": "LeadsTo",
@@ -1522,7 +1524,7 @@
     },
     {
       "id": 0,
-      "source": 13,
+      "source": 12,
       "target": 12,
       "dir": "",
       "tooltip": "refers to",
@@ -1531,7 +1533,7 @@
     },
     {
       "id": 0,
-      "source": 13,
+      "source": 12,
       "target": 11,
       "dir": "",
       "tooltip": "represents/models",
@@ -1540,8 +1542,8 @@
     },
     {
       "id": 0,
-      "source": 167,
-      "target": 29,
+      "source": 168,
+      "target": 28,
       "dir": "",
       "tooltip": "has example",
       "sstLinkType": "Expresses",
@@ -1568,7 +1570,7 @@
     {
       "id": 0,
       "source": 5,
-      "target": 133,
+      "target": 132,
       "dir": "",
       "tooltip": "refers to",
       "sstLinkType": "Expresses",
@@ -1577,7 +1579,7 @@
     {
       "id": 0,
       "source": 5,
-      "target": 132,
+      "target": 131,
       "dir": "",
       "tooltip": "has behaviour",
       "sstLinkType": "Expresses",
@@ -1586,7 +1588,7 @@
     {
       "id": 0,
       "source": 45,
-      "target": 159,
+      "target": 160,
       "dir": "",
       "tooltip": "used for",
       "sstLinkType": "Expresses",
@@ -1604,7 +1606,7 @@
     {
       "id": 0,
       "source": 55,
-      "target": 139,
+      "target": 140,
       "dir": "",
       "tooltip": "refers to",
       "sstLinkType": "Expresses",
@@ -1613,7 +1615,7 @@
     {
       "id": 0,
       "source": 107,
-      "target": 99,
+      "target": 100,
       "dir": "",
       "tooltip": "runs or executes",
       "sstLinkType": "LeadsTo",
@@ -1640,7 +1642,7 @@
     {
       "id": 0,
       "source": 107,
-      "target": 156,
+      "target": 157,
       "dir": "",
       "tooltip": "used for",
       "sstLinkType": "Expresses",
@@ -1649,7 +1651,7 @@
     {
       "id": 0,
       "source": 102,
-      "target": 92,
+      "target": 93,
       "dir": "",
       "tooltip": "used for",
       "sstLinkType": "Expresses",
@@ -1667,7 +1669,7 @@
     {
       "id": 0,
       "source": 102,
-      "target": 97,
+      "target": 98,
       "dir": "",
       "tooltip": "obeys the rule",
       "sstLinkType": "Expresses",
@@ -1675,7 +1677,7 @@
     },
     {
       "id": 0,
-      "source": 157,
+      "source": 158,
       "target": 117,
       "dir": "",
       "tooltip": "runs alongside",
@@ -1684,8 +1686,8 @@
     },
     {
       "id": 0,
-      "source": 157,
-      "target": 163,
+      "source": 158,
+      "target": 164,
       "dir": "",
       "tooltip": "terminates together with",
       "sstLinkType": "NearTo",
@@ -1693,8 +1695,8 @@
     },
     {
       "id": 0,
-      "source": 157,
-      "target": 151,
+      "source": 158,
+      "target": 152,
       "dir": "",
       "tooltip": "enables",
       "sstLinkType": "LeadsTo",
@@ -1702,7 +1704,7 @@
     },
     {
       "id": 0,
-      "source": 157,
+      "source": 158,
       "target": 116,
       "dir": "",
       "tooltip": "used for",
@@ -1729,7 +1731,7 @@
     },
     {
       "id": 0,
-      "source": 154,
+      "source": 155,
       "target": 70,
       "dir": "",
       "tooltip": "injects",
@@ -1739,7 +1741,7 @@
     {
       "id": 0,
       "source": 78,
-      "target": 16,
+      "target": 15,
       "dir": "",
       "tooltip": "is used by",
       "sstLinkType": "LeadsTo",
@@ -1748,7 +1750,7 @@
     {
       "id": 0,
       "source": 33,
-      "target": 31,
+      "target": 30,
       "dir": "",
       "tooltip": "binds to",
       "sstLinkType": "LeadsTo",
@@ -1757,7 +1759,7 @@
     {
       "id": 0,
       "source": 33,
-      "target": 30,
+      "target": 29,
       "dir": "",
       "tooltip": "has abbreviation",
       "sstLinkType": "Expresses",
@@ -1802,7 +1804,7 @@
     {
       "id": 0,
       "source": 37,
-      "target": 32,
+      "target": 31,
       "dir": "",
       "tooltip": "is used by",
       "sstLinkType": "LeadsTo",
@@ -1847,7 +1849,7 @@
     {
       "id": 0,
       "source": 35,
-      "target": 165,
+      "target": 166,
       "dir": "",
       "tooltip": "not the same as",
       "sstLinkType": "NearTo",
@@ -1865,7 +1867,7 @@
     {
       "id": 0,
       "source": 102,
-      "target": 135,
+      "target": 134,
       "dir": "",
       "tooltip": "",
       "sstLinkType": "PartOf",
@@ -1874,7 +1876,7 @@
     {
       "id": 0,
       "source": 117,
-      "target": 157,
+      "target": 158,
       "dir": "",
       "tooltip": "runs alongside",
       "sstLinkType": "NearTo",
@@ -1882,8 +1884,8 @@
     },
     {
       "id": 0,
-      "source": 163,
-      "target": 157,
+      "source": 164,
+      "target": 158,
       "dir": "",
       "tooltip": "terminates together with",
       "sstLinkType": "NearTo",
@@ -1891,8 +1893,8 @@
     },
     {
       "id": 0,
-      "source": 20,
-      "target": 15,
+      "source": 19,
+      "target": 14,
       "dir": "",
       "tooltip": "has abbreviation",
       "sstLinkType": "Expresses",
@@ -1910,7 +1912,7 @@
     {
       "id": 0,
       "source": 136,
-      "target": 133,
+      "target": 135,
       "dir": "",
       "tooltip": "refers to",
       "sstLinkType": "Expresses",
@@ -1919,7 +1921,7 @@
     {
       "id": 0,
       "source": 136,
-      "target": 31,
+      "target": 32,
       "dir": "",
       "tooltip": "refers to",
       "sstLinkType": "Expresses",
@@ -1937,7 +1939,7 @@
     {
       "id": 0,
       "source": 136,
-      "target": 141,
+      "target": 142,
       "dir": "",
       "tooltip": "expresses property",
       "sstLinkType": "Expresses",
@@ -1946,7 +1948,7 @@
     {
       "id": 0,
       "source": 34,
-      "target": 160,
+      "target": 161,
       "dir": "",
       "tooltip": "determines",
       "sstLinkType": "LeadsTo",
@@ -1955,7 +1957,7 @@
     {
       "id": 0,
       "source": 34,
-      "target": 30,
+      "target": 29,
       "dir": "",
       "tooltip": "binds to",
       "sstLinkType": "LeadsTo",
@@ -1973,7 +1975,7 @@
     {
       "id": 0,
       "source": 34,
-      "target": 31,
+      "target": 30,
       "dir": "",
       "tooltip": "has abbreviation",
       "sstLinkType": "Expresses",
@@ -1999,7 +2001,7 @@
     },
     {
       "id": 0,
-      "source": 169,
+      "source": 170,
       "target": 75,
       "dir": "",
       "tooltip": "refers to",
@@ -2017,8 +2019,8 @@
     },
     {
       "id": 0,
-      "source": 26,
-      "target": 145,
+      "source": 25,
+      "target": 146,
       "dir": "",
       "tooltip": "constrains",
       "sstLinkType": "LeadsTo",
@@ -2026,7 +2028,7 @@
     },
     {
       "id": 0,
-      "source": 26,
+      "source": 25,
       "target": 73,
       "dir": "",
       "tooltip": "has version",
@@ -2035,8 +2037,8 @@
     },
     {
       "id": 0,
-      "source": 26,
-      "target": 168,
+      "source": 25,
+      "target": 169,
       "dir": "",
       "tooltip": "has version",
       "sstLinkType": "Expresses",
@@ -2062,8 +2064,8 @@
     },
     {
       "id": 0,
-      "source": 94,
-      "target": 93,
+      "source": 95,
+      "target": 94,
       "dir": "",
       "tooltip": "refers to",
       "sstLinkType": "Expresses",
@@ -2071,7 +2073,7 @@
     },
     {
       "id": 0,
-      "source": 94,
+      "source": 95,
       "target": 65,
       "dir": "",
       "tooltip": "refers to",
@@ -2090,7 +2092,7 @@
     {
       "id": 0,
       "source": 57,
-      "target": 133,
+      "target": 132,
       "dir": "",
       "tooltip": "runs or executes",
       "sstLinkType": "LeadsTo",
@@ -2108,7 +2110,7 @@
     {
       "id": 0,
       "source": 108,
-      "target": 24,
+      "target": 23,
       "dir": "",
       "tooltip": "refers to",
       "sstLinkType": "Expresses",
@@ -2116,8 +2118,8 @@
     },
     {
       "id": 0,
-      "source": 159,
-      "target": 158,
+      "source": 160,
+      "target": 159,
       "dir": "",
       "tooltip": "refers to",
       "sstLinkType": "Expresses",
@@ -2125,7 +2127,7 @@
     },
     {
       "id": 0,
-      "source": 159,
+      "source": 160,
       "target": 106,
       "dir": "",
       "tooltip": "refers to",
@@ -2134,8 +2136,8 @@
     },
     {
       "id": 0,
-      "source": 159,
-      "target": 91,
+      "source": 160,
+      "target": 92,
       "dir": "",
       "tooltip": "refers to",
       "sstLinkType": "Expresses",
@@ -2144,7 +2146,7 @@
     {
       "id": 0,
       "source": 63,
-      "target": 100,
+      "target": 101,
       "dir": "",
       "tooltip": "refers to",
       "sstLinkType": "Expresses",
@@ -2161,7 +2163,7 @@
     },
     {
       "id": 0,
-      "source": 165,
+      "source": 166,
       "target": 35,
       "dir": "",
       "tooltip": "not the same as",
@@ -2170,8 +2172,8 @@
     },
     {
       "id": 0,
-      "source": 165,
-      "target": 133,
+      "source": 166,
+      "target": 132,
       "dir": "",
       "tooltip": "refers to",
       "sstLinkType": "Expresses",
@@ -2179,8 +2181,8 @@
     },
     {
       "id": 0,
-      "source": 157,
-      "target": 164,
+      "source": 158,
+      "target": 165,
       "dir": "",
       "tooltip": "",
       "sstLinkType": "PartOf",
@@ -2188,8 +2190,8 @@
     },
     {
       "id": 0,
-      "source": 164,
-      "target": 133,
+      "source": 165,
+      "target": 139,
       "dir": "",
       "tooltip": "refers to",
       "sstLinkType": "Expresses",
@@ -2207,7 +2209,7 @@
     {
       "id": 0,
       "source": 116,
-      "target": 142,
+      "target": 143,
       "dir": "",
       "tooltip": "refers to",
       "sstLinkType": "Expresses",
@@ -2216,7 +2218,7 @@
     {
       "id": 0,
       "source": 116,
-      "target": 152,
+      "target": 153,
       "dir": "",
       "tooltip": "refers to",
       "sstLinkType": "Expresses",
@@ -2243,7 +2245,7 @@
     {
       "id": 0,
       "source": 1,
-      "target": 155,
+      "target": 156,
       "dir": "",
       "tooltip": "refers to",
       "sstLinkType": "Expresses",
@@ -2261,7 +2263,7 @@
     {
       "id": 0,
       "source": 70,
-      "target": 146,
+      "target": 147,
       "dir": "",
       "tooltip": "refers to",
       "sstLinkType": "Expresses",
@@ -2269,7 +2271,7 @@
     },
     {
       "id": 0,
-      "source": 153,
+      "source": 154,
       "target": 7,
       "dir": "",
       "tooltip": "refers to",
@@ -2279,7 +2281,7 @@
     {
       "id": 0,
       "source": 80,
-      "target": 96,
+      "target": 97,
       "dir": "",
       "tooltip": "refers to",
       "sstLinkType": "Expresses",
@@ -2296,7 +2298,7 @@
     },
     {
       "id": 0,
-      "source": 28,
+      "source": 27,
       "target": 61,
       "dir": "",
       "tooltip": "refers to",
@@ -2305,8 +2307,8 @@
     },
     {
       "id": 0,
-      "source": 28,
-      "target": 96,
+      "source": 27,
+      "target": 97,
       "dir": "",
       "tooltip": "refers to",
       "sstLinkType": "Expresses",
@@ -2333,7 +2335,7 @@
     {
       "id": 0,
       "source": 67,
-      "target": 90,
+      "target": 91,
       "dir": "",
       "tooltip": "refers to",
       "sstLinkType": "Expresses",
@@ -2341,8 +2343,8 @@
     },
     {
       "id": 0,
-      "source": 141,
-      "target": 140,
+      "source": 142,
+      "target": 141,
       "dir": "",
       "tooltip": "refers to",
       "sstLinkType": "Expresses",
@@ -2369,7 +2371,7 @@
     {
       "id": 0,
       "source": 54,
-      "target": 133,
+      "target": 132,
       "dir": "",
       "tooltip": "refers to",
       "sstLinkType": "Expresses",
@@ -2377,17 +2379,8 @@
     },
     {
       "id": 0,
-      "source": 32,
-      "target": 31,
-      "dir": "",
-      "tooltip": "refers to",
-      "sstLinkType": "Expresses",
-      "semOrigin": ""
-    },
-    {
-      "id": 0,
-      "source": 60,
-      "target": 21,
+      "source": 31,
+      "target": 30,
       "dir": "",
       "tooltip": "refers to",
       "sstLinkType": "Expresses",
@@ -2396,7 +2389,7 @@
     {
       "id": 0,
       "source": 60,
-      "target": 27,
+      "target": 20,
       "dir": "",
       "tooltip": "refers to",
       "sstLinkType": "Expresses",
@@ -2405,7 +2398,7 @@
     {
       "id": 0,
       "source": 60,
-      "target": 18,
+      "target": 26,
       "dir": "",
       "tooltip": "refers to",
       "sstLinkType": "Expresses",
@@ -2413,7 +2406,16 @@
     },
     {
       "id": 0,
-      "source": 161,
+      "source": 60,
+      "target": 17,
+      "dir": "",
+      "tooltip": "refers to",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 162,
       "target": 137,
       "dir": "",
       "tooltip": "refers to",
@@ -2423,7 +2425,7 @@
     {
       "id": 0,
       "source": 114,
-      "target": 30,
+      "target": 29,
       "dir": "",
       "tooltip": "doesn't affect",
       "sstLinkType": "LeadsTo",
@@ -2450,7 +2452,7 @@
     {
       "id": 0,
       "source": 2,
-      "target": 170,
+      "target": 171,
       "dir": "",
       "tooltip": "refers to",
       "sstLinkType": "Expresses",
@@ -2468,7 +2470,7 @@
     {
       "id": 0,
       "source": 10,
-      "target": 148,
+      "target": 149,
       "dir": "",
       "tooltip": "refers to",
       "sstLinkType": "Expresses",
@@ -2477,7 +2479,7 @@
     {
       "id": 0,
       "source": 10,
-      "target": 88,
+      "target": 89,
       "dir": "",
       "tooltip": "refers to",
       "sstLinkType": "Expresses",
@@ -2513,7 +2515,7 @@
     {
       "id": 0,
       "source": 3,
-      "target": 147,
+      "target": 148,
       "dir": "",
       "tooltip": "refers to",
       "sstLinkType": "Expresses",
@@ -2531,7 +2533,7 @@
     {
       "id": 0,
       "source": 9,
-      "target": 133,
+      "target": 132,
       "dir": "",
       "tooltip": "connects to",
       "sstLinkType": "NearTo",
@@ -2548,8 +2550,8 @@
     },
     {
       "id": 0,
-      "source": 145,
-      "target": 144,
+      "source": 146,
+      "target": 145,
       "dir": "",
       "tooltip": "refers to",
       "sstLinkType": "Expresses",
@@ -2558,7 +2560,7 @@
     {
       "id": 0,
       "source": 74,
-      "target": 24,
+      "target": 23,
       "dir": "",
       "tooltip": "is used by",
       "sstLinkType": "LeadsTo",
@@ -2566,8 +2568,8 @@
     },
     {
       "id": 0,
-      "source": 19,
-      "target": 13,
+      "source": 18,
+      "target": 12,
       "dir": "",
       "tooltip": "has abbreviation",
       "sstLinkType": "Expresses",
@@ -2576,7 +2578,7 @@
     {
       "id": 0,
       "source": 11,
-      "target": 162,
+      "target": 163,
       "dir": "",
       "tooltip": "refers to",
       "sstLinkType": "Expresses",
@@ -2585,7 +2587,7 @@
     {
       "id": 0,
       "source": 11,
-      "target": 149,
+      "target": 150,
       "dir": "",
       "tooltip": "refers to",
       "sstLinkType": "Expresses",
@@ -2594,7 +2596,7 @@
     {
       "id": 0,
       "source": 11,
-      "target": 95,
+      "target": 96,
       "dir": "",
       "tooltip": "refers to",
       "sstLinkType": "Expresses",
@@ -2679,24 +2681,6 @@
       "dir": "",
       "tooltip": "then followed by",
       "sstLinkType": "LeadsTo",
-      "semOrigin": ""
-    },
-    {
-      "id": 0,
-      "source": 48,
-      "target": 101,
-      "dir": "",
-      "tooltip": "refers to",
-      "sstLinkType": "Expresses",
-      "semOrigin": ""
-    },
-    {
-      "id": 0,
-      "source": 48,
-      "target": 131,
-      "dir": "",
-      "tooltip": "refers to",
-      "sstLinkType": "Expresses",
       "semOrigin": ""
     }
   ]

@@ -99,12 +99,12 @@
     <path d="M 245.00 680.00 L 254.00 675.50 L 251.75 680.00 L 254.00 684.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="7" data-edge-base="expresses" data-edge-from="7" data-edge-to="20">
-    <polyline points="425.00,567.12 460,603 460,1033 251.65,1069.94" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 245.00 1071.11 L 253.08 1065.11 L 251.65 1069.94 L 254.65 1073.97 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <polyline points="326.02,755.00 327,1075 251.75,1075.00" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 245.00 1075.00 L 254.00 1070.50 L 251.75 1075.00 L 254.00 1079.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="8" data-edge-base="expresses" data-edge-from="7" data-edge-to="12">
-    <polyline points="425.00,660.42 480,698 480,1105 251.66,1143.06" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 245.00 1144.17 L 253.14 1138.25 L 251.66 1143.06 L 254.62 1147.13 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <polyline points="351.01,755.00 352,1160 251.75,1160.00" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 245.00 1160.00 L 254.00 1155.50 L 251.75 1160.00 L 254.00 1164.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="9" data-edge-base="expresses" data-edge-from="8" data-edge-to="4">
     <line x1="295.00" y1="227.92" x2="248.89" y2="162.60" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
@@ -146,12 +146,12 @@
       </g>
     </g>
     <g class="edge" data-edge-idx="13" data-edge-base="expresses" data-edge-from="8" data-edge-to="18">
-    <polyline points="425.00,346.28 510,385 510,1175 251.68,1213.27" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
-    <path d="M 245.00 1214.26 L 253.24 1208.49 L 251.68 1213.27 L 254.56 1217.39 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
+    <polyline points="425.00,349.12 460,385 460,1175 251.64,1212.88" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
+    <path d="M 245.00 1214.09 L 253.05 1208.05 L 251.64 1212.88 L 254.66 1216.91 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="14" data-edge-base="partof" data-edge-from="7" data-edge-to="11">
-    <line x1="360.00" y1="755.00" x2="360.00" y2="778.25" stroke="#82b366" stroke-width="3" />
-    <path d="M 360.00 785.00 L 355.50 776.00 L 360.00 778.25 L 364.50 776.00 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
+    <line x1="375.75" y1="755.00" x2="365.02" y2="778.84" stroke="#82b366" stroke-width="3" />
+    <path d="M 362.25 785.00 L 361.84 774.95 L 365.02 778.84 L 370.05 778.64 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="15" data-edge-base="partof" data-edge-from="8" data-edge-to="11">
     <polyline points="425.00,257.28 510,296 510,820 489.77,840.23" fill="none" stroke="#82b366" stroke-width="3" />

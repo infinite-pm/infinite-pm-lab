@@ -11,11 +11,11 @@ e10::a \( I(\nu) = \lim_{a\rightarrow 0} -\frac{d}{da} \;  \int_0^\infty  \exp\l
 e11::a \( I(u) = -2  \lim_{a\rightarrow 0}  \;\left\lbrack \frac{2a}{4} (\frac{1}{2} - \ldots) - \frac{1}{4}\sqrt{\pi}   \right\rbrack\;e^{a^2/4} \) ::e
 
 e1 --::L "then followed by"--> e4
-e4 --::L "then followed by"--> e7
 e5 --::L "then followed by"--> e6
 e6 --::L "then followed by"--> e9
 e9 --::L "then followed by"--> e3
 e3 --::L "then followed by"--> e8
+e4 --::L "then followed by"--> e7
 e7 --::L "then followed by"--> e10
 e10 --::L "then followed by"--> e5
 e8 --::L "then followed by"--> e11

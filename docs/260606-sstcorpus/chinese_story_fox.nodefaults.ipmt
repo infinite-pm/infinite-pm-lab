@@ -31,12 +31,12 @@ u30::a adv. amazedly ::?ce
 u31::a adv. earnestly ::?ce
 u32::a adv. embarrassedly ::?ce
 u33::a adv. kindly ::?ce
-u34::a chījīng ::?tec
+e34::a chījīng ::e
 e35::a "kànjiàn wūyā zhèng zhàn zài shùzhī shang, zuĭlĭ diāo zhe yí piàn ròu.\n   看见   乌鸦   正    站   在   树枝   上，   嘴里   叼   着  一  片   肉。" ::e
-u36::a nánwéiqíng ::?tec
+e36::a nánwéiqíng ::e
 e37::a "nă zhĭ niăo yŏu nín zhème wūhēi fāliàng de yŭmáo. Nín zhēn shì měi jí le.》\n 哪  只   鸟   有  您  这么   乌黑    发亮   的 羽毛。  您    真   是  美  极 了。》" ::e
-u38::a qīnqiè ::?tec
-u39::a rènzhēn ::?tec
+e38::a qīnqiè ::e
+e39::a rènzhēn ::e
 u40::a saw a crow sitting on a branch with a piece of meat in its mouth. ::?ce
 u41::a such a bird with nice shiny black feathers. You are so pretty.》 ::?ce
 e42::a "wŏ kěndìng nín de shēngyīn shì suóyŏu niăo zhōng zuì dòngtīng de.》 \n我   肯定    您  的   声音    是   所有   鸟    中    最   动听     的.》" ::e
@@ -45,20 +45,23 @@ e44::a "《Nín néng yòng nín měimiào de shēngyīn chàng jĭ jù ma?》  
 e45::a "《Qīn’ài de wūyā,  nín de yŭmáo zhēn piàoliang, wŏ cónglái méi jiànguò\n 《 亲爱   的  乌鸦，    您  的   羽毛   真     漂亮，     我   从来   没     见过" ::e
 u46::a 《Would you please sing a song with your wonderful voice?》 The fox begged the crow. ::?ce
 u47::a 乌鸦和狐狸 ::?ce
-u48::a 亲切 ::?ce
-u49::a 吃惊 ::?ce
-u50::a 认真 ::?ce
-u51::a 难为情 ::?ce
+e48::a 亲切 ::e
+e49::a 吃惊 ::e
+e50::a 认真 ::e
+e51::a 难为情 ::e
 
 u47 --::X "hanzi has english"--> u11
-u34 --::X "pinyin has hanzi"--> u49
-u34 --::X "pinyin has english"--> u30
-u39 --::X "pinyin has hanzi"--> u50
-u39 --::X "pinyin has english"--> u31
-u36 --::X "pinyin has hanzi"--> u51
-u36 --::X "pinyin has english"--> u32
-u38 --::X "pinyin has hanzi"--> u48
-u38 --::X "pinyin has english"--> u33
+e49 --::L "then followed by"--> e50
+e34 --::X "pinyin has hanzi"--> e49
+e34 --::X "pinyin has english"--> u30
+e50 --::L "then followed by"--> e51
+e39 --::X "pinyin has hanzi"--> e50
+e39 --::X "pinyin has english"--> u31
+e51 --::L "then followed by"--> e48
+e36 --::X "pinyin has hanzi"--> e51
+e36 --::X "pinyin has english"--> u32
+e38 --::X "pinyin has hanzi"--> e48
+e38 --::X "pinyin has english"--> u33
 e26 --::L "then followed by"--> e9
 e26 --::X "pinyin has hanzi"--> u47
 e26 --::X "pinyin has english"--> u11
@@ -96,4 +99,5 @@ e44 --::L "then followed by"--> e29
 e44 --::X "pinyin has english"--> u46
 e29 --::L "then followed by"--> e4
 e29 --::X "pinyin has english"--> u12
+e27 --::L "then followed by"--> e49
 e27 --::X "pinyin has english"--> u15

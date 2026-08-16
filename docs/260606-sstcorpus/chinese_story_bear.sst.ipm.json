@@ -1,0 +1,6115 @@
+{
+  "version": "25.09",
+  "src": {
+    "type": "n4l-sst-native",
+    "ipmt": "",
+    "positions": {
+      "nodes": null,
+      "edges": null
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "name": "\"Nàlǐ shì wēixiǎn dìdài\", suǒyǐ tāmen yuēhǎo le, wúlùn yùjiàn shénme wēixiǎn, liǎng gè rén dōu yào xiānghù bāngzhù.",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 2,
+      "name": "A merchant and a farmer travelled together. They needed to pass through an uninhabited forest.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 3,
+      "name": "A merchant and a farmer were travelling together. They needed to pass through a forest with no trace/whiff/mist of people.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 4,
+      "name": "After the bear approached, it saw the farmer lying on the ground. It came over to sniff him with its nose and circled around him for a long time.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 5,
+      "name": "After the bear got close, it saw the farmer lying on the ground and came over to sniff using its nose, circling around him for a long time.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 6,
+      "name": "But the farmer hugged the tree trunk and just couldn't climb up, so he had no choice but to quickly lie on the ground and pretend to be dead.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 7,
+      "name": "But the farmer hugging the tree just couldn't climb up, he was forced to quickly lie on the ground and play dead.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 8,
+      "name": "Bù jǐn bù慢 de shuō",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "It was a dangerous area, so they made an agreement that no matter what danger they encountered, both of them would help each other.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 10,
+      "name": "It was a dangerous place so they made a pact that no matter what danger they experienced they would help each other.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 11,
+      "name": "Knowing that the bear had gone, the merchant only then came down from up in the tree. the farmer also got up. The merchant then asked the farmer: \"Friend, when the great bear was leaning over you just now, what did he whisper in your ear?\"",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 12,
+      "name": "Not long after they walked into the forest, danger arrived—a big bear was walking toward them from up ahead.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 13,
+      "name": "Not until the big bear had walked far away did the merchant come down from the tree, and the farmer climbed up from the ground too. The merchant then asked the farmer, \"My friend, what did the big bear whisper right next to your ear just now?\"",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 14,
+      "name": "Nàlǐ shì wéixiǎn dìdài",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Nàlǐ shì wēixiǎn dìdài",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 16,
+      "name": "Nǐ de ěr páng gēn nǐ shuōle xiē shénme ya",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Pretending not to care at all, the farmer said calmly and unhurriedly, \"The big bear didn't actually tell me any secrets. It only told me not to make friends with untrustworthy people next time!\"",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 18,
+      "name": "Seeing the bear walking toward them, the merchant abandoned the farmer and climbed the tree alone to hide.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 19,
+      "name": "Shāngrén dòngzuò mǐnjié, tā gǎnkuài páshàng zuìjìn de dà shù duǒ qǐlái.",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 20,
+      "name": "Speaking in a measured, unhurried manner",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 21,
+      "name": "The bear thought the farmer was truly a dead person, so it walked away. Because bears do not eat dead people.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 22,
+      "name": "The farmer closed his eyes tightly, held his breath, and kept perfectly still.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 23,
+      "name": "The farmer shut his eyes tightly, held his breath, and did not move at all.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 24,
+      "name": "The farmer, pretending not to care, evenly replied: \"Actually, the great bear didn't speak any secrets, he only told me that next time don't make friends with untrustworthy people.\"",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 25,
+      "name": "The great bear presumed the farmer really was a dead person, and soon walked away, because bears be like don't eat dead people yo!",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 26,
+      "name": "The merchant acted with agility, quickly climbing the nearest large tree to hide.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 27,
+      "name": "The merchant moved quickly and nimbly; he immediately climbed up the nearest large tree to hide.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 28,
+      "name": "They hadn't gone far through the forest when danger suddenly was upon them. A large bear was walking towards them from up ahead.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 29,
+      "name": "This sentence contains two \"lin\" words. In the first half of the sentence, lín is the character 林.  The Word: 树林 i.e. shùlín with literal meaning 树 /shù / tree + 林 / lín / forest/grove.  Character Origin: the character 林, it is literally made of two \"tree\" characters 木 = mù standing side-by-side. In the second half of the sentence, lín is the character 临 [traditional: 臨]. The Word: 来临 / láilín has literal meaning 来 / lái / to come + 临 / to arrive/draw near. Usage: 临 on its own means \"to be close to,\" \"to face,\" or \"to arrive.\" When combined as 来临, it means \"to arrive\" or \"to approach.\" It is highly formal and usually used for abstract things, e.g., danger approaching, winter arriving, or a new era coming.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 30,
+      "name": "Tāmen zǒujìn shùlín bù jiǔ, wēixiǎn jiù láilín le —— yì zhī dà xióng cóng qiánmiàn cháo tā men zǒu lái.",
+      "alias": "",
+      "type": "Event",
+      "tooltip": "This sentence contains two \"lin\" words. In the first half of the sentence, lín is the character 林.  The Word: 树林 i.e. shùlín with literal meaning 树 /shù / tree + 林 / lín / forest/grove.  Character Origin: the character 林, it is literally made of two \"tree\" characters 木 = mù standing side-by-side. In the second half of the sentence, lín is the character 临 [traditional: 臨]. The Word: 来临 / láilín has literal meaning 来 / lái / to come + 临 / to arrive/draw near. Usage: 临 on its own means \"to be close to,\" \"to face,\" or \"to arrive.\" When combined as 来临, it means \"to arrive\" or \"to approach.\" It is highly formal and usually used for abstract things, e.g., danger approaching, winter arriving, or a new era coming. · This sentence contains two \"jiu\" words: 不久 /bù jiǔ / not long after, and 就 / jiù / then or immediately."
+    },
+    {
+      "id": 31,
+      "name": "What was whispered in your ear?",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 32,
+      "name": "Yí wèi shāngrén hé yí wèi nóngfū jiébàn tóngxíng, tāmen yào jīngguò \"yí gè méiyǒurén yān de shùlín\".",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 33,
+      "name": "a forest devoid of human presence",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 34,
+      "name": "a large bear appeared from up ahead walking towards them",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 35,
+      "name": "a long time",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 36,
+      "name": "abandon/ditch/leave behind",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 37,
+      "name": "act/acted",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 38,
+      "name": "action",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 39,
+      "name": "actually on the contrary, a bit sarcastic",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 40,
+      "name": "agile / nimble",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 41,
+      "name": "agile nimble",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 42,
+      "name": "ahead",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 43,
+      "name": "also",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 44,
+      "name": "appearance",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 45,
+      "name": "approach / get closer",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 46,
+      "name": "beside your ear",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 47,
+      "name": "both would help each other",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 48,
+      "name": "breath/e",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 49,
+      "name": "but the farmer clutched the tree trunk unable to climb up",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 50,
+      "name": "bàntiān",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 51,
+      "name": "bào",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 52,
+      "name": "bàozhe",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 53,
+      "name": "bìngwéi",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 54,
+      "name": "bízi",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 55,
+      "name": "bù jǐn bù màn de shuō",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 56,
+      "name": "bùjiǔ",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 57,
+      "name": "bāngzhù.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 58,
+      "name": "bǐngzhù / pǐngzhù",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 59,
+      "name": "bǐngzhù hūxī",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 60,
+      "name": "can",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 61,
+      "name": "cháo",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 62,
+      "name": "circle around",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 63,
+      "name": "climb",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 64,
+      "name": "climb up",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 65,
+      "name": "come down",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 66,
+      "name": "come over",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 67,
+      "name": "coming right up",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 68,
+      "name": "cái",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 69,
+      "name": "cóng",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 70,
+      "name": "cóng shù shàng",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 71,
+      "name": "danger",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 72,
+      "name": "danger was upon them",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 73,
+      "name": "duǒ",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 74,
+      "name": "dà xióng yǐwéi nóngfū zhēnde shì gè sǐ rén, jiù zǒukāi le. yīnwèi xióng shì bù chī sǐ rén de.",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 75,
+      "name": "dàoshì",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 76,
+      "name": "dìdài",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 77,
+      "name": "dìfāng",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 78,
+      "name": "dìshang",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 79,
+      "name": "dìshàng",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 80,
+      "name": "dòng",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 81,
+      "name": "dòngzuò",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 82,
+      "name": "dīxià",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 83,
+      "name": "encircle",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 84,
+      "name": "encounter",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 85,
+      "name": "exactly/just",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 86,
+      "name": "farmer",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 87,
+      "name": "forced to",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 88,
+      "name": "forced to / have no choice but to",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 89,
+      "name": "forest",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 90,
+      "name": "from up in the tree",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 91,
+      "name": "fúzài",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 92,
+      "name": "go away",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 93,
+      "name": "go through",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 94,
+      "name": "go up",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 95,
+      "name": "ground",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 96,
+      "name": "guòlái",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 97,
+      "name": "gànjiù",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 98,
+      "name": "gāngcái",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 99,
+      "name": "gǎnkuài",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 100,
+      "name": "have no choice but to",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 101,
+      "name": "he had no choice but to quickly lie on the ground and play dead",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 102,
+      "name": "he hurriedly scrambled up the nearest large tree to hide",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 103,
+      "name": "hearing this, the merchant lowered his head in shame.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 104,
+      "name": "hide",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 105,
+      "name": "hold e.g. breath",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 106,
+      "name": "hold your breath",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 107,
+      "name": "hold, e.g. breath",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 108,
+      "name": "hug / embrace / carry in arms",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 109,
+      "name": "hūxī",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 110,
+      "name": "immediately",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 111,
+      "name": "in the end; at the last moment",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 112,
+      "name": "in this context yān/烟 [smoke/cigarette/mist] provides a literary metaphor for a mist without human life, i.e. an atmospheric emptiness",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 113,
+      "name": "it was a dangerous area.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 114,
+      "name": "jiébàn",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 115,
+      "name": "jiù",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 116,
+      "name": "jiù lái",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 117,
+      "name": "jiùshì",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 118,
+      "name": "jiāo péng you",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 119,
+      "name": "just do it",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 120,
+      "name": "just now",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 121,
+      "name": "jīngguò",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 122,
+      "name": "jǐnbì",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 123,
+      "name": "kàndào",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 124,
+      "name": "kě",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ],
+      "tooltip": "same character as kěyǐ / 可以"
+    },
+    {
+      "id": 125,
+      "name": "kě nóngfū bàozhe shù gàn jiùshì pá bú shàngqù, tā zhǐhǎo gǎnkuài tǎng zài dìshang zhuāngsǐ.",
+      "alias": "",
+      "type": "Event",
+      "tooltip": "This sentence starts with 可/kě is used here as a shortened, spoken form of 但是/dànshì or 可是/kěshì, meaning \"but\" or \"however\". Gemini informs: what makes this sentence work so well is the relationship between 可/kě at the beginning and 就是/jiùshì in the middle: 可 flags to the listener: \"Pay attention, a problem is coming!\" 说明/就是 emphasizes the total frustration or helplessness of the situation: \"He tried, but he just couldn't do it.\" If you were reading this fable out loud, that initial 可 is the exact moment the tension spikes for the character! · The three characters 干就是 gàn jiù shì seem to form two words, either gànjiù and jiùshì with different meanings. Gemini points out the role of jiùshì to mean \"just\", while the translation suggests that gànjiù/just do it is more appropriate. So these three altogether form a hybrid or emphasis where the binding is ambiguous."
+    },
+    {
+      "id": 126,
+      "name": "kě nóngfū bàozhe shùgàn jiùshì pá bù shàngqù",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 127,
+      "name": "kěyǐ",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 128,
+      "name": "leaning over, crouching down close to, bending over",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 129,
+      "name": "lie",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 130,
+      "name": "lie down",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 131,
+      "name": "liǎng gè rén dōu yào xiānghù bāngzhù",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 132,
+      "name": "long time",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 133,
+      "name": "low",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 134,
+      "name": "lowered in shame",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 135,
+      "name": "línliǎo",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 136,
+      "name": "make a pact/agreement/appointment",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 137,
+      "name": "make friends",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 138,
+      "name": "merchant/businessman",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 139,
+      "name": "move",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 140,
+      "name": "mutual",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 141,
+      "name": "méi yǒu xìn yòng de rén",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 142,
+      "name": "mìmì",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 143,
+      "name": "mǐnjié",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 144,
+      "name": "next time",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 145,
+      "name": "nose",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 146,
+      "name": "not until",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 147,
+      "name": "not until [when used before a time expression]",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 148,
+      "name": "nóngfū",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 149,
+      "name": "nóngfū jǐnbì shuāng yǎn, bǐngzhù hūxī, yí dòng yě bú dòng.",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 150,
+      "name": "nóngfū zhuāngzuò háo bú zàihu de yàngzi, bù jǐn bú màn de shuō: \"dà xióng dàoshì méi hé wǒ shuō shénme mìmì, tā zhǐshì gàosu wǒ, xiàcì bú yào zài hé méi yǒu xìnyòng de rén jiāo péng you la!\"",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 151,
+      "name": "nǐ de ěr páng",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 152,
+      "name": "on the contrary",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 153,
+      "name": "only",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 154,
+      "name": "pack / pretend / dress up / act a part",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 155,
+      "name": "peers",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 156,
+      "name": "perfectly still",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 157,
+      "name": "play dead",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 158,
+      "name": "presume, believe falsely",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 159,
+      "name": "presume, believe mistakenly",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 160,
+      "name": "pretend to",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 161,
+      "name": "pá",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 162,
+      "name": "páshàng",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 163,
+      "name": "quick/agile",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 164,
+      "name": "qǐlái",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 165,
+      "name": "qǐlái.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 166,
+      "name": "really",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 167,
+      "name": "recently",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 168,
+      "name": "regardless",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 169,
+      "name": "ràozhe",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 170,
+      "name": "rēngxià",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 171,
+      "name": "same character as kěyǐ / 可以",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 172,
+      "name": "secret",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 173,
+      "name": "see",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 174,
+      "name": "shame/ashamed",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 175,
+      "name": "shàngqù",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 176,
+      "name": "shàngqù,",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 177,
+      "name": "shùlín",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 178,
+      "name": "shāngrén",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 179,
+      "name": "shāngrén kàndào xióng xiàng tāmen zǒu lái, biàn rēngxià nóngfū, yí gè rén pá dào shù shàng duǒ cáng qǐ lái.",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 180,
+      "name": "shāngrén tīng le, xiūkuì dei dīxià le tóu.",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 181,
+      "name": "slightest movement",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 182,
+      "name": "smell",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 183,
+      "name": "soon/not far",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 184,
+      "name": "speaking in a measured, unhurried manner",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 185,
+      "name": "standup/getup/climb up/upwards",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 186,
+      "name": "they hadn't gone far into the woods",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 187,
+      "name": "tightly closed",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 188,
+      "name": "to care",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 189,
+      "name": "towards",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 190,
+      "name": "travelling together / partnering",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 191,
+      "name": "tóngxíng",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 192,
+      "name": "tóngxíng,",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 193,
+      "name": "tā gǎnkuài pá shàng zuìjìn dàshū duǒ qǐlái",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 194,
+      "name": "tā zhǐhǎo gǎnkuài tǎng zài dìshàng zhuāng sǐ",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 195,
+      "name": "tāmen zǒu jìn shùlín bùjiǔ",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 196,
+      "name": "tǎng",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 197,
+      "name": "uncreditworthy / untrustworthy person",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 198,
+      "name": "uncreditworthy untrustworthy person",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 199,
+      "name": "upwards / stand up",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 200,
+      "name": "whatever is encountered",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 201,
+      "name": "wéixiǎn",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 202,
+      "name": "wéixiǎn jiù láilínliǎo",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 203,
+      "name": "wén",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 204,
+      "name": "wúlùn",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 205,
+      "name": "wēixiǎn",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 206,
+      "name": "wēixiǎn,",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 207,
+      "name": "xiàcì",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 208,
+      "name": "xiàlai",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 209,
+      "name": "xióng zǒujìn hòu, kànjiàn tǎng zài dìshang de nóngfū, jiù guòlái yòng bízi wén, bìngwéi ràozhe tā rào le bàntiān.",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 210,
+      "name": "xiānghù",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 211,
+      "name": "xiūkuì",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 212,
+      "name": "xiūkuì dei dīxià",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 213,
+      "name": "yuēhǎo",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 214,
+      "name": "yàngzi",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 215,
+      "name": "yí dòng yě bú dòng",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 216,
+      "name": "yí gè méiyǒurén yān de shùlín",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 217,
+      "name": "yùjiàn",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 218,
+      "name": "yùjiàn shénme",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 219,
+      "name": "yě",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 220,
+      "name": "yī zhǐ dàxióng cóng qián miàn cháo tāmen zǒu lái",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 221,
+      "name": "yīdòng",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 222,
+      "name": "yīgè méiyǒurén yān de shùlín",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 223,
+      "name": "yǐwéi",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 224,
+      "name": "zhuāng",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 225,
+      "name": "zhuāng sǐ",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 226,
+      "name": "zhuāngsǐ",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 227,
+      "name": "zhuāngsǐ.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 228,
+      "name": "zhuāngzuò",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 229,
+      "name": "zhídào dà xióng zǒuyuǎn le, shāngrén cái cóng shù shàng xiàlai, nóngfū yě pá le qǐlái. shāngrén jiù wèn nóngfū: \"péngyou, dàxióng gāngcái fúzài nǐ de ěr páng gēn nǐ shuō le xiē shénme ya?\"",
+      "alias": "",
+      "type": "Event"
+    },
+    {
+      "id": 230,
+      "name": "zhēnde",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 231,
+      "name": "zhǐhǎo",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 232,
+      "name": "zhǐshì",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 233,
+      "name": "zone / region / district",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 234,
+      "name": "zuìjìn",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 235,
+      "name": "zàihu",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 236,
+      "name": "zàihū",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 237,
+      "name": "zǒujìn",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 238,
+      "name": "zǒukāi",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 239,
+      "name": "ơn the ground",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 240,
+      "name": "一个没有人烟的树林",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 241,
+      "name": "一位商人和一位农夫结伴同行，他们要经过一个没有人烟的树林。",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 242,
+      "name": "一动",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 243,
+      "name": "一动也不动",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 244,
+      "name": "一只大熊从前面朝他们走来",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 245,
+      "name": "上去",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 246,
+      "name": "下来",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 247,
+      "name": "下次",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 248,
+      "name": "不久",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 249,
+      "name": "不紧不慢地说",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 250,
+      "name": "两个人都要相互帮助",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 251,
+      "name": "临了",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 252,
+      "name": "也",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 253,
+      "name": "交朋友",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 254,
+      "name": "从",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 255,
+      "name": "从树上",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 256,
+      "name": "他们走进树林不久",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 257,
+      "name": "他们走进树林不久，危险就来临了——一只大熊从前面朝他们走来。",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 258,
+      "name": "他只好赶快躺在地上装死",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 259,
+      "name": "他赶快爬上最近大叔躲起来",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 260,
+      "name": "以为",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 261,
+      "name": "伏在",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 262,
+      "name": "低下",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 263,
+      "name": "你的耳旁",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 264,
+      "name": "你的耳旁跟你说了些什么呀",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 265,
+      "name": "倒是",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 266,
+      "name": "农夫",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 267,
+      "name": "农夫紧闭双眼，屏住呼吸，一动也不动。",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 268,
+      "name": "农夫装作毫不在乎的样子，不紧不慢地说：\"大熊倒是没和我说什么秘密，它只是告诉我，下次不要再和没有信用的人交朋友/ ！\"",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 269,
+      "name": "刚才",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 270,
+      "name": "动",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 271,
+      "name": "动作",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 272,
+      "name": "半天",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 273,
+      "name": "危险",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 274,
+      "name": "危险就来临了",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 275,
+      "name": "只好",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 276,
+      "name": "只是",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 277,
+      "name": "可",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 278,
+      "name": "可农夫抱着树干就是爬不上去",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 279,
+      "name": "可农夫抱着树干就是爬不上去，他只好赶快躺在地上装死。",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 280,
+      "name": "同行",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 281,
+      "name": "呼吸",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 282,
+      "name": "商人",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 283,
+      "name": "商人动作敏捷，他赶快爬上最近的大树躲起来。",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 284,
+      "name": "商人听了，羞愧地低下了头。",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 285,
+      "name": "商人看到熊向他们走来，便扔下农夫，一个人爬到树上躲藏起来。",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 286,
+      "name": "在乎",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 287,
+      "name": "地上",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 288,
+      "name": "地带",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 289,
+      "name": "大熊以为农夫真的是个死人，就走开了。因为熊是不吃死人的。",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 290,
+      "name": "就",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 291,
+      "name": "就是",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 292,
+      "name": "就来",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 293,
+      "name": "屏住",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 294,
+      "name": "屏住呼吸",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 295,
+      "name": "干就",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 296,
+      "name": "并围",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 297,
+      "name": "才",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 298,
+      "name": "扔下",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 299,
+      "name": "抱",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 300,
+      "name": "敏捷",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 301,
+      "name": "无论",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 302,
+      "name": "最近",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 303,
+      "name": "朝",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 304,
+      "name": "树林",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 305,
+      "name": "样子",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 306,
+      "name": "没有信用的人",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 307,
+      "name": "熊走近后，看见躺在地上的农夫，就过来用鼻子闻，并围绕着他绕了半天。",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 308,
+      "name": "爬",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 309,
+      "name": "爬上",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 310,
+      "name": "直到大熊走远了，商人才从树上下来，农夫也爬了起来。商人就问农夫：\"朋友,大熊刚才伏在你的耳旁跟你说了些什么呀？\"",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 311,
+      "name": "相互",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 312,
+      "name": "看到",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 313,
+      "name": "真的",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 314,
+      "name": "秘密",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 315,
+      "name": "紧闭",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 316,
+      "name": "约好",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 317,
+      "name": "经过",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 318,
+      "name": "结伴",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 319,
+      "name": "绕着",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 320,
+      "name": "羞愧",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 321,
+      "name": "羞愧地低下",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 322,
+      "name": "脸",
+      "alias": "",
+      "type": "Unresolved"
+    },
+    {
+      "id": 323,
+      "name": "装",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 324,
+      "name": "装作",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 325,
+      "name": "装死",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 326,
+      "name": "走开",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 327,
+      "name": "走近",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 328,
+      "name": "起来",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 329,
+      "name": "躲",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 330,
+      "name": "躺",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 331,
+      "name": "过来",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 332,
+      "name": "遇见",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 333,
+      "name": "遇见什么",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 334,
+      "name": "那里是危险地带",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 335,
+      "name": "那里是危险地带，所以他们约好了，无论遇见什么危险，两个人都要相互帮助。",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 336,
+      "name": "闻",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    },
+    {
+      "id": 337,
+      "name": "鼻子",
+      "alias": "",
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": 0,
+      "source": 178,
+      "target": 282,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 178,
+      "target": 138,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 148,
+      "target": 266,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 148,
+      "target": 86,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 114,
+      "target": 318,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 114,
+      "target": 190,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 121,
+      "target": 317,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 121,
+      "target": 93,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 213,
+      "target": 316,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 213,
+      "target": 136,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 204,
+      "target": 301,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 204,
+      "target": 168,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 217,
+      "target": 332,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 217,
+      "target": 84,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 115,
+      "target": 290,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 115,
+      "target": 110,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 69,
+      "target": 254,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 69,
+      "target": 42,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 61,
+      "target": 303,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 61,
+      "target": 189,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 322,
+      "target": 29,
+      "dir": "",
+      "tooltip": "see also",
+      "sstLinkType": "NearTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 81,
+      "target": 271,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 81,
+      "target": 38,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 81,
+      "target": 37,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 73,
+      "target": 329,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 73,
+      "target": 104,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 124,
+      "target": 277,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 124,
+      "target": 60,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 117,
+      "target": 291,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 117,
+      "target": 85,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 231,
+      "target": 275,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 231,
+      "target": 87,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 231,
+      "target": 88,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 231,
+      "target": 100,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 78,
+      "target": 287,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 237,
+      "target": 327,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 237,
+      "target": 45,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 211,
+      "target": 320,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 211,
+      "target": 174,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 50,
+      "target": 272,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 50,
+      "target": 132,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 50,
+      "target": 35,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 272,
+      "target": 132,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 272,
+      "target": 35,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 51,
+      "target": 299,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 51,
+      "target": 108,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 299,
+      "target": 108,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 54,
+      "target": 337,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 54,
+      "target": 145,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 337,
+      "target": 145,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 53,
+      "target": 296,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 53,
+      "target": 83,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 296,
+      "target": 83,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 293,
+      "target": 107,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 293,
+      "target": 105,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 294,
+      "target": 106,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 249,
+      "target": 20,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 249,
+      "target": 184,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 68,
+      "target": 297,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 68,
+      "target": 146,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 68,
+      "target": 147,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 297,
+      "target": 147,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 297,
+      "target": 146,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 255,
+      "target": 90,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 75,
+      "target": 265,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 75,
+      "target": 152,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 75,
+      "target": 39,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 265,
+      "target": 39,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 265,
+      "target": 152,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 82,
+      "target": 262,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 82,
+      "target": 133,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 262,
+      "target": 133,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 287,
+      "target": 95,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 287,
+      "target": 239,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 80,
+      "target": 270,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 80,
+      "target": 139,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 270,
+      "target": 139,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 271,
+      "target": 38,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 271,
+      "target": 37,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 91,
+      "target": 261,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 91,
+      "target": 128,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 261,
+      "target": 128,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 98,
+      "target": 269,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 98,
+      "target": 120,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 269,
+      "target": 120,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 97,
+      "target": 295,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 97,
+      "target": 119,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 295,
+      "target": 119,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 96,
+      "target": 331,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 96,
+      "target": 66,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 331,
+      "target": 66,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 122,
+      "target": 315,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 122,
+      "target": 187,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 315,
+      "target": 187,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 290,
+      "target": 110,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 291,
+      "target": 85,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 253,
+      "target": 137,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 123,
+      "target": 312,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 123,
+      "target": 173,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 312,
+      "target": 173,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 306,
+      "target": 198,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 306,
+      "target": 197,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 143,
+      "target": 300,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 143,
+      "target": 163,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 143,
+      "target": 41,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 143,
+      "target": 40,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 300,
+      "target": 41,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 300,
+      "target": 40,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 300,
+      "target": 163,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 142,
+      "target": 314,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 142,
+      "target": 172,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 314,
+      "target": 172,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 263,
+      "target": 46,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 264,
+      "target": 31,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 161,
+      "target": 308,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 161,
+      "target": 63,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 308,
+      "target": 63,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 162,
+      "target": 309,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 162,
+      "target": 64,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 309,
+      "target": 64,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 164,
+      "target": 328,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 164,
+      "target": 185,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 164,
+      "target": 199,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 328,
+      "target": 199,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 328,
+      "target": 185,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 170,
+      "target": 298,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 170,
+      "target": 36,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 298,
+      "target": 36,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 169,
+      "target": 319,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 169,
+      "target": 62,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 319,
+      "target": 62,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 175,
+      "target": 245,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 175,
+      "target": 94,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 245,
+      "target": 94,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 196,
+      "target": 330,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 196,
+      "target": 129,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 196,
+      "target": 130,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 330,
+      "target": 129,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 330,
+      "target": 130,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 203,
+      "target": 336,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 203,
+      "target": 182,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 336,
+      "target": 182,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 207,
+      "target": 247,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 207,
+      "target": 144,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 247,
+      "target": 144,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 208,
+      "target": 246,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 208,
+      "target": 65,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 246,
+      "target": 65,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 321,
+      "target": 134,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 214,
+      "target": 305,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 214,
+      "target": 44,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 305,
+      "target": 44,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 221,
+      "target": 242,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 221,
+      "target": 181,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 242,
+      "target": 181,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 243,
+      "target": 156,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 219,
+      "target": 252,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 219,
+      "target": 43,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 252,
+      "target": 43,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 223,
+      "target": 260,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 223,
+      "target": 159,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 223,
+      "target": 158,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 260,
+      "target": 159,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 260,
+      "target": 158,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 235,
+      "target": 286,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 286,
+      "target": 188,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 230,
+      "target": 313,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 230,
+      "target": 166,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 313,
+      "target": 166,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 275,
+      "target": 87,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 275,
+      "target": 88,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 275,
+      "target": 100,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 232,
+      "target": 276,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 232,
+      "target": 153,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 276,
+      "target": 153,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 327,
+      "target": 45,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 238,
+      "target": 326,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 238,
+      "target": 92,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 326,
+      "target": 92,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 226,
+      "target": 325,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 325,
+      "target": 157,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 228,
+      "target": 324,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 228,
+      "target": 160,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 324,
+      "target": 160,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 234,
+      "target": 302,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 234,
+      "target": 167,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 302,
+      "target": 167,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 109,
+      "target": 281,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 109,
+      "target": 48,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 281,
+      "target": 48,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 76,
+      "target": 77,
+      "dir": "",
+      "tooltip": "see also",
+      "sstLinkType": "NearTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 76,
+      "target": 288,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 76,
+      "target": 233,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 288,
+      "target": 233,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 77,
+      "target": 76,
+      "dir": "",
+      "tooltip": "see also",
+      "sstLinkType": "NearTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 282,
+      "target": 138,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 266,
+      "target": 86,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 236,
+      "target": 286,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 236,
+      "target": 188,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 318,
+      "target": 190,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 191,
+      "target": 280,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 191,
+      "target": 155,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 280,
+      "target": 155,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 317,
+      "target": 93,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 177,
+      "target": 304,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 177,
+      "target": 89,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 240,
+      "target": 33,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 304,
+      "target": 89,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 201,
+      "target": 273,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 201,
+      "target": 71,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 334,
+      "target": 113,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 316,
+      "target": 136,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 301,
+      "target": 168,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 333,
+      "target": 200,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 332,
+      "target": 84,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 273,
+      "target": 71,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 210,
+      "target": 311,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 210,
+      "target": 140,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 311,
+      "target": 140,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 250,
+      "target": 47,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 320,
+      "target": 174,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 256,
+      "target": 186,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 56,
+      "target": 248,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 56,
+      "target": 183,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 248,
+      "target": 183,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 274,
+      "target": 72,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 292,
+      "target": 67,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 135,
+      "target": 251,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 135,
+      "target": 111,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 251,
+      "target": 111,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 244,
+      "target": 34,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 303,
+      "target": 189,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 254,
+      "target": 42,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 259,
+      "target": 102,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 329,
+      "target": 104,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 278,
+      "target": 49,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 277,
+      "target": 60,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 258,
+      "target": 101,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 79,
+      "target": 287,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 79,
+      "target": 95,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 79,
+      "target": 239,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 224,
+      "target": 323,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 224,
+      "target": 154,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 323,
+      "target": 154,
+      "dir": "",
+      "tooltip": "hanzi has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 59,
+      "target": 294,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 59,
+      "target": 106,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 218,
+      "target": 217,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 218,
+      "target": 333,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 218,
+      "target": 200,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 116,
+      "target": 292,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 116,
+      "target": 67,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 225,
+      "target": 224,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 225,
+      "target": 325,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 225,
+      "target": 157,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 58,
+      "target": 293,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 58,
+      "target": 107,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 58,
+      "target": 105,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 70,
+      "target": 255,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 70,
+      "target": 90,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 118,
+      "target": 253,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 118,
+      "target": 137,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 212,
+      "target": 321,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 212,
+      "target": 134,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 202,
+      "target": 274,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 202,
+      "target": 72,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 19,
+      "target": 125,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 19,
+      "target": 81,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 19,
+      "target": 73,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 19,
+      "target": 165,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 19,
+      "target": 283,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 19,
+      "target": 26,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 19,
+      "target": 27,
+      "dir": "",
+      "tooltip": "has LLM translation",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 125,
+      "target": 209,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 125,
+      "target": 124,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 125,
+      "target": 52,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 125,
+      "target": 117,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 125,
+      "target": 176,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 125,
+      "target": 231,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 125,
+      "target": 99,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 125,
+      "target": 78,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 125,
+      "target": 227,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 125,
+      "target": 279,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 125,
+      "target": 7,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 125,
+      "target": 6,
+      "dir": "",
+      "tooltip": "has LLM translation",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 149,
+      "target": 179,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 149,
+      "target": 267,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 149,
+      "target": 22,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 149,
+      "target": 23,
+      "dir": "",
+      "tooltip": "has LLM translation",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 74,
+      "target": 229,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 74,
+      "target": 289,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 74,
+      "target": 25,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 74,
+      "target": 21,
+      "dir": "",
+      "tooltip": "has LLM translation",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 180,
+      "target": 211,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 180,
+      "target": 284,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 180,
+      "target": 103,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 55,
+      "target": 249,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 141,
+      "target": 306,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 141,
+      "target": 198,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 141,
+      "target": 197,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 151,
+      "target": 263,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 151,
+      "target": 46,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 16,
+      "target": 264,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 16,
+      "target": 31,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 215,
+      "target": 243,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 215,
+      "target": 156,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 8,
+      "target": 249,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 8,
+      "target": 20,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 8,
+      "target": 184,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 222,
+      "target": 177,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 222,
+      "target": 240,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 222,
+      "target": 112,
+      "dir": "",
+      "tooltip": "has metaphor",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 222,
+      "target": 33,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 14,
+      "target": 201,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 14,
+      "target": 76,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 14,
+      "target": 334,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 14,
+      "target": 113,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 131,
+      "target": 210,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 131,
+      "target": 250,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 131,
+      "target": 47,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 195,
+      "target": 256,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 195,
+      "target": 186,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 220,
+      "target": 244,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 220,
+      "target": 34,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 193,
+      "target": 259,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 193,
+      "target": 102,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 126,
+      "target": 278,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 126,
+      "target": 49,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 171,
+      "target": 127,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 194,
+      "target": 258,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 194,
+      "target": 101,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 32,
+      "target": 1,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 32,
+      "target": 178,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 32,
+      "target": 148,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 32,
+      "target": 114,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 32,
+      "target": 192,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 32,
+      "target": 121,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 32,
+      "target": 216,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 32,
+      "target": 241,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 32,
+      "target": 3,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 32,
+      "target": 2,
+      "dir": "",
+      "tooltip": "has LLM translation",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 1,
+      "target": 30,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 1,
+      "target": 15,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 1,
+      "target": 213,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 1,
+      "target": 204,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 1,
+      "target": 217,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 1,
+      "target": 206,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 1,
+      "target": 57,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 1,
+      "target": 335,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 1,
+      "target": 10,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 1,
+      "target": 9,
+      "dir": "",
+      "tooltip": "has LLM translation",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 30,
+      "target": 19,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 30,
+      "target": 205,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 30,
+      "target": 115,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 30,
+      "target": 69,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 30,
+      "target": 61,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 30,
+      "target": 257,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 30,
+      "target": 28,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 30,
+      "target": 12,
+      "dir": "",
+      "tooltip": "has LLM translation",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 29,
+      "target": 322,
+      "dir": "",
+      "tooltip": "see also",
+      "sstLinkType": "NearTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 209,
+      "target": 149,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 209,
+      "target": 237,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 209,
+      "target": 307,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 209,
+      "target": 5,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 209,
+      "target": 4,
+      "dir": "",
+      "tooltip": "has LLM translation",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 179,
+      "target": 74,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 179,
+      "target": 285,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 179,
+      "target": 18,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 229,
+      "target": 150,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 229,
+      "target": 310,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 229,
+      "target": 11,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 229,
+      "target": 13,
+      "dir": "",
+      "tooltip": "has LLM translation",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 150,
+      "target": 180,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 150,
+      "target": 268,
+      "dir": "",
+      "tooltip": "pinyin has hanzi",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 150,
+      "target": 24,
+      "dir": "",
+      "tooltip": "pinyin has english",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 150,
+      "target": 17,
+      "dir": "",
+      "tooltip": "has LLM translation",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    }
+  ]
+}

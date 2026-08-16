@@ -45,19 +45,22 @@ e44::a "《Nín néng yòng nín měimiào de shēngyīn chàng jĭ jù ma?》  
 e45::a "《Qīn’ài de wūyā,  nín de yŭmáo zhēn piàoliang, wŏ cónglái méi jiànguò\n 《 亲爱   的  乌鸦，    您  的   羽毛   真     漂亮，     我   从来   没     见过" ::e
 t46::a 《Would you please sing a song with your wonderful voice?》 The fox begged the crow. ::t
 u47::a 乌鸦和狐狸 ::?tc
-t48::a 亲切 ::t
-t49::a 吃惊 ::t
-t50::a 认真 ::t
-t51::a 难为情 ::t
+e48::a 亲切 ::e
+e49::a 吃惊 ::e
+e50::a 认真 ::e
+e51::a 难为情 ::e
 
 u47 --::X "hanzi has english"--> t11
-u34 --::X "pinyin has hanzi"--> t49
+e49 --::L "then followed by"--> e50
+u34 --::X "pinyin has hanzi"--> e49
 u34 --::X "pinyin has english"--> t30
-u39 --::X "pinyin has hanzi"--> t50
+e50 --::L "then followed by"--> e51
+u39 --::X "pinyin has hanzi"--> e50
 u39 --::X "pinyin has english"--> t31
-u36 --::X "pinyin has hanzi"--> t51
+e51 --::L "then followed by"--> e48
+u36 --::X "pinyin has hanzi"--> e51
 u36 --::X "pinyin has english"--> t32
-u38 --::X "pinyin has hanzi"--> t48
+u38 --::X "pinyin has hanzi"--> e48
 u38 --::X "pinyin has english"--> t33
 e26 --::L "then followed by"--> e9
 e26 --::X "pinyin has hanzi"--> u47
@@ -97,4 +100,5 @@ e44 --::L "then followed by"--> e29
 e44 --::X "pinyin has english"--> t46
 e29 --::L "then followed by"--> e4
 e29 --::X "pinyin has english"--> t12
+e27 --::L "then followed by"--> e49
 e27 --::X "pinyin has english"--> t15

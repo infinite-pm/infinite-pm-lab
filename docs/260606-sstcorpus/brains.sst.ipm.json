@@ -174,7 +174,7 @@
     },
     {
       "id": 22,
-      "name": "axons",
+      "name": "axons,",
       "alias": "",
       "type": "Thing"
     },
@@ -270,7 +270,7 @@
     },
     {
       "id": 36,
-      "name": "dendrites",
+      "name": "dendrites,",
       "alias": "",
       "type": "Thing"
     },
@@ -644,7 +644,7 @@
     },
     {
       "id": 93,
-      "name": "telencephalon",
+      "name": "telencephalon,",
       "alias": "",
       "type": "Thing"
     },
@@ -666,6 +666,12 @@
     },
     {
       "id": 96,
+      "name": "thalamus.",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 97,
       "name": "theta waves",
       "alias": "",
       "type": "Unresolved",
@@ -675,43 +681,43 @@
       ]
     },
     {
-      "id": 97,
+      "id": 98,
       "name": "top of midbrain",
       "alias": "",
       "type": "Thing"
     },
     {
-      "id": 98,
+      "id": 99,
       "name": "type 1",
       "alias": "",
       "type": "Thing"
     },
     {
-      "id": 99,
+      "id": 100,
       "name": "type 2",
       "alias": "",
       "type": "Thing"
     },
     {
-      "id": 100,
+      "id": 101,
       "name": "ultimately expand in mammals to become the neocortex",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 101,
+      "id": 102,
       "name": "urges to eat, drink, sleep, find shelter, avoid whatever is causing pain or fear, or respond with defensive or aggressive behaviours.",
       "alias": "",
       "type": "Event"
     },
     {
-      "id": 102,
+      "id": 103,
       "name": "very relaxed, light or passive attention",
       "alias": "",
       "type": "Thing"
     },
     {
-      "id": 103,
+      "id": 104,
       "name": "what we can do with a object or service",
       "alias": "",
       "type": "Thing"
@@ -757,7 +763,7 @@
     {
       "id": 0,
       "source": 50,
-      "target": 101,
+      "target": 102,
       "dir": "",
       "tooltip": "influences",
       "sstLinkType": "LeadsTo",
@@ -766,7 +772,7 @@
     {
       "id": 0,
       "source": 50,
-      "target": 100,
+      "target": 101,
       "dir": "",
       "tooltip": "leads to",
       "sstLinkType": "LeadsTo",
@@ -919,7 +925,7 @@
     {
       "id": 0,
       "source": 90,
-      "target": 97,
+      "target": 98,
       "dir": "",
       "tooltip": "takes place at location",
       "sstLinkType": "Expresses",
@@ -928,7 +934,7 @@
     {
       "id": 0,
       "source": 17,
-      "target": 103,
+      "target": 104,
       "dir": "",
       "tooltip": "has a role",
       "sstLinkType": "Expresses",
@@ -955,7 +961,7 @@
     {
       "id": 0,
       "source": 18,
-      "target": 102,
+      "target": 103,
       "dir": "",
       "tooltip": "is characterized by",
       "sstLinkType": "Expresses",
@@ -1053,17 +1059,8 @@
     },
     {
       "id": 0,
-      "source": 98,
-      "target": 96,
-      "dir": "",
-      "tooltip": "",
-      "sstLinkType": "PartOf",
-      "semOrigin": ""
-    },
-    {
-      "id": 0,
       "source": 99,
-      "target": 96,
+      "target": 97,
       "dir": "",
       "tooltip": "",
       "sstLinkType": "PartOf",
@@ -1071,7 +1068,16 @@
     },
     {
       "id": 0,
-      "source": 96,
+      "source": 100,
+      "target": 97,
+      "dir": "",
+      "tooltip": "",
+      "sstLinkType": "PartOf",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 97,
       "target": 4,
       "dir": "",
       "tooltip": "has frequency",
@@ -1332,7 +1338,7 @@
     },
     {
       "id": 0,
-      "source": 100,
+      "source": 101,
       "target": 67,
       "dir": "",
       "tooltip": "involves",
@@ -1378,7 +1384,7 @@
     {
       "id": 0,
       "source": 10,
-      "target": 95,
+      "target": 96,
       "dir": "",
       "tooltip": "involves",
       "sstLinkType": "Expresses",
@@ -1405,7 +1411,7 @@
     {
       "id": 0,
       "source": 12,
-      "target": 96,
+      "target": 97,
       "dir": "",
       "tooltip": "discusses",
       "sstLinkType": "Expresses",

@@ -77,9 +77,13 @@
     },
     {
       "id": 12,
-      "name": "Regular call with %\"Sven F\"",
+      "name": "Regular call with \"Sven F\"",
       "alias": "",
-      "type": "Unresolved"
+      "type": "Unresolved",
+      "candidates": [
+        "Thing",
+        "Concept"
+      ]
     },
     {
       "id": 13,
@@ -101,34 +105,50 @@
     },
     {
       "id": 16,
+      "name": "Sven F",
+      "alias": "",
+      "type": "Thing"
+    },
+    {
+      "id": 17,
       "name": "The child that is born on Sabbath day, is bonny and blithe, good and gay",
       "alias": "",
       "type": "Unresolved"
     },
     {
-      "id": 17,
+      "id": 18,
       "name": "Thursday's child has far to go...",
       "alias": "",
       "type": "Unresolved"
     },
     {
-      "id": 18,
+      "id": 19,
       "name": "Tuesday's child is full of grace...",
       "alias": "",
       "type": "Unresolved"
     },
     {
-      "id": 19,
+      "id": 20,
       "name": "Wednesday's child is full of woe...",
       "alias": "",
       "type": "Unresolved"
     },
     {
-      "id": 20,
+      "id": 21,
       "name": "to do: Write conference talk",
       "alias": "",
       "type": "Unresolved"
     }
   ],
-  "edges": null
+  "edges": [
+    {
+      "id": 0,
+      "source": 12,
+      "target": 16,
+      "dir": "",
+      "tooltip": "involves",
+      "sstLinkType": "Expresses",
+      "semOrigin": ""
+    }
+  ]
 }

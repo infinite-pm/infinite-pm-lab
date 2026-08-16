@@ -19,7 +19,7 @@ u18::a alpha waves ::?tc
 t19::a association and interhemipsheric signalling ::t
 t20::a attractive signals engage a winner-takes-all competition ::t
 e21::a autonomic nervous system ::e
-t22::a axons ::t
+t22::a "axons," ::t
 e23::a basal ganglia ::e
 t24::a "below cortex, forebrain" ::t
 u25::a beta waves ::?tc
@@ -33,7 +33,7 @@ t32::a conduit/relay station for sensory information. ::t
 t33::a cortical to cortical communication ::t
 t34::a creates temporary structured episodic record ::t
 u35::a delta waves ::?tc
-t36::a dendrites ::t
+t36::a "dendrites," ::t
 e37::a "early telencephalon, meaning the end of the brain" ::e
 u38::a "encoding meaning as \"things\" is efficient conceptualisation, which is a coarse graining of spacetime pattern persistence and recurrence." ::?etc
 u39::a entorhinal cortex ::?etc
@@ -90,24 +90,25 @@ t89::a "take signals from 2,3 and context and redistribute" ::t
 u90::a tectum ::?tc "conditional promises" ::tip
 e91::a "tectum, cortex, spine, other hemisphere" ::e
 e92::a "tectum, thalamus" ::e
-t93::a telencephalon ::t
+t93::a "telencephalon," ::t
 t94::a temporal cortex ::t
 u95::a thalamus ::?tc
-u96::a theta waves ::?tc
-t97::a top of midbrain ::t
-t98::a type 1 ::t
-t99::a type 2 ::t
-e100::a ultimately expand in mammals to become the neocortex ::e
-e101::a "urges to eat, drink, sleep, find shelter, avoid whatever is causing pain or fear, or respond with defensive or aggressive behaviours." ::e
-t102::a "very relaxed, light or passive attention" ::t
-t103::a what we can do with a object or service ::t
+t96::a thalamus. ::t
+u97::a theta waves ::?tc
+t98::a top of midbrain ::t
+t99::a type 1 ::t
+t100::a type 2 ::t
+e101::a ultimately expand in mammals to become the neocortex ::e
+e102::a "urges to eat, drink, sleep, find shelter, avoid whatever is causing pain or fear, or respond with defensive or aggressive behaviours." ::e
+t103::a "very relaxed, light or passive attention" ::t
+t104::a what we can do with a object or service ::t
 
 e28 --::P--> e67
 e67 --::X "has the structure of"--> t65
 e67 --::X "has a role"--> t16
 e50 --::L "influences"--> e47
-e50 --::L "influences"--> e101
-e50 --::L "leads to"--> e100
+e50 --::L "influences"--> e102
+e50 --::L "leads to"--> e101
 e50 --::X "has a role"--> t53
 e50 --::X "takes place at location"--> t40
 e50 --::X "has a role"--> t66
@@ -124,11 +125,11 @@ u46 --::X "has a role"--> t88
 u90 --::X "has a role"--> t61
 u90 --::X "has a role"--> t74
 u90 --::X "works by method"--> t20
-u90 --::X "takes place at location"--> t97
-u17 --::X "has a role"--> t103
+u90 --::X "takes place at location"--> t98
+u17 --::X "has a role"--> t104
 u14 --::X "is the publisher of"--> u12
 u18 --::X "has frequency"--> t5
-u18 --::X "is characterized by"--> t102
+u18 --::X "is characterized by"--> t103
 u25 --::X "has frequency"--> t2
 u25 --::X "is characterized by"--> t63
 t78 --::P--> u42
@@ -139,9 +140,9 @@ u42 --::X "has frequency"--> t3
 u42 --::X "is characterized by"--> t31
 u35 --::X "has frequency"--> t1
 u35 --::X "is characterized by"--> t87
-t98 --::P--> u96
-t99 --::P--> u96
-u96 --::X "has frequency"--> t4
+t99 --::P--> u97
+t100 --::P--> u97
+u97 --::X "has frequency"--> t4
 t40 --::P--> u49
 t64 --::P--> u49
 t45 --::P--> u49
@@ -170,15 +171,15 @@ t44 --::P--> u39
 e71 --::L "evolved to"--> e67
 e37 --::L "evolved to"--> e50
 e37 --::X "involves"--> t93
-e100 --::X "involves"--> e67
+e101 --::X "involves"--> e67
 e86 --::L "sustains"--> e23
 u8 --::X "involves"--> t82
 u8 --::X "involves"--> t51
 u27 --::X "involves"--> t30
-u10 --::X "involves"--> u95
+u10 --::X "involves"--> t96
 e85 --::X "involves"--> u95
 u7 --::X "has URL"--> t48
-u12 --::X "discusses"--> u96
+u12 --::X "discusses"--> u97
 u12 --::X "discusses"--> t77
 u12 --::X "discusses"--> t76
 u12 --::X "discusses"--> t44

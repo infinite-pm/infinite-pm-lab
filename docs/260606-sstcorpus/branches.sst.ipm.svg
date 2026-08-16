@@ -87,8 +87,8 @@
     <path d="M 351.55 855.00 L 341.68 853.04 L 346.22 850.86 L 347.19 845.93 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="16" data-edge-base="leadsto" data-edge-from="7" data-edge-to="15">
-    <line x1="635.97" y1="545.00" x2="390.27" y2="849.75" stroke="#ff8000" stroke-width="3" />
-    <path d="M 386.03 855.00 L 388.18 845.17 L 390.27 849.75 L 395.18 850.82 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
+    <polyline points="642.50,545.00 760,780 404.26,855.29" fill="none" stroke="#ff8000" stroke-width="3" />
+    <path d="M 397.65 856.69 L 405.53 850.42 L 404.26 855.29 L 407.39 859.23 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
   </g>
   <g id="nodes">

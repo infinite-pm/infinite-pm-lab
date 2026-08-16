@@ -211,7 +211,7 @@
       "id": 34,
       "name": "chījīng",
       "alias": "",
-      "type": "Thing"
+      "type": "Event"
     },
     {
       "id": 35,
@@ -223,7 +223,7 @@
       "id": 36,
       "name": "nánwéiqíng",
       "alias": "",
-      "type": "Thing"
+      "type": "Event"
     },
     {
       "id": 37,
@@ -235,13 +235,13 @@
       "id": 38,
       "name": "qīnqiè",
       "alias": "",
-      "type": "Thing"
+      "type": "Event"
     },
     {
       "id": 39,
       "name": "rènzhēn",
       "alias": "",
-      "type": "Thing"
+      "type": "Event"
     },
     {
       "id": 40,
@@ -295,25 +295,25 @@
       "id": 48,
       "name": "亲切",
       "alias": "",
-      "type": "Concept"
+      "type": "Event"
     },
     {
       "id": 49,
       "name": "吃惊",
       "alias": "",
-      "type": "Concept"
+      "type": "Event"
     },
     {
       "id": 50,
       "name": "认真",
       "alias": "",
-      "type": "Concept"
+      "type": "Event"
     },
     {
       "id": 51,
       "name": "难为情",
       "alias": "",
-      "type": "Concept"
+      "type": "Event"
     }
   ],
   "edges": [
@@ -328,6 +328,15 @@
     },
     {
       "id": 53,
+      "source": 49,
+      "target": 50,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 54,
       "source": 34,
       "target": 49,
       "dir": "DirFwd",
@@ -336,7 +345,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 54,
+      "id": 55,
       "source": 34,
       "target": 30,
       "dir": "DirFwd",
@@ -345,7 +354,16 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 55,
+      "id": 56,
+      "source": 50,
+      "target": 51,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 57,
       "source": 39,
       "target": 50,
       "dir": "DirFwd",
@@ -354,7 +372,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 56,
+      "id": 58,
       "source": 39,
       "target": 31,
       "dir": "DirFwd",
@@ -363,7 +381,16 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 57,
+      "id": 59,
+      "source": 51,
+      "target": 48,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 60,
       "source": 36,
       "target": 51,
       "dir": "DirFwd",
@@ -372,7 +399,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 58,
+      "id": 61,
       "source": 36,
       "target": 32,
       "dir": "DirFwd",
@@ -381,7 +408,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 59,
+      "id": 62,
       "source": 38,
       "target": 48,
       "dir": "DirFwd",
@@ -390,7 +417,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 60,
+      "id": 63,
       "source": 38,
       "target": 33,
       "dir": "DirFwd",
@@ -399,7 +426,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 61,
+      "id": 64,
       "source": 26,
       "target": 9,
       "dir": "DirFwd",
@@ -408,7 +435,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 62,
+      "id": 65,
       "source": 26,
       "target": 47,
       "dir": "DirFwd",
@@ -417,7 +444,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 63,
+      "id": 66,
       "source": 26,
       "target": 11,
       "dir": "DirFwd",
@@ -426,7 +453,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 64,
+      "id": 67,
       "source": 3,
       "target": 7,
       "dir": "DirFwd",
@@ -435,7 +462,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 65,
+      "id": 68,
       "source": 3,
       "target": 21,
       "dir": "DirFwd",
@@ -444,7 +471,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 66,
+      "id": 69,
       "source": 5,
       "target": 23,
       "dir": "DirFwd",
@@ -453,7 +480,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 67,
+      "id": 70,
       "source": 5,
       "target": 22,
       "dir": "DirFwd",
@@ -462,7 +489,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 68,
+      "id": 71,
       "source": 8,
       "target": 45,
       "dir": "DirFwd",
@@ -471,7 +498,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 69,
+      "id": 72,
       "source": 8,
       "target": 18,
       "dir": "DirFwd",
@@ -480,7 +507,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 70,
+      "id": 73,
       "source": 28,
       "target": 44,
       "dir": "DirFwd",
@@ -489,7 +516,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 71,
+      "id": 74,
       "source": 28,
       "target": 13,
       "dir": "DirFwd",
@@ -498,7 +525,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 72,
+      "id": 75,
       "source": 4,
       "target": 27,
       "dir": "DirFwd",
@@ -507,7 +534,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 73,
+      "id": 76,
       "source": 4,
       "target": 16,
       "dir": "DirFwd",
@@ -516,7 +543,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 74,
+      "id": 77,
       "source": 9,
       "target": 35,
       "dir": "DirFwd",
@@ -525,7 +552,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 75,
+      "id": 78,
       "source": 9,
       "target": 20,
       "dir": "DirFwd",
@@ -534,7 +561,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 76,
+      "id": 79,
       "source": 35,
       "target": 3,
       "dir": "DirFwd",
@@ -543,7 +570,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 77,
+      "id": 80,
       "source": 35,
       "target": 40,
       "dir": "DirFwd",
@@ -552,7 +579,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 78,
+      "id": 81,
       "source": 7,
       "target": 5,
       "dir": "DirFwd",
@@ -561,7 +588,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 79,
+      "id": 82,
       "source": 7,
       "target": 2,
       "dir": "DirFwd",
@@ -570,7 +597,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 80,
+      "id": 83,
       "source": 23,
       "target": 6,
       "dir": "DirFwd",
@@ -579,7 +606,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 81,
+      "id": 84,
       "source": 23,
       "target": 17,
       "dir": "DirFwd",
@@ -588,7 +615,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 82,
+      "id": 85,
       "source": 6,
       "target": 8,
       "dir": "DirFwd",
@@ -597,7 +624,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 83,
+      "id": 86,
       "source": 6,
       "target": 19,
       "dir": "DirFwd",
@@ -606,7 +633,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 84,
+      "id": 87,
       "source": 45,
       "target": 37,
       "dir": "DirFwd",
@@ -615,7 +642,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 85,
+      "id": 88,
       "source": 45,
       "target": 43,
       "dir": "DirFwd",
@@ -624,7 +651,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 86,
+      "id": 89,
       "source": 37,
       "target": 24,
       "dir": "DirFwd",
@@ -633,7 +660,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 87,
+      "id": 90,
       "source": 37,
       "target": 41,
       "dir": "DirFwd",
@@ -642,7 +669,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 88,
+      "id": 91,
       "source": 24,
       "target": 1,
       "dir": "DirFwd",
@@ -651,7 +678,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 89,
+      "id": 92,
       "source": 24,
       "target": 14,
       "dir": "DirFwd",
@@ -660,7 +687,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 90,
+      "id": 93,
       "source": 1,
       "target": 42,
       "dir": "DirFwd",
@@ -669,7 +696,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 91,
+      "id": 94,
       "source": 1,
       "target": 25,
       "dir": "DirFwd",
@@ -678,7 +705,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 92,
+      "id": 95,
       "source": 42,
       "target": 28,
       "dir": "DirFwd",
@@ -687,7 +714,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 93,
+      "id": 96,
       "source": 42,
       "target": 10,
       "dir": "DirFwd",
@@ -696,7 +723,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 94,
+      "id": 97,
       "source": 44,
       "target": 29,
       "dir": "DirFwd",
@@ -705,7 +732,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 95,
+      "id": 98,
       "source": 44,
       "target": 46,
       "dir": "DirFwd",
@@ -714,7 +741,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 96,
+      "id": 99,
       "source": 29,
       "target": 4,
       "dir": "DirFwd",
@@ -723,7 +750,7 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 97,
+      "id": 100,
       "source": 29,
       "target": 12,
       "dir": "DirFwd",
@@ -732,7 +759,16 @@
       "semOrigin": "SemExplicit"
     },
     {
-      "id": 98,
+      "id": 101,
+      "source": 27,
+      "target": 49,
+      "dir": "DirFwd",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": "SemExplicit"
+    },
+    {
+      "id": 102,
       "source": 27,
       "target": 15,
       "dir": "DirFwd",

@@ -90,15 +90,6 @@
     },
     {
       "id": 0,
-      "source": 4,
-      "target": 7,
-      "dir": "",
-      "tooltip": "then followed by",
-      "sstLinkType": "LeadsTo",
-      "semOrigin": ""
-    },
-    {
-      "id": 0,
       "source": 5,
       "target": 6,
       "dir": "",
@@ -128,6 +119,15 @@
       "id": 0,
       "source": 3,
       "target": 8,
+      "dir": "",
+      "tooltip": "then followed by",
+      "sstLinkType": "LeadsTo",
+      "semOrigin": ""
+    },
+    {
+      "id": 0,
+      "source": 4,
+      "target": 7,
       "dir": "",
       "tooltip": "then followed by",
       "sstLinkType": "LeadsTo",

@@ -7,7 +7,7 @@ c6::a Betz cells ::c
 t7::a Complementary roles for hippocampus and anterior cingulate in composing continuous choice ::t
 c8::a "External granular layer. Composed of small \"pyramidal cells\" and \"inhibitory cells\". Receives input from deeper layers." ::c
 c9::a External pyramidal layer. Small to medium pyramidal neurons. Send exicitory outputs to other cortical areas across the corpus callosum. ::c
-e10::a Internal granular layer. The main entry point for incoming sensory signals. Direct signals from the thalamus. ::e
+c10::a Internal granular layer. The main entry point for incoming sensory signals. Direct signals from the thalamus. ::c
 c11::a "Internal pyramidal layer. Contains a large number of pyramidal neurons/\"Betz cells\" and motor neurons.  Responsible for sending signals out of the cerebral cortex to deeper brain regions, spinal cord." ::c
 e12::a Left–right-alternating theta sweeps in entorhinal–hippocampal maps of space ::e
 c13::a "Multiform layer. The deepest layer. Sends massive feedback mainly to thalamus, allowing the cortex to regulate and filter sensory information." ::c
@@ -19,7 +19,7 @@ t18::a alpha waves ::t
 c19::a association and interhemipsheric signalling ::c
 c20::a attractive signals engage a winner-takes-all competition ::c
 e21::a autonomic nervous system ::e
-c22::a axons ::c
+c22::a "axons," ::c
 e23::a basal ganglia ::e
 c24::a "below cortex, forebrain" ::c
 t25::a beta waves ::t
@@ -33,7 +33,7 @@ c32::a conduit/relay station for sensory information. ::c
 c33::a cortical to cortical communication ::c
 c34::a creates temporary structured episodic record ::c
 t35::a delta waves ::t
-c36::a dendrites ::c
+c36::a "dendrites," ::c
 e37::a "early telencephalon, meaning the end of the brain" ::e
 t38::a "encoding meaning as \"things\" is efficient conceptualisation, which is a coarse graining of spacetime pattern persistence and recurrence." ::t
 e39::a entorhinal cortex ::e
@@ -54,7 +54,7 @@ c53::a "key nexus between body and brain , vital decision making circuits" ::c
 t54::a layer 1 ::t "plays a role in intentionality?" ::tip
 t55::a layer 2 ::t
 t56::a layer 3 ::t
-e57::a layer 4 ::e
+t57::a layer 4 ::t
 e58::a layer 5 ::e
 e59::a layer 6 ::e
 c60::a learning and memory ::c
@@ -90,24 +90,25 @@ c89::a "take signals from 2,3 and context and redistribute" ::c
 t90::a tectum ::t "conditional promises" ::tip
 e91::a "tectum, cortex, spine, other hemisphere" ::e
 e92::a "tectum, thalamus" ::e
-c93::a telencephalon ::c
+c93::a "telencephalon," ::c
 t94::a temporal cortex ::t
 e95::a thalamus ::e
-e96::a theta waves ::e
-c97::a top of midbrain ::c
-t98::a type 1 ::t
-t99::a type 2 ::t
-e100::a ultimately expand in mammals to become the neocortex ::e
-e101::a "urges to eat, drink, sleep, find shelter, avoid whatever is causing pain or fear, or respond with defensive or aggressive behaviours." ::e
-c102::a "very relaxed, light or passive attention" ::c
-c103::a what we can do with a object or service ::c
+c96::a thalamus. ::c
+e97::a theta waves ::e
+c98::a top of midbrain ::c
+t99::a type 1 ::t
+t100::a type 2 ::t
+e101::a ultimately expand in mammals to become the neocortex ::e
+e102::a "urges to eat, drink, sleep, find shelter, avoid whatever is causing pain or fear, or respond with defensive or aggressive behaviours." ::e
+c103::a "very relaxed, light or passive attention" ::c
+c104::a what we can do with a object or service ::c
 
 e28 --::P--> e67
 e67 --::X "has the structure of"--> c65
 e67 --::X "has a role"--> c16
 e50 --::L "influences"--> e47
-e50 --::L "influences"--> e101
-e50 --::L "leads to"--> e100
+e50 --::L "influences"--> e102
+e50 --::L "leads to"--> e101
 e50 --::X "has a role"--> c53
 e50 --::X "takes place at location"--> e40
 e50 --::X "has a role"--> c66
@@ -124,11 +125,11 @@ e46 --::X "has a role"--> c88
 t90 --::X "has a role"--> c61
 t90 --::X "has a role"--> c74
 t90 --::X "works by method"--> c20
-t90 --::X "takes place at location"--> c97
-t17 --::X "has a role"--> c103
+t90 --::X "takes place at location"--> c98
+t17 --::X "has a role"--> c104
 e14 --::X "is the publisher of"--> e12
 t18 --::X "has frequency"--> c5
-t18 --::X "is characterized by"--> c102
+t18 --::X "is characterized by"--> c103
 t25 --::X "has frequency"--> c2
 t25 --::X "is characterized by"--> c63
 t78 --::P--> t42
@@ -139,9 +140,9 @@ t42 --::X "has frequency"--> c3
 t42 --::X "is characterized by"--> c31
 t35 --::X "has frequency"--> c1
 t35 --::X "is characterized by"--> c87
-t98 --::P--> e96
-t99 --::P--> e96
-e96 --::X "has frequency"--> c4
+t99 --::P--> e97
+t100 --::P--> e97
+e97 --::X "has frequency"--> c4
 e40 --::P--> e49
 t64 --::P--> e49
 t45 --::P--> e49
@@ -159,8 +160,8 @@ t55 --::X "has a role"--> c27
 t56 --::X "has description"--> c9
 t56 --::X "has a role"--> c27
 t56 --::X "has a role"--> c19
-e57 --::X "has description"--> e10
-e57 --::X "has a role"--> c79
+t57 --::X "has description"--> c10
+t57 --::X "has a role"--> c79
 e58 --::L "signals to"--> e91
 e58 --::X "has description"--> c11
 e58 --::X "has a role"--> c89
@@ -170,15 +171,15 @@ e44 --::P--> e39
 e71 --::L "evolved to"--> e67
 e37 --::L "evolved to"--> e50
 e37 --::X "involves"--> c93
-e100 --::X "involves"--> e67
+e101 --::X "involves"--> e67
 e86 --::L "sustains"--> e23
 c8 --::X "involves"--> c82
 c8 --::X "involves"--> c51
 c27 --::X "involves"--> c30
-e10 --::X "involves"--> e95
+c10 --::X "involves"--> c96
 e85 --::X "involves"--> e95
 t7 --::X "has URL"--> c48
-e12 --::X "discusses"--> e96
+e12 --::X "discusses"--> e97
 e12 --::X "discusses"--> c77
 e12 --::X "discusses"--> e76
 e12 --::X "discusses"--> e44

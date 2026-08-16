@@ -328,6 +328,10 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
       if (insp) insp.style.display = "none"; // before activateState so its hash write keeps i=0
     }
     activateState(initialID, { push: false, replaceHash: true, nodeID: parsed.nodeID });
+    // After activateState, which has applied the primary node and rewritten the
+    // hash. Deliberately no syncHash afterwards: the URL we just parsed already
+    // says this, and rewriting it here would drop the z/x/y the sender chose.
+    applySelectionFromHash(parsed);
     if (parsed.zoom != null) {
       cameraScale = parsed.zoom;
       if (parsed.panX != null) panX = parsed.panX;
@@ -346,6 +350,7 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
         // so the deferred recordView is never scheduled for this activation.
         suppressHistory = true;
         activateState(targetID, { push: false, replaceHash: false, nodeID: nid });
+        applySelectionFromHash(ph);   // Back/Forward restores the whole selection, not just its primary
         suppressHistory = false;
       }
     });
@@ -398,19 +403,39 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
     if (!h || h.length < 2) return { stateID: null, nodeID: null, zoom: null, panX: null, panY: null };
     let raw = h.slice(1);
     let view = { zoom: null, panX: null, panY: null, inspectorHidden: false };
+    let sel = { edgeIdx: null, extraNodeIDs: [], extraEdgeIdxs: [] };
     const q = raw.indexOf("?");
     if (q >= 0) {
       const qs = raw.slice(q + 1);
       raw = raw.slice(0, q);
       for (const pair of qs.split("&")) {
-        const [k, v] = pair.split("=");
+        // Split on the FIRST "=" only: ids are percent-encoded, so they cannot
+        // contain a bare "=", but destructuring split("=") would silently drop
+        // everything past a second one.
+        const eq = pair.indexOf("=");
+        if (eq < 0) continue;
+        const k = pair.slice(0, eq);
+        const v = pair.slice(eq + 1);
         if (!v) continue;
+        // The list params carry ids, not numbers, so they are read before the
+        // numeric guard below -- which would otherwise throw them away as NaN.
+        if (k === "sn") {
+          sel.extraNodeIDs = v.split(",").map(decodeURIComponent).filter(Boolean);
+          continue;
+        }
+        if (k === "se") {
+          sel.extraEdgeIdxs = v.split(",")
+            .map(function (s) { return Number(decodeURIComponent(s)); })
+            .filter(function (n) { return Number.isInteger(n); });
+          continue;
+        }
         const num = Number(decodeURIComponent(v));
         if (isNaN(num)) continue;
         if (k === "z") view.zoom = num;
         else if (k === "x") view.panX = num;
         else if (k === "y") view.panY = num;
         else if (k === "i") view.inspectorHidden = (num === 0);
+        else if (k === "pe") sel.edgeIdx = num;
       }
     }
     const slash = raw.indexOf("/");
@@ -422,7 +447,11 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
       const n = raw.slice(slash + 1);
       if (n) nodeID = n;
     }
-    return { stateID: stateID, nodeID: nodeID, zoom: view.zoom, panX: view.panX, panY: view.panY, inspectorHidden: view.inspectorHidden };
+    return {
+      stateID: stateID, nodeID: nodeID,
+      zoom: view.zoom, panX: view.panX, panY: view.panY, inspectorHidden: view.inspectorHidden,
+      edgeIdx: sel.edgeIdx, extraNodeIDs: sel.extraNodeIDs, extraEdgeIdxs: sel.extraEdgeIdxs,
+    };
   }
 
   function buildHash(stateID, nodeID, view) {
@@ -436,14 +465,87 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
       if (view.panX != null) parts.push("x=" + encodeURIComponent(view.panX));
       if (view.panY != null) parts.push("y=" + encodeURIComponent(view.panY));
     }
+    // The rest of the selection: a primary EDGE, and every shift-clicked extra
+    // of either kind. Only the primary node used to travel (in the path above),
+    // so "Copy view URL" handed back a different picture from the one you
+    // copied -- an edge selection arrived empty, and a multi-selection arrived
+    // as one node -- while the button's own tooltip promised the selection.
+    //
+    // Read from the live selection rather than passed in, so syncHash keeps the
+    // address bar honest as you shift-click, and copying is then just reading it.
+    if (selectedEdgeIdx != null) parts.push("pe=" + encodeURIComponent(selectedEdgeIdx));
+    const extraNodes = Array.from(extraNodeIDs).filter(function (id) { return id !== selectedNodeID; });
+    const extraEdges = Array.from(extraEdgeIdxs).filter(function (i) { return i !== selectedEdgeIdx; });
+    if (extraNodes.length) parts.push("sn=" + extraNodes.map(encodeURIComponent).join(","));
+    if (extraEdges.length) parts.push("se=" + extraEdges.map(encodeURIComponent).join(","));
     // Reflect the inspector panel's visibility so a shared URL restores it.
     if (inspectorIsHidden()) parts.push("i=0");
     if (parts.length > 0) h += "?" + parts.join("&");
     return h;
   }
 
+  // Put a parsed hash's selection back onto the canvas, on top of whatever
+  // primary node activateState already applied.
+  //
+  // Ids and indices the current state does not have are dropped rather than
+  // fatal: a shared URL outlives the render it was copied from, and edge
+  // indices in particular are positional, so a re-render can invalidate them.
+  // Half a selection is a better answer than a blank canvas or a thrown error.
+  function applySelectionFromHash(p) {
+    if (!p) return;
+    const st = currentState();
+    if (!st) return;
+    const edges = st.edges || [];
+    const knownEdge = function (i) { return Number.isInteger(i) && i >= 0 && i < edges.length; };
+
+    // The primary is a node OR an edge, never both. A primary node came in
+    // through the path and has already been applied, so an edge only takes the
+    // primary slot when no node holds it.
+    if (p.edgeIdx != null && knownEdge(p.edgeIdx)) {
+      if (selectedNodeID == null) selectedEdgeIdx = p.edgeIdx;
+      else extraEdgeIdxs.add(p.edgeIdx);
+    }
+    for (const id of p.extraNodeIDs || []) {
+      if (id !== selectedNodeID && findNodeById(id)) extraNodeIDs.add(id);
+    }
+    for (const i of p.extraEdgeIdxs || []) {
+      if (i !== selectedEdgeIdx && knownEdge(i)) extraEdgeIdxs.add(i);
+    }
+    // updateSelection picks the inspector that matches the primary. Calling
+    // updateInspector() here as well looked harmless and was not:
+    // renderNodeInspector opens by setting selectedEdgeIdx = null -- "a node is
+    // being inspected, drop any edge selection" -- so the restore wiped the very
+    // edge it had just put back, and only for edges, which is why the node case
+    // looked fine.
+    updateSelection();
+  }
+
+  // The address bar follows the VIEW as well as the selection, once the reader
+  // has moved it: a wheel, a drag-pan or a follow-to-node marks the view as
+  // the reader's (viewTouched) and, after a short pause, writes z/x/y into the
+  // hash -- so reload, bookmark and copy all give back what was on screen,
+  // without a click on "Copy view URL". Debounced, because a wheel fires
+  // dozens of times per gesture and every one is a replaceState. The initial
+  // fit and every state change reset the flag (resetCamera): a fresh state's
+  // URL is just its id until the reader touches it, and the history entries
+  // activateState pushes stay clean.
+  const VIEW_HASH_DELAY_MS = 350;
+  let viewTouched = false;
+  let viewHashTimer = null;
+  function currentView() {
+    return { zoom: cameraScale, panX: Math.round(panX), panY: Math.round(panY) };
+  }
+  function viewChangedByUser() {
+    viewTouched = true;
+    if (viewHashTimer) clearTimeout(viewHashTimer);
+    viewHashTimer = setTimeout(function () {
+      viewHashTimer = null;
+      syncHash();
+    }, VIEW_HASH_DELAY_MS);
+  }
+
   function syncHash() {
-    const h = buildHash(currentStateID, selectedNodeID);
+    const h = buildHash(currentStateID, selectedNodeID, viewTouched ? currentView() : null);
     history.replaceState({ stateID: currentStateID, nodeID: selectedNodeID }, "", h);
   }
 
@@ -587,6 +689,8 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
     cameraScale = 1;
     panX = 0;
     panY = 0;
+    viewTouched = false;
+    if (viewHashTimer) { clearTimeout(viewHashTimer); viewHashTimer = null; }
     fitToViewport();
   }
 
@@ -1366,6 +1470,7 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
     selectedNodeID = null;
     selectedEdgeIdx = idx;
     updateSelection();
+    syncHash(); // an edge selection is part of the address, like a node's
   }
 
   function linkTypeName(base) {
@@ -1420,6 +1525,7 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
     panX = cw / 2 - (node.x + node.width / 2) * cameraScale;
     panY = ch / 2 - (node.y + node.height / 2) * cameraScale;
     applyTransform();
+    viewChangedByUser(); // a follow-to-node is the reader's move too
   }
 
   function clearEndpointHighlight() {
@@ -1785,12 +1891,12 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
   }
 
   function copyViewURL() {
-    const view = { zoom: cameraScale, panX: Math.round(panX), panY: Math.round(panY) };
+    viewTouched = true; // the copied view stays in the address bar from here on
+    const view = currentView();
     const hash = buildHash(currentStateID, selectedNodeID, view);
     const url = location.origin + location.pathname + location.search + hash;
     // Also reflect the copied (view-inclusive) URL in the address bar, so the page
-    // you copied IS the page you're looking at. (syncHash drops the view params on
-    // the next interaction, which is fine — the copy is a point-in-time snapshot.)
+    // you copied IS the page you're looking at.
     history.replaceState({ stateID: currentStateID, nodeID: selectedNodeID }, "", hash);
     const btn = document.getElementById("copy-url-btn");
     const flash = () => {
@@ -1920,6 +2026,7 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
     panY = my - (my - panY) * (newScale / cameraScale);
     cameraScale = newScale;
     applyTransform();
+    viewChangedByUser();
   }, { passive: false });
 
   canvasWrap.addEventListener("mousedown", function (e) {
@@ -1956,6 +2063,7 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
     if (isPanning) {
       isPanning = false;
       canvasWrap.classList.remove("dragging");
+      if (didDrag) viewChangedByUser();
     }
   });
 
@@ -2110,6 +2218,11 @@ window.__BUNDLED_SVGS = {"s:":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u0
     selectNode: function (nodeID) { selectNodeOnly(nodeID); },
     shiftSelectNode: function (nodeID) { toggleNodeInSelection(nodeID); },
     shiftSelectEdge: function (idx) { toggleEdgeInSelection(idx); },
+    selectEdge: function (idx) { selectEdge(idx); },
+    // What the current URL says, as parsed. The selection round-trip is easy to
+    // get wrong in a way that looks like a rendering bug, so tests can see the
+    // two halves separately: what the hash carried, and what got applied.
+    parsedHash: function () { return parseHash(); },
     selectionInfo: function () {
       return {
         primaryNode: selectedNodeID,
