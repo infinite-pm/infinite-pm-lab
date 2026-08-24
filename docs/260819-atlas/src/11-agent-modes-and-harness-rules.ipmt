@@ -1,0 +1,13 @@
+# Glossary > Agent modes and harness rules
+# ipm-overview:docs/glossary.md#L222
+# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+
+read mode ::c, validate mode ::c, update mode ::c --> agent mode ::c
+design mode ::c, review mode ::c --> agent mode
+
+read-only ::c, writes findings only ::c, writes the model ::c --> write scope ::c
+writes a proposal only ::c, writes a review pack only ::c --> write scope
+
+one mode per run ::c, one writer at a time ::c, clean baseline ::c --> harness rule ::c
+tests per run ::c, commit after ::c, own commit per mode ::c --> harness rule
+reviewed before update ::c --> harness rule

@@ -1,0 +1,42 @@
+# Render a diagram from the command line > Four steps, four commands
+# ipm-overview:docs/use-cases/render-diagram.md#L13
+# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+
+# One whole event: rendering one diagram. Everything else is part of it.
+whole::a Render one diagram ::e
+
+# Its four steps, in order (siblings inside the whole)
+parse::a Parse ::e
+  --> validate::a Validate ::e
+  --> layout::a Lay out ::e
+  --> render::a Render ::e
+parse, validate, layout, render --::P--> whole
+
+# Tools doing the work (thing --> event, part-of)
+ipmt-parse --> parse
+ipm-validate --> validate
+layout-gen --> layout
+ipmsvg-gen --> render
+
+# Artifacts flowing through
+src::a hello.ipmt --> parse
+graph::a hello.ipm.json --> parse, validate, layout
+lay::a hello.layout.json --> layout, render
+svg::a hello.ipm.svg --> render
+
+# The person at the keyboard
+user::a User --> parse, render
+
+# What the things are (glossary concepts)
+ipmt-parse --> parser ::c
+ipm-validate --> validator ::c
+layout-gen --> layout engine ::c
+ipmsvg-gen --> renderer ::c
+ipmt-parse, ipm-validate, layout-gen, ipmsvg-gen --> command-line tool ::c
+
+src --> ipmt text ::c, input ::c
+graph --> graph JSON ::c, intermediate ::c
+lay --> layout JSON ::c, intermediate ::c
+svg --> ipm SVG ::c, output ::c
+
+user --> Author ::c

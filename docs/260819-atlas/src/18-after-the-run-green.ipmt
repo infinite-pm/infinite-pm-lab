@@ -1,0 +1,25 @@
+# AI agent modes and the harness > The envelope of an update run > After the run — green
+# ipm-overview:docs/use-cases/agent-modes.md#L170
+# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+
+test::a Run the tests ::e
+  --> after::a Commit the result ::e
+  --> free::a Release the write lock ::e
+
+# This diagram tells one attempt too — the one that passes.
+test, after, free --::P--> whole::a Attempt an update ::e
+
+hn::a agent harness --> test, after, free
+tests::a repo tests --> test
+mainwt::a main worktree --> test, after
+c1::a update commit --> after
+wl::a repo write lock --> free
+
+test --> tests per run ::c
+after --> commit after ::c, own commit per mode ::c
+
+hn --> harness ::c
+tests --> test suite ::c
+mainwt --> ipm knowledge base ::c
+c1 --> commit ::c
+wl --> write lock ::c

@@ -1,0 +1,29 @@
+# AI agent modes and the harness > The envelope of an update run > After the run — red
+# ipm-overview:docs/use-cases/agent-modes.md#L202
+# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+
+test::a Run the tests ::e
+  --> reject::a Reject the run ::e
+  --> reset::a Reset to the baseline ::e
+  --> free::a Release the write lock ::e
+
+# This diagram tells one attempt — the one that fails. (Reject and reset happen
+# in no other diagram; this is where they are declared.)
+test, reject, reset, free --::P--> whole::a Attempt an update ::e
+
+hn::a agent harness --> test, reject, reset, free
+tests::a repo tests --> test
+findings::a failing suite --> test, reject
+mainwt::a main worktree --> test, reset
+c0::a baseline commit --> reset
+wl::a repo write lock --> free
+
+test --> tests per run ::c
+reject --> commit after ::c
+
+hn --> harness ::c
+tests --> test suite ::c
+findings --> diagnostic ::c
+mainwt --> ipm knowledge base ::c
+c0 --> commit ::c
+wl --> write lock ::c

@@ -1,0 +1,8 @@
+# Glossary > Fences and selectors
+# ipm-overview:docs/glossary.md#L58
+# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+
+ipmt fence ::c --> Markdown fence ::c
+
+strict ::c, unresolved fence ::c, no-embed ::c, invalid example ::c --> fence selector ::c
+fence selector --> ipmt fence

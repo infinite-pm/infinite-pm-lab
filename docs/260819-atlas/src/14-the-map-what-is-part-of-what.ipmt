@@ -1,0 +1,26 @@
+# AI agent modes and the harness > The map — what is part of what
+# ipm-overview:docs/use-cases/agent-modes.md#L53
+# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+
+# The general event every run is a kind of. A specific run EXPRESSES it — it is
+# not contained by it: a read run does not happen inside some larger "run the
+# mode", it is one of that kind. Containment is the other tree, below.
+general::a Run the mode ::e
+
+# The chain that moves a change along. It ends at the whole attempt, not inside
+# it: an update run happens within its envelope.
+design::a Run the design mode ::e
+  --> validate::a Run the validate mode ::e
+  --> review::a Run the review mode ::e
+  --> attempt::a Attempt an update ::e
+
+# Reading is a kind of run like the rest, tied to nothing in that chain: it can
+# happen at any point, or not at all.
+read::a Run the read mode ::e
+
+update::a Run the update mode ::e --::P--> attempt
+read, design, validate, review, update, attempt --::X--> general
+
+# The change all of this is part of.
+change::a Change the knowledge base ::e
+design, validate, review, attempt --::P--> change

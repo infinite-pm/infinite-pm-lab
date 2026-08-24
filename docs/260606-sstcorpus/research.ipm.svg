@@ -18,26 +18,32 @@
   </g>
   <g id="edges">
     <g class="edge" data-edge-idx="0" data-edge-base="expresses" data-edge-from="3" data-edge-to="2">
+      <title>has author</title>
     <polyline points="285.00,990.00 306,990 305.08,1128.25" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 305.03 1135.00 L 300.59 1125.97 L 305.08 1128.25 L 309.59 1126.03 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="1" data-edge-base="expresses" data-edge-from="3" data-edge-to="9">
+      <title>has arxiv reference</title>
     <line x1="220.00" y1="1025.00" x2="220.00" y2="1028.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 220.00 1035.00 L 215.50 1026.00 L 220.00 1028.25 L 224.50 1026.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="2" data-edge-base="expresses" data-edge-from="3" data-edge-to="4">
+      <title>has abstract</title>
     <line x1="220.00" y1="955.00" x2="220.00" y2="931.75" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 220.00 925.00 L 224.50 934.00 L 220.00 931.75 L 215.50 934.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="3" data-edge-base="expresses" data-edge-from="7" data-edge-to="2">
+      <title>has author</title>
     <line x1="367.50" y1="1105.00" x2="355.52" y2="1128.96" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 352.50 1135.00 L 352.50 1124.94 L 355.52 1128.96 L 360.55 1128.96 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="4" data-edge-base="expresses" data-edge-from="7" data-edge-to="8">
+      <title>has arxiv reference</title>
     <line x1="400.00" y1="1105.00" x2="400.00" y2="1208.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 400.00 1215.00 L 395.50 1206.00 L 400.00 1208.25 L 404.50 1206.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="5" data-edge-base="expresses" data-edge-from="6" data-edge-to="10">
+      <title>has bibtex citation</title>
     <line x1="760.00" y1="125.00" x2="760.00" y2="148.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 760.00 155.00 L 755.50 146.00 L 760.00 148.25 L 764.50 146.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>

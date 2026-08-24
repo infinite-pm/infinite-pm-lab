@@ -1,0 +1,16 @@
+# Read a whole knowledge base on one board > Going deeper without leaving
+# ipm-overview:docs/use-cases/read-a-board.md#L121
+# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+
+whole::a Read a board ::e
+zoom::a Zoom into a panel ::e --::P--> whole
+
+you::a Board reader --> zoom
+pnl::a the landing's panel --> zoom
+lattice::a the panel's click-path states --> zoom
+ovl::a the focus overlay --> zoom
+
+pnl --> panel ::c
+lattice --> intermediate ::c
+ovl --> board part ::c
+you --> Reader ::c

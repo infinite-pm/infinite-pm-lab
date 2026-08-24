@@ -1,0 +1,24 @@
+# AI agent modes and the harness > The life of a change
+# ipm-overview:docs/use-cases/agent-modes.md#L84
+# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+
+design::a Run the design mode ::e
+  --> validate::a Run the validate mode ::e
+  --> review::a Run the review mode ::e
+  --> attempt::a Attempt an update ::e
+design, validate, review, attempt --::P--> whole::a Change the knowledge base ::e
+
+design --> design mode ::c
+validate --> validate mode ::c
+review --> review mode ::c
+attempt --> update mode ::c
+
+wt::a design worktree --> design, validate, review
+mainwt::a main worktree --> validate, attempt
+agent::a coding agent --> design, validate, review, attempt
+you::a User --> review
+
+wt --> design workspace ::c
+mainwt --> ipm knowledge base ::c
+agent --> AI agent ::c
+you --> Reviewer ::c

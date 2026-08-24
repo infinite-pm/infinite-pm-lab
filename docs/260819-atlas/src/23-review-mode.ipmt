@@ -1,0 +1,23 @@
+# AI agent modes and the harness > Review mode
+# ipm-overview:docs/use-cases/agent-modes.md#L320
+# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+
+run::a Run the review mode ::e --> review mode ::c, writes a review pack only ::c
+
+summ::a Summarise the change ::e
+  --> diff::a Prepare the diff ::e
+  --> confirm::a Confirm the validation result ::e
+  --> approve::a Human confirms ::e
+summ, diff, confirm, approve --::P--> run
+
+agent::a coding agent --> summ, diff, confirm
+wt::a design worktree --> summ, diff, confirm
+tests::a repo tests --> confirm
+pack::a review pack document --> summ, diff, confirm, approve
+you::a User --> approve
+
+agent --> AI agent ::c
+wt --> design workspace ::c
+tests --> test suite ::c
+pack --> review pack ::c, output ::c
+you --> Reviewer ::c

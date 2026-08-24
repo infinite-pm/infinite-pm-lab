@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1020" height="5780" viewBox="0 0 1020 5780">
+<svg xmlns="http://www.w3.org/2000/svg" width="1460" height="5780" viewBox="0 0 1460 5780">
   <defs>
   </defs>
   <g id="container-shells">
@@ -52,6 +52,8 @@
     <rect x="400" y="1180" width="120" height="140" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="400" y="4960" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="400" y="5080" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="1060" y="40" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="1300" y="40" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="440" y="40" width="40" height="40" rx="4" ry="4" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="440" y="5300" width="40" height="40" rx="4" ry="4" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="400" y="1700" width="120" height="340" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
@@ -61,218 +63,270 @@
   </g>
   <g id="edges">
     <g class="edge" data-edge-idx="0" data-edge-base="expresses" data-edge-from="47" data-edge-to="11">
+      <title>hanzi has english</title>
     <line x1="755.00" y1="150.00" x2="711.75" y2="150.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 705.00 150.00 L 714.00 145.50 L 711.75 150.00 L 714.00 154.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="1" data-edge-base="leadsto" data-edge-from="49" data-edge-to="50">
+      <title>then followed by</title>
     <line x1="460.00" y1="4905.00" x2="460.00" y2="4948.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 460.00 4955.00 L 455.50 4946.00 L 460.00 4948.25 L 464.50 4946.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="2" data-edge-base="expresses" data-edge-from="34" data-edge-to="49">
+      <title>pinyin has hanzi</title>
     <line x1="345.00" y1="4870.00" x2="388.25" y2="4870.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 395.00 4870.00 L 386.00 4874.50 L 388.25 4870.00 L 386.00 4865.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="3" data-edge-base="expresses" data-edge-from="34" data-edge-to="30">
+      <title>pinyin has english</title>
     <line x1="215.00" y1="4870.00" x2="171.75" y2="4870.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 165.00 4870.00 L 174.00 4865.50 L 171.75 4870.00 L 174.00 4874.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="4" data-edge-base="leadsto" data-edge-from="50" data-edge-to="51">
+      <title>then followed by</title>
     <line x1="460.00" y1="5025.00" x2="460.00" y2="5068.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 460.00 5075.00 L 455.50 5066.00 L 460.00 5068.25 L 464.50 5066.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="5" data-edge-base="expresses" data-edge-from="39" data-edge-to="50">
+      <title>pinyin has hanzi</title>
     <line x1="345.00" y1="5045.00" x2="390.23" y2="4999.77" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 395.00 4995.00 L 391.82 5004.55 L 390.23 4999.77 L 385.45 4998.18 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="6" data-edge-base="expresses" data-edge-from="39" data-edge-to="31">
+      <title>pinyin has english</title>
     <line x1="282.37" y1="5085.00" x2="454.74" y2="5448.90" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 457.63 5455.00 L 449.71 5448.79 L 454.74 5448.90 L 457.85 5444.94 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="7" data-edge-base="leadsto" data-edge-from="51" data-edge-to="48">
+      <title>then followed by</title>
     <line x1="460.00" y1="5145.00" x2="460.00" y2="5188.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 460.00 5195.00 L 455.50 5186.00 L 460.00 5188.25 L 464.50 5186.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="8" data-edge-base="expresses" data-edge-from="36" data-edge-to="51">
+      <title>pinyin has hanzi</title>
     <line x1="575.00" y1="5110.00" x2="531.75" y2="5110.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 525.00 5110.00 L 534.00 5105.50 L 531.75 5110.00 L 534.00 5114.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="9" data-edge-base="expresses" data-edge-from="36" data-edge-to="32">
+      <title>pinyin has english</title>
     <line x1="705.00" y1="5110.00" x2="748.25" y2="5110.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 755.00 5110.00 L 746.00 5114.50 L 748.25 5110.00 L 746.00 5105.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="10" data-edge-base="expresses" data-edge-from="38" data-edge-to="48">
+      <title>pinyin has hanzi</title>
     <line x1="575.00" y1="5285.00" x2="529.77" y2="5239.77" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 525.00 5235.00 L 534.55 5238.18 L 529.77 5239.77 L 528.18 5244.55 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="11" data-edge-base="expresses" data-edge-from="38" data-edge-to="33">
+      <title>pinyin has english</title>
     <polyline points="640.00,5325.00 640,5340 527.31,5649.91" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 525.00 5656.25 L 523.85 5646.25 L 527.31 5649.91 L 532.30 5649.33 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="12" data-edge-base="leadsto" data-edge-from="26" data-edge-to="9">
+      <title>then followed by</title>
     <line x1="487.00" y1="185.00" x2="487.00" y2="228.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 487.00 235.00 L 482.50 226.00 L 487.00 228.25 L 491.50 226.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="13" data-edge-base="expresses" data-edge-from="26" data-edge-to="47">
+      <title>pinyin has hanzi</title>
     <polyline points="510.17,185.00 536,210 760,210 780.23,189.77" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 785.00 185.00 L 781.82 194.55 L 780.23 189.77 L 775.45 188.18 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="14" data-edge-base="expresses" data-edge-from="26" data-edge-to="9">
+      <title>has story text</title>
     <line x1="463.00" y1="185.00" x2="463.00" y2="228.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 463.00 235.00 L 458.50 226.00 L 463.00 228.25 L 467.50 226.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="15" data-edge-base="expresses" data-edge-from="26" data-edge-to="11">
+      <title>pinyin has english</title>
     <line x1="525.00" y1="150.00" x2="568.25" y2="150.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 575.00 150.00 L 566.00 154.50 L 568.25 150.00 L 566.00 145.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="16" data-edge-base="leadsto" data-edge-from="3" data-edge-to="7">
+      <title>then followed by</title>
     <line x1="460.00" y1="785.00" x2="460.00" y2="828.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 460.00 835.00 L 455.50 826.00 L 460.00 828.25 L 464.50 826.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="17" data-edge-base="expresses" data-edge-from="3" data-edge-to="21">
+      <title>pinyin has english</title>
     <line x1="395.00" y1="740.00" x2="351.75" y2="740.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 345.00 740.00 L 354.00 735.50 L 351.75 740.00 L 354.00 744.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="18" data-edge-base="leadsto" data-edge-from="5" data-edge-to="23">
+      <title>then followed by</title>
     <line x1="460.00" y1="1325.00" x2="460.00" y2="1368.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 460.00 1375.00 L 455.50 1366.00 L 460.00 1368.25 L 464.50 1366.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="19" data-edge-base="expresses" data-edge-from="5" data-edge-to="22">
+      <title>pinyin has english</title>
     <line x1="395.00" y1="1250.00" x2="351.75" y2="1250.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 345.00 1250.00 L 354.00 1245.50 L 351.75 1250.00 L 354.00 1254.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="20" data-edge-base="leadsto" data-edge-from="8" data-edge-to="45">
+      <title>then followed by</title>
     <line x1="460.00" y1="2185.00" x2="460.00" y2="2228.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 460.00 2235.00 L 455.50 2226.00 L 460.00 2228.25 L 464.50 2226.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="21" data-edge-base="expresses" data-edge-from="8" data-edge-to="18">
+      <title>pinyin has hanzi</title>
     <line x1="525.00" y1="2140.00" x2="568.25" y2="2140.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 575.00 2140.00 L 566.00 2144.50 L 568.25 2140.00 L 566.00 2135.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="22" data-edge-base="leadsto" data-edge-from="28" data-edge-to="44">
+      <title>then followed by</title>
     <line x1="460.00" y1="3665.00" x2="460.00" y2="3708.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 460.00 3715.00 L 455.50 3706.00 L 460.00 3708.25 L 464.50 3706.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="23" data-edge-base="expresses" data-edge-from="28" data-edge-to="13">
+      <title>pinyin has english</title>
     <line x1="525.00" y1="3600.00" x2="568.25" y2="3600.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 575.00 3600.00 L 566.00 3604.50 L 568.25 3600.00 L 566.00 3595.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="24" data-edge-base="leadsto" data-edge-from="4" data-edge-to="27">
+      <title>then followed by</title>
     <line x1="460.00" y1="4525.00" x2="460.00" y2="4568.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 460.00 4575.00 L 455.50 4566.00 L 460.00 4568.25 L 464.50 4566.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="25" data-edge-base="expresses" data-edge-from="4" data-edge-to="16">
+      <title>pinyin has english</title>
     <line x1="395.00" y1="4460.00" x2="351.75" y2="4460.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 345.00 4460.00 L 354.00 4455.50 L 351.75 4460.00 L 354.00 4464.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="26" data-edge-base="leadsto" data-edge-from="9" data-edge-to="35">
+      <title>then followed by</title>
     <line x1="460.00" y1="405.00" x2="460.00" y2="448.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 460.00 455.00 L 455.50 446.00 L 460.00 448.25 L 464.50 446.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="27" data-edge-base="expresses" data-edge-from="9" data-edge-to="20">
+      <title>pinyin has english</title>
     <line x1="525.00" y1="320.00" x2="568.25" y2="320.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 575.00 320.00 L 566.00 324.50 L 568.25 320.00 L 566.00 315.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="28" data-edge-base="leadsto" data-edge-from="35" data-edge-to="3">
+      <title>then followed by</title>
     <line x1="460.00" y1="645.00" x2="460.00" y2="688.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 460.00 695.00 L 455.50 686.00 L 460.00 688.25 L 464.50 686.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="29" data-edge-base="expresses" data-edge-from="35" data-edge-to="40">
+      <title>pinyin has english</title>
     <line x1="525.00" y1="555.00" x2="570.23" y2="600.23" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 575.00 605.00 L 565.45 601.82 L 570.23 600.23 L 571.82 595.45 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="30" data-edge-base="leadsto" data-edge-from="7" data-edge-to="5">
+      <title>then followed by</title>
     <line x1="460.00" y1="1125.00" x2="460.00" y2="1168.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 460.00 1175.00 L 455.50 1166.00 L 460.00 1168.25 L 464.50 1166.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="31" data-edge-base="expresses" data-edge-from="7" data-edge-to="2">
+      <title>pinyin has english</title>
     <line x1="525.00" y1="980.00" x2="568.25" y2="980.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 575.00 980.00 L 566.00 984.50 L 568.25 980.00 L 566.00 975.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="32" data-edge-base="leadsto" data-edge-from="23" data-edge-to="6">
+      <title>then followed by</title>
     <line x1="460.00" y1="1645.00" x2="460.00" y2="1688.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 460.00 1695.00 L 455.50 1686.00 L 460.00 1688.25 L 464.50 1686.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="33" data-edge-base="expresses" data-edge-from="23" data-edge-to="17">
+      <title>pinyin has english</title>
     <line x1="525.00" y1="1510.00" x2="568.25" y2="1510.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 575.00 1510.00 L 566.00 1514.50 L 568.25 1510.00 L 566.00 1505.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="34" data-edge-base="leadsto" data-edge-from="6" data-edge-to="8">
+      <title>then followed by</title>
     <line x1="460.00" y1="2045.00" x2="460.00" y2="2088.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 460.00 2095.00 L 455.50 2086.00 L 460.00 2088.25 L 464.50 2086.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="35" data-edge-base="expresses" data-edge-from="6" data-edge-to="19">
+      <title>pinyin has english</title>
     <line x1="395.00" y1="1870.00" x2="351.75" y2="1870.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 345.00 1870.00 L 354.00 1865.50 L 351.75 1870.00 L 354.00 1874.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="36" data-edge-base="leadsto" data-edge-from="45" data-edge-to="37">
+      <title>then followed by</title>
     <line x1="460.00" y1="2425.00" x2="460.00" y2="2468.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 460.00 2475.00 L 455.50 2466.00 L 460.00 2468.25 L 464.50 2466.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="37" data-edge-base="expresses" data-edge-from="45" data-edge-to="43">
+      <title>pinyin has english</title>
     <line x1="395.00" y1="2330.00" x2="351.75" y2="2330.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 345.00 2330.00 L 354.00 2325.50 L 351.75 2330.00 L 354.00 2334.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="38" data-edge-base="leadsto" data-edge-from="37" data-edge-to="24">
+      <title>then followed by</title>
     <line x1="460.00" y1="2685.00" x2="460.00" y2="2728.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 460.00 2735.00 L 455.50 2726.00 L 460.00 2728.25 L 464.50 2726.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="39" data-edge-base="expresses" data-edge-from="37" data-edge-to="41">
+      <title>pinyin has english</title>
     <line x1="525.00" y1="2580.00" x2="568.25" y2="2580.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 575.00 2580.00 L 566.00 2584.50 L 568.25 2580.00 L 566.00 2575.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="40" data-edge-base="leadsto" data-edge-from="24" data-edge-to="1">
+      <title>then followed by</title>
     <line x1="460.00" y1="2905.00" x2="460.00" y2="2948.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 460.00 2955.00 L 455.50 2946.00 L 460.00 2948.25 L 464.50 2946.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="41" data-edge-base="expresses" data-edge-from="24" data-edge-to="14">
+      <title>pinyin has english</title>
     <line x1="525.00" y1="2820.00" x2="568.25" y2="2820.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 575.00 2820.00 L 566.00 2824.50 L 568.25 2820.00 L 566.00 2815.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="42" data-edge-base="leadsto" data-edge-from="1" data-edge-to="42">
+      <title>then followed by</title>
     <line x1="460.00" y1="3245.00" x2="460.00" y2="3288.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 460.00 3295.00 L 455.50 3286.00 L 460.00 3288.25 L 464.50 3286.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="43" data-edge-base="expresses" data-edge-from="1" data-edge-to="25">
+      <title>pinyin has english</title>
     <line x1="395.00" y1="3100.00" x2="351.75" y2="3100.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 345.00 3100.00 L 354.00 3095.50 L 351.75 3100.00 L 354.00 3104.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="44" data-edge-base="leadsto" data-edge-from="42" data-edge-to="28">
+      <title>then followed by</title>
     <line x1="460.00" y1="3485.00" x2="460.00" y2="3528.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 460.00 3535.00 L 455.50 3526.00 L 460.00 3528.25 L 464.50 3526.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="45" data-edge-base="expresses" data-edge-from="42" data-edge-to="10">
+      <title>pinyin has english</title>
     <line x1="525.00" y1="3390.00" x2="568.25" y2="3390.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 575.00 3390.00 L 566.00 3394.50 L 568.25 3390.00 L 566.00 3385.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="46" data-edge-base="leadsto" data-edge-from="44" data-edge-to="29">
+      <title>then followed by</title>
     <line x1="460.00" y1="3985.00" x2="460.00" y2="4028.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 460.00 4035.00 L 455.50 4026.00 L 460.00 4028.25 L 464.50 4026.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="47" data-edge-base="expresses" data-edge-from="44" data-edge-to="46">
+      <title>pinyin has english</title>
     <line x1="525.00" y1="3850.00" x2="568.25" y2="3850.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 575.00 3850.00 L 566.00 3854.50 L 568.25 3850.00 L 566.00 3845.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="48" data-edge-base="leadsto" data-edge-from="29" data-edge-to="4">
+      <title>then followed by</title>
     <line x1="460.00" y1="4345.00" x2="460.00" y2="4388.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 460.00 4395.00 L 455.50 4386.00 L 460.00 4388.25 L 464.50 4386.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="49" data-edge-base="expresses" data-edge-from="29" data-edge-to="12">
+      <title>pinyin has english</title>
     <polyline points="525.00,4265.43 980,4305 980,5445 949.77,5475.23" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 945.00 5480.00 L 948.18 5470.45 L 949.77 5475.23 L 954.55 5476.82 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="50" data-edge-base="leadsto" data-edge-from="27" data-edge-to="49">
+      <title>then followed by</title>
     <line x1="460.00" y1="4785.00" x2="460.00" y2="4828.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 460.00 4835.00 L 455.50 4826.00 L 460.00 4828.25 L 464.50 4826.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="51" data-edge-base="expresses" data-edge-from="27" data-edge-to="15">
+      <title>pinyin has english</title>
     <line x1="525.00" y1="4680.00" x2="568.25" y2="4680.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 575.00 4680.00 L 566.00 4684.50 L 568.25 4680.00 L 566.00 4675.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="52" data-edge-base="leadsto" data-edge-from="52" data-edge-to="26">
+    <g class="edge" data-edge-idx="52" data-edge-base="leadsto" data-edge-from="54" data-edge-to="26">
     <line x1="460.00" y1="85.00" x2="460.00" y2="108.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 460.00 115.00 L 455.50 106.00 L 460.00 108.25 L 464.50 106.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="53" data-edge-base="leadsto" data-edge-from="48" data-edge-to="53">
+    <g class="edge" data-edge-idx="53" data-edge-base="leadsto" data-edge-from="48" data-edge-to="55">
     <line x1="460.00" y1="5265.00" x2="460.00" y2="5288.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 460.00 5295.00 L 455.50 5286.00 L 460.00 5288.25 L 464.50 5286.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
@@ -608,6 +662,22 @@
     <text x="460" y="4990" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">认真</text>
     <rect x="400" y="5080" width="120" height="60" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
     <text x="460" y="5110" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">难为情</text>
+    <rect x="1060" y="40" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="1060" y="40" width="120" height="60" rx="6" ry="6" fill="none" stroke="#82b366" stroke-width="2" stroke-dasharray="6 4 6 14" stroke-dashoffset="0"/>
+    <rect x="1060" y="40" width="120" height="60" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 24" stroke-dashoffset="-20"/>
+    <text x="1120" y="70" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">qīnqiè</text>
+    <rect x="1148" y="83" width="12" height="12" rx="2" ry="2" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="1154.0" y="89.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#009900">t</text>
+    <rect x="1163" y="83" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+    <text x="1169.0" y="89.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
+    <rect x="1300" y="40" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="none"/>
+    <rect x="1300" y="40" width="120" height="60" rx="6" ry="6" fill="none" stroke="#82b366" stroke-width="2" stroke-dasharray="6 4 6 14" stroke-dashoffset="0"/>
+    <rect x="1300" y="40" width="120" height="60" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 24" stroke-dashoffset="-20"/>
+    <text x="1360" y="70" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">rènzhēn</text>
+    <rect x="1388" y="83" width="12" height="12" rx="2" ry="2" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="1394.0" y="89.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#009900">t</text>
+    <rect x="1403" y="83" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+    <text x="1409.0" y="89.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
     <rect x="440" y="40" width="40" height="40" rx="4" ry="4" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
     <text x="460" y="60" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">S</text>
     <rect x="440" y="5300" width="40" height="40" rx="4" ry="4" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
@@ -651,5 +721,25 @@
     <text x="460" y="337" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">shù xià, 狐狸 在</text>
     <text x="460" y="354" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">树林 里 找 吃 的。 他</text>
     <text x="460" y="370" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="bold" fill="#ff8000">来 到 一 棵 大 树 下,</text>
+    <g class="copy-badge" data-node-id="52" data-of="2">
+      <title>drawn in 2 places — this is 1/2</title>
+      <rect x="1157" y="37" width="27" height="15" rx="7.5" ry="7.5" fill="#fff4d6" stroke="#d9a441" stroke-width="1"/>
+      <text x="1170" y="45" text-anchor="middle" dominant-baseline="central" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="10" font-weight="bold" fill="#8a6116">1/2</text>
+    </g>
+    <g class="copy-badge" data-node-id="38" data-of="2">
+      <title>drawn in 2 places — this is 2/2</title>
+      <rect x="677" y="5257" width="27" height="15" rx="7.5" ry="7.5" fill="#fff4d6" stroke="#d9a441" stroke-width="1"/>
+      <text x="690" y="5265" text-anchor="middle" dominant-baseline="central" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="10" font-weight="bold" fill="#8a6116">2/2</text>
+    </g>
+    <g class="copy-badge" data-node-id="53" data-of="2">
+      <title>drawn in 2 places — this is 1/2</title>
+      <rect x="1397" y="37" width="27" height="15" rx="7.5" ry="7.5" fill="#fff4d6" stroke="#d9a441" stroke-width="1"/>
+      <text x="1410" y="45" text-anchor="middle" dominant-baseline="central" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="10" font-weight="bold" fill="#8a6116">1/2</text>
+    </g>
+    <g class="copy-badge" data-node-id="39" data-of="2">
+      <title>drawn in 2 places — this is 2/2</title>
+      <rect x="317" y="5017" width="27" height="15" rx="7.5" ry="7.5" fill="#fff4d6" stroke="#d9a441" stroke-width="1"/>
+      <text x="330" y="5025" text-anchor="middle" dominant-baseline="central" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="10" font-weight="bold" fill="#8a6116">2/2</text>
+    </g>
   </g>
 </svg>

@@ -1,0 +1,10 @@
+# Glossary > Releases
+# ipm-overview:docs/glossary.md#L247
+# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+
+release tag ::c, changelog ::c, pinned ref ::c --> release input ::c
+extension package ::c, marketplace listing ::c --> release output ::c
+gated approval ::c --> safety device ::c
+write lock ::c --> safety device
+
+release input, release output --> artifact ::c

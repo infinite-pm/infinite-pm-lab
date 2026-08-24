@@ -1,0 +1,18 @@
+# Get started with infinite.pm > Read
+# ipm-overview:docs/use-cases/get-started.md#L38
+# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+
+# Two steps of the journey — the whole they are part of.
+whole::a Get started with infinite.pm ::e
+read::a Read the intro ::e --> browse::a Browse the lab ::e
+read, browse --::P--> whole
+
+site::a infinite.pm, intro::a ipm-intro, overview::a ipm-overview --> read
+labsite::a lab.infinite.pm --> browse
+you::a Newcomer --> read, browse
+
+site, labsite --> website ::c
+intro --> tutorial ::c
+overview --> self-description ::c
+labsite --> experiments ::c
+you --> Reader ::c

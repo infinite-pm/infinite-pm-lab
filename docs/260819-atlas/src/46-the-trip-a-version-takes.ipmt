@@ -1,0 +1,29 @@
+# Release the extension > The trip a version takes
+# ipm-overview:docs/use-cases/release-the-extension.md#L11
+# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+
+# The whole trip. The push is a person's, the build is CI's, the approval is a
+# reviewer's — one journey, several hands.
+whole::a Take a version through the release ::e
+
+prep::a Prepare the version ::e
+  --> tag::a Push the release tag ::e
+  --> build::a Build and draft the release ::e
+  --> gate::a Approve the release environment ::e
+  --> publish::a Publish to the marketplaces ::e
+prep, tag, build, gate, publish --::P--> whole
+
+# Who and what
+dev::a Release maintainer --> prep, tag
+rev::a Release reviewer --> gate
+wf::a release workflow --> build, publish
+tagart::a v0.4.1 --> tag, build
+vsix::a the nine platform packages --> build, publish
+listing::a the marketplace listings --> publish
+
+dev --> Maintainer ::c
+rev --> Reviewer ::c
+wf --> CI check ::c
+tagart --> release tag ::c
+vsix --> extension package ::c, output ::c
+listing --> marketplace listing ::c

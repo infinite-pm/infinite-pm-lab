@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atlas — lab.infinite.pm</title>
+  <meta name="description" content="An atlas of ipm diagrams: every diagram of a knowledge base kept whole on one board, with repeated nodes joined by a co-reference overlay you can search and walk. An experiment in the infinite.pm lab.">
+  <link rel="icon" href="../favicon.ico" sizes="32x32">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <style>
+    :root {
+      --accent: #4d8a3a;            /* thing / green — the board is about things recurring */
+      --ink: #1f2328; --muted: #57606a; --line: #e3e7ee; --bg: #f7f9fc; --card: #fff;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      color: var(--ink); line-height: 1.65; -webkit-font-smoothing: antialiased;
+      background: radial-gradient(900px 360px at 50% -120px, color-mix(in srgb, var(--accent) 12%, transparent), transparent 60%), var(--bg);
+    }
+    .wrap { max-width: 940px; margin: 0 auto; padding: 0 1.25rem 3rem; }
+    .crumb { display: flex; align-items: center; gap: .5rem; padding: 1.1rem 0; font-size: .9rem; }
+    .crumb a { color: var(--muted); text-decoration: none; font-weight: 600; border-bottom: 1px solid transparent; }
+    .crumb a:hover { color: var(--ink); border-color: var(--accent); }
+    .crumb .sep { color: #c2c8d2; }
+    .crumb .here { color: var(--ink); font-weight: 700; }
+    .crumb .lab { color: #ff8000; }
+
+    header.exp { padding: 1rem 0 .5rem; }
+    .meta { display: flex; align-items: center; gap: .6rem; flex-wrap: wrap; margin-bottom: .6rem; }
+    .badge { font-family: 'SFMono-Regular', Menlo, Consolas, monospace; font-size: .78rem; font-weight: 600;
+             color: var(--muted); background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: .12rem .55rem; }
+    .badge.wip { color: var(--accent); border-color: color-mix(in srgb, var(--accent) 35%, var(--line)); background: color-mix(in srgb, var(--accent) 8%, #fff); }
+    h1 { font-size: clamp(1.7rem, 4vw, 2.5rem); font-weight: 800; letter-spacing: -.02em; }
+    h1 .em { color: var(--accent); }
+    .sub { color: var(--muted); font-size: 1.06rem; margin-top: .5rem; max-width: 700px; }
+    .e { color: #ff8000; font-weight: 600; } .t { color: #4d8a3a; font-weight: 600; } .c { color: #3a78c2; font-weight: 600; }
+
+    .shot { margin: 1.8rem 0 .4rem; border: 1px solid var(--line); border-radius: 12px; background: var(--card);
+            overflow: hidden; box-shadow: 0 1px 2px rgba(16,24,40,.04); }
+    .shot img { display: block; width: 100%; }
+    .cap { color: var(--muted); font-size: .88rem; margin-bottom: 1.6rem; }
+
+    .demos-h { font-size: 1.05rem; font-weight: 700; margin: 1.6rem 0 .8rem; }
+    .demos-h span { color: var(--muted); font-weight: 400; font-size: .9rem; }
+    .demos { display: grid; gap: .8rem; grid-template-columns: 1fr; }
+    @media (min-width: 720px) { .demos { grid-template-columns: 1fr 1fr; } }
+    a.demo { display: block; padding: .95rem 1.1rem; border: 1px solid var(--line); border-radius: 12px;
+             background: var(--card); text-decoration: none; color: inherit; transition: border-color .15s, transform .15s; }
+    a.demo:hover { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); transform: translateY(-1px); }
+    a.demo .tag { font-family: 'SFMono-Regular', Menlo, Consolas, monospace; font-size: .72rem; color: var(--accent); }
+    a.demo .t-title { display: block; font-weight: 700; margin: .2rem 0 .25rem; }
+    a.demo .desc { display: block; color: var(--muted); font-size: .92rem; }
+    a.demo .ar { color: var(--accent); }
+
+    .body { margin-top: 2rem; }
+    .body h2 { font-size: 1.2rem; font-weight: 700; margin: 1.8rem 0 .6rem; }
+    .body p { margin-bottom: .9rem; }
+    .body ul { margin: 0 0 1rem 1.1rem; } .body li { margin-bottom: .35rem; }
+    .body code { font-family: 'SFMono-Regular', Menlo, Consolas, monospace; font-size: .88em;
+                 background: #eef1f6; border-radius: 4px; padding: .05rem .3rem; }
+    .body a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--accent); }
+
+    table.num { border-collapse: collapse; margin: .4rem 0 1.2rem; font-size: .92rem; }
+    table.num th, table.num td { border: 1px solid var(--line); padding: .35rem .7rem; text-align: left; }
+    table.num th { background: var(--card); font-weight: 600; }
+
+    .keys { display: flex; gap: .5rem; flex-wrap: wrap; margin: .2rem 0 1.2rem; }
+    kbd { font-family: 'SFMono-Regular', Menlo, Consolas, monospace; font-size: .78rem; background: var(--card);
+          border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 5px; padding: .1rem .4rem; }
+
+    footer.site { margin-top: 2.5rem; padding-top: 1.2rem; border-top: 1px solid var(--line);
+                  color: var(--muted); font-size: .88rem; display: flex; gap: .6rem; flex-wrap: wrap; }
+    footer.site a { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="crumb">
+      <a href="../"><span class="lab">lab</span>.infinite.pm</a>
+      <span class="sep">/</span>
+      <span class="here">atlas</span>
+    </nav>
+
+    <header class="exp">
+      <div class="meta">
+        <span class="badge">2026-08-19</span>
+        <span class="badge" data-stamp="atlas">updated 2026-08-24</span>
+        <span class="badge wip">● work in progress</span>
+        <span class="badge">260819-atlas</span>
+      </div>
+      <h1><span class="em">Atlas</span> — many diagrams, one board</h1>
+      <p class="sub">A whole knowledge base on one canvas: every diagram kept exactly as its page draws it, laid out along the source tree, with repeated <span class="t">things</span> and <span class="c">concepts</span> joined by a co-reference overlay you can search and walk.</p>
+    </header>
+
+    <div class="shot">
+      <img src="preview.png" alt="The atlas board: 50 ipm diagrams arranged in nested groups by repository, directory and file.">
+    </div>
+    <p class="cap">50 diagrams of one corpus, grouped repo → directory → file. Each panel is the diagram its page renders, by the same engine and the same rules.</p>
+
+    <section aria-label="Open the board">
+      <h2 class="demos-h">Open the board <span>— self-contained, runs offline from disk</span></h2>
+      <div class="demos">
+        <a class="demo" href="ipm-overview.board.html">
+          <span class="tag">interactive · 1.9 MB</span>
+          <span class="t-title">The atlas board <span class="ar">&rarr;</span></span>
+          <span class="desc">Search, click a node, walk every other place it appears. Pan and zoom; nothing is fetched.</span>
+        </a>
+        <a class="demo" href="board.svg">
+          <span class="tag">static · one SVG</span>
+          <span class="t-title">The board as one picture <span class="ar">&rarr;</span></span>
+          <span class="desc">The same 6404 × 14078 board rendered flat, both kinds of badge included — a poster of the corpus.</span>
+        </a>
+        <a class="demo" href="src/index.html">
+          <span class="tag">source · 50 fragments</span>
+          <span class="t-title">The ipmt it was built from <span class="ar">&rarr;</span></span>
+          <span class="desc">Every panel's fenced <code>ipmt</code>, with its heading path, file, line and commit — nothing to resolve elsewhere.</span>
+        </a>
+      </div>
+    </section>
+
+    <div class="body">
+      <h2>The idea</h2>
+      <p>
+        A knowledge base written in ipm is many small diagrams — one per section of one page. You can
+        <em>merge</em> them into a single graph, and for analysis you should: same name, same node. But merging
+        dissolves the diagrams. A page's story stops being a story and becomes a hub in a hairball, and the picture
+        no longer looks like anything the docs show.
+      </p>
+      <p>
+        The atlas keeps both halves. Every fragment stays whole as a <b>panel</b> — laid out by the same engine that
+        produced the SVG committed beside its page, so a panel <em>is</em> the picture you already read. Identity
+        becomes an overlay instead of a merge: each node knows every other place it appears, and you can walk there.
+      </p>
+
+      <h2>What it is built from</h2>
+      <p>
+        The corpus here is <b>ipm-overview</b> — infinite.pm described in its own notation: a concept glossary plus
+        use-case pages, 50 fenced <code>ipmt</code> blocks in 11 files — one more
+        block exists (the README's shape example) and is <em>authored out</em> with
+        <code>union=false</code>: it renders on its page but repeats a claim
+        render-diagram.md already makes, so the atlas does not carry it twice.
+      </p>
+      <table class="num">
+        <tr><th>Panels</th><td>50, in 14 groups (1 repo, 2 directories, 11 files)</td></tr>
+        <tr><th>Nodes</th><td>713 authored boxes, 738 drawn — a panel may draw one participant in several places</td></tr>
+        <tr><th>Anchors</th><td>161, all of them plain identity — the nodes more than one fragment contributes to</td></tr>
+        <tr><th>Biggest</th><td><code>output ::c</code> — the same concept in 15 diagrams</td></tr>
+        <tr><th>Board</th><td>6404 × 14078 px, built in about two seconds</td></tr>
+      </table>
+
+      <h2>What counts as "the same"</h2>
+      <p>
+        A <span class="t">thing</span> or <span class="c">concept</span> with the same canonical name
+        is one anchor across every panel that mentions it. <span class="e">Events</span> are the
+        interesting case, and this corpus takes the strict line: <b>one name, one event</b>. Where five
+        diagrams each show a different run they are titled for what they are —
+        <code>Run the read mode</code>, <code>Run the update mode</code> — and the general event
+        <code>Run the mode</code> stays an event of its own with the specific ones <em>expressing</em> it —
+        a read run does not happen inside some larger run, it is one <em>of that kind</em>.
+        A name is reused only when the event genuinely recurs: the envelope's
+        <code>Run the tests</code> and its green and red zoom-ins are one event seen three times.
+      </p>
+      <p>
+        Where a general event has specific ones under it, exactly one diagram carries those kind-of
+        links — <em>the map</em>. It says where each run sits; the detail diagrams say what
+        each one does. That map is the page you navigate from: every event on it is the same event
+        as the one heading its own diagram, so selecting it takes you there.
+      </p>
+      <p>
+        Containment is the other tree, and it is tested in space and time: an event is part of another
+        only if it happens <em>inside</em> it — same stretch, same participants. That rules out more than
+        it sounds. A person's <code>Push a branch</code> is not inside CI's <code>Guard the diagrams in CI</code>;
+        a visitor's <code>Read the website</code> is not inside <code>Publish a docs site</code>. It is also
+        why the root, <code>Use infinite.pm</code>, has nothing ordered under it: the ten journeys are not
+        steps of one big event, they are ways of using infinite.pm, each <em>expressing</em> the root.
+        Different people take different paths, and most never take some at all. All 112 events reach it.
+      </p>
+      <p>
+        The board can also link events that merely <em>share a name and kind</em> — an "echo" tier,
+        for corpora that reuse a loose title across unrelated diagrams. Here it finds nothing, which
+        is the point: precise titles plus a part-of hierarchy leave nothing for it to guess at.
+      </p>
+      <p>
+        None of this is a γ(3,4) relation, and none of it enters the graph. There is no SST arrow
+        meaning "this box and that box are the same node, drawn twice" — asserting one would put a
+        claim in the model that no author made, and every path algorithm would happily walk it. So
+        co-reference lives beside the graph, as an index.
+      </p>
+
+      <h2>Try this</h2>
+      <ul>
+        <li>Press <kbd>/</kbd> and type <code>md-embed</code> — results carry a graph summary and a small preview of
+          the diagram with the match marked.</li>
+        <li>Search accepts ids too, and combines terms: <code>write lock</code> is AND, <code>union/atlas</code> is OR,
+          <code>mode (design/review)</code> groups.</li>
+        <li>Click a node with a badge at its <b>bottom-right</b> — <code>3/10</code> means the third of ten
+          <i>panels</i> the thing appears in. Walk them with
+          <kbd>n</kbd> / <kbd>N</kbd> or by double-clicking — and the walk now brings a small
+          floating card along, beside each landing: your position <i>n/m</i>, the anchor, the panel
+          and its locator, with ‹ › to keep going. Pin it away and it stays away.</li>
+        <li>A badge at the <b>top-right</b> means something narrower, and it is new here: a panel big
+          enough to need it draws a participant <i>more than once</i>, beside each group of events that
+          uses it, rather than running a line across the diagram. <code>1/2</code> is which of those
+          places you are looking at, inside that one picture; double-press walks them. 47 of them on
+          this board. Same thing, drawn where it is used — top-right, where in this picture;
+          bottom-right, where on this board.</li>
+        <li>Every panel is titled by the Markdown heading its fence sits under; hover it for the whole
+          table-of-contents path and the file and line.</li>
+      </ul>
+      <p>
+        Since this experiment first shipped, the viewer itself was rebuilt: the server now sends
+        <em>structure</em> — the board model plus one SVG fragment per panel — and the browser
+        composes the picture, chrome and all, on a core it shares with the zoom canvas. Same
+        reading experience, one codebase behind both. The side panels are yours to arrange —
+        collapse them, float the inspector and drag it next to what you are reading — and on a
+        served board a composite-bearing panel opens as a click-path zoom in place (the offline
+        file you can download keeps the lattices out to stay small).
+      </p>
+      <div class="keys">
+        <kbd>/</kbd> search <kbd>↑</kbd><kbd>↓</kbd> results <kbd>Enter</kbd> open
+        <kbd>n</kbd><kbd>N</kbd> next usage <kbd>f</kbd> fit <kbd>Esc</kbd> clear
+      </div>
+
+      <h2>Sources travel with it</h2>
+      <p>
+        Nothing here needs a link resolved to be understood. The board carries every panel's own
+        <code>ipmt</code>: select a node and the inspector shows the fragment its diagram was drawn from,
+        under its heading path, file and line. The same fragments are published beside it as
+        <a href="src/index.html">50 <code>.ipmt</code> files</a>, each with a comment header naming the
+        section, the locator and the exact commit — so the picture, the graph and the text that produced
+        them stay together.
+      </p>
+
+      <h2>Status</h2>
+      <p>
+        A first working pass. The board is static per panel — no zooming inside a panel yet (that is the
+        <a href="../260422-zoomlayout/">zoom layout</a> experiment, one level below). Open questions: what to do when
+        a corpus has thousands of panels, whether groups should fold, and how to tell "the same name" from "the same
+        thing" across unrelated repositories.
+      </p>
+    </div>
+
+    <footer class="site">
+      <span>© infinite.pm</span>
+      <span>·</span>
+      <a href="https://infinite.pm/">infinite.pm</a>
+      <span>·</span>
+      <a href="../">lab index</a>
+    </footer>
+  </div>
+</body>
+</html>

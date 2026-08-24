@@ -1,0 +1,20 @@
+# Release the extension > The gate
+# ipm-overview:docs/use-cases/release-the-extension.md#L78
+# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+
+whole::a Take a version through the release ::e
+gate::a Approve the release environment ::e --::P--> whole
+publish::a Publish to the marketplaces ::e --::P--> whole
+gate --> publish
+
+rev::a Release reviewer --> gate
+wf::a release workflow --> publish
+draft::a the draft release --> gate, publish
+sums::a SHA256SUMS --> gate
+approval::a the required review --> gate
+
+rev --> Reviewer ::c
+wf --> CI check ::c
+draft --> output ::c
+sums --> output ::c
+approval --> gated approval ::c

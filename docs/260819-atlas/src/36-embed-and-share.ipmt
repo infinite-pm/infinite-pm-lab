@@ -1,0 +1,15 @@
+# Get started with infinite.pm > Embed and share
+# ipm-overview:docs/use-cases/get-started.md#L87
+# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+
+whole::a Get started with infinite.pm ::e
+embed::a Embed it in a README ::e --> share::a Share the repository ::e
+embed, share --::P--> whole
+
+md-embed --> embed
+model::a my-first-model.md --> embed, share
+you::a Newcomer --> embed, share
+
+md-embed --> embedder ::c
+model --> Markdown page ::c
+you --> Author ::c

@@ -1,0 +1,14 @@
+# Explore one graph in the canvas > Taking it away
+# ipm-overview:docs/use-cases/explore-in-canvas.md#L107
+# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+
+whole::a Explore a graph in the canvas ::e
+take::a Download an offline copy ::e --::P--> whole
+
+you::a Canvas reader --> take
+canvas-server --> take
+file::a the offline page --> take
+
+you --> Reader ::c
+canvas-server --> canvas server ::c
+file --> offline copy ::c

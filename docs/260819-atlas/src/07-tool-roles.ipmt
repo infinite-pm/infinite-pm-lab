@@ -1,0 +1,9 @@
+# Glossary > Tool roles
+# ipm-overview:docs/glossary.md#L155
+# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+
+parser ::c, validator ::c, layout engine ::c, renderer ::c --> tool role ::c
+embedder ::c, site generator ::c, language server ::c, tokenizer ::c --> tool role
+harness ::c, union builder ::c, board placer ::c, canvas server ::c --> tool role
+
+command-line tool ::c, Go library ::c, editor extension ::c --> tool form ::c

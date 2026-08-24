@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ipm-overview — ipmt sources — lab.infinite.pm</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1f2328;
+         background: #f7f9fc; line-height: 1.6; margin: 0; }
+  .wrap { max-width: 940px; margin: 0 auto; padding: 1.2rem 1.25rem 3rem; }
+  .crumb { font-size: .9rem; color: #57606a; margin-bottom: 1rem; }
+  .crumb a { color: #57606a; text-decoration: none; font-weight: 600; }
+  .crumb a:hover { color: #1f2328; }
+  h1 { font-size: 1.6rem; font-weight: 800; letter-spacing: -.02em; margin: .2rem 0 .4rem; }
+  p.sub { color: #57606a; max-width: 680px; }
+  table { border-collapse: collapse; width: 100%; margin-top: 1.2rem; font-size: .92rem; background: #fff; }
+  th, td { border: 1px solid #e3e7ee; padding: .4rem .7rem; text-align: left; vertical-align: top; }
+  th { background: #f7f9fc; font-weight: 600; }
+  td code { font-family: 'SFMono-Regular', Menlo, Consolas, monospace; font-size: .85em; color: #57606a; }
+  a { color: #1f2328; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="crumb"><a href="../../">lab.infinite.pm</a> / <a href="../">atlas</a> / sources</nav>
+  <h1>ipm-overview — the ipmt behind the board</h1>
+  <p class="sub">One file per panel: the fenced <code>ipmt</code> block exactly as the page wrote it, with its
+  heading path, locator and commit in a comment header. This is what the board was built from — 50 fragments.</p>
+  <table>
+    <tr><th>#</th><th>File</th><th>Section</th><th>Locator</th></tr>
+      <tr><td>1</td><td><a href="01-modeling-vocabulary.ipmt">Modeling vocabulary</a></td><td>Glossary › Modeling vocabulary</td><td><code>ipm-overview:docs/glossary.md#L19</code></td></tr>
+      <tr><td>2</td><td><a href="02-notation.ipmt">Notation</a></td><td>Glossary › Notation</td><td><code>ipm-overview:docs/glossary.md#L38</code></td></tr>
+      <tr><td>3</td><td><a href="03-fences-and-selectors.ipmt">Fences and selectors</a></td><td>Glossary › Fences and selectors</td><td><code>ipm-overview:docs/glossary.md#L58</code></td></tr>
+      <tr><td>4</td><td><a href="04-artifacts.ipmt">Artifacts</a></td><td>Glossary › Artifacts</td><td><code>ipm-overview:docs/glossary.md#L84</code></td></tr>
+      <tr><td>5</td><td><a href="05-a-whole-knowledge-base-at-once.ipmt">A whole knowledge base at once</a></td><td>Glossary › A whole knowledge base at once</td><td><code>ipm-overview:docs/glossary.md#L113</code></td></tr>
+      <tr><td>6</td><td><a href="06-looking-through-the-canvas.ipmt">Looking through the canvas</a></td><td>Glossary › Looking through the canvas</td><td><code>ipm-overview:docs/glossary.md#L138</code></td></tr>
+      <tr><td>7</td><td><a href="07-tool-roles.ipmt">Tool roles</a></td><td>Glossary › Tool roles</td><td><code>ipm-overview:docs/glossary.md#L155</code></td></tr>
+      <tr><td>8</td><td><a href="08-repositories-and-their-roles.ipmt">Repositories and their roles</a></td><td>Glossary › Repositories and their roles</td><td><code>ipm-overview:docs/glossary.md#L174</code></td></tr>
+      <tr><td>9</td><td><a href="09-repositories-and-their-roles.ipmt">Repositories and their roles</a></td><td>Glossary › Repositories and their roles</td><td><code>ipm-overview:docs/glossary.md#L185</code></td></tr>
+      <tr><td>10</td><td><a href="10-websites-and-jobs.ipmt">Websites and jobs</a></td><td>Glossary › Websites and jobs</td><td><code>ipm-overview:docs/glossary.md#L200</code></td></tr>
+      <tr><td>11</td><td><a href="11-agent-modes-and-harness-rules.ipmt">Agent modes and harness rules</a></td><td>Glossary › Agent modes and harness rules</td><td><code>ipm-overview:docs/glossary.md#L222</code></td></tr>
+      <tr><td>12</td><td><a href="12-releases.ipmt">Releases</a></td><td>Glossary › Releases</td><td><code>ipm-overview:docs/glossary.md#L247</code></td></tr>
+      <tr><td>13</td><td><a href="13-actors.ipmt">Actors</a></td><td>Glossary › Actors</td><td><code>ipm-overview:docs/glossary.md#L264</code></td></tr>
+      <tr><td>14</td><td><a href="14-the-map-what-is-part-of-what.ipmt">The map — what is part of what</a></td><td>AI agent modes and the harness › The map — what is part of what</td><td><code>ipm-overview:docs/use-cases/agent-modes.md#L53</code></td></tr>
+      <tr><td>15</td><td><a href="15-the-life-of-a-change.ipmt">The life of a change</a></td><td>AI agent modes and the harness › The life of a change</td><td><code>ipm-overview:docs/use-cases/agent-modes.md#L84</code></td></tr>
+      <tr><td>16</td><td><a href="16-the-envelope-of-an-update-run.ipmt">The envelope of an update run</a></td><td>AI agent modes and the harness › The envelope of an update run</td><td><code>ipm-overview:docs/use-cases/agent-modes.md#L115</code></td></tr>
+      <tr><td>17</td><td><a href="17-before-the-run.ipmt">Before the run</a></td><td>AI agent modes and the harness › The envelope of an update run › Before the run</td><td><code>ipm-overview:docs/use-cases/agent-modes.md#L138</code></td></tr>
+      <tr><td>18</td><td><a href="18-after-the-run-green.ipmt">After the run — green</a></td><td>AI agent modes and the harness › The envelope of an update run › After the run — green</td><td><code>ipm-overview:docs/use-cases/agent-modes.md#L170</code></td></tr>
+      <tr><td>19</td><td><a href="19-after-the-run-red.ipmt">After the run — red</a></td><td>AI agent modes and the harness › The envelope of an update run › After the run — red</td><td><code>ipm-overview:docs/use-cases/agent-modes.md#L202</code></td></tr>
+      <tr><td>20</td><td><a href="20-read-mode.ipmt">Read mode</a></td><td>AI agent modes and the harness › Read mode</td><td><code>ipm-overview:docs/use-cases/agent-modes.md#L240</code></td></tr>
+      <tr><td>21</td><td><a href="21-design-mode.ipmt">Design mode</a></td><td>AI agent modes and the harness › Design mode</td><td><code>ipm-overview:docs/use-cases/agent-modes.md#L264</code></td></tr>
+      <tr><td>22</td><td><a href="22-validate-mode.ipmt">Validate mode</a></td><td>AI agent modes and the harness › Validate mode</td><td><code>ipm-overview:docs/use-cases/agent-modes.md#L290</code></td></tr>
+      <tr><td>23</td><td><a href="23-review-mode.ipmt">Review mode</a></td><td>AI agent modes and the harness › Review mode</td><td><code>ipm-overview:docs/use-cases/agent-modes.md#L320</code></td></tr>
+      <tr><td>24</td><td><a href="24-update-mode.ipmt">Update mode</a></td><td>AI agent modes and the harness › Update mode</td><td><code>ipm-overview:docs/use-cases/agent-modes.md#L351</code></td></tr>
+      <tr><td>25</td><td><a href="25-the-typing-loop.ipmt">The typing loop</a></td><td>Edit ipmt in VS Code › The typing loop</td><td><code>ipm-overview:docs/use-cases/edit-in-vscode.md#L10</code></td></tr>
+      <tr><td>26</td><td><a href="26-preview-a-ipmt-file.ipmt">Preview a .ipmt file</a></td><td>Edit ipmt in VS Code › Preview a .ipmt file</td><td><code>ipm-overview:docs/use-cases/edit-in-vscode.md#L65</code></td></tr>
+      <tr><td>27</td><td><a href="27-the-author-s-loop.ipmt">The author's loop</a></td><td>Keep diagrams in Markdown in sync › The author's loop</td><td><code>ipm-overview:docs/use-cases/embed-in-markdown.md#L13</code></td></tr>
+      <tr><td>28</td><td><a href="28-the-ci-guard.ipmt">The CI guard</a></td><td>Keep diagrams in Markdown in sync › The CI guard</td><td><code>ipm-overview:docs/use-cases/embed-in-markdown.md#L69</code></td></tr>
+      <tr><td>29</td><td><a href="29-a-reading.ipmt">A reading</a></td><td>Explore one graph in the canvas › A reading</td><td><code>ipm-overview:docs/use-cases/explore-in-canvas.md#L15</code></td></tr>
+      <tr><td>30</td><td><a href="30-following-an-edge.ipmt">Following an edge</a></td><td>Explore one graph in the canvas › Following an edge</td><td><code>ipm-overview:docs/use-cases/explore-in-canvas.md#L54</code></td></tr>
+      <tr><td>31</td><td><a href="31-a-participant-drawn-in-several-places.ipmt">A participant drawn in several places</a></td><td>Explore one graph in the canvas › A participant drawn in several places</td><td><code>ipm-overview:docs/use-cases/explore-in-canvas.md#L78</code></td></tr>
+      <tr><td>32</td><td><a href="32-taking-it-away.ipmt">Taking it away</a></td><td>Explore one graph in the canvas › Taking it away</td><td><code>ipm-overview:docs/use-cases/explore-in-canvas.md#L107</code></td></tr>
+      <tr><td>33</td><td><a href="33-the-journey.ipmt">The journey</a></td><td>Get started with infinite.pm › The journey</td><td><code>ipm-overview:docs/use-cases/get-started.md#L11</code></td></tr>
+      <tr><td>34</td><td><a href="34-read.ipmt">Read</a></td><td>Get started with infinite.pm › Read</td><td><code>ipm-overview:docs/use-cases/get-started.md#L38</code></td></tr>
+      <tr><td>35</td><td><a href="35-install-and-write.ipmt">Install and write</a></td><td>Get started with infinite.pm › Install and write</td><td><code>ipm-overview:docs/use-cases/get-started.md#L64</code></td></tr>
+      <tr><td>36</td><td><a href="36-embed-and-share.ipmt">Embed and share</a></td><td>Get started with infinite.pm › Embed and share</td><td><code>ipm-overview:docs/use-cases/get-started.md#L87</code></td></tr>
+      <tr><td>37</td><td><a href="37-where-the-tools-come-from.ipmt">Where the tools come from</a></td><td>Get started with infinite.pm › Where the tools come from</td><td><code>ipm-overview:docs/use-cases/get-started.md#L108</code></td></tr>
+      <tr><td>38</td><td><a href="38-the-maintainer-s-half.ipmt">The maintainer's half</a></td><td>Publish a docs site › The maintainer's half</td><td><code>ipm-overview:docs/use-cases/publish-site.md#L20</code></td></tr>
+      <tr><td>39</td><td><a href="39-the-job-s-half.ipmt">The job's half</a></td><td>Publish a docs site › The job's half</td><td><code>ipm-overview:docs/use-cases/publish-site.md#L55</code></td></tr>
+      <tr><td>40</td><td><a href="40-making-one.ipmt">Making one</a></td><td>Read a whole knowledge base on one board › Making one</td><td><code>ipm-overview:docs/use-cases/read-a-board.md#L15</code></td></tr>
+      <tr><td>41</td><td><a href="41-reading-one.ipmt">Reading one</a></td><td>Read a whole knowledge base on one board › Reading one</td><td><code>ipm-overview:docs/use-cases/read-a-board.md#L66</code></td></tr>
+      <tr><td>42</td><td><a href="42-reading-one.ipmt">Reading one</a></td><td>Read a whole knowledge base on one board › Reading one</td><td><code>ipm-overview:docs/use-cases/read-a-board.md#L94</code></td></tr>
+      <tr><td>43</td><td><a href="43-going-deeper-without-leaving.ipmt">Going deeper without leaving</a></td><td>Read a whole knowledge base on one board › Going deeper without leaving</td><td><code>ipm-overview:docs/use-cases/read-a-board.md#L121</code></td></tr>
+      <tr><td>44</td><td><a href="44-why-not-merge-everything.ipmt">Why not merge everything</a></td><td>Read a whole knowledge base on one board › Why not merge everything</td><td><code>ipm-overview:docs/use-cases/read-a-board.md#L146</code></td></tr>
+      <tr><td>45</td><td><a href="45-the-map-of-it-all.ipmt">The map of it all</a></td><td>Use cases › The map of it all</td><td><code>ipm-overview:docs/use-cases/readme.md#L31</code></td></tr>
+      <tr><td>46</td><td><a href="46-the-trip-a-version-takes.ipmt">The trip a version takes</a></td><td>Release the extension › The trip a version takes</td><td><code>ipm-overview:docs/use-cases/release-the-extension.md#L11</code></td></tr>
+      <tr><td>47</td><td><a href="47-preparing.ipmt">Preparing</a></td><td>Release the extension › Preparing</td><td><code>ipm-overview:docs/use-cases/release-the-extension.md#L48</code></td></tr>
+      <tr><td>48</td><td><a href="48-the-gate.ipmt">The gate</a></td><td>Release the extension › The gate</td><td><code>ipm-overview:docs/use-cases/release-the-extension.md#L78</code></td></tr>
+      <tr><td>49</td><td><a href="49-four-steps-four-commands.ipmt">Four steps, four commands</a></td><td>Render a diagram from the command line › Four steps, four commands</td><td><code>ipm-overview:docs/use-cases/render-diagram.md#L13</code></td></tr>
+      <tr><td>50</td><td><a href="50-zoomed-out-one-command.ipmt">Zoomed out: one command</a></td><td>Render a diagram from the command line › Zoomed out: one command</td><td><code>ipm-overview:docs/use-cases/render-diagram.md#L70</code></td></tr>
+  </table>
+</div>
+</body>
+</html>

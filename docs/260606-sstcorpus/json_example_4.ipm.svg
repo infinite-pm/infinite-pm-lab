@@ -29,74 +29,92 @@
   </g>
   <g id="edges">
     <g class="edge" data-edge-idx="0" data-edge-base="leadsto" data-edge-from="4" data-edge-to="5">
+      <title>then followed by</title>
     <line x1="280.00" y1="435.00" x2="280.00" y2="858.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 280.00 865.00 L 275.50 856.00 L 280.00 858.25 L 284.50 856.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="1" data-edge-base="expresses" data-edge-from="4" data-edge-to="1">
+      <title>has id</title>
     <line x1="344.07" y1="362.53" x2="394.21" y2="172.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 395.93 165.47 L 397.99 175.32 L 394.21 172.00 L 389.29 173.03 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="2" data-edge-base="expresses" data-edge-from="4" data-edge-to="10">
+      <title>has username</title>
     <line x1="345.00" y1="375.58" x2="392.29" y2="267.60" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 395.00 261.42 L 395.51 271.47 L 392.29 267.60 L 387.27 267.86 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="3" data-edge-base="expresses" data-edge-from="4" data-edge-to="11">
+      <title>has email</title>
     <line x1="345.00" y1="391.25" x2="389.60" y2="357.80" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 395.00 353.75 L 390.50 362.75 L 389.60 357.80 L 385.10 355.55 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="4" data-edge-base="expresses" data-edge-from="4" data-edge-to="9">
+      <title>has a role</title>
     <line x1="345.00" y1="407.83" x2="389.64" y2="442.06" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 395.00 446.17 L 385.12 444.26 L 389.64 442.06 L 390.60 437.12 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="5" data-edge-base="expresses" data-edge-from="4" data-edge-to="18">
+      <title>has a role</title>
     <line x1="344.06" y1="436.48" x2="394.23" y2="627.99" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 395.94 634.52 L 389.31 626.96 L 394.23 627.99 L 398.02 624.68 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="6" data-edge-base="expresses" data-edge-from="4" data-edge-to="8">
+      <title>has status</title>
     <line x1="345.00" y1="423.50" x2="392.31" y2="532.31" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 395.00 538.50 L 387.28 532.04 L 392.31 532.31 L 395.54 528.45 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="7" data-edge-base="leadsto" data-edge-from="5" data-edge-to="6">
+      <title>then followed by</title>
     <line x1="280.00" y1="935.00" x2="280.00" y2="1328.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 280.00 1335.00 L 275.50 1326.00 L 280.00 1328.25 L 284.50 1326.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="8" data-edge-base="expresses" data-edge-from="5" data-edge-to="2">
+      <title>has id</title>
     <line x1="345.00" y1="871.00" x2="392.21" y2="767.14" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 395.00 761.00 L 395.37 771.06 L 392.21 767.14 L 387.18 767.33 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="9" data-edge-base="expresses" data-edge-from="5" data-edge-to="12">
+      <title>has username</title>
     <line x1="345.00" y1="890.33" x2="389.56" y2="857.66" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 395.00 853.67 L 390.40 862.62 L 389.56 857.66 L 385.08 855.36 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="10" data-edge-base="expresses" data-edge-from="5" data-edge-to="13">
+      <title>has email</title>
     <line x1="345.00" y1="909.67" x2="389.56" y2="942.34" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 395.00 946.33 L 385.08 944.64 L 389.56 942.34 L 390.40 937.38 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="11" data-edge-base="expresses" data-edge-from="5" data-edge-to="18">
+      <title>has a role</title>
     <polyline points="309.17,865.00 309,864 392.19,682.07" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 395.00 675.93 L 395.35 685.99 L 392.19 682.07 L 387.16 682.25 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="12" data-edge-base="expresses" data-edge-from="5" data-edge-to="16">
+      <title>has status</title>
     <line x1="345.00" y1="929.00" x2="392.21" y2="1032.86" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 395.00 1039.00 L 387.18 1032.67 L 392.21 1032.86 L 395.37 1028.94 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="13" data-edge-base="expresses" data-edge-from="6" data-edge-to="3">
+      <title>has id</title>
     <line x1="345.00" y1="1335.00" x2="392.87" y2="1191.40" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 395.00 1185.00 L 396.42 1194.96 L 392.87 1191.40 L 387.88 1192.12 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="14" data-edge-base="expresses" data-edge-from="6" data-edge-to="14">
+      <title>has username</title>
     <line x1="345.00" y1="1352.50" x2="391.26" y2="1283.12" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 395.00 1277.50 L 393.75 1287.48 L 391.26 1283.12 L 386.26 1282.49 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="15" data-edge-base="expresses" data-edge-from="6" data-edge-to="15">
+      <title>has email</title>
     <line x1="345.00" y1="1370.00" x2="388.25" y2="1370.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 395.00 1370.00 L 386.00 1374.50 L 388.25 1370.00 L 386.00 1365.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="16" data-edge-base="expresses" data-edge-from="6" data-edge-to="19">
+      <title>has a role</title>
     <line x1="345.00" y1="1387.50" x2="391.26" y2="1456.88" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 395.00 1462.50 L 386.26 1457.51 L 391.26 1456.88 L 393.75 1452.52 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="17" data-edge-base="expresses" data-edge-from="6" data-edge-to="17">
+      <title>has status</title>
     <line x1="345.00" y1="1405.00" x2="392.87" y2="1548.60" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 395.00 1555.00 L 387.88 1547.88 L 392.87 1548.60 L 396.42 1545.04 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>

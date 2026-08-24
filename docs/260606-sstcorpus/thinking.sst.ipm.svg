@@ -17,26 +17,32 @@
   </g>
   <g id="edges">
     <g class="edge" data-edge-idx="0" data-edge-base="leadsto" data-edge-from="7" data-edge-to="1">
+      <title>then followed by</title>
     <line x1="280.00" y1="225.00" x2="280.00" y2="268.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 280.00 275.00 L 275.50 266.00 L 280.00 268.25 L 284.50 266.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="1" data-edge-base="leadsto" data-edge-from="1" data-edge-to="6">
+      <title>then followed by</title>
     <line x1="280.00" y1="365.00" x2="280.00" y2="408.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 280.00 415.00 L 275.50 406.00 L 280.00 408.25 L 284.50 406.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="2" data-edge-base="leadsto" data-edge-from="6" data-edge-to="5">
+      <title>then followed by</title>
     <line x1="280.00" y1="485.00" x2="280.00" y2="528.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 280.00 535.00 L 275.50 526.00 L 280.00 528.25 L 284.50 526.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="3" data-edge-base="expresses" data-edge-from="6" data-edge-to="3">
+      <title>pending question</title>
     <line x1="215.00" y1="450.00" x2="171.75" y2="450.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 165.00 450.00 L 174.00 445.50 L 171.75 450.00 L 174.00 454.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="4" data-edge-base="expresses" data-edge-from="6" data-edge-to="2">
+      <title>pending question</title>
     <line x1="345.00" y1="450.00" x2="388.25" y2="450.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 395.00 450.00 L 386.00 454.50 L 388.25 450.00 L 386.00 445.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="5" data-edge-base="leadsto" data-edge-from="5" data-edge-to="4">
+      <title>then followed by</title>
     <line x1="280.00" y1="645.00" x2="280.00" y2="688.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 280.00 695.00 L 275.50 686.00 L 280.00 688.25 L 284.50 686.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>

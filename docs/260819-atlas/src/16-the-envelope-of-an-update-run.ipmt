@@ -1,0 +1,17 @@
+# AI agent modes and the harness > The envelope of an update run
+# ipm-overview:docs/use-cases/agent-modes.md#L115
+# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+
+# One whole attempt, and the steps that are part of it. An attempt is one
+# process: it either ends in a commit or is rejected, and both endings are
+# below — the same attempt, told twice.
+whole::a Attempt an update ::e
+
+pick::a Declare the mode ::e
+  --> lock::a Take the write lock ::e
+  --> clean::a Check the tree is clean ::e
+  --> run::a Run the update mode ::e
+  --> test::a Run the tests ::e
+  --> after::a Commit the result ::e
+  --> free::a Release the write lock ::e
+pick, lock, clean, run, test, after, free --::P--> whole

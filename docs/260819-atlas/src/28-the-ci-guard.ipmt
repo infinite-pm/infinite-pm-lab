@@ -1,0 +1,32 @@
+# Keep diagrams in Markdown in sync > The CI guard
+# ipm-overview:docs/use-cases/embed-in-markdown.md#L69
+# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+
+# The whole trip: a person pushes, CI guards, the change merges. The GUARD is
+# only the middle of it — it contains what CI itself does, and not the push
+# (another actor, earlier, elsewhere) nor the merge (after it, once green).
+whole::a Take a change through the guard ::e
+
+push::a Push a branch ::e
+  --> guard::a Guard the diagrams in CI ::e
+  --> merge::a Merge ::e
+push, guard, merge --::P--> whole
+
+check::a Check markers and SVGs on push ::e
+  --> validate::a Validate the graphs on push ::e
+check, validate --::P--> guard
+
+md-embed --> check
+ipm-validate --> validate
+ciwf::a CI workflow --> check, validate
+
+page::a docs page .md --> check, validate
+svg::a committed SVG --> check
+user::a User --> push, merge
+
+md-embed --> embedder ::c, command-line tool ::c
+ipm-validate --> validator ::c, command-line tool ::c
+ciwf --> CI check ::c
+page --> Markdown page ::c
+svg --> ipm SVG ::c
+user --> Maintainer ::c

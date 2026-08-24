@@ -103,22 +103,27 @@
   </g>
   <g id="edges">
     <g class="edge" data-edge-idx="0" data-edge-base="expresses" data-edge-from="56" data-edge-to="46">
+      <title>gave performance of</title>
     <line x1="1544.63" y1="1125.00" x2="1109.31" y2="719.60" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 1104.37 715.00 L 1114.02 717.84 L 1109.31 719.60 L 1107.89 724.43 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="1" data-edge-base="expresses" data-edge-from="61" data-edge-to="26">
+      <title>gave performance of</title>
     <line x1="888.46" y1="1805.00" x2="566.71" y2="762.74" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 564.72 756.29 L 571.67 763.56 L 566.71 762.74 L 563.07 766.22 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="2" data-edge-base="expresses" data-edge-from="53" data-edge-to="26">
+      <title>is the publisher of</title>
     <line x1="855.00" y1="1487.25" x2="567.46" y2="754.03" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 565.00 747.75 L 572.48 754.49 L 567.46 754.03 L 564.10 757.77 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="3" data-edge-base="expresses" data-edge-from="45" data-edge-to="46">
+      <title>composer of</title>
     <line x1="1070.00" y1="1125.00" x2="1070.00" y2="721.75" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 1070.00 715.00 L 1074.50 724.00 L 1070.00 721.75 L 1065.50 724.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="4" data-edge-base="expresses" data-edge-from="48" data-edge-to="46">
+      <title>is the publisher of</title>
     <line x1="1307.27" y1="1125.00" x2="1086.96" y2="720.93" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 1083.73 715.00 L 1091.99 720.75 L 1086.96 720.93 L 1084.08 725.06 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
@@ -143,10 +148,12 @@
     <path d="M 1345.00 747.75 L 1355.05 748.14 L 1350.91 751.00 L 1350.72 756.03 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="10" data-edge-base="expresses" data-edge-from="58" data-edge-to="46">
+      <title>conductor of</title>
     <line x1="1070.00" y1="185.00" x2="1070.00" y2="618.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 1070.00 625.00 L 1065.50 616.00 L 1070.00 618.25 L 1074.50 616.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="11" data-edge-base="expresses" data-edge-from="60" data-edge-to="38">
+      <title>is the publisher of</title>
       <line class="edge-ghost" x1="2570.00" y1="700.00" x2="2264.00" y2="630.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
         <line x1="2570.00" y1="700.00" x2="2264.00" y2="630.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
@@ -162,54 +169,67 @@
       </g>
     </g>
     <g class="edge" data-edge-idx="12" data-edge-base="expresses" data-edge-from="52" data-edge-to="38">
+      <title>conductor of</title>
     <polyline points="2845.00,1460.00 2860,1460 2280.35,750.23" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 2276.08 745.00 L 2285.26 749.12 L 2280.35 750.23 L 2278.29 754.82 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="13" data-edge-base="leadsto" data-edge-from="40" data-edge-to="43">
+      <title>then followed by</title>
     <line x1="1460.00" y1="525.00" x2="1460.00" y2="568.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 1460.00 575.00 L 1455.50 566.00 L 1460.00 568.25 L 1464.50 566.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="14" data-edge-base="expresses" data-edge-from="40" data-edge-to="30">
+      <title>has tempo</title>
     <line x1="1525.00" y1="490.00" x2="1808.25" y2="490.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 1815.00 490.00 L 1806.00 494.50 L 1808.25 490.00 L 1806.00 485.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="15" data-edge-base="leadsto" data-edge-from="43" data-edge-to="44">
+      <title>then followed by</title>
     <polyline points="1525.00,615.00 1550,640 1550,700 1529.77,720.23" fill="none" stroke="#ff8000" stroke-width="3" />
     <path d="M 1525.00 725.00 L 1528.18 715.45 L 1529.77 720.23 L 1534.55 721.82 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="16" data-edge-base="expresses" data-edge-from="43" data-edge-to="62">
+      <title>has tempo</title>
     <line x1="1525.00" y1="621.00" x2="1568.38" y2="612.32" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 1575.00 611.00 L 1567.06 617.18 L 1568.38 612.32 L 1565.29 608.35 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="17" data-edge-base="expresses" data-edge-from="44" data-edge-to="27">
+      <title>has tempo</title>
     <line x1="1525.00" y1="741.00" x2="1568.38" y2="732.32" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 1575.00 731.00 L 1567.06 737.18 L 1568.38 732.32 L 1565.29 728.35 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="18" data-edge-base="leadsto" data-edge-from="41" data-edge-to="42">
+      <title>then followed by</title>
     <polyline points="1395.00,675.00 1370,700 1370,760 1390.23,780.23" fill="none" stroke="#ff8000" stroke-width="3" />
     <path d="M 1395.00 785.00 L 1385.45 781.82 L 1390.23 780.23 L 1391.82 775.45 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="19" data-edge-base="expresses" data-edge-from="51" data-edge-to="38">
+      <title>composer of</title>
     <polyline points="2605.00,1460.00 2603,1460 2254.44,751.06" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 2251.46 745.00 L 2259.47 751.09 L 2254.44 751.06 L 2251.39 755.06 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="20" data-edge-base="expresses" data-edge-from="5" data-edge-to="57">
+      <title>refers to</title>
     <line x1="2305.00" y1="1460.00" x2="2348.25" y2="1460.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 2355.00 1460.00 L 2346.00 1464.50 L 2348.25 1460.00 L 2346.00 1455.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="21" data-edge-base="expresses" data-edge-from="5" data-edge-to="38">
+      <title>gave performance of</title>
     <line x1="2210.10" y1="1425.00" x2="2223.76" y2="751.75" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 2223.90 745.00 L 2228.22 754.09 L 2223.76 751.75 L 2219.22 753.91 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="22" data-edge-base="expresses" data-edge-from="7" data-edge-to="59">
+      <title>refers to</title>
     <line x1="255.00" y1="576.92" x2="208.95" y2="640.61" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 205.00 646.08 L 206.63 636.15 L 208.95 640.61 L 213.92 641.43 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="23" data-edge-base="expresses" data-edge-from="7" data-edge-to="14">
+      <title>has time duration</title>
     <line x1="255.00" y1="582.50" x2="207.51" y2="701.23" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 205.00 707.50 L 204.16 697.47 L 207.51 701.23 L 212.52 700.81 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="24" data-edge-base="expresses" data-edge-from="10" data-edge-to="59">
+      <title>refers to</title>
       <line class="edge-ghost" x1="344.00" y1="820.00" x2="50.00" y2="652.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
         <line x1="344.00" y1="820.00" x2="50.00" y2="652.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
@@ -225,6 +245,7 @@
       </g>
     </g>
     <g class="edge" data-edge-idx="25" data-edge-base="expresses" data-edge-from="10" data-edge-to="21">
+      <title>has time duration</title>
     <line x1="307.78" y1="905.00" x2="118.47" y2="982.44" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 112.22 985.00 L 118.85 977.43 L 118.47 982.44 L 122.26 985.76 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
@@ -237,18 +258,22 @@
     <path d="M 1165.00 693.33 L 1174.98 694.58 L 1170.62 697.08 L 1169.99 702.07 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="28" data-edge-base="expresses" data-edge-from="46" data-edge-to="39">
+      <title>has abbreviation</title>
     <line x1="1035.00" y1="635.50" x2="987.90" y2="536.59" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 985.00 530.50 L 992.93 536.69 L 987.90 536.59 L 984.81 540.56 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="29" data-edge-base="expresses" data-edge-from="46" data-edge-to="47">
+      <title>release format</title>
     <line x1="1035.00" y1="658.50" x2="990.53" y2="627.37" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 985.00 623.50 L 994.95 624.97 L 990.53 627.37 L 989.79 632.35 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="30" data-edge-base="expresses" data-edge-from="46" data-edge-to="23">
+      <title>has sampling rate</title>
     <line x1="1035.00" y1="681.50" x2="990.53" y2="712.63" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 985.00 716.50 L 989.79 707.65 L 990.53 712.63 L 994.95 715.03 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="31" data-edge-base="expresses" data-edge-from="46" data-edge-to="19">
+      <title>recording date</title>
     <line x1="1035.00" y1="704.50" x2="987.90" y2="803.41" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 985.00 809.50 L 984.81 799.44 L 987.90 803.41 L 992.93 803.31 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
@@ -269,46 +294,57 @@
     <path d="M 2210.02 745.00 L 2214.55 753.98 L 2210.05 751.75 L 2205.55 754.02 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="36" data-edge-base="expresses" data-edge-from="38" data-edge-to="33">
+      <title>has abbreviation</title>
     <polyline points="2210.02,655.00 2211,380 1951.75,379.04" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 1945.00 379.02 L 1954.02 374.55 L 1951.75 379.04 L 1953.98 383.55 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="37" data-edge-base="expresses" data-edge-from="38" data-edge-to="49">
+      <title>release format</title>
     <line x1="2305.00" y1="669.67" x2="2350.82" y2="611.63" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 2355.00 606.33 L 2352.96 616.19 L 2350.82 611.63 L 2345.89 610.61 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="38" data-edge-base="expresses" data-edge-from="38" data-edge-to="17">
+      <title>has sampling rate</title>
     <line x1="2305.00" y1="708.00" x2="2348.25" y2="708.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 2355.00 708.00 L 2346.00 712.50 L 2348.25 708.00 L 2346.00 703.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="39" data-edge-base="expresses" data-edge-from="38" data-edge-to="20">
+      <title>recording date</title>
     <line x1="2305.00" y1="730.33" x2="2350.82" y2="788.37" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 2355.00 793.67 L 2345.89 789.39 L 2350.82 788.37 L 2352.96 783.81 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="40" data-edge-base="expresses" data-edge-from="1" data-edge-to="33">
+      <title>refers to</title>
     <line x1="2044.22" y1="447.37" x2="1902.44" y2="423.74" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 1895.78 422.63 L 1905.40 419.67 L 1902.44 423.74 L 1903.92 428.55 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="41" data-edge-base="expresses" data-edge-from="1" data-edge-to="30">
+      <title>has tempo</title>
     <line x1="1995.00" y1="490.00" x2="1951.75" y2="490.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 1945.00 490.00 L 1954.00 485.50 L 1951.75 490.00 L 1954.00 494.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="42" data-edge-base="expresses" data-edge-from="1" data-edge-to="16">
+      <title>has time duration</title>
     <line x1="2044.22" y1="532.63" x2="1902.44" y2="556.26" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 1895.78 557.37 L 1903.92 551.45 L 1902.44 556.26 L 1905.40 560.33 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="43" data-edge-base="expresses" data-edge-from="2" data-edge-to="33">
+      <title>refers to</title>
     <polyline points="2125.00,590.00 2150,565 2150,441 1951.62,402.27" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 1945.00 400.98 L 1954.70 398.28 L 1951.62 402.27 L 1952.97 407.12 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="44" data-edge-base="expresses" data-edge-from="2" data-edge-to="28">
+      <title>has tempo</title>
     <line x1="2016.25" y1="675.00" x2="1940.09" y2="702.69" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 1933.75 705.00 L 1940.67 697.70 L 1940.09 702.69 L 1943.75 706.15 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="45" data-edge-base="expresses" data-edge-from="2" data-edge-to="15">
+      <title>has time duration</title>
     <line x1="2090.00" y1="675.00" x2="2090.00" y2="698.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 2090.00 705.00 L 2085.50 696.00 L 2090.00 698.25 L 2094.50 696.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="46" data-edge-base="expresses" data-edge-from="3" data-edge-to="33">
+      <title>refers to</title>
       <line class="edge-ghost" x1="2084.00" y1="790.00" x2="1856.00" y2="440.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
         <line x1="2084.00" y1="790.00" x2="1856.00" y2="440.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
@@ -324,22 +360,27 @@
       </g>
     </g>
     <g class="edge" data-edge-idx="47" data-edge-base="expresses" data-edge-from="3" data-edge-to="32">
+      <title>has tempo</title>
     <line x1="1995.00" y1="860.00" x2="1951.75" y2="860.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 1945.00 860.00 L 1954.00 855.50 L 1951.75 860.00 L 1954.00 864.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="48" data-edge-base="expresses" data-edge-from="3" data-edge-to="16">
+      <title>has time duration</title>
     <line x1="2057.41" y1="805.00" x2="1948.10" y2="593.66" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 1945.00 587.67 L 1953.13 593.59 L 1948.10 593.66 L 1945.14 597.73 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="49" data-edge-base="expresses" data-edge-from="4" data-edge-to="33">
+      <title>refers to</title>
     <polyline points="1995.00,974.09 1780,935 1780,445 1810.23,414.77" fill="none" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 1815.00 410.00 L 1811.82 419.55 L 1810.23 414.77 L 1805.45 413.18 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="50" data-edge-base="expresses" data-edge-from="4" data-edge-to="31">
+      <title>has tempo</title>
     <line x1="2016.25" y1="1055.00" x2="1940.09" y2="1082.69" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 1933.75 1085.00 L 1940.67 1077.70 L 1940.09 1082.69 L 1943.75 1086.15 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="51" data-edge-base="expresses" data-edge-from="4" data-edge-to="13">
+      <title>has time duration</title>
     <line x1="2090.00" y1="1055.00" x2="2090.00" y2="1078.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 2090.00 1085.00 L 2085.50 1076.00 L 2090.00 1078.25 L 2094.50 1076.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
@@ -368,6 +409,7 @@
     <path d="M 435.93 757.47 L 437.99 767.32 L 434.21 764.00 L 429.29 765.03 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="58" data-edge-base="expresses" data-edge-from="26" data-edge-to="59">
+      <title>has abbreviation</title>
       <line class="edge-ghost" x1="476.00" y1="660.00" x2="50.00" y2="628.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
         <line x1="476.00" y1="660.00" x2="50.00" y2="628.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
@@ -383,50 +425,62 @@
       </g>
     </g>
     <g class="edge" data-edge-idx="59" data-edge-base="expresses" data-edge-from="26" data-edge-to="63">
+      <title>release format</title>
     <line x1="565.00" y1="702.08" x2="609.17" y2="676.32" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 615.00 672.92 L 609.49 681.34 L 609.17 676.32 L 604.96 673.56 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="60" data-edge-base="expresses" data-edge-from="26" data-edge-to="23">
+      <title>has sampling rate</title>
     <line x1="565.00" y1="720.00" x2="848.25" y2="720.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 855.00 720.00 L 846.00 724.50 L 848.25 720.00 L 846.00 715.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="61" data-edge-base="expresses" data-edge-from="26" data-edge-to="18">
+      <title>recording date</title>
     <line x1="565.00" y1="726.00" x2="609.73" y2="761.78" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 615.00 766.00 L 605.16 763.89 L 609.73 761.78 L 610.78 756.86 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="62" data-edge-base="expresses" data-edge-from="54" data-edge-to="29">
+      <title>refers to</title>
     <line x1="565.00" y1="1474.17" x2="610.61" y2="1420.96" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 615.00 1415.83 L 612.56 1425.60 L 610.61 1420.96 L 605.73 1419.74 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="63" data-edge-base="expresses" data-edge-from="54" data-edge-to="50">
+      <title>refers to</title>
     <line x1="565.00" y1="1510.00" x2="608.25" y2="1510.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 615.00 1510.00 L 606.00 1514.50 L 608.25 1510.00 L 606.00 1505.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="64" data-edge-base="expresses" data-edge-from="54" data-edge-to="55">
+      <title>refers to</title>
     <line x1="565.00" y1="1545.83" x2="610.61" y2="1599.04" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 615.00 1604.17 L 605.73 1600.26 L 610.61 1599.04 L 612.56 1594.40 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="65" data-edge-base="expresses" data-edge-from="54" data-edge-to="26">
+      <title>composer of</title>
     <line x1="470.00" y1="1445.00" x2="470.00" y2="761.75" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 470.00 755.00 L 474.50 764.00 L 470.00 761.75 L 465.50 764.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="66" data-edge-base="expresses" data-edge-from="6" data-edge-to="59">
+      <title>refers to</title>
     <line x1="255.00" y1="482.92" x2="207.44" y2="605.79" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 205.00 612.08 L 204.05 602.07 L 207.44 605.79 L 212.45 605.31 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="67" data-edge-base="expresses" data-edge-from="6" data-edge-to="25">
+      <title>has time duration</title>
     <line x1="309.09" y1="505.00" x2="211.14" y2="549.90" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 205.00 552.71 L 211.31 544.87 L 211.14 549.90 L 215.06 553.05 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="68" data-edge-base="expresses" data-edge-from="8" data-edge-to="59">
+      <title>refers to</title>
     <line x1="255.00" y1="669.42" x2="211.70" y2="664.37" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 205.00 663.58 L 214.46 660.16 L 211.70 664.37 L 213.42 669.10 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="69" data-edge-base="expresses" data-edge-from="8" data-edge-to="22">
+      <title>has time duration</title>
     <line x1="307.78" y1="705.00" x2="118.47" y2="782.44" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 112.22 785.00 L 118.85 777.43 L 118.47 782.44 L 122.26 785.76 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="70" data-edge-base="expresses" data-edge-from="9" data-edge-to="59">
+      <title>refers to</title>
       <line class="edge-ghost" x1="230.00" y1="782.00" x2="170.00" y2="680.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
         <line x1="230.00" y1="782.00" x2="170.00" y2="680.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
@@ -442,10 +496,12 @@
       </g>
     </g>
     <g class="edge" data-edge-idx="71" data-edge-base="expresses" data-edge-from="9" data-edge-to="24">
+      <title>has time duration</title>
     <line x1="307.78" y1="805.00" x2="118.47" y2="882.44" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 112.22 885.00 L 118.85 877.43 L 118.47 882.44 L 122.26 885.76 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="72" data-edge-base="expresses" data-edge-from="11" data-edge-to="59">
+      <title>refers to</title>
       <line class="edge-ghost" x1="344.00" y1="920.00" x2="116.00" y2="680.00" stroke="#6c8ebf" stroke-width="1" stroke-opacity="0.22" />
       <g class="edge-full" opacity="0">
         <line x1="344.00" y1="920.00" x2="116.00" y2="680.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
@@ -461,18 +517,22 @@
       </g>
     </g>
     <g class="edge" data-edge-idx="73" data-edge-base="expresses" data-edge-from="11" data-edge-to="12">
+      <title>has time duration</title>
     <line x1="320.00" y1="1005.00" x2="320.00" y2="1028.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 320.00 1035.00 L 315.50 1026.00 L 320.00 1028.25 L 324.50 1026.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="74" data-edge-base="leadsto" data-edge-from="34" data-edge-to="35">
+      <title>then followed by</title>
     <line x1="3140.00" y1="205.00" x2="3140.00" y2="248.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 3140.00 255.00 L 3135.50 246.00 L 3140.00 248.25 L 3144.50 246.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="75" data-edge-base="leadsto" data-edge-from="35" data-edge-to="36">
+      <title>then followed by</title>
     <line x1="3140.00" y1="365.00" x2="3140.00" y2="408.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 3140.00 415.00 L 3135.50 406.00 L 3140.00 408.25 L 3144.50 406.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="76" data-edge-base="leadsto" data-edge-from="36" data-edge-to="37">
+      <title>then followed by</title>
     <line x1="3140.00" y1="525.00" x2="3140.00" y2="568.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 3140.00 575.00 L 3135.50 566.00 L 3140.00 568.25 L 3144.50 566.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>

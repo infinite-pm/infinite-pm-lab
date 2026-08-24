@@ -1,0 +1,43 @@
+# Edit ipmt in VS Code > The typing loop
+# ipm-overview:docs/use-cases/edit-in-vscode.md#L10
+# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+
+# The whole editing loop, and its steps.
+whole::a Edit ipmt in VS Code ::e
+
+# One keystroke, four consequences
+type::a Type in an ipmt fence ::e
+type --> tokenize::a Tokenize the buffer ::e
+  --> paint::a Paint semantic colors ::e
+type --> render::a Render the buffer in memory ::e
+  --> preview::a Refresh the Markdown preview ::e
+type --> diagnose::a Report diagnostics ::e
+type --> save::a Save the file ::e
+  --> embed::a Embed on save ::e
+  --> reload::a Reload the committed SVGs ::e
+
+type, tokenize, paint, render, preview, diagnose, save, embed, reload --::P--> whole
+
+# Tools (thing --> event, part-of)
+ext::a vscode-infinite-pm --> type, paint, preview, save, reload
+rpc::a ipm-rpc --> tokenize, render, diagnose, embed
+
+# Artifacts
+buf::a open buffer --> type, tokenize, render, diagnose, save
+tokens::a token stream --> tokenize, paint
+mem::a in-memory SVG --> render, preview
+problems::a Problems panel entries --> diagnose
+svg::a committed SVG --> embed, reload
+
+# The person
+user::a User --> type, save
+
+# What the things are (glossary concepts)
+ext --> editor extension ::c
+rpc --> language server ::c, tokenizer ::c, renderer ::c, embedder ::c
+buf --> ipmt text ::c, Markdown page ::c
+tokens --> ipmt tokens ::c
+mem --> ipm SVG ::c, intermediate ::c
+problems --> diagnostic ::c
+svg --> ipm SVG ::c, output ::c
+user --> Author ::c

@@ -1,0 +1,14 @@
+# Render a diagram from the command line > Zoomed out: one command
+# ipm-overview:docs/use-cases/render-diagram.md#L70
+# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+
+# The same whole event as above, told at one step instead of four.
+render::a Render one diagram ::e
+
+ipmsvg-gen, src::a hello.ipmt, svg::a hello.ipm.svg --> render
+user::a User --> render
+
+ipmsvg-gen --> renderer ::c, command-line tool ::c
+src --> ipmt text ::c, input ::c
+svg --> ipm SVG ::c, output ::c
+user --> Author ::c

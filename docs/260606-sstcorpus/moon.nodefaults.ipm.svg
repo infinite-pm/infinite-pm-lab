@@ -29,54 +29,67 @@
   </g>
   <g id="edges">
     <g class="edge" data-edge-idx="0" data-edge-base="expresses" data-edge-from="19" data-edge-to="18">
+      <title>means</title>
     <line x1="225.00" y1="2730.00" x2="268.25" y2="2730.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 275.00 2730.00 L 266.00 2734.50 L 268.25 2730.00 L 266.00 2725.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="1" data-edge-base="expresses" data-edge-from="5" data-edge-to="13">
+      <title>has value</title>
     <line x1="100.00" y1="3025.00" x2="100.00" y2="3048.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 100.00 3055.00 L 95.50 3046.00 L 100.00 3048.25 L 104.50 3046.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="2" data-edge-base="expresses" data-edge-from="6" data-edge-to="15">
+      <title>has value</title>
     <line x1="340.00" y1="3025.00" x2="340.00" y2="3048.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 340.00 3055.00 L 335.50 3046.00 L 340.00 3048.25 L 344.50 3046.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="3" data-edge-base="expresses" data-edge-from="4" data-edge-to="16">
+      <title>has value</title>
     <line x1="820.00" y1="105.00" x2="820.00" y2="128.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 820.00 135.00 L 815.50 126.00 L 820.00 128.25 L 824.50 126.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="4" data-edge-base="expresses" data-edge-from="3" data-edge-to="14">
+      <title>has value</title>
     <line x1="580.00" y1="105.00" x2="580.00" y2="128.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 580.00 135.00 L 575.50 126.00 L 580.00 128.25 L 584.50 126.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="5" data-edge-base="leadsto" data-edge-from="9" data-edge-to="1">
+      <title>then followed by</title>
     <line x1="160.00" y1="1245.00" x2="160.00" y2="1288.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 160.00 1295.00 L 155.50 1286.00 L 160.00 1288.25 L 164.50 1286.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="6" data-edge-base="leadsto" data-edge-from="11" data-edge-to="17">
+      <title>then followed by</title>
     <line x1="160.00" y1="345.00" x2="160.00" y2="388.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 160.00 395.00 L 155.50 386.00 L 160.00 388.25 L 164.50 386.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="7" data-edge-base="leadsto" data-edge-from="17" data-edge-to="12">
+      <title>then followed by</title>
     <line x1="160.00" y1="585.00" x2="160.00" y2="628.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 160.00 635.00 L 155.50 626.00 L 160.00 628.25 L 164.50 626.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="8" data-edge-base="leadsto" data-edge-from="12" data-edge-to="9">
+      <title>then followed by</title>
     <line x1="160.00" y1="985.00" x2="160.00" y2="1028.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 160.00 1035.00 L 155.50 1026.00 L 160.00 1028.25 L 164.50 1026.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="9" data-edge-base="leadsto" data-edge-from="1" data-edge-to="2">
+      <title>then followed by</title>
     <line x1="160.00" y1="1565.00" x2="160.00" y2="1608.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 160.00 1615.00 L 155.50 1606.00 L 160.00 1608.25 L 164.50 1606.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="10" data-edge-base="leadsto" data-edge-from="2" data-edge-to="8">
+      <title>then followed by</title>
     <line x1="160.00" y1="1905.00" x2="160.00" y2="1948.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 160.00 1955.00 L 155.50 1946.00 L 160.00 1948.25 L 164.50 1946.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="11" data-edge-base="leadsto" data-edge-from="8" data-edge-to="7">
+      <title>then followed by</title>
     <line x1="160.00" y1="2285.00" x2="160.00" y2="2328.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 160.00 2335.00 L 155.50 2326.00 L 160.00 2328.25 L 164.50 2326.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="12" data-edge-base="leadsto" data-edge-from="7" data-edge-to="19">
+      <title>then followed by</title>
     <line x1="160.00" y1="2645.00" x2="160.00" y2="2688.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 160.00 2695.00 L 155.50 2686.00 L 160.00 2688.25 L 164.50 2686.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>

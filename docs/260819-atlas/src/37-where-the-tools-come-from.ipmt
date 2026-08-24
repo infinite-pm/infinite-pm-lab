@@ -1,0 +1,10 @@
+# Get started with infinite.pm > Where the tools come from
+# ipm-overview:docs/use-cases/get-started.md#L108
+# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+
+tools::a ipm-tools
+rpc::a ipm-rpc, md-embed --> tools
+
+tools --> Go toolchain ::c
+rpc --> language server ::c
+md-embed --> embedder ::c

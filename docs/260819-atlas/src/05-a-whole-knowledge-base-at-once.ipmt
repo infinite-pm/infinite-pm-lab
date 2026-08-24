@@ -1,0 +1,11 @@
+# Glossary > A whole knowledge base at once
+# ipm-overview:docs/glossary.md#L113
+# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+
+union graph ::c, board ::c --> corpus view ::c
+panel ::c, anchor ::c --> board part ::c
+board artifact ::c, board page ::c --> artifact ::c
+board part --> board
+
+union graph --> merges names ::c
+board --> keeps fragments whole ::c

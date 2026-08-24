@@ -1,0 +1,21 @@
+# Release the extension > Preparing
+# ipm-overview:docs/use-cases/release-the-extension.md#L48
+# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+
+whole::a Take a version through the release ::e
+prep::a Prepare the version ::e --::P--> whole
+
+pin::a Pin the toolchain ref ::e
+  --> bump::a Bump the version ::e
+  --> write::a Write the changelog entry ::e
+pin, bump, write --::P--> prep
+
+dev::a Release maintainer --> pin, bump, write
+ref::a .github/ipm-tools.ref --> pin
+manifest::a package.json --> bump
+log::a CHANGELOG.md --> write
+
+dev --> Maintainer ::c
+ref --> pinned ref ::c
+manifest --> Markdown page ::c
+log --> changelog ::c

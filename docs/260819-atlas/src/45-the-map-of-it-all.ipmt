@@ -1,0 +1,30 @@
+# Use cases > The map of it all
+# ipm-overview:docs/use-cases/readme.md#L31
+# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+
+# The root: using infinite.pm at all. Nothing is CONTAINED in it — the ways of
+# using it are KINDS of it, so each one EXPRESSES it. That is also why there is
+# no order here: different people take different paths, and most never take
+# some of them at all. Order is a claim you can only make inside one journey.
+all::a Use infinite.pm ::e
+
+# One event per way of using it. Each is told in detail on its own page, where
+# its steps are part of it and chained.
+start::a Get started with infinite.pm ::e
+edit::a Edit ipmt in VS Code ::e
+preview::a Preview a standalone ipmt file ::e
+render::a Render one diagram ::e
+hand::a Refresh the diagrams by hand ::e
+ci::a Take a change through the guard ::e
+publish::a Publish a docs site ::e
+site::a Read the website ::e
+change::a Change the knowledge base ::e
+mode::a Run the mode ::e
+canvas::a Explore a graph in the canvas ::e
+release::a Take a version through the release ::e
+board::a Build a board of a corpus ::e
+readboard::a Read a board ::e
+union::a Build a union graph of a corpus ::e
+
+start, edit, preview, render, hand, ci, publish, site, change, mode --::X--> all
+canvas, board, readboard, union, release --::X--> all

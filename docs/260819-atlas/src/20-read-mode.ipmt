@@ -1,0 +1,16 @@
+# AI agent modes and the harness > Read mode
+# ipm-overview:docs/use-cases/agent-modes.md#L240
+# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+
+run::a Run the read mode ::e --> read mode ::c, read-only ::c
+
+load::a Load ipm knowledge ::e --> answer::a Answer the question ::e
+load, answer --::P--> run
+
+agent::a coding agent --> load, answer
+mainwt::a main worktree --> load
+you::a User --> answer
+
+agent --> AI agent ::c
+mainwt --> ipm knowledge base ::c
+you --> Human ::c

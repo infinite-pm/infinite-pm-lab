@@ -1,0 +1,41 @@
+# Keep diagrams in Markdown in sync > The author's loop
+# ipm-overview:docs/use-cases/embed-in-markdown.md#L13
+# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+
+# The whole loop, and its steps.
+whole::a Refresh the diagrams by hand ::e
+
+# The loop
+edit::a Edit an ipmt fence ::e
+  --> embed::a Run md-embed ::e
+  --> review::a Review the diagram ::e
+  --> commit::a Commit source and SVG together ::e
+
+# Inside "Run md-embed" (sub-events, part-of)
+scan::a Scan the Markdown tree ::e
+  --> hash::a Hash each block ::e
+  --> rerender::a Re-render changed blocks ::e
+  --> stamp::a Write the markers ::e
+  --> prune::a Prune orphan SVGs ::e
+scan, hash, rerender, stamp, prune --::P--> embed
+edit, embed, review, commit --::P--> whole
+
+# Tool
+md-embed --> embed
+
+# Artifacts
+page::a docs page .md --> edit, scan, stamp, commit
+fence::a the ipmt fence --> edit, hash
+marker::a marker lines --> stamp, review, commit
+svg::a committed SVG --> rerender, prune, review, commit
+
+# The person
+user::a User --> edit, review, commit
+
+# What the things are (glossary concepts)
+md-embed --> embedder ::c, renderer ::c, command-line tool ::c
+page --> Markdown page ::c
+fence --> ipmt fence ::c, strict ::c
+marker --> ipm-svg marker ::c
+svg --> ipm SVG ::c, output ::c
+user --> Author ::c

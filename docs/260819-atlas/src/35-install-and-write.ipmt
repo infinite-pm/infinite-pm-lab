@@ -1,0 +1,17 @@
+# Get started with infinite.pm > Install and write
+# ipm-overview:docs/use-cases/get-started.md#L64
+# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+
+whole::a Get started with infinite.pm ::e
+install::a Install the extension ::e --> write::a Write a first model ::e
+install, write --::P--> whole
+
+ext::a vscode-infinite-pm --> install, write
+rpc::a ipm-rpc --> write
+model::a my-first-model.md --> write
+you::a Newcomer --> install, write
+
+ext --> VS Code extension ::c
+rpc --> language server ::c
+model --> Markdown page ::c
+you --> Author ::c

@@ -1,0 +1,29 @@
+# Publish a docs site > The maintainer's half
+# ipm-overview:docs/use-cases/publish-site.md#L20
+# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+
+# The whole publish, and the steps of its first half.
+whole::a Publish a docs site ::e
+
+embed::a Embed the diagrams ::e
+  --> build::a Build the HTML ::e
+  --> push::a Push to the site repository ::e
+embed, build, push --::P--> whole
+
+md-embed --> embed
+md-html --> build
+
+md::a Markdown pages --> embed, build
+svg::a committed SVGs --> embed, build
+conf::a md-html.conf.json --> build
+html::a built HTML files --> build, push
+repo::a infinite-pm-web --> push
+dev::a Docs maintainer --> embed, build, push
+
+md-embed --> embedder ::c, command-line tool ::c
+md-html --> site generator ::c, command-line tool ::c
+md --> Markdown page ::c
+svg --> ipm SVG ::c
+html --> static HTML ::c, output ::c
+repo --> site source ::c
+dev --> Maintainer ::c

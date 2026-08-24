@@ -1,0 +1,14 @@
+# Glossary > Artifacts
+# ipm-overview:docs/glossary.md#L84
+# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+
+ipmt text ::c, graph JSON ::c, layout JSON ::c, ipm SVG ::c --> artifact ::c
+Markdown page ::c, ipm-svg marker ::c, static HTML ::c --> artifact
+ipmt tokens ::c, diagnostic ::c --> artifact
+ipm knowledge base ::c, commit ::c, test suite ::c, write lock ::c --> artifact
+proposal ::c, review pack ::c --> artifact
+
+graph JSON, layout JSON --> JSON ::c
+ipm SVG --> SVG ::c
+
+input ::c, intermediate ::c, output ::c --> data role ::c

@@ -1,0 +1,12 @@
+# Glossary > Modeling vocabulary
+# ipm-overview:docs/glossary.md#L19
+# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+
+node ::c, link ::c --> graph part ::c
+
+event ::c, thing ::c, concept ::c --> node kind ::c
+unresolved ::c --> node kind
+
+leads-to ::c, part-of ::c, expresses ::c, near-to ::c --> link kind ::c
+
+node kind, link kind --> Semantic Spacetime ::c

@@ -1,0 +1,23 @@
+# Edit ipmt in VS Code > Preview a .ipmt file
+# ipm-overview:docs/use-cases/edit-in-vscode.md#L65
+# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+
+# The whole preview, and its steps.
+whole::a Preview a standalone ipmt file ::e
+
+open::a Open hello.ipmt ::e
+  --> render::a Render in memory ::e
+  --> show::a Show the preview pane ::e
+open, render, show --::P--> whole
+
+ext::a vscode-infinite-pm --> open, show
+rpc::a ipm-rpc --> render
+file::a hello.ipmt --> open, render
+mem::a in-memory SVG --> render, show
+user::a User --> open
+
+ext --> editor extension ::c
+rpc --> language server ::c, renderer ::c
+file --> ipmt text ::c, input ::c
+mem --> ipm SVG ::c, intermediate ::c
+user --> Author ::c

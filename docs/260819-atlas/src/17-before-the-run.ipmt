@@ -1,0 +1,27 @@
+# AI agent modes and the harness > The envelope of an update run > Before the run
+# ipm-overview:docs/use-cases/agent-modes.md#L138
+# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+
+# The first steps of one attempt — the whole they are part of.
+whole::a Attempt an update ::e
+
+pick::a Declare the mode ::e
+  --> lock::a Take the write lock ::e
+  --> clean::a Check the tree is clean ::e
+pick, lock, clean --::P--> whole
+
+agent::a coding agent --> pick
+hn::a agent harness --> pick, lock, clean
+wl::a repo write lock --> lock
+mainwt::a main worktree --> clean
+c0::a baseline commit --> clean
+
+pick --> one mode per run ::c
+lock --> one writer at a time ::c
+clean --> clean baseline ::c
+
+agent --> AI agent ::c
+hn --> harness ::c
+wl --> write lock ::c
+mainwt --> ipm knowledge base ::c
+c0 --> commit ::c

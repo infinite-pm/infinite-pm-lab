@@ -1,0 +1,11 @@
+# Glossary > Notation
+# ipm-overview:docs/glossary.md#L38
+# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+
+ipmt ::c --> text format ::c
+
+statement ::c, comment ::c, pragma ::c --> ipmt element ::c
+node spec ::c, arrow ::c --> statement
+
+alias ::c, kind marker ::c, tooltip ::c, canonical name ::c --> node spec attribute ::c
+direction ::c, link marker ::c, arrow tooltip ::c --> arrow attribute ::c

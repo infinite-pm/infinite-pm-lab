@@ -1,0 +1,22 @@
+# AI agent modes and the harness > Validate mode
+# ipm-overview:docs/use-cases/agent-modes.md#L290
+# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+
+run::a Run the validate mode ::e --> validate mode ::c, writes findings only ::c
+
+check::a Check the branch markers and SVGs ::e
+  --> validate::a Validate the branch graphs ::e
+  --> report::a Write the findings ::e
+check, validate, report --::P--> run
+
+agent::a coding agent --> check, validate, report
+md-embed --> check
+ipm-validate --> validate
+wt::a design worktree --> check, validate
+findings::a findings note --> report
+
+agent --> AI agent ::c
+md-embed --> embedder ::c
+ipm-validate --> validator ::c
+wt --> design workspace ::c
+findings --> diagnostic ::c, output ::c

@@ -1,0 +1,23 @@
+# Read a whole knowledge base on one board > Reading one
+# ipm-overview:docs/use-cases/read-a-board.md#L66
+# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+
+# One reading, from the whole board down to one panel's inside.
+whole::a Read a board ::e
+
+open::a Open the board ::e
+  --> find::a Find a node ::e
+  --> walk::a Walk to the next usage ::e
+open, find, walk --::P--> whole
+
+you::a Board reader --> open, find, walk
+page::a the board page --> open
+badge::a the 3/7 badge --> find, walk
+anch::a the anchor behind it --> walk
+pnl::a the landing's panel --> walk
+
+page --> board page ::c
+badge --> board part ::c
+anch --> anchor ::c
+pnl --> panel ::c
+you --> Reader ::c

@@ -1,0 +1,19 @@
+# Read a whole knowledge base on one board > Why not merge everything
+# ipm-overview:docs/use-cases/read-a-board.md#L146
+# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+
+# The union is its own run of the same tool, so its own whole event: the
+# board run collects fragments and keeps them; this one reads and merges.
+whole::a Build a union graph of a corpus ::e
+
+read::a Read the corpus into fragments ::e
+  --> merge::a Merge same-named nodes ::e
+read, merge --::P--> whole
+
+union::a ipm-graph-union --> read, merge
+corpus::a the pages of a knowledge base --> read
+graph::a corpus.ipm.json --> merge
+
+union --> union builder ::c, command-line tool ::c
+corpus --> ipm knowledge base ::c
+graph --> union graph ::c, output ::c

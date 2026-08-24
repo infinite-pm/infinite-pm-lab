@@ -33,16 +33,20 @@
   </g>
   <g id="edges">
     <g class="edge" data-edge-idx="0" data-edge-base="nearto" data-edge-from="13" data-edge-to="5">
+      <title>same as</title>
     <line x1="975.00" y1="70.00" x2="885.00" y2="70.00" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6.000" />
     </g>
     <g class="edge" data-edge-idx="1" data-edge-base="leadsto" data-edge-from="15" data-edge-to="17">
+      <title>implements</title>
     <line x1="820.00" y1="365.00" x2="820.00" y2="408.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 820.00 415.00 L 815.50 406.00 L 820.00 408.25 L 824.50 406.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="2" data-edge-base="nearto" data-edge-from="6" data-edge-to="12">
+      <title>same as</title>
     <line x1="515.00" y1="240.00" x2="405.00" y2="240.00" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6.111" />
     </g>
     <g class="edge" data-edge-idx="3" data-edge-base="expresses" data-edge-from="14" data-edge-to="12">
+      <title>has example</title>
     <line x1="165.00" y1="240.00" x2="268.25" y2="240.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 275.00 240.00 L 266.00 244.50 L 268.25 240.00 L 266.00 235.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>

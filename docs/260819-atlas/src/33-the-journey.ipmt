@@ -1,0 +1,17 @@
+# Get started with infinite.pm > The journey
+# ipm-overview:docs/use-cases/get-started.md#L11
+# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+
+# The whole journey, and the steps that are part of it.
+whole::a Get started with infinite.pm ::e
+
+read::a Read the intro ::e
+  --> install::a Install the extension ::e
+  --> write::a Write a first model ::e
+  --> embed::a Embed it in a README ::e
+  --> share::a Share the repository ::e
+read --> browse::a Browse the lab ::e
+read, install, write, embed, share, browse --::P--> whole
+
+you::a Newcomer --> read, browse, install, write, embed, share
+you --> Reader ::c, Author ::c

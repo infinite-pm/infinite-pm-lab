@@ -1,0 +1,33 @@
+# Read a whole knowledge base on one board > Making one
+# ipm-overview:docs/use-cases/read-a-board.md#L15
+# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+
+# The whole event, and the steps that are part of it.
+whole::a Build a board of a corpus ::e
+
+collect::a Collect the fragments ::e
+  --> place::a Place the panels ::e
+  --> serve::a Serve the board ::e
+collect, place, serve --::P--> whole
+
+# Tools
+union::a ipm-graph-union --> collect
+atlas-gen --> place
+canvas-server --> serve
+
+# Artifacts flowing through
+corpus::a the pages of a knowledge base --> collect
+art::a board.ipma.json --> collect, place, serve
+page::a the board page --> serve
+
+# The person
+dev::a Corpus keeper --> collect, serve
+
+# What the things are (glossary concepts)
+union --> union builder ::c, command-line tool ::c
+atlas-gen --> board placer ::c, command-line tool ::c
+canvas-server --> canvas server ::c, renderer ::c
+corpus --> ipm knowledge base ::c
+art --> board artifact ::c, intermediate ::c
+page --> board page ::c, output ::c
+dev --> Maintainer ::c

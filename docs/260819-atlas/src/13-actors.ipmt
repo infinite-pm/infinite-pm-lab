@@ -1,0 +1,7 @@
+# Glossary > Actors
+# ipm-overview:docs/glossary.md#L264
+# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+
+Author ::c, Reader ::c, Maintainer ::c, Reviewer ::c --> Human ::c
+Author, Reader --> AI agent ::c
+Human, AI agent --> agent ::c

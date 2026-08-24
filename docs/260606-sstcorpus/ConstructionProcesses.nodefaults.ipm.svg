@@ -63,53 +63,66 @@
   </g>
   <g id="edges">
     <g class="edge" data-edge-idx="0" data-edge-base="leadsto" data-edge-from="17" data-edge-to="18">
+      <title>supplies</title>
     <line x1="1640.00" y1="645.00" x2="1640.00" y2="688.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 1640.00 695.00 L 1635.50 686.00 L 1640.00 688.25 L 1644.50 686.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="1" data-edge-base="nearto" data-edge-from="33" data-edge-to="25">
+      <title>same as</title>
     <line x1="165.00" y1="70.00" x2="255.00" y2="70.00" stroke="#999999" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6.000" />
     </g>
     <g class="edge" data-edge-idx="2" data-edge-base="expresses" data-edge-from="33" data-edge-to="28">
+      <title>english has norwegian</title>
     <line x1="100.00" y1="105.00" x2="100.00" y2="128.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 100.00 135.00 L 95.50 126.00 L 100.00 128.25 L 104.50 126.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="3" data-edge-base="expresses" data-edge-from="4" data-edge-to="9">
+      <title>is an organization in</title>
     <line x1="2000.00" y1="385.00" x2="2000.00" y2="408.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 2000.00 415.00 L 1995.50 406.00 L 2000.00 408.25 L 2004.50 406.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="4" data-edge-base="expresses" data-edge-from="16" data-edge-to="2">
+      <title>is an organization in</title>
     <line x1="2000.00" y1="105.00" x2="2000.00" y2="128.25" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 2000.00 135.00 L 1995.50 126.00 L 2000.00 128.25 L 2004.50 126.00 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="5" data-edge-base="leadsto" data-edge-from="15" data-edge-to="3">
+      <title>supplies</title>
     <line x1="1280.00" y1="185.00" x2="1280.00" y2="228.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 1280.00 235.00 L 1275.50 226.00 L 1280.00 228.25 L 1284.50 226.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="6" data-edge-base="leadsto" data-edge-from="11" data-edge-to="24">
+      <title>handles</title>
     <line x1="1640.00" y1="185.00" x2="1640.00" y2="228.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 1640.00 235.00 L 1635.50 226.00 L 1640.00 228.25 L 1644.50 226.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="7" data-edge-base="leadsto" data-edge-from="7" data-edge-to="20">
+      <title>proposes</title>
     <line x1="1280.00" y1="1105.00" x2="1280.00" y2="1148.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 1280.00 1155.00 L 1275.50 1146.00 L 1280.00 1148.25 L 1284.50 1146.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="8" data-edge-base="leadsto" data-edge-from="29" data-edge-to="31">
+      <title>decides</title>
     <line x1="1640.00" y1="1105.00" x2="1640.00" y2="1148.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 1640.00 1155.00 L 1635.50 1146.00 L 1640.00 1148.25 L 1644.50 1146.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="9" data-edge-base="leadsto" data-edge-from="14" data-edge-to="30">
+      <title>decides</title>
     <line x1="615.00" y1="695.00" x2="569.77" y2="740.23" stroke="#ff8000" stroke-width="3" />
     <path d="M 565.00 745.00 L 568.18 735.45 L 569.77 740.23 L 574.55 741.82 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="10" data-edge-base="leadsto" data-edge-from="14" data-edge-to="37">
+      <title>handles</title>
     <line x1="685.00" y1="695.00" x2="730.23" y2="740.23" stroke="#ff8000" stroke-width="3" />
     <path d="M 735.00 745.00 L 725.45 741.82 L 730.23 740.23 L 731.82 735.45 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="11" data-edge-base="leadsto" data-edge-from="6" data-edge-to="10">
+      <title>handles</title>
     <line x1="1280.00" y1="645.00" x2="1280.00" y2="688.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 1280.00 695.00 L 1275.50 686.00 L 1280.00 688.25 L 1284.50 686.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="12" data-edge-base="leadsto" data-edge-from="36" data-edge-to="32">
+      <title>delivered to</title>
     <line x1="920.00" y1="235.00" x2="920.00" y2="278.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 920.00 285.00 L 915.50 276.00 L 920.00 278.25 L 924.50 276.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
@@ -122,14 +135,17 @@
     <path d="M 855.00 217.92 L 849.49 226.34 L 849.17 221.32 L 844.96 218.56 Z" fill="#82b366" stroke="#82b366" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="15" data-edge-base="expresses" data-edge-from="1" data-edge-to="39">
+      <title>has condition</title>
     <line x1="675.00" y1="250.00" x2="631.75" y2="250.00" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 625.00 250.00 L 634.00 245.50 L 631.75 250.00 L 634.00 254.50 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="16" data-edge-base="expresses" data-edge-from="8" data-edge-to="13">
+      <title>involves</title>
     <line x1="698.75" y1="1075.00" x2="745.39" y2="1101.65" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 751.25 1105.00 L 741.20 1104.44 L 745.39 1101.65 L 745.67 1096.63 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
     <g class="edge" data-edge-idx="17" data-edge-base="expresses" data-edge-from="8" data-edge-to="5">
+      <title>involves</title>
     <line x1="621.25" y1="1075.00" x2="574.61" y2="1101.65" stroke="#6c8ebf" stroke-width="3" stroke-dasharray="9 6" />
     <path d="M 568.75 1105.00 L 574.33 1096.63 L 574.61 1101.65 L 578.80 1104.44 Z" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="3" stroke-miterlimit="10"/>
     </g>
