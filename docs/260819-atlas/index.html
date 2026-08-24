@@ -86,7 +86,7 @@
     <header class="exp">
       <div class="meta">
         <span class="badge">2026-08-19</span>
-        <span class="badge" data-stamp="atlas">updated 2026-08-24</span>
+        <span class="badge" data-stamp="atlas">updated 2026-08-28</span>
         <span class="badge wip">● work in progress</span>
         <span class="badge">260819-atlas</span>
       </div>
@@ -103,14 +103,14 @@
       <h2 class="demos-h">Open the board <span>— self-contained, runs offline from disk</span></h2>
       <div class="demos">
         <a class="demo" href="ipm-overview.board.html">
-          <span class="tag">interactive · 1.9 MB</span>
+          <span class="tag">interactive · one file, offline</span>
           <span class="t-title">The atlas board <span class="ar">&rarr;</span></span>
           <span class="desc">Search, click a node, walk every other place it appears. Pan and zoom; nothing is fetched.</span>
         </a>
         <a class="demo" href="board.svg">
           <span class="tag">static · one SVG</span>
           <span class="t-title">The board as one picture <span class="ar">&rarr;</span></span>
-          <span class="desc">The same 6404 × 14078 board rendered flat, both kinds of badge included — a poster of the corpus.</span>
+          <span class="desc">The same 6404 × 13468 board rendered flat, both kinds of badge included — a poster of the corpus.</span>
         </a>
         <a class="demo" href="src/index.html">
           <span class="tag">source · 50 fragments</span>
@@ -147,7 +147,7 @@
         <tr><th>Nodes</th><td>713 authored boxes, 738 drawn — a panel may draw one participant in several places</td></tr>
         <tr><th>Anchors</th><td>161, all of them plain identity — the nodes more than one fragment contributes to</td></tr>
         <tr><th>Biggest</th><td><code>output ::c</code> — the same concept in 15 diagrams</td></tr>
-        <tr><th>Board</th><td>6404 × 14078 px, built in about two seconds</td></tr>
+        <tr><th>Board</th><td>6404 × 13468 px, built in about two seconds</td></tr>
       </table>
 
       <h2>What counts as "the same"</h2>
@@ -203,8 +203,10 @@
         <li>A badge at the <b>top-right</b> means something narrower, and it is new here: a panel big
           enough to need it draws a participant <i>more than once</i>, beside each group of events that
           uses it, rather than running a line across the diagram. <code>1/2</code> is which of those
-          places you are looking at, inside that one picture; double-press walks them. 47 of them on
-          this board. Same thing, drawn where it is used — top-right, where in this picture;
+          places you are looking at, inside that one picture; double-press walks them. Seven
+          participants are drawn twice on this board — fourteen badged places — and the rest are
+          not: the pass leaves a small panel alone, because a copy in a small picture reads as a
+          fork rather than a second place. Same thing, drawn where it is used — top-right, where in this picture;
           bottom-right, where on this board.</li>
         <li>Every panel is titled by the Markdown heading its fence sits under; hover it for the whole
           table-of-contents path and the file and line.</li>
@@ -214,9 +216,10 @@
         <em>structure</em> — the board model plus one SVG fragment per panel — and the browser
         composes the picture, chrome and all, on a core it shares with the zoom canvas. Same
         reading experience, one codebase behind both. The side panels are yours to arrange —
-        collapse them, float the inspector and drag it next to what you are reading — and on a
-        served board a composite-bearing panel opens as a click-path zoom in place (the offline
-        file you can download keeps the lattices out to stay small).
+        collapse them, float the inspector and drag it next to what you are reading — and a
+        composite-bearing panel opens as a click-path zoom in place. The offline file carries
+        the frames a size gate bought and greys the rest; the served board builds any state on
+        request.
       </p>
       <div class="keys">
         <kbd>/</kbd> search <kbd>↑</kbd><kbd>↓</kbd> results <kbd>Enter</kbd> open

@@ -233,7 +233,7 @@
     "sstRender": "cyclic",
     "sstSvgKB": 0,
     "zoom": "ok",
-    "zoomCopies": 278
+    "zoomCopies": 258
   },
   {
     "name": "brains",
@@ -284,7 +284,7 @@
     "sstRender": "render-crash",
     "sstSvgKB": 0,
     "zoom": "ok",
-    "zoomCopies": 96
+    "zoomCopies": 72
   },
   {
     "name": "chinese_story_fox",
@@ -423,12 +423,12 @@
     "splits": 0,
     "lowConf": 0,
     "render": "ok",
-    "svgKB": 43,
+    "svgKB": 41,
     "validate": "clean",
     "ipmt": true,
     "noDefIpmt": true,
     "noDefRender": "ok",
-    "noDefSvgKB": 59,
+    "noDefSvgKB": 55,
     "sstIpmt": true,
     "sstRender": "render-crash",
     "sstSvgKB": 0,
@@ -483,7 +483,7 @@
     "sstRender": "cyclic",
     "sstSvgKB": 0,
     "zoom": "ok",
-    "zoomCopies": 288
+    "zoomCopies": 192
   },
   {
     "name": "PromiseTheory",
@@ -528,8 +528,7 @@
     "sstIpmt": true,
     "sstRender": "ok",
     "sstSvgKB": 39,
-    "zoom": "ok",
-    "zoomCopies": 8
+    "zoom": "ok"
   },
   {
     "name": "moon",
@@ -688,12 +687,12 @@
     "splits": 0,
     "lowConf": 0,
     "render": "ok",
-    "svgKB": 28,
+    "svgKB": 27,
     "validate": "clean",
     "ipmt": true,
     "noDefIpmt": true,
     "noDefRender": "ok",
-    "noDefSvgKB": 44,
+    "noDefSvgKB": 40,
     "sstIpmt": true,
     "sstRender": "render-crash",
     "sstSvgKB": 0,
@@ -720,7 +719,7 @@
     "noDefSvgKB": 42,
     "sstIpmt": true,
     "sstRender": "ok",
-    "sstSvgKB": 33,
+    "sstSvgKB": 30,
     "zoom": "ok"
   },
   {
@@ -745,7 +744,7 @@
     "noDefSvgKB": 26,
     "sstIpmt": true,
     "sstRender": "ok",
-    "sstSvgKB": 25,
+    "sstSvgKB": 23,
     "zoom": "ok"
   },
   {
@@ -818,7 +817,7 @@
     "sstRender": "cyclic",
     "sstSvgKB": 0,
     "zoom": "ok",
-    "zoomCopies": 147
+    "zoomCopies": 3
   },
   {
     "name": "json_example_4",

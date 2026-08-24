@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1640" height="1660" viewBox="0 0 1640 1660">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="1660" viewBox="0 0 1280 1660">
   <defs>
   </defs>
   <g id="container-shells">
@@ -14,10 +14,9 @@
     <rect x="1120" y="1220" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="460" y="170" width="120" height="80" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="700" y="590" width="120" height="120" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="1480" y="40" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="1160" y="40" width="40" height="40" rx="4" ry="4" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
-    <rect x="1120" y="500" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="1160" y="1580" width="40" height="40" rx="4" ry="4" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
+    <rect x="1120" y="500" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="40" y="50" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="1120" y="120" width="120" height="60" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
     <rect x="220" y="40" width="120" height="80" rx="6" ry="6" fill="#000000" stroke="#000000" stroke-width="2" opacity="0.25" transform="translate(2,3)"/>
@@ -102,11 +101,11 @@
     <line x1="1180.00" y1="1425.00" x2="1180.00" y2="1468.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 1180.00 1475.00 L 1175.50 1466.00 L 1180.00 1468.25 L 1184.50 1466.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="15" data-edge-base="leadsto" data-edge-from="19" data-edge-to="4">
+    <g class="edge" data-edge-idx="15" data-edge-base="leadsto" data-edge-from="18" data-edge-to="4">
     <line x1="1180.00" y1="85.00" x2="1180.00" y2="108.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 1180.00 115.00 L 1175.50 106.00 L 1180.00 108.25 L 1184.50 106.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
-    <g class="edge" data-edge-idx="16" data-edge-base="leadsto" data-edge-from="14" data-edge-to="20">
+    <g class="edge" data-edge-idx="16" data-edge-base="leadsto" data-edge-from="14" data-edge-to="19">
     <line x1="1180.00" y1="1545.00" x2="1180.00" y2="1568.25" stroke="#ff8000" stroke-width="3" />
     <path d="M 1180.00 1575.00 L 1175.50 1566.00 L 1180.00 1568.25 L 1184.50 1566.00 Z" fill="#ff8000" stroke="#ff8000" stroke-width="3" stroke-miterlimit="10"/>
     </g>
@@ -167,24 +166,16 @@
     <text x="760" y="650" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#009900">content/upload</text>
     <text x="760" y="667" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#009900">s/2023/11/age-</text>
     <text x="760" y="684" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="14" font-weight="normal" fill="#009900">of-moon.jpg</text>
-    <rect x="1480" y="40" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="none"/>
-    <rect x="1480" y="40" width="120" height="60" rx="6" ry="6" fill="none" stroke="#82b366" stroke-width="2" stroke-dasharray="6 4 6 14" stroke-dashoffset="0"/>
-    <rect x="1480" y="40" width="120" height="60" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 24" stroke-dashoffset="-20"/>
-    <text x="1540" y="70" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="normal" fill="#616161">Astronomy</text>
-    <rect x="1568" y="83" width="12" height="12" rx="2" ry="2" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
-    <text x="1574.0" y="89.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#009900">t</text>
-    <rect x="1583" y="83" width="12" height="12" rx="2" ry="2" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
-    <text x="1589.0" y="89.0" text-anchor="middle" dominant-baseline="central" font-size="8" fill="#3399ff">c</text>
     <rect x="1160" y="40" width="40" height="40" rx="4" ry="4" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
     <text x="1180" y="60" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">S</text>
+    <rect x="1160" y="1580" width="40" height="40" rx="4" ry="4" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
+    <text x="1180" y="1600" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">E</text>
     <g>
       <title>4 becomes simply for</title>
     <rect x="1120" y="500" width="120" height="60" rx="6" ry="6" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
     <text x="1180" y="520" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">And makes a</text>
     <text x="1180" y="540" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">year 4 you</text>
     </g>
-    <rect x="1160" y="1580" width="40" height="40" rx="4" ry="4" fill="#ffe6cc" stroke="#ff8000" stroke-width="2"/>
-    <text x="1180" y="1600" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">E</text>
     <rect x="40" y="50" width="120" height="60" rx="6" ry="6" fill="#ececec" stroke="none"/>
     <rect x="40" y="50" width="120" height="60" rx="6" ry="6" fill="none" stroke="#82b366" stroke-width="2" stroke-dasharray="6 4 6 14" stroke-dashoffset="0"/>
     <rect x="40" y="50" width="120" height="60" rx="6" ry="6" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="6 24" stroke-dashoffset="-20"/>
@@ -229,16 +220,6 @@
     <text x="1180" y="871" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">It7 when the</text>
     <text x="1180" y="890" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">stars so</text>
     <text x="1180" y="909" text-anchor="middle" dominant-baseline="middle" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="16" font-weight="bold" fill="#ff8000">bright</text>
-    </g>
-    <g class="copy-badge" data-node-id="18" data-of="2">
-      <title>drawn in 2 places — this is 1/2</title>
-      <rect x="1577" y="37" width="27" height="15" rx="7.5" ry="7.5" fill="#fff4d6" stroke="#d9a441" stroke-width="1"/>
-      <text x="1590" y="45" text-anchor="middle" dominant-baseline="central" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="10" font-weight="bold" fill="#8a6116">1/2</text>
-    </g>
-    <g class="copy-badge" data-node-id="3" data-of="2">
-      <title>drawn in 2 places — this is 2/2</title>
-      <rect x="137" y="47" width="27" height="15" rx="7.5" ry="7.5" fill="#fff4d6" stroke="#d9a441" stroke-width="1"/>
-      <text x="150" y="55" text-anchor="middle" dominant-baseline="central" font-family="Helvetica,Inter,Segoe UI,Arial" font-size="10" font-weight="bold" fill="#8a6116">2/2</text>
     </g>
   </g>
 </svg>
