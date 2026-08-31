@@ -95,17 +95,8 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #fff; colo
    would give it zero geometry → no mouseenter → dead middle tooltip.) */
 .edge-full { opacity: 0; }
 .edge-full line { pointer-events: stroke; }
-/* A selected edge (.edge-selected) OR an edge connected to the selected NODE
-   (.edge-connected) gets the same yellow highlight; stub edges reveal their full
-   middle too. Same style for normal lines, stub middles, and stub segments. */
-.edge.edge-selected .edge-full,
-.edge.edge-connected .edge-full { opacity: 1; }
-.edge.edge-selected > line, .edge.edge-connected > line,
-.edge.edge-selected > polyline, .edge.edge-connected > polyline,
-.edge.edge-selected .edge-full, .edge.edge-connected .edge-full,
-.edge.edge-selected .edge-stub, .edge.edge-connected .edge-stub { filter: drop-shadow(0 0 3px var(--select-ink)) drop-shadow(0 0 2px var(--select-ink)); }
-.edge.edge-selected .edge-stub line, .edge.edge-connected .edge-stub line { stroke-opacity: 1; }
-.edge.edge-selected .edge-badge rect, .edge.edge-connected .edge-badge rect { fill: var(--select-ink); }
+/* What a SELECTED or CONNECTED edge looks like is the edge aspect's, so both
+   shapes say it once and cannot drift (static/aspects/edges.js). */
 .edge-stub { cursor: pointer; }
     <style>
     /* The click-path inspector's presentation, in one place because it is
@@ -3589,6 +3580,20 @@ connectedEls.push(el);
 function renderEdgeInspector(ref) {
 const said = edgeLayer && edgeLayer.describe(ref);
 inspectorContent.innerHTML = said ? said.html : "<em>Edge not found</em>";
+}
+{
+const style = document.createElement("style");
+style.textContent =
+".edge.edge-selected line, .edge.edge-selected polyline, .edge.edge-selected path," +
+" .edge.edge-connected line, .edge.edge-connected polyline, .edge.edge-connected path," +
+" .edge.edge-selected .edge-full, .edge.edge-connected .edge-full," +
+" .edge.edge-selected .edge-stub, .edge.edge-connected .edge-stub {" +
+" filter: drop-shadow(0 0 3px var(--select-ink)) drop-shadow(0 0 2px var(--select-ink)); }" +
+".edge.edge-selected .edge-full, .edge.edge-connected .edge-full { opacity: 1; }" +
+".edge.edge-selected .edge-stub line, .edge.edge-connected .edge-stub line { stroke-opacity: 1; }" +
+".edge.edge-selected .edge-badge rect, .edge.edge-connected .edge-badge rect { fill: var(--select-ink); }" +
+".edge.edge-selected text { font-weight: bold; }";
+document.head.appendChild(style);
 }
 function wireEdgeInteraction(svg, st) {
 const edges = svg.querySelectorAll("g.edge");
