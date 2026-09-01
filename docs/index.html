@@ -158,6 +158,9 @@
     .card h3 .arrow { color: var(--accent, var(--orange)); transition: margin-left .15s ease; }
     .card:hover h3 .arrow { margin-left: .25rem; }
     .card p { color: var(--muted); font-size: .96rem; }
+    /* inline links in a card body must clear the full-card cover to stay clickable */
+    .card p a { position: relative; z-index: 2; color: var(--blue); text-decoration: none; border-bottom: 1px solid rgba(58,120,194,.35); }
+    .card p a:hover { border-color: var(--blue); }
     .card .tags { margin-top: .7rem; display: flex; gap: .4rem; flex-wrap: wrap; }
     .tag {
       font-size: .74rem; font-weight: 600; padding: .12rem .5rem; border-radius: 6px;
@@ -242,7 +245,7 @@
             <span class="updated" data-stamp="sstcorpus">updated 2026-08-31</span>
           </div>
           <h3><a class="hash" href="#sstcorpus" aria-label="Permalink to SSTorytime corpus">#</a>SSTorytime corpus <span class="arrow">&rarr;</span></h3>
-          <p>An n4l-import browser: dozens of SSTorytime <code style="font-size:.85em">.n4l</code> knowledge files imported into infinite.pm, rendered and validated — sortable, with svg / zoom / json / ipmt artifacts per model.</p>
+          <p>An n4l-import browser: dozens of <a href="https://github.com/markburgess/SSTorytime" target="_blank" rel="noopener noreferrer">SSTorytime</a> <code style="font-size:.85em">.n4l</code> knowledge files imported into infinite.pm, rendered and validated — sortable, with svg / zoom / json / ipmt artifacts per model.</p>
           <div class="tags">
             <span class="tag c">corpus ::c</span>
             <span class="tag wip">sandbox</span>
