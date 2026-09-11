@@ -102,15 +102,19 @@
     </header>
 
     <figure class="tri">
-      <img src="etc-LPXN.svg" alt="The infinite.pm etc-LPXN triangle: event (e, orange), thing (t, green) and concept (c, blue) vertices, joined by L (leads-to), P (part-of), X (expresses) and N (near-to) edges and self-loops.">
+      <img src="etc-LPXN.svg" alt="The infinite.pm etc-LPXN triangle: event (e, orange), thing (t, green) and concept (c, blue) vertices, joined by L (leads-to), P (part-of), X (expresses) and N (near-to) edges; each same-kind relation runs to a second node of that kind (e2, t2, c2).">
     </figure>
 
     <div class="body">
       <p>
         The three corners are <span class="kind"><span class="e">e</span></span> (<b class="e">event</b>),
         <span class="kind"><span class="t">t</span></span> (<b class="t">thing</b>) and
-        <span class="kind"><span class="c">c</span></span> (<b class="c">concept</b>). The arrows and self-loops show
-        <em>every legal edge</em>; the dotted circles (N<sub>e</sub>, N<sub>t</sub>, N<sub>c</sub>) are
+        <span class="kind"><span class="c">c</span></span> (<b class="c">concept</b>). The arrows show
+        <em>every legal edge</em>. A relation between two nodes of the <em>same</em> kind runs to a second node of
+        that kind beside the corner (<span class="kind"><span class="e">e</span></span> with
+        <span class="kind"><span class="e">e2</span></span>, and so on) — an event that leads to an event leads
+        to a <em>different</em> event, and nothing points at itself. The outermost, dotted ring of each corner
+        (N<sub>e</sub>, N<sub>t</sub>, N<sub>c</sub>) is
         <b class="n">near-to</b> — undirected similarity between two nodes of the same kind.
       </p>
 
