@@ -150,7 +150,7 @@
     "lowConf": 0,
     "render": "ok",
     "svgKB": 474,
-    "validate": "info",
+    "validate": "clean",
     "ipmt": true,
     "noDefIpmt": true,
     "noDefRender": "ok",
@@ -183,7 +183,8 @@
     "sstIpmt": true,
     "sstRender": "cyclic",
     "sstSvgKB": 0,
-    "zoom": "ok"
+    "zoom": "ok",
+    "zoomCopies": 8
   },
   {
     "name": "chinese_popsong",
@@ -233,7 +234,7 @@
     "sstRender": "cyclic",
     "sstSvgKB": 0,
     "zoom": "ok",
-    "zoomCopies": 258
+    "zoomCopies": 252
   },
   {
     "name": "brains",
@@ -258,7 +259,8 @@
     "sstIpmt": true,
     "sstRender": "render-crash",
     "sstSvgKB": 0,
-    "zoom": "ok"
+    "zoom": "ok",
+    "zoomCopies": 8
   },
   {
     "name": "openshift",
@@ -284,7 +286,7 @@
     "sstRender": "render-crash",
     "sstSvgKB": 0,
     "zoom": "ok",
-    "zoomCopies": 72
+    "zoomCopies": 74
   },
   {
     "name": "chinese_story_fox",
@@ -397,17 +399,17 @@
     "splits": 0,
     "lowConf": 0,
     "render": "ok",
-    "svgKB": 105,
-    "validate": "info",
+    "svgKB": 102,
+    "validate": "clean",
     "ipmt": true,
     "noDefIpmt": true,
     "noDefRender": "ok",
-    "noDefSvgKB": 135,
+    "noDefSvgKB": 132,
     "sstIpmt": true,
     "sstRender": "render-crash",
     "sstSvgKB": 0,
     "zoom": "ok",
-    "zoomCopies": 340
+    "zoomCopies": 329
   },
   {
     "name": "json_example_1",
@@ -483,7 +485,7 @@
     "sstRender": "cyclic",
     "sstSvgKB": 0,
     "zoom": "ok",
-    "zoomCopies": 192
+    "zoomCopies": 240
   },
   {
     "name": "PromiseTheory",
