@@ -1,6 +1,6 @@
 # Render a diagram from the command line > Four steps, four commands
 # ipm-overview:docs/use-cases/render-diagram.md#L13
-# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+# 32b3cda0b610d6636b3bbd17b9ddce57b43ec80b
 
 # One whole event: rendering one diagram. Everything else is part of it.
 whole::a Render one diagram ::e
@@ -13,26 +13,26 @@ parse::a Parse ::e
 parse, validate, layout, render --::P--> whole
 
 # Tools doing the work (thing --> event, part-of)
-ipmt-parse --> parse
-ipm-validate --> validate
-layout-gen --> layout
-ipmsvg-gen --> render
+ipmt-parse ::t --> parse
+ipm-validate ::t --> validate
+layout-gen ::t --> layout
+ipmsvg-gen ::t --> render
 
 # Artifacts flowing through
-src::a hello.ipmt --> parse
-graph::a hello.ipm.json --> parse, validate, layout
-lay::a hello.layout.json --> layout, render
-svg::a hello.ipm.svg --> render
+src::a hello.ipmt ::t --> parse
+graph::a hello.ipm.json ::t --> parse, validate, layout
+lay::a hello.layout.json ::t --> layout, render
+svg::a hello.ipm.svg ::t --> render
 
 # The person at the keyboard
-user::a User --> parse, render
+user::a User ::t --> parse, render
 
 # What the things are (glossary concepts)
-ipmt-parse --> parser ::c
-ipm-validate --> validator ::c
-layout-gen --> layout engine ::c
-ipmsvg-gen --> renderer ::c
-ipmt-parse, ipm-validate, layout-gen, ipmsvg-gen --> command-line tool ::c
+ipmt-parse ::t --> parser ::c
+ipm-validate ::t --> validator ::c
+layout-gen ::t --> layout engine ::c
+ipmsvg-gen ::t --> renderer ::c
+ipmt-parse ::t, ipm-validate ::t, layout-gen ::t, ipmsvg-gen ::t --> command-line tool ::c
 
 src --> ipmt text ::c, input ::c
 graph --> graph JSON ::c, intermediate ::c

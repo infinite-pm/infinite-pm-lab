@@ -1,6 +1,6 @@
 # Edit ipmt in VS Code > The typing loop
 # ipm-overview:docs/use-cases/edit-in-vscode.md#L10
-# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+# 32b3cda0b610d6636b3bbd17b9ddce57b43ec80b
 
 # The whole editing loop, and its steps.
 whole::a Edit ipmt in VS Code ::e
@@ -19,18 +19,18 @@ type --> save::a Save the file ::e
 type, tokenize, paint, render, preview, diagnose, save, embed, reload --::P--> whole
 
 # Tools (thing --> event, part-of)
-ext::a vscode-infinite-pm --> type, paint, preview, save, reload
-rpc::a ipm-rpc --> tokenize, render, diagnose, embed
+ext::a vscode-infinite-pm ::t --> type, paint, preview, save, reload
+rpc::a ipm-rpc ::t --> tokenize, render, diagnose, embed
 
 # Artifacts
-buf::a open buffer --> type, tokenize, render, diagnose, save
-tokens::a token stream --> tokenize, paint
-mem::a in-memory SVG --> render, preview
-problems::a Problems panel entries --> diagnose
-svg::a committed SVG --> embed, reload
+buf::a open buffer ::t --> type, tokenize, render, diagnose, save
+tokens::a token stream ::t --> tokenize, paint
+mem::a in-memory SVG ::t --> render, preview
+problems::a Problems panel entries ::t --> diagnose
+svg::a committed SVG ::t --> embed, reload
 
 # The person
-user::a User --> type, save
+user::a User ::t --> type, save
 
 # What the things are (glossary concepts)
 ext --> editor extension ::c

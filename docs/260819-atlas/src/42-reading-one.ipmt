@@ -1,16 +1,16 @@
 # Read a whole knowledge base on one board > Reading one
 # ipm-overview:docs/use-cases/read-a-board.md#L94
-# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+# 32b3cda0b610d6636b3bbd17b9ddce57b43ec80b
 
 whole::a Read a board ::e
 search::a Search the board ::e --::P--> whole
 search --> land::a Land on the panel ::e
 land --::P--> whole
 
-you::a Board reader --> search
-idx::a the search index --> search
-prev::a the panel preview --> search
-pnl::a the landing's panel --> land
+you::a Board reader ::t --> search
+idx::a the search index ::t --> search
+prev::a the panel preview ::t --> search
+pnl::a the landing's panel ::t --> land
 
 idx --> board part ::c
 prev --> board part ::c

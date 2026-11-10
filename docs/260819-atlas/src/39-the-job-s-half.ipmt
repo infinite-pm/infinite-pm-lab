@@ -1,6 +1,6 @@
 # Publish a docs site > The job's half
 # ipm-overview:docs/use-cases/publish-site.md#L55
-# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+# 32b3cda0b610d6636b3bbd17b9ddce57b43ec80b
 
 # The same whole publish; these are its second half. Reading the site is NOT
 # part of publishing it: a different person, at any later time, outside the
@@ -13,14 +13,14 @@ push, deploy --::P--> whole
 
 whole --> read::a Read the website ::e
 
-job::a Pages deploy job --> deploy
-pages::a GitHub Pages --> deploy, read
+job::a Pages deploy job ::t --> deploy
+pages::a GitHub Pages ::t --> deploy, read
 
-repo::a infinite-pm-web --> push, deploy
-html::a built HTML files --> push, deploy
-site::a infinite.pm --> deploy, read
-dev::a Docs maintainer --> push
-visitor::a Site visitor --> read
+repo::a infinite-pm-web ::t --> push, deploy
+html::a built HTML files ::t --> push, deploy
+site::a infinite.pm ::t --> deploy, read
+dev::a Docs maintainer ::t --> push
+visitor::a Site visitor ::t --> read
 
 job --> deploy job ::c
 pages --> static hosting ::c

@@ -1,16 +1,16 @@
 # Explore one graph in the canvas > A participant drawn in several places
 # ipm-overview:docs/use-cases/explore-in-canvas.md#L78
-# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+# 32b3cda0b610d6636b3bbd17b9ddce57b43ec80b
 
 whole::a Explore a graph in the canvas ::e
 read::a Read every participant of an event ::e --::P--> whole
 read --> next::a Walk to the next place ::e
 next --::P--> whole
 
-you::a Canvas reader --> read, next
-part::a the participant --> read, next
-spot::a the place beside this event --> read
-badge::a its 2/3 badge --> next
+you::a Canvas reader ::t --> read, next
+part::a the participant ::t --> read, next
+spot::a the place beside this event ::t --> read
+badge::a its 2/3 badge ::t --> next
 
 you --> Reader ::c
 part --> node ::c

@@ -1,6 +1,6 @@
 # Get started with infinite.pm > The journey
 # ipm-overview:docs/use-cases/get-started.md#L11
-# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+# 32b3cda0b610d6636b3bbd17b9ddce57b43ec80b
 
 # The whole journey, and the steps that are part of it.
 whole::a Get started with infinite.pm ::e
@@ -13,5 +13,5 @@ read::a Read the intro ::e
 read --> browse::a Browse the lab ::e
 read, install, write, embed, share, browse --::P--> whole
 
-you::a Newcomer --> read, browse, install, write, embed, share
+you::a Newcomer ::t --> read, browse, install, write, embed, share
 you --> Reader ::c, Author ::c

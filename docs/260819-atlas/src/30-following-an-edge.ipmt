@@ -1,13 +1,13 @@
 # Explore one graph in the canvas > Following an edge
 # ipm-overview:docs/use-cases/explore-in-canvas.md#L54
-# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+# 32b3cda0b610d6636b3bbd17b9ddce57b43ec80b
 
 whole::a Explore a graph in the canvas ::e
 follow::a Follow an edge to its far end ::e --::P--> whole
 
-you::a Canvas reader --> follow
-edge::a the selected edge --> follow
-far::a the thing at its far end --> follow
+you::a Canvas reader ::t --> follow
+edge::a the selected edge ::t --> follow
+far::a the thing at its far end ::t --> follow
 
 you --> Reader ::c
 edge --> link ::c

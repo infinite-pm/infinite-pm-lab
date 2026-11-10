@@ -1,6 +1,6 @@
 # AI agent modes and the harness > Design mode
 # ipm-overview:docs/use-cases/agent-modes.md#L264
-# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+# 32b3cda0b610d6636b3bbd17b9ddce57b43ec80b
 
 run::a Run the design mode ::e --> design mode ::c, writes a proposal only ::c
 
@@ -9,10 +9,10 @@ branch::a Open a design branch ::e
   --> draft::a Draft the changes ::e
 branch, propose, draft --::P--> run
 
-agent::a coding agent --> branch, propose, draft
-wt::a design worktree --> branch, propose, draft
-prop::a proposal document --> propose
-pages::a drafted pages --> draft
+agent::a coding agent ::t --> branch, propose, draft
+wt::a design worktree ::t --> branch, propose, draft
+prop::a proposal document ::t --> propose
+pages::a drafted pages ::t --> draft
 
 agent --> AI agent ::c
 wt --> design workspace ::c, design branch ::c

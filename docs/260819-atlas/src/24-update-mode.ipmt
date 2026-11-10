@@ -1,6 +1,6 @@
 # AI agent modes and the harness > Update mode
 # ipm-overview:docs/use-cases/agent-modes.md#L351
-# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+# 32b3cda0b610d6636b3bbd17b9ddce57b43ec80b
 
 run::a Run the update mode ::e --> update mode ::c, writes the model ::c
 
@@ -9,19 +9,19 @@ apply::a Apply the reviewed branch ::e
   --> validate::a Re-validate ::e
 apply, embed, validate --::P--> run
 
-agent::a coding agent --> apply, embed, validate
-md-embed --> embed
-ipm-validate --> validate
-br::a reviewed design branch --> apply
-pack::a review pack document --> apply
-mainwt::a main worktree --> apply, embed, validate
-svg::a committed SVGs --> embed
+agent::a coding agent ::t --> apply, embed, validate
+md-embed ::t --> embed
+ipm-validate ::t --> validate
+br::a reviewed design branch ::t --> apply
+pack::a review pack document ::t --> apply
+mainwt::a main worktree ::t --> apply, embed, validate
+svg::a committed SVGs ::t --> embed
 
 apply --> reviewed before update ::c
 
 agent --> AI agent ::c
-md-embed --> embedder ::c
-ipm-validate --> validator ::c
+md-embed ::t --> embedder ::c
+ipm-validate ::t --> validator ::c
 br --> design branch ::c
 pack --> review pack ::c
 mainwt --> ipm knowledge base ::c

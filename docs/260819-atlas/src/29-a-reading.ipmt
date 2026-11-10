@@ -1,6 +1,6 @@
 # Explore one graph in the canvas > A reading
 # ipm-overview:docs/use-cases/explore-in-canvas.md#L15
-# ef1b92d59b7512ac69f84f6910bebca21635b2ee
+# 32b3cda0b610d6636b3bbd17b9ddce57b43ec80b
 
 # The whole reading, and the steps that are part of it.
 whole::a Explore a graph in the canvas ::e
@@ -12,13 +12,13 @@ open::a Open the canvas ::e
 open, pick, into, share --::P--> whole
 
 # The tool and what the reader looks at
-canvas-server --> open
-you::a Canvas reader --> open, pick, into, share
-src::a hello.ipmt --> open
-st::a the state on screen --> into
-link::a the copied URL --> share
+canvas-server ::t --> open
+you::a Canvas reader ::t --> open, pick, into, share
+src::a hello.ipmt ::t --> open
+st::a the state on screen ::t --> into
+link::a the copied URL ::t --> share
 
-canvas-server --> canvas server ::c, renderer ::c
+canvas-server ::t --> canvas server ::c, renderer ::c
 you --> Reader ::c
 src --> ipmt text ::c, input ::c
 st --> click-path state ::c
